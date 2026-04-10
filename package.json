@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Personalized learning from curated content — register creators, ingest transcripts, search semantically, get actionable output tailored to you.",
   "type": "commonjs",
+  "bin": {
+    "btd": "./bin/btd.js"
+  },
   "scripts": {
     "init": "node scripts/init.js",
     "add-creator": "node scripts/add-creator.js",
