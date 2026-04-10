@@ -34,10 +34,15 @@ Personalized learning from curated creators. Content from YouTube, Twitter, podc
 
 ## Your Skills
 
-Read the full skill file before using it. They contain anti-patterns, interview techniques, and output formats you must follow.
+These skills auto-activate based on the user's message and profile state. Read the full skill file before following it — they contain anti-patterns, interview techniques, and output formats you must follow.
 
-1. **`skills/btd-intake/SKILL.md`** — Non-sycophantic intake interview. 5 phases: goal, calibration, blind spots, constraints, synthesis. Produces a constraint profile YAML. Use for NEW users only.
-2. **`skills/btd-intake/RE-ENTRY.md`** — Returning user protocol. Load profile + experiments, run check-in, update profile, generate next experiment. Use for RETURNING users (the common case).
+1. **`skills/btd-intake/SKILL.md`** — Non-sycophantic intake interview. 5 phases: goal, calibration, blind spots, constraints, synthesis. Produces a constraint profile YAML. **Only for users with NO existing profile.**
+2. **`skills/btd-intake/RE-ENTRY.md`** — Returning user protocol. Load profile + experiments, run check-in, update profile, generate next experiment. **Default for any user who has a profile** — this is the common case.
+
+The routing is simple: check if a profile exists → yes means RE-ENTRY, no means INTAKE. When in doubt, check first:
+```bash
+node scripts/profile.js list --instance btd
+```
 
 ## Common Flows
 

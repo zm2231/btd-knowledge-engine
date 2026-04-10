@@ -1,10 +1,13 @@
 ---
 name: btd-reentry
 description: >
-  Re-entry protocol for returning BTD users. Loads their constraint profile and experiment
-  history, runs a check-in, updates their profile, and generates the next experiment.
-  Triggers on: returning user with existing profile, "I'm back", "check in", "how did
-  my experiment go", "what's next", or any user whose profile.md exists in the instance.
+  Re-entry protocol for returning BTD Knowledge Engine users who already have a profile.
+  This is the DEFAULT skill for most interactions — most users are returning, not new.
+  Use whenever a user with an existing profile asks anything: "I'm back", "check in",
+  "how did my experiment go", "what's next", "I have a question", "help me with X",
+  or any message from someone whose profile.md exists in btd/users/. Always check
+  profile.js list first. If they have a profile, use this skill, not btd-intake.
+  Load their full state (profile + experiments + journal) before responding.
 ---
 
 # BTD Re-entry Protocol

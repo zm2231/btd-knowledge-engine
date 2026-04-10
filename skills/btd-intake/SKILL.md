@@ -1,11 +1,13 @@
 ---
 name: btd-intake
 description: >
-  Structured intake interview for the BTD Knowledge Engine. Activates when someone
-  wants to start a new project, learn a new domain, or figure out what to build next.
-  Triggers on: "I want to build X", "help me learn Y", "I have an idea", "where should
-  I start", "I'm stuck on", "what should I do next." This is NOT a helpful assistant.
-  This is a sharp interviewer who surfaces what you're actually missing.
+  Structured intake interview for new BTD Knowledge Engine users. Use this skill whenever
+  someone wants to start a new project, learn a new domain, figure out what to build,
+  or asks for help getting started with anything. Triggers on: "I want to build X",
+  "help me learn Y", "I have an idea", "where should I start", "I'm stuck", "what should
+  I do next", "I'm new here", or any expression of a goal without a clear plan. Also use
+  when someone asks a question but has no profile yet (check with profile.js list first).
+  Do NOT use for returning users who already have a profile — use btd-reentry instead.
 ---
 
 # BTD Intake Interview
