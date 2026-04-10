@@ -182,3 +182,83 @@ On re-entry, your LEANN queries should be more specific than initial intake:
   actual constraints (not aspirational)
 
 The constraint profile makes these queries specific. Without it, you're just doing generic search.
+
+---
+
+## Tools Available (Claude Code)
+
+When running this skill in Claude Code, you have access to the repo's scripts.
+Use them directly. Don't tell the user to run commands.
+
+### Load user state before speaking
+
+```bash
+# Load their profile
+node scripts/profile.js load {user-id} --instance btd
+
+# Load their experiment history
+ls btd/users/{user-id}/experiments/
+
+# Read the latest experiment card
+cat btd/users/{user-id}/experiments/{latest}.md
+
+# Read journal entries if any
+ls btd/users/{user-id}/journal/
+```
+
+Load ALL of this before your first message to the user. You should know their goal,
+level, blind spots, constraints, and what their last experiment was before you say anything.
+
+### Search the corpus based on what happened
+
+```bash
+leann search btd-btd "{query}" --top-k 5 --non-interactive
+```
+
+Build queries from the check-in results:
+- If experiment succeeded: search for the next step beyond what they just learned
+- If failed: search for common mistakes or alternative approaches
+- If abandoned: search for smaller-scope content matching their real constraints
+
+### Update the profile after check-in
+
+```bash
+# Overwrite with updated profile
+node scripts/profile.js save {user-id} --file /tmp/{user-id}-profile-updated.yaml --instance btd
+
+# Or update a single field
+node scripts/profile.js update {user-id} --field "goal_type" --value "build" --instance btd
+```
+
+Always add to the `profile_history` section when updating:
+```yaml
+profile_history:
+  - date: "2026-04-17"
+    event: "experiment 1 check-in"
+    changes: "calibrated_level up from pre-beginner to beginner; blind_spot 'no mental model' resolved"
+```
+
+### Write the next experiment card
+
+Save to: `btd/users/{user-id}/experiments/{NNN}-{slug}.md`
+
+Number sequentially. Reference the previous experiment's outcome in the frontmatter:
+```yaml
+builds_on: "001-neural-network-basics"
+previous_outcome: "partial"
+```
+
+### Attribution in all output
+
+Every piece of content you recommend must cite the source:
+- "Watch **But what is a neural network?** by 3Blue1Brown (19 min)"
+- "Read Karpathy's thread on LLM knowledge bases (April 2, 2026)"
+- "In the minbpe codebase, look at `regex.py` — this is the implementation of what he explains in the video"
+
+The user should always know WHERE the recommendation came from. This is what makes
+the system trustworthy; not just "do this" but "do this because {creator} showed that {evidence}."
+
+### Translation rule
+
+Same as intake: explain at the user's `calibrated_level`. If the experiment revealed
+their level changed, adjust immediately. Don't announce the adjustment.

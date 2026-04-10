@@ -312,3 +312,59 @@ When a user comes back mid-project:
 5. If they have a new question → contextualize against existing profile, don't
    start over. "Given what we know about your situation, here's how [corpus
    builder] would approach this specific problem."
+
+---
+
+## Tools Available (Claude Code)
+
+When running this skill in Claude Code, you have access to the repo's scripts.
+Use them. Don't ask the user to run commands manually.
+
+### After the interview: save the constraint profile
+
+```bash
+# Write the YAML profile to the user's directory
+# Creates users/{user-id}/ with experiments/ and journal/ subdirs
+node scripts/profile.js save {user-id} --file /tmp/{user-id}-profile.yaml --instance btd
+```
+
+Write the constraint profile YAML to a temp file, then call profile.js to save it.
+This creates the full user directory structure.
+
+### Search the corpus for experiment content
+
+```bash
+# Semantic search — returns ranked results with source attribution
+leann search btd-btd "{query}" --top-k 5 --non-interactive
+```
+
+Use the constraint profile to build targeted queries:
+- `calibrated_level` + `domain` → content at the right depth
+- `blind_spots` → content that addresses specific gaps
+- `key_gap` → the most important thing they're missing
+
+Every result includes a `Source:` path. Parse the creator name and content title from it.
+Always cite sources in the experiment card: "Watch {title} by {creator}" not just "watch this video."
+
+### Write the first experiment card
+
+Save to: `btd/users/{user-id}/experiments/001-{slug}.md`
+
+Use the template at `template/experiment-card.md`. The experiment must:
+1. Have a testable hypothesis tied to the key gap
+2. Reference specific content from the corpus search (with creator attribution)
+3. Fit within `constraints.time_per_week`
+4. Include the structured outcome YAML block at the bottom
+
+### Check user status
+
+```bash
+node scripts/profile.js list --instance btd          # all users
+node scripts/profile.js summary {user-id} --instance btd  # one user
+```
+
+### Translation rule
+
+Explain everything at the user's `calibrated_level`. If they're pre-beginner, no jargon.
+If they're a builder, be specific and technical. The corpus has content at all levels;
+your job is to pick the right content AND explain it at the right level.

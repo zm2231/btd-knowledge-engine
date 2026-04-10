@@ -157,16 +157,16 @@ Every script takes `--instance <name>` (default: `btd`).
 | Script | What | Key flags |
 |---|---|---|
 | `init.js` | Create a new instance | |
-| `add-creator.js` | Register a creator | `--youtube`, `--twitter`, `--podcast`, `--topics`, `--scan` |
-| `scan.js` | Catalog published content (no download) | `--all`, `--youtube`, `--twitter`, `--podcast`, `--substack` |
-| `batch-ingest.js` | Download YouTube transcripts from catalog | `--limit N`, `--top`, `--dry-run` |
+| `add-creator.js` | Register a creator with any platform | `--youtube`, `--twitter`, `--podcast`, `--substack`, `--topics`, `--scan` |
+| `scan.js` | Catalog published content (no download) | `--all`, `--youtube`, `--twitter`, `--podcast`, `--substack`, `--repo` |
+| `batch-ingest.js` | Batch download YouTube transcripts | `--limit N`, `--top`, `--dry-run` (YouTube only) |
 | `ingest-youtube.js` | Ingest a single YouTube URL | `--creator <slug>` |
 | `ingest-twitter.js` | Ingest tweets from catalog | `--limit N`, `--dry-run` |
 | `ingest-podcast.js` | Download + transcribe podcast episodes | `--feed <url>`, `--limit N`, `--list`, `--file <mp3>` |
 | `ingest-substack.js` | Download Substack articles | `--scan`, `--limit N` |
 | `ingest-repo.js` | Index a codebase (local path or GitHub URL) | `--scan` (preview), `--file-types` |
 | `index.js` | Build/update LEANN semantic index | `--force` |
-| `status.js` | Content dashboard | |
+| `status.js` | Content dashboard (creators, catalogs, ingestion) | |
 
 ### User Flow
 | Script | What |
