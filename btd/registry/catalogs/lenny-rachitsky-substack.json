@@ -1,0 +1,189 @@
+{
+  "platform": "substack",
+  "scanned_at": "2026-04-10T22:17:45.291Z",
+  "creator": "lenny-rachitsky",
+  "total": 20,
+  "ingested": 10,
+  "items": [
+    {
+      "id": "https://www.lennysnewsletter.com/p/i-built-a-custom-slack-inbox-it-was",
+      "title": "I built a custom Slack inbox. It was easier than you’d think. | Yash Tekriwal (Clay)",
+      "date": "Wed, 08 Apr 2026 12:03:47 GMT",
+      "url": "https://www.lennysnewsletter.com/p/i-built-a-custom-slack-inbox-it-was",
+      "excerpt": "Watch now | 🎙️ How Yash built a Slack digest and Kanban dashboard using OpenAI agents and Perplexity Computer to reduce 150 daily notifications to ~30 actionable tasks",
+      "author": "Claire Vo",
+      "ingested": true
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/listen-a-visual-guide-to-getting",
+      "title": "Listen: A visual guide to getting out of a creative slump",
+      "date": "Wed, 08 Apr 2026 02:51:13 GMT",
+      "url": "https://www.lennysnewsletter.com/p/listen-a-visual-guide-to-getting",
+      "excerpt": "An audio edition of Lenny's Newsletter post",
+      "author": "Lenny Rachitsky",
+      "ingested": true
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/a-visual-guide-to-getting-out-of",
+      "title": "A visual guide to getting out of a creative slump",
+      "date": "Tue, 07 Apr 2026 12:45:49 GMT",
+      "url": "https://www.lennysnewsletter.com/p/a-visual-guide-to-getting-out-of",
+      "excerpt": "On creating work like a human (and all the feelings that come with it)",
+      "author": "Michelle Rial",
+      "ingested": true
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-i-gave-claude",
+      "title": "🎙️ This week on How I AI: I gave Claude Code our entire codebase. Our customers noticed.",
+      "date": "Mon, 06 Apr 2026 15:03:07 GMT",
+      "url": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-i-gave-claude",
+      "excerpt": "Your weekly listens from How I AI, part of the Lenny’s Podcast Network",
+      "author": "Lenny Rachitsky",
+      "ingested": true
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/i-gave-claude-code-our-entire-codebase",
+      "title": "I gave Claude Code our entire codebase. Our customers noticed. | Al Chen (Galileo)",
+      "date": "Mon, 06 Apr 2026 12:03:35 GMT",
+      "url": "https://www.lennysnewsletter.com/p/i-gave-claude-code-our-entire-codebase",
+      "excerpt": "Watch now | 🎙️ Al Chen (Field Engineer at Galileo) shows how he uses AI to query his entire codebase and deliver precise, real-time answers to enterprise customers—without relying on docs or engineering",
+      "author": "Claire Vo",
+      "ingested": true
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run",
+      "title": "Head of Growth (Anthropic): “Claude is growing itself at this point” | Amol Avasare",
+      "date": "Sun, 05 Apr 2026 12:31:45 GMT",
+      "url": "https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run",
+      "excerpt": "Listen now | Anthropic’s Head of Growth on scaling from $1B to $19B ARR in 14 months through big bets, intentional onboarding friction, deep focus, and CASH—an internal AI system for autonomous growth experiments",
+      "author": "Lenny Rachitsky",
+      "ingested": true
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/community-wisdom-evaluating-startup",
+      "title": "🧠 Community Wisdom: Evaluating startup equity, navigating pre-seed fundraising, MCPs vs. CLIs, Monzo’s U.S. exit, and more",
+      "date": "Sat, 04 Apr 2026 22:02:36 GMT",
+      "url": "https://www.lennysnewsletter.com/p/community-wisdom-evaluating-startup",
+      "excerpt": "Community Wisdom 180",
+      "author": "Kiyani",
+      "ingested": true
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/an-ai-state-of-the-union",
+      "title": "An AI state of the union: We’ve passed the inflection point, dark factories are coming, and automation timelines | Simon Willison",
+      "date": "Thu, 02 Apr 2026 12:32:28 GMT",
+      "url": "https://www.lennysnewsletter.com/p/an-ai-state-of-the-union",
+      "excerpt": "Listen now | Simon Willison on why November 2025 changed software engineering forever, the lethal trifecta, his top agentic engineering patterns, and much more",
+      "author": "Lenny Rachitsky",
+      "ingested": true
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/listen-openclaw-a-power-users-guide",
+      "title": "Listen: OpenClaw: A power-user's guide to the most powerful personal AI tool since ChatGPT",
+      "date": "Wed, 01 Apr 2026 14:11:12 GMT",
+      "url": "https://www.lennysnewsletter.com/p/listen-openclaw-a-power-users-guide",
+      "excerpt": "An audio edition of Lenny's Newsletter post",
+      "author": "Lenny Rachitsky",
+      "ingested": true
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/openclaw-the-complete-guide-to-building",
+      "title": "OpenClaw: The complete guide to building, training, and living with your personal AI agent",
+      "date": "Tue, 31 Mar 2026 12:45:57 GMT",
+      "url": "https://www.lennysnewsletter.com/p/openclaw-the-complete-guide-to-building",
+      "excerpt": "I built a team of 9 AI agents that run my work and life. Here's how you can too.",
+      "author": "Claire Vo",
+      "ingested": true
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-stripe",
+      "title": "🎙️ This week on How I AI: How Stripe built “minions”—AI coding agents that ship 1,300 PRs per week + How to turn Claude Code into your personal life operating system",
+      "date": "Mon, 30 Mar 2026 15:03:26 GMT",
+      "url": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-stripe",
+      "excerpt": "Your weekly listens from How I AI, part of the Lenny’s Podcast Network",
+      "author": "Lenny Rachitsky",
+      "ingested": false
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/how-to-turn-claude-code-into-your",
+      "title": "How to turn Claude Code into your personal life operating system | Hilary Gridley",
+      "date": "Mon, 30 Mar 2026 12:04:24 GMT",
+      "url": "https://www.lennysnewsletter.com/p/how-to-turn-claude-code-into-your",
+      "excerpt": "Watch now | 🎙️ How a new mom and entrepreneur uses Claude Code to automate life admin—all without complex setup",
+      "author": "Claire Vo",
+      "ingested": false
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/how-openclaw-changed-my-life-claire-vo",
+      "title": "From skeptic to true believer: How OpenClaw changed my life | Claire Vo",
+      "date": "Sun, 29 Mar 2026 12:31:50 GMT",
+      "url": "https://www.lennysnewsletter.com/p/how-openclaw-changed-my-life-claire-vo",
+      "excerpt": "Listen now | Claire Vo went from OpenClaw skeptic to running nine specialized AI agents across her family calendar, inbound sales, kids’ homework help, and more",
+      "author": "Lenny Rachitsky",
+      "ingested": false
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/community-wisdom-when-ai-velocity",
+      "title": "🧠 Community Wisdom: When AI velocity outpaces your product strategy, when your estimates keep slipping, one day in San Francisco, pairing Claude Code with Codex, and more",
+      "date": "Sat, 28 Mar 2026 17:01:42 GMT",
+      "url": "https://www.lennysnewsletter.com/p/community-wisdom-when-ai-velocity",
+      "excerpt": "Community Wisdom 179",
+      "author": "Kiyani",
+      "ingested": false
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/how-stripe-built-minionsai-coding",
+      "title": "How Stripe built “minions”—AI coding agents that ship 1,300 PRs weekly from Slack reactions | Steve Kaliski (Stripe engineer)",
+      "date": "Wed, 25 Mar 2026 12:03:34 GMT",
+      "url": "https://www.lennysnewsletter.com/p/how-stripe-built-minionsai-coding",
+      "excerpt": "Watch now | 🎙️ How Stripe engineers deploy AI agents that write PRs from Slack reactions, plus a demo of machine-to-machine payments that plan a birthday party for $5.47",
+      "author": "Claire Vo",
+      "ingested": false
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/state-of-the-product-job-market-in-ee9",
+      "title": "State of the product job market in early 2026",
+      "date": "Tue, 24 Mar 2026 12:45:12 GMT",
+      "url": "https://www.lennysnewsletter.com/p/state-of-the-product-job-market-in-ee9",
+      "excerpt": "AI roles are exploding, PM and eng job openings are the highest in years, and the overall number of tech jobs is up",
+      "author": "Lenny Rachitsky",
+      "ingested": false
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/state-of-the-product-job-market-in-372",
+      "title": "State of the product job market in early 2026",
+      "date": "Tue, 24 Mar 2026 09:02:05 GMT",
+      "url": "https://www.lennysnewsletter.com/p/state-of-the-product-job-market-in-372",
+      "excerpt": "AI roles are exploding, PM and eng job openings are the highest in years, and the overall number of tech jobs is up",
+      "author": "Lenny Rachitsky",
+      "ingested": false
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-microsofts",
+      "title": "🎙️ This week on How I AI: How Microsoft's AI VP automates everything with Warp",
+      "date": "Mon, 23 Mar 2026 15:02:35 GMT",
+      "url": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-microsofts",
+      "excerpt": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
+      "author": "Lenny Rachitsky",
+      "ingested": false
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/how-microsofts-ai-vp-automates-everything",
+      "title": "How Microsoft’s AI VP automates everything with Warp | Marco Casalaina",
+      "date": "Mon, 23 Mar 2026 12:01:26 GMT",
+      "url": "https://www.lennysnewsletter.com/p/how-microsofts-ai-vp-automates-everything",
+      "excerpt": "Watch now | 🎙️ Marco Casalaina, VP of Core AI Products at Microsoft, speed-runs five micro-agent workflows inside Warp, M365 Copilot, and ChatGPT—turning tedious admin tasks into one-line commands",
+      "author": "Claire Vo",
+      "ingested": false
+    },
+    {
+      "id": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain",
+      "title": "The art of influence: The single most important skill that AI can’t replace | Jessica Fain (Webflow, ex-Slack)",
+      "date": "Sun, 22 Mar 2026 12:31:51 GMT",
+      "url": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain",
+      "excerpt": "A PM’s guide to influencing executives: align with their incentives, present three options, and follow the breadcrumbs",
+      "author": "Lenny Rachitsky",
+      "ingested": false
+    }
+  ]
+}
