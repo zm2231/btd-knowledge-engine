@@ -1,9 +1,9 @@
 {
   "roots": [
-    "/Volumes/4/GitHub/btd-knowledge-engine/btd/raw"
+    "/Volumes/4/GitHub/btd-knowledge-engine/scripts"
   ],
   "include_extensions": [
-    ".md"
+    ".js"
   ],
   "ignore_patterns": [
     "**/.*"

@@ -114,3 +114,40 @@ Auto-ingest is intentionally NOT cron'd. Catalog everything, but pulling content
 - [ ] Test automated vs handwritten output
 - [ ] Fix questions → routing → templates (in that order if mismatch)
 - [ ] Profile update flow (experiment outcome → profile revision)
+
+## From Build Lab Session (April 10, 2026)
+
+Key ideas surfaced during the group build lab that should shape next steps:
+
+### Attribution / Visible Intelligence (Max, high priority)
+The user needs to see WHERE insights come from. Not just "here's what to do" but "this came from Karpathy's tokenization lecture" or "I'm asking this because of {framework} from {creator}." LEANN already returns source paths with every result; the gap is surfacing that in the output templates. This is a presentation layer change, not an index change.
+
+Concrete implementation:
+- Search results already include `Source: btd/raw/youtube/andrej-karpathy/...`
+- Experiment cards should cite specific creators and content
+- Synthesis output should say "Based on how Karpathy approaches X" not just "here's what to do"
+- Consider a "sources used" section in every generated output
+
+### Voice Agent for Expertise Extraction (Max, future)
+Max started building a voice agent that can interview people who DON'T have existing content (no YouTube, no podcast). The insight: transcripts reveal real patterns because people show how they think when solving problems live, not when describing how they think. Three interview modes identified:
+1. **Scenario walkthrough** → procedural + conditional patterns
+2. **Teaching mode** → declarative + metacognitive
+3. **Contradiction probing** → surfaces deeper layers
+
+Signal detection taxonomy: speed changes, "obviously" markers (unconscious competence), what they skip vs elaborate on, energy shifts. This could feed back into the intake skill.
+
+### Repo/Codebase Ingestion (in progress)
+VividEagle building `ingest-repo.js`. The value: search across Karpathy's TALKS about tokenization AND his `minbpe` implementation code in the same query. Same index, different source types.
+
+### Community Distribution
+Group wants this usable by non-technical members. Current CLI flow works but needs:
+- [ ] Clear "getting started for non-coders" doc (Max can write this)
+- [ ] Possibly a simple web UI eventually (not priority for v1)
+- [ ] Skills shared in community Slack/School
+
+### Tools Mentioned in Session
+- **Bird CLI** for Twitter scraping (already integrated)
+- **LEANN** — group was impressed by the semantic search demo. Multiple people installing.
+- **Impeccable.style** — design audit CLI + skills (for future UI work)
+- **Carrd** — simple portfolio sites (relevant for any user-facing version)
+- **FireCrawl** — Max adding to his Last 30 Days skill for web scraping
