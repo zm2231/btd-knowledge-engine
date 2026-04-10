@@ -1,22 +1,23 @@
 {
   "name": "btd-knowledge-engine",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "Personalized learning from curated content — register creators, ingest transcripts, search semantically, get actionable output tailored to you.",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "init": "node scripts/init.js",
+    "add-creator": "node scripts/add-creator.js",
+    "scan": "node scripts/scan.js",
+    "ingest": "node scripts/batch-ingest.js",
+    "index": "node scripts/index.js",
+    "status": "node scripts/status.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zm2231/btd-knowledge-engine.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": ["knowledge-base", "youtube", "transcripts", "leann", "semantic-search", "personalized-learning"],
+  "author": "BTD Group",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zm2231/btd-knowledge-engine/issues"
   },
