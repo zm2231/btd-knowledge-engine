@@ -1,0 +1,179 @@
+{
+  "creator": "andrej-karpathy",
+  "platform": "youtube",
+  "scanned_at": "2026-04-10T18:28:00.093Z",
+  "total": 17,
+  "ingested": 0,
+  "items": [
+    {
+      "id": "EWvNQjAaOHw",
+      "title": "How I use LLMs",
+      "date": null,
+      "duration": 7872,
+      "duration_string": "2:11:12",
+      "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
+      "view_count": 2353468,
+      "ingested": false
+    },
+    {
+      "id": "7xTGNNLPyMI",
+      "title": "Deep Dive into LLMs like ChatGPT",
+      "date": null,
+      "duration": 12684,
+      "duration_string": "3:31:24",
+      "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+      "view_count": 6037758,
+      "ingested": false
+    },
+    {
+      "id": "l8pRSuU81PU",
+      "title": "Let's reproduce GPT-2 (124M)",
+      "date": null,
+      "duration": 14486,
+      "duration_string": "4:01:26",
+      "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
+      "view_count": 1046955,
+      "ingested": false
+    },
+    {
+      "id": "zduSFxRajkE",
+      "title": "Let's build the GPT Tokenizer",
+      "date": null,
+      "duration": 8015,
+      "duration_string": "2:13:35",
+      "url": "https://www.youtube.com/watch?v=zduSFxRajkE",
+      "view_count": 1067788,
+      "ingested": false
+    },
+    {
+      "id": "zjkBMFhNj_g",
+      "title": "[1hr Talk] Intro to Large Language Models",
+      "date": null,
+      "duration": 3588,
+      "duration_string": "59:48",
+      "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+      "view_count": 3549306,
+      "ingested": false
+    },
+    {
+      "id": "kCc8FmEb1nY",
+      "title": "Let's build GPT: from scratch, in code, spelled out.",
+      "date": null,
+      "duration": 6980,
+      "duration_string": "1:56:20",
+      "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY",
+      "view_count": 7066652,
+      "ingested": false
+    },
+    {
+      "id": "t3YJ5hKiMQ0",
+      "title": "Building makemore Part 5: Building a WaveNet",
+      "date": null,
+      "duration": 3382,
+      "duration_string": "56:22",
+      "url": "https://www.youtube.com/watch?v=t3YJ5hKiMQ0",
+      "view_count": 268624,
+      "ingested": false
+    },
+    {
+      "id": "q8SA3rM6ckI",
+      "title": "Building makemore Part 4: Becoming a Backprop Ninja",
+      "date": null,
+      "duration": 6924,
+      "duration_string": "1:55:24",
+      "url": "https://www.youtube.com/watch?v=q8SA3rM6ckI",
+      "view_count": 334850,
+      "ingested": false
+    },
+    {
+      "id": "P6sfmUTpUmc",
+      "title": "Building makemore Part 3: Activations & Gradients, BatchNorm",
+      "date": null,
+      "duration": 6958,
+      "duration_string": "1:55:58",
+      "url": "https://www.youtube.com/watch?v=P6sfmUTpUmc",
+      "view_count": 488265,
+      "ingested": false
+    },
+    {
+      "id": "TCH_1BHY58I",
+      "title": "Building makemore Part 2: MLP",
+      "date": null,
+      "duration": 4540,
+      "duration_string": "1:15:40",
+      "url": "https://www.youtube.com/watch?v=TCH_1BHY58I",
+      "view_count": 524003,
+      "ingested": false
+    },
+    {
+      "id": "PaCmpygFfXo",
+      "title": "The spelled-out intro to language modeling: building makemore",
+      "date": null,
+      "duration": 7065,
+      "duration_string": "1:57:45",
+      "url": "https://www.youtube.com/watch?v=PaCmpygFfXo",
+      "view_count": 1122874,
+      "ingested": false
+    },
+    {
+      "id": "kVpDARqZdrQ",
+      "title": "Stable diffusion dreams of psychedelic faces",
+      "date": null,
+      "duration": 242,
+      "duration_string": "4:02",
+      "url": "https://www.youtube.com/watch?v=kVpDARqZdrQ",
+      "view_count": 49186,
+      "ingested": false
+    },
+    {
+      "id": "2oKjtvYslMY",
+      "title": "Stable diffusion dreams of steampunk brains",
+      "date": null,
+      "duration": 1166,
+      "duration_string": "19:26",
+      "url": "https://www.youtube.com/watch?v=2oKjtvYslMY",
+      "view_count": 34880,
+      "ingested": false
+    },
+    {
+      "id": "sM9bozW295Q",
+      "title": "Stable diffusion dreams of tattoos",
+      "date": null,
+      "duration": 106,
+      "duration_string": "1:46",
+      "url": "https://www.youtube.com/watch?v=sM9bozW295Q",
+      "view_count": 93986,
+      "ingested": false
+    },
+    {
+      "id": "VMj-3S1tku0",
+      "title": "The spelled-out intro to neural networks and backpropagation: building micrograd",
+      "date": null,
+      "duration": 8752,
+      "duration_string": "2:25:52",
+      "url": "https://www.youtube.com/watch?v=VMj-3S1tku0",
+      "view_count": 3377120,
+      "ingested": false
+    },
+    {
+      "id": "vEnetcj_728",
+      "title": "Stable diffusion dreams of \"blueberry spaghetti\" for one night",
+      "date": null,
+      "duration": 303,
+      "duration_string": "5:03",
+      "url": "https://www.youtube.com/watch?v=vEnetcj_728",
+      "view_count": 79875,
+      "ingested": false
+    },
+    {
+      "id": "Jv1ayv-04H4",
+      "title": "Stable diffusion dreams of steam punk neural networks",
+      "date": null,
+      "duration": 155,
+      "duration_string": "2:35",
+      "url": "https://www.youtube.com/watch?v=Jv1ayv-04H4",
+      "view_count": 61316,
+      "ingested": false
+    }
+  ]
+}

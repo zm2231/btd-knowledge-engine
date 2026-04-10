@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/zm2231/btd-knowledge-engine#readme",
   "dependencies": {
+    "podcast-dl": "^11.7.3",
     "youtube-transcript-plus": "^2.0.0"
   }
 }

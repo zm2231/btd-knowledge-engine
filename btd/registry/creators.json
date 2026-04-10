@@ -9,13 +9,23 @@
           "channel_url": "https://www.youtube.com/@AndrejKarpathy",
           "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
           "playlist_id": null
+        },
+        "twitter": {
+          "handle": "kaboraseven"
         }
       },
-      "topics": ["ai", "ml", "building", "systems"],
+      "topics": [
+        "ai",
+        "ml",
+        "building",
+        "systems"
+      ],
       "priority": "high",
       "notes": "Deep builder judgment. Extract decision patterns, not just content.",
       "added": "2026-04-10",
-      "status": "active"
+      "status": "active",
+      "catalog_count": 17,
+      "last_scanned": "2026-04-10T18:28:00.095Z"
     },
     {
       "slug": "ethan-mollick",
@@ -25,11 +35,35 @@
           "url": "https://www.oneusefulthing.org/"
         }
       },
-      "topics": ["ai", "education", "productivity"],
+      "topics": [
+        "ai",
+        "education",
+        "productivity"
+      ],
       "priority": "high",
       "notes": "Practical AI applications. Good for non-technical audience.",
       "added": "2026-04-10",
       "status": "active"
+    },
+    {
+      "slug": "3blue1brown",
+      "name": "3Blue1Brown",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@3blue1brown"
+        }
+      },
+      "topics": [
+        "math",
+        "ml",
+        "visual-learning"
+      ],
+      "priority": "high",
+      "notes": "Visual explanations. Good for non-technical audience.",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 233,
+      "last_scanned": "2026-04-10T18:28:09.204Z"
     }
   ]
 }
