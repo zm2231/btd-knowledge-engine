@@ -1,0 +1,292 @@
+{
+  "$schema": "question-bank-v1",
+  "description": "Builder intake interview — directed graph of questions that surface constraints most first-timers skip. Derived from system-architecture SKILL.md methodology.",
+  "entry": "q-what-are-you-building",
+  "states": {
+    "q-what-are-you-building": {
+      "id": "q-what-are-you-building",
+      "phase": "goal",
+      "question": "What are you building? Not the feature list — what does this thing DO for someone?",
+      "purpose": "Separate the pain from the stated solution. Most people describe a solution when asked what they're building. We need the problem underneath.",
+      "follow_ups": [
+        "If they describe a solution: 'Back up — who uses this and what changes for them?'",
+        "If vague: 'Give me the 30-second pitch as if I'm a user, not an investor.'"
+      ],
+      "extracts": ["project_description", "target_user", "core_value_prop"],
+      "transitions": {
+        "default": "q-what-exists-already"
+      }
+    },
+
+    "q-what-exists-already": {
+      "id": "q-what-exists-already",
+      "phase": "landscape",
+      "question": "What exists already? Any code, any services running, any databases, any prior attempts?",
+      "purpose": "Prior work is a knowledge base, not a liability. Versioning from here, not starting from zero. Also surfaces hidden infrastructure that changes the architecture.",
+      "follow_ups": [
+        "If yes: 'Walk me through what connects to what. Data flows, APIs, shared state.'",
+        "If no: 'Have you tried to build something like this before, or is this from scratch?'",
+        "If prior attempt: 'What broke? What worked? What did you learn about the actual requirements?'"
+      ],
+      "extracts": ["existing_systems", "prior_versions", "integration_surface", "learned_requirements"],
+      "transitions": {
+        "has_existing_system": "q-what-broke-last-time",
+        "prior_attempt_failed": "q-what-broke-last-time",
+        "greenfield": "q-data-shape"
+      }
+    },
+
+    "q-what-broke-last-time": {
+      "id": "q-what-broke-last-time",
+      "phase": "landscape",
+      "question": "What broke? Not 'what didn't you finish' — what specifically stopped working or became untenable?",
+      "purpose": "The prior version's failures are the real requirements. This is the most valuable artifact in the conversation.",
+      "follow_ups": [
+        "'Was that a ceiling of the tool/approach, or a limitation that could be fixed?'",
+        "'If you could keep one thing from the old version, what would it be?'"
+      ],
+      "extracts": ["failure_modes", "ceiling_hits", "preservable_patterns"],
+      "transitions": {
+        "default": "q-data-shape"
+      }
+    },
+
+    "q-data-shape": {
+      "id": "q-data-shape",
+      "phase": "constraints",
+      "question": "What's your data actually look like? Walk me through a concrete example — one user, one action, what gets stored, what gets retrieved.",
+      "purpose": "Match the data model to the access pattern, not to what they know best. Most people default to 'put it in Postgres' without thinking about whether their data is relational, graph, document, time-series, or hybrid.",
+      "follow_ups": [
+        "'Is the data mostly read-heavy or write-heavy?'",
+        "'Do things have relationships to other things that you need to traverse?' (graph signal)",
+        "'Does the shape of the data change per record, or is it uniform?' (document vs relational signal)",
+        "'Is time/sequence important?' (time-series signal)"
+      ],
+      "extracts": ["data_model_type", "access_patterns", "data_relationships", "data_volume_estimate"],
+      "transitions": {
+        "default": "q-who-uses-this"
+      }
+    },
+
+    "q-who-uses-this": {
+      "id": "q-who-uses-this",
+      "phase": "constraints",
+      "question": "Who actually uses this? Just you? Your team? External users? How many?",
+      "purpose": "Concurrency model, auth model, multi-tenancy, scale ceiling. 'Just me' vs '10,000 users' are completely different architectures.",
+      "follow_ups": [
+        "If external users: 'Do they need accounts? Do they see each other's data?'",
+        "If team: 'How technical is the team? Who maintains this after you build it?'",
+        "If just me: 'Is it staying that way, or is this a prototype for something bigger?'"
+      ],
+      "extracts": ["user_count", "user_type", "multi_tenancy", "auth_requirements", "team_capability"],
+      "transitions": {
+        "external_users": "q-deployment-model",
+        "team_internal": "q-team-capability",
+        "solo": "q-deployment-model"
+      }
+    },
+
+    "q-team-capability": {
+      "id": "q-team-capability",
+      "phase": "constraints",
+      "question": "Who builds this after the initial version? What's the team's stack familiarity? Don't pick a tool the team can't operate.",
+      "purpose": "The maintaining team is a hard constraint. A brilliant architecture nobody can maintain is worse than a boring one everyone understands.",
+      "follow_ups": [
+        "'What languages and frameworks does the team know well?'",
+        "'Do you have DevOps/infra capability, or does deployment need to be simple?'",
+        "'What's the bus factor — if one person leaves, can someone else maintain this?'"
+      ],
+      "extracts": ["team_stack", "team_size", "devops_capability", "bus_factor"],
+      "transitions": {
+        "default": "q-deployment-model"
+      }
+    },
+
+    "q-deployment-model": {
+      "id": "q-deployment-model",
+      "phase": "constraints",
+      "question": "Where does this run? Your machine? A server you control? Cloud? Does it matter?",
+      "purpose": "Self-hosted when you need control. Cloud when maintenance cost exceeds control value. The choice is about who owns the ceiling.",
+      "follow_ups": [
+        "'Do you have existing infrastructure — servers, cloud accounts, CI/CD?'",
+        "'Any hard constraints — data can't leave the country, must be on-prem, etc.?'"
+      ],
+      "extracts": ["deployment_env", "existing_infra", "data_locality_requirements"],
+      "transitions": {
+        "has_compliance": "q-compliance",
+        "default": "q-what-can-you-skip"
+      }
+    },
+
+    "q-compliance": {
+      "id": "q-compliance",
+      "phase": "constraints",
+      "question": "You mentioned [compliance/sensitivity]. Let's be specific — HIPAA? SOC2? PII handling? Data residency? What's the actual regulatory surface?",
+      "purpose": "Compliance requirements are constraints, not features. They eliminate options immediately. Most people either over-estimate (everything must be HIPAA) or under-estimate (storing PII in plain text) the actual requirements.",
+      "follow_ups": [
+        "'Who's responsible if there's a breach? That changes what 'secure enough' means.'",
+        "'Is this regulated by industry, by contract (client requires SOC2), or by data type (PII/PHI)?'"
+      ],
+      "extracts": ["compliance_frameworks", "data_sensitivity", "security_requirements"],
+      "transitions": {
+        "default": "q-what-can-you-skip"
+      }
+    },
+
+    "q-what-can-you-skip": {
+      "id": "q-what-can-you-skip",
+      "phase": "scoping",
+      "question": "What's the smallest version that proves the core loop works? Not the MVP feature list — what's the one thing that, if it works, tells you the architecture is right?",
+      "purpose": "Most first-time builders scope too large. The question isn't 'what features in v1' — it's 'what's the proof that the foundation holds.' This is the spike, not the product.",
+      "follow_ups": [
+        "'What are you deferring to v2 that you're nervous about? That's usually the thing that should inform v1's architecture even if you don't build it yet.'",
+        "'What feature are you most excited about? That's usually the one to cut from v1 — it's the one you'll over-engineer.'"
+      ],
+      "extracts": ["v1_scope", "deferred_requirements", "architecture_proof_point"],
+      "transitions": {
+        "default": "q-time-horizon"
+      }
+    },
+
+    "q-time-horizon": {
+      "id": "q-time-horizon",
+      "phase": "scoping",
+      "question": "When does this need to be usable? And what's the difference between 'usable' and 'done' in your head?",
+      "purpose": "Time horizon changes everything. A weekend prototype and a 6-month product have different architectures even with the same requirements. Also surfaces whether 'done' means 'shipped' or 'perfect.'",
+      "follow_ups": [
+        "'Is there a hard deadline (demo, launch, client commitment) or is this self-paced?'",
+        "'What happens if it takes twice as long as you think?'"
+      ],
+      "extracts": ["timeline", "deadline_type", "definition_of_done"],
+      "transitions": {
+        "default": "q-what-scares-you"
+      }
+    },
+
+    "q-what-scares-you": {
+      "id": "q-what-scares-you",
+      "phase": "risk",
+      "question": "What's the part you're least sure about? The thing where you think 'I hope this works' instead of 'I know how to do this.'",
+      "purpose": "The uncertainty is where the architecture risk lives. If they're uncertain about the data model, that's where the spike goes. If they're uncertain about a third-party API, that's the integration to test first. Build the scary part first, not last.",
+      "follow_ups": [
+        "'Have you seen anyone else solve that specific part? How did they do it?'",
+        "'What happens to the project if that part doesn't work?'"
+      ],
+      "extracts": ["primary_risk", "uncertainty_areas", "fallback_options"],
+      "transitions": {
+        "default": "q-what-would-make-you-restart"
+      }
+    },
+
+    "q-what-would-make-you-restart": {
+      "id": "q-what-would-make-you-restart",
+      "phase": "risk",
+      "question": "Six months from now, what would make you throw this away and start over? What's the decision you could make today that you'd regret most?",
+      "purpose": "This surfaces the ceiling anxiety. The answer reveals which decisions they know are load-bearing but don't have enough information to make confidently. These are the decisions the corpus should inform most heavily.",
+      "follow_ups": [
+        "'Is that a tool choice, an architecture choice, or a scope choice?'",
+        "'What would you need to know to make that decision confidently?'"
+      ],
+      "extracts": ["ceiling_anxiety", "load_bearing_decisions", "information_gaps"],
+      "transitions": {
+        "default": "q-budget-and-cost"
+      }
+    },
+
+    "q-budget-and-cost": {
+      "id": "q-budget-and-cost",
+      "phase": "constraints",
+      "question": "What's the cost ceiling? Not just money — what are you willing to spend in time, complexity, and operational burden?",
+      "purpose": "A free tool with high operational burden costs more than a paid tool that just works. Separate one-time cost (setup) from recurring cost (maintenance, hosting, licensing). Most people think about money and forget about maintenance burden.",
+      "follow_ups": [
+        "'Are you okay paying for managed services, or does everything need to be free/self-hosted?'",
+        "'How much time per week can you spend on ops and maintenance after this ships?'"
+      ],
+      "extracts": ["budget_money", "budget_time", "ops_tolerance", "managed_vs_selfhosted"],
+      "transitions": {
+        "default": "q-what-didnt-i-ask"
+      }
+    },
+
+    "q-what-didnt-i-ask": {
+      "id": "q-what-didnt-i-ask",
+      "phase": "catchall",
+      "question": "What didn't I ask that I should have? What's the constraint or context that changes everything and I haven't surfaced yet?",
+      "purpose": "The most important question. Every interview has blind spots. The person being interviewed knows things about their domain, their users, their constraints that no question bank can anticipate. This is the escape hatch for unknown unknowns.",
+      "follow_ups": [
+        "If they say 'nothing': 'Think about the last project that went sideways. What was the thing nobody asked about upfront?'",
+        "If they surface something new: follow the thread. This is often the most valuable part of the interview."
+      ],
+      "extracts": ["unknown_unknowns", "domain_specific_constraints"],
+      "transitions": {
+        "has_new_constraint": "ROUTE_TO_RELEVANT_BRANCH",
+        "default": "synthesis"
+      }
+    },
+
+    "synthesis": {
+      "id": "synthesis",
+      "phase": "output",
+      "type": "terminal",
+      "description": "All constraints surfaced. Produce the constraint profile and route to corpus for architecture synthesis.",
+      "output": "constraint_profile"
+    }
+  },
+
+  "phases": {
+    "goal": {
+      "order": 1,
+      "purpose": "What are you building and why. Separate the pain from the stated solution."
+    },
+    "landscape": {
+      "order": 2,
+      "purpose": "What exists already. Prior work, integrations, learned requirements."
+    },
+    "constraints": {
+      "order": 3,
+      "purpose": "Data model, deployment, team, compliance, budget. The shape of the solution space."
+    },
+    "scoping": {
+      "order": 4,
+      "purpose": "What's v1 vs v2. Time horizon. Proof point for the architecture."
+    },
+    "risk": {
+      "order": 5,
+      "purpose": "What scares you. Where the ceiling anxiety lives. Load-bearing decisions."
+    },
+    "catchall": {
+      "order": 6,
+      "purpose": "What didn't we cover. Unknown unknowns. Domain-specific constraints."
+    },
+    "output": {
+      "order": 7,
+      "purpose": "Synthesize constraint profile. Route to corpus for architecture generation."
+    }
+  },
+
+  "corpus_routing": {
+    "description": "After interview, the constraint profile determines which corpus queries fire. Each extracted constraint maps to specific builder judgment patterns.",
+    "mappings": [
+      {
+        "constraint": "data_model_type",
+        "corpus_query": "When to use {type} vs alternatives. Failure modes of {type} at scale. Migration paths from {type}."
+      },
+      {
+        "constraint": "ceiling_anxiety",
+        "corpus_query": "Builder patterns for {decision_type}. How {builder} approaches {specific_anxiety}. What happens when this choice is wrong."
+      },
+      {
+        "constraint": "prior_versions",
+        "corpus_query": "Versioning patterns. What to preserve from prior versions. How to avoid repeating the same ceiling."
+      },
+      {
+        "constraint": "team_capability",
+        "corpus_query": "Architecture patterns for {skill_level} teams. Tools that match {stack} familiarity. Maintenance burden of each option."
+      },
+      {
+        "constraint": "compliance_frameworks",
+        "corpus_query": "Security patterns for {framework}. Data isolation approaches. What builders actually do (not just what auditors check)."
+      }
+    ]
+  }
+}
