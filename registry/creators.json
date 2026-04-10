@@ -1,0 +1,35 @@
+{
+  "$schema": "./schema/creators.schema.json",
+  "creators": [
+    {
+      "slug": "andrej-karpathy",
+      "name": "Andrej Karpathy",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@AndrejKarpathy",
+          "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+          "playlist_id": null
+        }
+      },
+      "topics": ["ai", "ml", "building", "systems"],
+      "priority": "high",
+      "notes": "Deep builder judgment. Extract decision patterns, not just content.",
+      "added": "2026-04-10",
+      "status": "active"
+    },
+    {
+      "slug": "ethan-mollick",
+      "name": "Ethan Mollick",
+      "platforms": {
+        "substack": {
+          "url": "https://www.oneusefulthing.org/"
+        }
+      },
+      "topics": ["ai", "education", "productivity"],
+      "priority": "high",
+      "notes": "Practical AI applications. Good for non-technical audience.",
+      "added": "2026-04-10",
+      "status": "active"
+    }
+  ]
+}
