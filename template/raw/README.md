@@ -9,46 +9,95 @@ No separate database. The filesystem is the database. LEANN is the search layer.
 raw/
   youtube/{creator-slug}/          # YouTube video transcripts
     {date}-{video-slug}.md
-  podcasts/{show-slug}/            # Podcast transcripts  
+  twitter/{creator-slug}/          # Tweet threads and standalone tweets
+    {date}-{tweet-id}-{slug}.md
+  podcasts/{creator-slug}/         # Podcast episode transcripts
     {date}-{episode-slug}.md
-  articles/                        # Web-clipped articles
+  articles/{creator-slug}/         # Web-clipped articles, Substack posts
     {date}-{slug}.md
   transcripts/                     # Meeting/session transcripts
     {date}-{slug}.md
-  books/                           # Book notes/excerpts
-    {slug}/
 ```
 
-## Frontmatter Standard
+## Frontmatter by Source
 
-Every raw file MUST have this frontmatter:
+Scripts produce these fields automatically. You don't need to write frontmatter by hand unless you're dropping in files manually.
+
+### YouTube
+```yaml
+---
+title: "Video Title"
+creator: "creator-slug"
+source_type: youtube
+date: 2026-04-10         # upload date (or 'undated' if unavailable)
+ingested: 2026-04-10
+url: "https://youtube.com/watch?v=..."
+video_id: "abc123"
+duration: "1:23:45"
+transcript_method: "youtube-captions"
+segment_count: 1500
+---
+```
+
+### Twitter
+```yaml
+---
+title: "creator thread — First 100 chars of tweet..."
+creator: "creator-slug"
+date: 2026-04-10T20:10:52.000Z
+url: "https://x.com/handle/status/123"
+platform: twitter
+source_type: twitter
+tweet_id: "123"
+thread_id: "123"
+is_thread: true          # or false for standalone
+tweet_count: 3
+ingested: 2026-04-10
+---
+```
+
+### Podcasts
+```yaml
+---
+title: "Episode Title"
+creator: "creator-slug"
+platform: podcast
+date: "2026-04-10"
+feed_url: "https://example.com/feed/"
+episode_number: 42
+segments: 4              # number of whisper chunks
+---
+```
+
+### Manual files (articles, transcripts)
+If you're dropping in files manually (Obsidian Web Clipper, meeting notes, etc.), add at minimum:
 
 ```yaml
 ---
-title: "Episode/Video Title"
-source_type: youtube | podcast | article | transcript | book
-creator: "Creator Name"
-creator_slug: "creator-name"        # for filesystem grouping
-date: 2026-04-10                    # original publish/record date
-ingested: 2026-04-10                # when we added it
-url: "https://..."                  # source URL if applicable
-duration: "1h 23m"                  # for audio/video
-status: raw | extracted | indexed   # processing stage
-topics: [systems-thinking, ai, building]
-meta_patterns: []                   # filled after extraction
+title: "Title"
+creator: "creator-slug"  # or "manual" for your own notes
+source_type: article      # or transcript
+date: 2026-04-10
 ---
 ```
 
 ## Processing Pipeline
 
-1. **raw** — File ingested, frontmatter added
-2. **extracted** — Meta patterns pulled out (the skeletal layer, not the surface content)
-3. **indexed** — Chunked and added to LEANN index
+1. **Ingested** — file downloaded, frontmatter added, logged in `registry/ingest-log.jsonl`
+2. **Indexed** — chunked and added to LEANN semantic index via `scripts/index.js`
 
-## Tracking
+## Finding content
 
-No database needed. To see what's ingested:
-- `find raw/ -name "*.md" | head` — all files
-- `grep -r "creator:" raw/ --include="*.md" -h | sort -u` — all creators  
-- `grep -r "status: raw" raw/ --include="*.md" -l` — unprocessed files
-- LEANN search for semantic queries across everything
+```bash
+# All files
+find raw/ -name "*.md" | wc -l
+
+# By creator
+ls raw/youtube/andrej-karpathy/
+
+# By source type
+find raw/twitter/ -name "*.md"
+
+# Semantic search across everything
+leann search btd-my-instance "how to think about building a project"
+```
