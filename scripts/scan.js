@@ -87,7 +87,7 @@ function scanTwitter(creator) {
 
   console.log(`   🐦 Twitter: @${tw.handle}`);
   try {
-    const cmd = `bird user-tweets ${tw.handle} --json --count 200 2>/dev/null`;
+    const cmd = `bird user-tweets ${tw.handle} --json --count 50 --no-emoji 2>/dev/null | sed -n '/^\\[/,$p'`;
     const output = execSync(cmd, { maxBuffer: 50 * 1024 * 1024, encoding: 'utf-8', timeout: 60000 });
     const tweets = JSON.parse(output);
     const items = (Array.isArray(tweets) ? tweets : []).map(t => ({

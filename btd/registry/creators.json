@@ -11,7 +11,7 @@
           "playlist_id": null
         },
         "twitter": {
-          "handle": "kaboraseven"
+          "handle": "karpathy"
         }
       },
       "topics": [
@@ -24,15 +24,16 @@
       "notes": "Deep builder judgment. Extract decision patterns, not just content.",
       "added": "2026-04-10",
       "status": "active",
-      "catalog_count": 17,
-      "last_scanned": "2026-04-10T18:28:00.095Z"
+      "catalog_count": 0,
+      "last_scanned": "2026-04-10T18:38:21.559Z"
     },
     {
       "slug": "ethan-mollick",
       "name": "Ethan Mollick",
       "platforms": {
         "substack": {
-          "url": "https://www.oneusefulthing.org/"
+          "url": "https://www.oneusefulthing.org/",
+          "type": "substack"
         }
       },
       "topics": [
@@ -64,6 +65,26 @@
       "status": "active",
       "catalog_count": 233,
       "last_scanned": "2026-04-10T18:28:09.204Z"
+    },
+    {
+      "slug": "nate-jones",
+      "name": "Nate Jones",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@NateBJones"
+        }
+      },
+      "topics": [
+        "ai",
+        "building",
+        "product"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 887,
+      "last_scanned": "2026-04-10T18:35:21.298Z"
     }
   ]
 }
