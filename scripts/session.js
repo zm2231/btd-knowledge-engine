@@ -20,7 +20,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
 const yaml = require('js-yaml');
 
 const args = process.argv.slice(2);
@@ -80,11 +80,11 @@ function getJournals(id) {
 
 function corpusSearch(query, topK = 5) {
   try {
-    const result = execSync(
-      `leann search ${LEANN_INDEX} "${query.replace(/"/g, '\\"')}" --top-k ${topK} --non-interactive 2>/dev/null`,
-      { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024, timeout: 30000 }
+    return execFileSync(
+      'leann',
+      ['search', LEANN_INDEX, query, '--top-k', String(topK), '--non-interactive'],
+      { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024, timeout: 30000, stdio: ['ignore', 'pipe', 'ignore'] }
     );
-    return result;
   } catch {
     return '(corpus search unavailable — LEANN index may not be built)';
   }

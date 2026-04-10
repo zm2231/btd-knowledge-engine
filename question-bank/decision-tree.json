@@ -1,4 +1,5 @@
 {
+  "_deprecated": "The decision tree is no longer the canonical interview definition. Use skills/btd-intake/SKILL.md instead. This file is retained for reference only.",
   "$schema": "question-bank-v1",
   "description": "Builder intake interview — directed graph of questions that surface constraints most first-timers skip. Derived from system-architecture SKILL.md methodology.",
   "entry": "q-what-are-you-building",

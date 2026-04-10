@@ -10,7 +10,7 @@
  *   node scripts/scan.js --instance my-instance --all
  */
 
-const { execSync } = require('child_process');
+const { execSync, execFileSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const { scanSubstackCatalog } = require('./ingest-substack.js');
@@ -146,8 +146,12 @@ function scanTwitter(creator) {
 
   console.log(`   🐦 Twitter: @${tw.handle}`);
   try {
-    const cmd = `bird user-tweets ${tw.handle} --json --count ${twitterCount} --no-emoji 2>/dev/null`;
-    const output = execSync(cmd, { maxBuffer: 50 * 1024 * 1024, encoding: 'utf-8', timeout: 60000 });
+    const output = execFileSync('bird', ['user-tweets', tw.handle, '--json', '--count', String(twitterCount), '--no-emoji'], {
+      maxBuffer: 50 * 1024 * 1024,
+      encoding: 'utf-8',
+      timeout: 60000,
+      stdio: ['ignore', 'pipe', 'ignore'],
+    });
     const tweets = parseJsonArrayFromMixedOutput(output);
     const items = (Array.isArray(tweets) ? tweets : []).map(t => {
       const replyCount = t.reply_count ?? t.replyCount ?? 0;

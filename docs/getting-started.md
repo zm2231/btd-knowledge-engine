@@ -4,6 +4,15 @@ You have Claude Code. You want to use the knowledge engine. Here's everything, s
 
 ## Setup (one time, ~5 minutes)
 
+| Goal                        | Required                          |
+|-----------------------------|-----------------------------------|
+| Search existing btd corpus  | npm + leann                       |
+| Add YouTube creators        | + yt-dlp                          |
+| Add Twitter creators        | + bird                            |
+| Add podcasts                | + podcast-dl (npm) + whisper      |
+| Add Substack                | + sbstck-dl (optional, RSS works) |
+| Add code repos              | + git (usually pre-installed)     |
+
 Open your terminal (Claude Code opens one for you) and run these one at a time:
 
 ```bash

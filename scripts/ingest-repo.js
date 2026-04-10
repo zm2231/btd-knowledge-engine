@@ -8,7 +8,7 @@
  *   node scripts/ingest-repo.js https://github.com/user/repo --scan
  */
 
-const { execSync } = require('child_process');
+const { execSync, execFileSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const { appendEntry, buildEntry, readEntries, relativeFile } = require('./ingest-log.js');
@@ -184,12 +184,12 @@ function cloneOrUpdateGitHubRepo(url) {
 
   if (fs.existsSync(path.join(cloneDir, '.git'))) {
     console.log(`🔄 Updating cached clone: ${path.relative(ROOT, cloneDir)}`);
-    execSync('git fetch --depth 1 origin', { cwd: cloneDir, stdio: 'inherit', timeout: 120000 });
-    execSync('git reset --hard FETCH_HEAD', { cwd: cloneDir, stdio: 'inherit', timeout: 120000 });
+    execFileSync('git', ['fetch', '--depth', '1', 'origin'], { cwd: cloneDir, stdio: 'inherit', timeout: 120000 });
+    execFileSync('git', ['reset', '--hard', 'FETCH_HEAD'], { cwd: cloneDir, stdio: 'inherit', timeout: 120000 });
   } else {
     ensureDir(TMP_REPO_DIR);
     console.log(`📦 Cloning ${canonicalUrl}`);
-    execSync(`git clone --depth 1 "${canonicalUrl}" "${cloneDir}"`, { stdio: 'inherit', timeout: 180000 });
+    execFileSync('git', ['clone', '--depth', '1', canonicalUrl, cloneDir], { stdio: 'inherit', timeout: 180000 });
   }
 
   return {
