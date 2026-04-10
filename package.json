@@ -20,7 +20,14 @@
     "type": "git",
     "url": "git+https://github.com/zm2231/btd-knowledge-engine.git"
   },
-  "keywords": ["knowledge-base", "youtube", "transcripts", "leann", "semantic-search", "personalized-learning"],
+  "keywords": [
+    "knowledge-base",
+    "youtube",
+    "transcripts",
+    "leann",
+    "semantic-search",
+    "personalized-learning"
+  ],
   "author": "BTD Group",
   "license": "MIT",
   "bugs": {
@@ -28,6 +35,7 @@
   },
   "homepage": "https://github.com/zm2231/btd-knowledge-engine#readme",
   "dependencies": {
+    "js-yaml": "^4.1.1",
     "podcast-dl": "^11.7.3",
     "youtube-transcript-plus": "^2.0.0"
   }

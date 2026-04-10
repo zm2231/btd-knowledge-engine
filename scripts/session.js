@@ -21,6 +21,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const yaml = require('js-yaml');
 
 const args = process.argv.slice(2);
 const action = args[0];
@@ -89,27 +90,73 @@ function corpusSearch(query, topK = 5) {
 }
 
 function extractProfileFields(profileContent) {
-  // Pull key fields from the profile for query routing
+  // Parse the profile as YAML. Profiles may have:
+  // 1. Pure YAML (from SKILL.md output)
+  // 2. YAML frontmatter (---\n...\n---) + markdown body with YAML blocks
+  // 3. Markdown with embedded YAML-ish content
+  
+  let parsed = {};
+  
+  // Try 1: strip frontmatter and parse the body as YAML
+  const fmMatch = profileContent.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)/);
+  if (fmMatch) {
+    // Parse frontmatter
+    try { Object.assign(parsed, yaml.load(fmMatch[1]) || {}); } catch {}
+    // Parse body as YAML (profiles are YAML with markdown headers as comments)
+    const body = fmMatch[2]
+      .replace(/^#[^\n]*/gm, '')  // strip markdown headers
+      .replace(/^\s*\n/gm, '\n'); // collapse blank lines
+    try { Object.assign(parsed, yaml.load(body) || {}); } catch {}
+  }
+  
+  // Try 2: parse the whole thing as YAML (no frontmatter)
+  if (Object.keys(parsed).length === 0) {
+    try { parsed = yaml.load(profileContent) || {}; } catch {}
+  }
+  
+  // Flatten nested fields for easy access
   const fields = {};
-  const patterns = {
-    actual_goal: /actual_goal:\s*"?([^"\n]+)"?/,
-    goal_type: /goal_type:\s*(\S+)/,
-    calibrated_level: /calibrated_level:\s*"?([^"\n]+)"?/,
-    key_gap: /key_gap:\s*"?([^"\n]+)"?/,
-    domain: /domain:\s*"?([^"\n]+)"?/,
-  };
-  for (const [key, re] of Object.entries(patterns)) {
-    const match = profileContent.match(re);
-    if (match) fields[key] = match[1].trim();
+  
+  // Top-level fields
+  fields.user_id = parsed.user_id;
+  fields.stated_goal = parsed.stated_goal;
+  fields.actual_goal = parsed.actual_goal;
+  fields.goal_type = parsed.goal_type;
+  fields.hard_truth = parsed.hard_truth;
+  
+  // Nested: current_state
+  const cs = parsed.current_state || {};
+  fields.domain = cs.domain;
+  fields.claimed_level = cs.claimed_level;
+  fields.calibrated_level = cs.calibrated_level;
+  fields.evidence = cs.evidence;
+  fields.key_gap = cs.key_gap;
+  
+  // Nested: blind_spots (array)
+  fields.blind_spots = Array.isArray(parsed.blind_spots) ? parsed.blind_spots : [];
+  
+  // Nested: constraints
+  const con = parsed.constraints || {};
+  fields.time_per_week = con.time_per_week;
+  fields.time_evidence = con.time_evidence;
+  fields.skills = Array.isArray(con.skills) ? con.skills : [];
+  fields.tools = Array.isArray(con.tools) ? con.tools : [];
+  fields.accountability_pattern = con.accountability_pattern;
+  fields.budget = con.budget;
+  
+  // Nested: experiment
+  const exp = parsed.experiment || {};
+  fields.experiment_hypothesis = exp.hypothesis;
+  fields.experiment_content = Array.isArray(exp.content) ? exp.content : [];
+  fields.experiment_action = exp.action;
+  fields.experiment_check = exp.check;
+  fields.experiment_trap = exp.trap_to_avoid;
+  
+  // Clean: remove undefined values
+  for (const k of Object.keys(fields)) {
+    if (fields[k] === undefined || fields[k] === null) delete fields[k];
   }
-  // Blind spots
-  const blindSpots = [];
-  const bsRegex = /blind_spots:\s*\n((?:\s*-\s*"[^"]+"\n?)+)/;
-  const bsMatch = profileContent.match(bsRegex);
-  if (bsMatch) {
-    bsMatch[1].replace(/-\s*"([^"]+)"/g, (_, v) => blindSpots.push(v));
-  }
-  fields.blind_spots = blindSpots;
+  
   return fields;
 }
 
