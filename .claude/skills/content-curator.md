@@ -1,0 +1,1 @@
+../../skills/content-curator/SKILL.md

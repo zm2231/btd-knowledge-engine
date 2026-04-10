@@ -56,6 +56,7 @@ These skills auto-activate based on the user's message and profile state. Read t
 2. **`/btd-reentry`** (`skills/btd-intake/RE-ENTRY.md`) — Returning user protocol. Load profile + experiments, run check-in, update profile, generate next experiment. **Default for any user who has a profile** — this is the common case.
 3. **`/wiki-compiler`** (`skills/wiki-compiler/SKILL.md`) — Wiki maintenance. Compile raw sources into structured wiki pages (concepts, topics, creators). Run after ingesting new content or when wiki lint shows gaps. **Proactive — do this without being asked when new content arrives.**
 4. **`/btd-ingest`** (`skills/btd-ingest/SKILL.md`) — Content operations agent. Register creators, scan catalogs, ingest content, compile wiki, rebuild index, link to user profiles. Can be invoked as a subagent from another Claude Code instance.
+5. **`/content-curator`** (`skills/content-curator/SKILL.md`) — Decide what to ingest. Evaluates creators and content against user profiles, identifies corpus gaps, recommends what to add and what to skip. Use when someone asks "what should we add" or when intake interviews reveal topics the corpus can't serve.
 
 Skills are available as `/slash-commands` in Claude Code. They're symlinked from `.claude/skills/` to their source files in `skills/`.
 

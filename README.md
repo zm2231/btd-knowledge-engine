@@ -8,258 +8,196 @@ Register the creators you actually follow. The system catalogs everything they'v
 
 Then it runs you through an interview that figures out who you are, where you're at, and what you're not thinking about. Same corpus, different people, completely different output. The interview produces a constraint profile that routes everything; which content surfaces, how it's explained, what experiments get generated.
 
-## What You Need
-
-**Node.js 20+** and **npm**. That's the only hard requirement. Everything else is optional based on what sources you want to ingest and what you want to do.
+## Get Started
 
 ```bash
 git clone https://github.com/zm2231/btd-knowledge-engine.git
 cd btd-knowledge-engine
-npm install
+npm install && npm link
 ```
 
-### CLI Tools
-
-| Tool | What it does | Install | When you need it |
-|---|---|---|---|
-| **yt-dlp** | YouTube metadata and playlist scanning | `brew install yt-dlp` or `pip install yt-dlp` | Ingesting YouTube |
-| **LEANN** | Semantic vector search across all content | `pip install leann` | Search (core to everything) |
-| **bird** | Twitter/X; pull tweets, threads, bookmarks | `brew install steipete/tap/bird` | Twitter sources |
-| **podcast-dl** | Podcast RSS feed listing and episode download | Included in `npm install` | Podcast sources |
-| **sbstck-dl** | Substack article download | `go install github.com/alexferrari88/sbstck-dl@latest` | Substack sources (falls back to RSS if unavailable) |
-| **lightning-whisper-mlx** | Audio transcription (fastest on Apple Silicon) | `pip install lightning-whisper-mlx` | Podcast transcription (preferred) |
-| **whisper-cli** | Audio transcription (whisper.cpp) | `brew install whisper-cpp` (auto-downloads model) | Podcast transcription (fallback) |
+Then:
 
 ```bash
-node --version        # 20+
-yt-dlp --version      # any recent version
-leann list            # should run without error
-bird --version        # optional, 0.8+
+btd start
 ```
 
-### Whisper Setup (for podcasts)
+That's it. It detects your username, creates your profile directory, and tells you what to do next. Two paths from here:
 
-Podcast ingestion downloads audio and transcribes locally. The script auto-detects the best available backend:
+**Path A (recommended):** Open Claude Code in this repo and say "I'm new." Claude reads CLAUDE.md, sees you have no profile, and runs a 15-minute intake interview. The interview pushes back, probes, and calibrates. It produces a constraint profile that personalizes everything after that.
 
-1. **lightning-whisper-mlx** (preferred) — native Apple Silicon, fastest. `pip install lightning-whisper-mlx`
-2. **whisper-cli** (fallback) — whisper.cpp. `brew install whisper-cpp`. Auto-downloads `ggml-base.en` model on first use.
-3. **Any OpenAI-compatible API** — set `WHISPER_URL` env var to override.
+**Path B:** Run `btd session intake <your-name>` from the CLI.
+
+Either way, you end up with a profile. After that:
 
 ```bash
-# Most users: just install MLX whisper
-pip install lightning-whisper-mlx
-
-# Or use a remote endpoint
-export WHISPER_URL="http://your-server:8080/v1/audio/transcriptions"
-
-# Or use a larger model for better accuracy
-export WHISPER_MLX_MODEL="small"   # base (default), small, medium, large-v3
+btd me                    # your profile, current experiment, what to do next
+btd search "your query"   # search the corpus
+btd status                # what's in the corpus
 ```
 
-## Five Minutes to Working
+## What's In The Corpus
 
-```bash
-# 1. Create your instance
-node scripts/init.js my-kb
+Run `btd status` for live numbers. The corpus currently spans 16 creators across 6 platforms, curated to serve different types of learners:
 
-# 2. Register a creator and scan everything they've published
-node scripts/add-creator.js karpathy "Andrej Karpathy" \
-  --youtube "https://www.youtube.com/@AndrejKarpathy" \
-  --twitter karpathy \
-  --topics "ai,ml,building" \
-  --instance my-kb --scan
-
-# 3. Pull down the top 10 by views
-node scripts/batch-ingest.js karpathy --limit 10 --top --instance my-kb
-
-# 4. Build the search index
-node scripts/index.js --instance my-kb
-
-# 5. Search it
-leann search btd-my-kb "how to approach building something new"
-```
-
-That's it. Semantic search across 10 transcripts with timed segments. The whole thing takes about 90 seconds.
-
-## The User Flow
-
-The ingestion pipeline is the foundation, but the product is what happens when a person shows up. Three flows, all orchestrated through `session.js`:
-
-### 1. New User Intake
-
-```bash
-node scripts/session.js intake sarah
-```
-
-Assembles the SKILL.md interview (5 phases, non-sycophantic, calibrates rather than trusts self-assessment) and gives you everything you need to run it in Claude. The interview produces a constraint profile: what they actually want, where they actually are, what they're not thinking about, and what their real constraints look like.
-
-```bash
-# After the interview, save the profile
-node scripts/profile.js save sarah --file profile.yaml
-```
-
-### 2. Generate Experiment
-
-```bash
-node scripts/session.js experiment sarah
-```
-
-Loads the profile, searches the corpus using the person's gaps and blind spots, pulls relevant content, and packages it all with the experiment card template. Give it to Claude and it generates a time-boxed, testable experiment: specific content to consume, specific exercises, a hypothesis, and how to know if it worked.
-
-### 3. Check-in (Returning User)
-
-```bash
-node scripts/session.js checkin sarah
-```
-
-Loads the profile, the latest experiment, experiment history, and runs corpus searches targeted at whatever gap the experiment was addressing. Hands it to Claude with the RE-ENTRY.md protocol: figure out what happened, update the profile, generate the next experiment.
-
-### Quick Status
-
-```bash
-node scripts/session.js status sarah
-```
-
-```
-sarah
-────────────────────────────────────────
-Goal: Evaluate vendor AI claims for her team
-Type: learn
-Level: pre-beginner in AI/ML fundamentals
-Gap: No mental model for how any of this works
-Blind spots: 3
-Experiments: 1
-  Latest: 001-neural-network-basics.md
-    Status: active | Outcome: null
-
-Next action:
-  → Check in: node scripts/session.js checkin sarah
-```
-
-## How Tracking Works
-
-Two layers for content, one for users.
-
-**Catalog**: everything a creator has published. Metadata only, no downloads. Built by `scan.js`.
-
-**Ingest log**: what you've actually downloaded, transcribed, and indexed. Append-only JSONL. Scripts read this for dedup.
-
-**User profiles**: constraint profile YAML + experiment cards + journal. Managed by `profile.js`, change history tracked in JSONL.
-
-```bash
-node scripts/status.js          # content dashboard
-node scripts/profile.js list    # all users
-```
-
-## All Scripts
-
-Every script takes `--instance <name>` (default: `btd`).
-
-### Content Pipeline
-| Script | What | Key flags |
+| Need | Creator | What you get |
 |---|---|---|
-| `init.js` | Create a new instance | |
-| `add-creator.js` | Register a creator with any platform | `--youtube`, `--twitter`, `--podcast`, `--substack`, `--topics`, `--scan` |
-| `scan.js` | Catalog published content (no download) | `--all`, `--youtube`, `--twitter`, `--podcast`, `--substack`, `--repo` |
-| `batch-ingest.js` | Batch download YouTube transcripts | `--limit N`, `--top`, `--dry-run` (YouTube only) |
-| `ingest-youtube.js` | Ingest a single YouTube URL | `--creator <slug>` |
-| `ingest-twitter.js` | Ingest tweets from catalog | `--limit N`, `--dry-run` |
-| `ingest-podcast.js` | Download + transcribe podcast episodes | `--feed <url>`, `--limit N`, `--list`, `--file <mp3>` |
-| `ingest-substack.js` | Download Substack articles | `--scan`, `--limit N` |
-| `ingest-repo.js` | Index a codebase (local path or GitHub URL) | `--scan` (preview), `--file-types` |
-| `index.js` | Build/update LEANN semantic index | `--force` |
-| `status.js` | Content dashboard (creators, catalogs, ingestion) | |
+| How to actually learn | Cal Newport, Ali Abdaal | Deep work, spaced repetition, focus systems |
+| Neuroscience of focus | Andrew Huberman | Dopamine, habits, studying protocols, ADHD |
+| Build habits that stick | James Clear | Atomic habits, identity-based change, 1% rule |
+| Understand AI/ML | Andrej Karpathy, 3Blue1Brown | From neural nets to attention, with working code |
+| AI for non-technical people | Ethan Mollick | How to actually use these tools at work |
+| Build and ship things | Paul Graham | Essays on startups, ideas, ambition, maker schedule |
+| Leadership and teams | Simon Sinek | Infinite game, empathy, accountability |
+| Product and growth | Nate Jones, Lenny Rachitsky | AI business analysis, product strategy |
+| Long-form AI interviews | Lex Fridman | Sam Altman, Karpathy, Hassabis, LeCun, Demis |
+| Mental models | Shane Parrish | Decision-making, thinking frameworks (cataloged) |
 
-### User Flow
-| Script | What |
-|---|---|
-| `session.js intake <user>` | Start intake interview |
-| `session.js experiment <user>` | Generate next experiment (profile + corpus) |
-| `session.js checkin <user>` | Returning user check-in |
-| `session.js search <user> "<query>"` | Profile-aware corpus search |
-| `session.js status <user>` | User status overview |
-| `profile.js save <user>` | Save constraint profile (`--file` or `--stdin`) |
-| `profile.js load <user>` | Print profile |
-| `profile.js list` | List all users |
-| `profile.js summary <user>` | Profile + experiment status |
-| `profile.js update <user>` | Update a field (`--field`, `--value`) |
-| `profile.js history <user>` | Profile change log |
+Every creator maps to a constraint profile field. "I can't focus" routes to Newport and Huberman. "I want to understand how LLMs work" routes to Karpathy's video plus his actual code. "I'm a manager trying to use AI" routes to Mollick. The corpus isn't random; it's designed to serve the profiles the intake interview produces.
 
-## Sources
+## The Three Layers
 
-| Source | Catalog | Ingest | Notes |
-|---|---|---|---|
-| **YouTube** | `yt-dlp --flat-playlist` | `youtube-transcript-plus` (captions) | 17 videos in 21s. No audio download needed. |
-| **Twitter/X** | `bird user-tweets --json` | Thread grouping into markdown | Rate limited; use small counts |
-| **Podcasts** | `podcast-dl --list json` | Download mp3 + whisper transcription | 90MB episode transcribed in ~2.5min |
-| **Substack** | `sbstck-dl` or RSS fallback | Markdown articles | Full HTML available in RSS feeds |
-| **Repos/Code** | `ingest-repo.js --scan` | `ingest-repo.js` (clones + LEANN index) | GitHub URL or local path. Code + docs in same index as talks. |
-| **Articles** | Manual | Drop `.md` in `raw/articles/` | Obsidian Web Clipper works well |
-| **Transcripts** | Manual | Drop `.md` in `raw/transcripts/` | Meeting notes, group sessions |
+### 1. Raw Content (what's ingested)
 
-## The Wiki Layer
+YouTube transcripts, tweets, Substack articles, Paul Graham essays, podcast transcriptions, code repos. All markdown with frontmatter. All searchable via LEANN semantic search.
+
+### 2. The Wiki (what's compiled)
 
 Most knowledge tools stop at search. You ask a question, they find relevant chunks, the LLM stitches an answer together from fragments. Every question starts from scratch. Nothing accumulates.
 
-The wiki (`btd/wiki/`) is different. After content gets ingested, Claude compiles it into structured pages: concept pages that synthesize across sources, creator profiles that track contributions, topic overviews that connect ideas. The cross-references are already built. The contradictions are already flagged. When you ask a question, the wiki already has the synthesis; it doesn't need to re-derive it from chunks every time.
+The wiki is different. After content gets ingested, Claude compiles it into structured pages: concept pages that synthesize across sources, creator profiles that track contributions, topic overviews that connect ideas. The cross-references are already built. When you ask a question, the wiki already has the synthesis.
 
-This follows the [Karpathy LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): raw data from sources gets compiled by the LLM into a persistent wiki, then operated on for Q&A. The wiki compounds over time. Your explorations and answers get filed back into it. The `skills/wiki-compiler/SKILL.md` tells Claude how to maintain it.
+This follows the [Karpathy LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): raw data from sources gets compiled by the LLM into a persistent wiki, then operated on for Q&A. Your explorations get filed back into it. The wiki compounds over time.
 
-## The Interview Layer
+### 3. The Interview (what's personalized)
 
 The intake interview pushes back, probes, and calibrates. It doesn't take your word for it when you say you're "intermediate at AI." It asks you a question an intermediate would answer easily. If you can't, it adjusts silently.
 
-The interview produces a constraint profile. The constraint profile routes everything; which wiki pages surface, which raw content gets recommended, how explanations are phrased. Different profiles get fundamentally different output from the same corpus.
+The interview produces a constraint profile. The constraint profile routes everything. Different profiles get fundamentally different output from the same corpus.
 
 My theory is that this is where most "personalized AI" products fail. They skip the interview, or they do a shallow one, and everyone gets the same output. Without the right questions, the best corpus in the world produces generic answers.
+
+## The CLI
+
+Everything goes through `btd`. Install globally with `npm link`.
+
+### You (the user)
+
+```bash
+btd start                              # first-run setup
+btd me                                 # your profile + current experiment
+btd session intake <user>              # run the intake interview
+btd session checkin <user>             # returning user check-in
+btd search <user> "query"              # search corpus for you
+```
+
+### Content (adding sources)
+
+```bash
+btd add <slug> "Name" --youtube <url>  # register a creator
+btd scan <slug>                        # catalog their content (no download)
+btd scan --all                         # catalog all creators
+btd ingest <slug> --limit 10 --top     # pull YouTube transcripts
+btd ingest:twitter <slug>              # pull tweets
+btd ingest:podcast <slug>              # download + transcribe episodes
+btd ingest:substack <slug>             # pull articles
+btd ingest:repo <github-url>           # index a code repo
+btd index                              # rebuild the search index
+btd status                             # what's in the corpus
+```
+
+### Wiki (compiled knowledge)
+
+```bash
+btd wiki status                        # what's compiled vs pending
+btd wiki lint                          # find gaps and broken links
+btd wiki index                         # rebuild wiki index
+```
+
+### Profiles
+
+```bash
+btd profile list                       # all registered users
+btd profile show <user>                # full profile summary
+```
+
+All commands accept `--instance <name>` (default: `btd`).
 
 ## Browse in Obsidian
 
 The repo is pre-configured as an Obsidian vault. Open it in Obsidian and you get graph view of the wiki, backlinks between concepts, and a browsable file explorer across raw sources, wiki pages, and user profiles. The wiki's `[[wiki-links]]` render as clickable cross-references. No search needed; follow the connections.
 
+## Claude Code Skills
+
+Open Claude Code in this repo and these skills auto-activate as `/slash-commands`:
+
+| Skill | What it does | When it triggers |
+|---|---|---|
+| `/btd-intake` | Non-sycophantic intake interview (5 phases) | New user, no profile |
+| `/btd-reentry` | Returning user check-in protocol | User has profile + experiments |
+| `/wiki-compiler` | Compile raw sources into wiki pages | After ingestion, proactively |
+| `/btd-ingest` | Content operations agent | Adding creators, ingesting, indexing |
+| `/content-curator` | Decide what to ingest | Corpus planning, gap analysis |
+
+Claude reads CLAUDE.md on session start, checks if you have a profile, and routes to the right skill automatically. You don't need to invoke them manually.
+
+## Adding Content
+
+The system supports 7 source types. Every script is instance-aware (`--instance`).
+
+| Source | How to add | Notes |
+|---|---|---|
+| YouTube | `btd add <slug> "Name" --youtube <url>` then `btd ingest <slug>` | Transcripts via captions, no audio download |
+| Twitter/X | `btd add <slug> "Name" --twitter <handle>` then `btd ingest:twitter <slug>` | Requires `bird` CLI |
+| Podcasts | `btd add <slug> "Name" --podcast <feed-url>` then `btd ingest:podcast <slug>` | Downloads audio + whisper transcription |
+| Substack | `btd add <slug> "Name" --substack <url>` then `btd ingest:substack <slug>` | Full articles via `sbstck-dl` or RSS |
+| Code repos | `btd ingest:repo <github-url>` | Clones + indexes directly into LEANN |
+| Articles | Drop `.md` files in `raw/articles/<creator>/` | Add YAML frontmatter |
+| Transcripts | Drop `.md` files in `raw/transcripts/` | Meeting notes, group sessions |
+
+Scanning catalogs everything published. Ingestion is a human decision. The `/content-curator` skill helps you decide what's worth ingesting.
+
+## Requirements
+
+**Hard requirement:** Node.js 20+ and npm.
+
+Everything else is optional based on what you want to do:
+
+| Goal | What you need |
+|---|---|
+| Search existing corpus | `leann` (`pip install leann`) |
+| Add YouTube creators | `yt-dlp` (`brew install yt-dlp`) |
+| Add Twitter creators | `bird` (`brew install steipete/tap/bird`) |
+| Add podcasts | `podcast-dl` (included) + whisper backend |
+| Add Substack | `sbstck-dl` (optional; RSS works as fallback) |
+| Add code repos | `git` (usually pre-installed) |
+
+For podcast transcription, the script auto-detects the best backend: `lightning-whisper-mlx` (fastest on Apple Silicon) > `whisper-cli` (whisper.cpp) > any OpenAI-compatible API via `WHISPER_URL`.
+
 ## Repo Structure
 
 ```
 btd-knowledge-engine/
+├── bin/btd.js           # CLI wrapper — all commands go through here
+├── .claude/skills/      # Symlinks to skills (slash commands in Claude Code)
 ├── scripts/             # All tooling (instance-aware)
-│   ├── session.js       #   User flow orchestrator (intake, checkin, experiment, search)
-│   ├── profile.js       #   Profile management (save, load, update, history)
-│   ├── add-creator.js   #   Register creators
-│   ├── scan.js          #   Catalog published content
-│   ├── batch-ingest.js  #   YouTube batch download
-│   ├── ingest-*.js      #   Source-specific ingestion (youtube, twitter, podcast, substack)
-│   ├── index.js         #   LEANN index build
-│   ├── status.js        #   Content dashboard
-│   └── init.js          #   Create new instance
-├── skills/              # Claude Code skills (auto-activate based on context)
-│   ├── btd-intake/
-│   │   ├── SKILL.md     #   Non-sycophantic intake interview (5 phases)
-│   │   └── RE-ENTRY.md  #   Returning user check-in protocol
-│   └── wiki-compiler/
-│       └── SKILL.md     #   Wiki compilation and maintenance
+├── skills/              # Claude Code skills
+│   ├── btd-intake/      #   Intake interview + re-entry protocol
+│   ├── btd-ingest/      #   Content operations agent
+│   ├── wiki-compiler/   #   Wiki compilation
+│   └── content-curator/ #   What to ingest decisions
 ├── template/            # Clean starting point for new instances
 ├── btd/                 # Our instance (the BTD group's corpus)
-│   ├── raw/             #   48 docs: YouTube, Twitter, Podcasts, Substack, transcripts
-│   ├── registry/        #   5 creators, 1,643+ items cataloged
+│   ├── raw/             #   117 files: YouTube, Twitter, articles, transcripts
+│   ├── wiki/            #   Compiled knowledge pages
+│   ├── registry/        #   16 creators, catalogs, ingest log
 │   └── users/           #   Constraint profiles + experiment cards
-├── question-bank/       # Interview state machine (needs rewrite for non-technical users)
-├── docs/                # Blueprint, roadmap, architecture
-└── .leann/              # LEANN index (8,164+ chunks)
+├── docs/                # Blueprint, roadmap, getting started
+└── CLAUDE.md            # Runtime instructions (Claude reads this first)
 ```
 
 ## Current State (April 2026)
 
-**Content** (run `node scripts/status.js` for live numbers):
-- Creators span technical and non-technical: Karpathy, 3Blue1Brown, Nate Jones, Mollick, Lex Fridman, Sinek, Abdaal, Lenny Rachitsky + Karpathy code repos
-- All 6 source type pipelines working: YouTube, Twitter, Podcast, Substack, Repos, Manual
-- Cross-source search confirmed: Karpathy's talks about tokenization + his actual minbpe code in same query
-- Retrieval diversity confirmed: productivity queries → Abdaal, leadership → Sinek, technical → Karpathy, product → Lenny
+Run `btd status` for live numbers. The system is functional end-to-end: register a creator, scan their catalog, ingest selectively, compile wiki pages, rebuild the index, run an intake interview, generate experiments, check in, iterate.
 
-**Product:**
-- Intake interview skill (SKILL.md) ready for Max to run
-- Re-entry protocol (RE-ENTRY.md) ready
-- Session orchestrator wires skills + profiles + corpus together
-- Profile management with change tracking
-- Experiment card template with structured outcome YAML for machine consumption
-
-**What's next:** Max runs 3 real people through the intake interview, writes sample outputs by hand, and we build the synthesis pipeline that turns constraint profile + corpus into structured, actionable output. The tech is ready; now we test whether the questions are right.
+What's next: Max runs 3 real people through the intake interview, writes sample outputs by hand, and we build the synthesis pipeline that turns constraint profile plus corpus into structured, actionable output. The tech is ready; now we test whether the questions are right.
