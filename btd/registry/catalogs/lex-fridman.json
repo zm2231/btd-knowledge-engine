@@ -3,7 +3,7 @@
   "scanned_at": "2026-04-10T20:45:23.753Z",
   "creator": "lex-fridman",
   "total": 862,
-  "ingested": 0,
+  "ingested": 6,
   "items": [
     {
       "id": "iKx3gAODybU",
@@ -853,7 +853,7 @@
       "duration_string": "3:04:22",
       "url": "https://www.youtube.com/watch?v=f_lRdkH_QoY",
       "view_count": 16932291,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "PgGKhsWhUu8",
@@ -893,7 +893,7 @@
       "duration_string": "2:20:05",
       "url": "https://www.youtube.com/watch?v=tYrdMjVXyNg",
       "view_count": 12374115,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "zMYvGf7BA9o",
@@ -993,7 +993,7 @@
       "duration_string": "2:16:47",
       "url": "https://www.youtube.com/watch?v=JN3KPFbWCy8",
       "view_count": 14105786,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "co_MeKSnyAo",
@@ -1333,7 +1333,7 @@
       "duration_string": "3:34:58",
       "url": "https://www.youtube.com/watch?v=gPfriiHBBek",
       "view_count": 12892146,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "AaTRHFaaPG8",
@@ -1923,7 +1923,7 @@
       "duration_string": "3:03:33",
       "url": "https://www.youtube.com/watch?v=sY8aFSY2zv4",
       "view_count": 16734016,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "jdIyNMkusLE",
@@ -1953,7 +1953,7 @@
       "duration_string": "3:53:09",
       "url": "https://www.youtube.com/watch?v=T3FC7qIAGZk",
       "view_count": 19759484,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "I845O57ZSy4",

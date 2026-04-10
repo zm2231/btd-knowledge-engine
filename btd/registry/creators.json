@@ -142,7 +142,7 @@
       "added": "2026-04-10",
       "status": "active",
       "catalog_count": 11,
-      "last_scanned": "2026-04-10T20:45:30.090Z"
+      "last_scanned": "2026-04-10T21:26:03.673Z"
     },
     {
       "slug": "simon-sinek",
@@ -219,7 +219,10 @@
             ".md",
             ".json",
             ".yaml",
-            ".yml"
+            ".yml",
+            ".go",
+            ".rs",
+            ".rb"
           ]
         }
       },
@@ -229,7 +232,7 @@
       ],
       "added": "2026-04-10",
       "catalog_count": 19,
-      "last_scanned": "2026-04-10T20:45:51.430Z"
+      "last_scanned": "2026-04-10T21:26:30.823Z"
     },
     {
       "slug": "llm-c",
@@ -246,7 +249,10 @@
             ".md",
             ".json",
             ".yaml",
-            ".yml"
+            ".yml",
+            ".go",
+            ".rs",
+            ".rb"
           ]
         }
       },
@@ -256,7 +262,112 @@
       ],
       "added": "2026-04-10",
       "catalog_count": 23,
-      "last_scanned": "2026-04-10T20:45:51.449Z"
+      "last_scanned": "2026-04-10T21:26:59.031Z"
+    },
+    {
+      "slug": "cal-newport",
+      "name": "Cal Newport",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@CalNewportMedia"
+        }
+      },
+      "topics": [
+        "deep-work",
+        "focus",
+        "productivity",
+        "learning",
+        "knowledge-work"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 719,
+      "last_scanned": "2026-04-10T21:28:16.375Z"
+    },
+    {
+      "slug": "james-clear",
+      "name": "James Clear",
+      "platforms": {},
+      "topics": [
+        "habits",
+        "systems",
+        "decision-making",
+        "behavior-change",
+        "identity"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 5,
+      "last_scanned": "2026-04-10T21:28:17.194Z"
+    },
+    {
+      "slug": "shane-parrish",
+      "name": "Shane Parrish",
+      "platforms": {
+        "podcast": {
+          "feed_url": "https://theknowledgeproject.libsyn.com/rss"
+        }
+      },
+      "topics": [
+        "mental-models",
+        "decision-making",
+        "thinking",
+        "wisdom",
+        "learning"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 274,
+      "last_scanned": "2026-04-10T21:32:37.614Z"
+    },
+    {
+      "slug": "andrew-huberman",
+      "name": "Andrew Huberman",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@hubermanlab"
+        }
+      },
+      "topics": [
+        "neuroscience",
+        "focus",
+        "learning",
+        "habits",
+        "sleep",
+        "dopamine",
+        "performance"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 476,
+      "last_scanned": "2026-04-10T21:28:58.866Z"
+    },
+    {
+      "slug": "paul-graham",
+      "name": "Paul Graham",
+      "platforms": {},
+      "topics": [
+        "startups",
+        "building",
+        "essays",
+        "thinking",
+        "ambition",
+        "founders"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 0,
+      "last_scanned": null
     }
   ]
 }

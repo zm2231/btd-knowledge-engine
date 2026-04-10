@@ -2,7 +2,7 @@
   "creator": "minbpe",
   "name": "karpathy/minbpe",
   "platform": "repo",
-  "scanned_at": "2026-04-10T20:45:30.089Z",
+  "scanned_at": "2026-04-10T21:26:03.673Z",
   "repo_path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--minbpe",
   "repo_url": "https://github.com/karpathy/minbpe",
   "file_types": [
@@ -18,20 +18,12 @@
     ".rb"
   ],
   "total": 11,
+  "ingested": 11,
   "total_size_bytes": 51536,
   "by_extension": {
-    ".py": 8,
-    ".js": 0,
-    ".ts": 0,
     ".md": 3,
-    ".json": 0,
-    ".yaml": 0,
-    ".yml": 0,
-    ".go": 0,
-    ".rs": 0,
-    ".rb": 0
+    ".py": 8
   },
-  "ingested": 11,
   "items": [
     {
       "id": "exercise.md",

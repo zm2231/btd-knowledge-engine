@@ -9,3 +9,7 @@ node_modules/
 .tmp/
 mlx_models/
 .models/
+*.mp4
+*.mp4.*
+*.ytdl
+*.part

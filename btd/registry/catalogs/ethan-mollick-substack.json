@@ -3,7 +3,7 @@
   "scanned_at": "2026-04-10T20:45:06.423Z",
   "creator": "ethan-mollick",
   "total": 20,
-  "ingested": 2,
+  "ingested": 12,
   "items": [
     {
       "id": "https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of",
@@ -30,7 +30,7 @@
       "url": "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the",
       "excerpt": "It's not just chatbots anymore",
       "author": "Ethan Mollick",
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "https://www.oneusefulthing.org/p/management-as-ai-superpower",
@@ -39,7 +39,7 @@
       "url": "https://www.oneusefulthing.org/p/management-as-ai-superpower",
       "excerpt": "Thriving in a world of agents",
       "author": "Ethan Mollick",
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "https://www.oneusefulthing.org/p/claude-code-and-what-comes-next",
@@ -48,7 +48,7 @@
       "url": "https://www.oneusefulthing.org/p/claude-code-and-what-comes-next",
       "excerpt": "With the right tools, AI can accomplish impressive things",
       "author": "Ethan Mollick",
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks",
@@ -57,7 +57,7 @@
       "url": "https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks",
       "excerpt": "And why Nano Banana Pro is such a big deal",
       "author": "Ethan Mollick",
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "https://www.oneusefulthing.org/p/three-years-from-gpt-3-to-gemini",
@@ -66,7 +66,7 @@
       "url": "https://www.oneusefulthing.org/p/three-years-from-gpt-3-to-gemini",
       "excerpt": "From chatbots to agents",
       "author": "Ethan Mollick",
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "https://www.oneusefulthing.org/p/giving-your-ai-a-job-interview",
@@ -75,7 +75,7 @@
       "url": "https://www.oneusefulthing.org/p/giving-your-ai-a-job-interview",
       "excerpt": "As AI advice becomes more important, we are going to need to get better at assessing it",
       "author": "Ethan Mollick",
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "https://www.oneusefulthing.org/p/an-opinionated-guide-to-using-ai",
@@ -84,7 +84,7 @@
       "url": "https://www.oneusefulthing.org/p/an-opinionated-guide-to-using-ai",
       "excerpt": "What AI to use in late 2025",
       "author": "Ethan Mollick",
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "https://www.oneusefulthing.org/p/real-ai-agents-and-real-work",
@@ -93,7 +93,7 @@
       "url": "https://www.oneusefulthing.org/p/real-ai-agents-and-real-work",
       "excerpt": "The race between human-centered work and infinite PowerPoints",
       "author": "Ethan Mollick",
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "https://www.oneusefulthing.org/p/on-working-with-wizards",
@@ -102,7 +102,7 @@
       "url": "https://www.oneusefulthing.org/p/on-working-with-wizards",
       "excerpt": "Verifying magic on the jagged frontier",
       "author": "Ethan Mollick",
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "https://www.oneusefulthing.org/p/mass-intelligence",
@@ -111,7 +111,7 @@
       "url": "https://www.oneusefulthing.org/p/mass-intelligence",
       "excerpt": "From GPT-5 to nano banana: everyone is getting access to powerful AI",
       "author": "Ethan Mollick",
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "https://www.oneusefulthing.org/p/gpt-5-it-just-does-stuff",

@@ -90,7 +90,19 @@ function slugify(text) {
 
 async function getTranscript(videoId) {
   try {
-    const segments = await fetchTranscript(videoId, { lang: 'en' });
+    let segments;
+    try {
+      segments = await fetchTranscript(videoId, { lang: 'en' });
+    } catch (e) {
+      // Fallback: try en-GB, en-US, or no language filter
+      for (const fallbackLang of ['en-GB', 'en-US', undefined]) {
+        try {
+          segments = await fetchTranscript(videoId, fallbackLang ? { lang: fallbackLang } : {});
+          break;
+        } catch (_) {}
+      }
+      if (!segments) throw e;
+    }
     return {
       method: 'youtube-captions',
       segments,

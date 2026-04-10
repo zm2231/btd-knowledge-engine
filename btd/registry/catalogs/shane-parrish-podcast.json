@@ -1,0 +1,2749 @@
+{
+  "platform": "podcast",
+  "scanned_at": "2026-04-10T21:32:37.610Z",
+  "creator": "shane-parrish",
+  "total": 274,
+  "ingested": 0,
+  "items": [
+    {
+      "id": 274,
+      "title": "Joe Liemandt: Alpha School and the Future of Education ",
+      "date": "Tue, 31 Mar 2026 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 274,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 273,
+      "title": "[Outliers] Harrison McCain: Single-Minded Purpose",
+      "date": "Tue, 24 Mar 2026 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 273,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 272,
+      "title": "Connor Teskey: The 90% Rule, AI Infrastructure, and the Future of Investing",
+      "date": "Tue, 17 Mar 2026 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 272,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 271,
+      "title": "[Outliers] J.W. Marriott: Building an Empire Without a Master Plan",
+      "date": "Tue, 10 Mar 2026 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 271,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 270,
+      "title": "Inside the Mind of Robinhood Co-Founder Vlad Tenev",
+      "date": "Tue, 03 Mar 2026 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 270,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 269,
+      "title": "[Outliers] The Obsession That Built Nike | Phil Knight ",
+      "date": "Tue, 24 Feb 2026 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 269,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 268,
+      "title": "The $2 Trillion Mind | Nicolai Tangen",
+      "date": "Tue, 17 Feb 2026 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 268,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 267,
+      "title": "The Psychology of Power | Michael Ovitz",
+      "date": "Tue, 03 Feb 2026 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 267,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 266,
+      "title": "[Outliers] How McDonald’s Took Over America | Ray Kroc ",
+      "date": "Tue, 27 Jan 2026 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 266,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 265,
+      "title": "Morgan Housel: Wealth is What You Have Minus What You Want",
+      "date": "Tue, 20 Jan 2026 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 265,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 264,
+      "title": "The Multidisciplinary Approach to Thinking | Peter D. Kaufman [Outliers]",
+      "date": "Tue, 13 Jan 2026 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 264,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 263,
+      "title": "How to Build Good Habits & Break Bad Ones | James Clear",
+      "date": "Thu, 01 Jan 2026 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 263,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 262,
+      "title": "The Outlier Playbook: The Patterns Behind Enduring Success",
+      "date": "Tue, 30 Dec 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 262,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 261,
+      "title": "Pierre Poilievre on the Role of Government, Freedom, and Affordability",
+      "date": "Sat, 27 Dec 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 261,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 260,
+      "title": "Be Your Best in 2026: The Most Important Lessons from The Knowledge Project (2025)",
+      "date": "Tue, 23 Dec 2025 11:30:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 260,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 259,
+      "title": "[Outliers] Bernie Marcus: The Home Depot Story ",
+      "date": "Tue, 16 Dec 2025 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 259,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 258,
+      "title": "How to Think Like a World-Class Marketer | Rory Sutherland",
+      "date": "Tue, 09 Dec 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 258,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 257,
+      "title": "Mary Kay Ash: The Greatest Salesperson In History [Outliers] ",
+      "date": "Tue, 02 Dec 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 257,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 256,
+      "title": "7 Principles of Inner Excellence to Stay Calm Under Fire | Jim Murphy",
+      "date": "Tue, 25 Nov 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 256,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 255,
+      "title": "Charlie Munger: The Psychology of Human Misjudgment [Outliers]",
+      "date": "Tue, 18 Nov 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 255,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 254,
+      "title": "Panera Founder Ron Shaich",
+      "date": "Tue, 11 Nov 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 254,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 253,
+      "title": "Steve Wozniak: The Engineer Who Built Apple [Outliers]",
+      "date": "Tue, 04 Nov 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 253,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 252,
+      "title": "Forensic Account: The Bubble No One is Talking About | Anthony Scilipoti",
+      "date": "Tue, 28 Oct 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 252,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 251,
+      "title": "Jim Clayton: Turning Competitors’ Mistakes Into $1.7B [Outliers]",
+      "date": "Tue, 21 Oct 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 251,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 250,
+      "title": "Building Great Businesses | Tracy Britt Cool",
+      "date": "Tue, 14 Oct 2025 04:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 250,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 249,
+      "title": "Hetty Green: The Witch of Wall Street [Outliers]",
+      "date": "Tue, 07 Oct 2025 12:37:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 249,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 248,
+      "title": "Barry Diller: Building IAC",
+      "date": "Tue, 30 Sep 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 248,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 247,
+      "title": "Ed Stack: Lessons from Dick’s Sporting Goods [Outliers] ",
+      "date": "Tue, 23 Sep 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 247,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 246,
+      "title": "How To Build A Cult | Lulu Cheng Meservey",
+      "date": "Tue, 16 Sep 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 246,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 245,
+      "title": "Fred Smith: The Story of FedEx [Outliers]",
+      "date": "Tue, 09 Sep 2025 04:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 245,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 244,
+      "title": "Why Everyone Is Wrong About AI (Including You) | Benedict Evans",
+      "date": "Tue, 02 Sep 2025 04:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 244,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 243,
+      "title": "Small Town Billionaire: How John Bragg Built 3 Empires [Outliers]",
+      "date": "Tue, 26 Aug 2025 10:52:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 243,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 242,
+      "title": "The Science of Lasting Love with Dr. Sue Johnson ",
+      "date": "Tue, 19 Aug 2025 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 242,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 241,
+      "title": "Sol Price: The Retail Legend Who Taught Sam Walton, Jim Sinegal, and Jeff Bezos  [Outliers] ",
+      "date": "Tue, 12 Aug 2025 04:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 241,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 240,
+      "title": "Ryan Petersen: Building Flexport",
+      "date": "Tue, 05 Aug 2025 04:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 240,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 239,
+      "title": "Katharine Graham: The Woman Who Took Down a President [Outliers]",
+      "date": "Tue, 29 Jul 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 239,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 238,
+      "title": "Daniel Kahneman: Algorithms Make Better Decisions Than You",
+      "date": "Tue, 22 Jul 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 238,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 237,
+      "title": "Les Schwab: Why Real Ownership Outperforms Experience, Capital, and Credentials [Outliers]",
+      "date": "Tue, 15 Jul 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 237,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 236,
+      "title": "Harley Finkelstein: You Must Requalify for Your Role, Every Year ",
+      "date": "Tue, 08 Jul 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 236,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 235,
+      "title": "Jimmy Pattison: Building a $16B Empire Without Connections, Capital, or Credentials [Outliers]",
+      "date": "Tue, 01 Jul 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 235,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 234,
+      "title": "Former PepsiCo CEO Indra Nooyi: Lessons from the Top",
+      "date": "Tue, 24 Jun 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 234,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 233,
+      "title": "Anna Wintour: Vogue [Outliers]",
+      "date": "Tue, 17 Jun 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 233,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 232,
+      "title": "Netflix Founder Reed Hastings on Scaling High-Trust Culture & Bold Judgment",
+      "date": "Tue, 10 Jun 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 232,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 231,
+      "title": "Harvey Firestone: Men and Rubber [Outliers]",
+      "date": "Tue, 03 Jun 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 231,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 230,
+      "title": "Bill Belichick: 8x Super Bowl Champion on Winning, Leadership, and Discipline",
+      "date": "Tue, 27 May 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 230,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 229,
+      "title": "Andy Grove: Only The Paranoid Survive [Outliers]",
+      "date": "Tue, 20 May 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 229,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 228,
+      "title": "Elad Gil: How to Spot a Billion-Dollar Startup Before the Rest of the World",
+      "date": "Tue, 13 May 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 228,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 227,
+      "title": "Rose Blumkin: Women of Berkshire Hathaway [Outliers]",
+      "date": "Tue, 06 May 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 227,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 226,
+      "title": "Y Combinator CEO Garry Tan: Turning Ambitious Misfits into Founders",
+      "date": "Tue, 29 Apr 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 226,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 225,
+      "title": "Henry Singleton: The Greatest Capital Allocator in History [Outliers]",
+      "date": "Tue, 22 Apr 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 225,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 224,
+      "title": "Bret Taylor: A Vision for AI’s Next Frontier ",
+      "date": "Tue, 15 Apr 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 224,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 223,
+      "title": "Pierre Poilievre: What I Want to Build (and Break) To Fix Canada",
+      "date": "Sun, 13 Apr 2025 19:33:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 223,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 222,
+      "title": "Cornelius Vanderbilt: The First Tycoon [Outliers]",
+      "date": "Tue, 08 Apr 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 222,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 221,
+      "title": "Bruce Flatt on Value, Discipline, and Durability ",
+      "date": "Tue, 01 Apr 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 221,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 220,
+      "title": "James Dyson: Against the Odds [Outliers]",
+      "date": "Tue, 25 Mar 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 220,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 219,
+      "title": "Logan Ury: The Dating Myths You Need to Stop Believing",
+      "date": "Tue, 18 Mar 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 219,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 218,
+      "title": "Estée Lauder:  A Success Story [Outliers]",
+      "date": "Tue, 11 Mar 2025 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 218,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 217,
+      "title": "Josh Wolfe: Human Advantage in the World of AI ",
+      "date": "Tue, 04 Mar 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 217,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 216,
+      "title": "Andrew Mellon: America’s Secret Banker [Outliers]",
+      "date": "Tue, 25 Feb 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 216,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 215,
+      "title": "David Heacock: Building Filterbuy",
+      "date": "Tue, 18 Feb 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 215,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 214,
+      "title": "Timothy Eaton: How to Build an Empire (And Why It Crumbled) [Outliers]",
+      "date": "Tue, 11 Feb 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 214,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 213,
+      "title": "Mickey Drexler: The Art of Selling with Retail's Merchant Prince",
+      "date": "Tue, 04 Feb 2025 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 213,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 212,
+      "title": "How to Win by Being Right and Contrarian: Lessons from Zappos to DoorDash",
+      "date": "Tue, 21 Jan 2025 10:45:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 212,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 211,
+      "title": "Codie Sanchez: Your Blueprint to Financial Freedom",
+      "date": "Tue, 07 Jan 2025 19:28:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 211,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 210,
+      "title": "Best of 2024: The Blueprint for a Transformative New Year",
+      "date": "Tue, 24 Dec 2024 09:53:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 210,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 209,
+      "title": "Charlie Hoehn: Write Something People Want to Read ",
+      "date": "Tue, 10 Dec 2024 10:30:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 209,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 208,
+      "title": "Ryan Holiday: How to Win the War with Yourself ",
+      "date": "Tue, 26 Nov 2024 10:30:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 208,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 207,
+      "title": "Adam Karr: The Investing Blueprint ",
+      "date": "Tue, 12 Nov 2024 11:33:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 207,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 206,
+      "title": "John Mackey: Building Whole Foods",
+      "date": "Tue, 29 Oct 2024 11:49:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 206,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 205,
+      "title": "Rob Fraser: The Power of Focus",
+      "date": "Tue, 15 Oct 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 205,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 204,
+      "title": "John Bragg: The Blueberry Billionaire",
+      "date": "Tue, 01 Oct 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 204,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 203,
+      "title": "Erin Wade: The Mac and Cheese Empire ",
+      "date": "Tue, 17 Sep 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 203,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 202,
+      "title": "Matthew Dicks: The Storytelling Expert",
+      "date": "Tue, 03 Sep 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 202,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 201,
+      "title": "April Dunford: The Marketing Expert",
+      "date": "Tue, 20 Aug 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 201,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 200,
+      "title": "Brian Halligan: Building HubSpot into a Multi-Billion Dollar Company",
+      "date": "Tue, 06 Aug 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 200,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 199,
+      "title": "Esther Perel: Cultivating Desire ",
+      "date": "Tue, 23 Jul 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 199,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 198,
+      "title": "Maya Shankar: The Toolkit to Accomplish Your Hardest Goals",
+      "date": "Tue, 09 Jul 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 198,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 197,
+      "title": "#197 Michaeleen Doucleff: The 4 Biggest Mistakes Parents Make ",
+      "date": "Tue, 25 Jun 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 197,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 196,
+      "title": "Brent Beshore: Business Brilliance and Happiness at Home",
+      "date": "Tue, 11 Jun 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 196,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 195,
+      "title": "Morgan Housel: Get Rich, Stay Rich",
+      "date": "Tue, 28 May 2024 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 195,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 194,
+      "title": "Abigail Shrier: Why the Kids Aren’t Alright",
+      "date": "Tue, 21 May 2024 19:12:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 194,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 193,
+      "title": "Dr. Jim Loehr: What it Takes to Win ",
+      "date": "Tue, 30 Apr 2024 07:10:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 193,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 192,
+      "title": "David Segal: Building a $200m Business ",
+      "date": "Tue, 16 Apr 2024 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 192,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 191,
+      "title": "Dr. Rhonda Patrick: Diet Essentials For Healthy Living",
+      "date": "Tue, 02 Apr 2024 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 191,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 190,
+      "title": "Brad Jacobs: How To Build a Billion Dollar Company",
+      "date": "Tue, 19 Mar 2024 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 190,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 189,
+      "title": "Chris Davis: Three Generations of Wealth",
+      "date": "Tue, 05 Mar 2024 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 189,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 188,
+      "title": "Bryan Johnson: Five Habits for Longer Living",
+      "date": "Tue, 20 Feb 2024 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 188,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 187,
+      "title": "Dr. Becky Kennedy: The One Thing You Can Say That Changes Everything",
+      "date": "Tue, 06 Feb 2024 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 187,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 186,
+      "title": "Tom Gayner: Invest Like The Best",
+      "date": "Tue, 23 Jan 2024 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 186,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 185,
+      "title": "Blake Eastman: Learn to Read Anyone",
+      "date": "Tue, 09 Jan 2024 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 185,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 184,
+      "title": "Best of 2023: Conversations of the Year",
+      "date": "Tue, 26 Dec 2023 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 184,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 183,
+      "title": "Paul Assaiante: Learning to Face Your Fears",
+      "date": "Tue, 12 Dec 2023 09:42:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 183,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 182,
+      "title": "Todd Herman: Unleashing Your Secret Identity",
+      "date": "Tue, 28 Nov 2023 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 182,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 181,
+      "title": "Dr. Gio Valiante (Part 2): Failure and Success",
+      "date": "Tue, 14 Nov 2023 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 181,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 180,
+      "title": "TKP Insights: Learning and Thinking",
+      "date": "Tue, 07 Nov 2023 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 180,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 179,
+      "title": "Dr. Gio Valiante (Part 1): Discipline and Resilience",
+      "date": "Tue, 31 Oct 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 179,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 178,
+      "title": "Jerry Colonna: The CEO Whisperer",
+      "date": "Tue, 17 Oct 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 178,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 177,
+      "title": "Shane Parrish: A Glimpse Into Clear Thinking",
+      "date": "Tue, 03 Oct 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 177,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 176,
+      "title": "Dr. Leah Lagos and Joe Mazzulla: Control Your Heart, Conquer Your Stress",
+      "date": "Tue, 19 Sep 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 176,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 175,
+      "title": "Shreyas Doshi: Better Teams, Better Products",
+      "date": "Tue, 05 Sep 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 175,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 174,
+      "title": "Rey Flemings: A Different Definition of Success",
+      "date": "Tue, 22 Aug 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 174,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 173,
+      "title": "Frank Slootman: Doing Less, Doing Better",
+      "date": "Tue, 08 Aug 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 173,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 172,
+      "title": "Dr. Julie Gurner (Part 2): Caring Deeply, Challenging Directly",
+      "date": "Tue, 25 Jul 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 172,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 171,
+      "title": "Naval Ravikant: The Angel Philosopher (2017)",
+      "date": "Tue, 11 Jul 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 171,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 170,
+      "title": "TKP Insights: Philosophy",
+      "date": "Tue, 04 Jul 2023 05:03:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 170,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 169,
+      "title": "Dr. Julie Gurner (Part 1): Caring Deeply, Challenging Directly",
+      "date": "Tue, 27 Jun 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 169,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 168,
+      "title": "Adam Robinson: Positioning Yourself For Success",
+      "date": "Tue, 13 Jun 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 168,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 167,
+      "title": "Dr. Gina Poe: The Science of Better Sleep",
+      "date": "Tue, 30 May 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 167,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 166,
+      "title": "Kevin Kelly: Excellent Advice for Living",
+      "date": "Tue, 16 May 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 166,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 165,
+      "title": "Proven Strategies to Accelerate Growth, Productivity and Profits with George Stalk, Jr.",
+      "date": "Tue, 02 May 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 165,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 164,
+      "title": "Ravi Gupta: The Realities of Success",
+      "date": "Tue, 18 Apr 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 164,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 163,
+      "title": "Jason Karp: Live A Healthier Life",
+      "date": "Tue, 04 Apr 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 163,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 162,
+      "title": "Nathan Myhrvold",
+      "date": "Tue, 21 Mar 2023 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 162,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 161,
+      "title": "Jim Dethmer: The Pillars of Integrity",
+      "date": "Tue, 07 Mar 2023 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 161,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 160,
+      "title": "TKP Insights: Leadership",
+      "date": "Tue, 28 Feb 2023 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 160,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 159,
+      "title": "Dr. Anna Lembke: Between Pleasure and Pain",
+      "date": "Tue, 21 Feb 2023 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 159,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 158,
+      "title": "Aaron Dignan: Change The Way You Work",
+      "date": "Tue, 07 Feb 2023 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 158,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 157,
+      "title": "Carolyn Coughlin: Become A Better Listener",
+      "date": "Tue, 24 Jan 2023 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 157,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 156,
+      "title": "Jack Kornfield: Finding Inner Calm",
+      "date": "Tue, 10 Jan 2023 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 156,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 155,
+      "title": "Best of 2022: Conversations of the Year",
+      "date": "Tue, 27 Dec 2022 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 155,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 154,
+      "title": "Emily Balcetis: Setting and Achieving Goals",
+      "date": "Tue, 13 Dec 2022 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 154,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 153,
+      "title": "Keith Creel: Lessons from Life on the Railroad",
+      "date": "Tue, 29 Nov 2022 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 153,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 152,
+      "title": "Tobi Lütke: Calm Progress",
+      "date": "Tue, 15 Nov 2022 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 152,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 151,
+      "title": "Alan Mulally: The Power Of Working Together",
+      "date": "Tue, 01 Nov 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 151,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 150,
+      "title": "TKP Insights: Making (Even) Better Decisions",
+      "date": "Tue, 25 Oct 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 150,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 149,
+      "title": "Neil Pasricha: Simple Rules for Happiness",
+      "date": "Tue, 18 Oct 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 149,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 148,
+      "title": "Kenneth Stanley: Set The Right Objectives",
+      "date": "Tue, 04 Oct 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 148,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 147,
+      "title": "Reid Hoffman: Better Decisions, Fewer Mistakes",
+      "date": "Tue, 20 Sep 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 147,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 146,
+      "title": "Barbara Tversky: Action Shapes Thought",
+      "date": "Tue, 06 Sep 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 146,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 145,
+      "title": "Les Snead: Building a Super Bowl Champion",
+      "date": "Tue, 23 Aug 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 145,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 144,
+      "title": "Gary Klein: Insights For Making Better Decisions",
+      "date": "Tue, 09 Aug 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 144,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 143,
+      "title": "Andrew Wilkinson: Tiny Holdings",
+      "date": "Tue, 26 Jul 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 143,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 142,
+      "title": "Marshall Goldsmith: The Essentials Of Leadership",
+      "date": "Tue, 12 Jul 2022 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 142,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 141,
+      "title": "Kunal Shah: Core Human Motivations",
+      "date": "Tue, 28 Jun 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 141,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 140,
+      "title": "TKP Insights: Sex and Relationships",
+      "date": "Tue, 21 Jun 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 140,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 139,
+      "title": "Laurie Santos: The Pursuit of Happiness",
+      "date": "Tue, 14 Jun 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 139,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 138,
+      "title": "Luke Burgis: The Power of Mimetic Desire",
+      "date": "Tue, 31 May 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 138,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 137,
+      "title": "Justin Su'a: Peak Mental Performance",
+      "date": "Tue, 17 May 2022 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 137,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 136,
+      "title": "David Sinclair: Reversing the Aging Process",
+      "date": "Tue, 03 May 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 136,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 135,
+      "title": "Sarah Jones Simmer: The Foundation of Trust",
+      "date": "Tue, 19 Apr 2022 21:51:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 135,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 134,
+      "title": "Balaji Srinivasan: The Network State",
+      "date": "Tue, 05 Apr 2022 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 134,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 133,
+      "title": "#133 Andrew Huberman: The Science of Small Changes",
+      "date": "Tue, 22 Mar 2022 05:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 133,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 132,
+      "title": "#132 Ret. Gen. Stanley McChrystal - The Essence of Leadership",
+      "date": "Tue, 08 Mar 2022 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 132,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 131,
+      "title": "#131 Matthew Walker: The Power of Sleep",
+      "date": "Tue, 22 Feb 2022 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 131,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 130,
+      "title": "#130 Diana Chapman: Trusting Your Instincts",
+      "date": "Tue, 08 Feb 2022 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 130,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 129,
+      "title": "#129 Marc Andreessen: Interview with an Icon",
+      "date": "Tue, 25 Jan 2022 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 129,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 128,
+      "title": "#128 Ryan Holiday: A Stoic Life",
+      "date": "Tue, 11 Jan 2022 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 128,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 127,
+      "title": "#127 Best of 2021: Conversations of the Year",
+      "date": "Tue, 21 Dec 2021 00:16:15 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 127,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 126,
+      "title": "#126 Nancy Sherman: Soldiers and Stoics",
+      "date": "Tue, 14 Dec 2021 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 126,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 125,
+      "title": "#125 Paul Rabil: Confidence and Competition",
+      "date": "Tue, 30 Nov 2021 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 125,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 124,
+      "title": "#124 Douglas Rushkoff: The Perils of Modern Media",
+      "date": "Tue, 16 Nov 2021 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 124,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 123,
+      "title": "#123 William Irvine: How To Live a Stoic Life",
+      "date": "Tue, 02 Nov 2021 06:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 123,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 122,
+      "title": "#122 Robert Cialdini - The Principles of Persuasion",
+      "date": "Tue, 19 Oct 2021 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 122,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 121,
+      "title": "#121 Walter Isaacson: Curiosity Fuels Creativity",
+      "date": "Tue, 05 Oct 2021 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 121,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 120,
+      "title": "#120 Chris Bosh: Hunger and Greatness",
+      "date": "Tue, 21 Sep 2021 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 120,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 119,
+      "title": "#119 Todd Simkin: Making Better Decisions",
+      "date": "Tue, 07 Sep 2021 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 119,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 118,
+      "title": "#118 Doug Conant: Leadership With Integrity",
+      "date": "Tue, 24 Aug 2021 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 118,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 117,
+      "title": "#117 Kat Cole: The Power of Possible",
+      "date": "Tue, 10 Aug 2021 07:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 117,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 116,
+      "title": "#116 Jeff Immelt: Leadership In A Crisis",
+      "date": "Tue, 27 Jul 2021 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 116,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 115,
+      "title": "#115 Danny Meyer: Hospitality and Humanity",
+      "date": "Tue, 13 Jul 2021 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 115,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 114,
+      "title": "#114 Noreena Hertz: The Crisis of Loneliness",
+      "date": "Tue, 29 Jun 2021 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 114,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 113,
+      "title": "#113 Sarah Tavel: The Value of Intellectual Rigor",
+      "date": "Tue, 15 Jun 2021 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 113,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 112,
+      "title": "#112 Adam Grant: Rethinking Your Position",
+      "date": "Tue, 01 Jun 2021 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 112,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 111,
+      "title": "#111 Joel Greenblatt: Investing Made Simple",
+      "date": "Tue, 18 May 2021 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 111,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 110,
+      "title": "#110 Jim Collins: Relationships vs. Transactions",
+      "date": "Tue, 04 May 2021 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 110,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 109,
+      "title": "#109 Angela Duckworth: Grit and Human Behavior",
+      "date": "Tue, 20 Apr 2021 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 109,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 108,
+      "title": "#108 Thomas Zurbuchen: Adventures in Astrophysics",
+      "date": "Tue, 06 Apr 2021 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 108,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 107,
+      "title": "#107 Matt Ridley: Infinite Innovation",
+      "date": "Tue, 23 Mar 2021 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 107,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 106,
+      "title": "#106 Josh Kaufman: Maximizing Our Locus of Control",
+      "date": "Tue, 09 Mar 2021 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 106,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 105,
+      "title": "#105 Seth Godin: Failing On Our Way To Mastery",
+      "date": "Tue, 23 Feb 2021 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 105,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 104,
+      "title": "#104 Nir Eyal: Mastering Indistraction",
+      "date": "Tue, 16 Feb 2021 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 104,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 103,
+      "title": "#103 Loch Kelly: Effortless Mindfulness",
+      "date": "Tue, 09 Feb 2021 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 103,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 102,
+      "title": "#102 Sendhil Mullainathan: The Chaos Inside Us",
+      "date": "Tue, 02 Feb 2021 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 102,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 101,
+      "title": "#101 Jane McGonigal: The Psychology of Gaming",
+      "date": "Tue, 19 Jan 2021 10:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 101,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 100,
+      "title": "#100 Matt Mullenweg: Collaboration Is Key",
+      "date": "Tue, 05 Jan 2021 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 100,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 99,
+      "title": "#99 Kris Cordle: Releasing the Ego",
+      "date": "Tue, 22 Dec 2020 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 99,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 98,
+      "title": "#98 Sahil Lavingia: Observing the Present",
+      "date": "Tue, 08 Dec 2020 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 98,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 97,
+      "title": "#97 Roger Martin: Forward Thinking",
+      "date": "Tue, 24 Nov 2020 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 97,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 96,
+      "title": "#96 Randall Stutman: The Essence of Leadership",
+      "date": "Tue, 10 Nov 2020 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 96,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 95,
+      "title": "#95 Code Cubitt: Coachability Is Critical",
+      "date": "Tue, 27 Oct 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 95,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 94,
+      "title": "#94 Chamath Palihapitiya: Understanding Yourself",
+      "date": "Tue, 13 Oct 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 94,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 93,
+      "title": "#93 Matt Holland: Zero Day",
+      "date": "Tue, 29 Sep 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 93,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 92,
+      "title": "#92 Lisa Feldman Barrett: Balancing the Brain Budget",
+      "date": "Tue, 15 Sep 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 92,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 91,
+      "title": "#91 Russ Hudson: The Pursuit of Presence",
+      "date": "Tue, 01 Sep 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 91,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 90,
+      "title": "#90 Apolo Ohno: Process Versus Prize",
+      "date": "Tue, 18 Aug 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 90,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 89,
+      "title": "#89 Maria Konnikova: Less Certainty, More Inquiry",
+      "date": "Tue, 04 Aug 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 89,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 88,
+      "title": "#88 Derek Sivers: Innovation Versus Imitation",
+      "date": "Tue, 21 Jul 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 88,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 87,
+      "title": "#87 Hannah Fry: The Role of Algorithms",
+      "date": "Tue, 07 Jul 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 87,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 86,
+      "title": "#86 BJ Fogg: The Science of Lasting Change",
+      "date": "Tue, 23 Jun 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 86,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 85,
+      "title": "#85 Bethany McLean: Crafting a Narrative",
+      "date": "Tue, 09 Jun 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 85,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 84,
+      "title": "#84 Jennifer Garvey Berger: Creating Routine in Chaos",
+      "date": "Tue, 26 May 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 84,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 83,
+      "title": "#83 Brian Koppelman: What Really Matters",
+      "date": "Tue, 12 May 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 83,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 82,
+      "title": "#82 Bill Ackman: Getting Back Up",
+      "date": "Tue, 28 Apr 2020 11:30:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 82,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 81,
+      "title": "#81 Jason Calacanis: Intelligent Risk",
+      "date": "Tue, 14 Apr 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 81,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 80,
+      "title": "#80 John Maxwell: Developing the Leader in You",
+      "date": "Tue, 31 Mar 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 80,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 79,
+      "title": "#79 Esther Wojcicki: The “TRICK” to Raising Successful People",
+      "date": "Tue, 17 Mar 2020 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 79,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 78,
+      "title": "#78 Balaji Srinivasan: Exploring COVID-19",
+      "date": "Fri, 13 Mar 2020 16:41:08 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 78,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 77,
+      "title": "#77 Mike Maples: Living in the Future",
+      "date": "Tue, 03 Mar 2020 13:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 77,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 76,
+      "title": "#76 Frank Stephenson: Pushing the Limits of Innovation",
+      "date": "Tue, 18 Feb 2020 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 76,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 75,
+      "title": "#75 Suzanne Iasenza: Rewriting Relationship Narratives",
+      "date": "Tue, 04 Feb 2020 22:52:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 75,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 74,
+      "title": "#74 Jeff Hunter: Embracing Confusion",
+      "date": "Tue, 21 Jan 2020 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 74,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 73,
+      "title": "#73 Steven Strogatz: Exploring Curiosities",
+      "date": "Tue, 07 Jan 2020 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 73,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 72,
+      "title": "#72 Neil Pasricha: Happy Habits",
+      "date": "Tue, 24 Dec 2019 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 72,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 71,
+      "title": "#71 Esther Perel: Cultivating Desire",
+      "date": "Tue, 10 Dec 2019 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 71,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 70,
+      "title": "#70 Scott Adams: Avoiding Loserthink",
+      "date": "Tue, 26 Nov 2019 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 70,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 69,
+      "title": "#69 Stephen Schwarzman: What It Takes",
+      "date": "Tue, 12 Nov 2019 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 69,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 68,
+      "title": "#68 Daniel Kahneman: Putting Your Intuition on Ice",
+      "date": "Tue, 15 Oct 2019 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 68,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 67,
+      "title": "#67 Jim Collins: Keeping the Flywheel in Motion",
+      "date": "Tue, 01 Oct 2019 11:30:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 67,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 66,
+      "title": "#66 Dr. Emily Nagoski: Pleasure is the Measure",
+      "date": "Tue, 17 Sep 2019 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 66,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 65,
+      "title": "#65 Shep Gordon: Trust, Compassion, and Shooting Friends from Cannons",
+      "date": "Tue, 03 Sep 2019 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 65,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 64,
+      "title": "#64 Greg Walton: The Big Impact of Small Interventions",
+      "date": "Tue, 20 Aug 2019 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 64,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 63,
+      "title": "#63 Hugh Howey: Winning at the Self-publishing Game",
+      "date": "Tue, 06 Aug 2019 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 63,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 62,
+      "title": "#62 Dr. Sue Johnson: Cracking the Code of Love",
+      "date": "Tue, 23 Jul 2019 08:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 62,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 61,
+      "title": "#61 Jonathan Haidt: When Good Intentions Go Bad",
+      "date": "Tue, 02 Jul 2019 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 61,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 60,
+      "title": "#60 Jim Dethmer: Leading Above the Line",
+      "date": "Tue, 18 Jun 2019 11:30:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 60,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 59,
+      "title": "#59 Following Intellectual Curiosity with Thomas Tull",
+      "date": "Tue, 28 May 2019 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 59,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 58,
+      "title": "#57 Sheila Heen: Decoding Difficult Conversations",
+      "date": "Wed, 15 May 2019 18:57:26 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 58,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 57,
+      "title": "Gabriel Weinberg: Practical Steps to Safeguard Your Data and Identity Online",
+      "date": "Tue, 14 May 2019 11:30:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 57,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 56,
+      "title": "#56 Daniel Gross: Catalyzing Success",
+      "date": "Tue, 16 Apr 2019 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 56,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 55,
+      "title": "#55 Scott Page: Becoming a Model Thinker",
+      "date": "Tue, 02 Apr 2019 11:30:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 55,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 54,
+      "title": "#54 Jason Fried: Doing the Enough Thing",
+      "date": "Tue, 19 Mar 2019 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 54,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 53,
+      "title": "#53 Howard Marks: Luck, Risk and Avoiding Losers",
+      "date": "Tue, 05 Mar 2019 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 53,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 52,
+      "title": "#52 Dr. Laura Markham:  Peaceful Parenting with",
+      "date": "Tue, 19 Feb 2019 13:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 52,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 51,
+      "title": "#51 Celeste Headlee: The Dying Art of Conversation",
+      "date": "Tue, 05 Feb 2019 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 51,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 50,
+      "title": "#50 Josh Wolfe: Inventing the Future",
+      "date": "Tue, 22 Jan 2019 13:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 50,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 49,
+      "title": "#49 Brent Gilchrist: Goal Mining",
+      "date": "Tue, 08 Jan 2019 13:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 49,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 48,
+      "title": "#48 Adam Robinson: Winning at the Great Game (Part 2)",
+      "date": "Wed, 26 Dec 2018 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 48,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 47,
+      "title": "#47 Adam Robinson: Winning at the Great Game (Part 1)",
+      "date": "Tue, 11 Dec 2018 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 47,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 46,
+      "title": "#46 Sophie Grégoire Trudeau: Authenticity, Kindness, and Self Love",
+      "date": "Tue, 27 Nov 2018 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 46,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 45,
+      "title": "#45 Dan Kluger:  Taking Time to Get It Right",
+      "date": "Tue, 13 Nov 2018 12:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 45,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 44,
+      "title": "#44 Barbara Coloroso: The Kids Are Worth It",
+      "date": "Tue, 30 Oct 2018 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 44,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 43,
+      "title": "#43 Jennifer Garvey Berger: The Mental Habits of Effective Leaders",
+      "date": "Tue, 16 Oct 2018 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 43,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 42,
+      "title": "#42 Atul Gawande: The Path to Perpetual Progress",
+      "date": "Tue, 02 Oct 2018 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 42,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 41,
+      "title": "#41 Tobi Lütke: The Trust Battery",
+      "date": "Tue, 18 Sep 2018 11:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 41,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 40,
+      "title": "#40 Ben Thompson: Thriving in a Digital World",
+      "date": "Wed, 05 Sep 2018 09:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 40,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 39,
+      "title": "#39 Tyler Cowen: Thinking About Thinking",
+      "date": "Tue, 21 Aug 2018 13:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 39,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 38,
+      "title": "#38 Ali Almossawi: Thinking in Algorithms",
+      "date": "Wed, 08 Aug 2018 13:10:41 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 38,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 37,
+      "title": "#37 Annie Duke: Getting Better by Being Wrong",
+      "date": "Wed, 25 Jul 2018 03:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 37,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 36,
+      "title": "#36 William MacAskill: The Science of Doing Good",
+      "date": "Wed, 11 Jul 2018 16:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 36,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 35,
+      "title": "#35 Robert Greene: Alive Time vs. Dead Time",
+      "date": "Wed, 27 Jun 2018 13:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 35,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 34,
+      "title": "#34 Amelia Boone: Learning How to Suffer",
+      "date": "Wed, 13 Jun 2018 15:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 34,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 33,
+      "title": "#33 Dan Ariely: The Truth About Lies",
+      "date": "Fri, 25 May 2018 16:02:48 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 33,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 32,
+      "title": "#32 Patrick Collison: Earning Your Stripes",
+      "date": "Wed, 02 May 2018 15:50:06 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 32,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 31,
+      "title": "#31 Barbara Oakley: Learning How to Learn",
+      "date": "Tue, 10 Apr 2018 12:43:12 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 31,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 30,
+      "title": "#30 Margaret Heffernan: Collaboration and Competition",
+      "date": "Tue, 13 Mar 2018 15:11:58 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 30,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 29,
+      "title": "#29 Dacher Keltner: Survival of the Kindest",
+      "date": "Wed, 21 Feb 2018 14:48:05 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 29,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 28,
+      "title": "#28 Michael Mauboussin: A Decision Making Jedi",
+      "date": "Tue, 23 Jan 2018 15:26:29 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 28,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 27,
+      "title": "#27 Chris Voss: The Art of Letting Other People Have Your Way",
+      "date": "Wed, 03 Jan 2018 13:32:03 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 27,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 26,
+      "title": "#26 Warren Berger: Improving The Questions You Ask",
+      "date": "Thu, 14 Dec 2017 03:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 26,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 25,
+      "title": "#25 Gary Taubes: Is Sugar Slowly Killing Us",
+      "date": "Thu, 30 Nov 2017 01:45:50 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 25,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 24,
+      "title": "#24 Susan Cain: Leading the Quiet Revolution",
+      "date": "Wed, 01 Nov 2017 12:32:52 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 24,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 23,
+      "title": "#23 Ray Dalio: Life Lessons from a Self-Made Billionaire",
+      "date": "Wed, 11 Oct 2017 16:01:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 23,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 22,
+      "title": "#22 Adam Grant: Givers, Takers, and the Resilient Mind",
+      "date": "Thu, 21 Sep 2017 02:25:55 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 22,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 21,
+      "title": "#21 Ed Latimore: The Warrior Poet",
+      "date": "Wed, 09 Aug 2017 13:03:38 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 21,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 20,
+      "title": "#20 Marc Garneau: The Future of Transportation",
+      "date": "Sun, 02 Jul 2017 16:41:01 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 20,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 19,
+      "title": "Rory Sutherland: The Psychology of Advertising",
+      "date": "Tue, 30 May 2017 20:25:17 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 19,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 18,
+      "title": "#18 Naval Ravikant: The Angel Philosopher",
+      "date": "Tue, 11 Apr 2017 22:42:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 18,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 17,
+      "title": "Aristotle Koskinas on Greek History",
+      "date": "Thu, 05 Jan 2017 15:25:57 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 17,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 16,
+      "title": "Santorini Wine with Panayiota Kalogeropoulou",
+      "date": "Thu, 05 Jan 2017 15:14:46 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 16,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 15,
+      "title": "#15 Samuel Arbesman: Future-Proof Your Knowledge",
+      "date": "Mon, 28 Nov 2016 13:24:12 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 15,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 14,
+      "title": "#14 Morgan Housel: Reading, Writing, and Lifelong Learning",
+      "date": "Mon, 24 Oct 2016 10:18:03 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 14,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 13,
+      "title": "#13 Pedro Domingos: The Rise of The Machines",
+      "date": "Tue, 30 Aug 2016 16:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 13,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 12,
+      "title": "#12 Véronique Rivest: Wine Lessons",
+      "date": "Sun, 24 Jul 2016 13:09:34 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 12,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 11,
+      "title": "#11 Ryan Holiday: The Stoic Whisperer",
+      "date": "Mon, 16 May 2016 00:12:45 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 11,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 10,
+      "title": "Are we too busy to pay attention to life?",
+      "date": "Wed, 30 Mar 2016 00:57:06 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 10,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 9,
+      "title": "#9 Maestro Alexander Shelley: The Architecture of Music",
+      "date": "Fri, 18 Mar 2016 20:00:00 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 9,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 8,
+      "title": "#8 Julia Galef: The Art of Changing Minds",
+      "date": "Sat, 20 Feb 2016 20:27:23 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 8,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 7,
+      "title": "#7 Venkatesh Rao: The Three Types of Decision Makers",
+      "date": "Thu, 28 Jan 2016 22:36:05 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 7,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 6,
+      "title": "#6 Philip Tetlock: How to See the Future",
+      "date": "Tue, 08 Dec 2015 20:03:09 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 6,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 5,
+      "title": "#5  Chris Dixon: The State of Venture Capital",
+      "date": "Fri, 13 Nov 2015 00:32:01 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 5,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 4,
+      "title": "#4 Jason Zweig: Elevate Your Financial IQ",
+      "date": "Mon, 19 Oct 2015 16:28:03 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 4,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 3,
+      "title": "#3 Sanjay Bakshi: Why Mental Models",
+      "date": "Fri, 18 Sep 2015 11:31:15 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 3,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 2,
+      "title": "#2 Michael Lombardi: Leadership on the Field",
+      "date": "Fri, 29 May 2015 01:34:16 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 2,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 1,
+      "title": "#1 Michael Mauboussin: When To Trust Your Gut",
+      "date": "Tue, 28 Apr 2015 00:16:45 -0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 1,
+      "season": null,
+      "ingested": false
+    }
+  ]
+}

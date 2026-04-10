@@ -3,7 +3,7 @@
   "scanned_at": "2026-04-10T20:45:50.733Z",
   "creator": "ali-abdaal",
   "total": 1366,
-  "ingested": 10,
+  "ingested": 18,
   "items": [
     {
       "id": "XIhc7_Ptrpk",
@@ -683,7 +683,7 @@
       "duration_string": "14:46",
       "url": "https://www.youtube.com/watch?v=WONRS7BLh4g",
       "view_count": 3408191,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "sYaSJpIGzu8",
@@ -1583,7 +1583,7 @@
       "duration_string": "25:30",
       "url": "https://www.youtube.com/watch?v=-ZscZv-IMyI",
       "view_count": 3239744,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "Y-d90cILIDk",
@@ -1963,7 +1963,7 @@
       "duration_string": "20:15",
       "url": "https://www.youtube.com/watch?v=lNdOtlpmH5U",
       "view_count": 3497480,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "JWOR5Y-qmfg",
@@ -2733,7 +2733,7 @@
       "duration_string": "16:54",
       "url": "https://www.youtube.com/watch?v=Gg8_TA7U0Uw",
       "view_count": 3864914,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "HPcIwHwZIhI",
@@ -3433,7 +3433,7 @@
       "duration_string": "15:02",
       "url": "https://www.youtube.com/watch?v=W3CDMcWlPyM",
       "view_count": 4062718,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "ywiSy49yhyU",
@@ -4233,7 +4233,7 @@
       "duration_string": "11:12",
       "url": "https://www.youtube.com/watch?v=YT7tQzmGRLA",
       "view_count": 3240705,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "Kppgzbun71I",
@@ -12633,7 +12633,7 @@
       "duration_string": null,
       "url": "https://www.youtube.com/watch?v=dsS2wg2Y39c",
       "view_count": 3600000,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "HRz7yUaeTy0",
@@ -13333,7 +13333,7 @@
       "duration_string": null,
       "url": "https://www.youtube.com/watch?v=6m5vC3o2tRQ",
       "view_count": 4300000,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "UPuI1iAxH7k",

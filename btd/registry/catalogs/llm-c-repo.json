@@ -2,7 +2,7 @@
   "creator": "llm-c",
   "name": "karpathy/llm.c",
   "platform": "repo",
-  "scanned_at": "2026-04-10T20:45:51.448Z",
+  "scanned_at": "2026-04-10T21:26:59.032Z",
   "repo_path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--llm-c",
   "repo_url": "https://github.com/karpathy/llm.c",
   "file_types": [
@@ -12,20 +12,19 @@
     ".md",
     ".json",
     ".yaml",
-    ".yml"
+    ".yml",
+    ".go",
+    ".rs",
+    ".rb"
   ],
   "total": 23,
+  "ingested": 23,
   "total_size_bytes": 220572,
   "by_extension": {
+    ".yml": 3,
     ".py": 14,
-    ".js": 0,
-    ".ts": 0,
-    ".md": 6,
-    ".json": 0,
-    ".yaml": 0,
-    ".yml": 3
+    ".md": 6
   },
-  "ingested": 23,
   "items": [
     {
       "id": ".github/workflows/ci_gpu.yml",

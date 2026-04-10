@@ -2,7 +2,7 @@
   "creator": "nanogpt",
   "name": "karpathy/nanoGPT",
   "platform": "repo",
-  "scanned_at": "2026-04-10T20:45:51.430Z",
+  "scanned_at": "2026-04-10T21:26:30.824Z",
   "repo_path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--nanogpt",
   "repo_url": "https://github.com/karpathy/nanoGPT",
   "file_types": [
@@ -12,20 +12,18 @@
     ".md",
     ".json",
     ".yaml",
-    ".yml"
+    ".yml",
+    ".go",
+    ".rs",
+    ".rb"
   ],
   "total": 19,
+  "ingested": 19,
   "total_size_bytes": 66379,
   "by_extension": {
     ".py": 15,
-    ".js": 0,
-    ".ts": 0,
-    ".md": 4,
-    ".json": 0,
-    ".yaml": 0,
-    ".yml": 0
+    ".md": 4
   },
-  "ingested": 19,
   "items": [
     {
       "id": "bench.py",

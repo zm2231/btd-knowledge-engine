@@ -1,0 +1,4769 @@
+{
+  "platform": "youtube",
+  "scanned_at": "2026-04-10T21:28:58.865Z",
+  "creator": "andrew-huberman",
+  "total": 476,
+  "ingested": 6,
+  "items": [
+    {
+      "id": "xZ4I2aE8zQA",
+      "title": "Essentials: The Biology of Aggression, Mating & Arousal",
+      "date": null,
+      "duration": 2048,
+      "duration_string": "34:08",
+      "url": "https://www.youtube.com/watch?v=xZ4I2aE8zQA",
+      "view_count": 18029,
+      "ingested": false
+    },
+    {
+      "id": "Tmw2dW0a9DY",
+      "title": "Cultivating Awe & Emotional Connection in Daily Life | Dr. Dacher Keltner",
+      "date": null,
+      "duration": 8420,
+      "duration_string": "2:20:20",
+      "url": "https://www.youtube.com/watch?v=Tmw2dW0a9DY",
+      "view_count": 55228,
+      "ingested": false
+    },
+    {
+      "id": "0VSOoMuStvg",
+      "title": "Essentials: How to Build Strength, Muscle Size & Endurance | Dr. Andy Galpin",
+      "date": null,
+      "duration": 2066,
+      "duration_string": "34:26",
+      "url": "https://www.youtube.com/watch?v=0VSOoMuStvg",
+      "view_count": 86385,
+      "ingested": false
+    },
+    {
+      "id": "6-mEiwe2NhE",
+      "title": "How Hormones Shape Sexual Orientation & Behavior | Dr. Marc Breedlove",
+      "date": null,
+      "duration": 7878,
+      "duration_string": "2:11:18",
+      "url": "https://www.youtube.com/watch?v=6-mEiwe2NhE",
+      "view_count": 108906,
+      "ingested": false
+    },
+    {
+      "id": "hnzrPKvRBD8",
+      "title": "Using Salt to Optimize Mental & Physical Performance | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2034,
+      "duration_string": "33:54",
+      "url": "https://www.youtube.com/watch?v=hnzrPKvRBD8",
+      "view_count": 85072,
+      "ingested": false
+    },
+    {
+      "id": "C0DMdUqF73Q",
+      "title": "The Best Vitality & Health Protocols | Dr. Rhonda Patrick",
+      "date": null,
+      "duration": 12668,
+      "duration_string": "3:31:08",
+      "url": "https://www.youtube.com/watch?v=C0DMdUqF73Q",
+      "view_count": 214521,
+      "ingested": false
+    },
+    {
+      "id": "RECLTp_YxSU",
+      "title": "Essentials: Tools for Setting & Achieving Goals | Dr. Emily Balcetis",
+      "date": null,
+      "duration": 1922,
+      "duration_string": "32:02",
+      "url": "https://www.youtube.com/watch?v=RECLTp_YxSU",
+      "view_count": 107391,
+      "ingested": false
+    },
+    {
+      "id": "hlOA8ObQJXo",
+      "title": "Science-Based Meditation Tools to Improve Your Brain & Health | Dr. Richard Davidson",
+      "date": null,
+      "duration": 9825,
+      "duration_string": "2:43:45",
+      "url": "https://www.youtube.com/watch?v=hlOA8ObQJXo",
+      "view_count": 312091,
+      "ingested": false
+    },
+    {
+      "id": "iuPQmw4Ax00",
+      "title": "Benefits of Sauna & Deliberate Heat Exposure | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2360,
+      "duration_string": "39:20",
+      "url": "https://www.youtube.com/watch?v=iuPQmw4Ax00",
+      "view_count": 80083,
+      "ingested": false
+    },
+    {
+      "id": "u4VTFb4awrQ",
+      "title": "Avoiding, Treating & Curing Cancer | Dr. Alex Marson",
+      "date": null,
+      "duration": 8833,
+      "duration_string": "2:27:13",
+      "url": "https://www.youtube.com/watch?v=u4VTFb4awrQ",
+      "view_count": 78580,
+      "ingested": false
+    },
+    {
+      "id": "cru_4P6qVYQ",
+      "title": "Essentials: The Biology of Taste Perception & Sugar Craving | Dr. Charles Zuker",
+      "date": null,
+      "duration": 1853,
+      "duration_string": "30:53",
+      "url": "https://www.youtube.com/watch?v=cru_4P6qVYQ",
+      "view_count": 43856,
+      "ingested": false
+    },
+    {
+      "id": "9G2MRFs4vac",
+      "title": "Unlearn Negative Thoughts & Behaviors Patterns | Dr. Alok Kanojia (Healthy Gamer)",
+      "date": null,
+      "duration": 11324,
+      "duration_string": "3:08:44",
+      "url": "https://www.youtube.com/watch?v=9G2MRFs4vac",
+      "view_count": 1065558,
+      "ingested": false
+    },
+    {
+      "id": "7UeojKTzeHE",
+      "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2309,
+      "duration_string": "38:29",
+      "url": "https://www.youtube.com/watch?v=7UeojKTzeHE",
+      "view_count": 71993,
+      "ingested": false
+    },
+    {
+      "id": "Ew0-Lg_Evj0",
+      "title": "Restore Youthfulness & Vitality to the Aging Brain & Body | Dr. Tony Wyss-Coray",
+      "date": null,
+      "duration": 7154,
+      "duration_string": "1:59:14",
+      "url": "https://www.youtube.com/watch?v=Ew0-Lg_Evj0",
+      "view_count": 139014,
+      "ingested": false
+    },
+    {
+      "id": "9GzlbLIU5dU",
+      "title": "Essentials: Optimize Your Exercise Program with Science-Based Tools | Jeff Cavaliere",
+      "date": null,
+      "duration": 2091,
+      "duration_string": "34:51",
+      "url": "https://www.youtube.com/watch?v=9GzlbLIU5dU",
+      "view_count": 94626,
+      "ingested": false
+    },
+    {
+      "id": "_Q4XT82yd-Q",
+      "title": "The Most Effective Weight Training, Cardio & Nutrition for Women | Dr. Lauren Colenso-Semple",
+      "date": null,
+      "duration": 9118,
+      "duration_string": "2:31:58",
+      "url": "https://www.youtube.com/watch?v=_Q4XT82yd-Q",
+      "view_count": 161431,
+      "ingested": false
+    },
+    {
+      "id": "NEkUNahduWY",
+      "title": "The Science of Love, Desire & Attachment | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2149,
+      "duration_string": "35:49",
+      "url": "https://www.youtube.com/watch?v=NEkUNahduWY",
+      "view_count": 116431,
+      "ingested": false
+    },
+    {
+      "id": "rAbJC-Qaw7Q",
+      "title": "How Genes Shape Your Risk Taking & Morals | Dr. Kathryn Paige Harden",
+      "date": null,
+      "duration": 9723,
+      "duration_string": "2:42:03",
+      "url": "https://www.youtube.com/watch?v=rAbJC-Qaw7Q",
+      "view_count": 118827,
+      "ingested": false
+    },
+    {
+      "id": "JsICN9ZiSjA",
+      "title": "Essentials: The Science & Practice of Movement | Ido Portal",
+      "date": null,
+      "duration": 2170,
+      "duration_string": "36:10",
+      "url": "https://www.youtube.com/watch?v=JsICN9ZiSjA",
+      "view_count": 56575,
+      "ingested": false
+    },
+    {
+      "id": "VPi_eWiaqdg",
+      "title": "How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague",
+      "date": null,
+      "duration": 9685,
+      "duration_string": "2:41:25",
+      "url": "https://www.youtube.com/watch?v=VPi_eWiaqdg",
+      "view_count": 197670,
+      "ingested": false
+    },
+    {
+      "id": "BRG4_KfTxbs",
+      "title": "Using Play to Rewire & Improve Your Brain | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1909,
+      "duration_string": "31:49",
+      "url": "https://www.youtube.com/watch?v=BRG4_KfTxbs",
+      "view_count": 97360,
+      "ingested": false
+    },
+    {
+      "id": "lEULFeUVYf0",
+      "title": "Science & Tools of Learning & Memory | Dr. David Eagleman",
+      "date": null,
+      "duration": 8652,
+      "duration_string": "2:24:12",
+      "url": "https://www.youtube.com/watch?v=lEULFeUVYf0",
+      "view_count": 349484,
+      "ingested": false
+    },
+    {
+      "id": "iNL_BFlHYZ8",
+      "title": "Essentials: Therapy, Treating Trauma & Other Life Challenges | Dr. Paul Conti",
+      "date": null,
+      "duration": 2004,
+      "duration_string": "33:24",
+      "url": "https://www.youtube.com/watch?v=iNL_BFlHYZ8",
+      "view_count": 67355,
+      "ingested": false
+    },
+    {
+      "id": "qzXU390N3vs",
+      "title": "Build Muscle & Strength & Forge Your Life Path | Dorian Yates",
+      "date": null,
+      "duration": 10044,
+      "duration_string": "2:47:24",
+      "url": "https://www.youtube.com/watch?v=qzXU390N3vs",
+      "view_count": 739832,
+      "ingested": false
+    },
+    {
+      "id": "RmwbNdyrilk",
+      "title": "Essentials: Tools to Boost Attention & Memory | Dr. Wendy Suzuki",
+      "date": null,
+      "duration": 2212,
+      "duration_string": "36:52",
+      "url": "https://www.youtube.com/watch?v=RmwbNdyrilk",
+      "view_count": 250001,
+      "ingested": false
+    },
+    {
+      "id": "t6RCTP4fc9Q",
+      "title": "How to Overcome Addiction to Substances or Behaviors | Dr. Keith Humphreys",
+      "date": null,
+      "duration": 12421,
+      "duration_string": "3:27:01",
+      "url": "https://www.youtube.com/watch?v=t6RCTP4fc9Q",
+      "view_count": 182897,
+      "ingested": false
+    },
+    {
+      "id": "23t_ynq2tmk",
+      "title": "Optimizing Workspace for Productivity, Focus & Creativity | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1812,
+      "duration_string": "30:12",
+      "url": "https://www.youtube.com/watch?v=23t_ynq2tmk",
+      "view_count": 145402,
+      "ingested": false
+    },
+    {
+      "id": "bdsc3Spm6Sw",
+      "title": "Best Ways to Build Better Habits & Break Bad Ones | James Clear",
+      "date": null,
+      "duration": 9319,
+      "duration_string": "2:35:19",
+      "url": "https://www.youtube.com/watch?v=bdsc3Spm6Sw",
+      "view_count": 476947,
+      "ingested": false
+    },
+    {
+      "id": "fh2dBmLN-ZM",
+      "title": "Essentials: Micronutrients for Health & Longevity | Dr. Rhonda Patrick",
+      "date": null,
+      "duration": 2137,
+      "duration_string": "35:37",
+      "url": "https://www.youtube.com/watch?v=fh2dBmLN-ZM",
+      "view_count": 166332,
+      "ingested": false
+    },
+    {
+      "id": "qGb7hYMlA3o",
+      "title": "Defining Healthy Masculinity & How to Build It | Terry Real",
+      "date": null,
+      "duration": 10231,
+      "duration_string": "2:50:31",
+      "url": "https://www.youtube.com/watch?v=qGb7hYMlA3o",
+      "view_count": 183066,
+      "ingested": false
+    },
+    {
+      "id": "fYhY-vC000A",
+      "title": "Essentials: How to Optimize Your Hormones for Health & Vitality | Dr. Kyle Gillett",
+      "date": null,
+      "duration": 2236,
+      "duration_string": "37:16",
+      "url": "https://www.youtube.com/watch?v=fYhY-vC000A",
+      "view_count": 97737,
+      "ingested": false
+    },
+    {
+      "id": "zHyvVajsqMw",
+      "title": "Transform Pain & Trauma Into Creative Expression | David Choe",
+      "date": null,
+      "duration": 14034,
+      "duration_string": "3:53:54",
+      "url": "https://www.youtube.com/watch?v=zHyvVajsqMw",
+      "view_count": 257950,
+      "ingested": false
+    },
+    {
+      "id": "zYuw-8pwnp8",
+      "title": "How to Set & Achieve Goals | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1998,
+      "duration_string": "33:18",
+      "url": "https://www.youtube.com/watch?v=zYuw-8pwnp8",
+      "view_count": 248257,
+      "ingested": false
+    },
+    {
+      "id": "nMkQUlBtFlk",
+      "title": "Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard",
+      "date": null,
+      "duration": 11806,
+      "duration_string": "3:16:46",
+      "url": "https://www.youtube.com/watch?v=nMkQUlBtFlk",
+      "view_count": 373512,
+      "ingested": false
+    },
+    {
+      "id": "n_MVhE63ZQQ",
+      "title": "Essentials: Build a Healthy Gut Microbiome | Dr. Justin Sonnenburg",
+      "date": null,
+      "duration": 2089,
+      "duration_string": "34:49",
+      "url": "https://www.youtube.com/watch?v=n_MVhE63ZQQ",
+      "view_count": 170553,
+      "ingested": false
+    },
+    {
+      "id": "VnPQ4mLRG-c",
+      "title": "Master the Creative Process | Twyla Tharp",
+      "date": null,
+      "duration": 8992,
+      "duration_string": "2:29:52",
+      "url": "https://www.youtube.com/watch?v=VnPQ4mLRG-c",
+      "view_count": 114480,
+      "ingested": false
+    },
+    {
+      "id": "HXuj7wAt7u8",
+      "title": "The Science of Making & Breaking Habits | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2176,
+      "duration_string": "36:16",
+      "url": "https://www.youtube.com/watch?v=HXuj7wAt7u8",
+      "view_count": 260457,
+      "ingested": false
+    },
+    {
+      "id": "iT8W6kaD-RA",
+      "title": "Dr. Glen Jeffery: Using Red Light to Improve Your Health & the Harmful Effects of LEDs",
+      "date": null,
+      "duration": 8066,
+      "duration_string": "2:14:26",
+      "url": "https://www.youtube.com/watch?v=iT8W6kaD-RA",
+      "view_count": 298598,
+      "ingested": false
+    },
+    {
+      "id": "SOo4yNoaAoc",
+      "title": "Essentials: Using Hypnosis to Enhance Mental & Physical Health & Performance | Dr. David Spiegel",
+      "date": null,
+      "duration": 2098,
+      "duration_string": "34:58",
+      "url": "https://www.youtube.com/watch?v=SOo4yNoaAoc",
+      "view_count": 48612,
+      "ingested": false
+    },
+    {
+      "id": "hMzfGZnaPN8",
+      "title": "Female Hormone Health, PCOS, Endometriosis, Fertility & Breast Cancer | Dr. Thaïs Aliabadi",
+      "date": null,
+      "duration": 11248,
+      "duration_string": "3:07:28",
+      "url": "https://www.youtube.com/watch?v=hMzfGZnaPN8",
+      "view_count": 169745,
+      "ingested": false
+    },
+    {
+      "id": "25PtptE7mWk",
+      "title": "Essentials: Science of Building Strong Social Bonds with Family, Friends & Romantic Partners",
+      "date": null,
+      "duration": 1935,
+      "duration_string": "32:15",
+      "url": "https://www.youtube.com/watch?v=25PtptE7mWk",
+      "view_count": 111151,
+      "ingested": false
+    },
+    {
+      "id": "ZtTUfMHuioA",
+      "title": "How to Speak Clearly & With Confidence | Matt Abrahams",
+      "date": null,
+      "duration": 8781,
+      "duration_string": "2:26:21",
+      "url": "https://www.youtube.com/watch?v=ZtTUfMHuioA",
+      "view_count": 473036,
+      "ingested": false
+    },
+    {
+      "id": "Y3NUEPNZDMA",
+      "title": "Essentials: Breathing for Mental & Physical Health & Performance | Dr. Jack Feldman",
+      "date": null,
+      "duration": 2748,
+      "duration_string": "45:48",
+      "url": "https://www.youtube.com/watch?v=Y3NUEPNZDMA",
+      "view_count": 97951,
+      "ingested": false
+    },
+    {
+      "id": "tb6ApBIXr1k",
+      "title": "How Your Thoughts Are Built & How You Can Shape Them | Dr. Jennifer Groh",
+      "date": null,
+      "duration": 8195,
+      "duration_string": "2:16:35",
+      "url": "https://www.youtube.com/watch?v=tb6ApBIXr1k",
+      "view_count": 148773,
+      "ingested": false
+    },
+    {
+      "id": "tpntW9Tte4M",
+      "title": "Erasing Fears & Traumas Using Modern Neuroscience | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2105,
+      "duration_string": "35:05",
+      "url": "https://www.youtube.com/watch?v=tpntW9Tte4M",
+      "view_count": 255675,
+      "ingested": false
+    },
+    {
+      "id": "PCbD3hFyfCk",
+      "title": "How A Doctor Cured His Own Terminal Disease | Dr. David Fajgenbaum",
+      "date": null,
+      "duration": 7134,
+      "duration_string": "1:58:54",
+      "url": "https://www.youtube.com/watch?v=PCbD3hFyfCk",
+      "view_count": 78147,
+      "ingested": false
+    },
+    {
+      "id": "Ykvkg2Jz3X8",
+      "title": "Essentials: The Biology of Slowing & Reversing Aging | Dr. David Sinclair",
+      "date": null,
+      "duration": 2040,
+      "duration_string": "34:00",
+      "url": "https://www.youtube.com/watch?v=Ykvkg2Jz3X8",
+      "view_count": 210332,
+      "ingested": false
+    },
+    {
+      "id": "KBkl3I645c8",
+      "title": "Improve Your Lymphatic System for Overall Health & Appearance",
+      "date": null,
+      "duration": 5987,
+      "duration_string": "1:39:47",
+      "url": "https://www.youtube.com/watch?v=KBkl3I645c8",
+      "view_count": 581262,
+      "ingested": false
+    },
+    {
+      "id": "9gJLWk3W5GQ",
+      "title": "The Science of Gratitude & How to Build a Gratitude Practice | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2086,
+      "duration_string": "34:46",
+      "url": "https://www.youtube.com/watch?v=9gJLWk3W5GQ",
+      "view_count": 173185,
+      "ingested": false
+    },
+    {
+      "id": "cpKsogGdem4",
+      "title": "How to Overcome Inner Resistance | Steven Pressfield",
+      "date": null,
+      "duration": 8103,
+      "duration_string": "2:15:03",
+      "url": "https://www.youtube.com/watch?v=cpKsogGdem4",
+      "view_count": 402585,
+      "ingested": false
+    },
+    {
+      "id": "-zI0ZgKM0xA",
+      "title": "Essentials: How Your Brain Functions & Interprets the World | Dr. David Berson",
+      "date": null,
+      "duration": 2144,
+      "duration_string": "35:44",
+      "url": "https://www.youtube.com/watch?v=-zI0ZgKM0xA",
+      "view_count": 82070,
+      "ingested": false
+    },
+    {
+      "id": "xGmGBFpmdhQ",
+      "title": "Protect & Improve Your Hearing & Brain Health | Dr. Konstantina Stankovic",
+      "date": null,
+      "duration": 8863,
+      "duration_string": "2:27:43",
+      "url": "https://www.youtube.com/watch?v=xGmGBFpmdhQ",
+      "view_count": 95008,
+      "ingested": false
+    },
+    {
+      "id": "vXTK0Ac9i1Q",
+      "title": "Time Perception, Memory & Focus | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1856,
+      "duration_string": "30:56",
+      "url": "https://www.youtube.com/watch?v=vXTK0Ac9i1Q",
+      "view_count": 146804,
+      "ingested": false
+    },
+    {
+      "id": "WwRc2SEo-VI",
+      "title": "How to Make Yourself Unbreakable | DJ Shipley",
+      "date": null,
+      "duration": 13356,
+      "duration_string": "3:42:36",
+      "url": "https://www.youtube.com/watch?v=WwRc2SEo-VI",
+      "view_count": 754242,
+      "ingested": false
+    },
+    {
+      "id": "VqiPNN4Jblk",
+      "title": "Essentials: How Humans Select & Keep Romantic Partners in the Short & Long Term | Dr. David Buss",
+      "date": null,
+      "duration": 1862,
+      "duration_string": "31:02",
+      "url": "https://www.youtube.com/watch?v=VqiPNN4Jblk",
+      "view_count": 195706,
+      "ingested": false
+    },
+    {
+      "id": "MlmFj1-mOtg",
+      "title": "Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum",
+      "date": null,
+      "duration": 9351,
+      "duration_string": "2:35:51",
+      "url": "https://www.youtube.com/watch?v=MlmFj1-mOtg",
+      "view_count": 238900,
+      "ingested": false
+    },
+    {
+      "id": "pN1UL1M9sqc",
+      "title": "Using Your Nervous System to Enhance Your Immune System | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2182,
+      "duration_string": "36:22",
+      "url": "https://www.youtube.com/watch?v=pN1UL1M9sqc",
+      "view_count": 95037,
+      "ingested": false
+    },
+    {
+      "id": "7SIjcX5B1Vs",
+      "title": "Build Your Ideal Physique | Dr. Bret Contreras",
+      "date": null,
+      "duration": 11037,
+      "duration_string": "3:03:57",
+      "url": "https://www.youtube.com/watch?v=7SIjcX5B1Vs",
+      "view_count": 356734,
+      "ingested": false
+    },
+    {
+      "id": "dy_iLCJggO0",
+      "title": "Essentials: How to Exercise for Strength Gains & Hormone Optimization | Dr. Duncan French",
+      "date": null,
+      "duration": 2097,
+      "duration_string": "34:57",
+      "url": "https://www.youtube.com/watch?v=dy_iLCJggO0",
+      "view_count": 131082,
+      "ingested": false
+    },
+    {
+      "id": "2t4vswC-3mY",
+      "title": "How to Expand Your Consciousness | Dr. Christof Koch",
+      "date": null,
+      "duration": 7903,
+      "duration_string": "2:11:43",
+      "url": "https://www.youtube.com/watch?v=2t4vswC-3mY",
+      "view_count": 176043,
+      "ingested": false
+    },
+    {
+      "id": "cIla9axQRyM",
+      "title": "Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1955,
+      "duration_string": "32:35",
+      "url": "https://www.youtube.com/watch?v=cIla9axQRyM",
+      "view_count": 323398,
+      "ingested": false
+    },
+    {
+      "id": "cjAvD-U5so0",
+      "title": "Transform Your Metabolic Health & Longevity by Knowing Your Unique Biology | Dr. Michael Snyder",
+      "date": null,
+      "duration": 9905,
+      "duration_string": "2:45:05",
+      "url": "https://www.youtube.com/watch?v=cjAvD-U5so0",
+      "view_count": 165355,
+      "ingested": false
+    },
+    {
+      "id": "alVWRl_X_AA",
+      "title": "Essentials: Science of Mindsets for Health & Performance | Dr. Alia Crum",
+      "date": null,
+      "duration": 2053,
+      "duration_string": "34:13",
+      "url": "https://www.youtube.com/watch?v=alVWRl_X_AA",
+      "view_count": 318350,
+      "ingested": false
+    },
+    {
+      "id": "4TsOnsPDKKY",
+      "title": "How to Set & Achieve Massive Goals | Alex Honnold",
+      "date": null,
+      "duration": 6553,
+      "duration_string": "1:49:13",
+      "url": "https://www.youtube.com/watch?v=4TsOnsPDKKY",
+      "view_count": 343835,
+      "ingested": false
+    },
+    {
+      "id": "D61jJJPIQeo",
+      "title": "Effects of Fasting & Time Restricted Eating on Fat Loss & Health | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2303,
+      "duration_string": "38:23",
+      "url": "https://www.youtube.com/watch?v=D61jJJPIQeo",
+      "view_count": 612366,
+      "ingested": false
+    },
+    {
+      "id": "Whe2Jh9q6jI",
+      "title": "Science & Health Benefits of Belief in God & Religion | Dr. David DeSteno",
+      "date": null,
+      "duration": 8658,
+      "duration_string": "2:24:18",
+      "url": "https://www.youtube.com/watch?v=Whe2Jh9q6jI",
+      "view_count": 252610,
+      "ingested": false
+    },
+    {
+      "id": "2XMb3MD6g6Q",
+      "title": "Essentials: Timing Light for Better Sleep, Energy & Mood | Dr. Samer Hattar",
+      "date": null,
+      "duration": 1845,
+      "duration_string": "30:45",
+      "url": "https://www.youtube.com/watch?v=2XMb3MD6g6Q",
+      "view_count": 66224,
+      "ingested": false
+    },
+    {
+      "id": "H4mMZ0vliMo",
+      "title": "Curing Autism, Epilepsy & Schizophrenia with Stem Cells | Dr. Sergiu Pașca",
+      "date": null,
+      "duration": 8595,
+      "duration_string": "2:23:15",
+      "url": "https://www.youtube.com/watch?v=H4mMZ0vliMo",
+      "view_count": 86760,
+      "ingested": false
+    },
+    {
+      "id": "XeN6eGO6FVQ",
+      "title": "Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1974,
+      "duration_string": "32:54",
+      "url": "https://www.youtube.com/watch?v=XeN6eGO6FVQ",
+      "view_count": 448945,
+      "ingested": false
+    },
+    {
+      "id": "rcAyjg-oy84",
+      "title": "How to Rewire Your Brain & Learn Faster | Dr. Michael Kilgard",
+      "date": null,
+      "duration": 11376,
+      "duration_string": "3:09:36",
+      "url": "https://www.youtube.com/watch?v=rcAyjg-oy84",
+      "view_count": 414178,
+      "ingested": false
+    },
+    {
+      "id": "aZklQpFa2kE",
+      "title": "Essentials: Increase Strength & Endurance with Cooling Protocols | Dr. Craig Heller",
+      "date": null,
+      "duration": 1881,
+      "duration_string": "31:21",
+      "url": "https://www.youtube.com/watch?v=aZklQpFa2kE",
+      "view_count": 62254,
+      "ingested": false
+    },
+    {
+      "id": "Ibj1k3IZTNU",
+      "title": "How to Control Your Cortisol & Overcome Burnout",
+      "date": null,
+      "duration": 8176,
+      "duration_string": "2:16:16",
+      "url": "https://www.youtube.com/watch?v=Ibj1k3IZTNU",
+      "view_count": 544252,
+      "ingested": false
+    },
+    {
+      "id": "LAwBdRR4wQk",
+      "title": "ADHD & How Anyone Can Improve Their Focus | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2275,
+      "duration_string": "37:55",
+      "url": "https://www.youtube.com/watch?v=LAwBdRR4wQk",
+      "view_count": 450891,
+      "ingested": false
+    },
+    {
+      "id": "k8SBJzsIWAo",
+      "title": "Male vs. Female Brain Differences & How They Arise From Genes & Hormones | Dr. Nirao Shah",
+      "date": null,
+      "duration": 8804,
+      "duration_string": "2:26:44",
+      "url": "https://www.youtube.com/watch?v=k8SBJzsIWAo",
+      "view_count": 198297,
+      "ingested": false
+    },
+    {
+      "id": "OvHbhzArbfE",
+      "title": "Essentials: Psychedelics for Treating Mental Disorders | Dr. Matthew Johnson",
+      "date": null,
+      "duration": 2088,
+      "duration_string": "34:48",
+      "url": "https://www.youtube.com/watch?v=OvHbhzArbfE",
+      "view_count": 78630,
+      "ingested": false
+    },
+    {
+      "id": "gyE6Z4GLEeM",
+      "title": "Health Effects & Risks of Kratom, Opioids & Other Natural Occurring Medicines | Dr. Chris McCurdy",
+      "date": null,
+      "duration": 9773,
+      "duration_string": "2:42:53",
+      "url": "https://www.youtube.com/watch?v=gyE6Z4GLEeM",
+      "view_count": 102864,
+      "ingested": false
+    },
+    {
+      "id": "mJv1_esiJ8g",
+      "title": "Healthy Eating & Eating Disorders - Anorexia, Bulimia, Binging | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2373,
+      "duration_string": "39:33",
+      "url": "https://www.youtube.com/watch?v=mJv1_esiJ8g",
+      "view_count": 79189,
+      "ingested": false
+    },
+    {
+      "id": "ewnvjnuFTOY",
+      "title": "How Nature & Other Physical Environments Impact Your Focus, Cognition & Health | Dr. Marc Berman",
+      "date": null,
+      "duration": 7906,
+      "duration_string": "2:11:46",
+      "url": "https://www.youtube.com/watch?v=ewnvjnuFTOY",
+      "view_count": 180589,
+      "ingested": false
+    },
+    {
+      "id": "WxtxzRdJFTI",
+      "title": "Essentials: Science of Stress, Testosterone, Aggression & Motivation | Dr. Robert Sapolsky",
+      "date": null,
+      "duration": 1855,
+      "duration_string": "30:55",
+      "url": "https://www.youtube.com/watch?v=WxtxzRdJFTI",
+      "view_count": 217033,
+      "ingested": false
+    },
+    {
+      "id": "h_1zlead9ZU",
+      "title": "How to Lose Fat & Gain Muscle With Nutrition | Alan Aragon",
+      "date": null,
+      "duration": 9249,
+      "duration_string": "2:34:09",
+      "url": "https://www.youtube.com/watch?v=h_1zlead9ZU",
+      "view_count": 757122,
+      "ingested": false
+    },
+    {
+      "id": "HWcphoKlbxY",
+      "title": "Understanding & Conquering Depression | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2141,
+      "duration_string": "35:41",
+      "url": "https://www.youtube.com/watch?v=HWcphoKlbxY",
+      "view_count": 302852,
+      "ingested": false
+    },
+    {
+      "id": "zqANjUGarAw",
+      "title": "The Chemistry of Food & Taste | Dr. Harold McGee",
+      "date": null,
+      "duration": 8000,
+      "duration_string": "2:13:20",
+      "url": "https://www.youtube.com/watch?v=zqANjUGarAw",
+      "view_count": 100304,
+      "ingested": false
+    },
+    {
+      "id": "i4gvIeA3RcI",
+      "title": "Essentials: Understanding & Treating Addiction | Dr. Anna Lembke",
+      "date": null,
+      "duration": 1911,
+      "duration_string": "31:51",
+      "url": "https://www.youtube.com/watch?v=i4gvIeA3RcI",
+      "view_count": 368073,
+      "ingested": false
+    },
+    {
+      "id": "CLbVW3Pj46A",
+      "title": "Control Your Vagus Nerve to Improve Mood, Alertness & Neuroplasticity",
+      "date": null,
+      "duration": 6675,
+      "duration_string": "1:51:15",
+      "url": "https://www.youtube.com/watch?v=CLbVW3Pj46A",
+      "view_count": 567681,
+      "ingested": false
+    },
+    {
+      "id": "vm1GbSPx48g",
+      "title": "How to Control Your Sense of Pain & Pleasure | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1965,
+      "duration_string": "32:45",
+      "url": "https://www.youtube.com/watch?v=vm1GbSPx48g",
+      "view_count": 93734,
+      "ingested": false
+    },
+    {
+      "id": "SsKkZTjUJEk",
+      "title": "How to Grow From Doing Hard Things | Michael Easter",
+      "date": null,
+      "duration": 11141,
+      "duration_string": "3:05:41",
+      "url": "https://www.youtube.com/watch?v=SsKkZTjUJEk",
+      "view_count": 494846,
+      "ingested": false
+    },
+    {
+      "id": "JaRGJVrJBQ8",
+      "title": "The Science & Practice of Perfecting Your Sleep | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2138,
+      "duration_string": "35:38",
+      "url": "https://www.youtube.com/watch?v=JaRGJVrJBQ8",
+      "view_count": 312542,
+      "ingested": false
+    },
+    {
+      "id": "2Y_PxTxLFVg",
+      "title": "Improving Science & Restoring Trust in Public Health | Dr. Jay Bhattacharya",
+      "date": null,
+      "duration": 15994,
+      "duration_string": "4:26:34",
+      "url": "https://www.youtube.com/watch?v=2Y_PxTxLFVg",
+      "view_count": 118274,
+      "ingested": false
+    },
+    {
+      "id": "2ZkJtIouKzE",
+      "title": "Improving Health With Stronger Brain-Body Connection | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2121,
+      "duration_string": "35:21",
+      "url": "https://www.youtube.com/watch?v=2ZkJtIouKzE",
+      "view_count": 182205,
+      "ingested": false
+    },
+    {
+      "id": "inUkNZe5H3k",
+      "title": "Healing From Grief & Loss | Dr. Mary-Frances O'Connor",
+      "date": null,
+      "duration": 9156,
+      "duration_string": "2:32:36",
+      "url": "https://www.youtube.com/watch?v=inUkNZe5H3k",
+      "view_count": 169802,
+      "ingested": false
+    },
+    {
+      "id": "SCzecagKBjY",
+      "title": "Essentials: Machines, Creativity & Love | Dr. Lex Fridman",
+      "date": null,
+      "duration": 2537,
+      "duration_string": "42:17",
+      "url": "https://www.youtube.com/watch?v=SCzecagKBjY",
+      "view_count": 95678,
+      "ingested": false
+    },
+    {
+      "id": "ijdpvG24IkE",
+      "title": "Behaviors That Alter Your Genes to Improve Your Health & Performance | Dr. Melissa Ilardo",
+      "date": null,
+      "duration": 6731,
+      "duration_string": "1:52:11",
+      "url": "https://www.youtube.com/watch?v=ijdpvG24IkE",
+      "view_count": 297349,
+      "ingested": false
+    },
+    {
+      "id": "Pmd6knanPKw",
+      "title": "Maximize Productivity, Physical & Mental Health With Daily Tools | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1913,
+      "duration_string": "31:53",
+      "url": "https://www.youtube.com/watch?v=Pmd6knanPKw",
+      "view_count": 1026319,
+      "ingested": false
+    },
+    {
+      "id": "HTJ8lDtJOg4",
+      "title": "The Science & Art of Comedy & Creativity | Tom Segura",
+      "date": null,
+      "duration": 8239,
+      "duration_string": "2:17:19",
+      "url": "https://www.youtube.com/watch?v=HTJ8lDtJOg4",
+      "view_count": 130531,
+      "ingested": false
+    },
+    {
+      "id": "RSnol_TVrzQ",
+      "title": "Essentials: Understanding & Healing the Mind | Dr. Karl Deisseroth",
+      "date": null,
+      "duration": 2315,
+      "duration_string": "38:35",
+      "url": "https://www.youtube.com/watch?v=RSnol_TVrzQ",
+      "view_count": 129216,
+      "ingested": false
+    },
+    {
+      "id": "9vQZT2igXN4",
+      "title": "How Different Diets Impact Your Health | Dr. Christopher Gardner",
+      "date": null,
+      "duration": 10229,
+      "duration_string": "2:50:29",
+      "url": "https://www.youtube.com/watch?v=9vQZT2igXN4",
+      "view_count": 257177,
+      "ingested": false
+    },
+    {
+      "id": "fSBgDq2ttCw",
+      "title": "How Hearing & Balance Enhance Focus & Learning | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1991,
+      "duration_string": "33:11",
+      "url": "https://www.youtube.com/watch?v=fSBgDq2ttCw",
+      "view_count": 69009,
+      "ingested": false
+    },
+    {
+      "id": "zpkwefXtbfk",
+      "title": "Contracts of Love & Money That Make or Break Relationships | James Sexton",
+      "date": null,
+      "duration": 13090,
+      "duration_string": "3:38:10",
+      "url": "https://www.youtube.com/watch?v=zpkwefXtbfk",
+      "view_count": 275310,
+      "ingested": false
+    },
+    {
+      "id": "_eDg9yOvvrQ",
+      "title": "How Smell, Taste & Pheromones Shape Behavior | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2068,
+      "duration_string": "34:28",
+      "url": "https://www.youtube.com/watch?v=_eDg9yOvvrQ",
+      "view_count": 80619,
+      "ingested": false
+    },
+    {
+      "id": "6ck9fa6_C8c",
+      "title": "What Pets Actually Want & Need | Dr. Karolina Westlund",
+      "date": null,
+      "duration": 7524,
+      "duration_string": "2:05:24",
+      "url": "https://www.youtube.com/watch?v=6ck9fa6_C8c",
+      "view_count": 225269,
+      "ingested": false
+    },
+    {
+      "id": "q-wRvsiGYIs",
+      "title": "AMA #19: Collagen vs. Whey Protein, Creatine, Smelling Salts, Stimulants & More",
+      "date": null,
+      "duration": 1097,
+      "duration_string": "18:17",
+      "url": "https://www.youtube.com/watch?v=q-wRvsiGYIs",
+      "view_count": 164462,
+      "ingested": false
+    },
+    {
+      "id": "ssmwxKPFMFU",
+      "title": "Protocols to Improve Vision & Eyesight | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1770,
+      "duration_string": "29:30",
+      "url": "https://www.youtube.com/watch?v=ssmwxKPFMFU",
+      "view_count": 245101,
+      "ingested": false
+    },
+    {
+      "id": "J7yn4tJEmJU",
+      "title": "Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave",
+      "date": null,
+      "duration": 11253,
+      "duration_string": "3:07:33",
+      "url": "https://www.youtube.com/watch?v=J7yn4tJEmJU",
+      "view_count": 364937,
+      "ingested": false
+    },
+    {
+      "id": "7MEhDlw1e9k",
+      "title": "How to Build Endurance | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2247,
+      "duration_string": "37:27",
+      "url": "https://www.youtube.com/watch?v=7MEhDlw1e9k",
+      "view_count": 706336,
+      "ingested": false
+    },
+    {
+      "id": "UyneMnERmnI",
+      "title": "How to Improve Your Vitality & Heal From Disease | Dr. Mark Hyman",
+      "date": null,
+      "duration": 9741,
+      "duration_string": "2:42:21",
+      "url": "https://www.youtube.com/watch?v=UyneMnERmnI",
+      "view_count": 284983,
+      "ingested": false
+    },
+    {
+      "id": "jgaoLdS82vw",
+      "title": "Build Muscle Size, Increase Strength & Improve Recovery | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1669,
+      "duration_string": "27:49",
+      "url": "https://www.youtube.com/watch?v=jgaoLdS82vw",
+      "view_count": 1010605,
+      "ingested": false
+    },
+    {
+      "id": "lYK4UFf8mlc",
+      "title": "How to Find & Be a Great Romantic Partner | Lori Gottlieb",
+      "date": null,
+      "duration": 12179,
+      "duration_string": "3:22:59",
+      "url": "https://www.youtube.com/watch?v=lYK4UFf8mlc",
+      "view_count": 666455,
+      "ingested": false
+    },
+    {
+      "id": "f4cdu-QiKHo",
+      "title": "Lose Fat With Science-Based Tools | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2016,
+      "duration_string": "33:36",
+      "url": "https://www.youtube.com/watch?v=f4cdu-QiKHo",
+      "view_count": 1005928,
+      "ingested": false
+    },
+    {
+      "id": "hCyvqRq5YmM",
+      "title": "Transform Your Mental Health With Diet & Lifestyle | Dr. Chris Palmer",
+      "date": null,
+      "duration": 11523,
+      "duration_string": "3:12:03",
+      "url": "https://www.youtube.com/watch?v=hCyvqRq5YmM",
+      "view_count": 357146,
+      "ingested": false
+    },
+    {
+      "id": "VnEy78RL2YY",
+      "title": "How to Learn Skills Faster | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1841,
+      "duration_string": "30:41",
+      "url": "https://www.youtube.com/watch?v=VnEy78RL2YY",
+      "view_count": 251160,
+      "ingested": false
+    },
+    {
+      "id": "_oOEKKiwdDE",
+      "title": "How to Improve Your Teeth & Oral Microbiome for Brain & Body Health | Dr. Staci Whitman",
+      "date": null,
+      "duration": 10487,
+      "duration_string": "2:54:47",
+      "url": "https://www.youtube.com/watch?v=_oOEKKiwdDE",
+      "view_count": 256040,
+      "ingested": false
+    },
+    {
+      "id": "5--yogtN6oM",
+      "title": "Supercharge Exercise Performance & Recovery with Cooling | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1741,
+      "duration_string": "29:01",
+      "url": "https://www.youtube.com/watch?v=5--yogtN6oM",
+      "view_count": 136373,
+      "ingested": false
+    },
+    {
+      "id": "U3cSnzdyyXU",
+      "title": "How to Increase Your Speed, Mobility & Longevity with Plyometrics & Sprinting | Stuart McMillan",
+      "date": null,
+      "duration": 10866,
+      "duration_string": "3:01:06",
+      "url": "https://www.youtube.com/watch?v=U3cSnzdyyXU",
+      "view_count": 456600,
+      "ingested": false
+    },
+    {
+      "id": "wFucddupQlk",
+      "title": "Boost Your Energy & Immune System with Cortisol & Adrenaline | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1847,
+      "duration_string": "30:47",
+      "url": "https://www.youtube.com/watch?v=wFucddupQlk",
+      "view_count": 193297,
+      "ingested": false
+    },
+    {
+      "id": "NtQ-kdLlQiU",
+      "title": "Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse",
+      "date": null,
+      "duration": 9486,
+      "duration_string": "2:38:06",
+      "url": "https://www.youtube.com/watch?v=NtQ-kdLlQiU",
+      "view_count": 413638,
+      "ingested": false
+    },
+    {
+      "id": "Nmo4bxfFzM0",
+      "title": "How to Control Your Metabolism by Thyroid & Growth Hormone | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1886,
+      "duration_string": "31:26",
+      "url": "https://www.youtube.com/watch?v=Nmo4bxfFzM0",
+      "view_count": 171673,
+      "ingested": false
+    },
+    {
+      "id": "KuuoLT-fq4s",
+      "title": "How to Achieve Inner Peace & Healing | Dr. Richard Schwartz",
+      "date": null,
+      "duration": 7989,
+      "duration_string": "2:13:09",
+      "url": "https://www.youtube.com/watch?v=KuuoLT-fq4s",
+      "view_count": 421781,
+      "ingested": false
+    },
+    {
+      "id": "c9JmHOUp6VU",
+      "title": "How to Control Hunger, Eating & Satiety | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2093,
+      "duration_string": "34:53",
+      "url": "https://www.youtube.com/watch?v=c9JmHOUp6VU",
+      "view_count": 388715,
+      "ingested": false
+    },
+    {
+      "id": "N5DAW8mkJ6Y",
+      "title": "How to Enhance Your Immune System | Dr. Roger Seheult",
+      "date": null,
+      "duration": 12493,
+      "duration_string": "3:28:13",
+      "url": "https://www.youtube.com/watch?v=N5DAW8mkJ6Y",
+      "view_count": 393410,
+      "ingested": false
+    },
+    {
+      "id": "v4HRWgwjP_k",
+      "title": "How to Optimize Testosterone & Estrogen | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1961,
+      "duration_string": "32:41",
+      "url": "https://www.youtube.com/watch?v=v4HRWgwjP_k",
+      "view_count": 553382,
+      "ingested": false
+    },
+    {
+      "id": "bAWUYuygS_U",
+      "title": "How to Make Better Decisions | Dr. Michael Platt",
+      "date": null,
+      "duration": 13732,
+      "duration_string": "3:48:52",
+      "url": "https://www.youtube.com/watch?v=bAWUYuygS_U",
+      "view_count": 312117,
+      "ingested": false
+    },
+    {
+      "id": "FCFQx3cA0Lg",
+      "title": "How Hormones Shape Sexual Development | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2363,
+      "duration_string": "39:23",
+      "url": "https://www.youtube.com/watch?v=FCFQx3cA0Lg",
+      "view_count": 66424,
+      "ingested": false
+    },
+    {
+      "id": "Z3OpxT65fKw",
+      "title": "How to Build Strength, Endurance & Flexibility at Any Age | Pavel Tsatsouline",
+      "date": null,
+      "duration": 15314,
+      "duration_string": "4:15:14",
+      "url": "https://www.youtube.com/watch?v=Z3OpxT65fKw",
+      "view_count": 834995,
+      "ingested": false
+    },
+    {
+      "id": "qdk7XuBgSjw",
+      "title": "The Science of Emotions & Relationships | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2266,
+      "duration_string": "37:46",
+      "url": "https://www.youtube.com/watch?v=qdk7XuBgSjw",
+      "view_count": 779698,
+      "ingested": false
+    },
+    {
+      "id": "QYAgf_lfio4",
+      "title": "Using Your Mind to Control Your Physical Health & Longevity | Dr. Ellen Langer",
+      "date": null,
+      "duration": 12140,
+      "duration_string": "3:22:20",
+      "url": "https://www.youtube.com/watch?v=QYAgf_lfio4",
+      "view_count": 829607,
+      "ingested": false
+    },
+    {
+      "id": "OLQRAMZi--c",
+      "title": "How to Increase Motivation & Drive | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2048,
+      "duration_string": "34:08",
+      "url": "https://www.youtube.com/watch?v=OLQRAMZi--c",
+      "view_count": 895484,
+      "ingested": false
+    },
+    {
+      "id": "wAnDWfEIwoE",
+      "title": "The Art of Learning & Living Life | Josh Waitzkin",
+      "date": null,
+      "duration": 11829,
+      "duration_string": "3:17:09",
+      "url": "https://www.youtube.com/watch?v=wAnDWfEIwoE",
+      "view_count": 549748,
+      "ingested": false
+    },
+    {
+      "id": "Q4qWzbP0q7I",
+      "title": "How Foods & Nutrients Control Our Moods | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1954,
+      "duration_string": "32:34",
+      "url": "https://www.youtube.com/watch?v=Q4qWzbP0q7I",
+      "view_count": 667355,
+      "ingested": false
+    },
+    {
+      "id": "3-ukCGQJk2c",
+      "title": "Charting the Architecture of the Universe & Human Life | Dr. Brian Keating",
+      "date": null,
+      "duration": 11258,
+      "duration_string": "3:07:38",
+      "url": "https://www.youtube.com/watch?v=3-ukCGQJk2c",
+      "view_count": 174457,
+      "ingested": false
+    },
+    {
+      "id": "qUz93CyNIz0",
+      "title": "Tools for Managing Stress & Anxiety | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1949,
+      "duration_string": "32:29",
+      "url": "https://www.youtube.com/watch?v=qUz93CyNIz0",
+      "view_count": 792068,
+      "ingested": false
+    },
+    {
+      "id": "qi4VwpEs3LE",
+      "title": "Overcoming Guilt & Building Tenacity in Kids & Adults | Dr. Becky Kennedy",
+      "date": null,
+      "duration": 13112,
+      "duration_string": "3:38:32",
+      "url": "https://www.youtube.com/watch?v=qi4VwpEs3LE",
+      "view_count": 552411,
+      "ingested": false
+    },
+    {
+      "id": "SjPJn4QP0dk",
+      "title": "Control Pain & Heal Faster With Your Brain | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2197,
+      "duration_string": "36:37",
+      "url": "https://www.youtube.com/watch?v=SjPJn4QP0dk",
+      "view_count": 138373,
+      "ingested": false
+    },
+    {
+      "id": "J2oqi41dCNc",
+      "title": "How to Use Exercise to Improve Your Brain’s Health, Longevity & Performance",
+      "date": null,
+      "duration": 6572,
+      "duration_string": "1:49:32",
+      "url": "https://www.youtube.com/watch?v=J2oqi41dCNc",
+      "view_count": 474568,
+      "ingested": false
+    },
+    {
+      "id": "D97TQuy946k",
+      "title": "Optimize Your Learning & Creativity With Science-Based Tools | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1847,
+      "duration_string": "30:47",
+      "url": "https://www.youtube.com/watch?v=D97TQuy946k",
+      "view_count": 157080,
+      "ingested": false
+    },
+    {
+      "id": "K0hkhbGYaGQ",
+      "title": "How to Best Guide Your Life Decisions & Path | Dr. Jordan Peterson",
+      "date": null,
+      "duration": 13871,
+      "duration_string": "3:51:11",
+      "url": "https://www.youtube.com/watch?v=K0hkhbGYaGQ",
+      "view_count": 3544854,
+      "ingested": false
+    },
+    {
+      "id": "jwChiek_aRY",
+      "title": "How to Learn Faster by Using Failures, Movement & Balance | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2033,
+      "duration_string": "33:53",
+      "url": "https://www.youtube.com/watch?v=jwChiek_aRY",
+      "view_count": 723763,
+      "ingested": false
+    },
+    {
+      "id": "Phm-Alz1Zjo",
+      "title": "How to Achieve True Happiness Using Science-Based Protocols | Dr. Laurie Santos",
+      "date": null,
+      "duration": 11286,
+      "duration_string": "3:08:06",
+      "url": "https://www.youtube.com/watch?v=Phm-Alz1Zjo",
+      "view_count": 614790,
+      "ingested": false
+    },
+    {
+      "id": "4AwyVTHEU3s",
+      "title": "How to Focus to Change Your Brain | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2025,
+      "duration_string": "33:45",
+      "url": "https://www.youtube.com/watch?v=4AwyVTHEU3s",
+      "view_count": 2906314,
+      "ingested": false
+    },
+    {
+      "id": "tR73Ny4Dt9s",
+      "title": "How to Use Curiosity & Focus to Create a Joyful & Meaningful Life | Dr. Bernardo Huberman",
+      "date": null,
+      "duration": 11760,
+      "duration_string": "3:16:00",
+      "url": "https://www.youtube.com/watch?v=tR73Ny4Dt9s",
+      "view_count": 1059037,
+      "ingested": false
+    },
+    {
+      "id": "hF32FvBH4gI",
+      "title": "Understand and Use Dreams to Learn and Forget | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2098,
+      "duration_string": "34:58",
+      "url": "https://www.youtube.com/watch?v=hF32FvBH4gI",
+      "view_count": 202322,
+      "ingested": false
+    },
+    {
+      "id": "8N7mdkrXgbc",
+      "title": "How to Improve Your Mobility, Posture & Flexibility | Dr. Kelly Starrett",
+      "date": null,
+      "duration": 12370,
+      "duration_string": "3:26:10",
+      "url": "https://www.youtube.com/watch?v=8N7mdkrXgbc",
+      "view_count": 689646,
+      "ingested": false
+    },
+    {
+      "id": "In9Bq4EJMZw",
+      "title": "How to Defeat Jet Lag, Shift Work & Sleeplessness | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1604,
+      "duration_string": "26:44",
+      "url": "https://www.youtube.com/watch?v=In9Bq4EJMZw",
+      "view_count": 100703,
+      "ingested": false
+    },
+    {
+      "id": "z5W74QC3v2I",
+      "title": "Understand & Apply the Psychology of Money to Gain Greater Happiness | Morgan Housel",
+      "date": null,
+      "duration": 8136,
+      "duration_string": "2:15:36",
+      "url": "https://www.youtube.com/watch?v=z5W74QC3v2I",
+      "view_count": 839889,
+      "ingested": false
+    },
+    {
+      "id": "q-H_A_dQUxQ",
+      "title": "Using Science to Optimize Sleep, Learning & Metabolism | Huberman Lab Essentials",
+      "date": null,
+      "duration": 1968,
+      "duration_string": "32:48",
+      "url": "https://www.youtube.com/watch?v=q-H_A_dQUxQ",
+      "view_count": 660580,
+      "ingested": false
+    },
+    {
+      "id": "Og56hmAspV8",
+      "title": "How to Control Your Inner Voice & Increase Your Resilience | Dr. Ethan Kross",
+      "date": null,
+      "duration": 11342,
+      "duration_string": "3:09:02",
+      "url": "https://www.youtube.com/watch?v=Og56hmAspV8",
+      "view_count": 1424885,
+      "ingested": false
+    },
+    {
+      "id": "lIo9FcrljDk",
+      "title": "Master Your Sleep & Be More Alert When Awake | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2041,
+      "duration_string": "34:01",
+      "url": "https://www.youtube.com/watch?v=lIo9FcrljDk",
+      "view_count": 845591,
+      "ingested": false
+    },
+    {
+      "id": "etbfLTHD_VU",
+      "title": "How to Improve at Learning Using Neuroscience & AI | Dr. Terry Sejnowski",
+      "date": null,
+      "duration": 9251,
+      "duration_string": "2:34:11",
+      "url": "https://www.youtube.com/watch?v=etbfLTHD_VU",
+      "view_count": 779115,
+      "ingested": false
+    },
+    {
+      "id": "HiyzzcuaAac",
+      "title": "How Your Brain Works & Changes | Huberman Lab Essentials",
+      "date": null,
+      "duration": 2096,
+      "duration_string": "34:56",
+      "url": "https://www.youtube.com/watch?v=HiyzzcuaAac",
+      "view_count": 638301,
+      "ingested": false
+    },
+    {
+      "id": "rZkMpVLcVsg",
+      "title": "How Relationships Shape Your Brain | Dr. Allan Schore",
+      "date": null,
+      "duration": 7666,
+      "duration_string": "2:07:46",
+      "url": "https://www.youtube.com/watch?v=rZkMpVLcVsg",
+      "view_count": 348214,
+      "ingested": false
+    },
+    {
+      "id": "i5611OvTFGM",
+      "title": "How to Safeguard Your Hormone Health & Fertility | Dr. Shanna Swan",
+      "date": null,
+      "duration": 8283,
+      "duration_string": "2:18:03",
+      "url": "https://www.youtube.com/watch?v=i5611OvTFGM",
+      "view_count": 239936,
+      "ingested": false
+    },
+    {
+      "id": "SuR0DaYoe0Y",
+      "title": "How to Deal With High Conflict People | Bill Eddy",
+      "date": null,
+      "duration": 9562,
+      "duration_string": "2:39:22",
+      "url": "https://www.youtube.com/watch?v=SuR0DaYoe0Y",
+      "view_count": 507588,
+      "ingested": false
+    },
+    {
+      "id": "vfRtLI6cJrk",
+      "title": "The Effects of Microplastics on Your Health",
+      "date": null,
+      "duration": 5814,
+      "duration_string": "1:36:54",
+      "url": "https://www.youtube.com/watch?v=vfRtLI6cJrk",
+      "view_count": 253759,
+      "ingested": false
+    },
+    {
+      "id": "kgr22uMsJ5o",
+      "title": "Create Your Ideal Future Using Science-Based Protocols | Ari Wallach",
+      "date": null,
+      "duration": 8257,
+      "duration_string": "2:17:37",
+      "url": "https://www.youtube.com/watch?v=kgr22uMsJ5o",
+      "view_count": 300825,
+      "ingested": false
+    },
+    {
+      "id": "wRsX_ZkzxvQ",
+      "title": "Peptide & Hormone Therapies for Health, Performance & Longevity | Dr. Craig Koniver",
+      "date": null,
+      "duration": 8954,
+      "duration_string": "2:29:14",
+      "url": "https://www.youtube.com/watch?v=wRsX_ZkzxvQ",
+      "view_count": 570562,
+      "ingested": false
+    },
+    {
+      "id": "jC8Pu9HBd48",
+      "title": "How to Improve Memory & Focus Using Science Protocols | Dr. Charan Ranganath",
+      "date": null,
+      "duration": 9549,
+      "duration_string": "2:39:09",
+      "url": "https://www.youtube.com/watch?v=jC8Pu9HBd48",
+      "view_count": 611674,
+      "ingested": false
+    },
+    {
+      "id": "4RFEkGKKhdE",
+      "title": "How to Heal From Post-Traumatic Stress Disorder (PTSD) | Dr. Victor Carrión",
+      "date": null,
+      "duration": 8819,
+      "duration_string": "2:26:59",
+      "url": "https://www.youtube.com/watch?v=4RFEkGKKhdE",
+      "view_count": 262297,
+      "ingested": false
+    },
+    {
+      "id": "ajneRM-ET1Q",
+      "title": "How to Find, Build & Maintain Healthy Romantic Relationships | Esther Perel",
+      "date": null,
+      "duration": 7574,
+      "duration_string": "2:06:14",
+      "url": "https://www.youtube.com/watch?v=ajneRM-ET1Q",
+      "view_count": 1217962,
+      "ingested": false
+    },
+    {
+      "id": "kG5Qb9sr0YQ",
+      "title": "How to Increase Your Emotional Intelligence | Dr. Marc Brackett",
+      "date": null,
+      "duration": 9274,
+      "duration_string": "2:34:34",
+      "url": "https://www.youtube.com/watch?v=kG5Qb9sr0YQ",
+      "view_count": 2093640,
+      "ingested": false
+    },
+    {
+      "id": "U2BPitASUh0",
+      "title": "How to Cultivate a Positive, Growth-Oriented Mindset | Dr. Jamil Zaki",
+      "date": null,
+      "duration": 8202,
+      "duration_string": "2:16:42",
+      "url": "https://www.youtube.com/watch?v=U2BPitASUh0",
+      "view_count": 519228,
+      "ingested": false
+    },
+    {
+      "id": "ddq8JIMhz7c",
+      "title": "Optimal Protocols for Studying & Learning",
+      "date": null,
+      "duration": 6099,
+      "duration_string": "1:41:39",
+      "url": "https://www.youtube.com/watch?v=ddq8JIMhz7c",
+      "view_count": 3506541,
+      "ingested": false
+    },
+    {
+      "id": "wgUjIRtote8",
+      "title": "How to Improve & Protect Your Skin Health & Appearance | Dr. Teo Soleymani",
+      "date": null,
+      "duration": 9964,
+      "duration_string": "2:46:04",
+      "url": "https://www.youtube.com/watch?v=wgUjIRtote8",
+      "view_count": 579906,
+      "ingested": false
+    },
+    {
+      "id": "CD0bRU1e1ZM",
+      "title": "Tools for Nutrition & Fitness | Dr. Layne Norton",
+      "date": null,
+      "duration": 14670,
+      "duration_string": "4:04:30",
+      "url": "https://www.youtube.com/watch?v=CD0bRU1e1ZM",
+      "view_count": 538317,
+      "ingested": false
+    },
+    {
+      "id": "nOgypsWKjm4",
+      "title": "Access Your Best Self With Mind-Body Practices, Belief Testing & Imagination | Dr. Martha Beck",
+      "date": null,
+      "duration": 9894,
+      "duration_string": "2:44:54",
+      "url": "https://www.youtube.com/watch?v=nOgypsWKjm4",
+      "view_count": 1343458,
+      "ingested": false
+    },
+    {
+      "id": "Gf-kC30SLtc",
+      "title": "AMA #18: Cold Therapy Advice, Skin Health Tips, Motivation, Learning Strategies & More",
+      "date": null,
+      "duration": 3404,
+      "duration_string": "56:44",
+      "url": "https://www.youtube.com/watch?v=Gf-kC30SLtc",
+      "view_count": 121162,
+      "ingested": false
+    },
+    {
+      "id": "79p1X_7rAMo",
+      "title": "Supplements for Longevity & Their Efficacy | Dr. Peter Attia",
+      "date": null,
+      "duration": 9042,
+      "duration_string": "2:30:42",
+      "url": "https://www.youtube.com/watch?v=79p1X_7rAMo",
+      "view_count": 359072,
+      "ingested": false
+    },
+    {
+      "id": "pZX8ikmWvEU",
+      "title": "Female-Specific Exercise & Nutrition for Health, Performance & Longevity | Dr. Stacy Sims",
+      "date": null,
+      "duration": 8918,
+      "duration_string": "2:28:38",
+      "url": "https://www.youtube.com/watch?v=pZX8ikmWvEU",
+      "view_count": 2271321,
+      "ingested": false
+    },
+    {
+      "id": "mAlt_HKX4as",
+      "title": "Build a Strong, Pain-Proof Back | Dr. Stuart McGill",
+      "date": null,
+      "duration": 10335,
+      "duration_string": "2:52:15",
+      "url": "https://www.youtube.com/watch?v=mAlt_HKX4as",
+      "view_count": 718515,
+      "ingested": false
+    },
+    {
+      "id": "jouFvyRZntk",
+      "title": "How Cannabis Impacts Health & the Potential Risks | Dr. Matthew Hill",
+      "date": null,
+      "duration": 13958,
+      "duration_string": "3:52:38",
+      "url": "https://www.youtube.com/watch?v=jouFvyRZntk",
+      "view_count": 818955,
+      "ingested": false
+    },
+    {
+      "id": "1CxJVdeyltw",
+      "title": "How to Improve Skin Health & Appearance",
+      "date": null,
+      "duration": 8875,
+      "duration_string": "2:27:55",
+      "url": "https://www.youtube.com/watch?v=1CxJVdeyltw",
+      "view_count": 1319152,
+      "ingested": false
+    },
+    {
+      "id": "WFcYF_pxLgA",
+      "title": "How to Exercise & Eat for Optimal Health & Longevity | Dr. Gabrielle Lyon",
+      "date": null,
+      "duration": 11017,
+      "duration_string": "3:03:37",
+      "url": "https://www.youtube.com/watch?v=WFcYF_pxLgA",
+      "view_count": 2512069,
+      "ingested": false
+    },
+    {
+      "id": "C5KpIXjpzdY",
+      "title": "The Science of Hunger & Medications to Combat Obesity | Dr. Zachary Knight",
+      "date": null,
+      "duration": 8337,
+      "duration_string": "2:18:57",
+      "url": "https://www.youtube.com/watch?v=C5KpIXjpzdY",
+      "view_count": 398371,
+      "ingested": false
+    },
+    {
+      "id": "csubiPlvFWk",
+      "title": "How Smartphones & Social Media Impact Mental Health & the Realistic Solutions | Dr. Jonathan Haidt",
+      "date": null,
+      "duration": 8816,
+      "duration_string": "2:26:56",
+      "url": "https://www.youtube.com/watch?v=csubiPlvFWk",
+      "view_count": 903600,
+      "ingested": false
+    },
+    {
+      "id": "-e9ErUozQo4",
+      "title": "LIVE EVENT Q&A: Dr. Andrew Huberman at the Brisbane Convention & Exhibition Centre",
+      "date": null,
+      "duration": 3189,
+      "duration_string": "53:09",
+      "url": "https://www.youtube.com/watch?v=-e9ErUozQo4",
+      "view_count": 68896,
+      "ingested": false
+    },
+    {
+      "id": "6P8hrzjnetU",
+      "title": "How to Navigate Menopause & Perimenopause for Maximum Health & Vitality | Dr. Mary Claire Haver",
+      "date": null,
+      "duration": 8299,
+      "duration_string": "2:18:19",
+      "url": "https://www.youtube.com/watch?v=6P8hrzjnetU",
+      "view_count": 561004,
+      "ingested": false
+    },
+    {
+      "id": "SZSRgyl7pyQ",
+      "title": "The Science of Your Gut Sense & the Gut-Brain Axis | Dr. Diego Bohórquez",
+      "date": null,
+      "duration": 9733,
+      "duration_string": "2:42:13",
+      "url": "https://www.youtube.com/watch?v=SZSRgyl7pyQ",
+      "view_count": 376641,
+      "ingested": false
+    },
+    {
+      "id": "nqNEtdHVUjM",
+      "title": "How to Improve Brain Health & Offset Neurodegeneration | Dr. Gary Steinberg",
+      "date": null,
+      "duration": 6904,
+      "duration_string": "1:55:04",
+      "url": "https://www.youtube.com/watch?v=nqNEtdHVUjM",
+      "view_count": 298520,
+      "ingested": false
+    },
+    {
+      "id": "yOoVz9E9kfQ",
+      "title": "LIVE EVENT Q&A: Dr. Andrew Huberman at the ICC Sydney Theatre",
+      "date": null,
+      "duration": 3079,
+      "duration_string": "51:19",
+      "url": "https://www.youtube.com/watch?v=yOoVz9E9kfQ",
+      "view_count": 61142,
+      "ingested": false
+    },
+    {
+      "id": "SyWC8ZFVxGo",
+      "title": "How to Find Your True Purpose & Create Your Best Life | Dr. James Hollis",
+      "date": null,
+      "duration": 9588,
+      "duration_string": "2:39:48",
+      "url": "https://www.youtube.com/watch?v=SyWC8ZFVxGo",
+      "view_count": 2635526,
+      "ingested": false
+    },
+    {
+      "id": "Jy4rJcYmtUM",
+      "title": "Dr. Matt Walker: The Science of Dreams, Nightmares & Lucid Dreaming | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 9186,
+      "duration_string": "2:33:06",
+      "url": "https://www.youtube.com/watch?v=Jy4rJcYmtUM",
+      "view_count": 719261,
+      "ingested": false
+    },
+    {
+      "id": "8qaBpM73NSk",
+      "title": "Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation | Dr. Casey Means",
+      "date": null,
+      "duration": 10587,
+      "duration_string": "2:56:27",
+      "url": "https://www.youtube.com/watch?v=8qaBpM73NSk",
+      "view_count": 1205927,
+      "ingested": false
+    },
+    {
+      "id": "S_SrHS8FvMM",
+      "title": "Dr. Matt Walker: Improve Sleep to Boost Mood & Emotional Regulation | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 8114,
+      "duration_string": "2:15:14",
+      "url": "https://www.youtube.com/watch?v=S_SrHS8FvMM",
+      "view_count": 301592,
+      "ingested": false
+    },
+    {
+      "id": "jGZ1mR9uLU0",
+      "title": "AMA #17: Making Time for Fitness, Top Sleep Tools & Best Learning Strategies",
+      "date": null,
+      "duration": 1530,
+      "duration_string": "25:30",
+      "url": "https://www.youtube.com/watch?v=jGZ1mR9uLU0",
+      "view_count": 112314,
+      "ingested": false
+    },
+    {
+      "id": "PVmQOLYckKQ",
+      "title": "Protocols to Strengthen & Pain Proof Your Back",
+      "date": null,
+      "duration": 7684,
+      "duration_string": "2:08:04",
+      "url": "https://www.youtube.com/watch?v=PVmQOLYckKQ",
+      "view_count": 430978,
+      "ingested": false
+    },
+    {
+      "id": "F9KrZd_-ge0",
+      "title": "Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 8908,
+      "duration_string": "2:28:28",
+      "url": "https://www.youtube.com/watch?v=F9KrZd_-ge0",
+      "view_count": 263062,
+      "ingested": false
+    },
+    {
+      "id": "zlc4VrDx_qk",
+      "title": "Vaping, Alcohol Use & Other Risky Youth Behaviors | Dr. Bonnie Halpern-Felsher",
+      "date": null,
+      "duration": 9085,
+      "duration_string": "2:31:25",
+      "url": "https://www.youtube.com/watch?v=zlc4VrDx_qk",
+      "view_count": 127806,
+      "ingested": false
+    },
+    {
+      "id": "GA89kjVY6Ik",
+      "title": "LIVE EVENT Q&A: Dr. Andrew Huberman at the Sydney Opera House",
+      "date": null,
+      "duration": 3174,
+      "duration_string": "52:54",
+      "url": "https://www.youtube.com/watch?v=GA89kjVY6Ik",
+      "view_count": 77745,
+      "ingested": false
+    },
+    {
+      "id": "4F_RBc1akC8",
+      "title": "Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 8339,
+      "duration_string": "2:18:59",
+      "url": "https://www.youtube.com/watch?v=4F_RBc1akC8",
+      "view_count": 438937,
+      "ingested": false
+    },
+    {
+      "id": "etEJrznE-c0",
+      "title": "How to Master Growth Mindset to Improve Performance | Dr. David Yeager",
+      "date": null,
+      "duration": 8770,
+      "duration_string": "2:26:10",
+      "url": "https://www.youtube.com/watch?v=etEJrznE-c0",
+      "view_count": 643259,
+      "ingested": false
+    },
+    {
+      "id": "hvPGfcAgk9Y",
+      "title": "Dr. Matt Walker: Protocols to Improve Your Sleep | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 9775,
+      "duration_string": "2:42:55",
+      "url": "https://www.youtube.com/watch?v=hvPGfcAgk9Y",
+      "view_count": 649902,
+      "ingested": false
+    },
+    {
+      "id": "acgz0C-z-gc",
+      "title": "Overcoming Physical & Emotional Challenges | Coleman Ruiz",
+      "date": null,
+      "duration": 11883,
+      "duration_string": "3:18:03",
+      "url": "https://www.youtube.com/watch?v=acgz0C-z-gc",
+      "view_count": 711310,
+      "ingested": false
+    },
+    {
+      "id": "-OBCwiPPfEU",
+      "title": "Dr. Matt Walker: The Biology of Sleep & Your Unique Sleep Needs | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 10774,
+      "duration_string": "2:59:34",
+      "url": "https://www.youtube.com/watch?v=-OBCwiPPfEU",
+      "view_count": 929813,
+      "ingested": false
+    },
+    {
+      "id": "zU5EYw06wtw",
+      "title": "Benefits & Risks of Peptide Therapeutics for Physical & Mental Health",
+      "date": null,
+      "duration": 5202,
+      "duration_string": "1:26:42",
+      "url": "https://www.youtube.com/watch?v=zU5EYw06wtw",
+      "view_count": 1107762,
+      "ingested": false
+    },
+    {
+      "id": "kpTJqwIfHcM",
+      "title": "What Magic & Mind Reading Reveal About the Brain | Asi Wind",
+      "date": null,
+      "duration": 10298,
+      "duration_string": "2:51:38",
+      "url": "https://www.youtube.com/watch?v=kpTJqwIfHcM",
+      "view_count": 319285,
+      "ingested": false
+    },
+    {
+      "id": "ttNxNbqNQK4",
+      "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Melbourne, AU",
+      "date": null,
+      "duration": 3506,
+      "duration_string": "58:26",
+      "url": "https://www.youtube.com/watch?v=ttNxNbqNQK4",
+      "view_count": 126385,
+      "ingested": false
+    },
+    {
+      "id": "oL3SkPV1_Ik",
+      "title": "How the Brain Works, Curing Blindness & How to Navigate a Career Path | Dr. E.J. Chichilnisky",
+      "date": null,
+      "duration": 7206,
+      "duration_string": "2:00:06",
+      "url": "https://www.youtube.com/watch?v=oL3SkPV1_Ik",
+      "view_count": 169999,
+      "ingested": false
+    },
+    {
+      "id": "p4ZfkezDTXQ",
+      "title": "How to Enhance Focus and Improve Productivity | Dr. Cal Newport",
+      "date": null,
+      "duration": 10619,
+      "duration_string": "2:56:59",
+      "url": "https://www.youtube.com/watch?v=p4ZfkezDTXQ",
+      "view_count": 1717851,
+      "ingested": false
+    },
+    {
+      "id": "gdUNjPijwA8",
+      "title": "How Placebo Effects Work to Change Our Biology & Psychology",
+      "date": null,
+      "duration": 4696,
+      "duration_string": "1:18:16",
+      "url": "https://www.youtube.com/watch?v=gdUNjPijwA8",
+      "view_count": 189368,
+      "ingested": false
+    },
+    {
+      "id": "gE0_8AjTFaM",
+      "title": "AMA #16: Sleep, Vertigo, TBI, OCD, Tips for Travelers, Gut-Brain Axis & More",
+      "date": null,
+      "duration": 3409,
+      "duration_string": "56:49",
+      "url": "https://www.youtube.com/watch?v=gE0_8AjTFaM",
+      "view_count": 120159,
+      "ingested": false
+    },
+    {
+      "id": "XT_6Lvkhxvo",
+      "title": "Protocols for Excellent Parenting & Improving Relationships of All Kinds | Dr. Becky Kennedy",
+      "date": null,
+      "duration": 10442,
+      "duration_string": "2:54:02",
+      "url": "https://www.youtube.com/watch?v=XT_6Lvkhxvo",
+      "view_count": 1804466,
+      "ingested": false
+    },
+    {
+      "id": "HYVeP4F0GNU",
+      "title": "How to Optimize Cognitive Function & Brain Health | Dr. Mark D'Esposito",
+      "date": null,
+      "duration": 9158,
+      "duration_string": "2:32:38",
+      "url": "https://www.youtube.com/watch?v=HYVeP4F0GNU",
+      "view_count": 489075,
+      "ingested": false
+    },
+    {
+      "id": "zVCaYyUWWSw",
+      "title": "How to Improve Oral Health & Its Critical Role in Brain & Body Health",
+      "date": null,
+      "duration": 7227,
+      "duration_string": "2:00:27",
+      "url": "https://www.youtube.com/watch?v=zVCaYyUWWSw",
+      "view_count": 949532,
+      "ingested": false
+    },
+    {
+      "id": "V0Sdgn0_kFM",
+      "title": "The Biology of Social Interactions & Emotions | Dr. Kay Tye",
+      "date": null,
+      "duration": 9066,
+      "duration_string": "2:31:06",
+      "url": "https://www.youtube.com/watch?v=V0Sdgn0_kFM",
+      "view_count": 581184,
+      "ingested": false
+    },
+    {
+      "id": "j2sMqSDLd4k",
+      "title": "AMA #15: Fluoride Benefits/Risks & Vagus Nerve Stimulation",
+      "date": null,
+      "duration": 1743,
+      "duration_string": "29:03",
+      "url": "https://www.youtube.com/watch?v=j2sMqSDLd4k",
+      "view_count": 124507,
+      "ingested": false
+    },
+    {
+      "id": "CQlTmOFM4Qs",
+      "title": "Tools to Enhance Working Memory & Attention",
+      "date": null,
+      "duration": 5472,
+      "duration_string": "1:31:12",
+      "url": "https://www.youtube.com/watch?v=CQlTmOFM4Qs",
+      "view_count": 632509,
+      "ingested": false
+    },
+    {
+      "id": "TG8VM5-CTfw",
+      "title": "Journal Club with Dr. Peter Attia | Effects of Light & Dark on Mental Health & Treatments for Cancer",
+      "date": null,
+      "duration": 11312,
+      "duration_string": "3:08:32",
+      "url": "https://www.youtube.com/watch?v=TG8VM5-CTfw",
+      "view_count": 244886,
+      "ingested": false
+    },
+    {
+      "id": "K9lORz2_XSU",
+      "title": "Tools to Reduce & Manage Pain | Dr. Sean Mackey",
+      "date": null,
+      "duration": 10602,
+      "duration_string": "2:56:42",
+      "url": "https://www.youtube.com/watch?v=K9lORz2_XSU",
+      "view_count": 508351,
+      "ingested": false
+    },
+    {
+      "id": "AtChcxeaukQ",
+      "title": "How to Prevent & Treat Colds & Flu",
+      "date": null,
+      "duration": 7549,
+      "duration_string": "2:05:49",
+      "url": "https://www.youtube.com/watch?v=AtChcxeaukQ",
+      "view_count": 1024888,
+      "ingested": false
+    },
+    {
+      "id": "nDLb8_wgX50",
+      "title": "How to Build Immense Inner Strength | David Goggins",
+      "date": null,
+      "duration": 9455,
+      "duration_string": "2:37:35",
+      "url": "https://www.youtube.com/watch?v=nDLb8_wgX50",
+      "view_count": 21538853,
+      "ingested": true
+    },
+    {
+      "id": "zbpb1wd-wvs",
+      "title": "AMA #14: 2023 Philanthropy, Evening Routine, Light Therapy, Health Metrics & More",
+      "date": null,
+      "duration": 3911,
+      "duration_string": "1:05:11",
+      "url": "https://www.youtube.com/watch?v=zbpb1wd-wvs",
+      "view_count": 115501,
+      "ingested": false
+    },
+    {
+      "id": "GpgqXCkRO-w",
+      "title": "Protocols to Access Creative Energy and Process | Rick Rubin",
+      "date": null,
+      "duration": 8889,
+      "duration_string": "2:28:09",
+      "url": "https://www.youtube.com/watch?v=GpgqXCkRO-w",
+      "view_count": 1923113,
+      "ingested": false
+    },
+    {
+      "id": "n28W4AmvMDE",
+      "title": "How Sugar & Processed Foods Impact Your Health | Dr. Robert Lustig",
+      "date": null,
+      "duration": 12561,
+      "duration_string": "3:29:21",
+      "url": "https://www.youtube.com/watch?v=n28W4AmvMDE",
+      "view_count": 4883611,
+      "ingested": false
+    },
+    {
+      "id": "LRM5LutB538",
+      "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Chicago, IL",
+      "date": null,
+      "duration": 3284,
+      "duration_string": "54:44",
+      "url": "https://www.youtube.com/watch?v=LRM5LutB538",
+      "view_count": 107697,
+      "ingested": false
+    },
+    {
+      "id": "ccrbE0QHy94",
+      "title": "The Causes & Treatments for Autism | Dr. Karen Parker",
+      "date": null,
+      "duration": 10588,
+      "duration_string": "2:56:28",
+      "url": "https://www.youtube.com/watch?v=ccrbE0QHy94",
+      "view_count": 457613,
+      "ingested": false
+    },
+    {
+      "id": "50BZQRT1dAg",
+      "title": "A Process for Finding & Achieving Your Unique Purpose | Robert Greene",
+      "date": null,
+      "duration": 11478,
+      "duration_string": "3:11:18",
+      "url": "https://www.youtube.com/watch?v=50BZQRT1dAg",
+      "view_count": 15440599,
+      "ingested": true
+    },
+    {
+      "id": "xTtM2AvCRyA",
+      "title": "AMA #13: Winter Months & Sickness, Wim Hof Breathing & Stressors",
+      "date": null,
+      "duration": 1458,
+      "duration_string": "24:18",
+      "url": "https://www.youtube.com/watch?v=xTtM2AvCRyA",
+      "view_count": 182889,
+      "ingested": false
+    },
+    {
+      "id": "3gtvNYa3Nd8",
+      "title": "How to Unlock Your Potential, Motivation & Unique Abilities | Dr. Adam Grant",
+      "date": null,
+      "duration": 11542,
+      "duration_string": "3:12:22",
+      "url": "https://www.youtube.com/watch?v=3gtvNYa3Nd8",
+      "view_count": 4314939,
+      "ingested": false
+    },
+    {
+      "id": "wAZn9dF3XTo",
+      "title": "A Science-Supported Journaling Protocol to Improve Mental & Physical Health",
+      "date": null,
+      "duration": 5902,
+      "duration_string": "1:38:22",
+      "url": "https://www.youtube.com/watch?v=wAZn9dF3XTo",
+      "view_count": 650241,
+      "ingested": false
+    },
+    {
+      "id": "eC9fiJBdMG0",
+      "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Toronto, ON",
+      "date": null,
+      "duration": 2348,
+      "duration_string": "39:08",
+      "url": "https://www.youtube.com/watch?v=eC9fiJBdMG0",
+      "view_count": 143525,
+      "ingested": false
+    },
+    {
+      "id": "EhlIkzJwPlk",
+      "title": "Female Hormone Health, Fertility & Vitality | Dr. Natalie Crawford",
+      "date": null,
+      "duration": 12454,
+      "duration_string": "3:27:34",
+      "url": "https://www.youtube.com/watch?v=EhlIkzJwPlk",
+      "view_count": 594023,
+      "ingested": false
+    },
+    {
+      "id": "pkJi9Raxikg",
+      "title": "Improving Male Sexual Health, Function & Fertility | Dr. Michael Eisenberg",
+      "date": null,
+      "duration": 9434,
+      "duration_string": "2:37:14",
+      "url": "https://www.youtube.com/watch?v=pkJi9Raxikg",
+      "view_count": 695782,
+      "ingested": false
+    },
+    {
+      "id": "qJ3uV7coZbA",
+      "title": "AMA #12: Thoughts on Longevity Supplements (Resveratrol, NR, NMN, Etc.) & How to Improve Memory",
+      "date": null,
+      "duration": 1748,
+      "duration_string": "29:08",
+      "url": "https://www.youtube.com/watch?v=qJ3uV7coZbA",
+      "view_count": 310472,
+      "ingested": false
+    },
+    {
+      "id": "CJIXbibQ0jI",
+      "title": "Mental Health Toolkit: Tools to Bolster Your Mood & Mental Health",
+      "date": null,
+      "duration": 7452,
+      "duration_string": "2:04:12",
+      "url": "https://www.youtube.com/watch?v=CJIXbibQ0jI",
+      "view_count": 601963,
+      "ingested": false
+    },
+    {
+      "id": "1Wo6SqLNmLk",
+      "title": "Curing All Human Diseases & the Future of Health & Technology | Mark Zuckerberg & Dr. Priscilla Chan",
+      "date": null,
+      "duration": 8132,
+      "duration_string": "2:15:32",
+      "url": "https://www.youtube.com/watch?v=1Wo6SqLNmLk",
+      "view_count": 519289,
+      "ingested": false
+    },
+    {
+      "id": "FeRgqJVALMQ",
+      "title": "How to Understand Emotions | Dr. Lisa Feldman Barrett",
+      "date": null,
+      "duration": 9544,
+      "duration_string": "2:39:04",
+      "url": "https://www.youtube.com/watch?v=FeRgqJVALMQ",
+      "view_count": 2235720,
+      "ingested": false
+    },
+    {
+      "id": "cwakOgHIT0E",
+      "title": "How to Increase Your Willpower & Tenacity | Huberman Lab Podcast",
+      "date": null,
+      "duration": 7679,
+      "duration_string": "2:07:59",
+      "url": "https://www.youtube.com/watch?v=cwakOgHIT0E",
+      "view_count": 892031,
+      "ingested": false
+    },
+    {
+      "id": "q8CHXefn7B4",
+      "title": "How to Succeed at Hard Conversations | Chris Voss",
+      "date": null,
+      "duration": 10409,
+      "duration_string": "2:53:29",
+      "url": "https://www.youtube.com/watch?v=q8CHXefn7B4",
+      "view_count": 4214334,
+      "ingested": false
+    },
+    {
+      "id": "7Ey_vTTgJGc",
+      "title": "AMA #11: Improve Task Switching & Productivity and Reduce Brain Fog",
+      "date": null,
+      "duration": 2077,
+      "duration_string": "34:37",
+      "url": "https://www.youtube.com/watch?v=7Ey_vTTgJGc",
+      "view_count": 164288,
+      "ingested": false
+    },
+    {
+      "id": "yOJvm_ri_hk",
+      "title": "Dr. Paul Conti: Tools and Protocols for Mental Health | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 9673,
+      "duration_string": "2:41:13",
+      "url": "https://www.youtube.com/watch?v=yOJvm_ri_hk",
+      "view_count": 457028,
+      "ingested": false
+    },
+    {
+      "id": "qNzl12g0Dd8",
+      "title": "Efforts & Challenges in Promoting Public Health | Dr. Vivek Murthy",
+      "date": null,
+      "duration": 9229,
+      "duration_string": "2:33:49",
+      "url": "https://www.youtube.com/watch?v=qNzl12g0Dd8",
+      "view_count": 93273,
+      "ingested": false
+    },
+    {
+      "id": "eMqWH3LYiII",
+      "title": "Dr. Paul Conti: How to Build and Maintain Healthy Relationships | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 11078,
+      "duration_string": "3:04:38",
+      "url": "https://www.youtube.com/watch?v=eMqWH3LYiII",
+      "view_count": 1380289,
+      "ingested": false
+    },
+    {
+      "id": "gveDhZW-rUk",
+      "title": "How to Use Music to Boost Motivation, Mood & Improve Learning | Huberman Lab Podcast",
+      "date": null,
+      "duration": 6266,
+      "duration_string": "1:44:26",
+      "url": "https://www.youtube.com/watch?v=gveDhZW-rUk",
+      "view_count": 748282,
+      "ingested": false
+    },
+    {
+      "id": "qPKd99Pa2iU",
+      "title": "Dr. Paul Conti: How to Improve Your Mental Health | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 11718,
+      "duration_string": "3:15:18",
+      "url": "https://www.youtube.com/watch?v=qPKd99Pa2iU",
+      "view_count": 866748,
+      "ingested": false
+    },
+    {
+      "id": "z8c6EyMNd0A",
+      "title": "Journal Club with Dr. Peter Attia | Metformin for Longevity & The Power of Belief Effects",
+      "date": null,
+      "duration": 8479,
+      "duration_string": "2:21:19",
+      "url": "https://www.youtube.com/watch?v=z8c6EyMNd0A",
+      "view_count": 329700,
+      "ingested": false
+    },
+    {
+      "id": "tLRCS48Ens4",
+      "title": "Dr. Paul Conti: How to Understand & Assess Your Mental Health | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 13370,
+      "duration_string": "3:42:50",
+      "url": "https://www.youtube.com/watch?v=tLRCS48Ens4",
+      "view_count": 14801563,
+      "ingested": true
+    },
+    {
+      "id": "yixIc1Ai6jM",
+      "title": "How Risk Taking, Innovation & Artificial Intelligence Transform Human Experience | Marc Andreessen",
+      "date": null,
+      "duration": 10622,
+      "duration_string": "2:57:02",
+      "url": "https://www.youtube.com/watch?v=yixIc1Ai6jM",
+      "view_count": 582127,
+      "ingested": false
+    },
+    {
+      "id": "eJU6Df_ffAE",
+      "title": "AMA #10: Benefits of Nature & “Grounding,\" Hearing Loss Research & Avoiding Altitude Sickness",
+      "date": null,
+      "duration": 1294,
+      "duration_string": "21:34",
+      "url": "https://www.youtube.com/watch?v=eJU6Df_ffAE",
+      "view_count": 312937,
+      "ingested": false
+    },
+    {
+      "id": "29n0WG317tM",
+      "title": "Life, Death & the Neuroscience of Your Unique Experience | Dr. David Linden",
+      "date": null,
+      "duration": 9407,
+      "duration_string": "2:36:47",
+      "url": "https://www.youtube.com/watch?v=29n0WG317tM",
+      "view_count": 643960,
+      "ingested": false
+    },
+    {
+      "id": "F54qXuTpgfM",
+      "title": "Improving Sexual & Urological Health in Males and Females | Dr. Rena Malik",
+      "date": null,
+      "duration": 10470,
+      "duration_string": "2:54:30",
+      "url": "https://www.youtube.com/watch?v=F54qXuTpgfM",
+      "view_count": 2047003,
+      "ingested": false
+    },
+    {
+      "id": "Rxmv7rT9leo",
+      "title": "Ketamine: Benefits and Risks for Depression, PTSD & Neuroplasticity | Huberman Lab Podcast",
+      "date": null,
+      "duration": 6161,
+      "duration_string": "1:42:41",
+      "url": "https://www.youtube.com/watch?v=Rxmv7rT9leo",
+      "view_count": 593786,
+      "ingested": false
+    },
+    {
+      "id": "VOfwbcveP84",
+      "title": "Harnessing Passion, Drive & Persistence for Lifelong Success | Tony Hawk",
+      "date": null,
+      "duration": 8119,
+      "duration_string": "2:15:19",
+      "url": "https://www.youtube.com/watch?v=VOfwbcveP84",
+      "view_count": 285562,
+      "ingested": false
+    },
+    {
+      "id": "HoH93judXmE",
+      "title": "AMA #9: Kratom Risks, Does Infrared Sauna Work & Journaling Benefits",
+      "date": null,
+      "duration": 1592,
+      "duration_string": "26:32",
+      "url": "https://www.youtube.com/watch?v=HoH93judXmE",
+      "view_count": 167254,
+      "ingested": false
+    },
+    {
+      "id": "X8Hw8zeCDTA",
+      "title": "How to Shape Your Identity & Goals | Dr. Maya Shankar",
+      "date": null,
+      "duration": 9236,
+      "duration_string": "2:33:56",
+      "url": "https://www.youtube.com/watch?v=X8Hw8zeCDTA",
+      "view_count": 1245198,
+      "ingested": false
+    },
+    {
+      "id": "aQDOU3hPci0",
+      "title": "How to Enhance Performance & Learning by Applying a Growth Mindset",
+      "date": null,
+      "duration": 6084,
+      "duration_string": "1:41:24",
+      "url": "https://www.youtube.com/watch?v=aQDOU3hPci0",
+      "view_count": 1993315,
+      "ingested": false
+    },
+    {
+      "id": "RI112zW8GDw",
+      "title": "How Your Brain’s Reward Circuits Drive Your Choices | Dr. Robert Malenka",
+      "date": null,
+      "duration": 10203,
+      "duration_string": "2:50:03",
+      "url": "https://www.youtube.com/watch?v=RI112zW8GDw",
+      "view_count": 1237145,
+      "ingested": false
+    },
+    {
+      "id": "LYYyQcAJZfk",
+      "title": "Science-Supported Tools to Accelerate Your Fitness Goals",
+      "date": null,
+      "duration": 5740,
+      "duration_string": "1:35:40",
+      "url": "https://www.youtube.com/watch?v=LYYyQcAJZfk",
+      "view_count": 759221,
+      "ingested": false
+    },
+    {
+      "id": "_ltcLEM-5HU",
+      "title": "How to Improve Your Eye Health & Offset Vision Loss | Dr. Jeffrey Goldberg",
+      "date": null,
+      "duration": 11325,
+      "duration_string": "3:08:45",
+      "url": "https://www.youtube.com/watch?v=_ltcLEM-5HU",
+      "view_count": 4652577,
+      "ingested": false
+    },
+    {
+      "id": "FE0lTEUa7EY",
+      "title": "AMA #8: Balancing Caffeine, Decision Fatigue & Social Isolation",
+      "date": null,
+      "duration": 1521,
+      "duration_string": "25:21",
+      "url": "https://www.youtube.com/watch?v=FE0lTEUa7EY",
+      "view_count": 183730,
+      "ingested": false
+    },
+    {
+      "id": "doupx8SAs5Y",
+      "title": "How to Learn Better & Create Your Best Future | Tim Ferriss",
+      "date": null,
+      "duration": 13149,
+      "duration_string": "3:39:09",
+      "url": "https://www.youtube.com/watch?v=doupx8SAs5Y",
+      "view_count": 2966020,
+      "ingested": false
+    },
+    {
+      "id": "slUCmZJDXrk",
+      "title": "The Science of MDMA & Its Therapeutic Uses: Benefits & Risks | Huberman Lab Podcast",
+      "date": null,
+      "duration": 8255,
+      "duration_string": "2:17:35",
+      "url": "https://www.youtube.com/watch?v=slUCmZJDXrk",
+      "view_count": 469976,
+      "ingested": false
+    },
+    {
+      "id": "S8jWFcDGz4Y",
+      "title": "How Emotions & Social Factors Impact Learning | Dr. Mary Helen Immordino-Yang",
+      "date": null,
+      "duration": 9682,
+      "duration_string": "2:41:22",
+      "url": "https://www.youtube.com/watch?v=S8jWFcDGz4Y",
+      "view_count": 464270,
+      "ingested": false
+    },
+    {
+      "id": "dicP_kA-RA0",
+      "title": "AMA #7: Cold Exposure, Maximizing REM Sleep & My Next Scientific Studies",
+      "date": null,
+      "duration": 1341,
+      "duration_string": "22:21",
+      "url": "https://www.youtube.com/watch?v=dicP_kA-RA0",
+      "view_count": 137642,
+      "ingested": false
+    },
+    {
+      "id": "sxgCC4H1dl8",
+      "title": "Adderall, Stimulants & Modafinil for ADHD: Short- & Long-Term Effects",
+      "date": null,
+      "duration": 7332,
+      "duration_string": "2:02:12",
+      "url": "https://www.youtube.com/watch?v=sxgCC4H1dl8",
+      "view_count": 1568707,
+      "ingested": false
+    },
+    {
+      "id": "fcxjwA4C4Cw",
+      "title": "The Science of Psychedelics for Mental Health | Dr. Robin Carhart-Harris",
+      "date": null,
+      "duration": 9429,
+      "duration_string": "2:37:09",
+      "url": "https://www.youtube.com/watch?v=fcxjwA4C4Cw",
+      "view_count": 773027,
+      "ingested": false
+    },
+    {
+      "id": "x3MgDtZovks",
+      "title": "How to Use Cold & Heat Exposure to Improve Your Health | Dr. Susanna Søberg",
+      "date": null,
+      "duration": 9035,
+      "duration_string": "2:30:35",
+      "url": "https://www.youtube.com/watch?v=x3MgDtZovks",
+      "view_count": 741295,
+      "ingested": false
+    },
+    {
+      "id": "eIxVfln02Ss",
+      "title": "How Psilocybin Can Rewire Our Brain, Its Therapeutic Benefits & Its Risks",
+      "date": null,
+      "duration": 7742,
+      "duration_string": "2:09:02",
+      "url": "https://www.youtube.com/watch?v=eIxVfln02Ss",
+      "view_count": 2801447,
+      "ingested": false
+    },
+    {
+      "id": "cS7cNaBrkxo",
+      "title": "How Smells Influence Our Hormones, Health & Behavior | Dr. Noam Sobel",
+      "date": null,
+      "duration": 11596,
+      "duration_string": "3:13:16",
+      "url": "https://www.youtube.com/watch?v=cS7cNaBrkxo",
+      "view_count": 3588959,
+      "ingested": false
+    },
+    {
+      "id": "uWV9a3zEaL4",
+      "title": "AMA #6: Eye Health, Why We Yawn & Increasing Motivation",
+      "date": null,
+      "duration": 2174,
+      "duration_string": "36:14",
+      "url": "https://www.youtube.com/watch?v=uWV9a3zEaL4",
+      "view_count": 131361,
+      "ingested": false
+    },
+    {
+      "id": "0RYyQRQFgFk",
+      "title": "Science-Based Mental Training & Visualization for Improved Learning",
+      "date": null,
+      "duration": 7187,
+      "duration_string": "1:59:47",
+      "url": "https://www.youtube.com/watch?v=0RYyQRQFgFk",
+      "view_count": 1090914,
+      "ingested": false
+    },
+    {
+      "id": "3ZGItIAUQmI",
+      "title": "Neuralink & Technologies to Enhance Human Brains | Dr. Matthew MacDougall",
+      "date": null,
+      "duration": 7301,
+      "duration_string": "2:01:41",
+      "url": "https://www.youtube.com/watch?v=3ZGItIAUQmI",
+      "view_count": 242265,
+      "ingested": false
+    },
+    {
+      "id": "6ZrlsVx85ek",
+      "title": "The Science of Healthy Hair, Hair Loss and How to Regrow Hair",
+      "date": null,
+      "duration": 7488,
+      "duration_string": "2:04:48",
+      "url": "https://www.youtube.com/watch?v=6ZrlsVx85ek",
+      "view_count": 3177774,
+      "ingested": false
+    },
+    {
+      "id": "ulHrUVV3Kq4",
+      "title": "Control Stress for Healthy Eating, Metabolism & Aging | Dr. Elissa Epel",
+      "date": null,
+      "duration": 7551,
+      "duration_string": "2:05:51",
+      "url": "https://www.youtube.com/watch?v=ulHrUVV3Kq4",
+      "view_count": 645159,
+      "ingested": false
+    },
+    {
+      "id": "K-TW2Chpz4k",
+      "title": "Leverage Dopamine to Overcome Procrastination & Optimize Effort",
+      "date": null,
+      "duration": 7129,
+      "duration_string": "1:58:49",
+      "url": "https://www.youtube.com/watch?v=K-TW2Chpz4k",
+      "view_count": 2074217,
+      "ingested": false
+    },
+    {
+      "id": "cp9GXl9Qk_s",
+      "title": "AMA #5: Intrusive Thoughts, CGMs, Behavioral Change, Naps & NSDR",
+      "date": null,
+      "duration": 1407,
+      "duration_string": "23:27",
+      "url": "https://www.youtube.com/watch?v=cp9GXl9Qk_s",
+      "view_count": 192418,
+      "ingested": false
+    },
+    {
+      "id": "ufsIA5NARIo",
+      "title": "Improve Vitality, Emotional & Physical Health & Lifespan | Dr. Peter Attia",
+      "date": null,
+      "duration": 12596,
+      "duration_string": "3:29:56",
+      "url": "https://www.youtube.com/watch?v=ufsIA5NARIo",
+      "view_count": 3000854,
+      "ingested": false
+    },
+    {
+      "id": "7R3-3HR6-u4",
+      "title": "Intermittent Fasting to Improve Health, Cognition & Longevity | Dr. Satchin Panda",
+      "date": null,
+      "duration": 10147,
+      "duration_string": "2:49:07",
+      "url": "https://www.youtube.com/watch?v=7R3-3HR6-u4",
+      "view_count": 1114351,
+      "ingested": false
+    },
+    {
+      "id": "at37Y8rKDlA",
+      "title": "How to Optimize Your Water Quality & Intake for Health",
+      "date": null,
+      "duration": 8543,
+      "duration_string": "2:22:23",
+      "url": "https://www.youtube.com/watch?v=at37Y8rKDlA",
+      "view_count": 1600993,
+      "ingested": false
+    },
+    {
+      "id": "CDUetQMKM6g",
+      "title": "Genes & the Inheritance of Memories Across Generations | Dr. Oded Rechavi",
+      "date": null,
+      "duration": 9121,
+      "duration_string": "2:32:01",
+      "url": "https://www.youtube.com/watch?v=CDUetQMKM6g",
+      "view_count": 900943,
+      "ingested": false
+    },
+    {
+      "id": "S8nPJU9xkNw",
+      "title": "AMA #4: Maintain Motivation, Improve REM Sleep, Set Goals, Manage Anxiety & More",
+      "date": null,
+      "duration": 1394,
+      "duration_string": "23:14",
+      "url": "https://www.youtube.com/watch?v=S8nPJU9xkNw",
+      "view_count": 252609,
+      "ingested": false
+    },
+    {
+      "id": "q37ARYnRDGc",
+      "title": "Dr. Andy Galpin: Optimal Nutrition & Supplementation for Fitness | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 11134,
+      "duration_string": "3:05:34",
+      "url": "https://www.youtube.com/watch?v=q37ARYnRDGc",
+      "view_count": 5262600,
+      "ingested": false
+    },
+    {
+      "id": "x4m_PdFbu-s",
+      "title": "How to Breathe Correctly for Optimal Health, Mood, Learning & Performance",
+      "date": null,
+      "duration": 8330,
+      "duration_string": "2:18:50",
+      "url": "https://www.youtube.com/watch?v=x4m_PdFbu-s",
+      "view_count": 1330804,
+      "ingested": false
+    },
+    {
+      "id": "juD99_sPWGU",
+      "title": "Dr. Andy Galpin: Maximize Recovery to Achieve Fitness & Performance Goals | Huberman Lab",
+      "date": null,
+      "duration": 11106,
+      "duration_string": "3:05:06",
+      "url": "https://www.youtube.com/watch?v=juD99_sPWGU",
+      "view_count": 1354028,
+      "ingested": false
+    },
+    {
+      "id": "BMTt8gSl13s",
+      "title": "Use Sleep to Enhance Learning, Memory & Emotional State | Dr. Gina Poe",
+      "date": null,
+      "duration": 7541,
+      "duration_string": "2:05:41",
+      "url": "https://www.youtube.com/watch?v=BMTt8gSl13s",
+      "view_count": 805555,
+      "ingested": false
+    },
+    {
+      "id": "UIy-WQCZd4M",
+      "title": "Dr. Andy Galpin: Optimize Your Training Program for Fitness & Longevity | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 11168,
+      "duration_string": "3:06:08",
+      "url": "https://www.youtube.com/watch?v=UIy-WQCZd4M",
+      "view_count": 1964233,
+      "ingested": false
+    },
+    {
+      "id": "CGjdgy0cwGk",
+      "title": "How to Stop Headaches Using Science-Based Approaches",
+      "date": null,
+      "duration": 8804,
+      "duration_string": "2:26:44",
+      "url": "https://www.youtube.com/watch?v=CGjdgy0cwGk",
+      "view_count": 503169,
+      "ingested": false
+    },
+    {
+      "id": "oNkDA2F7CjM",
+      "title": "Dr. Andy Galpin: How to Build Physical Endurance & Lose Fat | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 13733,
+      "duration_string": "3:48:53",
+      "url": "https://www.youtube.com/watch?v=oNkDA2F7CjM",
+      "view_count": 5480827,
+      "ingested": false
+    },
+    {
+      "id": "GVRDGQhoEYQ",
+      "title": "How to Optimize Female Hormone Health for Vitality & Longevity | Dr. Sara Gottfried",
+      "date": null,
+      "duration": 9305,
+      "duration_string": "2:35:05",
+      "url": "https://www.youtube.com/watch?v=GVRDGQhoEYQ",
+      "view_count": 2275465,
+      "ingested": false
+    },
+    {
+      "id": "CyDLbrZK75U",
+      "title": "Dr. Andy Galpin: Optimal Protocols to Build Strength & Grow Muscles | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 16764,
+      "duration_string": "4:39:24",
+      "url": "https://www.youtube.com/watch?v=CyDLbrZK75U",
+      "view_count": 1580554,
+      "ingested": false
+    },
+    {
+      "id": "O1YRwWmue4Y",
+      "title": "How to Optimize Fertility in Males & Females",
+      "date": null,
+      "duration": 15735,
+      "duration_string": "4:22:15",
+      "url": "https://www.youtube.com/watch?v=O1YRwWmue4Y",
+      "view_count": 373040,
+      "ingested": false
+    },
+    {
+      "id": "zEYE-vcVKy8",
+      "title": "Dr. Andy Galpin: How to Assess & Improve All Aspects of Your Fitness | Huberman Lab Guest Series",
+      "date": null,
+      "duration": 7278,
+      "duration_string": "2:01:18",
+      "url": "https://www.youtube.com/watch?v=zEYE-vcVKy8",
+      "view_count": 1505527,
+      "ingested": false
+    },
+    {
+      "id": "ycOBZZeVeAc",
+      "title": "How to Access Your Creativity | Rick Rubin",
+      "date": null,
+      "duration": 10839,
+      "duration_string": "3:00:39",
+      "url": "https://www.youtube.com/watch?v=ycOBZZeVeAc",
+      "view_count": 4652841,
+      "ingested": false
+    },
+    {
+      "id": "uak_dXHh6s4",
+      "title": "AMA #3: Adaptogens, Fasting & Fertility, Bluetooth/EMF Risks, Cognitive Load Limits & More",
+      "date": null,
+      "duration": 1922,
+      "duration_string": "32:02",
+      "url": "https://www.youtube.com/watch?v=uak_dXHh6s4",
+      "view_count": 128795,
+      "ingested": false
+    },
+    {
+      "id": "tLS6t3FVOTI",
+      "title": "Developing a Rational Approach to Supplementation for Health & Performance | Huberman Lab Podcast",
+      "date": null,
+      "duration": 7247,
+      "duration_string": "2:00:47",
+      "url": "https://www.youtube.com/watch?v=tLS6t3FVOTI",
+      "view_count": 1668532,
+      "ingested": false
+    },
+    {
+      "id": "-wIt_WsJGfw",
+      "title": "Using Meditation to Focus, View Consciousness & Expand Your Mind | Dr. Sam Harris",
+      "date": null,
+      "duration": 15716,
+      "duration_string": "4:21:56",
+      "url": "https://www.youtube.com/watch?v=-wIt_WsJGfw",
+      "view_count": 1463915,
+      "ingested": false
+    },
+    {
+      "id": "__RAXBLt1iM",
+      "title": "How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink",
+      "date": null,
+      "duration": 14667,
+      "duration_string": "4:04:27",
+      "url": "https://www.youtube.com/watch?v=__RAXBLt1iM",
+      "view_count": 1808892,
+      "ingested": false
+    },
+    {
+      "id": "KPlJcD-o-4Q",
+      "title": "The Science of Creativity & How to Enhance Creative Innovation",
+      "date": null,
+      "duration": 8218,
+      "duration_string": "2:16:58",
+      "url": "https://www.youtube.com/watch?v=KPlJcD-o-4Q",
+      "view_count": 449520,
+      "ingested": false
+    },
+    {
+      "id": "uwWOc_RqTBA",
+      "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in New York, NY",
+      "date": null,
+      "duration": 2837,
+      "duration_string": "47:17",
+      "url": "https://www.youtube.com/watch?v=uwWOc_RqTBA",
+      "view_count": 141540,
+      "ingested": false
+    },
+    {
+      "id": "O640yAgq5f8",
+      "title": "Tools for Hormone Optimization in Males | Dr. Kyle Gillett",
+      "date": null,
+      "duration": 8658,
+      "duration_string": "2:24:18",
+      "url": "https://www.youtube.com/watch?v=O640yAgq5f8",
+      "view_count": 1155474,
+      "ingested": false
+    },
+    {
+      "id": "vZ4kOr38JhY",
+      "title": "AMA #2: Improve Sleep, Reduce Sugar Cravings, Optimal Protein Intake, Stretching Frequency & More",
+      "date": null,
+      "duration": 1831,
+      "duration_string": "30:31",
+      "url": "https://www.youtube.com/watch?v=vZ4kOr38JhY",
+      "view_count": 317186,
+      "ingested": false
+    },
+    {
+      "id": "iw97uvIge7c",
+      "title": "Using Caffeine to Optimize Mental & Physical Performance",
+      "date": null,
+      "duration": 8556,
+      "duration_string": "2:22:36",
+      "url": "https://www.youtube.com/watch?v=iw97uvIge7c",
+      "view_count": 1038650,
+      "ingested": false
+    },
+    {
+      "id": "6I5I56uVvLw",
+      "title": "Navigating Conflict, Finding Purpose & Maintaining Drive | Dr Lex Fridman",
+      "date": null,
+      "duration": 9706,
+      "duration_string": "2:41:46",
+      "url": "https://www.youtube.com/watch?v=6I5I56uVvLw",
+      "view_count": 1430203,
+      "ingested": false
+    },
+    {
+      "id": "xjEFo3a1AnI",
+      "title": "Diet & Nutrition for Mental Health | Dr. Chris Palmer",
+      "date": null,
+      "duration": 11022,
+      "duration_string": "3:03:42",
+      "url": "https://www.youtube.com/watch?v=xjEFo3a1AnI",
+      "view_count": 5314637,
+      "ingested": false
+    },
+    {
+      "id": "LTGGyQS1fZE",
+      "title": "Science-Based Tools for Increasing Happiness",
+      "date": null,
+      "duration": 8624,
+      "duration_string": "2:23:44",
+      "url": "https://www.youtube.com/watch?v=LTGGyQS1fZE",
+      "view_count": 1885421,
+      "ingested": false
+    },
+    {
+      "id": "TO0WUTq5zYI",
+      "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Los Angeles, CA",
+      "date": null,
+      "duration": 3818,
+      "duration_string": "1:03:38",
+      "url": "https://www.youtube.com/watch?v=TO0WUTq5zYI",
+      "view_count": 120167,
+      "ingested": false
+    },
+    {
+      "id": "K4Ze-Sp6aUE",
+      "title": "The Science of Eating for Health, Fat Loss & Lean Muscle | Dr. Layne Norton",
+      "date": null,
+      "duration": 13775,
+      "duration_string": "3:49:35",
+      "url": "https://www.youtube.com/watch?v=K4Ze-Sp6aUE",
+      "view_count": 8626190,
+      "ingested": true
+    },
+    {
+      "id": "lsODSDmY4CY",
+      "title": "AMA #1: Leveraging Ultradian Cycles, How to Protect Your Brain, Seed Oils Examined and More",
+      "date": null,
+      "duration": 1497,
+      "duration_string": "24:57",
+      "url": "https://www.youtube.com/watch?v=lsODSDmY4CY",
+      "view_count": 192988,
+      "ingested": false
+    },
+    {
+      "id": "wTBSGgbIvsY",
+      "title": "How Meditation Works & Science-Based Effective Meditations",
+      "date": null,
+      "duration": 8762,
+      "duration_string": "2:26:02",
+      "url": "https://www.youtube.com/watch?v=wTBSGgbIvsY",
+      "view_count": 7061651,
+      "ingested": false
+    },
+    {
+      "id": "Z7MU6zrAXsM",
+      "title": "The Science of Learning & Speaking Languages | Dr. Eddie Chang",
+      "date": null,
+      "duration": 9264,
+      "duration_string": "2:34:24",
+      "url": "https://www.youtube.com/watch?v=Z7MU6zrAXsM",
+      "view_count": 461233,
+      "ingested": false
+    },
+    {
+      "id": "q1Ss8sTbFBY",
+      "title": "Fitness Toolkit: Protocol & Tools to Optimize Physical Health",
+      "date": null,
+      "duration": 7070,
+      "duration_string": "1:57:50",
+      "url": "https://www.youtube.com/watch?v=q1Ss8sTbFBY",
+      "view_count": 1613534,
+      "ingested": false
+    },
+    {
+      "id": "X4QE6t-MkYE",
+      "title": "Psychedelics & Neurostimulation for Brain Rewiring | Dr. Nolan Williams",
+      "date": null,
+      "duration": 10135,
+      "duration_string": "2:48:55",
+      "url": "https://www.youtube.com/watch?v=X4QE6t-MkYE",
+      "view_count": 401478,
+      "ingested": false
+    },
+    {
+      "id": "gXvuJu1kt48",
+      "title": "The Effects of Cannabis (Marijuana) on the Brain & Body",
+      "date": null,
+      "duration": 10058,
+      "duration_string": "2:47:38",
+      "url": "https://www.youtube.com/watch?v=gXvuJu1kt48",
+      "view_count": 3338690,
+      "ingested": false
+    },
+    {
+      "id": "Nr5xb-QCBGA",
+      "title": "Biology & Treatments for Compulsive Eating & Behaviors | Dr. Casey Halpern",
+      "date": null,
+      "duration": 8075,
+      "duration_string": "2:14:35",
+      "url": "https://www.youtube.com/watch?v=Nr5xb-QCBGA",
+      "view_count": 280005,
+      "ingested": false
+    },
+    {
+      "id": "uXs-zPc63kM",
+      "title": "Nicotine’s Effects on the Brain & Body & How to Quit Smoking or Vaping",
+      "date": null,
+      "duration": 6817,
+      "duration_string": "1:53:37",
+      "url": "https://www.youtube.com/watch?v=uXs-zPc63kM",
+      "view_count": 1810703,
+      "ingested": false
+    },
+    {
+      "id": "uxZFl4BDOGk",
+      "title": "The Biology of Aggression, Mating, & Arousal | Dr. David Anderson",
+      "date": null,
+      "duration": 6935,
+      "duration_string": "1:55:35",
+      "url": "https://www.youtube.com/watch?v=uxZFl4BDOGk",
+      "view_count": 219550,
+      "ingested": false
+    },
+    {
+      "id": "yb5zpo5WDG4",
+      "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration",
+      "date": null,
+      "duration": 6691,
+      "duration_string": "1:51:31",
+      "url": "https://www.youtube.com/watch?v=yb5zpo5WDG4",
+      "view_count": 1723088,
+      "ingested": false
+    },
+    {
+      "id": "3_auLYOilb8",
+      "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Portland, OR",
+      "date": null,
+      "duration": 3091,
+      "duration_string": "51:31",
+      "url": "https://www.youtube.com/watch?v=3_auLYOilb8",
+      "view_count": 107323,
+      "ingested": false
+    },
+    {
+      "id": "LVxL_p_kToc",
+      "title": "The Neuroscience of Speech, Language & Music | Dr. Erich Jarvis",
+      "date": null,
+      "duration": 6860,
+      "duration_string": "1:54:20",
+      "url": "https://www.youtube.com/watch?v=LVxL_p_kToc",
+      "view_count": 301896,
+      "ingested": false
+    },
+    {
+      "id": "DkS1pkKpILY",
+      "title": "What Alcohol Does to Your Body, Brain & Health",
+      "date": null,
+      "duration": 7262,
+      "duration_string": "2:01:02",
+      "url": "https://www.youtube.com/watch?v=DkS1pkKpILY",
+      "view_count": 7827489,
+      "ingested": true
+    },
+    {
+      "id": "2Ds1m5gflCI",
+      "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Seattle, WA",
+      "date": null,
+      "duration": 3365,
+      "duration_string": "56:05",
+      "url": "https://www.youtube.com/watch?v=2Ds1m5gflCI",
+      "view_count": 157400,
+      "ingested": false
+    },
+    {
+      "id": "DTCmprPCDqc",
+      "title": "Exercise, Nutrition, Hormones for Vitality & Longevity | Dr. Peter Attia",
+      "date": null,
+      "duration": 10203,
+      "duration_string": "2:50:03",
+      "url": "https://www.youtube.com/watch?v=DTCmprPCDqc",
+      "view_count": 1989525,
+      "ingested": false
+    },
+    {
+      "id": "h2aWYjSA1Jc",
+      "title": "Sleep Toolkit: Tools for Optimizing Sleep & Sleep-Wake Timing",
+      "date": null,
+      "duration": 6115,
+      "duration_string": "1:41:55",
+      "url": "https://www.youtube.com/watch?v=h2aWYjSA1Jc",
+      "view_count": 2253304,
+      "ingested": false
+    },
+    {
+      "id": "7YGZZcXqKxE",
+      "title": "Tools for Setting & Achieving Goals | Dr. Emily Balcetis",
+      "date": null,
+      "duration": 5898,
+      "duration_string": "1:38:18",
+      "url": "https://www.youtube.com/watch?v=7YGZZcXqKxE",
+      "view_count": 490282,
+      "ingested": false
+    },
+    {
+      "id": "m_OazsImOiI",
+      "title": "The Science & Treatment of Bipolar Disorder",
+      "date": null,
+      "duration": 8381,
+      "duration_string": "2:19:41",
+      "url": "https://www.youtube.com/watch?v=m_OazsImOiI",
+      "view_count": 1272288,
+      "ingested": false
+    },
+    {
+      "id": "UChhXiFPRgg",
+      "title": "The Biology of Taste Perception & Sugar Craving | Dr. Charles Zuker",
+      "date": null,
+      "duration": 8258,
+      "duration_string": "2:17:38",
+      "url": "https://www.youtube.com/watch?v=UChhXiFPRgg",
+      "view_count": 216087,
+      "ingested": false
+    },
+    {
+      "id": "T65RDBiB5Hs",
+      "title": "Optimize & Control Your Brain Chemistry to Improve Health & Performance | Huberman Lab Podcast #80",
+      "date": null,
+      "duration": 7741,
+      "duration_string": "2:09:01",
+      "url": "https://www.youtube.com/watch?v=T65RDBiB5Hs",
+      "view_count": 604514,
+      "ingested": false
+    },
+    {
+      "id": "UNCwdFxPtE8",
+      "title": "Optimize Your Exercise Program with Science-Based Tools | Jeff Cavaliere",
+      "date": null,
+      "duration": 9647,
+      "duration_string": "2:40:47",
+      "url": "https://www.youtube.com/watch?v=UNCwdFxPtE8",
+      "view_count": 2815856,
+      "ingested": false
+    },
+    {
+      "id": "OadokY8fcAA",
+      "title": "The Science & Treatment of Obsessive Compulsive Disorder (OCD)",
+      "date": null,
+      "duration": 9216,
+      "duration_string": "2:33:36",
+      "url": "https://www.youtube.com/watch?v=OadokY8fcAA",
+      "view_count": 1042449,
+      "ingested": false
+    },
+    {
+      "id": "a9yFKPmPZ90",
+      "title": "The Science & Practice of Movement | Ido Portal",
+      "date": null,
+      "duration": 9277,
+      "duration_string": "2:34:37",
+      "url": "https://www.youtube.com/watch?v=a9yFKPmPZ90",
+      "view_count": 502674,
+      "ingested": false
+    },
+    {
+      "id": "tkH2-_jMCSk",
+      "title": "Improve Flexibility with Research-Supported Stretching Protocols",
+      "date": null,
+      "duration": 7569,
+      "duration_string": "2:06:09",
+      "url": "https://www.youtube.com/watch?v=tkH2-_jMCSk",
+      "view_count": 4036795,
+      "ingested": false
+    },
+    {
+      "id": "IOl28gj_RXw",
+      "title": "Therapy, Treating Trauma & Other Life Challenges | Dr. Paul Conti",
+      "date": null,
+      "duration": 8669,
+      "duration_string": "2:24:29",
+      "url": "https://www.youtube.com/watch?v=IOl28gj_RXw",
+      "view_count": 920486,
+      "ingested": false
+    },
+    {
+      "id": "dzOvi0Aa2EA",
+      "title": "The Science & Process of Healing From Grief",
+      "date": null,
+      "duration": 7608,
+      "duration_string": "2:06:48",
+      "url": "https://www.youtube.com/watch?v=dzOvi0Aa2EA",
+      "view_count": 1123937,
+      "ingested": false
+    },
+    {
+      "id": "099hgtRoUZw",
+      "title": "Boost Attention & Memory with Science-Based Tools | Dr. Wendy Suzuki",
+      "date": null,
+      "duration": 6399,
+      "duration_string": "1:46:39",
+      "url": "https://www.youtube.com/watch?v=099hgtRoUZw",
+      "view_count": 1497310,
+      "ingested": false
+    },
+    {
+      "id": "szqPAPKE5tQ",
+      "title": "Understand & Improve Memory Using Science-Based Tools",
+      "date": null,
+      "duration": 7757,
+      "duration_string": "2:09:17",
+      "url": "https://www.youtube.com/watch?v=szqPAPKE5tQ",
+      "view_count": 1238487,
+      "ingested": false
+    },
+    {
+      "id": "RBK5KLA5Jjg",
+      "title": "Understanding & Controlling Anger & Aggression",
+      "date": null,
+      "duration": 5453,
+      "duration_string": "1:30:53",
+      "url": "https://www.youtube.com/watch?v=RBK5KLA5Jjg",
+      "view_count": 302141,
+      "ingested": false
+    },
+    {
+      "id": "XcvhERcZpWw",
+      "title": "Micronutrients for Health & Longevity | Dr. Rhonda Patrick",
+      "date": null,
+      "duration": 10173,
+      "duration_string": "2:49:33",
+      "url": "https://www.youtube.com/watch?v=XcvhERcZpWw",
+      "view_count": 1842826,
+      "ingested": false
+    },
+    {
+      "id": "EQ3GjpGq5Y8",
+      "title": "The Science & Health Benefits of Deliberate Heat Exposure",
+      "date": null,
+      "duration": 6791,
+      "duration_string": "1:53:11",
+      "url": "https://www.youtube.com/watch?v=EQ3GjpGq5Y8",
+      "view_count": 760836,
+      "ingested": false
+    },
+    {
+      "id": "UF0nqolsNZc",
+      "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health",
+      "date": null,
+      "duration": 8623,
+      "duration_string": "2:23:43",
+      "url": "https://www.youtube.com/watch?v=UF0nqolsNZc",
+      "view_count": 1234299,
+      "ingested": false
+    },
+    {
+      "id": "ncSoor2Iw8k",
+      "title": "How to Optimize Your Hormones for Health & Vitality | Dr. Kyle Gillett",
+      "date": null,
+      "duration": 10762,
+      "duration_string": "2:59:22",
+      "url": "https://www.youtube.com/watch?v=ncSoor2Iw8k",
+      "view_count": 730084,
+      "ingested": false
+    },
+    {
+      "id": "pq6WHJzOkno",
+      "title": "Using Deliberate Cold Exposure for Health and Performance | Huberman Lab",
+      "date": null,
+      "duration": 8109,
+      "duration_string": "2:15:09",
+      "url": "https://www.youtube.com/watch?v=pq6WHJzOkno",
+      "view_count": 1958398,
+      "ingested": false
+    },
+    {
+      "id": "IAnhFUUCq6c",
+      "title": "Dr. Andy Galpin: How to Build Strength, Muscle Size & Endurance",
+      "date": null,
+      "duration": 12688,
+      "duration_string": "3:31:28",
+      "url": "https://www.youtube.com/watch?v=IAnhFUUCq6c",
+      "view_count": 10278753,
+      "ingested": true
+    },
+    {
+      "id": "VAEzZeaV5zM",
+      "title": "Controlling Sugar Cravings & Metabolism with Science-Based Tools | Huberman Lab Podcast #64",
+      "date": null,
+      "duration": 7136,
+      "duration_string": "1:58:56",
+      "url": "https://www.youtube.com/watch?v=VAEzZeaV5zM",
+      "view_count": 1449814,
+      "ingested": false
+    },
+    {
+      "id": "azb3Ih68awQ",
+      "title": "Using Salt to Optimize Mental & Physical Performance | Huberman Lab",
+      "date": null,
+      "duration": 7434,
+      "duration_string": "2:03:54",
+      "url": "https://www.youtube.com/watch?v=azb3Ih68awQ",
+      "view_count": 2140984,
+      "ingested": false
+    },
+    {
+      "id": "ouCWNRvPk20",
+      "title": "How to Build, Maintain & Repair Gut Health | Dr. Justin Sonnenburg",
+      "date": null,
+      "duration": 8079,
+      "duration_string": "2:14:39",
+      "url": "https://www.youtube.com/watch?v=ouCWNRvPk20",
+      "view_count": 2657129,
+      "ingested": false
+    },
+    {
+      "id": "15R2pMqU2ok",
+      "title": "How to Enhance Your Gut Microbiome for Brain & Overall Health",
+      "date": null,
+      "duration": 6735,
+      "duration_string": "1:52:15",
+      "url": "https://www.youtube.com/watch?v=15R2pMqU2ok",
+      "view_count": 1118114,
+      "ingested": false
+    },
+    {
+      "id": "PctD-ki8dCc",
+      "title": "Using Hypnosis to Enhance Health & Performance | Dr. David Spiegel",
+      "date": null,
+      "duration": 6761,
+      "duration_string": "1:52:41",
+      "url": "https://www.youtube.com/watch?v=PctD-ki8dCc",
+      "view_count": 488003,
+      "ingested": false
+    },
+    {
+      "id": "gMRph_BvHB4",
+      "title": "The Science of Love, Desire and Attachment",
+      "date": null,
+      "duration": 9312,
+      "duration_string": "2:35:12",
+      "url": "https://www.youtube.com/watch?v=gMRph_BvHB4",
+      "view_count": 2845193,
+      "ingested": false
+    },
+    {
+      "id": "BwyZIWeBpRw",
+      "title": "Using Play to Rewire & Improve Your Brain",
+      "date": null,
+      "duration": 6396,
+      "duration_string": "1:46:36",
+      "url": "https://www.youtube.com/watch?v=BwyZIWeBpRw",
+      "view_count": 490294,
+      "ingested": false
+    },
+    {
+      "id": "Ze2pc6NwsHQ",
+      "title": "Optimizing Workspace for Productivity, Focus, & Creativity",
+      "date": null,
+      "duration": 6116,
+      "duration_string": "1:41:56",
+      "url": "https://www.youtube.com/watch?v=Ze2pc6NwsHQ",
+      "view_count": 591280,
+      "ingested": false
+    },
+    {
+      "id": "dFR_wFN23ZY",
+      "title": "Science of Mindsets for Health & Performance | Dr. Alia Crum",
+      "date": null,
+      "duration": 6063,
+      "duration_string": "1:41:03",
+      "url": "https://www.youtube.com/watch?v=dFR_wFN23ZY",
+      "view_count": 759385,
+      "ingested": false
+    },
+    {
+      "id": "t1F7EEGPQwo",
+      "title": "The Science of Setting & Achieving Goals",
+      "date": null,
+      "duration": 6863,
+      "duration_string": "1:54:23",
+      "url": "https://www.youtube.com/watch?v=t1F7EEGPQwo",
+      "view_count": 1920935,
+      "ingested": false
+    },
+    {
+      "id": "GLgKkG44MGo",
+      "title": "Breathing for Mental & Physical Health & Performance | Dr. Jack Feldman",
+      "date": null,
+      "duration": 8617,
+      "duration_string": "2:23:37",
+      "url": "https://www.youtube.com/watch?v=GLgKkG44MGo",
+      "view_count": 778397,
+      "ingested": false
+    },
+    {
+      "id": "Wcs2PFz5q6g",
+      "title": "The Science of Making & Breaking Habits",
+      "date": null,
+      "duration": 6639,
+      "duration_string": "1:50:39",
+      "url": "https://www.youtube.com/watch?v=Wcs2PFz5q6g",
+      "view_count": 5532956,
+      "ingested": false
+    },
+    {
+      "id": "n9IxomBusuw",
+      "title": "The Biology of Slowing & Reversing Aging | Dr. David Sinclair",
+      "date": null,
+      "duration": 7843,
+      "duration_string": "2:10:43",
+      "url": "https://www.youtube.com/watch?v=n9IxomBusuw",
+      "view_count": 3678145,
+      "ingested": false
+    },
+    {
+      "id": "RgAcOqVRfYA",
+      "title": "Science of Social Bonding in Family, Friendship & Romantic Love",
+      "date": null,
+      "duration": 5602,
+      "duration_string": "1:33:22",
+      "url": "https://www.youtube.com/watch?v=RgAcOqVRfYA",
+      "view_count": 602107,
+      "ingested": false
+    },
+    {
+      "id": "oC3fhUjg30E",
+      "title": "Your Brain's Logic & Function | Dr. David Berson",
+      "date": null,
+      "duration": 6768,
+      "duration_string": "1:52:48",
+      "url": "https://www.youtube.com/watch?v=oC3fhUjg30E",
+      "view_count": 278821,
+      "ingested": false
+    },
+    {
+      "id": "31wjVhCcI5Y",
+      "title": "Erasing Fears & Traumas Based on the Modern Neuroscience of Fear",
+      "date": null,
+      "duration": 8030,
+      "duration_string": "2:13:50",
+      "url": "https://www.youtube.com/watch?v=31wjVhCcI5Y",
+      "view_count": 2355317,
+      "ingested": false
+    },
+    {
+      "id": "HXzTbCEqCJc",
+      "title": "How Humans Select & Keep Romantic Partners in Short & Long Term | Dr. David Buss",
+      "date": null,
+      "duration": 7982,
+      "duration_string": "2:13:02",
+      "url": "https://www.youtube.com/watch?v=HXzTbCEqCJc",
+      "view_count": 976277,
+      "ingested": false
+    },
+    {
+      "id": "KVjfFN89qvQ",
+      "title": "The Science of Gratitude & How to Build a Gratitude Practice",
+      "date": null,
+      "duration": 5157,
+      "duration_string": "1:25:57",
+      "url": "https://www.youtube.com/watch?v=KVjfFN89qvQ",
+      "view_count": 1361640,
+      "ingested": false
+    },
+    {
+      "id": "8IWDAqodDas",
+      "title": "Time Perception & Entrainment by Dopamine, Serotonin & Hormones",
+      "date": null,
+      "duration": 4457,
+      "duration_string": "1:14:17",
+      "url": "https://www.youtube.com/watch?v=8IWDAqodDas",
+      "view_count": 552536,
+      "ingested": false
+    },
+    {
+      "id": "iMvtHqLmEkI",
+      "title": "How to Exercise for Strength Gains & Hormone Optimization | Dr. Duncan French",
+      "date": null,
+      "duration": 5406,
+      "duration_string": "1:30:06",
+      "url": "https://www.youtube.com/watch?v=iMvtHqLmEkI",
+      "view_count": 340571,
+      "ingested": false
+    },
+    {
+      "id": "poOf8b2WE2g",
+      "title": "Using Your Nervous System to Enhance Your Immune System",
+      "date": null,
+      "duration": 7232,
+      "duration_string": "2:00:32",
+      "url": "https://www.youtube.com/watch?v=poOf8b2WE2g",
+      "view_count": 698586,
+      "ingested": false
+    },
+    {
+      "id": "oUu3f0ETMJQ",
+      "title": "Timing Light, Food, & Exercise for Better Sleep, Energy & Mood | Dr. Samer Hattar",
+      "date": null,
+      "duration": 8068,
+      "duration_string": "2:14:28",
+      "url": "https://www.youtube.com/watch?v=oUu3f0ETMJQ",
+      "view_count": 241171,
+      "ingested": false
+    },
+    {
+      "id": "E7W4OQfJWdw",
+      "title": "Nutrients For Brain Health & Performance | Huberman Lab Podcast #42",
+      "date": null,
+      "duration": 6079,
+      "duration_string": "1:41:19",
+      "url": "https://www.youtube.com/watch?v=E7W4OQfJWdw",
+      "view_count": 1506214,
+      "ingested": false
+    },
+    {
+      "id": "9tRohh0gErM",
+      "title": "Effects of Fasting & Time Restricted Eating on Fat Loss & Health | Huberman Lab Podcast #41",
+      "date": null,
+      "duration": 8767,
+      "duration_string": "2:26:07",
+      "url": "https://www.youtube.com/watch?v=9tRohh0gErM",
+      "view_count": 7473366,
+      "ingested": false
+    },
+    {
+      "id": "77CdVSpnUX4",
+      "title": "Using Temperature for Performance, Brain & Body Health | Dr. Craig Heller",
+      "date": null,
+      "duration": 6696,
+      "duration_string": "1:51:36",
+      "url": "https://www.youtube.com/watch?v=77CdVSpnUX4",
+      "view_count": 272268,
+      "ingested": false
+    },
+    {
+      "id": "QmOF0crdyRU",
+      "title": "Controlling Your Dopamine For Motivation, Focus & Satisfaction",
+      "date": null,
+      "duration": 8192,
+      "duration_string": "2:16:32",
+      "url": "https://www.youtube.com/watch?v=QmOF0crdyRU",
+      "view_count": 12198661,
+      "ingested": false
+    },
+    {
+      "id": "GzvzWO0NU50",
+      "title": "Psychedelics for Treating Mental Disorders | Dr. Matthew Johnson",
+      "date": null,
+      "duration": 10325,
+      "duration_string": "2:52:05",
+      "url": "https://www.youtube.com/watch?v=GzvzWO0NU50",
+      "view_count": 611312,
+      "ingested": false
+    },
+    {
+      "id": "hFL6qRIJZ_Y",
+      "title": "ADHD & How Anyone Can Improve Their Focus",
+      "date": null,
+      "duration": 8281,
+      "duration_string": "2:18:01",
+      "url": "https://www.youtube.com/watch?v=hFL6qRIJZ_Y",
+      "view_count": 7204204,
+      "ingested": false
+    },
+    {
+      "id": "2XGREPnlI8U",
+      "title": "Healthy Eating & Eating Disorders - Anorexia, Bulimia, Binging",
+      "date": null,
+      "duration": 8179,
+      "duration_string": "2:16:19",
+      "url": "https://www.youtube.com/watch?v=2XGREPnlI8U",
+      "view_count": 571370,
+      "ingested": false
+    },
+    {
+      "id": "DtmwtjOoSYU",
+      "title": "Science of Stress, Testosterone & Free Will | Dr. Robert Sapolsky",
+      "date": null,
+      "duration": 5390,
+      "duration_string": "1:29:50",
+      "url": "https://www.youtube.com/watch?v=DtmwtjOoSYU",
+      "view_count": 1667110,
+      "ingested": false
+    },
+    {
+      "id": "Xu1FMCxoEFc",
+      "title": "Understanding & Conquering Depression",
+      "date": null,
+      "duration": 7323,
+      "duration_string": "2:02:03",
+      "url": "https://www.youtube.com/watch?v=Xu1FMCxoEFc",
+      "view_count": 2239647,
+      "ingested": false
+    },
+    {
+      "id": "p3JLaF_4Tz8",
+      "title": "Understanding & Treating Addiction | Dr. Anna Lembke",
+      "date": null,
+      "duration": 7352,
+      "duration_string": "2:02:32",
+      "url": "https://www.youtube.com/watch?v=p3JLaF_4Tz8",
+      "view_count": 2992861,
+      "ingested": false
+    },
+    {
+      "id": "xmhsWAqP_0Y",
+      "title": "How to Control Your Sense of Pain & Pleasure",
+      "date": null,
+      "duration": 8172,
+      "duration_string": "2:16:12",
+      "url": "https://www.youtube.com/watch?v=xmhsWAqP_0Y",
+      "view_count": 288838,
+      "ingested": false
+    },
+    {
+      "id": "gbQFSMayJxk",
+      "title": "The Science & Practice of Perfecting Your Sleep | Dr. Matt Walker",
+      "date": null,
+      "duration": 11166,
+      "duration_string": "3:06:06",
+      "url": "https://www.youtube.com/watch?v=gbQFSMayJxk",
+      "view_count": 4002753,
+      "ingested": false
+    },
+    {
+      "id": "rW9QKc-iFoY",
+      "title": "How to Optimize Your Brain-Body Function & Health",
+      "date": null,
+      "duration": 6764,
+      "duration_string": "1:52:44",
+      "url": "https://www.youtube.com/watch?v=rW9QKc-iFoY",
+      "view_count": 375105,
+      "ingested": false
+    },
+    {
+      "id": "VRvn3Oj5r3E",
+      "title": "Machines, Creativity & Love | Dr. Lex Fridman",
+      "date": null,
+      "duration": 10999,
+      "duration_string": "3:03:19",
+      "url": "https://www.youtube.com/watch?v=VRvn3Oj5r3E",
+      "view_count": 2106749,
+      "ingested": false
+    },
+    {
+      "id": "aXvDEmo6uS4",
+      "title": "Maximizing Productivity, Physical & Mental Health with Daily Tools",
+      "date": null,
+      "duration": 7621,
+      "duration_string": "2:07:01",
+      "url": "https://www.youtube.com/watch?v=aXvDEmo6uS4",
+      "view_count": 802491,
+      "ingested": false
+    },
+    {
+      "id": "JVRyzYB9JSY",
+      "title": "The Science of Hearing, Balance & Accelerated Learning",
+      "date": null,
+      "duration": 7417,
+      "duration_string": "2:03:37",
+      "url": "https://www.youtube.com/watch?v=JVRyzYB9JSY",
+      "view_count": 322665,
+      "ingested": false
+    },
+    {
+      "id": "w9MXqXBZy9U",
+      "title": "Understanding & Healing the Mind | Dr. Karl Deisseroth",
+      "date": null,
+      "duration": 7326,
+      "duration_string": "2:02:06",
+      "url": "https://www.youtube.com/watch?v=w9MXqXBZy9U",
+      "view_count": 471758,
+      "ingested": false
+    },
+    {
+      "id": "Mwz8JprPeMc",
+      "title": "How Smell, Taste & Pheromone-Like Chemicals Control You",
+      "date": null,
+      "duration": 7181,
+      "duration_string": "1:59:41",
+      "url": "https://www.youtube.com/watch?v=Mwz8JprPeMc",
+      "view_count": 245613,
+      "ingested": false
+    },
+    {
+      "id": "ObtW353d5i0",
+      "title": "The Science of Vision, Eye Health & Seeing Better",
+      "date": null,
+      "duration": 6578,
+      "duration_string": "1:49:38",
+      "url": "https://www.youtube.com/watch?v=ObtW353d5i0",
+      "view_count": 1784013,
+      "ingested": false
+    },
+    {
+      "id": "VQLU7gpk_X8",
+      "title": "How to Build Endurance in Your Brain & Body",
+      "date": null,
+      "duration": 7530,
+      "duration_string": "2:05:30",
+      "url": "https://www.youtube.com/watch?v=VQLU7gpk_X8",
+      "view_count": 1611640,
+      "ingested": false
+    },
+    {
+      "id": "XLr2RKoD-oY",
+      "title": "Science of Muscle Growth, Increasing Strength & Muscular Recovery",
+      "date": null,
+      "duration": 7460,
+      "duration_string": "2:04:20",
+      "url": "https://www.youtube.com/watch?v=XLr2RKoD-oY",
+      "view_count": 6651418,
+      "ingested": false
+    },
+    {
+      "id": "GqPGXG5TlZw",
+      "title": "How to Lose Fat with Science-Based Tools",
+      "date": null,
+      "duration": 6834,
+      "duration_string": "1:53:54",
+      "url": "https://www.youtube.com/watch?v=GqPGXG5TlZw",
+      "view_count": 5564808,
+      "ingested": false
+    },
+    {
+      "id": "xJ0IBzCjEPk",
+      "title": "How to Learn Skills Faster",
+      "date": null,
+      "duration": 6735,
+      "duration_string": "1:52:15",
+      "url": "https://www.youtube.com/watch?v=xJ0IBzCjEPk",
+      "view_count": 1735288,
+      "ingested": false
+    },
+    {
+      "id": "xaE9XyMMAHY",
+      "title": "Supercharge Exercise Performance & Recovery with Cooling",
+      "date": null,
+      "duration": 5031,
+      "duration_string": "1:23:51",
+      "url": "https://www.youtube.com/watch?v=xaE9XyMMAHY",
+      "view_count": 360604,
+      "ingested": false
+    },
+    {
+      "id": "JPX8g8ibKFc",
+      "title": "Using Cortisol & Adrenaline to Boost Our Energy & Immune System Function",
+      "date": null,
+      "duration": 6398,
+      "duration_string": "1:46:38",
+      "url": "https://www.youtube.com/watch?v=JPX8g8ibKFc",
+      "view_count": 658243,
+      "ingested": false
+    },
+    {
+      "id": "x7qbJeRxWGw",
+      "title": "How to Control Your Metabolism by Thyroid & Growth Hormone",
+      "date": null,
+      "duration": 6361,
+      "duration_string": "1:46:01",
+      "url": "https://www.youtube.com/watch?v=x7qbJeRxWGw",
+      "view_count": 914047,
+      "ingested": false
+    },
+    {
+      "id": "17O5mgXZ9ZU",
+      "title": "How Our Hormones Control Our Hunger, Eating & Satiety",
+      "date": null,
+      "duration": 5983,
+      "duration_string": "1:39:43",
+      "url": "https://www.youtube.com/watch?v=17O5mgXZ9ZU",
+      "view_count": 1395457,
+      "ingested": false
+    },
+    {
+      "id": "qJXKhu5UZwk",
+      "title": "The Science of How to Optimize Testosterone & Estrogen",
+      "date": null,
+      "duration": 7367,
+      "duration_string": "2:02:47",
+      "url": "https://www.youtube.com/watch?v=qJXKhu5UZwk",
+      "view_count": 2380926,
+      "ingested": false
+    },
+    {
+      "id": "rBdhqBGqiMc",
+      "title": "Reduce Anxiety & Stress with the Physiological Sigh | Huberman Lab Quantal Clip",
+      "date": null,
+      "duration": 165,
+      "duration_string": "2:45",
+      "url": "https://www.youtube.com/watch?v=rBdhqBGqiMc",
+      "view_count": 855027,
+      "ingested": false
+    },
+    {
+      "id": "J7SrAEacyf8",
+      "title": "How Hormones Shape Sexual Development",
+      "date": null,
+      "duration": 5903,
+      "duration_string": "1:38:23",
+      "url": "https://www.youtube.com/watch?v=J7SrAEacyf8",
+      "view_count": 299184,
+      "ingested": false
+    },
+    {
+      "id": "hcuMLQVAgEg",
+      "title": "The Science of Emotions & Relationships",
+      "date": null,
+      "duration": 6062,
+      "duration_string": "1:41:02",
+      "url": "https://www.youtube.com/watch?v=hcuMLQVAgEg",
+      "view_count": 2203554,
+      "ingested": false
+    },
+    {
+      "id": "PZ-GvIOhcf8",
+      "title": "How to Control Stress in Real-Time | Huberman Lab Quantal Clip",
+      "date": null,
+      "duration": 133,
+      "duration_string": "2:13",
+      "url": "https://www.youtube.com/watch?v=PZ-GvIOhcf8",
+      "view_count": 345654,
+      "ingested": false
+    },
+    {
+      "id": "vA50EK70whE",
+      "title": "How to Increase Motivation & Drive",
+      "date": null,
+      "duration": 5343,
+      "duration_string": "1:29:03",
+      "url": "https://www.youtube.com/watch?v=vA50EK70whE",
+      "view_count": 1987348,
+      "ingested": false
+    },
+    {
+      "id": "XfURDjegrAw",
+      "title": "How Foods and Nutrients Control Our Moods",
+      "date": null,
+      "duration": 6248,
+      "duration_string": "1:44:08",
+      "url": "https://www.youtube.com/watch?v=XfURDjegrAw",
+      "view_count": 1346107,
+      "ingested": false
+    },
+    {
+      "id": "ntfcfJ28eiU",
+      "title": "Tools for Managing Stress & Anxiety",
+      "date": null,
+      "duration": 5904,
+      "duration_string": "1:38:24",
+      "url": "https://www.youtube.com/watch?v=ntfcfJ28eiU",
+      "view_count": 2814941,
+      "ingested": false
+    },
+    {
+      "id": "mcPSRWUYCv0",
+      "title": "Control Pain & Heal Faster with Your Brain",
+      "date": null,
+      "duration": 5878,
+      "duration_string": "1:37:58",
+      "url": "https://www.youtube.com/watch?v=mcPSRWUYCv0",
+      "view_count": 486978,
+      "ingested": false
+    },
+    {
+      "id": "uuP-1ioh4LY",
+      "title": "Optimize Your Learning & Creativity With Science-Based Tools",
+      "date": null,
+      "duration": 5435,
+      "duration_string": "1:30:35",
+      "url": "https://www.youtube.com/watch?v=uuP-1ioh4LY",
+      "view_count": 562184,
+      "ingested": false
+    },
+    {
+      "id": "hx3U64IXFOY",
+      "title": "Learn Faster Using Failures, Movement & Balance",
+      "date": null,
+      "duration": 5286,
+      "duration_string": "1:28:06",
+      "url": "https://www.youtube.com/watch?v=hx3U64IXFOY",
+      "view_count": 1898492,
+      "ingested": false
+    },
+    {
+      "id": "LG53Vxum0as",
+      "title": "How to Focus to Change Your Brain",
+      "date": null,
+      "duration": 5383,
+      "duration_string": "1:29:43",
+      "url": "https://www.youtube.com/watch?v=LG53Vxum0as",
+      "view_count": 3164593,
+      "ingested": false
+    },
+    {
+      "id": "FFwA0QFmpQ4",
+      "title": "Understand and Use Dreams to Learn and Forget",
+      "date": null,
+      "duration": 4670,
+      "duration_string": "1:17:50",
+      "url": "https://www.youtube.com/watch?v=FFwA0QFmpQ4",
+      "view_count": 1027608,
+      "ingested": false
+    },
+    {
+      "id": "NAATB55oxeQ",
+      "title": "How to Defeat Jet Lag, Shift Work & Sleeplessness",
+      "date": null,
+      "duration": 6656,
+      "duration_string": "1:50:56",
+      "url": "https://www.youtube.com/watch?v=NAATB55oxeQ",
+      "view_count": 569612,
+      "ingested": false
+    },
+    {
+      "id": "nwSkFq4tyC0",
+      "title": "Using Science to Optimize Sleep, Learning & Metabolism",
+      "date": null,
+      "duration": 6086,
+      "duration_string": "1:41:26",
+      "url": "https://www.youtube.com/watch?v=nwSkFq4tyC0",
+      "view_count": 1404164,
+      "ingested": false
+    },
+    {
+      "id": "nm1TxQj9IsQ",
+      "title": "Master Your Sleep & Be More Alert When Awake",
+      "date": null,
+      "duration": 4925,
+      "duration_string": "1:22:05",
+      "url": "https://www.youtube.com/watch?v=nm1TxQj9IsQ",
+      "view_count": 4264913,
+      "ingested": false
+    },
+    {
+      "id": "H-XfCl-HpRM",
+      "title": "How Your Brain Works & Changes",
+      "date": null,
+      "duration": 3751,
+      "duration_string": "1:02:31",
+      "url": "https://www.youtube.com/watch?v=H-XfCl-HpRM",
+      "view_count": 1999123,
+      "ingested": false
+    },
+    {
+      "id": "4b6bwcWK6GE",
+      "title": "Welcome to the Huberman Lab Podcast",
+      "date": null,
+      "duration": 263,
+      "duration_string": "4:23",
+      "url": "https://www.youtube.com/watch?v=4b6bwcWK6GE",
+      "view_count": 1415487,
+      "ingested": false
+    },
+    {
+      "id": "CH9hcEh1Lv4",
+      "title": "Dopamine When You See Certain People Harmed",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=CH9hcEh1Lv4",
+      "view_count": 69000,
+      "ingested": false
+    },
+    {
+      "id": "zF9lcau3_to",
+      "title": "Dorian Yates: How to Cycle Weight Training",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=zF9lcau3_to",
+      "view_count": 115000,
+      "ingested": false
+    },
+    {
+      "id": "gkWk11WKeVc",
+      "title": "Dorian Yates: The Most Effective & Time Efficient Training",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=gkWk11WKeVc",
+      "view_count": 78000,
+      "ingested": false
+    },
+    {
+      "id": "QwK8ChEcV2Q",
+      "title": "Make Habits Easy to Start",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=QwK8ChEcV2Q",
+      "view_count": 72000,
+      "ingested": false
+    },
+    {
+      "id": "jFXTc_rCTj4",
+      "title": "This Is What Top Performers Do Differently",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=jFXTc_rCTj4",
+      "view_count": 88000,
+      "ingested": false
+    },
+    {
+      "id": "9tgelcI5X2Q",
+      "title": "Why Human Connection Matters",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=9tgelcI5X2Q",
+      "view_count": 57000,
+      "ingested": false
+    },
+    {
+      "id": "D1wxOiVXM_w",
+      "title": "The Cure for Addiction",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=D1wxOiVXM_w",
+      "view_count": 332000,
+      "ingested": false
+    },
+    {
+      "id": "oDRffy7sTBU",
+      "title": "How to Break Destructive Patterns",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=oDRffy7sTBU",
+      "view_count": 122000,
+      "ingested": false
+    },
+    {
+      "id": "2g_wpjzC_-c",
+      "title": "Learn to Confront Your Feelings",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=2g_wpjzC_-c",
+      "view_count": 72000,
+      "ingested": false
+    },
+    {
+      "id": "itDBS3zefuI",
+      "title": "More Sun Exposure Is Associated With a Longer Life",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=itDBS3zefuI",
+      "view_count": 100000,
+      "ingested": false
+    },
+    {
+      "id": "vXVGAanRWQM",
+      "title": "Red Light Slows Retinal Aging in Animals",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=vXVGAanRWQM",
+      "view_count": 50000,
+      "ingested": false
+    },
+    {
+      "id": "eRx6rcJefVI",
+      "title": "Don't Start a Conversation With an Apology",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=eRx6rcJefVI",
+      "view_count": 86000,
+      "ingested": false
+    },
+    {
+      "id": "c-35hs95O18",
+      "title": "Why Women Over 30 Should Consider Freezing Their Eggs",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=c-35hs95O18",
+      "view_count": 65000,
+      "ingested": false
+    },
+    {
+      "id": "AXug0tXxbI0",
+      "title": "How to Avoid Filler Words When You Speak",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=AXug0tXxbI0",
+      "view_count": 82000,
+      "ingested": false
+    },
+    {
+      "id": "yGC6T-olRQk",
+      "title": "Why Memorizing Speeches Hurts Your Performance",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=yGC6T-olRQk",
+      "view_count": 120000,
+      "ingested": false
+    },
+    {
+      "id": "yc6wutvd0wQ",
+      "title": "How to Overcome Inner Resistance & Fear of Failure",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=yc6wutvd0wQ",
+      "view_count": 93000,
+      "ingested": false
+    },
+    {
+      "id": "-VLr4aqmWio",
+      "title": "The Cost of Resisting Your Creative Purpose",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=-VLr4aqmWio",
+      "view_count": 48000,
+      "ingested": false
+    },
+    {
+      "id": "ADzehrUgzGg",
+      "title": "The Mental Switch That Separates Pros From Amateurs",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=ADzehrUgzGg",
+      "view_count": 101000,
+      "ingested": false
+    },
+    {
+      "id": "zP3vh_uoCno",
+      "title": "Magnesium Can Protect Against Hearing Loss",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=zP3vh_uoCno",
+      "view_count": 109000,
+      "ingested": false
+    },
+    {
+      "id": "7mDA3OzeHgg",
+      "title": "DJ Shipley: The Power of a 20 Minute Walk",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=7mDA3OzeHgg",
+      "view_count": 120000,
+      "ingested": false
+    },
+    {
+      "id": "0UyOAtjKXpM",
+      "title": "You Can Learn New Habits Very Fast: Brain Circuits Rewire Faster With Urgency",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=0UyOAtjKXpM",
+      "view_count": 281000,
+      "ingested": false
+    },
+    {
+      "id": "JgOx50_ogJw",
+      "title": "Why Lifting Tempo Doesn’t Impact Muscle Growth as Much as You Think",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=JgOx50_ogJw",
+      "view_count": 85000,
+      "ingested": false
+    },
+    {
+      "id": "8qPGUi4XSU0",
+      "title": "How Much Fiber Do You Really Need?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=8qPGUi4XSU0",
+      "view_count": 85000,
+      "ingested": false
+    },
+    {
+      "id": "bmFw2kQ9pRs",
+      "title": "The Powerful Impact of Morning Light on Cortisol & Alertness",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=bmFw2kQ9pRs",
+      "view_count": 146000,
+      "ingested": false
+    },
+    {
+      "id": "oeVfCqlHn_I",
+      "title": "Tools to Set Your Cortisol Rhythm",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=oeVfCqlHn_I",
+      "view_count": 551000,
+      "ingested": false
+    },
+    {
+      "id": "qP4RESPJ8vo",
+      "title": "Should You Train Fasted or Fed?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=qP4RESPJ8vo",
+      "view_count": 62000,
+      "ingested": false
+    },
+    {
+      "id": "gZGz0SS7KCE",
+      "title": "Can Diet Soda Help With Weight Loss?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=gZGz0SS7KCE",
+      "view_count": 97000,
+      "ingested": false
+    },
+    {
+      "id": "R2SfjPSaphk",
+      "title": "Does Fasted Training Burn More Fat?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=R2SfjPSaphk",
+      "view_count": 152000,
+      "ingested": false
+    },
+    {
+      "id": "DLdLK1pfvaQ",
+      "title": "How Protein Improves Body Composition",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=DLdLK1pfvaQ",
+      "view_count": 67000,
+      "ingested": false
+    },
+    {
+      "id": "Eb5UYEQDBJg",
+      "title": "Beliefs About Genetics Can Influence Biological Outcomes",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Eb5UYEQDBJg",
+      "view_count": 110000,
+      "ingested": false
+    },
+    {
+      "id": "zprh05F_ius",
+      "title": "We’re Attracted to the Smell of People With Different Immune Systems",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=zprh05F_ius",
+      "view_count": 92000,
+      "ingested": false
+    },
+    {
+      "id": "5wjmlhII1I8",
+      "title": "How Cold Water Slows Heart Rate & Boosts Oxygen",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=5wjmlhII1I8",
+      "view_count": 257000,
+      "ingested": false
+    },
+    {
+      "id": "1e4QdH-LeKc",
+      "title": "People Who Do Prenuptial Contracts Stay Together Longer",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=1e4QdH-LeKc",
+      "view_count": 1400000,
+      "ingested": false
+    },
+    {
+      "id": "v2YTJBKLLY0",
+      "title": "Why Reading (Books) Makes Us Better at Speaking",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=v2YTJBKLLY0",
+      "view_count": 1000000,
+      "ingested": false
+    },
+    {
+      "id": "UpRsmu9xfJA",
+      "title": "How to Read Your Dog's Emotions",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=UpRsmu9xfJA",
+      "view_count": 78000,
+      "ingested": false
+    },
+    {
+      "id": "Rk02H9r_E4A",
+      "title": "Why “Idiot Compassion” (Aka Yeslighting) Is Not Effective Support",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Rk02H9r_E4A",
+      "view_count": 126000,
+      "ingested": false
+    },
+    {
+      "id": "e7Dxyc5w3hU",
+      "title": "Obesity & Diabetes Increase Autism Risk",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=e7Dxyc5w3hU",
+      "view_count": 64000,
+      "ingested": false
+    },
+    {
+      "id": "ZizbA-MtjAs",
+      "title": "The Best Career Path if You Have ADHD",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=ZizbA-MtjAs",
+      "view_count": 155000,
+      "ingested": false
+    },
+    {
+      "id": "p6zNt7HUCrY",
+      "title": "How Sunlight Protects Against Flu",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=p6zNt7HUCrY",
+      "view_count": 54000,
+      "ingested": false
+    },
+    {
+      "id": "Vh97z1ephuc",
+      "title": "The Importance of Sunlight for Health & Well-Being",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Vh97z1ephuc",
+      "view_count": 65000,
+      "ingested": false
+    },
+    {
+      "id": "goCbY3zIZKo",
+      "title": "The Best Red & Infrared Light Source(s) for Mitochondrial, Eye & Hormone Health",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=goCbY3zIZKo",
+      "view_count": 363000,
+      "ingested": false
+    },
+    {
+      "id": "Ag_a3VAQlgk",
+      "title": "How Long Wavelength Light from Leaves Enhances Mitochondrial Function",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Ag_a3VAQlgk",
+      "view_count": 1500000,
+      "ingested": false
+    },
+    {
+      "id": "hviHgpxjXcc",
+      "title": "The Mind-Muscle Connection & Its Impact on Strength Gains",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=hviHgpxjXcc",
+      "view_count": 150000,
+      "ingested": false
+    },
+    {
+      "id": "rkFHdXo1O0w",
+      "title": "How to Build Strength & Endurance",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=rkFHdXo1O0w",
+      "view_count": 352000,
+      "ingested": false
+    },
+    {
+      "id": "_2u_FiHTuvQ",
+      "title": "Use the “MIQ Process” to Excel in Any Endeavor",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=_2u_FiHTuvQ",
+      "view_count": 55000,
+      "ingested": false
+    },
+    {
+      "id": "8tkQDgUdpLs",
+      "title": "How Social Connection Increases Happiness",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=8tkQDgUdpLs",
+      "view_count": 144000,
+      "ingested": false
+    },
+    {
+      "id": "Kyud5aFGjHU",
+      "title": "How to Identify Stars vs. Planets Based on Light",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Kyud5aFGjHU",
+      "view_count": 28000,
+      "ingested": false
+    },
+    {
+      "id": "Uv-O7SZQ1H4",
+      "title": "How to Talk to Your Kids About Difficult Emotions",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Uv-O7SZQ1H4",
+      "view_count": 68000,
+      "ingested": false
+    },
+    {
+      "id": "7aj00T-TKDc",
+      "title": "How Exercise Increases Energy",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=7aj00T-TKDc",
+      "view_count": 686000,
+      "ingested": false
+    },
+    {
+      "id": "2PgNi03lLc0",
+      "title": "Tools for Increasing Motivation",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=2PgNi03lLc0",
+      "view_count": 45000,
+      "ingested": false
+    },
+    {
+      "id": "5Gg_uZIumtE",
+      "title": "Should You Exercise After a Poor Night’s Sleep?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=5Gg_uZIumtE",
+      "view_count": 355000,
+      "ingested": false
+    },
+    {
+      "id": "yRSBl2ovMz4",
+      "title": "First Step of Self Improvement | Dr. Jordan Peterson",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=yRSBl2ovMz4",
+      "view_count": 87000,
+      "ingested": false
+    },
+    {
+      "id": "nyxlCNcvaLA",
+      "title": "Why Studying Without Your Phone Improves Focus",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=nyxlCNcvaLA",
+      "view_count": 101000,
+      "ingested": false
+    },
+    {
+      "id": "6YLdlK2hYnw",
+      "title": "Life Advice: What to Aim For",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=6YLdlK2hYnw",
+      "view_count": 115000,
+      "ingested": false
+    },
+    {
+      "id": "JnlSDaBjCCU",
+      "title": "Do You Need to Weight Train to Failure?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=JnlSDaBjCCU",
+      "view_count": 109000,
+      "ingested": false
+    },
+    {
+      "id": "1SXDXdngX2M",
+      "title": "Why Venting Makes You & Others Feel Worse, Not Better",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=1SXDXdngX2M",
+      "view_count": 63000,
+      "ingested": false
+    },
+    {
+      "id": "6RZbGrq9BxE",
+      "title": "How to Limit Your Exposure to Endocrine Disruptors",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=6RZbGrq9BxE",
+      "view_count": 58000,
+      "ingested": false
+    },
+    {
+      "id": "bGixnNGvSkg",
+      "title": "Is It Safe to Microwave Plastic Containers?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=bGixnNGvSkg",
+      "view_count": 7100000,
+      "ingested": false
+    },
+    {
+      "id": "FOi5s3OUogo",
+      "title": "The Power of Non-Judgmental Listening",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=FOi5s3OUogo",
+      "view_count": 74000,
+      "ingested": false
+    },
+    {
+      "id": "QbMxDZeB8Ks",
+      "title": "Reducing Digital Dependency in Youth",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=QbMxDZeB8Ks",
+      "view_count": 49000,
+      "ingested": false
+    },
+    {
+      "id": "i_DEPeCKxs8",
+      "title": "The Impact of Processed Foods on Our Health",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=i_DEPeCKxs8",
+      "view_count": 119000,
+      "ingested": false
+    },
+    {
+      "id": "62lVH-6xYGY",
+      "title": "The Benefits of Using a Glucose Monitor",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=62lVH-6xYGY",
+      "view_count": 59000,
+      "ingested": false
+    },
+    {
+      "id": "P0hO6jPjFRM",
+      "title": "Why Kids Shouldn't Have Smartphones Before High School",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=P0hO6jPjFRM",
+      "view_count": 128000,
+      "ingested": false
+    },
+    {
+      "id": "5tYR7e5Wpyc",
+      "title": "How to Move Through Suffering",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=5tYR7e5Wpyc",
+      "view_count": 181000,
+      "ingested": false
+    },
+    {
+      "id": "Ov4yyK15-K8",
+      "title": "Pain Inhibits Pain",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Ov4yyK15-K8",
+      "view_count": 71000,
+      "ingested": false
+    },
+    {
+      "id": "0Dtt95_xabw",
+      "title": "How Smoking & Vaping Accelerate Skin Aging",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=0Dtt95_xabw",
+      "view_count": 211000,
+      "ingested": false
+    },
+    {
+      "id": "7TkGDj4LaOU",
+      "title": "Should You Intermittent Fast?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=7TkGDj4LaOU",
+      "view_count": 300000,
+      "ingested": false
+    },
+    {
+      "id": "G1VUSu6sGoU",
+      "title": "Creating a Collaborative Phone Policy for Kids",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=G1VUSu6sGoU",
+      "view_count": 74000,
+      "ingested": false
+    },
+    {
+      "id": "XY0rBdaDXD8",
+      "title": "Brief Post-Meal Walks & Blood Sugar Regulation",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=XY0rBdaDXD8",
+      "view_count": 1000000,
+      "ingested": false
+    },
+    {
+      "id": "bUr_9fgfnto",
+      "title": "What Should You Do if You Get a Concussion?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=bUr_9fgfnto",
+      "view_count": 159000,
+      "ingested": false
+    },
+    {
+      "id": "C3X0bUAiluE",
+      "title": "The Impact of E-Cigarette and Vape Chemicals and Flavors on the Lungs and Brain",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=C3X0bUAiluE",
+      "view_count": 98000,
+      "ingested": false
+    },
+    {
+      "id": "xX6hiEmDmxs",
+      "title": "The NASA Nap Culture: Boosting Alertness & Productivity with Short Naps",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=xX6hiEmDmxs",
+      "view_count": 381000,
+      "ingested": false
+    },
+    {
+      "id": "tcueMCe-0zo",
+      "title": "The Importance of High Standards in Mentoring",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=tcueMCe-0zo",
+      "view_count": 77000,
+      "ingested": false
+    },
+    {
+      "id": "Ky-ZJ9SS-x4",
+      "title": "A Simple Solution for Quickly Returning to Sleep at Night",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Ky-ZJ9SS-x4",
+      "view_count": 831000,
+      "ingested": false
+    },
+    {
+      "id": "FLxIoNguGRU",
+      "title": "How Body Position & Temperature Impact Sleep Stages & Quality",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=FLxIoNguGRU",
+      "view_count": 443000,
+      "ingested": false
+    },
+    {
+      "id": "QpoaNklmRPc",
+      "title": "Oral Health Protocols",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=QpoaNklmRPc",
+      "view_count": 1300000,
+      "ingested": false
+    },
+    {
+      "id": "CuzL1qxUyHw",
+      "title": "David Goggins on Controlling the Multi-Voice Dialogue in Your Mind",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=CuzL1qxUyHw",
+      "view_count": 227000,
+      "ingested": false
+    },
+    {
+      "id": "CVh3_8e5u8I",
+      "title": "Cold & Flu: When Are You Most Contagious?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=CVh3_8e5u8I",
+      "view_count": 487000,
+      "ingested": false
+    },
+    {
+      "id": "wG3UFHR1o48",
+      "title": "How to Stop Hiccups Using a Science-Supported Tool",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=wG3UFHR1o48",
+      "view_count": 881000,
+      "ingested": false
+    },
+    {
+      "id": "W5zqC5cYcS0",
+      "title": "How Tone of Voice Shapes Emotional State of Listeners",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=W5zqC5cYcS0",
+      "view_count": 4000000,
+      "ingested": false
+    }
+  ]
+}
