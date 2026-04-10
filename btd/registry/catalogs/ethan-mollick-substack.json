@@ -1,0 +1,189 @@
+{
+  "creator": "ethan-mollick",
+  "platform": "substack",
+  "scanned_at": "2026-04-10T19:10:40.149Z",
+  "total": 20,
+  "ingested": 2,
+  "items": [
+    {
+      "id": "https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of",
+      "title": "Claude Dispatch and the Power of Interfaces",
+      "date": "Tue, 31 Mar 2026 22:34:37 GMT",
+      "url": "https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of",
+      "excerpt": "We often lack the tools for the job, even if the AI is capable enough",
+      "author": "Ethan Mollick",
+      "ingested": true
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/the-shape-of-the-thing",
+      "title": "The Shape of the Thing",
+      "date": "Thu, 12 Mar 2026 14:10:07 GMT",
+      "url": "https://www.oneusefulthing.org/p/the-shape-of-the-thing",
+      "excerpt": "Where we are right now, and what likely happens next",
+      "author": "Ethan Mollick",
+      "ingested": true
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the",
+      "title": "A Guide to Which AI to Use in the Agentic Era",
+      "date": "Wed, 18 Feb 2026 01:45:41 GMT",
+      "url": "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the",
+      "excerpt": "It's not just chatbots anymore",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/management-as-ai-superpower",
+      "title": "Management as AI superpower",
+      "date": "Tue, 27 Jan 2026 16:55:55 GMT",
+      "url": "https://www.oneusefulthing.org/p/management-as-ai-superpower",
+      "excerpt": "Thriving in a world of agents",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/claude-code-and-what-comes-next",
+      "title": "Claude Code and What Comes Next",
+      "date": "Wed, 07 Jan 2026 23:00:10 GMT",
+      "url": "https://www.oneusefulthing.org/p/claude-code-and-what-comes-next",
+      "excerpt": "With the right tools, AI can accomplish impressive things",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks",
+      "title": "The Shape of AI: Jaggedness, Bottlenecks and Salients",
+      "date": "Sat, 20 Dec 2025 17:32:02 GMT",
+      "url": "https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks",
+      "excerpt": "And why Nano Banana Pro is such a big deal",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/three-years-from-gpt-3-to-gemini",
+      "title": "Three Years from GPT-3 to Gemini 3",
+      "date": "Tue, 18 Nov 2025 16:55:07 GMT",
+      "url": "https://www.oneusefulthing.org/p/three-years-from-gpt-3-to-gemini",
+      "excerpt": "From chatbots to agents",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/giving-your-ai-a-job-interview",
+      "title": "Giving your AI a Job Interview",
+      "date": "Wed, 12 Nov 2025 02:46:43 GMT",
+      "url": "https://www.oneusefulthing.org/p/giving-your-ai-a-job-interview",
+      "excerpt": "As AI advice becomes more important, we are going to need to get better at assessing it",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/an-opinionated-guide-to-using-ai",
+      "title": "An Opinionated Guide to Using AI Right Now",
+      "date": "Sun, 19 Oct 2025 18:45:34 GMT",
+      "url": "https://www.oneusefulthing.org/p/an-opinionated-guide-to-using-ai",
+      "excerpt": "What AI to use in late 2025",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/real-ai-agents-and-real-work",
+      "title": "Real AI Agents and Real Work",
+      "date": "Mon, 29 Sep 2025 18:52:42 GMT",
+      "url": "https://www.oneusefulthing.org/p/real-ai-agents-and-real-work",
+      "excerpt": "The race between human-centered work and infinite PowerPoints",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/on-working-with-wizards",
+      "title": "On Working with Wizards",
+      "date": "Thu, 11 Sep 2025 20:37:39 GMT",
+      "url": "https://www.oneusefulthing.org/p/on-working-with-wizards",
+      "excerpt": "Verifying magic on the jagged frontier",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/mass-intelligence",
+      "title": "Mass Intelligence",
+      "date": "Thu, 28 Aug 2025 20:47:26 GMT",
+      "url": "https://www.oneusefulthing.org/p/mass-intelligence",
+      "excerpt": "From GPT-5 to nano banana: everyone is getting access to powerful AI",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/gpt-5-it-just-does-stuff",
+      "title": "GPT-5: It Just Does Stuff",
+      "date": "Thu, 07 Aug 2025 17:02:18 GMT",
+      "url": "https://www.oneusefulthing.org/p/gpt-5-it-just-does-stuff",
+      "excerpt": "Putting the AI in Charge",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/the-bitter-lesson-versus-the-garbage",
+      "title": "The Bitter Lesson versus The Garbage Can",
+      "date": "Mon, 28 Jul 2025 11:30:43 GMT",
+      "url": "https://www.oneusefulthing.org/p/the-bitter-lesson-versus-the-garbage",
+      "excerpt": "Does process matter? We are about to find out.",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/against-brain-damage",
+      "title": "Against \"Brain Damage\"",
+      "date": "Mon, 07 Jul 2025 19:02:38 GMT",
+      "url": "https://www.oneusefulthing.org/p/against-brain-damage",
+      "excerpt": "AI can help, or hurt, our thinking",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/using-ai-right-now-a-quick-guide",
+      "title": "Using AI Right Now: A Quick Guide",
+      "date": "Mon, 23 Jun 2025 16:12:17 GMT",
+      "url": "https://www.oneusefulthing.org/p/using-ai-right-now-a-quick-guide",
+      "excerpt": "Which AIs to use, and how to use them",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/the-recent-history-of-ai-in-32-otters",
+      "title": "The recent history of AI in 32 otters",
+      "date": "Sun, 01 Jun 2025 22:17:53 GMT",
+      "url": "https://www.oneusefulthing.org/p/the-recent-history-of-ai-in-32-otters",
+      "excerpt": "Three years of progress as shown by marine mammals",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/making-ai-work-leadership-lab-and",
+      "title": "Making AI Work: Leadership, Lab, and Crowd",
+      "date": "Thu, 22 May 2025 11:00:44 GMT",
+      "url": "https://www.oneusefulthing.org/p/making-ai-work-leadership-lab-and",
+      "excerpt": "A formula for AI in companies",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/personality-and-persuasion",
+      "title": "Personality and Persuasion",
+      "date": "Thu, 01 May 2025 04:00:00 GMT",
+      "url": "https://www.oneusefulthing.org/p/personality-and-persuasion",
+      "excerpt": "Learning from Sycophants",
+      "author": "Ethan Mollick",
+      "ingested": false
+    },
+    {
+      "id": "https://www.oneusefulthing.org/p/on-jagged-agi-o3-gemini-25-and-everything",
+      "title": "On Jagged AGI: o3, Gemini 2.5, and everything after",
+      "date": "Sun, 20 Apr 2025 11:17:54 GMT",
+      "url": "https://www.oneusefulthing.org/p/on-jagged-agi-o3-gemini-25-and-everything",
+      "excerpt": "New models and new thresholds",
+      "author": "Ethan Mollick",
+      "ingested": false
+    }
+  ]
+}

@@ -44,7 +44,9 @@
       "priority": "high",
       "notes": "Practical AI applications. Good for non-technical audience.",
       "added": "2026-04-10",
-      "status": "active"
+      "status": "active",
+      "catalog_count": 20,
+      "last_scanned": "2026-04-10T19:10:40.150Z"
     },
     {
       "slug": "3blue1brown",
