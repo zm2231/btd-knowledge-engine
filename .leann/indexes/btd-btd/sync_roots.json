@@ -6,10 +6,10 @@
     "/Volumes/4/GitHub/btd-knowledge-engine/btd/raw"
   ],
   "include_extensions": [
+    ".md",
     ".py",
     ".js",
     ".ts",
-    ".md",
     ".json",
     ".yaml",
     ".yml",
