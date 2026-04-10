@@ -120,7 +120,7 @@ The next experiment should:
 
 ### Experiment Card Format
 
-Write the new experiment card using the template at `templates/experiment-card.md`. Include
+Write the new experiment card using the template at `template/experiment-card.md`. Include
 the structured outcome block:
 
 ```yaml

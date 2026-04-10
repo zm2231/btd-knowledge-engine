@@ -1,20 +1,24 @@
 #!/usr/bin/env node
 /**
  * Ingest YouTube video transcripts into raw/youtube/{creator}/
- * 
+ *
  * Usage:
  *   node scripts/ingest-youtube.js <url> [--creator slug]
  *   node scripts/ingest-youtube.js https://www.youtube.com/watch?v=zjkBMFhNj_g --creator andrej-karpathy
  *   node scripts/ingest-youtube.js "https://www.youtube.com/@AndrejKarpathy" --creator andrej-karpathy --limit 10
- * 
- * Sources: youtube-transcript-plus for captions, yt-dlp for metadata + playlists
- * Fallback: if no captions available, downloads audio → local whisper transcription
  */
 
 const { fetchTranscript } = require('youtube-transcript-plus');
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const { appendEntry, buildEntry, readEntries, relativeFile } = require('./ingest-log.js');
+
+const args = process.argv.slice(2);
+function getArg(flag) {
+  const i = args.indexOf(flag);
+  return i !== -1 && i + 1 < args.length ? args[i + 1] : null;
+}
 
 const ROOT = path.join(__dirname, '..');
 const instance = getArg('--instance') || 'btd';
@@ -22,15 +26,7 @@ const INSTANCE_DIR = path.join(ROOT, instance);
 const RAW_DIR = path.join(INSTANCE_DIR, 'raw', 'youtube');
 const INGEST_LOG = path.join(INSTANCE_DIR, 'registry', 'ingest-log.jsonl');
 
-// ---- Args ----
-const args = process.argv.slice(2);
-
-function getArg(flag) {
-  const i = args.indexOf(flag);
-  return i !== -1 && i + 1 < args.length ? args[i + 1] : null;
-}
-
-const url = args.find(a => !a.startsWith('--'));
+const url = args.find((arg) => !arg.startsWith('--'));
 const creator = getArg('--creator') || 'unknown';
 const limit = parseInt(getArg('--limit') || '0', 10);
 const dryRun = args.includes('--dry-run');
@@ -41,84 +37,75 @@ if (!url) {
   process.exit(1);
 }
 
-// ---- Dedup ----
 function getExistingVideoIds() {
-  if (!fs.existsSync(INGEST_LOG)) return new Set();
   return new Set(
-    fs.readFileSync(INGEST_LOG, 'utf-8')
-      .trim().split('\n').filter(Boolean)
-      .map(line => { try { return JSON.parse(line).video_id; } catch { return null; } })
+    readEntries(INGEST_LOG)
+      .map((entry) => entry.video_id || null)
       .filter(Boolean)
+      .map(String),
   );
 }
 
-function appendToLog(entry) {
-  fs.appendFileSync(INGEST_LOG, JSON.stringify(entry) + '\n');
-}
-
-// ---- Metadata via yt-dlp ----
-function getVideoList(url, limit) {
-  const limitFlag = limit > 0 ? `--playlist-end ${limit}` : '';
-  const cmd = `yt-dlp --flat-playlist ${limitFlag} --print-json "${url}" 2>/dev/null`;
+function getVideoList(targetUrl, targetLimit) {
+  const limitFlag = targetLimit > 0 ? `--playlist-end ${targetLimit}` : '';
+  const cmd = `yt-dlp --flat-playlist ${limitFlag} --print-json "${targetUrl}" 2>/dev/null`;
   try {
-    const output = execSync(cmd, { maxBuffer: 50 * 1024 * 1024, encoding: 'utf-8' });
-    return output.trim().split('\n').filter(Boolean).map(line => {
-      const j = JSON.parse(line);
+    const output = execSync(cmd, { maxBuffer: 50 * 1024 * 1024, encoding: 'utf8' });
+    return output.trim().split('\n').filter(Boolean).map((line) => {
+      const parsed = JSON.parse(line);
       return {
-        id: j.id,
-        title: j.title,
-        upload_date: j.upload_date || 'unknown',
-        duration_string: j.duration_string || j.duration || 'unknown',
-        url: j.url || j.webpage_url || `https://www.youtube.com/watch?v=${j.id}`,
-        channel: j.channel || j.uploader || creator,
+        id: parsed.id,
+        title: parsed.title,
+        upload_date: parsed.upload_date || 'unknown',
+        duration_string: parsed.duration_string || parsed.duration || 'unknown',
+        url: parsed.url || parsed.webpage_url || `https://www.youtube.com/watch?v=${parsed.id}`,
+        channel: parsed.channel || parsed.uploader || creator,
       };
     });
-  } catch (e) {
-    // Single video — try extracting its metadata
+  } catch {
     try {
-      const cmd2 = `yt-dlp --skip-download --print-json "${url}" 2>/dev/null`;
-      const output = execSync(cmd2, { maxBuffer: 10 * 1024 * 1024, encoding: 'utf-8' });
-      const j = JSON.parse(output.trim());
+      const singleOutput = execSync(`yt-dlp --skip-download --print-json "${targetUrl}" 2>/dev/null`, {
+        maxBuffer: 10 * 1024 * 1024,
+        encoding: 'utf8',
+      });
+      const parsed = JSON.parse(singleOutput.trim());
       return [{
-        id: j.id,
-        title: j.title,
-        upload_date: j.upload_date || 'unknown',
-        duration_string: j.duration_string || 'unknown',
-        url: j.webpage_url || url,
-        channel: j.channel || j.uploader || creator,
+        id: parsed.id,
+        title: parsed.title,
+        upload_date: parsed.upload_date || 'unknown',
+        duration_string: parsed.duration_string || parsed.duration || 'unknown',
+        url: parsed.webpage_url || targetUrl,
+        channel: parsed.channel || parsed.uploader || creator,
       }];
     } catch {
-      console.error('Failed to get video metadata from:', url);
+      console.error('Failed to get video metadata from:', targetUrl);
       return [];
     }
   }
 }
 
 function slugify(text) {
-  return text.toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .substring(0, 80);
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').substring(0, 80);
 }
 
-// ---- Transcript fetching ----
 async function getTranscript(videoId) {
   try {
     const segments = await fetchTranscript(videoId, { lang: 'en' });
     return {
       method: 'youtube-captions',
       segments,
-      text: segments.map(s => s.text).join(' ').replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/&quot;/g, '"'),
+      text: segments.map((segment) => segment.text).join(' ')
+        .replace(/&#39;/g, "'")
+        .replace(/&amp;/g, '&')
+        .replace(/&quot;/g, '"'),
     };
-  } catch (e) {
-    // No captions available — could fall back to whisper here
-    console.log(`    ⚠️  No captions: ${e.message}`);
-    console.log(`    💡 Fallback: download audio + local whisper (not implemented yet)`);
+  } catch (error) {
+    console.log(`    ⚠️  No captions: ${error.message}`);
+    console.log('    💡 Fallback: download audio + local whisper (not implemented yet)');
     return null;
   }
 }
 
-// ---- Write markdown ----
 function writeTranscript(video, transcript, creatorSlug) {
   const outDir = path.join(RAW_DIR, creatorSlug);
   fs.mkdirSync(outDir, { recursive: true });
@@ -126,7 +113,7 @@ function writeTranscript(video, transcript, creatorSlug) {
   const fileSlug = slugify(video.title);
   const filename = `${video.upload_date}-${fileSlug}.md`;
   const filepath = path.join(outDir, filename);
-  const relPath = path.relative(ROOT, filepath);
+  const relPath = relativeFile(ROOT, filepath);
 
   const md = `---
 title: "${video.title.replace(/"/g, '\\"')}"
@@ -157,11 +144,11 @@ ${transcript.text}
 
 ## Timed Segments
 
-${transcript.segments.map(s => `[${formatTime(s.offset)}] ${s.text}`).join('\n')}
+${transcript.segments.map((segment) => `[${formatTime(segment.offset)}] ${segment.text}`).join('\n')}
 `;
 
   fs.writeFileSync(filepath, md);
-  return { filepath, relPath, filename };
+  return { relPath };
 }
 
 function formatTime(seconds) {
@@ -170,12 +157,11 @@ function formatTime(seconds) {
   return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
-// ---- Main ----
 async function main() {
   console.log(`📡 Fetching video list from: ${url}`);
   console.log(`   Creator: ${creator}`);
   if (limit) console.log(`   Limit: ${limit}`);
-  if (dryRun) console.log(`   🏜️  DRY RUN`);
+  if (dryRun) console.log('   🏜️  DRY RUN');
   console.log('');
 
   const videos = getVideoList(url, limit);
@@ -186,10 +172,9 @@ async function main() {
   let skipped = 0;
 
   for (const video of videos) {
-    // Dedup
-    if (existing.has(video.id)) {
+    if (existing.has(String(video.id))) {
       console.log(`⏭️  ${video.title} (already ingested)`);
-      skipped++;
+      skipped += 1;
       continue;
     }
 
@@ -197,40 +182,37 @@ async function main() {
     console.log(`   ${video.url} | ${video.duration_string}`);
 
     if (dryRun) {
-      console.log(`   (dry run — skipping)\n`);
+      console.log('   (dry run — skipping)\n');
       continue;
     }
 
-    // Fetch transcript
     const transcript = await getTranscript(video.id);
     if (!transcript) {
-      console.log(`   ❌ No transcript available\n`);
+      console.log('   ❌ No transcript available\n');
       continue;
     }
 
-    // Write file
     const { relPath } = writeTranscript(video, transcript, creator);
     console.log(`   ✅ ${relPath}`);
     console.log(`   📝 ${transcript.segments.length} segments, ${transcript.text.length} chars\n`);
 
-    // Log
-    appendToLog({
-      id: `${video.upload_date}-${slugify(video.title)}`,
-      source_type: 'youtube',
-      creator: creator,
-      status: 'ingested',
-      ingested_at: new Date().toISOString(),
+    appendEntry(INGEST_LOG, buildEntry({
+      sourceId: video.id,
+      creator,
+      platform: 'youtube',
+      title: video.title,
       file: relPath,
       url: video.url,
-      video_id: video.id,
-      transcript_method: transcript.method,
-      segment_count: transcript.segments.length,
-      char_count: transcript.text.length,
-      extracted: false,
       indexed: false,
-    });
+      extra: {
+        video_id: video.id,
+        transcript_method: transcript.method,
+        segment_count: transcript.segments.length,
+        char_count: transcript.text.length,
+      },
+    }));
 
-    ingested++;
+    ingested += 1;
   }
 
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
@@ -239,4 +221,7 @@ async function main() {
   console.log(`❌ Failed: ${videos.length - ingested - skipped}`);
 }
 
-main().catch(e => { console.error(e); process.exit(1); });
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

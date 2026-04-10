@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Initialize a new instance from the template.
- * 
+ *
  * Usage:
  *   node scripts/init.js my-instance
  *   node scripts/init.js my-instance --name "My Knowledge Base"
@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 
 const args = process.argv.slice(2);
-const instanceName = args.find(a => !a.startsWith('--'));
+const instanceName = args.find((arg) => !arg.startsWith('--'));
 
 if (!instanceName) {
   console.error('Usage: node scripts/init.js <instance-name> [--name "Display Name"]');
@@ -29,9 +29,9 @@ if (fs.existsSync(INST)) {
   process.exit(1);
 }
 
-// Create full structure
 const dirs = [
   'raw/youtube',
+  'raw/twitter',
   'raw/podcasts',
   'raw/articles',
   'raw/transcripts',
@@ -46,16 +46,15 @@ for (const dir of dirs) {
   fs.mkdirSync(path.join(INST, dir), { recursive: true });
 }
 
-// Init empty registry
 fs.writeFileSync(
   path.join(INST, 'registry', 'creators.json'),
-  JSON.stringify({ creators: [] }, null, 2) + '\n'
+  `${JSON.stringify({ creators: [] }, null, 2)}\n`,
 );
 
 console.log(`✅ Created instance: ${instanceName}/`);
 console.log('');
 console.log('Structure:');
-dirs.forEach(d => console.log(`  ${instanceName}/${d}/`));
+dirs.forEach((dir) => console.log(`  ${instanceName}/${dir}/`));
 console.log(`  ${instanceName}/registry/creators.json`);
 console.log('');
 console.log('Next steps:');

@@ -1,25 +1,17 @@
 # Question Bank
 
-The IP of the product. Everything else is infrastructure to serve this.
+The question bank currently has one tracked artifact:
 
-## How This Works
+- `decision-tree.json` — the structured interview state machine used for question-bank experimentation
 
-The question bank is a directed graph, not a flat list. Each question:
-- Has a **purpose** (what constraint it surfaces)
-- Has **conditional next questions** (based on the answer)
-- Maps to **corpus queries** (what builder judgment becomes relevant)
-- Has **early termination conditions** (skip whole branches when irrelevant)
+## Current status
 
-## Structure
+This directory is a draft/prototype layer, not the canonical product surface. The broad, current intake experience lives in:
 
-- `decision-tree.json` — The state machine definition. Questions, transitions, branches.
-- `questions/` — Individual question cards with full context.
-- `VALIDATION.md` — Results from manual testing against real projects.
+- `skills/btd-intake/SKILL.md`
 
-## Validation Protocol
+Use `decision-tree.json` when iterating on structured interview logic. Use the intake skill when running real interviews.
 
-Before building ANY system:
-1. Run 5 real projects through the question bank manually (you interviewing, using these questions)
-2. For each: did the questions surface meaningfully different constraints?
-3. For each: did the output architecture actually differ based on answers?
-4. If two people get the same architecture for different constraint profiles, the questions are too shallow.
+## Note on missing files
+
+Earlier docs referenced `questions/` and `VALIDATION.md`. Those files do not currently exist in this repo and should not be treated as expected inputs.

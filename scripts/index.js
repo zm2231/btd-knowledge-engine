@@ -12,6 +12,7 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const { normalizeEntry, readEntries, writeEntries } = require('./ingest-log.js');
 
 const args = process.argv.slice(2);
 const instance = (() => { const i = args.indexOf('--instance'); return i !== -1 ? args[i+1] : 'btd'; })();
@@ -66,14 +67,14 @@ try {
 
   // Update ingest log — mark all as indexed
   if (fs.existsSync(INGEST_LOG)) {
-    const lines = fs.readFileSync(INGEST_LOG, 'utf-8').trim().split('\n').filter(Boolean);
-    const updated = lines.map(line => {
-      const entry = JSON.parse(line);
-      entry.indexed = true;
-      return JSON.stringify(entry);
+    const entries = readEntries(INGEST_LOG).map((entry) => {
+      const normalized = normalizeEntry(ROOT, instance, entry);
+      normalized.indexed = true;
+      normalized.status = 'indexed';
+      return normalized;
     });
-    fs.writeFileSync(INGEST_LOG, updated.join('\n') + '\n');
-    console.log(`   Updated ingest log: ${lines.length} entries marked as indexed`);
+    writeEntries(INGEST_LOG, entries);
+    console.log(`   Updated ingest log: ${entries.length} entries marked as indexed`);
   }
 
   console.log(`\nTest it:`);
