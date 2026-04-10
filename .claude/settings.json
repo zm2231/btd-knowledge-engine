@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/*)",
+      "Bash(./bin/btd.js*)",
+      "Bash(btd *)",
+      "Bash(leann search*)",
+      "Bash(git *)",
+      "Read(btd/**)",
+      "Read(skills/**)",
+      "Read(template/**)",
+      "Read(docs/**)",
+      "Write(btd/wiki/**)",
+      "Write(btd/users/**)",
+      "Write(btd/raw/**)"
+    ]
+  }
+}

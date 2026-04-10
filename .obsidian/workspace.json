@@ -11,10 +11,14 @@
             "id": "07142c10cf71dacd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "btd/wiki/creators/andrej-karpathy.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "andrej-karpathy"
             }
           }
         ]
@@ -104,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "btd/wiki/creators/andrej-karpathy.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for andrej-karpathy"
             }
           },
           {
@@ -165,12 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "btd/wiki/creators/andrej-karpathy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of andrej-karpathy"
             }
           }
         ]
@@ -192,12 +198,20 @@
   },
   "active": "07142c10cf71dacd",
   "lastOpenFiles": [
+    "skills/btd-ingest/SKILL.md",
+    "skills/btd-ingest",
+    "btd/wiki/creators/ali-abdaal.md",
+    "btd/wiki/creators/andrej-karpathy.md",
+    "btd/wiki/creators/simon-sinek.md",
+    "btd/wiki/index.md",
+    "btd/wiki/log.md",
+    "docs/getting-started.md",
+    "node_modules/commander/Readme.md",
     "bin/btd.js",
     "bin",
     "btd/wiki/concepts/llm-knowledge-bases.md",
     "btd/wiki/concepts/how-llms-work.md",
     "btd/wiki/concepts/accountability-pattern.md",
-    "node_modules/podcast-dl/lib/rss-parser/README.md",
-    "btd/wiki/index.md"
+    "node_modules/podcast-dl/lib/rss-parser/README.md"
   ]
 }
