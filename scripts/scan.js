@@ -13,6 +13,7 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const { scanSubstackCatalog } = require('./ingest-substack.js');
 
 const args = process.argv.slice(2);
 function getArg(flag) {
@@ -25,6 +26,7 @@ const scanAll = args.includes('--all');
 const onlyYoutube = args.includes('--youtube');
 const onlyTwitter = args.includes('--twitter');
 const onlyPodcast = args.includes('--podcast');
+const onlySubstack = args.includes('--substack');
 const twitterCount = parseInt(getArg('--count') || '50', 10);
 const targetSlug = args.find(a => !a.startsWith('--') && !['--instance','--all','--count'].includes(args[args.indexOf(a)-1]));
 
@@ -34,7 +36,7 @@ const REGISTRY = path.join(INST, 'registry', 'creators.json');
 const CATALOG_DIR = path.join(INST, 'registry', 'catalogs');
 
 if (!targetSlug && !scanAll) {
-  console.error('Usage: node scripts/scan.js <creator-slug> | --all [--youtube] [--twitter] [--podcast] [--count N] [--instance name]');
+  console.error('Usage: node scripts/scan.js <creator-slug> | --all [--youtube] [--twitter] [--podcast] [--substack] [--count N] [--instance name]');
   process.exit(1);
 }
 
@@ -215,72 +217,98 @@ function scanPodcast(creator) {
   }
 }
 
-// ---- Main ----
-let totalItems = 0;
+// ---- Substack scan ----
+async function scanSubstack(creator) {
+  const substack = creator.platforms.substack;
+  if (!substack?.url) return null;
 
-for (const creator of creators) {
-  console.log(`\n━━━ ${creator.name} (${creator.slug}) ━━━`);
-
-  const results = [];
-
-  if (!onlyTwitter && !onlyPodcast) {
-    const yt = scanYoutube(creator);
-    if (yt) results.push(yt);
-  }
-  if (!onlyYoutube && !onlyPodcast) {
-    const tw = scanTwitter(creator);
-    if (tw) results.push(tw);
-  }
-  if (!onlyYoutube && !onlyTwitter) {
-    const pod = scanPodcast(creator);
-    if (pod) results.push(pod);
-  }
-
-  // Write catalog per platform
-  for (const result of results) {
-    const filename = result.platform === 'youtube' 
-      ? `${creator.slug}.json`
-      : `${creator.slug}-${result.platform}.json`;
-    const catalogFile = path.join(CATALOG_DIR, filename);
-    
-    // Merge with existing catalog (preserve ingested flags)
-    let existing = {};
-    if (fs.existsSync(catalogFile)) {
-      const prev = JSON.parse(fs.readFileSync(catalogFile, 'utf-8'));
-      existing = Object.fromEntries((prev.items || []).map(i => [i.id, i]));
-    }
-
-    // Merge: keep ingested flag from existing, update metadata from scan
-    const merged = result.items.map(item => ({
-      ...item,
-      ingested: existing[item.id]?.ingested || false,
-    }));
-
-    fs.writeFileSync(catalogFile, JSON.stringify({
-      creator: creator.slug,
-      platform: result.platform,
-      scanned_at: result.scanned_at,
-      total: merged.length,
-      ingested: merged.filter(i => i.ingested).length,
-      items: merged,
-    }, null, 2) + '\n');
-
-    console.log(`   ✅ ${result.platform}: ${merged.length} items (${merged.filter(i => i.ingested).length} ingested)`);
-    totalItems += merged.length;
-  }
-
-  // Update registry
-  const regEntry = registry.creators.find(c => c.slug === creator.slug);
-  if (regEntry) {
-    regEntry.catalog_count = results.reduce((sum, r) => sum + r.items.length, 0);
-    regEntry.last_scanned = new Date().toISOString();
+  console.log(`   📰 Substack: ${substack.url}`);
+  try {
+    return await scanSubstackCatalog(creator);
+  } catch (e) {
+    console.error(`   ❌ Substack scan failed: ${e.message.substring(0, 100)}`);
+    return null;
   }
 }
 
-// Save updated registry
-fs.writeFileSync(REGISTRY, JSON.stringify(registry, null, 2) + '\n');
+// ---- Main ----
+async function main() {
+  let totalItems = 0;
+  const platformFiltered = onlyYoutube || onlyTwitter || onlyPodcast || onlySubstack;
 
-console.log(`\n═══════════════════════════════════════`);
-console.log(`  Total cataloged: ${totalItems} items`);
-console.log(`  Run: node scripts/status.js`);
-console.log(`═══════════════════════════════════════\n`);
+  for (const creator of creators) {
+    console.log(`\n━━━ ${creator.name} (${creator.slug}) ━━━`);
+
+    const results = [];
+
+    if (!platformFiltered || onlyYoutube) {
+      const yt = scanYoutube(creator);
+      if (yt) results.push(yt);
+    }
+    if (!platformFiltered || onlyTwitter) {
+      const tw = scanTwitter(creator);
+      if (tw) results.push(tw);
+    }
+    if (!platformFiltered || onlyPodcast) {
+      const pod = scanPodcast(creator);
+      if (pod) results.push(pod);
+    }
+    if (!platformFiltered || onlySubstack) {
+      const substack = await scanSubstack(creator);
+      if (substack) results.push(substack);
+    }
+
+    // Write catalog per platform
+    for (const result of results) {
+      const filename = result.platform === 'youtube' 
+        ? `${creator.slug}.json`
+        : `${creator.slug}-${result.platform}.json`;
+      const catalogFile = path.join(CATALOG_DIR, filename);
+      
+      // Merge with existing catalog (preserve ingested flags)
+      let existing = {};
+      if (fs.existsSync(catalogFile)) {
+        const prev = JSON.parse(fs.readFileSync(catalogFile, 'utf-8'));
+        existing = Object.fromEntries((prev.items || []).map(i => [i.id, i]));
+      }
+
+      // Merge: keep ingested flag from existing, update metadata from scan
+      const merged = result.items.map(item => ({
+        ...item,
+        ingested: existing[item.id]?.ingested || false,
+      }));
+
+      fs.writeFileSync(catalogFile, JSON.stringify({
+        creator: creator.slug,
+        platform: result.platform,
+        scanned_at: result.scanned_at,
+        total: merged.length,
+        ingested: merged.filter(i => i.ingested).length,
+        items: merged,
+      }, null, 2) + '\n');
+
+      console.log(`   ✅ ${result.platform}: ${merged.length} items (${merged.filter(i => i.ingested).length} ingested)`);
+      totalItems += merged.length;
+    }
+
+    // Update registry only when this run actually scanned at least one platform
+    const regEntry = registry.creators.find(c => c.slug === creator.slug);
+    if (regEntry && results.length > 0) {
+      regEntry.catalog_count = results.reduce((sum, r) => sum + r.items.length, 0);
+      regEntry.last_scanned = new Date().toISOString();
+    }
+  }
+
+  // Save updated registry
+  fs.writeFileSync(REGISTRY, JSON.stringify(registry, null, 2) + '\n');
+
+  console.log(`\n═══════════════════════════════════════`);
+  console.log(`  Total cataloged: ${totalItems} items`);
+  console.log(`  Run: node scripts/status.js`);
+  console.log(`═══════════════════════════════════════\n`);
+}
+
+main().catch(error => {
+  console.error(error);
+  process.exit(1);
+});
