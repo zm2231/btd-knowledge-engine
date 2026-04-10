@@ -48,9 +48,21 @@ const INSTANCE = path.join(ROOT, instance);
 const REGISTRY = path.join(INSTANCE, 'registry', 'creators.json');
 const CATALOG_DIR = path.join(INSTANCE, 'registry', 'catalogs');
 
-// Ensure dirs
-fs.mkdirSync(path.dirname(REGISTRY), { recursive: true });
-fs.mkdirSync(CATALOG_DIR, { recursive: true });
+// Ensure full instance structure on first use
+for (const dir of [
+  path.dirname(REGISTRY),
+  CATALOG_DIR,
+  path.join(INSTANCE, 'raw', 'youtube'),
+  path.join(INSTANCE, 'raw', 'podcasts'),
+  path.join(INSTANCE, 'raw', 'articles'),
+  path.join(INSTANCE, 'raw', 'transcripts'),
+  path.join(INSTANCE, 'wiki', 'concepts'),
+  path.join(INSTANCE, 'wiki', 'topics'),
+  path.join(INSTANCE, 'wiki', 'creators'),
+  path.join(INSTANCE, 'users'),
+]) {
+  fs.mkdirSync(dir, { recursive: true });
+}
 
 // Load or init registry
 let registry = { creators: [] };

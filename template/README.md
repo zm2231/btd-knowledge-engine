@@ -1,59 +1,66 @@
 # Your Knowledge Engine Instance
 
-This is your starting point. Copy this folder, name it whatever you want, and start building your corpus.
+Copy this folder or use `init.js` to start your own instance.
 
 ## Quick Start
 
 ```bash
-# 1. Copy the template
+# Option A: Use init script (recommended)
+node scripts/init.js my-instance
+
+# Option B: Copy template manually
 cp -r template/ my-instance/
 
-# 2. Add your first creator
-node scripts/add-creator.js my-instance andrej-karpathy "Andrej Karpathy" \
+# Then: add your first creator and scan their content
+node scripts/add-creator.js andrej-karpathy "Andrej Karpathy" \
   --youtube "https://www.youtube.com/@AndrejKarpathy" \
-  --topics "ai,ml,building"
+  --topics "ai,ml,building" \
+  --instance my-instance \
+  --scan
 
-# 3. Ingest a video
-node scripts/ingest-youtube.js "https://www.youtube.com/watch?v=zjkBMFhNj_g" \
-  --creator andrej-karpathy --instance my-instance
+# Ingest top 10 videos by views
+node scripts/batch-ingest.js andrej-karpathy --limit 10 --top --instance my-instance
 
-# 4. Check status
-node scripts/status.js my-instance
+# Build semantic index
+node scripts/index.js --instance my-instance
 
-# 5. Run the intake interview
-# (coming soon — the skill that figures out who YOU are and what you need)
+# Search
+leann search btd-my-instance "how to think about building a project"
+
+# Check status
+node scripts/status.js --instance my-instance
 ```
 
 ## Structure
 
 ```
 my-instance/
-  raw/                    # Source content — transcripts, articles, clippings
-    youtube/{creator}/    # YouTube transcripts (auto-ingested)
-    podcasts/{show}/      # Podcast transcripts
-    articles/             # Web-clipped articles
-    transcripts/          # Meeting/session transcripts (manual)
-  wiki/                   # LLM-compiled knowledge base (don't edit manually)
-    concepts/             # One file per concept
-    topics/               # Topic overviews
-    creators/             # Creator profiles + teaching style
-  registry/               # Tracking — who you follow, what's been ingested
-    creators.json         # Your creator list
-    ingest-log.jsonl      # Append-only log of all ingested content
-  users/                  # Per-user profiles (from intake interview)
-    {user-id}/
-      profile.md
-      experiments/
+├── raw/                      # Ingested content
+│   ├── youtube/{creator}/    #   Video transcripts (auto-ingested)
+│   ├── podcasts/{show}/      #   Podcast transcripts
+│   ├── articles/             #   Web-clipped articles
+│   └── transcripts/          #   Meeting/session transcripts
+├── wiki/                     # LLM-compiled knowledge base
+│   ├── concepts/             #   One file per concept
+│   ├── topics/               #   Topic overviews
+│   └── creators/             #   Creator profiles
+├── registry/                 # Tracking
+│   ├── creators.json         #   Who you follow
+│   ├── catalogs/             #   Everything they've published
+│   └── ingest-log.jsonl      #   What you've downloaded
+└── users/                    # Per-user profiles from intake interview
 ```
 
-## What Goes Where
+## All Scripts
 
-| You want to... | Do this |
+All scripts accept `--instance <name>` (defaults to `btd`).
+
+| Script | What it does |
 |---|---|
-| Add a new YouTube creator | `node scripts/add-creator.js` or edit `registry/creators.json` |
-| Ingest a specific video | `node scripts/ingest-youtube.js <url>` |
-| Ingest all new videos from tracked creators | `node scripts/fetch-new.js` |
-| Add an article | Obsidian Web Clipper → save to `raw/articles/` |
-| Add a meeting transcript | Drop `.md` in `raw/transcripts/` with frontmatter |
-| See what's been ingested | `node scripts/status.js` |
-| Run the intake interview | `node scripts/interview.js` (coming soon) |
+| `init.js` | Create a new instance with full directory structure |
+| `add-creator.js` | Register a creator. `--scan` to catalog their content immediately |
+| `scan.js` | Catalog all published content. `--all` for every active creator |
+| `batch-ingest.js` | Download transcripts. `--limit N` `--top` `--dry-run` |
+| `ingest-youtube.js` | Ingest a single YouTube URL |
+| `index.js` | Build/update LEANN semantic index. `--force` for full rebuild |
+| `status.js` | Dashboard: creators, catalogs, ingestion, indexing state |
