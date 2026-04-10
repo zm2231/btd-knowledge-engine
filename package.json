@@ -11,6 +11,7 @@
     "ingest:twitter": "node scripts/ingest-twitter.js",
     "ingest:podcast": "node scripts/ingest-podcast.js",
     "ingest:substack": "node scripts/ingest-substack.js",
+    "ingest:repo": "node scripts/ingest-repo.js",
     "index": "node scripts/index.js",
     "status": "node scripts/status.js",
     "profile": "node scripts/profile.js",

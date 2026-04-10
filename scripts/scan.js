@@ -14,6 +14,7 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const { scanSubstackCatalog } = require('./ingest-substack.js');
+const { scanRepoCatalog } = require('./ingest-repo.js');
 
 const args = process.argv.slice(2);
 function getArg(flag) {
@@ -27,6 +28,7 @@ const onlyYoutube = args.includes('--youtube');
 const onlyTwitter = args.includes('--twitter');
 const onlyPodcast = args.includes('--podcast');
 const onlySubstack = args.includes('--substack');
+const onlyRepo = args.includes('--repo');
 const twitterCount = parseInt(getArg('--count') || '50', 10);
 const targetSlug = args.find(a => !a.startsWith('--') && !['--instance','--all','--count'].includes(args[args.indexOf(a)-1]));
 
@@ -36,7 +38,7 @@ const REGISTRY = path.join(INST, 'registry', 'creators.json');
 const CATALOG_DIR = path.join(INST, 'registry', 'catalogs');
 
 if (!targetSlug && !scanAll) {
-  console.error('Usage: node scripts/scan.js <creator-slug> | --all [--youtube] [--twitter] [--podcast] [--substack] [--count N] [--instance name]');
+  console.error('Usage: node scripts/scan.js <creator-slug> | --all [--youtube] [--twitter] [--podcast] [--substack] [--repo] [--count N] [--instance name]');
   process.exit(1);
 }
 
@@ -231,10 +233,24 @@ async function scanSubstack(creator) {
   }
 }
 
+// ---- Repo scan ----
+async function scanRepo(creator) {
+  const repo = creator.platforms.repo;
+  if (!repo?.path && !repo?.url) return null;
+
+  console.log(`   📦 Repo: ${repo.url || repo.path}`);
+  try {
+    return await scanRepoCatalog(creator);
+  } catch (e) {
+    console.error(`   ❌ Repo scan failed: ${e.message.substring(0, 100)}`);
+    return null;
+  }
+}
+
 // ---- Main ----
 async function main() {
   let totalItems = 0;
-  const platformFiltered = onlyYoutube || onlyTwitter || onlyPodcast || onlySubstack;
+  const platformFiltered = onlyYoutube || onlyTwitter || onlyPodcast || onlySubstack || onlyRepo;
 
   for (const creator of creators) {
     console.log(`\n━━━ ${creator.name} (${creator.slug}) ━━━`);
@@ -257,6 +273,10 @@ async function main() {
       const substack = await scanSubstack(creator);
       if (substack) results.push(substack);
     }
+    if (!platformFiltered || onlyRepo) {
+      const repo = await scanRepo(creator);
+      if (repo) results.push(repo);
+    }
 
     // Write catalog per platform
     for (const result of results) {
@@ -278,7 +298,9 @@ async function main() {
         ingested: existing[item.id]?.ingested || false,
       }));
 
+      const { items: _items, ...catalogMeta } = result;
       fs.writeFileSync(catalogFile, JSON.stringify({
+        ...catalogMeta,
         creator: creator.slug,
         platform: result.platform,
         scanned_at: result.scanned_at,
