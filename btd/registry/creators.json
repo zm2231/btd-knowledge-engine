@@ -143,6 +143,66 @@
       "status": "active",
       "catalog_count": 11,
       "last_scanned": "2026-04-10T19:44:44.875Z"
+    },
+    {
+      "slug": "simon-sinek",
+      "name": "Simon Sinek",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@SimonSinek"
+        }
+      },
+      "topics": [
+        "leadership",
+        "frameworks",
+        "thinking"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 1170,
+      "last_scanned": "2026-04-10T20:32:06.111Z"
+    },
+    {
+      "slug": "ali-abdaal",
+      "name": "Ali Abdaal",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@aliabdaal"
+        }
+      },
+      "topics": [
+        "productivity",
+        "learning",
+        "habits"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 1366,
+      "last_scanned": "2026-04-10T20:33:01.132Z"
+    },
+    {
+      "slug": "lenny-rachitsky",
+      "name": "Lenny Rachitsky",
+      "platforms": {
+        "podcast": {
+          "feed_url": "https://www.lennysnewsletter.com/feed"
+        }
+      },
+      "topics": [
+        "product",
+        "growth",
+        "startups"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 20,
+      "last_scanned": "2026-04-10T20:33:13.422Z"
     }
   ]
 }

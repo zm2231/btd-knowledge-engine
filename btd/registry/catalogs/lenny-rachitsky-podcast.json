@@ -1,0 +1,209 @@
+{
+  "platform": "podcast",
+  "scanned_at": "2026-04-10T20:33:13.421Z",
+  "creator": "lenny-rachitsky",
+  "total": 20,
+  "ingested": 0,
+  "items": [
+    {
+      "id": 20,
+      "title": "I built a custom Slack inbox. It was easier than you’d think. | Yash Tekriwal (Clay)",
+      "date": "Wed, 08 Apr 2026 12:03:47 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 20,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 19,
+      "title": "Listen: A visual guide to getting out of a creative slump",
+      "date": "Wed, 08 Apr 2026 02:51:13 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 19,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 18,
+      "title": "A visual guide to getting out of a creative slump",
+      "date": "Tue, 07 Apr 2026 12:45:49 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 18,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 17,
+      "title": "🎙️ This week on How I AI: I gave Claude Code our entire codebase. Our customers noticed.",
+      "date": "Mon, 06 Apr 2026 15:03:07 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 17,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 16,
+      "title": "I gave Claude Code our entire codebase. Our customers noticed. | Al Chen (Galileo)",
+      "date": "Mon, 06 Apr 2026 12:03:35 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 16,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 15,
+      "title": "Head of Growth (Anthropic): “Claude is growing itself at this point” | Amol Avasare",
+      "date": "Sun, 05 Apr 2026 12:31:45 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 15,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 14,
+      "title": "🧠 Community Wisdom: Evaluating startup equity, navigating pre-seed fundraising, MCPs vs. CLIs, Monzo’s U.S. exit, and more",
+      "date": "Sat, 04 Apr 2026 22:02:36 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 14,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 13,
+      "title": "An AI state of the union: We’ve passed the inflection point, dark factories are coming, and automation timelines | Simon Willison",
+      "date": "Thu, 02 Apr 2026 12:32:28 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 13,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 12,
+      "title": "Listen: OpenClaw: A power-user's guide to the most powerful personal AI tool since ChatGPT",
+      "date": "Wed, 01 Apr 2026 14:11:12 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 12,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 11,
+      "title": "OpenClaw: The complete guide to building, training, and living with your personal AI agent",
+      "date": "Tue, 31 Mar 2026 12:45:57 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 11,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 10,
+      "title": "🎙️ This week on How I AI: How Stripe built “minions”—AI coding agents that ship 1,300 PRs per week + How to turn Claude Code into your personal life operating system",
+      "date": "Mon, 30 Mar 2026 15:03:26 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 10,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 9,
+      "title": "How to turn Claude Code into your personal life operating system | Hilary Gridley",
+      "date": "Mon, 30 Mar 2026 12:04:24 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 9,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 8,
+      "title": "From skeptic to true believer: How OpenClaw changed my life | Claire Vo",
+      "date": "Sun, 29 Mar 2026 12:31:50 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 8,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 7,
+      "title": "🧠 Community Wisdom: When AI velocity outpaces your product strategy, when your estimates keep slipping, one day in San Francisco, pairing Claude Code with Codex, and more",
+      "date": "Sat, 28 Mar 2026 17:01:42 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 7,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 6,
+      "title": "How Stripe built “minions”—AI coding agents that ship 1,300 PRs weekly from Slack reactions | Steve Kaliski (Stripe engineer)",
+      "date": "Wed, 25 Mar 2026 12:03:34 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 6,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 5,
+      "title": "State of the product job market in early 2026",
+      "date": "Tue, 24 Mar 2026 12:45:12 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 5,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 4,
+      "title": "State of the product job market in early 2026",
+      "date": "Tue, 24 Mar 2026 09:02:05 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 4,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 3,
+      "title": "🎙️ This week on How I AI: How Microsoft's AI VP automates everything with Warp",
+      "date": "Mon, 23 Mar 2026 15:02:35 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 3,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 2,
+      "title": "How Microsoft’s AI VP automates everything with Warp | Marco Casalaina",
+      "date": "Mon, 23 Mar 2026 12:01:26 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 2,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 1,
+      "title": "The art of influence: The single most important skill that AI can’t replace | Jessica Fain (Webflow, ex-Slack)",
+      "date": "Sun, 22 Mar 2026 12:31:51 GMT",
+      "duration": null,
+      "url": null,
+      "episode_number": 1,
+      "season": null,
+      "ingested": false
+    }
+  ]
+}

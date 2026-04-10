@@ -1,0 +1,181 @@
+{
+  "creator": "nanogpt",
+  "name": "karpathy/nanoGPT",
+  "platform": "repo",
+  "scanned_at": "2026-04-10T20:31:56.830Z",
+  "repo_path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--nanogpt",
+  "repo_url": "https://github.com/karpathy/nanoGPT",
+  "file_types": [
+    ".py",
+    ".js",
+    ".ts",
+    ".md",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".go",
+    ".rs",
+    ".rb"
+  ],
+  "total": 19,
+  "ingested": 19,
+  "total_size_bytes": 66379,
+  "by_extension": {
+    ".py": 15,
+    ".md": 4
+  },
+  "items": [
+    {
+      "id": "bench.py",
+      "path": "bench.py",
+      "ext": ".py",
+      "size_bytes": 4815,
+      "modified_at": "2026-04-10T20:31:56.819Z",
+      "ingested": true
+    },
+    {
+      "id": "config/eval_gpt2_large.py",
+      "path": "config/eval_gpt2_large.py",
+      "ext": ".py",
+      "size_bytes": 215,
+      "modified_at": "2026-04-10T20:31:56.819Z",
+      "ingested": true
+    },
+    {
+      "id": "config/eval_gpt2_medium.py",
+      "path": "config/eval_gpt2_medium.py",
+      "ext": ".py",
+      "size_bytes": 216,
+      "modified_at": "2026-04-10T20:31:56.819Z",
+      "ingested": true
+    },
+    {
+      "id": "config/eval_gpt2_xl.py",
+      "path": "config/eval_gpt2_xl.py",
+      "ext": ".py",
+      "size_bytes": 213,
+      "modified_at": "2026-04-10T20:31:56.819Z",
+      "ingested": true
+    },
+    {
+      "id": "config/eval_gpt2.py",
+      "path": "config/eval_gpt2.py",
+      "ext": ".py",
+      "size_bytes": 208,
+      "modified_at": "2026-04-10T20:31:56.819Z",
+      "ingested": true
+    },
+    {
+      "id": "config/finetune_shakespeare.py",
+      "path": "config/finetune_shakespeare.py",
+      "ext": ".py",
+      "size_bytes": 645,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "config/train_gpt2.py",
+      "path": "config/train_gpt2.py",
+      "ext": ".py",
+      "size_bytes": 681,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "config/train_shakespeare_char.py",
+      "path": "config/train_shakespeare_char.py",
+      "ext": ".py",
+      "size_bytes": 1132,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "configurator.py",
+      "path": "configurator.py",
+      "ext": ".py",
+      "size_bytes": 1758,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "data/openwebtext/prepare.py",
+      "path": "data/openwebtext/prepare.py",
+      "ext": ".py",
+      "size_bytes": 3167,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "data/openwebtext/readme.md",
+      "path": "data/openwebtext/readme.md",
+      "ext": ".md",
+      "size_bytes": 489,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "data/shakespeare_char/prepare.py",
+      "path": "data/shakespeare_char/prepare.py",
+      "ext": ".py",
+      "size_bytes": 2344,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "data/shakespeare_char/readme.md",
+      "path": "data/shakespeare_char/readme.md",
+      "ext": ".md",
+      "size_bytes": 209,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "data/shakespeare/prepare.py",
+      "path": "data/shakespeare/prepare.py",
+      "ext": ".py",
+      "size_bytes": 1132,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "data/shakespeare/readme.md",
+      "path": "data/shakespeare/readme.md",
+      "ext": ".md",
+      "size_bytes": 161,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "model.py",
+      "path": "model.py",
+      "ext": ".py",
+      "size_bytes": 16345,
+      "modified_at": "2026-04-10T20:31:56.821Z",
+      "ingested": true
+    },
+    {
+      "id": "README.md",
+      "path": "README.md",
+      "ext": ".md",
+      "size_bytes": 13850,
+      "modified_at": "2026-04-10T20:31:56.818Z",
+      "ingested": true
+    },
+    {
+      "id": "sample.py",
+      "path": "sample.py",
+      "ext": ".py",
+      "size_bytes": 3942,
+      "modified_at": "2026-04-10T20:31:56.821Z",
+      "ingested": true
+    },
+    {
+      "id": "train.py",
+      "path": "train.py",
+      "ext": ".py",
+      "size_bytes": 14857,
+      "modified_at": "2026-04-10T20:31:56.821Z",
+      "ingested": true
+    }
+  ]
+}

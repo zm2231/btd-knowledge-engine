@@ -1,0 +1,214 @@
+{
+  "creator": "llm-c",
+  "name": "karpathy/llm.c",
+  "platform": "repo",
+  "scanned_at": "2026-04-10T20:31:56.838Z",
+  "repo_path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--llm-c",
+  "repo_url": "https://github.com/karpathy/llm.c",
+  "file_types": [
+    ".py",
+    ".js",
+    ".ts",
+    ".md",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".go",
+    ".rs",
+    ".rb"
+  ],
+  "total": 23,
+  "ingested": 23,
+  "total_size_bytes": 220572,
+  "by_extension": {
+    ".yml": 3,
+    ".py": 14,
+    ".md": 6
+  },
+  "items": [
+    {
+      "id": ".github/workflows/ci_gpu.yml",
+      "path": ".github/workflows/ci_gpu.yml",
+      "ext": ".yml",
+      "size_bytes": 3638,
+      "modified_at": "2026-04-10T20:31:56.818Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/ci_tests.yml",
+      "path": ".github/workflows/ci_tests.yml",
+      "ext": ".yml",
+      "size_bytes": 3360,
+      "modified_at": "2026-04-10T20:31:56.818Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/ci.yml",
+      "path": ".github/workflows/ci.yml",
+      "ext": ".yml",
+      "size_bytes": 9440,
+      "modified_at": "2026-04-10T20:31:56.818Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/cuda/benchmark_on_modal.py",
+      "path": "dev/cuda/benchmark_on_modal.py",
+      "ext": ".py",
+      "size_bytes": 5745,
+      "modified_at": "2026-04-10T20:31:56.820Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/cuda/README.md",
+      "path": "dev/cuda/README.md",
+      "ext": ".md",
+      "size_bytes": 2347,
+      "modified_at": "2026-04-10T20:31:56.819Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/data/data_common.py",
+      "path": "dev/data/data_common.py",
+      "ext": ".py",
+      "size_bytes": 4908,
+      "modified_at": "2026-04-10T20:31:56.823Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/data/fineweb.py",
+      "path": "dev/data/fineweb.py",
+      "ext": ".py",
+      "size_bytes": 6286,
+      "modified_at": "2026-04-10T20:31:56.823Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/data/hellaswag.py",
+      "path": "dev/data/hellaswag.py",
+      "ext": ".py",
+      "size_bytes": 7646,
+      "modified_at": "2026-04-10T20:31:56.823Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/data/mmlu.py",
+      "path": "dev/data/mmlu.py",
+      "ext": ".py",
+      "size_bytes": 5816,
+      "modified_at": "2026-04-10T20:31:56.823Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/data/README.md",
+      "path": "dev/data/README.md",
+      "ext": ".md",
+      "size_bytes": 741,
+      "modified_at": "2026-04-10T20:31:56.823Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/data/tinyshakespeare.py",
+      "path": "dev/data/tinyshakespeare.py",
+      "ext": ".py",
+      "size_bytes": 4068,
+      "modified_at": "2026-04-10T20:31:56.823Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/data/tinystories.py",
+      "path": "dev/data/tinystories.py",
+      "ext": ".py",
+      "size_bytes": 4925,
+      "modified_at": "2026-04-10T20:31:56.823Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/eval/export_hf.py",
+      "path": "dev/eval/export_hf.py",
+      "ext": ".py",
+      "size_bytes": 7304,
+      "modified_at": "2026-04-10T20:31:56.824Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/eval/README.md",
+      "path": "dev/eval/README.md",
+      "ext": ".md",
+      "size_bytes": 2557,
+      "modified_at": "2026-04-10T20:31:56.824Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/eval/summarize_eval.py",
+      "path": "dev/eval/summarize_eval.py",
+      "ext": ".py",
+      "size_bytes": 1074,
+      "modified_at": "2026-04-10T20:31:56.824Z",
+      "ingested": true
+    },
+    {
+      "id": "dev/loss_checker_ci.py",
+      "path": "dev/loss_checker_ci.py",
+      "ext": ".py",
+      "size_bytes": 2999,
+      "modified_at": "2026-04-10T20:31:56.824Z",
+      "ingested": true
+    },
+    {
+      "id": "doc/layernorm/layernorm.md",
+      "path": "doc/layernorm/layernorm.md",
+      "ext": ".md",
+      "size_bytes": 18425,
+      "modified_at": "2026-04-10T20:31:56.825Z",
+      "ingested": true
+    },
+    {
+      "id": "doc/layernorm/layernorm.py",
+      "path": "doc/layernorm/layernorm.py",
+      "ext": ".py",
+      "size_bytes": 1996,
+      "modified_at": "2026-04-10T20:31:56.825Z",
+      "ingested": true
+    },
+    {
+      "id": "profile_gpt2cu.py",
+      "path": "profile_gpt2cu.py",
+      "ext": ".py",
+      "size_bytes": 8682,
+      "modified_at": "2026-04-10T20:31:56.827Z",
+      "ingested": true
+    },
+    {
+      "id": "README.md",
+      "path": "README.md",
+      "ext": ".md",
+      "size_bytes": 16471,
+      "modified_at": "2026-04-10T20:31:56.819Z",
+      "ingested": true
+    },
+    {
+      "id": "scripts/README.md",
+      "path": "scripts/README.md",
+      "ext": ".md",
+      "size_bytes": 2745,
+      "modified_at": "2026-04-10T20:31:56.828Z",
+      "ingested": true
+    },
+    {
+      "id": "train_gpt2.py",
+      "path": "train_gpt2.py",
+      "ext": ".py",
+      "size_bytes": 41860,
+      "modified_at": "2026-04-10T20:31:56.829Z",
+      "ingested": true
+    },
+    {
+      "id": "train_llama3.py",
+      "path": "train_llama3.py",
+      "ext": ".py",
+      "size_bytes": 57539,
+      "modified_at": "2026-04-10T20:31:56.830Z",
+      "ingested": true
+    }
+  ]
+}
