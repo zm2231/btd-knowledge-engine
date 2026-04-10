@@ -190,6 +190,10 @@
       "platforms": {
         "podcast": {
           "feed_url": "https://www.lennysnewsletter.com/feed"
+        },
+        "substack": {
+          "url": "https://www.lennysnewsletter.com/",
+          "type": "substack"
         }
       },
       "topics": [

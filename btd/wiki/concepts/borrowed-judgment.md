@@ -42,10 +42,9 @@ The experiment *is* the build. The feedback is immediate and concrete: did the a
 
 The interview layer has to be good, not performative. The scarce ingredient is the question bank — the 15 questions a great builder asks before starting that every first-timer skips. The corpus gives you the answers. The interview gives you the questions. Without the right questions, the best corpus in the world produces generic output.
 
-See [[question-bank]] for that list.
+The intake skill (SKILL.md) is that question bank.
 
 ## Related Concepts
-- [[question-bank]] — the pre-build questions the corpus helps answer
-- [[interview-as-product]] — why the interview layer is the IP
-- [[skills-as-workflows]] — how this gets implemented in Claude Code
+- [[accountability-pattern]] — constraints surface through the interview
+- [[building-from-scratch]] — Karpathy's approach is borrowed judgment in action
 - [[llm-knowledge-bases]] — the technical layer underneath
