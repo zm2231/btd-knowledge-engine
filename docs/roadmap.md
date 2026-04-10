@@ -128,26 +128,50 @@ Concrete implementation:
 - Synthesis output should say "Based on how Karpathy approaches X" not just "here's what to do"
 - Consider a "sources used" section in every generated output
 
-### Voice Agent for Expertise Extraction (Max, future)
-Max started building a voice agent that can interview people who DON'T have existing content (no YouTube, no podcast). The insight: transcripts reveal real patterns because people show how they think when solving problems live, not when describing how they think. Three interview modes identified:
-1. **Scenario walkthrough** → procedural + conditional patterns
-2. **Teaching mode** → declarative + metacognitive
-3. **Contradiction probing** → surfaces deeper layers
-
-Signal detection taxonomy: speed changes, "obviously" markers (unconscious competence), what they skip vs elaborate on, energy shifts. This could feed back into the intake skill.
+### Voice Agent (Max's test project, not this repo)
+Max ran the intake skill against a voice agent build as his test project. The voice agent itself (cognitive fingerprint extraction via live problem-solving) is a separate product idea, not a feature of this repo. Noted here because the intake skill successfully reframed his build during the session.
 
 ### Repo/Codebase Ingestion (in progress)
 VividEagle building `ingest-repo.js`. The value: search across Karpathy's TALKS about tokenization AND his `minbpe` implementation code in the same query. Same index, different source types.
 
-### Community Distribution
-Group wants this usable by non-technical members. Current CLI flow works but needs:
-- [ ] Clear "getting started for non-coders" doc (Max can write this)
-- [ ] Possibly a simple web UI eventually (not priority for v1)
+### Community Getting Started Guide (high priority)
+Group wants this usable by non-technical members using Claude Code. Need:
+- [ ] `docs/getting-started.md` — assumes Claude Code installed, walks through first creator → first search in 5 minutes
+- [ ] Skills packaged so Claude Code users can just load them (SKILL.md, RE-ENTRY.md already work as skills)
+- [ ] Skill creator skill — a skill that helps users create their own skills from the patterns in this repo
 - [ ] Skills shared in community Slack/School
+
+### Attribution Layer (high priority)
+Every generated output must trace back to sources. Not "here's what to do" but "this came from Karpathy's tokenization lecture, specifically this segment." Implementation:
+- [ ] Search results already include `Source:` paths — parse creator + content title from path
+- [ ] Experiment cards cite specific creators and timestamps
+- [ ] Synthesis output: "Based on how {creator} approaches {topic} in {content title}" with links
+- [ ] "Sources used" section in every generated output
+- [ ] Session search already does this partially — formalize it in output templates
+
+### LEANN Subindexes
+Right now everything goes in one index (`btd-btd`). Subindexes would let you:
+- Search only YouTube content, only tweets, only repos
+- Search only one creator's content
+- Search only content tagged for a specific topic
+- Combine subindexes for targeted queries (e.g. "Karpathy YouTube + code repos only")
+
+Implementation options:
+- [ ] Multiple LEANN indexes per instance (e.g. `btd-youtube`, `btd-twitter`, `btd-repos`)
+- [ ] Or: metadata filtering on the single index (LEANN supports this via passage metadata)
+- [ ] `session.js search` routes to appropriate subindex based on profile + query context
+
+### Continuous Usage / Logging
+Track how the system is actually being used so it improves:
+- [ ] Every search query logged with user, query, results returned, which results were useful
+- [ ] Every session logged (intake, checkin, experiment generation) with user + timestamp
+- [ ] Profile change history (already built in `profile.js`)
+- [ ] Experiment outcome tracking (structured YAML already in template)
+- [ ] Usage patterns surface which content gets retrieved most → informs what to ingest next
+- [ ] Weekly digest: "You searched X times, generated Y experiments, Z check-ins"
 
 ### Tools Mentioned in Session
 - **Bird CLI** for Twitter scraping (already integrated)
 - **LEANN** — group was impressed by the semantic search demo. Multiple people installing.
 - **Impeccable.style** — design audit CLI + skills (for future UI work)
-- **Carrd** — simple portfolio sites (relevant for any user-facing version)
 - **FireCrawl** — Max adding to his Last 30 Days skill for web scraping
