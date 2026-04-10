@@ -20,6 +20,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync, execFileSync } = require('child_process');
+const { appendEntry, buildEntry, readEntries, relativeFile } = require('./ingest-log.js');
 
 // --- Args ---
 const args = process.argv.slice(2);
@@ -166,16 +167,11 @@ function slugify(s) {
 }
 
 function alreadyIngested(id) {
-  if (!fs.existsSync(INGEST_LOG)) return false;
-  const lines = fs.readFileSync(INGEST_LOG, 'utf8').trim().split('\n').filter(Boolean);
-  return lines.some(l => {
-    try { return JSON.parse(l).source_id === id; } catch { return false; }
-  });
+  return readEntries(INGEST_LOG).some((entry) => String(entry.source_id || '') === String(id));
 }
 
 function appendIngestLog(entry) {
-  fs.mkdirSync(path.dirname(INGEST_LOG), { recursive: true });
-  fs.appendFileSync(INGEST_LOG, JSON.stringify(entry) + '\n');
+  appendEntry(INGEST_LOG, entry);
 }
 
 function listEpisodes(feedUrl, limit) {
@@ -409,16 +405,17 @@ async function main() {
     const md = segmentsToMarkdown(segments, { title: TITLE, creator: creatorSlug });
     fs.writeFileSync(path.join(creatorDir, filename), md);
     
-    appendIngestLog({
-      source_id: `podcast:${creatorSlug}:${slugify(TITLE)}`,
+    appendIngestLog(buildEntry({
+      sourceId: `podcast:${creatorSlug}:${slugify(TITLE)}`,
       creator: creatorSlug,
       platform: 'podcast',
       title: TITLE,
-      path: `${INSTANCE}/raw/podcasts/${creatorSlug}/${filename}`,
-      ingested_at: new Date().toISOString(),
-      status: 'downloaded',
-      segments: segments.length
-    });
+      file: relativeFile(ROOT, path.join(creatorDir, filename)),
+      indexed: false,
+      extra: {
+        segments: segments.length,
+      },
+    }));
     
     console.log(`✅ Saved: ${creatorDir}/${filename} (${segments.length} segments)`);
     return;
@@ -517,17 +514,19 @@ async function main_feed(feedUrl) {
       
       fs.writeFileSync(path.join(creatorDir, filename), md);
       
-      appendIngestLog({
-        source_id: sourceId,
+      appendIngestLog(buildEntry({
+        sourceId: sourceId,
         creator: creatorSlug,
         platform: 'podcast',
         title: ep.title,
-        path: `${INSTANCE}/raw/podcasts/${creatorSlug}/${filename}`,
-        ingested_at: new Date().toISOString(),
-        status: 'downloaded',
-        segments: segments.length,
-        episode_number: ep.episodeNum
-      });
+        file: relativeFile(ROOT, path.join(creatorDir, filename)),
+        url: ep.link || ep.enclosure?.url || '',
+        indexed: false,
+        extra: {
+          segments: segments.length,
+          episode_number: ep.episodeNum,
+        },
+      }));
       
       console.log(`      ✅ Saved: ${filename} (${segments.length} segments)`);
       ingested++;

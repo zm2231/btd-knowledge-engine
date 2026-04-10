@@ -11,6 +11,7 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const { appendEntry, buildEntry, readEntries, relativeFile } = require('./ingest-log.js');
 
 const DEFAULT_FILE_TYPES = '.py,.js,.ts,.md,.json,.yaml,.yml,.go,.rs,.rb';
 const SKIP_DIRS = new Set([
@@ -142,7 +143,7 @@ function saveRegistry(registry) {
 }
 
 function appendToLog(entry) {
-  fs.appendFileSync(INGEST_LOG, JSON.stringify(entry) + '\n');
+  appendEntry(INGEST_LOG, entry);
 }
 
 function getCatalogFile(slug) {
@@ -494,25 +495,24 @@ async function main() {
   execSync(command, { cwd: SHARED_PROJECT_ROOT, stdio: 'inherit', timeout: 1800000 });
 
   markCatalogIndexed(slug);
-  appendToLog({
-    id: `${slug}-${new Date().toISOString()}`,
-    source_type: 'repo',
-    platform: 'repo',
+  appendToLog(buildEntry({
+    sourceId: `repo:${slug}:${new Date().toISOString()}`,
     creator: slug,
-    status: 'indexed',
-    ingested_at: new Date().toISOString(),
-    indexed_at: new Date().toISOString(),
-    file: toProjectRelative(repoPath),
-    repo_path: repoPath,
-    repo_url: repoUrl,
-    index_name: INDEX_NAME,
-    index_roots: docs,
-    file_types: fileTypes,
-    file_count: scanResult.totalFiles,
-    total_size_bytes: scanResult.totalSizeBytes,
-    extracted: true,
+    platform: 'repo',
+    title: `${name} repository index`,
+    file: relativeFile(ROOT, repoPath),
+    url: repoUrl || '',
     indexed: true,
-  });
+    extra: {
+      repo_path: repoPath,
+      index_name: INDEX_NAME,
+      index_roots: docs,
+      file_types: fileTypes,
+      file_count: scanResult.totalFiles,
+      total_size_bytes: scanResult.totalSizeBytes,
+      indexed_at: new Date().toISOString(),
+    },
+  }));
 
   console.log(`\n✅ Repo indexed into ${INDEX_NAME}`);
   console.log(`   Added ${scanResult.totalFiles} file(s) from ${slug}`);

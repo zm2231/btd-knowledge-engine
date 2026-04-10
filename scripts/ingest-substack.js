@@ -14,6 +14,7 @@ const fs = require('fs');
 const http = require('http');
 const https = require('https');
 const path = require('path');
+const { appendEntry, buildEntry, readEntries, relativeFile } = require('./ingest-log.js');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -268,24 +269,10 @@ async function loadFeedItemsForCreator(creator) {
   return parseRssFeed(xml);
 }
 
-function appendToLog(ingestLog, entry) {
-  fs.appendFileSync(ingestLog, JSON.stringify(entry) + '\n');
-}
-
 function getExistingArticleIds(ingestLog) {
-  if (!fs.existsSync(ingestLog)) return new Set();
   return new Set(
-    fs.readFileSync(ingestLog, 'utf-8')
-      .split('\n')
-      .filter(Boolean)
-      .map(line => {
-        try {
-          const parsed = JSON.parse(line);
-          return parsed.article_id || parsed.url || null;
-        } catch {
-          return null;
-        }
-      })
+    readEntries(ingestLog)
+      .flatMap((entry) => [entry.article_id, entry.source_id, entry.url])
       .filter(Boolean)
       .map(String)
   );
@@ -384,7 +371,7 @@ async function ingestSubstackCreator(creatorSlug, options = {}) {
     const fileSlug = slugify(source.title || item.title);
     const filename = `${normalizedDate.day}-${fileSlug}.md`;
     const filepath = path.join(rawDir, filename);
-    const relPath = path.relative(ROOT, filepath);
+    const relPath = relativeFile(ROOT, filepath);
 
     console.log(`📥 ${source.title || item.title}`);
     console.log(`   ${item.url}`);
@@ -415,19 +402,18 @@ async function ingestSubstackCreator(creatorSlug, options = {}) {
     }
     catalog.ingested = catalog.items.filter(entry => entry.ingested).length;
 
-    appendToLog(ingestLog, {
-      id: `${normalizedDate.day}-${fileSlug}`,
-      source_type: 'substack',
-      platform: 'substack',
+    appendEntry(ingestLog, buildEntry({
+      sourceId: String(item.id),
       creator: creatorSlug,
-      status: 'ingested',
-      ingested_at: new Date().toISOString(),
+      platform: 'substack',
+      title: source.title || item.title || fileSlug,
       file: relPath,
       url: item.url,
-      article_id: String(item.id),
-      extracted: false,
       indexed: false,
-    });
+      extra: {
+        article_id: String(item.id),
+      },
+    }));
 
     console.log(`   ✅ ${relPath}`);
     console.log(`   📝 ${markdownBody.length} chars${downloadedMarkdown ? ' via sbstck-dl' : ' via RSS fallback'}\n`);

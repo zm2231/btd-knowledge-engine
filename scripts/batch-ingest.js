@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 /**
- * Batch ingest from a creator's catalog. Picks videos not yet ingested.
- * 
+ * Batch ingest YouTube transcripts from a creator catalog.
+ *
  * Usage:
- *   node scripts/batch-ingest.js <creator-slug>              # ingest all
- *   node scripts/batch-ingest.js <creator-slug> --limit 5    # ingest 5
+ *   node scripts/batch-ingest.js <creator-slug>              # ingest all pending YouTube videos
+ *   node scripts/batch-ingest.js <creator-slug> --limit 5    # ingest 5 videos
  *   node scripts/batch-ingest.js <creator-slug> --top        # most viewed first
- *   node scripts/batch-ingest.js --all --limit 10            # 10 per creator
+ *   node scripts/batch-ingest.js --all --limit 10            # 10 YouTube videos per creator
  *   node scripts/batch-ingest.js <creator-slug> --dry-run
  */
 
 const { fetchTranscript } = require('youtube-transcript-plus');
-const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const { appendEntry, buildEntry, readEntries, relativeFile } = require('./ingest-log.js');
 
 const args = process.argv.slice(2);
 function getArg(flag) {
@@ -26,7 +26,7 @@ const limit = parseInt(getArg('--limit') || '0', 10);
 const dryRun = args.includes('--dry-run');
 const topFirst = args.includes('--top');
 const doAll = args.includes('--all');
-const targetSlug = args.find(a => !a.startsWith('--') && !['--instance','--limit'].includes(args[args.indexOf(a)-1]));
+const targetSlug = args.find((arg) => !arg.startsWith('--') && !['--instance', '--limit'].includes(args[args.indexOf(arg) - 1]));
 
 if (!targetSlug && !doAll) {
   console.error('Usage: node scripts/batch-ingest.js <creator-slug> [--limit N] [--top] [--dry-run] [--instance name]');
@@ -40,18 +40,13 @@ const CATALOG_DIR = path.join(INST, 'registry', 'catalogs');
 const RAW_DIR = path.join(INST, 'raw', 'youtube');
 const INGEST_LOG = path.join(INST, 'registry', 'ingest-log.jsonl');
 
-// Load existing video IDs for dedup
 function getExistingVideoIds() {
-  if (!fs.existsSync(INGEST_LOG)) return new Set();
   return new Set(
-    fs.readFileSync(INGEST_LOG, 'utf-8').trim().split('\n').filter(Boolean)
-      .map(l => { try { return JSON.parse(l).video_id; } catch { return null; } })
+    readEntries(INGEST_LOG)
+      .map((entry) => entry.video_id || null)
       .filter(Boolean)
+      .map(String),
   );
-}
-
-function appendToLog(entry) {
-  fs.appendFileSync(INGEST_LOG, JSON.stringify(entry) + '\n');
 }
 
 function slugify(text) {
@@ -67,8 +62,10 @@ function formatTime(seconds) {
 async function ingestVideo(video, creatorSlug) {
   try {
     const segments = await fetchTranscript(video.id, { lang: 'en' });
-    const text = segments.map(s => s.text).join(' ')
-      .replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/&quot;/g, '"');
+    const text = segments.map((segment) => segment.text).join(' ')
+      .replace(/&#39;/g, "'")
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"');
 
     const outDir = path.join(RAW_DIR, creatorSlug);
     fs.mkdirSync(outDir, { recursive: true });
@@ -77,7 +74,7 @@ async function ingestVideo(video, creatorSlug) {
     const fileSlug = slugify(video.title);
     const filename = `${dateStr}-${fileSlug}.md`;
     const filepath = path.join(outDir, filename);
-    const relPath = path.relative(ROOT, filepath);
+    const relPath = relativeFile(ROOT, filepath);
 
     const md = `---
 title: "${video.title.replace(/"/g, '\\"')}"
@@ -108,95 +105,108 @@ ${text}
 
 ## Timed Segments
 
-${segments.map(s => `[${formatTime(s.offset)}] ${s.text}`).join('\n')}
+${segments.map((segment) => `[${formatTime(segment.offset)}] ${segment.text}`).join('\n')}
 `;
 
     fs.writeFileSync(filepath, md);
 
-    appendToLog({
-      id: `${dateStr}-${fileSlug}`,
-      source_type: 'youtube',
+    appendEntry(INGEST_LOG, buildEntry({
+      sourceId: video.id,
       creator: creatorSlug,
-      status: 'ingested',
-      ingested_at: new Date().toISOString(),
+      platform: 'youtube',
+      title: video.title,
       file: relPath,
       url: video.url,
-      video_id: video.id,
-      transcript_method: 'youtube-captions',
-      segment_count: segments.length,
-      char_count: text.length,
-      extracted: false,
       indexed: false,
-    });
+      extra: {
+        video_id: video.id,
+        transcript_method: 'youtube-captions',
+        segment_count: segments.length,
+        char_count: text.length,
+      },
+    }));
 
     return { success: true, segments: segments.length, chars: text.length, file: relPath };
-  } catch (e) {
-    return { success: false, error: e.message };
+  } catch (error) {
+    return { success: false, error: error.message };
   }
 }
 
 async function processCatalog(creatorSlug) {
   const catalogFile = path.join(CATALOG_DIR, `${creatorSlug}.json`);
   if (!fs.existsSync(catalogFile)) {
-    console.error(`   No catalog for ${creatorSlug}. Run: node scripts/scan.js ${creatorSlug}`);
+    console.error(`   No YouTube catalog for ${creatorSlug}. Run: node scripts/scan.js ${creatorSlug} --youtube${instance !== 'btd' ? ` --instance ${instance}` : ''}`);
     return { ingested: 0, failed: 0, skipped: 0 };
   }
 
-  const catalog = JSON.parse(fs.readFileSync(catalogFile, 'utf-8'));
+  const catalog = JSON.parse(fs.readFileSync(catalogFile, 'utf8'));
+  if (catalog.platform && catalog.platform !== 'youtube') {
+    console.error(`   ${creatorSlug} is not a YouTube catalog.`);
+    return { ingested: 0, failed: 0, skipped: 0 };
+  }
+
   const existing = getExistingVideoIds();
+  let pending = (catalog.items || []).filter((video) => !existing.has(String(video.id)) && !video.ingested);
 
-  // Filter to not-yet-ingested
-  let pending = catalog.items.filter(v => !existing.has(v.id));
-  
-  // Sort by views if --top
-  if (topFirst) pending.sort((a, b) => (b.view_count || 0) - (a.view_count || 0));
+  if (topFirst) {
+    pending.sort((a, b) => (b.view_count || 0) - (a.view_count || 0));
+  }
 
-  // Apply limit
-  if (limit > 0) pending = pending.slice(0, limit);
+  if (limit > 0) {
+    pending = pending.slice(0, limit);
+  }
 
   if (!pending.length) {
-    console.log(`   All content already ingested.`);
+    console.log('   All YouTube content already ingested.');
     return { ingested: 0, failed: 0, skipped: 0 };
   }
 
   console.log(`   ${pending.length} to ingest (${catalog.items.length - pending.length} already done)\n`);
 
-  let ingested = 0, failed = 0;
+  let ingested = 0;
+  let failed = 0;
 
   for (const video of pending) {
     process.stdout.write(`   📥 ${video.title.substring(0, 60)}...`);
 
     if (dryRun) {
-      console.log(` (dry run)`);
+      console.log(' (dry run)');
       continue;
     }
 
     const result = await ingestVideo(video, creatorSlug);
     if (result.success) {
       console.log(` ✅ ${result.segments} segments`);
-      // Update catalog
-      const item = catalog.items.find(i => i.id === video.id);
+      const item = catalog.items.find((catalogItem) => catalogItem.id === video.id);
       if (item) item.ingested = true;
-      ingested++;
+      ingested += 1;
     } else {
       console.log(` ❌ ${result.error.substring(0, 60)}`);
-      failed++;
+      failed += 1;
     }
   }
 
-  // Save updated catalog
-  catalog.ingested = catalog.items.filter(i => i.ingested).length;
-  fs.writeFileSync(catalogFile, JSON.stringify(catalog, null, 2) + '\n');
+  catalog.ingested = catalog.items.filter((item) => item.ingested).length;
+  fs.writeFileSync(catalogFile, `${JSON.stringify(catalog, null, 2)}\n`);
 
   return { ingested, failed, skipped: catalog.items.length - pending.length - ingested };
 }
 
-async function main() {
-  const catalogs = doAll
-    ? fs.readdirSync(CATALOG_DIR).filter(f => f.endsWith('.json') && !f.includes('-twitter')).map(f => f.replace('.json', ''))
-    : [targetSlug];
+function listAllYoutubeCatalogs() {
+  return fs.readdirSync(CATALOG_DIR)
+    .filter((file) => file.endsWith('.json'))
+    .filter((file) => {
+      const data = JSON.parse(fs.readFileSync(path.join(CATALOG_DIR, file), 'utf8'));
+      return !data.platform || data.platform === 'youtube';
+    })
+    .map((file) => file.replace(/\.json$/, ''));
+}
 
-  let totalIngested = 0, totalFailed = 0;
+async function main() {
+  const catalogs = doAll ? listAllYoutubeCatalogs() : [targetSlug];
+
+  let totalIngested = 0;
+  let totalFailed = 0;
 
   for (const slug of catalogs) {
     console.log(`\n━━━ ${slug} ━━━`);
@@ -205,12 +215,15 @@ async function main() {
     totalFailed += result.failed;
   }
 
-  console.log(`\n═══════════════════════════════════════`);
+  console.log('\n═══════════════════════════════════════');
   console.log(`  Ingested: ${totalIngested} | Failed: ${totalFailed}`);
   if (totalIngested > 0) {
-    console.log(`  Next: node scripts/index.js`);
+    console.log(`  Next: node scripts/index.js${instance !== 'btd' ? ` --instance ${instance}` : ''}`);
   }
-  console.log(`═══════════════════════════════════════\n`);
+  console.log('═══════════════════════════════════════\n');
 }
 
-main().catch(e => { console.error(e); process.exit(1); });
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

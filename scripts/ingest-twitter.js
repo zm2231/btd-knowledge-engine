@@ -10,6 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { appendEntry, buildEntry, readEntries, relativeFile } = require('./ingest-log.js');
 
 const args = process.argv.slice(2);
 function getArg(flag) {
@@ -35,11 +36,7 @@ const RAW_DIR = path.join(INSTANCE_DIR, 'raw', 'twitter', creator);
 const INGEST_LOG = path.join(INSTANCE_DIR, 'registry', 'ingest-log.jsonl');
 
 function slugify(text) {
-  return String(text || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .substring(0, 80) || 'tweet';
+  return String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').substring(0, 80) || 'tweet';
 }
 
 function escapeYamlString(value) {
@@ -53,53 +50,31 @@ function normalizeDate(value) {
   return { iso: date.toISOString(), day: date.toISOString().split('T')[0] };
 }
 
-function appendToLog(entry) {
-  fs.appendFileSync(INGEST_LOG, JSON.stringify(entry) + '\n');
-}
-
 function getExistingTweetIds() {
-  if (!fs.existsSync(INGEST_LOG)) return new Set();
-
-  return new Set(
-    fs.readFileSync(INGEST_LOG, 'utf-8')
-      .split('\n')
-      .filter(Boolean)
-      .map(line => {
-        try {
-          const parsed = JSON.parse(line);
-          return parsed.tweet_id || parsed.thread_id || null;
-        } catch {
-          return null;
-        }
-      })
-      .filter(Boolean)
-      .map(String)
-  );
+  const entries = readEntries(INGEST_LOG);
+  return new Set(entries.flatMap((entry) => [entry.tweet_id, entry.thread_id, entry.source_id]).filter(Boolean).map(String));
 }
 
 function groupTweets(items) {
   const groups = new Map();
 
   for (const item of items) {
-    const id = String(item.id);
     const conversationId = String(item.conversation_id || item.id);
-    const key = conversationId;
-    const existing = groups.get(key) || {
-      id: key,
+    const existing = groups.get(conversationId) || {
+      id: conversationId,
       conversation_id: conversationId,
       tweets: [],
     };
-
     existing.tweets.push(item);
-    groups.set(key, existing);
+    groups.set(conversationId, existing);
   }
 
   return Array.from(groups.values())
-    .map(group => {
+    .map((group) => {
       group.tweets.sort((a, b) => new Date(a.date || 0).getTime() - new Date(b.date || 0).getTime());
       const first = group.tweets[0];
       const last = group.tweets[group.tweets.length - 1];
-      const isThread = group.tweets.length > 1 || group.tweets.some(tweet => tweet.is_thread);
+      const isThread = group.tweets.length > 1 || group.tweets.some((tweet) => tweet.is_thread);
       return {
         id: isThread ? String(group.conversation_id) : String(first.id),
         conversation_id: String(group.conversation_id),
@@ -116,9 +91,7 @@ function buildMarkdown(group) {
   const { first, last, tweets, isThread } = group;
   const primaryDate = normalizeDate(first.date);
   const titleSource = (first.text || '').replace(/\s+/g, ' ').trim() || `${creator} tweet`;
-  const title = isThread
-    ? `${creator} thread — ${titleSource.substring(0, 80)}`
-    : titleSource.substring(0, 100);
+  const title = isThread ? `${creator} thread — ${titleSource.substring(0, 80)}` : titleSource.substring(0, 100);
   const canonicalUrl = first.url || `https://x.com/${creator}/status/${first.id}`;
   const fileSlug = slugify(titleSource);
   const filename = `${primaryDate.day}-${group.id}-${fileSlug}.md`;
@@ -161,17 +134,17 @@ ${last && last !== first ? `**Last Tweet**: ${normalizeDate(last.date).iso || la
 ${body}
 `;
 
-  return { filename, markdown, title, canonicalUrl, primaryDate };
+  return { filename, markdown, title, canonicalUrl };
 }
 
 function markCatalogItemsIngested(catalog, group) {
-  const ids = new Set(group.tweets.map(tweet => String(tweet.id)));
+  const ids = new Set(group.tweets.map((tweet) => String(tweet.id)));
   for (const item of catalog.items) {
     if (ids.has(String(item.id))) {
       item.ingested = true;
     }
   }
-  catalog.ingested = catalog.items.filter(item => item.ingested).length;
+  catalog.ingested = catalog.items.filter((item) => item.ingested).length;
 }
 
 async function main() {
@@ -181,9 +154,9 @@ async function main() {
     process.exit(1);
   }
 
-  const catalog = JSON.parse(fs.readFileSync(CATALOG_FILE, 'utf-8'));
+  const catalog = JSON.parse(fs.readFileSync(CATALOG_FILE, 'utf8'));
   const existing = getExistingTweetIds();
-  const pendingItems = (catalog.items || []).filter(item => !existing.has(String(item.id)) && !item.ingested);
+  const pendingItems = (catalog.items || []).filter((item) => !existing.has(String(item.id)) && !existing.has(String(item.conversation_id || item.id)) && !item.ingested);
 
   if (!pendingItems.length) {
     console.log(`No pending tweets for ${creator}.`);
@@ -205,9 +178,9 @@ async function main() {
   let written = 0;
 
   for (const group of groups) {
-    const { filename, markdown, title, canonicalUrl, primaryDate } = buildMarkdown(group);
+    const { filename, markdown, title, canonicalUrl } = buildMarkdown(group);
     const filepath = path.join(RAW_DIR, filename);
-    const relPath = path.relative(ROOT, filepath);
+    const relPath = relativeFile(ROOT, filepath);
 
     console.log(`📥 ${title}`);
     console.log(`   ${canonicalUrl}`);
@@ -220,30 +193,29 @@ async function main() {
     fs.writeFileSync(filepath, markdown);
     markCatalogItemsIngested(catalog, group);
 
-    appendToLog({
-      id: `${primaryDate.day}-${group.id}`,
-      source_type: 'twitter',
-      platform: 'twitter',
+    appendEntry(INGEST_LOG, buildEntry({
+      sourceId: group.conversation_id,
       creator,
-      status: 'ingested',
-      ingested_at: new Date().toISOString(),
+      platform: 'twitter',
+      title,
       file: relPath,
       url: canonicalUrl,
-      tweet_id: String(group.first.id),
-      thread_id: String(group.conversation_id),
-      tweet_count: group.tweets.length,
-      is_thread: group.isThread,
-      extracted: false,
       indexed: false,
-    });
+      extra: {
+        tweet_id: String(group.first.id),
+        thread_id: String(group.conversation_id),
+        tweet_count: group.tweets.length,
+        is_thread: group.isThread,
+      },
+    }));
 
     console.log(`   ✅ ${relPath}`);
     console.log(`   📝 ${group.tweets.length} tweet(s)\n`);
-    written++;
+    written += 1;
   }
 
   if (!dryRun) {
-    fs.writeFileSync(CATALOG_FILE, JSON.stringify(catalog, null, 2) + '\n');
+    fs.writeFileSync(CATALOG_FILE, `${JSON.stringify(catalog, null, 2)}\n`);
   }
 
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
@@ -252,7 +224,7 @@ async function main() {
   console.log(`📁 Output: ${path.relative(ROOT, RAW_DIR)}`);
 }
 
-main().catch(error => {
+main().catch((error) => {
   console.error(error);
   process.exit(1);
 });
