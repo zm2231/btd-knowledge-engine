@@ -1,0 +1,1 @@
+../../../skills/wiki-compiler/SKILL.md

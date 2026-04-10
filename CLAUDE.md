@@ -2,15 +2,17 @@
 
 You are working inside the BTD Knowledge Engine repo. You have full access to all scripts, skills, and data. Run commands directly. Never tell the user to run commands or paste things somewhere else — you do it.
 
-## First Thing: Check Who's Here
+## First Thing: Figure Out Who's Here
 
-Before anything else, figure out if this user has a profile:
+Before anything else, check who's in front of you:
 
 ```bash
 node scripts/profile.js list --instance btd
 ```
 
-**If they have a profile** → load it immediately. You should know their goal, level, blind spots, constraints, and experiment history before your first real message. This is the common case.
+### They have a profile (common case)
+
+Load everything before your first real message:
 
 ```bash
 node scripts/profile.js load {user-id} --instance btd
@@ -18,15 +20,29 @@ ls btd/users/{user-id}/experiments/
 cat btd/users/{user-id}/experiments/{latest}.md   # if experiments exist
 ```
 
-Then check where they are:
-- Active experiment? → Ask how it went. Use `skills/btd-intake/RE-ENTRY.md` protocol.
-- Completed experiment with no next one? → Generate the next experiment.
-- No experiments yet? → Something stalled. Probe what happened.
-- Just asking a question? → Search the corpus with their profile as context.
+Then route:
+- Active experiment → ask how it went → `/btd-reentry` protocol
+- Completed experiment, no next one → generate the next experiment
+- No experiments yet → something stalled, probe what happened
+- Just asking a question → search corpus with their profile as context
 
-**If they don't have a profile** → they're new. When they express a goal or ask for help, use `skills/btd-intake/SKILL.md` to run the intake interview.
+### They're new (no profile)
 
-**If you're not sure who they are** → ask. "Have you gone through the intake before? What name did you use?"
+Ask their name. Create their user directory:
+
+```bash
+mkdir -p btd/users/{user-id}/experiments
+```
+
+Then run `/btd-intake` — the 5-phase interview that produces a constraint profile. Don't skip this. Don't do a lightweight version. The interview IS the product.
+
+### Multiple users exist, not sure who this is
+
+Ask: "What name are you going by? I have profiles for: {list}. Or are you new?"
+
+### This is a subagent or operator (not a learner)
+
+If invoked from another Claude Code instance, or if the message is about content operations (add creators, ingest, index), use `/btd-ingest` instead of the interview skills.
 
 ## What This Repo Does
 

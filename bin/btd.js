@@ -16,45 +16,50 @@ function fileExists(relativePath) {
 }
 
 function printMainHelp() {
-  console.log(`BTD CLI
+  console.log(`BTD Knowledge Engine
 
 Usage:
-  btd help
   btd <command> [args] [--instance <name>]
 
-Core commands:
-  btd init <instance>
-  btd add <slug> "Name" [flags]
-  btd scan [slug] [--all]
-  btd ingest <slug> [--limit N --top]
-  btd ingest:twitter <slug>
-  btd ingest:podcast <slug> [flags]
-  btd ingest:substack <slug> [flags]
-  btd ingest:repo <path-or-url>
-  btd index [--force]
-  btd status
+Getting started:
+  btd start                              First-run setup — who are you?
+  btd me                                 Your profile + current experiment
+  btd status                             Corpus dashboard
+
+Content:
+  btd add <slug> "Name" [flags]          Register a creator
+  btd scan [slug] [--all]                Catalog their content
+  btd ingest <slug> [--limit N --top]    Pull down YouTube transcripts
+  btd ingest:twitter <slug>              Pull tweets
+  btd ingest:podcast <slug> [flags]      Pull + transcribe episodes
+  btd ingest:substack <slug>             Pull articles
+  btd ingest:repo <path-or-url>          Index a code repo
+  btd index [--force]                    Rebuild LEANN search index
 
 Wiki:
-  btd wiki status
-  btd wiki lint
-  btd wiki index
-  btd wiki ingest [--recent N]
+  btd wiki status                        What's compiled vs pending
+  btd wiki lint                          Find gaps and broken links
+  btd wiki index                         Rebuild wiki index
+  btd wiki ingest [--recent N]           Compile recent sources
 
 Profiles:
-  btd profile list
-  btd profile show <user>
-  btd profile save <user> [flags]
+  btd profile list                       All registered users
+  btd profile show <user>                Full profile + experiments
+  btd profile save <user> [flags]        Save a profile YAML
 
 Sessions:
-  btd session intake <user>
-  btd session checkin <user>
-  btd session status <user>
-  btd search <user> "<query>"
+  btd session intake <user>              Run intake interview
+  btd session checkin <user>             Returning user check-in
+  btd session status <user>              Where a user is at
+  btd search <user> "<query>"            Search corpus for a user
+
+Admin:
+  btd init <instance>                    Create a new instance
+  btd help                               This message
 
 Notes:
-  - All commands accept --instance <name> (default: btd)
-  - This is a thin wrapper around scripts/ in this repo
-  - After npm link, run btd from anywhere and it will dispatch into this repo
+  All commands accept --instance <name> (default: btd)
+  After npm link, btd works from anywhere
 `);
 }
 
@@ -108,6 +113,14 @@ function dispatch(argv) {
     }
     printMainHelp();
     return;
+  }
+
+  if (command === 'start') {
+    return runScript('scripts/start.js', rest);
+  }
+
+  if (command === 'me') {
+    return runScript('scripts/me.js', rest);
   }
 
   if (command === 'init') {
