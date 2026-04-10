@@ -1,3 +1,5 @@
+> **DEPRECATED:** The decision tree is no longer the canonical interview definition. Use `skills/btd-intake/SKILL.md` instead. This directory is retained for reference only.
+
 # Question Bank
 
 The question bank currently has one tracked artifact:

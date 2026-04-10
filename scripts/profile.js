@@ -16,6 +16,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const yaml = require('js-yaml');
 
 const args = process.argv.slice(2);
 const action = args[0];
@@ -35,6 +36,7 @@ if (!action || ['--help', '-h'].includes(action)) {
   node scripts/profile.js list                             List all users
   node scripts/profile.js summary <user-id>                Profile + experiment status
   node scripts/profile.js update <user-id> --field --value Update one field
+                                                   (supports nested paths, --append, --append-entry)
   node scripts/profile.js history <user-id>                Profile change log
 
   All commands: --instance <name> (default: btd)`);
@@ -62,6 +64,69 @@ function loadProfile(id) {
   const p = profilePath(id);
   if (!fs.existsSync(p)) return null;
   return fs.readFileSync(p, 'utf8');
+}
+
+function parseProfileDocument(content) {
+  const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+
+  if (frontmatterMatch) {
+    return {
+      data: yaml.load(frontmatterMatch[1]) || {},
+      body: frontmatterMatch[2] || '',
+      hasFrontmatter: true,
+    };
+  }
+
+  return {
+    data: yaml.load(content) || {},
+    body: '',
+    hasFrontmatter: false,
+  };
+}
+
+function serializeProfileDocument(document) {
+  const dumped = yaml.dump(document.data, {
+    lineWidth: 120,
+    noRefs: true,
+    sortKeys: false,
+  }).trimEnd();
+
+  if (document.hasFrontmatter) {
+    const body = document.body ? `\n${document.body.replace(/^\n*/, '')}` : '\n';
+    return `---\n${dumped}\n---${body}`;
+  }
+
+  return `${dumped}\n`;
+}
+
+function parseValue(value) {
+  if (value === undefined || value === null) return value;
+  try {
+    return yaml.load(value);
+  } catch {
+    return value;
+  }
+}
+
+function getNestedValue(target, parts) {
+  let current = target;
+  for (const part of parts) {
+    if (current === null || typeof current !== 'object' || !(part in current)) return undefined;
+    current = current[part];
+  }
+  return current;
+}
+
+function setNestedValue(target, parts, value) {
+  let current = target;
+  for (let i = 0; i < parts.length - 1; i++) {
+    const part = parts[i];
+    if (current[part] === undefined || current[part] === null || typeof current[part] !== 'object' || Array.isArray(current[part])) {
+      current[part] = {};
+    }
+    current = current[part];
+  }
+  current[parts[parts.length - 1]] = value;
 }
 
 function getExperiments(id) {
@@ -199,25 +264,68 @@ if (action === 'save') {
   console.log(profile);
   
 } else if (action === 'update') {
-  if (!userId) { console.error('Usage: profile.js update <user-id> --field "key" --value "val"'); process.exit(1); }
+  if (!userId) { console.error('Usage: profile.js update <user-id> --field "key" [--value "val" | --append "item" | --append-entry "{...}"]'); process.exit(1); }
   const field = getFlag('field');
   const value = getFlag('value');
-  if (!field || !value) { console.error('Need --field and --value'); process.exit(1); }
+  const appendValue = getFlag('append');
+  const appendEntryValue = getFlag('append-entry');
+  if (!field) { console.error('Need --field'); process.exit(1); }
+
+  const provided = [value !== null, appendValue !== null, appendEntryValue !== null].filter(Boolean).length;
+  if (provided !== 1) {
+    console.error('Provide exactly one of --value, --append, or --append-entry');
+    process.exit(1);
+  }
   
   const profile = loadProfile(userId);
   if (!profile) { console.error(`No profile for '${userId}'`); process.exit(1); }
-  
-  // Simple YAML field replacement (top-level only)
-  const regex = new RegExp(`^(${field}:)\\s*.*$`, 'm');
-  if (regex.test(profile)) {
-    const updated = profile.replace(regex, `$1 ${value}`);
-    fs.writeFileSync(profilePath(userId), updated);
-    appendHistory(userId, { event: 'field_updated', field, old_match: profile.match(regex)?.[0], new_value: value });
-    console.log(`✅ Updated ${field} → ${value}`);
-  } else {
-    console.error(`Field '${field}' not found in profile. Edit manually or use 'save' to replace.`);
+
+  const document = parseProfileDocument(profile);
+  const parts = field.split('.').filter(Boolean);
+  if (!parts.length) {
+    console.error('Field path cannot be empty');
     process.exit(1);
   }
+
+  const previousValue = getNestedValue(document.data, parts);
+
+  if (appendValue !== null) {
+    const parsedAppend = parseValue(appendValue);
+    const current = previousValue === undefined ? [] : previousValue;
+    if (!Array.isArray(current)) {
+      console.error(`Field '${field}' is not an array and cannot use --append`);
+      process.exit(1);
+    }
+    setNestedValue(document.data, parts, [...current, parsedAppend]);
+  } else if (appendEntryValue !== null) {
+    const parsedEntry = parseValue(appendEntryValue);
+    if (parsedEntry === null || typeof parsedEntry !== 'object' || Array.isArray(parsedEntry)) {
+      console.error('--append-entry must be a JSON/YAML object');
+      process.exit(1);
+    }
+    const current = previousValue === undefined ? [] : previousValue;
+    if (!Array.isArray(current)) {
+      console.error(`Field '${field}' is not an array and cannot use --append-entry`);
+      process.exit(1);
+    }
+    setNestedValue(document.data, parts, [...current, parsedEntry]);
+  } else {
+    setNestedValue(document.data, parts, parseValue(value));
+  }
+
+  fs.writeFileSync(profilePath(userId), serializeProfileDocument(document));
+  appendHistory(userId, {
+    event: 'field_updated',
+    field,
+    old_value: previousValue,
+    new_value: getNestedValue(document.data, parts),
+    note: 'Comments may be stripped when profile.js rewrites YAML.'
+  });
+  console.log(`✅ Updated ${field}`);
+  if (appendValue !== null || appendEntryValue !== null) {
+    console.log('   Mode: append');
+  }
+  console.log('   Note: comments may be stripped when rewriting YAML.');
   
 } else if (action === 'history') {
   if (!userId) { console.error('Usage: profile.js history <user-id>'); process.exit(1); }

@@ -77,7 +77,7 @@ function detectWhisperBackend() {
     'http://127.0.0.1:8000/v1/audio/transcriptions',  // generic
   ]) {
     try {
-      execSync(`curl -sf --connect-timeout 2 "${url.replace('/audio/transcriptions', '/models')}" >/dev/null 2>&1`);
+      execFileSync('curl', ['-sf', '--connect-timeout', '2', url.replace('/audio/transcriptions', '/models')], { stdio: 'ignore' });
       return { type: 'api', url, model: process.env.WHISPER_MODEL || 'whisper-1' };
     } catch {}
   }
@@ -120,7 +120,7 @@ function findOrDownloadModel() {
   fs.mkdirSync(MODELS_DIR, { recursive: true });
   const dest = path.join(MODELS_DIR, DEFAULT_MODEL_NAME);
   try {
-    execSync(`curl -L -o "${dest}" "${MODEL_URL}"`, { timeout: 300000, stdio: 'inherit' });
+    execFileSync('curl', ['-L', '-o', dest, MODEL_URL], { timeout: 300000, stdio: 'inherit' });
     console.log(`      ✅ Saved to ${dest}`);
     return dest;
   } catch (e) {
@@ -288,8 +288,9 @@ function parseTimestamp(ts) {
 
 function transcribeChunkAPI(audioPath) {
   // OpenAI-compatible API endpoint
-  const result = execSync(
-    `curl -s "${WHISPER.url}" -F "file=@${audioPath}" -F "model=${WHISPER.model}" -F "response_format=verbose_json"`,
+  const result = execFileSync(
+    'curl',
+    ['-s', WHISPER.url, '-F', `file=@${audioPath}`, '-F', `model=${WHISPER.model}`, '-F', 'response_format=verbose_json'],
     { encoding: 'utf8', maxBuffer: 50 * 1024 * 1024, timeout: 600000 }
   );
   const parsed = JSON.parse(result);
