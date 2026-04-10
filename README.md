@@ -233,12 +233,11 @@ btd-knowledge-engine/
 
 ## Current State (April 2026)
 
-**Content:**
-- 6 creators: Karpathy (YT+Twitter), 3Blue1Brown (YT), Nate Jones (YT), Mollick (Substack), Lex Fridman (YT+Podcast), minbpe (repo)
-- 1,643+ items cataloged across all platforms
-- 50+ docs ingested, 8,000+ chunks in LEANN index
+**Content** (run `node scripts/status.js` for live numbers):
+- Creators span technical and non-technical: Karpathy, 3Blue1Brown, Nate Jones, Mollick, Lex Fridman, Sinek, Abdaal, Lenny Rachitsky + Karpathy code repos
 - All 6 source type pipelines working: YouTube, Twitter, Podcast, Substack, Repos, Manual
 - Cross-source search confirmed: Karpathy's talks about tokenization + his actual minbpe code in same query
+- Retrieval diversity confirmed: productivity queries → Abdaal, leadership → Sinek, technical → Karpathy, product → Lenny
 
 **Product:**
 - Intake interview skill (SKILL.md) ready for Max to run

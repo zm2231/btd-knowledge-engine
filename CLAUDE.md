@@ -139,10 +139,14 @@ Save to `btd/users/{user-id}/experiments/{NNN}-{slug}.md`. Use template at `temp
 
 ## Current Corpus
 
-6 creators, ~8,000+ chunks in LEANN index `btd-btd`:
-- Andrej Karpathy — YouTube (deep ML tutorials) + Twitter (AI commentary) 
-- 3Blue1Brown — YouTube (visual math/ML explanations)
-- Nate Jones — YouTube (AI business/product analysis)
-- Ethan Mollick — Substack (AI for non-technical professionals)
-- Lex Fridman — Podcast (long-form interviews, science/tech/philosophy)
-- minbpe — Code repo (Karpathy's tokenizer implementation)
+Run `node scripts/status.js --instance btd` for live numbers. The index is `btd-btd`.
+
+Creators span technical and non-technical:
+- **Andrej Karpathy** — YouTube (deep ML tutorials) + Twitter (AI commentary) + repos (minbpe, nanoGPT, llm.c)
+- **3Blue1Brown** — YouTube (visual math/ML explanations)
+- **Nate Jones** — YouTube (AI business/product analysis)
+- **Ethan Mollick** — Substack (AI for non-technical professionals)
+- **Lex Fridman** — Podcast (long-form interviews, science/tech/philosophy)
+- **Simon Sinek** — YouTube (leadership, frameworks, thinking)
+- **Ali Abdaal** — YouTube (productivity, learning science, habits)
+- **Lenny Rachitsky** — Podcast (product, growth, startups)

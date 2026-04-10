@@ -203,6 +203,56 @@
       "status": "active",
       "catalog_count": 20,
       "last_scanned": "2026-04-10T20:33:13.422Z"
+    },
+    {
+      "slug": "nanogpt",
+      "name": "karpathy/nanoGPT",
+      "status": "active",
+      "platforms": {
+        "repo": {
+          "path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--nanogpt",
+          "url": "https://github.com/karpathy/nanoGPT",
+          "file_types": [
+            ".py",
+            ".js",
+            ".ts",
+            ".md",
+            ".json",
+            ".yaml",
+            ".yml"
+          ]
+        }
+      },
+      "topics": [
+        "code",
+        "repository"
+      ],
+      "added": "2026-04-10"
+    },
+    {
+      "slug": "llm-c",
+      "name": "karpathy/llm.c",
+      "status": "active",
+      "platforms": {
+        "repo": {
+          "path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--llm-c",
+          "url": "https://github.com/karpathy/llm.c",
+          "file_types": [
+            ".py",
+            ".js",
+            ".ts",
+            ".md",
+            ".json",
+            ".yaml",
+            ".yml"
+          ]
+        }
+      },
+      "topics": [
+        "code",
+        "repository"
+      ],
+      "added": "2026-04-10"
     }
   ]
 }

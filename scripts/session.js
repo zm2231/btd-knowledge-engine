@@ -34,6 +34,7 @@ const INST = path.join(ROOT, INSTANCE);
 const USERS_DIR = path.join(INST, 'users');
 const SKILLS_DIR = path.join(ROOT, 'skills', 'btd-intake');
 const LEANN_INDEX = `btd-${INSTANCE}`;
+const INST_FLAG = INSTANCE === 'btd' ? '' : ` --instance ${INSTANCE}`;
 
 if (!action || ['--help', '-h'].includes(action)) {
   console.log(`BTD Session Orchestrator
@@ -340,7 +341,7 @@ if (action === 'intake') {
   const latest = experiments[experiments.length - 1];
   
   if (!profile) {
-    console.log(`\n  ${userId}: no profile yet. Run: node scripts/session.js intake ${userId}\n`);
+    console.log(`\n  ${userId}: no profile yet. Run: node scripts/session.js intake ${userId}${INST_FLAG}\n`);
     process.exit(0);
   }
   
@@ -366,14 +367,14 @@ if (action === 'intake') {
   
   console.log(`\n  Next action:`);
   if (experiments.length === 0) {
-    console.log(`    → Generate first experiment: node scripts/session.js experiment ${userId}`);
+    console.log(`    → Generate first experiment: node scripts/session.js experiment ${userId}${INST_FLAG}`);
   } else if (latest) {
     const statusMatch = latest.content.match(/^status:\s*(.+)$/m);
     const status = statusMatch?.[1]?.trim();
     if (status === 'active') {
-      console.log(`    → Check in: node scripts/session.js checkin ${userId}`);
+      console.log(`    → Check in: node scripts/session.js checkin ${userId}${INST_FLAG}`);
     } else {
-      console.log(`    → Generate next experiment: node scripts/session.js experiment ${userId}`);
+      console.log(`    → Generate next experiment: node scripts/session.js experiment ${userId}${INST_FLAG}`);
     }
   }
   console.log('');

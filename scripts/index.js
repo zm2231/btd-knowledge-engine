@@ -21,41 +21,63 @@ const force = args.includes('--force');
 const ROOT = path.join(__dirname, '..');
 const INST = path.join(ROOT, instance);
 const RAW_DIR = path.join(INST, 'raw');
+const REGISTRY = path.join(INST, 'registry', 'creators.json');
 const INDEX_NAME = `btd-${instance}`;
 const INGEST_LOG = path.join(INST, 'registry', 'ingest-log.jsonl');
 
-// Check raw dir has content
+// Collect all indexable roots: raw/ + registered repo paths
+const docRoots = [RAW_DIR];
+if (fs.existsSync(REGISTRY)) {
+  const reg = JSON.parse(fs.readFileSync(REGISTRY, 'utf8'));
+  for (const creator of reg.creators || []) {
+    const repo = creator.platforms?.repo;
+    if (repo?.path && fs.existsSync(repo.path)) {
+      docRoots.push(repo.path);
+    }
+  }
+}
+
+// Check at least one root has content
 const mdFiles = [];
-function findMd(dir) {
+function findFiles(dir, exts) {
   if (!fs.existsSync(dir)) return;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) findMd(full);
-    else if (entry.name.endsWith('.md') && !entry.name.startsWith('.')) mdFiles.push(full);
+    if (entry.isDirectory() && !entry.name.startsWith('.')) findFiles(full, exts);
+    else if (exts.some(e => entry.name.endsWith(e))) mdFiles.push(full);
   }
 }
-findMd(RAW_DIR);
+// For raw/ check .md; for repos check code extensions too
+const codeExts = ['.md', '.py', '.js', '.ts', '.json', '.yaml', '.yml', '.go', '.rs', '.rb'];
+for (const root of docRoots) {
+  findFiles(root, root === RAW_DIR ? ['.md'] : codeExts);
+}
 
 if (!mdFiles.length) {
-  console.error(`No markdown files found in ${RAW_DIR}`);
+  console.error(`No indexable files found in ${docRoots.join(', ')}`);
   process.exit(1);
 }
 
+const hasRepos = docRoots.length > 1;
 console.log(`📚 Indexing ${mdFiles.length} files into LEANN index: ${INDEX_NAME}`);
-console.log(`   Source: ${RAW_DIR}`);
+console.log(`   Sources: ${docRoots.map(r => path.relative(ROOT, r) || r).join(', ')}`);
+if (hasRepos) console.log(`   (includes ${docRoots.length - 1} repo${docRoots.length > 2 ? 's' : ''})`);
 console.log(`   Mode: ${force ? 'full rebuild' : 'incremental'}`);
 console.log('');
 
-// Build LEANN index
+// Build LEANN index — unified across raw content + repos
 const forceFlag = force ? '--force' : '';
+const fileTypes = hasRepos ? codeExts.join(',') : '.md';
+const docsArgs = docRoots.map(r => `"${r}"`).join(' ');
 const cmd = [
   'leann build', INDEX_NAME,
-  '--docs', RAW_DIR,
-  '--file-types .md',
+  '--docs', ...docRoots.map(r => `"${r}"`),
+  `--file-types ${fileTypes}`,
   '--embedding-model all-MiniLM-L6-v2',
   '--embedding-mode sentence-transformers',
   '--doc-chunk-size 350',
   '--doc-chunk-overlap 128',
+  hasRepos ? '--include-hidden' : '',
   forceFlag,
 ].filter(Boolean).join(' ');
 

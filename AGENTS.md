@@ -26,7 +26,7 @@ skills/                 ← Skills for Claude Code
     RE-ENTRY.md         ←   Returning user check-in protocol
 
 template/               ← Clean starting point for new instances
-btd/                    ← BTD group's instance (5 creators, 48+ docs, 8164+ chunks)
+btd/                    ← BTD group's instance (run `node scripts/status.js` for live counts)
 docs/                   ← Blueprint, roadmap, getting-started guide
 question-bank/          ← Interview state machine (deprecated — use SKILL.md directly)
 .leann/                 ← LEANN index data

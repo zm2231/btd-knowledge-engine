@@ -1,11 +1,21 @@
 {
   "roots": [
+    "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--llm-c",
+    "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--minbpe",
+    "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--nanogpt",
     "/Volumes/4/GitHub/btd-knowledge-engine/btd/raw"
   ],
   "include_extensions": [
-    ".md"
+    ".md",
+    ".py",
+    ".js",
+    ".ts",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".go",
+    ".rs",
+    ".rb"
   ],
-  "ignore_patterns": [
-    "**/.*"
-  ]
+  "ignore_patterns": null
 }

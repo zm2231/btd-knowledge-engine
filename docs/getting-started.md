@@ -31,7 +31,7 @@ If any of those fail, don't worry. You only need `npm install` and `pip install 
 
 ## Use the BTD Group's Corpus (already built)
 
-The repo ships with the BTD group's instance already indexed. 48 documents from 5 creators, searchable right now:
+The repo ships with the BTD group's instance already indexed and searchable:
 
 ```bash
 # Search across everything
@@ -68,60 +68,40 @@ leann search btd-my-kb "how transformers work"
 
 ## Run the Intake Interview
 
-This is where it gets personal. The intake interview figures out who you are, what you're trying to do, and what you're missing.
+This is where it gets personal. Open Claude Code in the repo directory and just tell it what you want:
 
-```bash
-node scripts/session.js intake your-name
-```
+> "I want to learn how to evaluate AI tools for my team"
 
-This prints out the interview skill. Load it into Claude Code as context (paste it in or reference the file), then start the conversation. Claude will run you through 5 phases:
+or
 
-1. **What are you doing?** — not the feature list, what changes if this works
-2. **What do you actually know?** — calibrated by probing, not self-assessment
-3. **What aren't you thinking about?** — the blind spot scan
-4. **What are your real constraints?** — time, skills, tools, accountability
-5. **Synthesis** — plays it back, proposes first experiment
+> "I have an idea for a product but I don't know where to start"
 
-After the interview, Claude produces a constraint profile (YAML block). Save it:
+Claude reads `CLAUDE.md` on session start, checks if you have a profile, and automatically runs the right flow. For new users, it runs the intake interview (5 phases: goal, calibration, blind spots, constraints, synthesis). It saves your profile, searches the corpus, and generates your first experiment — all without you running any commands.
 
-```bash
-# Paste the YAML and hit Ctrl+D
-node scripts/profile.js save your-name --stdin
-```
-
-## Generate Your First Experiment
-
-```bash
-node scripts/session.js experiment your-name
-```
-
-This pulls your profile, searches the corpus for content that matches your gaps and blind spots, and packages everything Claude needs to generate a week-long experiment with a testable hypothesis.
-
-## Come Back for Check-in
-
-After doing the experiment for a week:
-
-```bash
-node scripts/session.js checkin your-name
-```
-
-Loads your profile, your experiment, searches for relevant content, and gives Claude the re-entry protocol. It figures out what happened, updates your profile, and generates the next experiment.
-
-## Check Your Status Anytime
+If you want to check your status manually:
 
 ```bash
 node scripts/session.js status your-name
 ```
 
-## Using Skills in Claude Code
+## Coming Back
 
-The skills in this repo (`skills/btd-intake/SKILL.md` and `skills/btd-intake/RE-ENTRY.md`) work directly as Claude Code skills. You can:
+After doing your experiment for a week, open Claude Code in the repo again. Claude loads your profile and latest experiment automatically. Just say:
 
-1. **Reference them in conversation**: "Use the skill at `skills/btd-intake/SKILL.md` to interview me"
-2. **Load as context**: Claude Code reads the file and follows the instructions
-3. **Add to your CLAUDE.md**: Reference the skill path so it's always available
+> "I'm back" or "How did my experiment go" or even just ask a question
 
-The session orchestrator (`session.js`) assembles everything for you — profile, experiments, corpus results, and the right skill — so you don't have to wire it together manually.
+Claude picks up where you left off: runs the check-in, updates your profile, generates the next experiment. Your history is preserved across sessions in `btd/users/your-name/`.
+
+## How It Works Under the Hood
+
+Claude Code has access to all the repo's scripts and runs them directly:
+
+- **Profile management**: `node scripts/profile.js save/load/update`
+- **Corpus search**: `leann search btd-btd "query"` — returns results with source attribution
+- **Experiment cards**: written to `btd/users/{name}/experiments/`
+- **Skills**: `skills/btd-intake/SKILL.md` (new users) and `skills/btd-intake/RE-ENTRY.md` (returning users)
+
+You don't need to run these yourself. Claude does it.
 
 ## Adding Content
 
