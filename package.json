@@ -1,0 +1,28 @@
+{
+  "name": "btd-knowledge-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zm2231/btd-knowledge-engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zm2231/btd-knowledge-engine/issues"
+  },
+  "homepage": "https://github.com/zm2231/btd-knowledge-engine#readme",
+  "dependencies": {
+    "podcast-dl": "^11.7.3",
+    "youtube-transcript-plus": "^2.0.0"
+  }
+}

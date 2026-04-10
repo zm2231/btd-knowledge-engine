@@ -1,0 +1,11 @@
+{
+  "roots": [
+    "/Volumes/4/GitHub/btd-knowledge-engine/btd/raw"
+  ],
+  "include_extensions": [
+    ".md"
+  ],
+  "ignore_patterns": [
+    "**/.*"
+  ]
+}

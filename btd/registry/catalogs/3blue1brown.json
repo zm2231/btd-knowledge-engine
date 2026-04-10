@@ -1,0 +1,2339 @@
+{
+  "creator": "3blue1brown",
+  "platform": "youtube",
+  "scanned_at": "2026-04-10T18:28:09.203Z",
+  "total": 233,
+  "ingested": 10,
+  "items": [
+    {
+      "id": "ldxFjLJ3rVY",
+      "title": "How (and why) to take a logarithm of an image",
+      "date": null,
+      "duration": 2692,
+      "duration_string": "44:52",
+      "url": "https://www.youtube.com/watch?v=ldxFjLJ3rVY",
+      "view_count": 1495337,
+      "ingested": false
+    },
+    {
+      "id": "fsLh-NYhOoU",
+      "title": "The most beautiful formula not enough people understand",
+      "date": null,
+      "duration": 3624,
+      "duration_string": "1:00:24",
+      "url": "https://www.youtube.com/watch?v=fsLh-NYhOoU",
+      "view_count": 960263,
+      "ingested": false
+    },
+    {
+      "id": "BHdbsHFs2P0",
+      "title": "The Hairy Ball Theorem",
+      "date": null,
+      "duration": 1780,
+      "duration_string": "29:40",
+      "url": "https://www.youtube.com/watch?v=BHdbsHFs2P0",
+      "view_count": 2589789,
+      "ingested": false
+    },
+    {
+      "id": "FE-hM1kRK4Y",
+      "title": "Why Laplace transforms are so useful",
+      "date": null,
+      "duration": 1385,
+      "duration_string": "23:05",
+      "url": "https://www.youtube.com/watch?v=FE-hM1kRK4Y",
+      "view_count": 684381,
+      "ingested": false
+    },
+    {
+      "id": "j0wJBEZdwLs",
+      "title": "But what is a Laplace Transform?",
+      "date": null,
+      "duration": 2081,
+      "duration_string": "34:41",
+      "url": "https://www.youtube.com/watch?v=j0wJBEZdwLs",
+      "view_count": 1446237,
+      "ingested": false
+    },
+    {
+      "id": "-j8PzkZ70Lg",
+      "title": "The Physics of Euler's Formula | Laplace Transform Prelude",
+      "date": null,
+      "duration": 1669,
+      "duration_string": "27:49",
+      "url": "https://www.youtube.com/watch?v=-j8PzkZ70Lg",
+      "view_count": 953999,
+      "ingested": false
+    },
+    {
+      "id": "M-MgQC6z3VU",
+      "title": "What was Euclid really doing? | Guest video by Ben Syversen",
+      "date": null,
+      "duration": 2009,
+      "duration_string": "33:29",
+      "url": "https://www.youtube.com/watch?v=M-MgQC6z3VU",
+      "view_count": 724265,
+      "ingested": false
+    },
+    {
+      "id": "_BrFKp-U8GI",
+      "title": "Exploration & Epiphany | Guest video by Paul Dancstep",
+      "date": null,
+      "duration": 3132,
+      "duration_string": "52:12",
+      "url": "https://www.youtube.com/watch?v=_BrFKp-U8GI",
+      "view_count": 483454,
+      "ingested": false
+    },
+    {
+      "id": "itRV2jEtV8Q",
+      "title": "Simulating and understanding phase change | Guest video by Vilas Winstein",
+      "date": null,
+      "duration": 2463,
+      "duration_string": "41:03",
+      "url": "https://www.youtube.com/watch?v=itRV2jEtV8Q",
+      "view_count": 435456,
+      "ingested": false
+    },
+    {
+      "id": "4NlrfOl0l8U",
+      "title": "The AI that solved IMO Geometry Problems | Guest video by @Aleph 0",
+      "date": null,
+      "duration": 811,
+      "duration_string": "13:31",
+      "url": "https://www.youtube.com/watch?v=4NlrfOl0l8U",
+      "view_count": 393709,
+      "ingested": false
+    },
+    {
+      "id": "iv-5mZ_9CPY",
+      "title": "But how do AI images and videos actually work? | Guest video by Welch Labs",
+      "date": null,
+      "duration": 2240,
+      "duration_string": "37:20",
+      "url": "https://www.youtube.com/watch?v=iv-5mZ_9CPY",
+      "view_count": 1769330,
+      "ingested": false
+    },
+    {
+      "id": "Dlsa9EBKDGI",
+      "title": "Where my explanation of Grover’s algorithm failed",
+      "date": null,
+      "duration": 983,
+      "duration_string": "16:23",
+      "url": "https://www.youtube.com/watch?v=Dlsa9EBKDGI",
+      "view_count": 630261,
+      "ingested": false
+    },
+    {
+      "id": "RQWpF2Gb-gU",
+      "title": "But what is quantum computing?  (Grover's Algorithm)",
+      "date": null,
+      "duration": 2214,
+      "duration_string": "36:54",
+      "url": "https://www.youtube.com/watch?v=RQWpF2Gb-gU",
+      "view_count": 3298191,
+      "ingested": false
+    },
+    {
+      "id": "6dTyOl1fmDo",
+      "title": "Why colliding blocks compute pi",
+      "date": null,
+      "duration": 1567,
+      "duration_string": "26:07",
+      "url": "https://www.youtube.com/watch?v=6dTyOl1fmDo",
+      "view_count": 5530561,
+      "ingested": false
+    },
+    {
+      "id": "hFMaT9oRbs4",
+      "title": "Terence Tao continuing history’s cleverest cosmological measurements",
+      "date": null,
+      "duration": 1535,
+      "duration_string": "25:35",
+      "url": "https://www.youtube.com/watch?v=hFMaT9oRbs4",
+      "view_count": 1465834,
+      "ingested": false
+    },
+    {
+      "id": "YdOXS_9_P4U",
+      "title": "Terence Tao on the cosmic distance ladder",
+      "date": null,
+      "duration": 1713,
+      "duration_string": "28:33",
+      "url": "https://www.youtube.com/watch?v=YdOXS_9_P4U",
+      "view_count": 4908606,
+      "ingested": false
+    },
+    {
+      "id": "IQqtsm-bBRU",
+      "title": "This open problem taught me what topology is",
+      "date": null,
+      "duration": 1646,
+      "duration_string": "27:26",
+      "url": "https://www.youtube.com/watch?v=IQqtsm-bBRU",
+      "view_count": 2189812,
+      "ingested": false
+    },
+    {
+      "id": "LPZh9BOjkQs",
+      "title": "Large Language Models explained briefly",
+      "date": null,
+      "duration": 478,
+      "duration_string": "7:58",
+      "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
+      "view_count": 5825359,
+      "ingested": false
+    },
+    {
+      "id": "piJkuavhV50",
+      "title": "Five puzzles for thinking outside the box",
+      "date": null,
+      "duration": 1782,
+      "duration_string": "29:42",
+      "url": "https://www.youtube.com/watch?v=piJkuavhV50",
+      "view_count": 1655588,
+      "ingested": false
+    },
+    {
+      "id": "rbu7Zu5X1zI",
+      "title": "How I animate 3Blue1Brown | A Manim demo with Ben Sparks",
+      "date": null,
+      "duration": 3221,
+      "duration_string": "53:41",
+      "url": "https://www.youtube.com/watch?v=rbu7Zu5X1zI",
+      "view_count": 2972495,
+      "ingested": false
+    },
+    {
+      "id": "EmKQsSDlaa4",
+      "title": "How are holograms possible?",
+      "date": null,
+      "duration": 2784,
+      "duration_string": "46:24",
+      "url": "https://www.youtube.com/watch?v=EmKQsSDlaa4",
+      "view_count": 6552551,
+      "ingested": false
+    },
+    {
+      "id": "9-Jl0dxWQs8",
+      "title": "How might LLMs store facts | Deep Learning Chapter 7",
+      "date": null,
+      "duration": 1363,
+      "duration_string": "22:43",
+      "url": "https://www.youtube.com/watch?v=9-Jl0dxWQs8",
+      "view_count": 1996042,
+      "ingested": false
+    },
+    {
+      "id": "W3I3kAg2J7w",
+      "title": "What \"Follow Your Dreams\" Misses | Harvey Mudd Commencement Speech 2024",
+      "date": null,
+      "duration": 930,
+      "duration_string": "15:30",
+      "url": "https://www.youtube.com/watch?v=W3I3kAg2J7w",
+      "view_count": 1473902,
+      "ingested": false
+    },
+    {
+      "id": "eMlx5fFNoYc",
+      "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+      "date": null,
+      "duration": 1570,
+      "duration_string": "26:10",
+      "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+      "view_count": 3927327,
+      "ingested": false
+    },
+    {
+      "id": "wjZofJX0v4M",
+      "title": "Transformers, the tech behind LLMs | Deep Learning Chapter 5",
+      "date": null,
+      "duration": 1634,
+      "duration_string": "27:14",
+      "url": "https://www.youtube.com/watch?v=wjZofJX0v4M",
+      "view_count": 9795353,
+      "ingested": false
+    },
+    {
+      "id": "Cz4Q4QOuoo8",
+      "title": "Answering viewer questions about refraction",
+      "date": null,
+      "duration": 805,
+      "duration_string": "13:25",
+      "url": "https://www.youtube.com/watch?v=Cz4Q4QOuoo8",
+      "view_count": 1067608,
+      "ingested": false
+    },
+    {
+      "id": "KTzGBJPuJwM",
+      "title": "But why would light \"slow down\"? | Visualizing Feynman's lecture on the refractive index",
+      "date": null,
+      "duration": 1714,
+      "duration_string": "28:34",
+      "url": "https://www.youtube.com/watch?v=KTzGBJPuJwM",
+      "view_count": 2744656,
+      "ingested": false
+    },
+    {
+      "id": "6a1fLEToyvU",
+      "title": "25 Math explainers you may enjoy | SoME3 results",
+      "date": null,
+      "duration": 1332,
+      "duration_string": "22:12",
+      "url": "https://www.youtube.com/watch?v=6a1fLEToyvU",
+      "view_count": 636901,
+      "ingested": false
+    },
+    {
+      "id": "aXRTczANuIs",
+      "title": "How wiggling charges give rise to light",
+      "date": null,
+      "duration": 1293,
+      "duration_string": "21:33",
+      "url": "https://www.youtube.com/watch?v=aXRTczANuIs",
+      "view_count": 1756399,
+      "ingested": false
+    },
+    {
+      "id": "QCX62YJCmGk",
+      "title": "This tests your understanding of light | The barber pole effect",
+      "date": null,
+      "duration": 597,
+      "duration_string": "9:57",
+      "url": "https://www.youtube.com/watch?v=QCX62YJCmGk",
+      "view_count": 1360948,
+      "ingested": false
+    },
+    {
+      "id": "d_qvLDhkg00",
+      "title": "A pretty reason why Gaussian + Gaussian = Gaussian",
+      "date": null,
+      "duration": 796,
+      "duration_string": "13:16",
+      "url": "https://www.youtube.com/watch?v=d_qvLDhkg00",
+      "view_count": 932342,
+      "ingested": false
+    },
+    {
+      "id": "YtkIWDE36qU",
+      "title": "This pattern breaks, but for a good reason | Moser's circle problem",
+      "date": null,
+      "duration": 973,
+      "duration_string": "16:13",
+      "url": "https://www.youtube.com/watch?v=YtkIWDE36qU",
+      "view_count": 2811285,
+      "ingested": false
+    },
+    {
+      "id": "NOCsdhzo6Jg",
+      "title": "How They Fool Ya (live) | Math parody of Hallelujah",
+      "date": null,
+      "duration": 240,
+      "duration_string": "4:00",
+      "url": "https://www.youtube.com/watch?v=NOCsdhzo6Jg",
+      "view_count": 1144433,
+      "ingested": false
+    },
+    {
+      "id": "IaSGqQa5O-M",
+      "title": "Convolutions | Why X+Y in probability is a beautiful mess",
+      "date": null,
+      "duration": 1645,
+      "duration_string": "27:25",
+      "url": "https://www.youtube.com/watch?v=IaSGqQa5O-M",
+      "view_count": 950948,
+      "ingested": false
+    },
+    {
+      "id": "cy8r7WSuT1I",
+      "title": "Why π is in the normal distribution (beyond integral tricks)",
+      "date": null,
+      "duration": 1486,
+      "duration_string": "24:46",
+      "url": "https://www.youtube.com/watch?v=cy8r7WSuT1I",
+      "view_count": 2142394,
+      "ingested": false
+    },
+    {
+      "id": "zeJD6dqJ5lo",
+      "title": "But what is the Central Limit Theorem?",
+      "date": null,
+      "duration": 1875,
+      "duration_string": "31:15",
+      "url": "https://www.youtube.com/watch?v=zeJD6dqJ5lo",
+      "view_count": 4357261,
+      "ingested": false
+    },
+    {
+      "id": "KuXjwB4LzSA",
+      "title": "But what is a convolution?",
+      "date": null,
+      "duration": 1381,
+      "duration_string": "23:01",
+      "url": "https://www.youtube.com/watch?v=KuXjwB4LzSA",
+      "view_count": 3515941,
+      "ingested": false
+    },
+    {
+      "id": "851U557j6HE",
+      "title": "Researchers thought this was a bug (Borwein integrals)",
+      "date": null,
+      "duration": 1046,
+      "duration_string": "17:26",
+      "url": "https://www.youtube.com/watch?v=851U557j6HE",
+      "view_count": 4556238,
+      "ingested": false
+    },
+    {
+      "id": "cDofhN-RJqg",
+      "title": "What makes a great math explanation? | SoME2 results",
+      "date": null,
+      "duration": 1021,
+      "duration_string": "17:01",
+      "url": "https://www.youtube.com/watch?v=cDofhN-RJqg",
+      "view_count": 763469,
+      "ingested": false
+    },
+    {
+      "id": "VYQVlVoWoPY",
+      "title": "How to lie using visual proofs",
+      "date": null,
+      "duration": 1129,
+      "duration_string": "18:49",
+      "url": "https://www.youtube.com/watch?v=VYQVlVoWoPY",
+      "view_count": 4135973,
+      "ingested": false
+    },
+    {
+      "id": "bOXCLR3Wric",
+      "title": "Olympiad level counting  (Generating functions)",
+      "date": null,
+      "duration": 2076,
+      "duration_string": "34:36",
+      "url": "https://www.youtube.com/watch?v=bOXCLR3Wric",
+      "view_count": 2291149,
+      "ingested": false
+    },
+    {
+      "id": "fRed0Xmc2Wg",
+      "title": "Oh, wait, actually the best Wordle opener is not “crane”…",
+      "date": null,
+      "duration": 653,
+      "duration_string": "10:53",
+      "url": "https://www.youtube.com/watch?v=fRed0Xmc2Wg",
+      "view_count": 6616784,
+      "ingested": false
+    },
+    {
+      "id": "v68zYyaEmEA",
+      "title": "Solving Wordle using information theory",
+      "date": null,
+      "duration": 1838,
+      "duration_string": "30:38",
+      "url": "https://www.youtube.com/watch?v=v68zYyaEmEA",
+      "view_count": 11645342,
+      "ingested": true
+    },
+    {
+      "id": "ltLUadnCyi0",
+      "title": "A tale of two problem solvers | Average cube shadow area",
+      "date": null,
+      "duration": 2406,
+      "duration_string": "40:06",
+      "url": "https://www.youtube.com/watch?v=ltLUadnCyi0",
+      "view_count": 3435604,
+      "ingested": false
+    },
+    {
+      "id": "F3Qixy-r_rQ",
+      "title": "2021 Summer of Math Exposition results",
+      "date": null,
+      "duration": 760,
+      "duration_string": "12:40",
+      "url": "https://www.youtube.com/watch?v=F3Qixy-r_rQ",
+      "view_count": 797046,
+      "ingested": false
+    },
+    {
+      "id": "LqbZpur38nw",
+      "title": "Beyond the Mandelbrot set, an intro to holomorphic dynamics",
+      "date": null,
+      "duration": 1656,
+      "duration_string": "27:36",
+      "url": "https://www.youtube.com/watch?v=LqbZpur38nw",
+      "view_count": 1727826,
+      "ingested": false
+    },
+    {
+      "id": "-RdOwhmqP5s",
+      "title": "Newton’s fractal (which Newton knew nothing about)",
+      "date": null,
+      "duration": 1566,
+      "duration_string": "26:06",
+      "url": "https://www.youtube.com/watch?v=-RdOwhmqP5s",
+      "view_count": 3106699,
+      "ingested": false
+    },
+    {
+      "id": "ojjzXyQCzso",
+      "title": "Make math videos! | Summer of Math Exposition announcement",
+      "date": null,
+      "duration": 1461,
+      "duration_string": "24:21",
+      "url": "https://www.youtube.com/watch?v=ojjzXyQCzso",
+      "view_count": 737483,
+      "ingested": false
+    },
+    {
+      "id": "e50Bj7jn9IQ",
+      "title": "A quick trick for computing eigenvalues | Chapter 15, Essence of linear algebra",
+      "date": null,
+      "duration": 793,
+      "duration_string": "13:13",
+      "url": "https://www.youtube.com/watch?v=e50Bj7jn9IQ",
+      "view_count": 1280870,
+      "ingested": false
+    },
+    {
+      "id": "O85OWBJ2ayo",
+      "title": "How (and why) to raise e to the power of a matrix | DE6",
+      "date": null,
+      "duration": 1627,
+      "duration_string": "27:07",
+      "url": "https://www.youtube.com/watch?v=O85OWBJ2ayo",
+      "view_count": 3426500,
+      "ingested": false
+    },
+    {
+      "id": "lG4VkPoG3ko",
+      "title": "The medical test paradox, and redesigning Bayes' rule",
+      "date": null,
+      "duration": 1274,
+      "duration_string": "21:14",
+      "url": "https://www.youtube.com/watch?v=lG4VkPoG3ko",
+      "view_count": 1396216,
+      "ingested": false
+    },
+    {
+      "id": "b3NxrZOu_CE",
+      "title": "Hamming codes part 2: The one-line implementation",
+      "date": null,
+      "duration": 1010,
+      "duration_string": "16:50",
+      "url": "https://www.youtube.com/watch?v=b3NxrZOu_CE",
+      "view_count": 933865,
+      "ingested": false
+    },
+    {
+      "id": "X8jsijhllIA",
+      "title": "But what are Hamming codes? The origin of error correction",
+      "date": null,
+      "duration": 1205,
+      "duration_string": "20:05",
+      "url": "https://www.youtube.com/watch?v=X8jsijhllIA",
+      "view_count": 2919372,
+      "ingested": false
+    },
+    {
+      "id": "mH0oCDa74tE",
+      "title": "Group theory, abstraction, and the 196,883-dimensional monster",
+      "date": null,
+      "duration": 1318,
+      "duration_string": "21:58",
+      "url": "https://www.youtube.com/watch?v=mH0oCDa74tE",
+      "view_count": 3622864,
+      "ingested": false
+    },
+    {
+      "id": "wTJI_WuZSwE",
+      "title": "The impossible chessboard puzzle",
+      "date": null,
+      "duration": 1122,
+      "duration_string": "18:42",
+      "url": "https://www.youtube.com/watch?v=wTJI_WuZSwE",
+      "view_count": 2124513,
+      "ingested": false
+    },
+    {
+      "id": "D__UaR5MQao",
+      "title": "The DP-3T algorithm for contact tracing (with Nicky Case)",
+      "date": null,
+      "duration": 264,
+      "duration_string": "4:24",
+      "url": "https://www.youtube.com/watch?v=D__UaR5MQao",
+      "view_count": 362966,
+      "ingested": false
+    },
+    {
+      "id": "ppWPuXsnf1Q",
+      "title": "Lockdown math announcement",
+      "date": null,
+      "duration": 133,
+      "duration_string": "2:13",
+      "url": "https://www.youtube.com/watch?v=ppWPuXsnf1Q",
+      "view_count": 954914,
+      "ingested": false
+    },
+    {
+      "id": "ZA4JkHKZM50",
+      "title": "Why “probability of 0” does not mean “impossible” | Probabilities of probabilities, part 2",
+      "date": null,
+      "duration": 601,
+      "duration_string": "10:01",
+      "url": "https://www.youtube.com/watch?v=ZA4JkHKZM50",
+      "view_count": 3303920,
+      "ingested": false
+    },
+    {
+      "id": "gxAaO2rsdIs",
+      "title": "Simulating an epidemic",
+      "date": null,
+      "duration": 1392,
+      "duration_string": "23:12",
+      "url": "https://www.youtube.com/watch?v=gxAaO2rsdIs",
+      "view_count": 5211442,
+      "ingested": false
+    },
+    {
+      "id": "8idr1WZ1A7Q",
+      "title": "Binomial distributions | Probabilities of probabilities, part 1",
+      "date": null,
+      "duration": 754,
+      "duration_string": "12:34",
+      "url": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
+      "view_count": 2552676,
+      "ingested": false
+    },
+    {
+      "id": "Kas0tIxDvrg",
+      "title": "Exponential growth and epidemics",
+      "date": null,
+      "duration": 537,
+      "duration_string": "8:57",
+      "url": "https://www.youtube.com/watch?v=Kas0tIxDvrg",
+      "view_count": 6015223,
+      "ingested": false
+    },
+    {
+      "id": "U_85TaXbeIo",
+      "title": "The quick proof of Bayes' theorem",
+      "date": null,
+      "duration": 228,
+      "duration_string": "3:48",
+      "url": "https://www.youtube.com/watch?v=U_85TaXbeIo",
+      "view_count": 553066,
+      "ingested": false
+    },
+    {
+      "id": "HZGCoVF3YvM",
+      "title": "Bayes theorem, the geometry of changing beliefs",
+      "date": null,
+      "duration": 911,
+      "duration_string": "15:11",
+      "url": "https://www.youtube.com/watch?v=HZGCoVF3YvM",
+      "view_count": 5673435,
+      "ingested": false
+    },
+    {
+      "id": "Agbh95KyWxY",
+      "title": "Q&A with Grant, windy walk edition",
+      "date": null,
+      "duration": 1146,
+      "duration_string": "19:06",
+      "url": "https://www.youtube.com/watch?v=Agbh95KyWxY",
+      "view_count": 448448,
+      "ingested": false
+    },
+    {
+      "id": "EK32jo7i5LQ",
+      "title": "Why do prime numbers make these spirals? | Dirichlet’s theorem and pi approximations",
+      "date": null,
+      "duration": 1341,
+      "duration_string": "22:21",
+      "url": "https://www.youtube.com/watch?v=EK32jo7i5LQ",
+      "view_count": 7445890,
+      "ingested": false
+    },
+    {
+      "id": "M64HUIJFTZM",
+      "title": "The unexpectedly hard windmill question (2011 IMO, Q2)",
+      "date": null,
+      "duration": 963,
+      "duration_string": "16:03",
+      "url": "https://www.youtube.com/watch?v=M64HUIJFTZM",
+      "view_count": 5580973,
+      "ingested": false
+    },
+    {
+      "id": "v0YEaeIClKY",
+      "title": "e^(iπ) in 3.14 minutes, using dynamics | DE5",
+      "date": null,
+      "duration": 248,
+      "duration_string": "4:08",
+      "url": "https://www.youtube.com/watch?v=v0YEaeIClKY",
+      "view_count": 3310015,
+      "ingested": false
+    },
+    {
+      "id": "-qgreAUpPwM",
+      "title": "Pure Fourier series animation montage",
+      "date": null,
+      "duration": 749,
+      "duration_string": "12:29",
+      "url": "https://www.youtube.com/watch?v=-qgreAUpPwM",
+      "view_count": 683705,
+      "ingested": false
+    },
+    {
+      "id": "r6sGWTCMz2k",
+      "title": "But what is a Fourier series?  From heat flow to drawing with circles | DE4",
+      "date": null,
+      "duration": 1487,
+      "duration_string": "24:47",
+      "url": "https://www.youtube.com/watch?v=r6sGWTCMz2k",
+      "view_count": 18725284,
+      "ingested": true
+    },
+    {
+      "id": "ToIXSwZ1pJU",
+      "title": "Solving the heat equation | DE3",
+      "date": null,
+      "duration": 853,
+      "duration_string": "14:13",
+      "url": "https://www.youtube.com/watch?v=ToIXSwZ1pJU",
+      "view_count": 1611803,
+      "ingested": false
+    },
+    {
+      "id": "ly4S0oi3Yz8",
+      "title": "But what is a partial differential equation?  | DE2",
+      "date": null,
+      "duration": 1059,
+      "duration_string": "17:39",
+      "url": "https://www.youtube.com/watch?v=ly4S0oi3Yz8",
+      "view_count": 3115223,
+      "ingested": false
+    },
+    {
+      "id": "p_di4Zn4wz4",
+      "title": "Differential equations, a tourist's guide | DE1",
+      "date": null,
+      "duration": 1636,
+      "duration_string": "27:16",
+      "url": "https://www.youtube.com/watch?v=p_di4Zn4wz4",
+      "view_count": 5588074,
+      "ingested": false
+    },
+    {
+      "id": "jBsC34PxzoM",
+      "title": "Cramer's rule, explained geometrically | Chapter 12, Essence of linear algebra",
+      "date": null,
+      "duration": 732,
+      "duration_string": "12:12",
+      "url": "https://www.youtube.com/watch?v=jBsC34PxzoM",
+      "view_count": 1466942,
+      "ingested": false
+    },
+    {
+      "id": "brU5yLm9DZM",
+      "title": "How colliding blocks act like a beam of light...to compute pi.",
+      "date": null,
+      "duration": 881,
+      "duration_string": "14:41",
+      "url": "https://www.youtube.com/watch?v=brU5yLm9DZM",
+      "view_count": 1375061,
+      "ingested": false
+    },
+    {
+      "id": "HEfHFsfGXjs",
+      "title": "The most unexpected answer to a counting puzzle",
+      "date": null,
+      "duration": 313,
+      "duration_string": "5:13",
+      "url": "https://www.youtube.com/watch?v=HEfHFsfGXjs",
+      "view_count": 14256012,
+      "ingested": true
+    },
+    {
+      "id": "GNcFjFmqEc8",
+      "title": "But why is a sphere's surface area four times its shadow?",
+      "date": null,
+      "duration": 951,
+      "duration_string": "15:51",
+      "url": "https://www.youtube.com/watch?v=GNcFjFmqEc8",
+      "view_count": 8684677,
+      "ingested": false
+    },
+    {
+      "id": "yuVqxCSsE7c",
+      "title": "Using topology for discrete problems | The Borsuk-Ulam theorem and stolen necklaces",
+      "date": null,
+      "duration": 1162,
+      "duration_string": "19:22",
+      "url": "https://www.youtube.com/watch?v=yuVqxCSsE7c",
+      "view_count": 949091,
+      "ingested": false
+    },
+    {
+      "id": "_UoTTq651dE",
+      "title": "Why 5/3 is a fundamental constant for turbulence",
+      "date": null,
+      "duration": 688,
+      "duration_string": "11:28",
+      "url": "https://www.youtube.com/watch?v=_UoTTq651dE",
+      "view_count": 783104,
+      "ingested": false
+    },
+    {
+      "id": "zjMuIxRvygQ",
+      "title": "Quaternions and 3d rotation, explained interactively",
+      "date": null,
+      "duration": 359,
+      "duration_string": "5:59",
+      "url": "https://www.youtube.com/watch?v=zjMuIxRvygQ",
+      "view_count": 1484580,
+      "ingested": false
+    },
+    {
+      "id": "d4EgbgTm0Bg",
+      "title": "Visualizing the 4d numbers Quaternions",
+      "date": null,
+      "duration": 1911,
+      "duration_string": "31:51",
+      "url": "https://www.youtube.com/watch?v=d4EgbgTm0Bg",
+      "view_count": 5392767,
+      "ingested": false
+    },
+    {
+      "id": "Qe6o9j4IjTo",
+      "title": "Q&A with Grant Sanderson (3blue1brown)",
+      "date": null,
+      "duration": 621,
+      "duration_string": "10:21",
+      "url": "https://www.youtube.com/watch?v=Qe6o9j4IjTo",
+      "view_count": 824687,
+      "ingested": false
+    },
+    {
+      "id": "pQa_tWZmlGs",
+      "title": "Why slicing a cone gives an ellipse (beautiful proof)",
+      "date": null,
+      "duration": 772,
+      "duration_string": "12:52",
+      "url": "https://www.youtube.com/watch?v=pQa_tWZmlGs",
+      "view_count": 2332784,
+      "ingested": false
+    },
+    {
+      "id": "VcgJro0sTiM",
+      "title": "Other math channels you'd enjoy",
+      "date": null,
+      "duration": 489,
+      "duration_string": "8:09",
+      "url": "https://www.youtube.com/watch?v=VcgJro0sTiM",
+      "view_count": 238740,
+      "ingested": false
+    },
+    {
+      "id": "rB83DpBJQsE",
+      "title": "Divergence and curl:  The language of Maxwell's equations, fluid flow, and more",
+      "date": null,
+      "duration": 942,
+      "duration_string": "15:42",
+      "url": "https://www.youtube.com/watch?v=rB83DpBJQsE",
+      "view_count": 5046137,
+      "ingested": false
+    },
+    {
+      "id": "CfW845LNObM",
+      "title": "The other way to visualize derivatives | Chapter 12, Essence of calculus",
+      "date": null,
+      "duration": 866,
+      "duration_string": "14:26",
+      "url": "https://www.youtube.com/watch?v=CfW845LNObM",
+      "view_count": 3748380,
+      "ingested": false
+    },
+    {
+      "id": "8GPy_UMV-08",
+      "title": "The Wallis product for pi, proved geometrically",
+      "date": null,
+      "duration": 1527,
+      "duration_string": "25:27",
+      "url": "https://www.youtube.com/watch?v=8GPy_UMV-08",
+      "view_count": 896102,
+      "ingested": false
+    },
+    {
+      "id": "b7FxPsqfkOY",
+      "title": "Winding numbers and domain coloring",
+      "date": null,
+      "duration": 1390,
+      "duration_string": "23:10",
+      "url": "https://www.youtube.com/watch?v=b7FxPsqfkOY",
+      "view_count": 965390,
+      "ingested": false
+    },
+    {
+      "id": "bcPTiiiYDs8",
+      "title": "How pi was almost 6.283185...",
+      "date": null,
+      "duration": 353,
+      "duration_string": "5:53",
+      "url": "https://www.youtube.com/watch?v=bcPTiiiYDs8",
+      "view_count": 1763816,
+      "ingested": false
+    },
+    {
+      "id": "d-o3eB9sfls",
+      "title": "Why is pi here?  And why is it squared?  A geometric answer to the Basel problem",
+      "date": null,
+      "duration": 1028,
+      "duration_string": "17:08",
+      "url": "https://www.youtube.com/watch?v=d-o3eB9sfls",
+      "view_count": 7161002,
+      "ingested": false
+    },
+    {
+      "id": "MBnnXbOM5S4",
+      "title": "The more general uncertainty principle, regarding Fourier transforms",
+      "date": null,
+      "duration": 1087,
+      "duration_string": "18:07",
+      "url": "https://www.youtube.com/watch?v=MBnnXbOM5S4",
+      "view_count": 2275998,
+      "ingested": false
+    },
+    {
+      "id": "spUNpyF58BY",
+      "title": "But what is the Fourier Transform?  A visual introduction.",
+      "date": null,
+      "duration": 1182,
+      "duration_string": "19:42",
+      "url": "https://www.youtube.com/watch?v=spUNpyF58BY",
+      "view_count": 12003767,
+      "ingested": true
+    },
+    {
+      "id": "VvCytJvd4H0",
+      "title": "Why this puzzle is impossible",
+      "date": null,
+      "duration": 1177,
+      "duration_string": "19:37",
+      "url": "https://www.youtube.com/watch?v=VvCytJvd4H0",
+      "view_count": 3268299,
+      "ingested": false
+    },
+    {
+      "id": "liL66CApESk",
+      "title": "Q&A #2 + Net Neutrality Nuance",
+      "date": null,
+      "duration": 245,
+      "duration_string": "4:05",
+      "url": "https://www.youtube.com/watch?v=liL66CApESk",
+      "view_count": 148715,
+      "ingested": false
+    },
+    {
+      "id": "OkmNXy7er84",
+      "title": "The hardest problem on the hardest test",
+      "date": null,
+      "duration": 675,
+      "duration_string": "11:15",
+      "url": "https://www.youtube.com/watch?v=OkmNXy7er84",
+      "view_count": 16372458,
+      "ingested": true
+    },
+    {
+      "id": "tIeHLnjs5U8",
+      "title": "Backpropagation calculus | Deep Learning Chapter 4",
+      "date": null,
+      "duration": 618,
+      "duration_string": "10:18",
+      "url": "https://www.youtube.com/watch?v=tIeHLnjs5U8",
+      "view_count": 3720139,
+      "ingested": false
+    },
+    {
+      "id": "Ilg3gGewQ5U",
+      "title": "Backpropagation, intuitively | Deep Learning Chapter 3",
+      "date": null,
+      "duration": 767,
+      "duration_string": "12:47",
+      "url": "https://www.youtube.com/watch?v=Ilg3gGewQ5U",
+      "view_count": 5923148,
+      "ingested": false
+    },
+    {
+      "id": "IHZwWFHWa-w",
+      "title": "Gradient descent, how neural networks learn | Deep Learning Chapter 2",
+      "date": null,
+      "duration": 1233,
+      "duration_string": "20:33",
+      "url": "https://www.youtube.com/watch?v=IHZwWFHWa-w",
+      "view_count": 8997740,
+      "ingested": false
+    },
+    {
+      "id": "aircAruvnKk",
+      "title": "But what is a neural network? | Deep learning chapter 1",
+      "date": null,
+      "duration": 1120,
+      "duration_string": "18:40",
+      "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+      "view_count": 22794382,
+      "ingested": true
+    },
+    {
+      "id": "MzRCDLre1b4",
+      "title": "Some light quantum mechanics (with minutephysics)",
+      "date": null,
+      "duration": 1342,
+      "duration_string": "22:22",
+      "url": "https://www.youtube.com/watch?v=MzRCDLre1b4",
+      "view_count": 2125540,
+      "ingested": false
+    },
+    {
+      "id": "zwAD6dRSVyI",
+      "title": "Thinking outside the 10-dimensional box",
+      "date": null,
+      "duration": 1513,
+      "duration_string": "25:13",
+      "url": "https://www.youtube.com/watch?v=zwAD6dRSVyI",
+      "view_count": 3135315,
+      "ingested": false
+    },
+    {
+      "id": "3s7h2MHQtxc",
+      "title": "Hilbert's Curve: Is infinite math useful?",
+      "date": null,
+      "duration": 1098,
+      "duration_string": "18:18",
+      "url": "https://www.youtube.com/watch?v=3s7h2MHQtxc",
+      "view_count": 2395266,
+      "ingested": false
+    },
+    {
+      "id": "S9JGmA5_unY",
+      "title": "How secure is 256 bit security?",
+      "date": null,
+      "duration": 306,
+      "duration_string": "5:06",
+      "url": "https://www.youtube.com/watch?v=S9JGmA5_unY",
+      "view_count": 3605770,
+      "ingested": false
+    },
+    {
+      "id": "bBC-nXj3Ng4",
+      "title": "But how does bitcoin actually work?",
+      "date": null,
+      "duration": 1516,
+      "duration_string": "25:16",
+      "url": "https://www.youtube.com/watch?v=bBC-nXj3Ng4",
+      "view_count": 17899747,
+      "ingested": true
+    },
+    {
+      "id": "QJYmyhnaaek",
+      "title": "All possible pythagorean triples, visualized",
+      "date": null,
+      "duration": 893,
+      "duration_string": "14:53",
+      "url": "https://www.youtube.com/watch?v=QJYmyhnaaek",
+      "view_count": 4005676,
+      "ingested": false
+    },
+    {
+      "id": "NaL_Cb42WyY",
+      "title": "Pi hiding in prime regularities",
+      "date": null,
+      "duration": 1783,
+      "duration_string": "29:43",
+      "url": "https://www.youtube.com/watch?v=NaL_Cb42WyY",
+      "view_count": 2786159,
+      "ingested": false
+    },
+    {
+      "id": "3d6DsjIBzJ4",
+      "title": "Taylor series | Chapter 11, Essence of calculus",
+      "date": null,
+      "duration": 1340,
+      "duration_string": "22:20",
+      "url": "https://www.youtube.com/watch?v=3d6DsjIBzJ4",
+      "view_count": 4938944,
+      "ingested": false
+    },
+    {
+      "id": "BLkz5LGWihw",
+      "title": "Higher order derivatives | Chapter 10, Essence of calculus",
+      "date": null,
+      "duration": 339,
+      "duration_string": "5:39",
+      "url": "https://www.youtube.com/watch?v=BLkz5LGWihw",
+      "view_count": 878332,
+      "ingested": false
+    },
+    {
+      "id": "FnJqaIESC2s",
+      "title": "What does area have to do with slope? | Chapter 9, Essence of calculus",
+      "date": null,
+      "duration": 759,
+      "duration_string": "12:39",
+      "url": "https://www.youtube.com/watch?v=FnJqaIESC2s",
+      "view_count": 1640907,
+      "ingested": false
+    },
+    {
+      "id": "rfG8ce4nNh0",
+      "title": "Integration and the fundamental theorem of calculus | Chapter 8, Essence of calculus",
+      "date": null,
+      "duration": 1246,
+      "duration_string": "20:46",
+      "url": "https://www.youtube.com/watch?v=rfG8ce4nNh0",
+      "view_count": 2931526,
+      "ingested": false
+    },
+    {
+      "id": "kfF40MiS7zA",
+      "title": "Limits, L'Hôpital's rule, and epsilon delta definitions | Chapter 7, Essence of calculus",
+      "date": null,
+      "duration": 1107,
+      "duration_string": "18:27",
+      "url": "https://www.youtube.com/watch?v=kfF40MiS7zA",
+      "view_count": 2490133,
+      "ingested": false
+    },
+    {
+      "id": "qb40J4N1fa4",
+      "title": "Implicit differentiation, what's going on here? | Chapter 6, Essence of calculus",
+      "date": null,
+      "duration": 934,
+      "duration_string": "15:34",
+      "url": "https://www.youtube.com/watch?v=qb40J4N1fa4",
+      "view_count": 2233097,
+      "ingested": false
+    },
+    {
+      "id": "m2MIpDrF7Es",
+      "title": "What's so special about Euler's number e? | Chapter 5, Essence of calculus",
+      "date": null,
+      "duration": 830,
+      "duration_string": "13:50",
+      "url": "https://www.youtube.com/watch?v=m2MIpDrF7Es",
+      "view_count": 4982742,
+      "ingested": false
+    },
+    {
+      "id": "YG15m2VwSjA",
+      "title": "Visualizing the chain rule and product rule | Chapter 4, Essence of calculus",
+      "date": null,
+      "duration": 956,
+      "duration_string": "15:56",
+      "url": "https://www.youtube.com/watch?v=YG15m2VwSjA",
+      "view_count": 2222226,
+      "ingested": false
+    },
+    {
+      "id": "S0_qX4VJhMQ",
+      "title": "Derivative formulas through geometry | Chapter 3, Essence of calculus",
+      "date": null,
+      "duration": 1054,
+      "duration_string": "17:34",
+      "url": "https://www.youtube.com/watch?v=S0_qX4VJhMQ",
+      "view_count": 3453382,
+      "ingested": false
+    },
+    {
+      "id": "9vKqVkMQHKk",
+      "title": "The paradox of the derivative | Chapter 2, Essence of calculus",
+      "date": null,
+      "duration": 1010,
+      "duration_string": "16:50",
+      "url": "https://www.youtube.com/watch?v=9vKqVkMQHKk",
+      "view_count": 4278435,
+      "ingested": false
+    },
+    {
+      "id": "WUvTyaaNkzM",
+      "title": "The essence of calculus",
+      "date": null,
+      "duration": 1025,
+      "duration_string": "17:05",
+      "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+      "view_count": 11057944,
+      "ingested": false
+    },
+    {
+      "id": "mvmuCPvRoWQ",
+      "title": "Euler's formula with introductory group theory",
+      "date": null,
+      "duration": 1468,
+      "duration_string": "24:28",
+      "url": "https://www.youtube.com/watch?v=mvmuCPvRoWQ",
+      "view_count": 2679883,
+      "ingested": false
+    },
+    {
+      "id": "gB9n2gHsHN4",
+      "title": "Fractals are typically not self-similar",
+      "date": null,
+      "duration": 1296,
+      "duration_string": "21:36",
+      "url": "https://www.youtube.com/watch?v=gB9n2gHsHN4",
+      "view_count": 4460104,
+      "ingested": false
+    },
+    {
+      "id": "IxNb1WG_Ido",
+      "title": "Tattoos on Math",
+      "date": null,
+      "duration": 495,
+      "duration_string": "8:15",
+      "url": "https://www.youtube.com/watch?v=IxNb1WG_Ido",
+      "view_count": 762157,
+      "ingested": false
+    },
+    {
+      "id": "sD0NjbwqlYw",
+      "title": "But what is the Riemann zeta function? Visualizing analytic continuation",
+      "date": null,
+      "duration": 1331,
+      "duration_string": "22:11",
+      "url": "https://www.youtube.com/watch?v=sD0NjbwqlYw",
+      "view_count": 5176058,
+      "ingested": false
+    },
+    {
+      "id": "bdMfjfT0lKk",
+      "title": "Binary, Hanoi, and Sierpinski, part 2",
+      "date": null,
+      "duration": 820,
+      "duration_string": "13:40",
+      "url": "https://www.youtube.com/watch?v=bdMfjfT0lKk",
+      "view_count": 324035,
+      "ingested": false
+    },
+    {
+      "id": "2SUvWfNJSsM",
+      "title": "Binary, Hanoi and Sierpinski, part 1",
+      "date": null,
+      "duration": 839,
+      "duration_string": "13:59",
+      "url": "https://www.youtube.com/watch?v=2SUvWfNJSsM",
+      "view_count": 758225,
+      "ingested": false
+    },
+    {
+      "id": "R7p-nPg8t_g",
+      "title": "3blue1brown channel trailer",
+      "date": null,
+      "duration": 92,
+      "duration_string": "1:32",
+      "url": "https://www.youtube.com/watch?v=R7p-nPg8t_g",
+      "view_count": 408115,
+      "ingested": false
+    },
+    {
+      "id": "AmgkSdhK4K8",
+      "title": "Who cares about topology?   (Old version)",
+      "date": null,
+      "duration": 990,
+      "duration_string": "16:30",
+      "url": "https://www.youtube.com/watch?v=AmgkSdhK4K8",
+      "view_count": 3282041,
+      "ingested": false
+    },
+    {
+      "id": "TgKwz5Ikpc8",
+      "title": "Abstract vector spaces | Chapter 16, Essence of linear algebra",
+      "date": null,
+      "duration": 1006,
+      "duration_string": "16:46",
+      "url": "https://www.youtube.com/watch?v=TgKwz5Ikpc8",
+      "view_count": 1697727,
+      "ingested": false
+    },
+    {
+      "id": "PFDu9oVAE-g",
+      "title": "Eigenvectors and eigenvalues | Chapter 14, Essence of linear algebra",
+      "date": null,
+      "duration": 1036,
+      "duration_string": "17:16",
+      "url": "https://www.youtube.com/watch?v=PFDu9oVAE-g",
+      "view_count": 6028061,
+      "ingested": false
+    },
+    {
+      "id": "P2LTAUO1TdA",
+      "title": "Change of basis | Chapter 13, Essence of linear algebra",
+      "date": null,
+      "duration": 771,
+      "duration_string": "12:51",
+      "url": "https://www.youtube.com/watch?v=P2LTAUO1TdA",
+      "view_count": 2422383,
+      "ingested": false
+    },
+    {
+      "id": "eu6i7WJeinw",
+      "title": "Cross products | Chapter 10, Essence of linear algebra",
+      "date": null,
+      "duration": 534,
+      "duration_string": "8:54",
+      "url": "https://www.youtube.com/watch?v=eu6i7WJeinw",
+      "view_count": 2309249,
+      "ingested": false
+    },
+    {
+      "id": "BaM7OCEm3G0",
+      "title": "Cross products in the light of linear transformations | Chapter 11, Essence of linear algebra",
+      "date": null,
+      "duration": 790,
+      "duration_string": "13:10",
+      "url": "https://www.youtube.com/watch?v=BaM7OCEm3G0",
+      "view_count": 1528925,
+      "ingested": false
+    },
+    {
+      "id": "LyGKycYT2v0",
+      "title": "Dot products and duality | Chapter 9, Essence of linear algebra",
+      "date": null,
+      "duration": 852,
+      "duration_string": "14:12",
+      "url": "https://www.youtube.com/watch?v=LyGKycYT2v0",
+      "view_count": 3173860,
+      "ingested": false
+    },
+    {
+      "id": "v8VSDg_WQlA",
+      "title": "Nonsquare matrices as transformations between dimensions | Chapter 8, Essence of linear algebra",
+      "date": null,
+      "duration": 267,
+      "duration_string": "4:27",
+      "url": "https://www.youtube.com/watch?v=v8VSDg_WQlA",
+      "view_count": 1951341,
+      "ingested": false
+    },
+    {
+      "id": "uQhTuRlWMxw",
+      "title": "Inverse matrices, column space and null space | Chapter 7, Essence of linear algebra",
+      "date": null,
+      "duration": 729,
+      "duration_string": "12:09",
+      "url": "https://www.youtube.com/watch?v=uQhTuRlWMxw",
+      "view_count": 3639731,
+      "ingested": false
+    },
+    {
+      "id": "Ip3X9LOh2dk",
+      "title": "The determinant | Chapter 6, Essence of linear algebra",
+      "date": null,
+      "duration": 603,
+      "duration_string": "10:03",
+      "url": "https://www.youtube.com/watch?v=Ip3X9LOh2dk",
+      "view_count": 4694957,
+      "ingested": false
+    },
+    {
+      "id": "rHLEWRxRGiM",
+      "title": "Three-dimensional linear transformations | Chapter 5, Essence of linear algebra",
+      "date": null,
+      "duration": 286,
+      "duration_string": "4:46",
+      "url": "https://www.youtube.com/watch?v=rHLEWRxRGiM",
+      "view_count": 2551526,
+      "ingested": false
+    },
+    {
+      "id": "XkY2DOUCWMU",
+      "title": "Matrix multiplication as composition | Chapter 4, Essence of linear algebra",
+      "date": null,
+      "duration": 604,
+      "duration_string": "10:04",
+      "url": "https://www.youtube.com/watch?v=XkY2DOUCWMU",
+      "view_count": 4147575,
+      "ingested": false
+    },
+    {
+      "id": "kYB8IZa5AuE",
+      "title": "Linear transformations and matrices | Chapter 3, Essence of linear algebra",
+      "date": null,
+      "duration": 659,
+      "duration_string": "10:59",
+      "url": "https://www.youtube.com/watch?v=kYB8IZa5AuE",
+      "view_count": 6701647,
+      "ingested": false
+    },
+    {
+      "id": "k7RM-ot2NWY",
+      "title": "Linear combinations, span, and basis vectors | Chapter 2, Essence of linear algebra",
+      "date": null,
+      "duration": 599,
+      "duration_string": "9:59",
+      "url": "https://www.youtube.com/watch?v=k7RM-ot2NWY",
+      "view_count": 6981545,
+      "ingested": false
+    },
+    {
+      "id": "fNk_zzaMoSs",
+      "title": "Vectors | Chapter 1, Essence of linear algebra",
+      "date": null,
+      "duration": 592,
+      "duration_string": "9:52",
+      "url": "https://www.youtube.com/watch?v=fNk_zzaMoSs",
+      "view_count": 11449539,
+      "ingested": false
+    },
+    {
+      "id": "kjBOesZCoqc",
+      "title": "Essence of linear algebra preview",
+      "date": null,
+      "duration": 309,
+      "duration_string": "5:09",
+      "url": "https://www.youtube.com/watch?v=kjBOesZCoqc",
+      "view_count": 2686793,
+      "ingested": false
+    },
+    {
+      "id": "sULa9Lc4pck",
+      "title": "Triangle of Power",
+      "date": null,
+      "duration": 462,
+      "duration_string": "7:42",
+      "url": "https://www.youtube.com/watch?v=sULa9Lc4pck",
+      "view_count": 805765,
+      "ingested": false
+    },
+    {
+      "id": "Iq1a_KJTWJ8",
+      "title": "Snell's law proof using springs",
+      "date": null,
+      "duration": 237,
+      "duration_string": "3:57",
+      "url": "https://www.youtube.com/watch?v=Iq1a_KJTWJ8",
+      "view_count": 218113,
+      "ingested": false
+    },
+    {
+      "id": "Cld0p3a43fU",
+      "title": "The Brachistochrone, with Steven Strogatz",
+      "date": null,
+      "duration": 962,
+      "duration_string": "16:02",
+      "url": "https://www.youtube.com/watch?v=Cld0p3a43fU",
+      "view_count": 1401422,
+      "ingested": false
+    },
+    {
+      "id": "RU0wScIj36o",
+      "title": "Fractal charm: Space filling curves",
+      "date": null,
+      "duration": 154,
+      "duration_string": "2:34",
+      "url": "https://www.youtube.com/watch?v=RU0wScIj36o",
+      "view_count": 2079763,
+      "ingested": false
+    },
+    {
+      "id": "cyW5z-M2yzw",
+      "title": "Music And Measure Theory",
+      "date": null,
+      "duration": 793,
+      "duration_string": "13:13",
+      "url": "https://www.youtube.com/watch?v=cyW5z-M2yzw",
+      "view_count": 1649701,
+      "ingested": false
+    },
+    {
+      "id": "1SMmc9gQmHQ",
+      "title": "How to count to 1000 on two hands",
+      "date": null,
+      "duration": 154,
+      "duration_string": "2:34",
+      "url": "https://www.youtube.com/watch?v=1SMmc9gQmHQ",
+      "view_count": 449738,
+      "ingested": false
+    },
+    {
+      "id": "XFDM1ip5HdU",
+      "title": "What does it feel like to invent math?",
+      "date": null,
+      "duration": 908,
+      "duration_string": "15:08",
+      "url": "https://www.youtube.com/watch?v=XFDM1ip5HdU",
+      "view_count": 4511680,
+      "ingested": false
+    },
+    {
+      "id": "-9OUyo8NFZg",
+      "title": "Euler's Formula and Graph Duality",
+      "date": null,
+      "duration": 447,
+      "duration_string": "7:27",
+      "url": "https://www.youtube.com/watch?v=-9OUyo8NFZg",
+      "view_count": 518219,
+      "ingested": false
+    },
+    {
+      "id": "zLzLxVeqdQg",
+      "title": "Euler's Formula Poem",
+      "date": null,
+      "duration": 64,
+      "duration_string": "1:04",
+      "url": "https://www.youtube.com/watch?v=zLzLxVeqdQg",
+      "view_count": 180038,
+      "ingested": false
+    },
+    {
+      "id": "F_0yfvm0UoU",
+      "title": "e to the pi i, a nontraditional take (old version)",
+      "date": null,
+      "duration": 374,
+      "duration_string": "6:14",
+      "url": "https://www.youtube.com/watch?v=F_0yfvm0UoU",
+      "view_count": 2750841,
+      "ingested": false
+    },
+    {
+      "id": "QvuQH4_05LI",
+      "title": "Tips to be a better problem solver [Last live lecture] | Ep. 10 Lockdown live math",
+      "date": null,
+      "duration": 4100,
+      "duration_string": "1:08:20",
+      "url": "https://www.youtube.com/watch?v=QvuQH4_05LI",
+      "view_count": 1427485,
+      "ingested": false
+    },
+    {
+      "id": "pq9LcwC7CoY",
+      "title": "Intuition for i to the power i | Ep. 9 Lockdown live math",
+      "date": null,
+      "duration": 4418,
+      "duration_string": "1:13:38",
+      "url": "https://www.youtube.com/watch?v=pq9LcwC7CoY",
+      "view_count": 585980,
+      "ingested": false
+    },
+    {
+      "id": "elQVZLLiod4",
+      "title": "The power tower puzzle | Ep. 8 Lockdown live math",
+      "date": null,
+      "duration": 3230,
+      "duration_string": "53:50",
+      "url": "https://www.youtube.com/watch?v=elQVZLLiod4",
+      "view_count": 932527,
+      "ingested": false
+    },
+    {
+      "id": "4PDoT7jtxmw",
+      "title": "What makes the natural log \"natural\"? | Ep. 7 Lockdown live math",
+      "date": null,
+      "duration": 4494,
+      "duration_string": "1:14:54",
+      "url": "https://www.youtube.com/watch?v=4PDoT7jtxmw",
+      "view_count": 1713129,
+      "ingested": false
+    },
+    {
+      "id": "cEvgcoyZvB4",
+      "title": "Logarithm Fundamentals | Ep. 6 Lockdown live math",
+      "date": null,
+      "duration": 5662,
+      "duration_string": "1:34:22",
+      "url": "https://www.youtube.com/watch?v=cEvgcoyZvB4",
+      "view_count": 1160506,
+      "ingested": false
+    },
+    {
+      "id": "IAEASE5GjdI",
+      "title": "Imaginary interest rates | Ep. 5 Lockdown live math",
+      "date": null,
+      "duration": 3787,
+      "duration_string": "1:03:07",
+      "url": "https://www.youtube.com/watch?v=IAEASE5GjdI",
+      "view_count": 946042,
+      "ingested": false
+    },
+    {
+      "id": "ZxYOEwM6Wbk",
+      "title": "What is Euler's formula actually saying? | Ep. 4 Lockdown live math",
+      "date": null,
+      "duration": 3076,
+      "duration_string": "51:16",
+      "url": "https://www.youtube.com/watch?v=ZxYOEwM6Wbk",
+      "view_count": 1651987,
+      "ingested": false
+    },
+    {
+      "id": "5PcpBw5Hbwo",
+      "title": "Complex number fundamentals | Ep. 3 Lockdown live math",
+      "date": null,
+      "duration": 4931,
+      "duration_string": "1:22:11",
+      "url": "https://www.youtube.com/watch?v=5PcpBw5Hbwo",
+      "view_count": 2071840,
+      "ingested": false
+    },
+    {
+      "id": "yBw67Fb31Cs",
+      "title": "Trigonometry fundamentals | Ep. 2 Lockdown live math",
+      "date": null,
+      "duration": 4397,
+      "duration_string": "1:13:17",
+      "url": "https://www.youtube.com/watch?v=yBw67Fb31Cs",
+      "view_count": 1989457,
+      "ingested": false
+    },
+    {
+      "id": "MHXO86wKeDY",
+      "title": "The simpler quadratic formula | Ep. 1 Lockdown live math",
+      "date": null,
+      "duration": 3131,
+      "duration_string": "52:11",
+      "url": "https://www.youtube.com/watch?v=MHXO86wKeDY",
+      "view_count": 1451519,
+      "ingested": false
+    },
+    {
+      "id": "Y7ImxZ_YhJk",
+      "title": "Escher's most mind-bending piece",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Y7ImxZ_YhJk",
+      "view_count": 283000,
+      "ingested": false
+    },
+    {
+      "id": "4h5BEALuh44",
+      "title": "The subset sum puzzle",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=4h5BEALuh44",
+      "view_count": 303000,
+      "ingested": false
+    },
+    {
+      "id": "Qoes9bTJtn0",
+      "title": "Bacteria Grid Puzzle Solution",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Qoes9bTJtn0",
+      "view_count": 967000,
+      "ingested": false
+    },
+    {
+      "id": "d0ai33oqqDE",
+      "title": "The lattice bacteria puzzle",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=d0ai33oqqDE",
+      "view_count": 808000,
+      "ingested": false
+    },
+    {
+      "id": "7gG91SZwBoE",
+      "title": "Solution to the ladybug clock puzzle",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=7gG91SZwBoE",
+      "view_count": 968000,
+      "ingested": false
+    },
+    {
+      "id": "t3jZ2xGOvYg",
+      "title": "The ladybug clock puzzle",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=t3jZ2xGOvYg",
+      "view_count": 734000,
+      "ingested": false
+    },
+    {
+      "id": "bnjKwiUg-kw",
+      "title": "The dynamics of e^(πi)",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=bnjKwiUg-kw",
+      "view_count": 1200000,
+      "ingested": false
+    },
+    {
+      "id": "1lZpowy21Gc",
+      "title": "Incomplete open cubes",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=1lZpowy21Gc",
+      "view_count": 239000,
+      "ingested": false
+    },
+    {
+      "id": "j5h9dBtWZXM",
+      "title": "How AI connects text and images",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=j5h9dBtWZXM",
+      "view_count": 108000,
+      "ingested": false
+    },
+    {
+      "id": "XX8mjBXBqz8",
+      "title": "Testing your intuition for quantum computing",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=XX8mjBXBqz8",
+      "view_count": 1400000,
+      "ingested": false
+    },
+    {
+      "id": "aQwEJKWATlE",
+      "title": "How to measure nearby galaxies",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=aQwEJKWATlE",
+      "view_count": 181000,
+      "ingested": false
+    },
+    {
+      "id": "aw-8BhCilj0",
+      "title": "Measuring the distance to Venus without radar",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=aw-8BhCilj0",
+      "view_count": 413000,
+      "ingested": false
+    },
+    {
+      "id": "M6LUPYsjods",
+      "title": "Measuring the speed of light using Jupiter's moons",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=M6LUPYsjods",
+      "view_count": 2300000,
+      "ingested": false
+    },
+    {
+      "id": "mHya9J9pkq4",
+      "title": "The tragic tale of Guillaume Le Gentil",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=mHya9J9pkq4",
+      "view_count": 290000,
+      "ingested": false
+    },
+    {
+      "id": "C8baNzpnZ7o",
+      "title": "Zooming out by powers of 10",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=C8baNzpnZ7o",
+      "view_count": 2600000,
+      "ingested": false
+    },
+    {
+      "id": "TZAC0WFemvE",
+      "title": "When being beautifully wrong leads to discovery",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=TZAC0WFemvE",
+      "view_count": 2300000,
+      "ingested": false
+    },
+    {
+      "id": "YP1mMXRCnaI",
+      "title": "Why the ancient Greeks rejected heliocentrism",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=YP1mMXRCnaI",
+      "view_count": 1300000,
+      "ingested": false
+    },
+    {
+      "id": "gzbFNnTCkqQ",
+      "title": "How to estimate the distance to the sun",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=gzbFNnTCkqQ",
+      "view_count": 1300000,
+      "ingested": false
+    },
+    {
+      "id": "drmphB3rdHY",
+      "title": "How Aristarchus deduced the distance to the moon",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=drmphB3rdHY",
+      "view_count": 135000,
+      "ingested": false
+    },
+    {
+      "id": "9s0srZneJ38",
+      "title": "How Earth's size was computed by Eratosthenes",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=9s0srZneJ38",
+      "view_count": 280000,
+      "ingested": false
+    },
+    {
+      "id": "uT4-WVa-YfU",
+      "title": "Measuring the earth with Terence Tao",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=uT4-WVa-YfU",
+      "view_count": 652000,
+      "ingested": false
+    },
+    {
+      "id": "K-pGGb0f3tc",
+      "title": "The topology of two-note chords",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=K-pGGb0f3tc",
+      "view_count": 1300000,
+      "ingested": false
+    },
+    {
+      "id": "0TdBP9m4R74",
+      "title": "The barber pole optical mystery",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=0TdBP9m4R74",
+      "view_count": 896000,
+      "ingested": false
+    },
+    {
+      "id": "zxOK2vKVfQM",
+      "title": "Monge's Theorem",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=zxOK2vKVfQM",
+      "view_count": 2300000,
+      "ingested": false
+    },
+    {
+      "id": "DgMhayP2NPU",
+      "title": "Thinking through double slits",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=DgMhayP2NPU",
+      "view_count": 598000,
+      "ingested": false
+    },
+    {
+      "id": "LuVUnd0C07U",
+      "title": "The inscribed square problem",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=LuVUnd0C07U",
+      "view_count": 4400000,
+      "ingested": false
+    },
+    {
+      "id": "y9BK--OxZpY",
+      "title": "The meaning within the Mandelbrot set",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=y9BK--OxZpY",
+      "view_count": 957000,
+      "ingested": false
+    },
+    {
+      "id": "qSn8dVI9V5I",
+      "title": "The scale of training LLMs",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=qSn8dVI9V5I",
+      "view_count": 562000,
+      "ingested": false
+    },
+    {
+      "id": "nAT-MCsJeik",
+      "title": "This puzzle is trickier than it seems",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=nAT-MCsJeik",
+      "view_count": 1300000,
+      "ingested": false
+    },
+    {
+      "id": "EPDZTLavmcg",
+      "title": "Sphere surface area proof sketch",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=EPDZTLavmcg",
+      "view_count": 1500000,
+      "ingested": false
+    },
+    {
+      "id": "LOulCFdVOGY",
+      "title": "Newton’s Fractal is beautiful",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=LOulCFdVOGY",
+      "view_count": 203000,
+      "ingested": false
+    },
+    {
+      "id": "JNVZK4ofW-Y",
+      "title": "The Triangle Of Power",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=JNVZK4ofW-Y",
+      "view_count": 532000,
+      "ingested": false
+    },
+    {
+      "id": "0W243LGSJFU",
+      "title": "The twirling tiles puzzle",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=0W243LGSJFU",
+      "view_count": 256000,
+      "ingested": false
+    },
+    {
+      "id": "Pny70rNPJLk",
+      "title": "A bizarre probability fact",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Pny70rNPJLk",
+      "view_count": 1900000,
+      "ingested": false
+    },
+    {
+      "id": "KHEtJUlpqcg",
+      "title": "LLMs are next-word predictors",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=KHEtJUlpqcg",
+      "view_count": 201000,
+      "ingested": false
+    },
+    {
+      "id": "W3-kpRz-e1Q",
+      "title": "Hologram preview",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=W3-kpRz-e1Q",
+      "view_count": 64000,
+      "ingested": false
+    },
+    {
+      "id": "DnjATyPuFFk",
+      "title": "Holograms are wild (full video linked above)",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=DnjATyPuFFk",
+      "view_count": 2000000,
+      "ingested": false
+    },
+    {
+      "id": "rjVY7HXN6qA",
+      "title": "In the vector space of all advice...",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=rjVY7HXN6qA",
+      "view_count": 356000,
+      "ingested": false
+    },
+    {
+      "id": "XsLK3tPy9SI",
+      "title": "Temperature in LLMs",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=XsLK3tPy9SI",
+      "view_count": 357000,
+      "ingested": false
+    },
+    {
+      "id": "FJtFZwbvkI4",
+      "title": "How word vectors encode meaning",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=FJtFZwbvkI4",
+      "view_count": 3300000,
+      "ingested": false
+    },
+    {
+      "id": "81QNyDnYtg0",
+      "title": "Simulating the electric field and a moving charge",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=81QNyDnYtg0",
+      "view_count": 1200000,
+      "ingested": false
+    },
+    {
+      "id": "-ikRg-OfFHc",
+      "title": "A challenging puzzle about subset sums",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=-ikRg-OfFHc",
+      "view_count": 965000,
+      "ingested": false
+    },
+    {
+      "id": "-3jPW_TGATI",
+      "title": "Ellipses have multiple definitions, how are these the same?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=-3jPW_TGATI",
+      "view_count": 61000,
+      "ingested": false
+    },
+    {
+      "id": "w-CXIqIjfRI",
+      "title": "Three levels of understanding Bayes' theorem",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=w-CXIqIjfRI",
+      "view_count": 119000,
+      "ingested": false
+    },
+    {
+      "id": "xIMlJUwB1m8",
+      "title": "The medical test paradox (well \"paradox\")",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=xIMlJUwB1m8",
+      "view_count": 10000000,
+      "ingested": false
+    },
+    {
+      "id": "IstyL9vnybg",
+      "title": "Positioned as the hardest question on a Putnam exam  (#6, 1992)",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=IstyL9vnybg",
+      "view_count": 257000,
+      "ingested": false
+    },
+    {
+      "id": "DWnb2UUlqd0",
+      "title": "Why does light slowing imply a bend? (Beyond the tank/car analogy)",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=DWnb2UUlqd0",
+      "view_count": 1300000,
+      "ingested": false
+    },
+    {
+      "id": "U3O1nzSojnc",
+      "title": "The cube shadow puzzle",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=U3O1nzSojnc",
+      "view_count": 2000000,
+      "ingested": false
+    },
+    {
+      "id": "XIW-2ykgVPI",
+      "title": "What does it mean that light \"slows down\" in glass?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=XIW-2ykgVPI",
+      "view_count": 190000,
+      "ingested": false
+    },
+    {
+      "id": "vItzPPpNXEs",
+      "title": "Why do we call them \"scalars\"?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=vItzPPpNXEs",
+      "view_count": 246000,
+      "ingested": false
+    },
+    {
+      "id": "teYL0Er4c3g",
+      "title": "A beautiful international math olympiad problem",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=teYL0Er4c3g",
+      "view_count": 2600000,
+      "ingested": false
+    },
+    {
+      "id": "BTryyW7gqg4",
+      "title": "Definition of a \"bit\", in information theory",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=BTryyW7gqg4",
+      "view_count": 227000,
+      "ingested": false
+    },
+    {
+      "id": "kpG7I2MOcnI",
+      "title": "The Newton art puzzle",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=kpG7I2MOcnI",
+      "view_count": 10000000,
+      "ingested": false
+    },
+    {
+      "id": "3KbiJ-z0j44",
+      "title": "What is a group?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=3KbiJ-z0j44",
+      "view_count": 155000,
+      "ingested": false
+    },
+    {
+      "id": "R1e7aHBKLnM",
+      "title": "How to derive a formula for π",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=R1e7aHBKLnM",
+      "view_count": 1100000,
+      "ingested": false
+    },
+    {
+      "id": "tjIOqIr80ns",
+      "title": "The limit of limiting arguments",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=tjIOqIr80ns",
+      "view_count": 2000000,
+      "ingested": false
+    },
+    {
+      "id": "W1gW1dHRsOw",
+      "title": "For anyone who might not know how links in shorts work",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=W1gW1dHRsOw",
+      "view_count": 250000,
+      "ingested": false
+    },
+    {
+      "id": "p9i3cYMQtBY",
+      "title": "Infinite Lighthouses and π",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=p9i3cYMQtBY",
+      "view_count": 2000000,
+      "ingested": false
+    },
+    {
+      "id": "X4jpqCu-wlA",
+      "title": "Can you even imagine 2^256?",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=X4jpqCu-wlA",
+      "view_count": 2200000,
+      "ingested": false
+    },
+    {
+      "id": "GOSezO0CHss",
+      "title": "Order from chaos",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=GOSezO0CHss",
+      "view_count": 13000000,
+      "ingested": true
+    },
+    {
+      "id": "TaopSi3Ucfc",
+      "title": "A short on shorts",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=TaopSi3Ucfc",
+      "view_count": 814000,
+      "ingested": false
+    },
+    {
+      "id": "BIbHGfdjc_g",
+      "title": "A pretty way to add weighted dice",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=BIbHGfdjc_g",
+      "view_count": 830000,
+      "ingested": false
+    },
+    {
+      "id": "4xWpQe3G9qI",
+      "title": "A simple image convolution",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=4xWpQe3G9qI",
+      "view_count": 1000000,
+      "ingested": false
+    },
+    {
+      "id": "VS9yOhwtVDY",
+      "title": "These integrals all equal π, until...",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=VS9yOhwtVDY",
+      "view_count": 810000,
+      "ingested": false
+    },
+    {
+      "id": "Cm-zmm0nANo",
+      "title": "The split necklace puzzle (with a surprise topological solution)",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=Cm-zmm0nANo",
+      "view_count": 347000,
+      "ingested": false
+    },
+    {
+      "id": "yZMw2rOKYwE",
+      "title": "Error correction is incredible",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=yZMw2rOKYwE",
+      "view_count": 5300000,
+      "ingested": false
+    },
+    {
+      "id": "NQFIU5Exjuo",
+      "title": "The chessboard and coins puzzle",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=NQFIU5Exjuo",
+      "view_count": 4200000,
+      "ingested": false
+    },
+    {
+      "id": "h2V3r7oBeMI",
+      "title": "Prime spirals",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=h2V3r7oBeMI",
+      "view_count": 3900000,
+      "ingested": false
+    },
+    {
+      "id": "31xm81m0iYs",
+      "title": "The barber pole effect",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=31xm81m0iYs",
+      "view_count": 484000,
+      "ingested": false
+    },
+    {
+      "id": "nXIHYB0Gp70",
+      "title": "Fourier series",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=nXIHYB0Gp70",
+      "view_count": 2300000,
+      "ingested": false
+    },
+    {
+      "id": "1tLvj_HSjPk",
+      "title": "Seeing with sound",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=1tLvj_HSjPk",
+      "view_count": 1200000,
+      "ingested": false
+    },
+    {
+      "id": "GSIuXqgPsnY",
+      "title": "How prisms work (full video linked above)",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=GSIuXqgPsnY",
+      "view_count": 8000000,
+      "ingested": false
+    },
+    {
+      "id": "VFbyGEZLMZw",
+      "title": "Don't let it fool you!",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=VFbyGEZLMZw",
+      "view_count": 17000000,
+      "ingested": true
+    },
+    {
+      "id": "P11ykXwx4-k",
+      "title": "I'm still astounded this is true",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=P11ykXwx4-k",
+      "view_count": 63000000,
+      "ingested": true
+    }
+  ]
+}
