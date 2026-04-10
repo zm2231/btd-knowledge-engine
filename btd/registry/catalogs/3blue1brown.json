@@ -3,7 +3,7 @@
   "platform": "youtube",
   "scanned_at": "2026-04-10T18:28:09.203Z",
   "total": 233,
-  "ingested": 0,
+  "ingested": 10,
   "items": [
     {
       "id": "ldxFjLJ3rVY",
@@ -433,7 +433,7 @@
       "duration_string": "30:38",
       "url": "https://www.youtube.com/watch?v=v68zYyaEmEA",
       "view_count": 11645342,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "ltLUadnCyi0",
@@ -693,7 +693,7 @@
       "duration_string": "24:47",
       "url": "https://www.youtube.com/watch?v=r6sGWTCMz2k",
       "view_count": 18725284,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "ToIXSwZ1pJU",
@@ -753,7 +753,7 @@
       "duration_string": "5:13",
       "url": "https://www.youtube.com/watch?v=HEfHFsfGXjs",
       "view_count": 14256012,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "GNcFjFmqEc8",
@@ -913,7 +913,7 @@
       "duration_string": "19:42",
       "url": "https://www.youtube.com/watch?v=spUNpyF58BY",
       "view_count": 12003767,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "VvCytJvd4H0",
@@ -943,7 +943,7 @@
       "duration_string": "11:15",
       "url": "https://www.youtube.com/watch?v=OkmNXy7er84",
       "view_count": 16372458,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "tIeHLnjs5U8",
@@ -983,7 +983,7 @@
       "duration_string": "18:40",
       "url": "https://www.youtube.com/watch?v=aircAruvnKk",
       "view_count": 22794382,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "MzRCDLre1b4",
@@ -1033,7 +1033,7 @@
       "duration_string": "25:16",
       "url": "https://www.youtube.com/watch?v=bBC-nXj3Ng4",
       "view_count": 17899747,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "QJYmyhnaaek",
@@ -2193,7 +2193,7 @@
       "duration_string": null,
       "url": "https://www.youtube.com/watch?v=GOSezO0CHss",
       "view_count": 13000000,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "TaopSi3Ucfc",
@@ -2323,7 +2323,7 @@
       "duration_string": null,
       "url": "https://www.youtube.com/watch?v=VFbyGEZLMZw",
       "view_count": 17000000,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "P11ykXwx4-k",
@@ -2333,7 +2333,7 @@
       "duration_string": null,
       "url": "https://www.youtube.com/watch?v=P11ykXwx4-k",
       "view_count": 63000000,
-      "ingested": false
+      "ingested": true
     }
   ]
 }
