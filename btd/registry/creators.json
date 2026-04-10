@@ -111,6 +111,38 @@
       "status": "active",
       "catalog_count": 496,
       "last_scanned": "2026-04-10T19:07:50.505Z"
+    },
+    {
+      "slug": "minbpe",
+      "name": "karpathy/minbpe",
+      "platforms": {
+        "repo": {
+          "path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--minbpe",
+          "url": "https://github.com/karpathy/minbpe",
+          "file_types": [
+            ".py",
+            ".js",
+            ".ts",
+            ".md",
+            ".json",
+            ".yaml",
+            ".yml",
+            ".go",
+            ".rs",
+            ".rb"
+          ]
+        }
+      },
+      "topics": [
+        "code",
+        "repository"
+      ],
+      "priority": "medium",
+      "notes": "Code repository indexed directly into the shared LEANN corpus.",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 11,
+      "last_scanned": "2026-04-10T19:44:44.875Z"
     }
   ]
 }

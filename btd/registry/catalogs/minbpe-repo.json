@@ -1,0 +1,125 @@
+{
+  "creator": "minbpe",
+  "name": "karpathy/minbpe",
+  "platform": "repo",
+  "scanned_at": "2026-04-10T19:44:44.874Z",
+  "repo_path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--minbpe",
+  "repo_url": "https://github.com/karpathy/minbpe",
+  "file_types": [
+    ".py",
+    ".js",
+    ".ts",
+    ".md",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".go",
+    ".rs",
+    ".rb"
+  ],
+  "total": 11,
+  "total_size_bytes": 51536,
+  "by_extension": {
+    ".py": 8,
+    ".js": 0,
+    ".ts": 0,
+    ".md": 3,
+    ".json": 0,
+    ".yaml": 0,
+    ".yml": 0,
+    ".go": 0,
+    ".rs": 0,
+    ".rb": 0
+  },
+  "ingested": 11,
+  "items": [
+    {
+      "id": "exercise.md",
+      "path": "exercise.md",
+      "ext": ".md",
+      "size_bytes": 3605,
+      "modified_at": "2026-04-10T19:39:35.531Z",
+      "ingested": true
+    },
+    {
+      "id": "lecture.md",
+      "path": "lecture.md",
+      "ext": ".md",
+      "size_bytes": 8507,
+      "modified_at": "2026-04-10T19:39:35.531Z",
+      "ingested": true
+    },
+    {
+      "id": "minbpe/__init__.py",
+      "path": "minbpe/__init__.py",
+      "ext": ".py",
+      "size_bytes": 128,
+      "modified_at": "2026-04-10T19:39:35.531Z",
+      "ingested": true
+    },
+    {
+      "id": "minbpe/base.py",
+      "path": "minbpe/base.py",
+      "ext": ".py",
+      "size_bytes": 6881,
+      "modified_at": "2026-04-10T19:39:35.531Z",
+      "ingested": true
+    },
+    {
+      "id": "minbpe/basic.py",
+      "path": "minbpe/basic.py",
+      "ext": ".py",
+      "size_bytes": 2883,
+      "modified_at": "2026-04-10T19:39:35.531Z",
+      "ingested": true
+    },
+    {
+      "id": "minbpe/gpt4.py",
+      "path": "minbpe/gpt4.py",
+      "ext": ".py",
+      "size_bytes": 5810,
+      "modified_at": "2026-04-10T19:39:35.531Z",
+      "ingested": true
+    },
+    {
+      "id": "minbpe/regex.py",
+      "path": "minbpe/regex.py",
+      "ext": ".py",
+      "size_bytes": 7344,
+      "modified_at": "2026-04-10T19:39:35.531Z",
+      "ingested": true
+    },
+    {
+      "id": "README.md",
+      "path": "README.md",
+      "ext": ".md",
+      "size_bytes": 9283,
+      "modified_at": "2026-04-10T19:39:35.530Z",
+      "ingested": true
+    },
+    {
+      "id": "tests/__init__.py",
+      "path": "tests/__init__.py",
+      "ext": ".py",
+      "size_bytes": 0,
+      "modified_at": "2026-04-10T19:39:35.532Z",
+      "ingested": true
+    },
+    {
+      "id": "tests/test_tokenizer.py",
+      "path": "tests/test_tokenizer.py",
+      "ext": ".py",
+      "size_bytes": 6213,
+      "modified_at": "2026-04-10T19:39:35.532Z",
+      "ingested": true
+    },
+    {
+      "id": "train.py",
+      "path": "train.py",
+      "ext": ".py",
+      "size_bytes": 882,
+      "modified_at": "2026-04-10T19:39:35.532Z",
+      "ingested": true
+    }
+  ]
+}
