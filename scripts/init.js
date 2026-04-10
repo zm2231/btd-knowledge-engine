@@ -35,9 +35,11 @@ const dirs = [
   'raw/podcasts',
   'raw/articles',
   'raw/transcripts',
+  'raw/assets',
   'wiki/concepts',
   'wiki/topics',
   'wiki/creators',
+  'wiki/sources',
   'registry/catalogs',
   'users',
 ];
@@ -50,6 +52,17 @@ fs.writeFileSync(
   path.join(INST, 'registry', 'creators.json'),
   `${JSON.stringify({ creators: [] }, null, 2)}\n`,
 );
+
+// Copy Obsidian config from template if available
+const templateObs = path.join(ROOT, 'template', '.obsidian');
+const instObs = path.join(INST, '.obsidian');
+if (fs.existsSync(templateObs) && !fs.existsSync(instObs)) {
+  fs.mkdirSync(instObs, { recursive: true });
+  for (const f of fs.readdirSync(templateObs)) {
+    fs.copyFileSync(path.join(templateObs, f), path.join(instObs, f));
+  }
+  console.log(`📓 Obsidian config copied — open this folder as a vault in Obsidian`);
+}
 
 console.log(`✅ Created instance: ${instanceName}/`);
 console.log('');

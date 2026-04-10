@@ -101,6 +101,19 @@ After doing your experiment for a week, open Claude Code in the repo again. Clau
 
 Claude picks up where you left off: runs the check-in, updates your profile, generates the next experiment. Your history is preserved across sessions in `btd/users/your-name/`.
 
+## Browse in Obsidian
+
+The repo ships with `.obsidian/` config pre-configured. Open the repo folder (or your instance folder) as a vault in Obsidian and you get:
+
+- **Graph view** of the wiki — see how concepts connect to each other and to creators
+- **Backlinks** — click on any concept and see every page that references it
+- **File explorer** — browse raw sources, wiki pages, user profiles, experiment cards
+- **Dataview** queries — if you install the Dataview plugin, you can query frontmatter across all pages
+
+The wiki pages use `[[wiki-links]]` that Obsidian renders as clickable cross-references. This is how you browse the knowledge base without searching; you follow the links from concept to concept.
+
+To set up: open Obsidian → "Open folder as vault" → select the repo root (or `btd/` for just the content).
+
 ## How It Works Under the Hood
 
 Claude Code has access to all the repo's scripts and runs them directly:

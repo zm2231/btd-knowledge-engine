@@ -38,6 +38,7 @@ These skills auto-activate based on the user's message and profile state. Read t
 
 1. **`skills/btd-intake/SKILL.md`** — Non-sycophantic intake interview. 5 phases: goal, calibration, blind spots, constraints, synthesis. Produces a constraint profile YAML. **Only for users with NO existing profile.**
 2. **`skills/btd-intake/RE-ENTRY.md`** — Returning user protocol. Load profile + experiments, run check-in, update profile, generate next experiment. **Default for any user who has a profile** — this is the common case.
+3. **`skills/wiki-compiler/SKILL.md`** — Wiki maintenance. Compile raw sources into structured wiki pages (concepts, topics, creators). Run after ingesting new content or when wiki lint shows gaps. **Proactive — do this without being asked when new content arrives.**
 
 The routing is simple: check if a profile exists → yes means RE-ENTRY, no means INTAKE. When in doubt, check first:
 ```bash

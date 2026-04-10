@@ -4,7 +4,9 @@ You collect content from smart people. Podcasts, YouTube videos, articles, tweet
 
 This fixes that.
 
-Register the creators you actually follow. The system catalogs everything they've published, lets you selectively pull down what matters, indexes it all for semantic search, and then (the part nobody else does) runs you through an interview that figures out who you are, where you're at, and what you should actually do next. Same corpus, different people, completely different output.
+Register the creators you actually follow. The system catalogs everything they've published, lets you selectively pull down what matters, and then does something most tools skip entirely: it compiles the content into a persistent knowledge base that gets smarter over time. Not just search; structured wiki pages where concepts are cross-referenced, contradictions are flagged, and synthesis happens once instead of being re-derived every query.
+
+Then it runs you through an interview that figures out who you are, where you're at, and what you're not thinking about. Same corpus, different people, completely different output. The interview produces a constraint profile that routes everything; which content surfaces, how it's explained, what experiments get generated.
 
 ## What You Need
 
@@ -195,13 +197,25 @@ Every script takes `--instance <name>` (default: `btd`).
 | **Articles** | Manual | Drop `.md` in `raw/articles/` | Obsidian Web Clipper works well |
 | **Transcripts** | Manual | Drop `.md` in `raw/transcripts/` | Meeting notes, group sessions |
 
+## The Wiki Layer
+
+Most knowledge tools stop at search. You ask a question, they find relevant chunks, the LLM stitches an answer together from fragments. Every question starts from scratch. Nothing accumulates.
+
+The wiki (`btd/wiki/`) is different. After content gets ingested, Claude compiles it into structured pages: concept pages that synthesize across sources, creator profiles that track contributions, topic overviews that connect ideas. The cross-references are already built. The contradictions are already flagged. When you ask a question, the wiki already has the synthesis; it doesn't need to re-derive it from chunks every time.
+
+This follows the [Karpathy LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): raw data from sources gets compiled by the LLM into a persistent wiki, then operated on for Q&A. The wiki compounds over time. Your explorations and answers get filed back into it. The `skills/wiki-compiler/SKILL.md` tells Claude how to maintain it.
+
 ## The Interview Layer
 
-This is the part that makes it personal. The intake interview pushes back, probes, and calibrates. It doesn't take your word for it when you say you're "intermediate at AI." It asks you a question an intermediate would answer easily. If you can't, it adjusts silently.
+The intake interview pushes back, probes, and calibrates. It doesn't take your word for it when you say you're "intermediate at AI." It asks you a question an intermediate would answer easily. If you can't, it adjusts silently.
 
-The interview produces a constraint profile. The constraint profile routes corpus queries. Different profiles get fundamentally different content back. We tested this; "what is a neural network" pulls 3Blue1Brown visual explanations for beginners. "How to build an LLM from scratch" pulls Karpathy deep dives for builders. "Vikings and medieval raids" pulls a Lex Fridman podcast transcript. Same index, completely different results depending on who's asking and why.
+The interview produces a constraint profile. The constraint profile routes everything; which wiki pages surface, which raw content gets recommended, how explanations are phrased. Different profiles get fundamentally different output from the same corpus.
 
 My theory is that this is where most "personalized AI" products fail. They skip the interview, or they do a shallow one, and everyone gets the same output. Without the right questions, the best corpus in the world produces generic answers.
+
+## Browse in Obsidian
+
+The repo is pre-configured as an Obsidian vault. Open it in Obsidian and you get graph view of the wiki, backlinks between concepts, and a browsable file explorer across raw sources, wiki pages, and user profiles. The wiki's `[[wiki-links]]` render as clickable cross-references. No search needed; follow the connections.
 
 ## Repo Structure
 
@@ -217,10 +231,12 @@ btd-knowledge-engine/
 │   ├── index.js         #   LEANN index build
 │   ├── status.js        #   Content dashboard
 │   └── init.js          #   Create new instance
-├── skills/              # Interview engine
-│   └── btd-intake/
-│       ├── SKILL.md     #   Non-sycophantic intake interview (5 phases)
-│       └── RE-ENTRY.md  #   Returning user check-in protocol
+├── skills/              # Claude Code skills (auto-activate based on context)
+│   ├── btd-intake/
+│   │   ├── SKILL.md     #   Non-sycophantic intake interview (5 phases)
+│   │   └── RE-ENTRY.md  #   Returning user check-in protocol
+│   └── wiki-compiler/
+│       └── SKILL.md     #   Wiki compilation and maintenance
 ├── template/            # Clean starting point for new instances
 ├── btd/                 # Our instance (the BTD group's corpus)
 │   ├── raw/             #   48 docs: YouTube, Twitter, Podcasts, Substack, transcripts

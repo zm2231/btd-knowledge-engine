@@ -1,0 +1,15 @@
+{
+  "interfaceFontSize": 14,
+  "showLineNumber": true,
+  "strictLineBreaks": false,
+  "readableLineLength": true,
+  "showFrontmatter": false,
+  "foldHeading": true,
+  "foldIndent": true,
+  "defaultViewMode": "preview",
+  "attachmentFolderPath": "btd/raw/assets",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "btd/wiki/concepts",
+  "useMarkdownLinks": false,
+  "alwaysUpdateLinks": true
+}
