@@ -1,0 +1,77 @@
+{
+  "creator": "micrograd",
+  "name": "karpathy/micrograd",
+  "platform": "repo",
+  "scanned_at": "2026-04-10T22:18:48.817Z",
+  "repo_path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--micrograd",
+  "repo_url": "https://github.com/karpathy/micrograd",
+  "file_types": [
+    ".py",
+    ".js",
+    ".ts",
+    ".md",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".go",
+    ".rs",
+    ".rb"
+  ],
+  "total": 6,
+  "ingested": 6,
+  "total_size_bytes": 8950,
+  "by_extension": {
+    ".py": 5,
+    ".md": 1
+  },
+  "items": [
+    {
+      "id": "micrograd/__init__.py",
+      "path": "micrograd/__init__.py",
+      "ext": ".py",
+      "size_bytes": 0,
+      "modified_at": "2026-04-10T22:18:48.807Z",
+      "ingested": true
+    },
+    {
+      "id": "micrograd/engine.py",
+      "path": "micrograd/engine.py",
+      "ext": ".py",
+      "size_bytes": 2730,
+      "modified_at": "2026-04-10T22:18:48.807Z",
+      "ingested": true
+    },
+    {
+      "id": "micrograd/nn.py",
+      "path": "micrograd/nn.py",
+      "ext": ".py",
+      "size_bytes": 1613,
+      "modified_at": "2026-04-10T22:18:48.807Z",
+      "ingested": true
+    },
+    {
+      "id": "README.md",
+      "path": "README.md",
+      "ext": ".md",
+      "size_bytes": 2420,
+      "modified_at": "2026-04-10T22:18:48.806Z",
+      "ingested": true
+    },
+    {
+      "id": "setup.py",
+      "path": "setup.py",
+      "ext": ".py",
+      "size_bytes": 717,
+      "modified_at": "2026-04-10T22:18:48.808Z",
+      "ingested": true
+    },
+    {
+      "id": "test/test_engine.py",
+      "path": "test/test_engine.py",
+      "ext": ".py",
+      "size_bytes": 1470,
+      "modified_at": "2026-04-10T22:18:48.808Z",
+      "ingested": true
+    }
+  ]
+}

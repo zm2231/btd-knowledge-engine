@@ -1,6 +1,7 @@
 {
   "roots": [
     "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--llm-c",
+    "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--micrograd",
     "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--minbpe",
     "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--nanogpt",
     "/Volumes/4/GitHub/btd-knowledge-engine/btd/raw"

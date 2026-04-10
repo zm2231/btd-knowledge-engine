@@ -372,6 +372,38 @@
       "status": "active",
       "catalog_count": 0,
       "last_scanned": null
+    },
+    {
+      "slug": "micrograd",
+      "name": "karpathy/micrograd",
+      "platforms": {
+        "repo": {
+          "path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--micrograd",
+          "url": "https://github.com/karpathy/micrograd",
+          "file_types": [
+            ".py",
+            ".js",
+            ".ts",
+            ".md",
+            ".json",
+            ".yaml",
+            ".yml",
+            ".go",
+            ".rs",
+            ".rb"
+          ]
+        }
+      },
+      "topics": [
+        "code",
+        "repository"
+      ],
+      "priority": "medium",
+      "notes": "Code repository indexed directly into the shared LEANN corpus.",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 6,
+      "last_scanned": "2026-04-10T22:18:48.816Z"
     }
   ]
 }
