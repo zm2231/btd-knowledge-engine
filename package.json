@@ -12,7 +12,8 @@
     "ingest:podcast": "node scripts/ingest-podcast.js",
     "ingest:twitter": "node scripts/ingest-twitter.js",
     "index": "node scripts/index.js",
-    "status": "node scripts/status.js"
+    "status": "node scripts/status.js",
+    "profile": "node scripts/profile.js"
   },
   "repository": {
     "type": "git",
