@@ -1,219 +1,128 @@
 # BTD Knowledge Engine — Roadmap
 
-*Updated April 10, 2026 (end of day)*
+*Updated April 10, 2026 (evening)*
 
-## What's Working
+## What's Shipped
 
-- **YouTube pipeline**: register → scan (yt-dlp) → catalog → batch-ingest (youtube-transcript-plus) → index → search. 3 creators, 1,137 videos cataloged, 35 ingested.
-- **Twitter pipeline**: register → scan (bird CLI, JSON extraction fixed) → catalog → ingest with thread grouping → index. Karpathy: 10 cataloged, 8 ingested as markdown.
-- **Podcast pipeline**: register → scan (podcast-dl, paginated) → catalog → download mp3 → whisper transcription (IQ endpoint) → markdown → index. Lex Fridman: 496 cataloged, 1 transcribed (110KB).
-- **Substack pipeline**: VividEagle building now on `tech/substack-ingestion` branch using `sbstck-dl`. Mollick's feed ready.
-- **LEANN index**: `btd-btd`, 8,164 chunks across 46 docs from 4 source types. Retrieval quality confirmed across all types.
-- **Template system**: `init.js` creates fresh instances, all scripts instance-aware with `--instance` flag. Clean for anyone to clone and use.
-- **SKILL.md intake interview**: 5 phases, constraint profile YAML output, anti-patterns, corpus integration logic.
-- **RE-ENTRY.md**: Full re-entry protocol for returning users (load profile → check-in → update → next experiment).
-- **Experiment card template**: Frontmatter with structured fields, daily check-ins, reflection section.
-- **5 creators registered**: Karpathy (YT+Twitter), 3Blue1Brown (YT), Nate Jones (YT), Mollick (Substack, pending), Lex Fridman (YT+Podcast). 1,643 total items cataloged.
+### Ingestion (all 6 source types working)
+- [x] YouTube: yt-dlp scan → youtube-transcript-plus captions → markdown
+- [x] Twitter: bird CLI → thread grouping → markdown
+- [x] Podcasts: podcast-dl → lightning-whisper-mlx transcription → markdown
+- [x] Substack: sbstck-dl / RSS fallback → markdown articles
+- [x] Repos: clone + LEANN direct indexing (code + docs in same search)
+- [x] Manual: drop .md files with frontmatter
 
-## What's Not Built Yet
+### Search
+- [x] LEANN index `btd-btd`: ~8,000+ chunks across 50+ docs from all source types
+- [x] Cross-source retrieval confirmed: same query returns YouTube, Twitter, podcast, code results
+- [x] Source attribution in every result (full file path → creator + content title)
 
-### Ingestion — Remaining
-
-| Gap | Status | Blocks |
-|---|---|---|
-| Substack ingestion | VividEagle building (`tech/substack-ingestion`) | Mollick content in corpus |
-| Cron/scheduled scan+index | Cron plan written, not deployed | Auto-refresh of catalogs |
-| Auto-ingest on scan | Not started (intentional — selective ingestion is human decision) | Nothing |
-
-### Product — The Actual Output
-
-| Gap | Priority | What it is | Blocks |
-|---|---|---|---|
-| **Synthesis pipeline** | P0 | constraint profile → LEANN query → LLM → structured output | The actual product. Nothing works without this. |
-| **Experiment outcome YAML** | P1 | Structured fields at end of experiment card (outcome, hypothesis_validated, profile_updates, next_seed) | Auto-generating experiment #2 from #1 |
-| **Profile save/load scripts** | P1 | `save-profile.js` to write YAML to `users/{id}/profile.md`, load on re-entry | Tracking across sessions, re-entry flow |
-| **Check-in flow** | P1 | Structured follow-up: load experiment → ask what happened → update profile → generate next | Experiment iteration loop |
-| **Wiki compilation** | P2 | LLM extracts concepts/patterns from raw content into `wiki/` | Pre-compiled knowledge layer (v2, not blocking v1) |
+### Personalization
+- [x] SKILL.md: 5-phase non-sycophantic intake interview → constraint profile YAML
+- [x] RE-ENTRY.md: returning user check-in → profile update → next experiment
+- [x] profile.js: save, load, update, list, summary, history (with change tracking)
+- [x] Experiment card template with structured outcome YAML block
+- [x] CLAUDE.md: Claude Code reads this on session start, auto-routes to correct skill based on profile state
 
 ### Infrastructure
+- [x] Unified ingest log schema across all scripts (source_id, platform, file, status)
+- [x] Shared ingest-log.js helper (read, write, append, normalize)
+- [x] status.js: clean dashboard, no more undefined
+- [x] add-creator.js: supports all platforms (--youtube, --twitter, --podcast, --substack), --scan delegates to scan.js
+- [x] batch-ingest.js: explicitly YouTube-only
+- [x] init.js: creates full instance structure including raw/twitter/
+- [x] Template system: init.js → fresh instance, all scripts instance-aware
+- [x] Profile parsing: js-yaml (not regex), all nested fields accessible
+- [x] Skill descriptions: auto-trigger based on user message + profile state
+- [x] Getting started guide, AGENTS.md, docs
 
-| Gap | Priority | Notes |
-|---|---|---|
-| Decision tree rewrite | P2 | `question-bank/decision-tree.json` is technical-only (15 states for software builders). SKILL.md is broader. Either rewrite tree for non-technical audience or deprecate in favor of SKILL.md as sole interview def. |
-| Knowledge CLI / alias | P3 | `btd scan karpathy` instead of `node scripts/scan.js karpathy`. Nice-to-have, not blocking. |
-| Error recovery | P3 | batch-ingest retries, partial failure handling |
+### Corpus (btd instance)
+- 6 creators: Karpathy (YT+Twitter), 3Blue1Brown (YT), Nate Jones (YT), Mollick (Substack), Lex Fridman (Podcast), minbpe (Repo)
+- 1,674 items cataloged, 50+ ingested
+- 3 group session transcripts
 
-## What Max Needs to Do (Not Blocked by Tech)
+## What's Next
 
-Everything Max needs is ready. The SKILL.md works as a Claude skill right now.
+### Max (not blocked by tech)
+1. Run 3 real people through intake (use Claude Code in the repo, SKILL.md auto-triggers)
+2. Save 3 constraint profiles to `btd/users/`
+3. Write 3 sample outputs by hand (gold standard for synthesis)
+4. After first experiments: manual check-ins, capture what's needed for experiment #2
 
-1. **Run 3 people through intake** using SKILL.md directly (ignore decision-tree.json)
-2. **Save 3 constraint profile YAMLs** to `btd/users/{person}/profile.md` (create dirs manually)
-3. **Write 3 sample outputs by hand** — same project idea, 3 different profiles. This is the gold standard for what the synthesis pipeline should produce.
-4. After first experiments: **manual check-ins**, write down what you'd need to know to generate experiment #2
+### More Corpus (could run now)
+The corpus is AI/coding-heavy. For the product to serve non-technical builders, we need broader content:
 
-## Prior Art / What Exists Already
+**Creators to add:**
+- Tim Ferriss (podcast) — frameworks for learning, decision-making, productivity
+- Simon Sinek (YouTube) — leadership, "start with why", non-technical thinking frameworks
+- Sahil Bloom (Twitter/Substack) — mental models, business, accessible frameworks
+- James Clear (Substack) — habits, systems thinking, accessible to everyone
+- Ali Abdaal (YouTube) — productivity, learning science, accessible to non-technical
+- Lenny Rachitsky (podcast/Substack) — product management, growth, non-engineering perspective
+- Patrick Collison (Twitter) — building companies, hiring, strategy
+- Paul Graham (essays) — could ingest as articles, foundational startup/building thinking
 
-| Project | What they do well | What they don't do |
-|---|---|---|
-| **Readwise / Reader** | Content aggregation, highlights, spaced repetition | No personalization layer. No interview. Everyone gets the same content. |
-| **Mem.ai / Notion AI** | Knowledge base + AI search | No interview, no experiment generation, no "what should I do with this" layer |
-| **Coursera / Khan Academy** | Assessment → level placement → content routing | Course-scoped, not corpus-scoped. Can't pull from arbitrary creators. |
-| **Khanmigo (Socratic tutoring)** | Interview-style interaction | Only for known curricula. Our interview is open-ended. |
-| **Obsidian + Dataview** | Manual curation, powerful queries | No interview, no synthesis. Power user version of what we're automating. |
-| **Snipd / Podwise** | Podcast → transcript → highlights | Good ingestion, no personalization or action output. |
-| **Shortform / Blinkist** | Book summaries + action items | Close to our synthesis output format, but zero personalization. |
+**Repos to index:**
+- `karpathy/nanoGPT` — pairs with his YouTube "Let's build GPT" video
+- `karpathy/llm.c` — C implementation, pairs with his LLM deep dive
+- `openai/tiktoken` — tokenization reference, pairs with minbpe
+- Any repos from BTD group members' own projects
 
-**Our difference**: the interview IS the product. Everyone else starts with content and tries to make it useful. We start with the person and figure out what content matters for them specifically.
+### Attribution Layer
+Claude already cites sources per CLAUDE.md rules. Formalize in experiment card template:
+- [ ] "Sources used" section with creator, content title, and why it was selected
+- [ ] Link back to source URL when available
+- [ ] For repos: reference specific files/functions
 
-## Automation / Cron Plan
-
+### Cron / Scheduled Ingestion
 ```
-# Daily: scan for new content from all active creators
-0 6 * * * cd /path/to/btd-knowledge-engine && node scripts/scan.js --all --instance btd
-
-# Daily: re-index if new content was ingested
-0 7 * * * cd /path/to/btd-knowledge-engine && node scripts/index.js --instance btd
-
-# Weekly: status report
-0 9 * * 1 cd /path/to/btd-knowledge-engine && node scripts/status.js --instance btd
+0 6 * * * node scripts/scan.js --all --instance btd       # daily catalog refresh
+0 7 * * * node scripts/index.js --instance btd             # daily re-index
 ```
-
-Auto-ingest is intentionally NOT cron'd. Catalog everything, but pulling content down is a human decision.
-
-## Build Order
-
-### Done ✅
-- [x] Repo, README, template, AGENTS.md
-- [x] Creator registry + catalog scanning (YouTube, Twitter, Podcasts)
-- [x] YouTube ingestion (youtube-transcript-plus, instant captions)
-- [x] Twitter ingestion (bird CLI, thread grouping) — VividEagle
-- [x] Podcast ingestion (podcast-dl + IQ whisper transcription)
-- [x] LEANN index across all source types (8,164 chunks, 46 docs)
-- [x] SKILL.md intake interview (5 phases, constraint profile output)
-- [x] RE-ENTRY.md (returning user protocol)
-- [x] Template system (init.js, instance-aware scripts)
-- [x] Roadmap, blueprint visualization, architecture docs
-- [x] Retrieval quality confirmed across sources
-
-### This Week
-- [ ] VividEagle: Substack ingestion (sbstck-dl, Mollick)
-- [ ] Structured experiment outcome YAML block
-- [ ] Profile save/load scripts
-- [ ] Max: 3 intake interviews → 3 constraint profiles
-- [ ] Max: 3 handwritten sample outputs
-
-### Next Week
-- [ ] Test LEANN retrieval with real constraint profiles
-- [ ] Reverse-engineer output templates from Max's samples
-- [ ] Cron deployment (scan + index)
-- [ ] Check-in flow (load experiment → follow-up → profile update)
-
-### Week After
-- [ ] Synthesis pipeline (constraint profile × corpus → structured output)
-- [ ] Test automated vs handwritten output
-- [ ] Fix questions → routing → templates (in that order if mismatch)
-- [ ] Profile update flow (experiment outcome → profile revision)
-
-## Consolidation (in progress — SageMoon on fix/consolidation branch)
-
-Repo audit identified structural debt from rapid feature addition. Fixes:
-- [x] Profile parsing: regex → js-yaml (shipped)
-- [ ] Unified ingest log schema across all 6 source scripts (SageMoon)
-- [ ] status.js: no more `undefined` in output (SageMoon)
-- [ ] add-creator.js: add `--substack`, delegate `--scan` to scan.js (SageMoon)
-- [ ] batch-ingest.js: YouTube-only, not cross-platform (SageMoon)
-- [ ] init.js: add `raw/twitter/` (SageMoon)
-- [ ] Doc drift: dead catalog.js refs, templates/ vs template/, stale roadmap claims (SageMoon)
-- [ ] Clean test entries from prod ingest log (SageMoon)
-- [ ] ingest-repo.js: unified schema (SageMoon)
-
-## Product Architecture — CLI + Web UI + Claude Skills
-
-### The problem
-session.js currently assembles context and prints it. The user has to copy-paste into Claude manually. That's operator tooling, not a product.
-
-### The target
-Everything runnable three ways:
-1. **CLI** — `node scripts/session.js intake sarah` runs the interview directly in terminal via Claude API
-2. **Claude Code skill** — load SKILL.md, Claude runs the interview with access to scripts/profile.js/corpus
-3. **Web UI** — browser interface that connects to Claude, shows attribution, manages profiles
-
-### Translation layer
-Claude must explain at the user's level. A pre-beginner gets "a neural network is like a chain of filters that learns to recognize patterns." A builder gets "you want a 3-layer MLP with ReLU activations, here's Karpathy's implementation." Same corpus, different translation based on `calibrated_level` from the constraint profile.
-
-This is the core product behavior: retrieval is personalized by the profile, AND delivery is translated by the profile.
-
-### Implementation plan
-1. **Phase 1: Claude Code native** — skills already work, session.js already assembles context. Wire them so Claude Code can call scripts directly (read profiles, run searches, save experiments). This is the fastest path to a usable product for the BTD group.
-2. **Phase 2: CLI with API** — session.js calls Claude API directly for non-Claude-Code users. Interactive terminal flow.
-3. **Phase 3: Web UI** — lightweight frontend that shows profiles, experiments, search results with attribution. Connects to the same scripts/skills backend.
-
-### What Claude Code needs to run this natively
-- Read `skills/btd-intake/SKILL.md` as active skill
-- Call `node scripts/profile.js save/load` to persist profiles
-- Call `leann search btd-btd "<query>"` for corpus retrieval
-- Read/write experiment cards in `users/{id}/experiments/`
-- Access `skills/btd-intake/RE-ENTRY.md` for returning users
-- All of this already works in Claude Code today — just needs the skill to reference the scripts explicitly
-
-## From Build Lab Session (April 10, 2026)
-
-Key ideas surfaced during the group build lab that should shape next steps:
-
-### Attribution / Visible Intelligence (Max, high priority)
-The user needs to see WHERE insights come from. Not just "here's what to do" but "this came from Karpathy's tokenization lecture" or "I'm asking this because of {framework} from {creator}." LEANN already returns source paths with every result; the gap is surfacing that in the output templates. This is a presentation layer change, not an index change.
-
-Concrete implementation:
-- Search results already include `Source: btd/raw/youtube/andrej-karpathy/...`
-- Experiment cards should cite specific creators and content
-- Synthesis output should say "Based on how Karpathy approaches X" not just "here's what to do"
-- Consider a "sources used" section in every generated output
-
-### Voice Agent (Max's test project, not this repo)
-Max ran the intake skill against a voice agent build as his test project. The voice agent itself (cognitive fingerprint extraction via live problem-solving) is a separate product idea, not a feature of this repo. Noted here because the intake skill successfully reframed his build during the session.
-
-### Repo/Codebase Ingestion ✅
-`ingest-repo.js` shipped. Takes a local path or GitHub URL, clones to `.tmp/repos/`, indexes into the shared LEANN index alongside all other content. Tested with Karpathy's `minbpe` — can now search across his YouTube talks about tokenization AND his actual tokenizer implementation code in the same query. 6 source types total: YouTube, Twitter, Podcast, Substack, Repos, Manual.
-
-### Community Getting Started Guide (high priority)
-Group wants this usable by non-technical members using Claude Code. Need:
-- [ ] `docs/getting-started.md` — assumes Claude Code installed, walks through first creator → first search in 5 minutes
-- [ ] Skills packaged so Claude Code users can just load them (SKILL.md, RE-ENTRY.md already work as skills)
-- [ ] Skill creator skill — a skill that helps users create their own skills from the patterns in this repo
-- [ ] Skills shared in community Slack/School
-
-### Attribution Layer (high priority)
-Every generated output must trace back to sources. Not "here's what to do" but "this came from Karpathy's tokenization lecture, specifically this segment." Implementation:
-- [ ] Search results already include `Source:` paths — parse creator + content title from path
-- [ ] Experiment cards cite specific creators and timestamps
-- [ ] Synthesis output: "Based on how {creator} approaches {topic} in {content title}" with links
-- [ ] "Sources used" section in every generated output
-- [ ] Session search already does this partially — formalize it in output templates
+Not deployed yet. Deploy after corpus is more complete.
 
 ### LEANN Subindexes
-Right now everything goes in one index (`btd-btd`). Subindexes would let you:
-- Search only YouTube content, only tweets, only repos
-- Search only one creator's content
-- Search only content tagged for a specific topic
-- Combine subindexes for targeted queries (e.g. "Karpathy YouTube + code repos only")
+Single index works for now. Consider splitting when corpus grows:
+- Per-creator indexes for targeted search
+- Per-platform indexes (search only code, only podcasts)
+- LEANN metadata filtering may handle this without multiple indexes
 
-Implementation options:
-- [ ] Multiple LEANN indexes per instance (e.g. `btd-youtube`, `btd-twitter`, `btd-repos`)
-- [ ] Or: metadata filtering on the single index (LEANN supports this via passage metadata)
-- [ ] `session.js search` routes to appropriate subindex based on profile + query context
+### Continuous Usage Logging
+- [ ] Log every search query (user, query, results, which were useful)
+- [ ] Log every session (intake, checkin, experiment generation)
+- [ ] Profile change history already tracked via profile.js
+- [ ] Surface patterns: which content gets used most → informs ingestion priorities
 
-### Continuous Usage / Logging
-Track how the system is actually being used so it improves:
-- [ ] Every search query logged with user, query, results returned, which results were useful
-- [ ] Every session logged (intake, checkin, experiment generation) with user + timestamp
-- [ ] Profile change history (already built in `profile.js`)
-- [ ] Experiment outcome tracking (structured YAML already in template)
-- [ ] Usage patterns surface which content gets retrieved most → informs what to ingest next
-- [ ] Weekly digest: "You searched X times, generated Y experiments, Z check-ins"
+### Decision Tree
+`question-bank/decision-tree.json` is technical-builder-only (15 states for software architecture). SKILL.md is broader and works for all user types. The decision tree should either be rewritten for a general audience or deprecated entirely. SKILL.md as the sole interview definition is the current recommendation.
 
-### Tools Mentioned in Session
-- **Bird CLI** for Twitter scraping (already integrated)
-- **LEANN** — group was impressed by the semantic search demo. Multiple people installing.
-- **Impeccable.style** — design audit CLI + skills (for future UI work)
-- **FireCrawl** — Max adding to his Last 30 Days skill for web scraping
+### Future: Claude Agents SDK
+session.js is currently a utility script, not the product runtime. Claude Code IS the runtime (reads CLAUDE.md, runs skills, calls scripts). Future integration with Claude Agents SDK would enable:
+- Standalone CLI that runs interviews without Claude Code
+- Web UI with real-time interview + corpus search
+- API endpoint for third-party integrations
+- Multi-turn autonomous flows (intake → experiment → check-in loop)
+
+Not the next step. The current Claude Code native flow needs to be tested with real users first.
+
+### Future: Web UI
+Lightweight frontend showing:
+- User profiles and experiment history
+- Corpus browser with search
+- Experiment cards with source attribution
+- Check-in interface
+
+Depends on the Claude Code flow proving out with real users first.
+
+## Prior Art
+
+| Project | What they do | What we do differently |
+|---|---|---|
+| Readwise / Reader | Content aggregation + highlights | No personalization. Everyone gets the same content. |
+| Mem.ai / Notion AI | Knowledge base + AI search | No interview, no experiments, no "what should I do with this" |
+| Coursera / Khan Academy | Assessment → level → content | Course-scoped. Can't pull from arbitrary creators. |
+| Obsidian + Dataview | Manual curation, powerful queries | No interview, no synthesis. Power user version of what we automate. |
+| Snipd / Podwise | Podcast → transcript → highlights | No personalization or action output. |
+| Shortform / Blinkist | Summaries + action items | Close to our output format, but zero personalization. |
+
+**Our moat**: the interview. Everyone else starts with content. We start with the person.
