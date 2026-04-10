@@ -8,6 +8,7 @@
     "add-creator": "node scripts/add-creator.js",
     "scan": "node scripts/scan.js",
     "ingest": "node scripts/batch-ingest.js",
+    "ingest:twitter": "node scripts/ingest-twitter.js",
     "index": "node scripts/index.js",
     "status": "node scripts/status.js"
   },

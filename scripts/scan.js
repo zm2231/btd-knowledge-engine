@@ -25,7 +25,8 @@ const scanAll = args.includes('--all');
 const onlyYoutube = args.includes('--youtube');
 const onlyTwitter = args.includes('--twitter');
 const onlyPodcast = args.includes('--podcast');
-const targetSlug = args.find(a => !a.startsWith('--') && !['--instance','--all'].includes(args[args.indexOf(a)-1]));
+const twitterCount = parseInt(getArg('--count') || '50', 10);
+const targetSlug = args.find(a => !a.startsWith('--') && !['--instance','--all','--count'].includes(args[args.indexOf(a)-1]));
 
 const ROOT = path.join(__dirname, '..');
 const INST = path.join(ROOT, instance);
@@ -33,7 +34,7 @@ const REGISTRY = path.join(INST, 'registry', 'creators.json');
 const CATALOG_DIR = path.join(INST, 'registry', 'catalogs');
 
 if (!targetSlug && !scanAll) {
-  console.error('Usage: node scripts/scan.js <creator-slug> | --all [--youtube] [--twitter] [--podcast] [--instance name]');
+  console.error('Usage: node scripts/scan.js <creator-slug> | --all [--youtube] [--twitter] [--podcast] [--count N] [--instance name]');
   process.exit(1);
 }
 
@@ -80,6 +81,60 @@ function scanYoutube(creator) {
   }
 }
 
+function parseJsonArrayFromMixedOutput(output) {
+  const trimmed = output.trim();
+  if (!trimmed) return [];
+
+  try {
+    const parsed = JSON.parse(trimmed);
+    if (Array.isArray(parsed)) return parsed;
+  } catch {}
+
+  let start = trimmed.indexOf('[');
+  while (start !== -1) {
+    let depth = 0;
+    let inString = false;
+    let escaping = false;
+
+    for (let i = start; i < trimmed.length; i++) {
+      const char = trimmed[i];
+
+      if (escaping) {
+        escaping = false;
+        continue;
+      }
+
+      if (char === '\\' && inString) {
+        escaping = true;
+        continue;
+      }
+
+      if (char === '"') {
+        inString = !inString;
+        continue;
+      }
+
+      if (inString) continue;
+
+      if (char === '[') depth++;
+      if (char === ']') {
+        depth--;
+        if (depth === 0) {
+          const candidate = trimmed.slice(start, i + 1);
+          try {
+            const parsed = JSON.parse(candidate);
+            if (Array.isArray(parsed)) return parsed;
+          } catch {}
+        }
+      }
+    }
+
+    start = trimmed.indexOf('[', start + 1);
+  }
+
+  throw new Error('Could not find a valid JSON array in bird output');
+}
+
 // ---- Twitter scan ----
 function scanTwitter(creator) {
   const tw = creator.platforms.twitter;
@@ -87,19 +142,30 @@ function scanTwitter(creator) {
 
   console.log(`   🐦 Twitter: @${tw.handle}`);
   try {
-    const cmd = `bird user-tweets ${tw.handle} --json --count 50 --no-emoji 2>/dev/null | sed -n '/^\\[/,$p'`;
+    const cmd = `bird user-tweets ${tw.handle} --json --count ${twitterCount} --no-emoji 2>/dev/null`;
     const output = execSync(cmd, { maxBuffer: 50 * 1024 * 1024, encoding: 'utf-8', timeout: 60000 });
-    const tweets = JSON.parse(output);
-    const items = (Array.isArray(tweets) ? tweets : []).map(t => ({
-      id: t.id,
-      text: (t.text || t.full_text || '').substring(0, 280),
-      date: t.created_at || null,
-      url: `https://x.com/${tw.handle}/status/${t.id}`,
-      retweet_count: t.retweet_count || 0,
-      like_count: t.favorite_count || t.like_count || 0,
-      is_reply: !!(t.in_reply_to_status_id || t.in_reply_to_user_id),
-      is_thread: (t.reply_count || 0) > 0,
-    }));
+    const tweets = parseJsonArrayFromMixedOutput(output);
+    const items = (Array.isArray(tweets) ? tweets : []).map(t => {
+      const replyCount = t.reply_count ?? t.replyCount ?? 0;
+      const conversationId = t.conversation_id ?? t.conversationId ?? t.id;
+      const inReplyToStatusId = t.in_reply_to_status_id ?? t.inReplyToStatusId ?? null;
+      const inReplyToUserId = t.in_reply_to_user_id ?? t.inReplyToUserId ?? null;
+      const retweetCount = t.retweet_count ?? t.retweetCount ?? 0;
+      const likeCount = t.favorite_count ?? t.favoriteCount ?? t.like_count ?? t.likeCount ?? 0;
+
+      return {
+        id: t.id,
+        text: (t.full_text || t.fullText || t.text || '').substring(0, 280),
+        date: t.created_at || t.createdAt || null,
+        url: `https://x.com/${tw.handle}/status/${t.id}`,
+        retweet_count: retweetCount,
+        like_count: likeCount,
+        is_reply: !!(inReplyToStatusId || inReplyToUserId),
+        is_thread: replyCount > 0 || (conversationId && String(conversationId) !== String(t.id)),
+        conversation_id: conversationId,
+        in_reply_to_status_id: inReplyToStatusId,
+      };
+    });
 
     return { platform: 'twitter', items, scanned_at: new Date().toISOString() };
   } catch (e) {
