@@ -8,30 +8,50 @@ Register the creators you actually follow. The system catalogs everything they'v
 
 ## What You Need
 
-**Node.js 20+** and **npm**. That's the only hard requirement. Everything else is optional based on what sources you want to ingest.
+**Node.js 20+** and **npm**. That's the only hard requirement. Everything else is optional based on what sources you want to ingest and what you want to do.
 
 ```bash
-# Clone and install
 git clone https://github.com/zm2231/btd-knowledge-engine.git
 cd btd-knowledge-engine
 npm install
 ```
 
-### CLI Tools (install what you need)
+### CLI Tools
 
-| Tool | What it does | Install | Required? |
+| Tool | What it does | Install | When you need it |
 |---|---|---|---|
-| **yt-dlp** | YouTube metadata, playlist scanning, audio download | `brew install yt-dlp` or `pip install yt-dlp` | Yes, if ingesting YouTube |
-| **LEANN** | Semantic vector search across all your content | `pip install leann` | Yes, for search |
-| **bird** | Twitter/X; pull tweets, threads, bookmarks | `brew install steipete/tap/bird` | Only for Twitter sources |
-| **podcast-dl** | Podcast RSS feed listing and episode download | Included in `npm install` | Only for podcasts |
+| **yt-dlp** | YouTube metadata and playlist scanning | `brew install yt-dlp` or `pip install yt-dlp` | Ingesting YouTube |
+| **LEANN** | Semantic vector search across all content | `pip install leann` | Search (core to everything) |
+| **bird** | Twitter/X; pull tweets, threads, bookmarks | `brew install steipete/tap/bird` | Twitter sources |
+| **podcast-dl** | Podcast RSS feed listing and episode download | Included in `npm install` | Podcast sources |
+| **sbstck-dl** | Substack article download | `go install github.com/alexferrari88/sbstck-dl@latest` | Substack sources (falls back to RSS if unavailable) |
+| **lightning-whisper-mlx** | Audio transcription (fastest on Apple Silicon) | `pip install lightning-whisper-mlx` | Podcast transcription (preferred) |
+| **whisper-cli** | Audio transcription (whisper.cpp) | `brew install whisper-cpp` (auto-downloads model) | Podcast transcription (fallback) |
 
-Verify your setup:
 ```bash
 node --version        # 20+
 yt-dlp --version      # any recent version
 leann list            # should run without error
 bird --version        # optional, 0.8+
+```
+
+### Whisper Setup (for podcasts)
+
+Podcast ingestion downloads audio and transcribes locally. The script auto-detects the best available backend:
+
+1. **lightning-whisper-mlx** (preferred) — native Apple Silicon, fastest. `pip install lightning-whisper-mlx`
+2. **whisper-cli** (fallback) — whisper.cpp. `brew install whisper-cpp`. Auto-downloads `ggml-base.en` model on first use.
+3. **Any OpenAI-compatible API** — set `WHISPER_URL` env var to override.
+
+```bash
+# Most users: just install MLX whisper
+pip install lightning-whisper-mlx
+
+# Or use a remote endpoint
+export WHISPER_URL="http://your-server:8080/v1/audio/transcriptions"
+
+# Or use a larger model for better accuracy
+export WHISPER_MLX_MODEL="small"   # base (default), small, medium, large-v3
 ```
 
 ## Five Minutes to Working
@@ -43,6 +63,7 @@ node scripts/init.js my-kb
 # 2. Register a creator and scan everything they've published
 node scripts/add-creator.js karpathy "Andrej Karpathy" \
   --youtube "https://www.youtube.com/@AndrejKarpathy" \
+  --twitter karpathy \
   --topics "ai,ml,building" \
   --instance my-kb --scan
 
@@ -56,96 +77,172 @@ node scripts/index.js --instance my-kb
 leann search btd-my-kb "how to approach building something new"
 ```
 
-That's it. You now have semantic search across 10 transcripts with timed segments. The whole thing takes about 90 seconds.
+That's it. Semantic search across 10 transcripts with timed segments. The whole thing takes about 90 seconds.
+
+## The User Flow
+
+The ingestion pipeline is the foundation, but the product is what happens when a person shows up. Three flows, all orchestrated through `session.js`:
+
+### 1. New User Intake
+
+```bash
+node scripts/session.js intake sarah
+```
+
+Assembles the SKILL.md interview (5 phases, non-sycophantic, calibrates rather than trusts self-assessment) and gives you everything you need to run it in Claude. The interview produces a constraint profile: what they actually want, where they actually are, what they're not thinking about, and what their real constraints look like.
+
+```bash
+# After the interview, save the profile
+node scripts/profile.js save sarah --file profile.yaml
+```
+
+### 2. Generate Experiment
+
+```bash
+node scripts/session.js experiment sarah
+```
+
+Loads the profile, searches the corpus using the person's gaps and blind spots, pulls relevant content, and packages it all with the experiment card template. Give it to Claude and it generates a time-boxed, testable experiment: specific content to consume, specific exercises, a hypothesis, and how to know if it worked.
+
+### 3. Check-in (Returning User)
+
+```bash
+node scripts/session.js checkin sarah
+```
+
+Loads the profile, the latest experiment, experiment history, and runs corpus searches targeted at whatever gap the experiment was addressing. Hands it to Claude with the RE-ENTRY.md protocol: figure out what happened, update the profile, generate the next experiment.
+
+### Quick Status
+
+```bash
+node scripts/session.js status sarah
+```
+
+```
+sarah
+────────────────────────────────────────
+Goal: Evaluate vendor AI claims for her team
+Type: learn
+Level: pre-beginner in AI/ML fundamentals
+Gap: No mental model for how any of this works
+Blind spots: 3
+Experiments: 1
+  Latest: 001-neural-network-basics.md
+    Status: active | Outcome: null
+
+Next action:
+  → Check in: node scripts/session.js checkin sarah
+```
 
 ## How Tracking Works
 
-Two layers, because knowing what exists is different from having it downloaded.
+Two layers for content, one for users.
 
-**Catalog**: everything a creator has published. Title, date, duration, URL. Built on registration with `--scan`, updated whenever you run `scan.js`. No downloads; just metadata.
+**Catalog**: everything a creator has published. Metadata only, no downloads. Built by `scan.js`.
 
-**Ingest log**: what you've actually pulled down, extracted, and indexed. Append-only JSONL. Every script reads this for dedup; you never download the same thing twice.
+**Ingest log**: what you've actually downloaded, transcribed, and indexed. Append-only JSONL. Scripts read this for dedup.
+
+**User profiles**: constraint profile YAML + experiment cards + journal. Managed by `profile.js`, change history tracked in JSONL.
 
 ```bash
-# See the full picture
-node scripts/status.js --instance my-kb
+node scripts/status.js          # content dashboard
+node scripts/profile.js list    # all users
 ```
-
-```
-Creators: 1 active
-  ● karpathy — Andrej Karpathy
-    YouTube: 17 items cataloged | 10 ingested | scanned today
-
-Downloaded: 10 | Indexed: 10 | Pending extraction: 10
-```
-
-You're looking at 17 published videos, 10 downloaded with transcripts, all 10 searchable. The other 7 are in the catalog whenever you want them.
 
 ## All Scripts
 
-Every script takes `--instance <name>`. Defaults to `btd` (our group's instance). Use your own.
+Every script takes `--instance <name>` (default: `btd`).
 
-```bash
-# npm shortcuts
-npm run init -- my-kb
-npm run add-creator -- slug "Name" --youtube <url> --instance my-kb --scan
-npm run scan -- slug --instance my-kb
-npm run ingest -- slug --limit 10 --top --instance my-kb
-npm run index -- --instance my-kb
-npm run status -- --instance my-kb
-```
-
+### Content Pipeline
 | Script | What | Key flags |
 |---|---|---|
-| `init.js` | Create a new instance with full directory structure | |
-| `add-creator.js` | Register a creator with their platforms | `--youtube`, `--twitter`, `--topics`, `--scan` |
-| `scan.js` | Catalog all published content without downloading | `--all`, `--youtube`, `--twitter`, `--podcast` |
-| `batch-ingest.js` | Download transcripts from the catalog | `--limit N`, `--top` (most viewed), `--dry-run` |
-| `ingest-youtube.js` | Ingest a single YouTube URL directly | `--creator <slug>` |
-| `index.js` | Build/update LEANN semantic index | `--force` (full rebuild) |
-| `status.js` | Dashboard; creators, catalogs, ingestion state | |
+| `init.js` | Create a new instance | |
+| `add-creator.js` | Register a creator | `--youtube`, `--twitter`, `--podcast`, `--topics`, `--scan` |
+| `scan.js` | Catalog published content (no download) | `--all`, `--youtube`, `--twitter`, `--podcast`, `--substack` |
+| `batch-ingest.js` | Download YouTube transcripts from catalog | `--limit N`, `--top`, `--dry-run` |
+| `ingest-youtube.js` | Ingest a single YouTube URL | `--creator <slug>` |
+| `ingest-twitter.js` | Ingest tweets from catalog | `--limit N`, `--dry-run` |
+| `ingest-podcast.js` | Download + transcribe podcast episodes | `--feed <url>`, `--limit N`, `--list`, `--file <mp3>` |
+| `ingest-substack.js` | Download Substack articles | `--scan`, `--limit N` |
+| `index.js` | Build/update LEANN semantic index | `--force` |
+| `status.js` | Content dashboard | |
+
+### User Flow
+| Script | What |
+|---|---|
+| `session.js intake <user>` | Start intake interview |
+| `session.js experiment <user>` | Generate next experiment (profile + corpus) |
+| `session.js checkin <user>` | Returning user check-in |
+| `session.js search <user> "<query>"` | Profile-aware corpus search |
+| `session.js status <user>` | User status overview |
+| `profile.js save <user>` | Save constraint profile (`--file` or `--stdin`) |
+| `profile.js load <user>` | Print profile |
+| `profile.js list` | List all users |
+| `profile.js summary <user>` | Profile + experiment status |
+| `profile.js update <user>` | Update a field (`--field`, `--value`) |
+| `profile.js history <user>` | Profile change log |
 
 ## Sources
 
-| Source | How it catalogs | How it ingests | Speed |
+| Source | Catalog | Ingest | Notes |
 |---|---|---|---|
-| **YouTube** | `yt-dlp --flat-playlist` (metadata only) | `youtube-transcript-plus` (captions API) | 17 videos in 21s |
-| **Twitter/X** | `bird user-tweets --json` | Coming soon | |
-| **Podcasts** | `podcast-dl --list json` (RSS) | Audio download + local whisper | |
-| **Substack** | RSS feed parsing | Coming soon | |
-| **Articles** | Manual (Obsidian Web Clipper) | Drop `.md` in `raw/articles/` | |
-| **Transcripts** | Manual | Drop `.md` in `raw/transcripts/` | |
+| **YouTube** | `yt-dlp --flat-playlist` | `youtube-transcript-plus` (captions) | 17 videos in 21s. No audio download needed. |
+| **Twitter/X** | `bird user-tweets --json` | Thread grouping into markdown | Rate limited; use small counts |
+| **Podcasts** | `podcast-dl --list json` | Download mp3 + whisper transcription | 90MB episode transcribed in ~2.5min |
+| **Substack** | `sbstck-dl` or RSS fallback | Markdown articles | Full HTML available in RSS feeds |
+| **Articles** | Manual | Drop `.md` in `raw/articles/` | Obsidian Web Clipper works well |
+| **Transcripts** | Manual | Drop `.md` in `raw/transcripts/` | Meeting notes, group sessions |
+| **Repos** | `leann build` directly | Point LEANN at a codebase | Index any repo for semantic code search |
 
-YouTube is the most mature pipeline. Transcripts come directly from YouTube's caption API; no audio download, no whisper, just text with timed segments. Most videos have auto-generated English captions. The few that don't (silent videos, music) get skipped with a clear error.
+## The Interview Layer
+
+This is the part that makes it personal. The intake interview pushes back, probes, and calibrates. It doesn't take your word for it when you say you're "intermediate at AI." It asks you a question an intermediate would answer easily. If you can't, it adjusts silently.
+
+The interview produces a constraint profile. The constraint profile routes corpus queries. Different profiles get fundamentally different content back. We tested this; "what is a neural network" pulls 3Blue1Brown visual explanations for beginners. "How to build an LLM from scratch" pulls Karpathy deep dives for builders. "Vikings and medieval raids" pulls a Lex Fridman podcast transcript. Same index, completely different results depending on who's asking and why.
+
+My theory is that this is where most "personalized AI" products fail. They skip the interview, or they do a shallow one, and everyone gets the same output. Without the right questions, the best corpus in the world produces generic answers.
 
 ## Repo Structure
 
 ```
 btd-knowledge-engine/
-├── template/            # Clean starting point; copy this or use init.js
+├── scripts/             # All tooling (instance-aware)
+│   ├── session.js       #   User flow orchestrator (intake, checkin, experiment, search)
+│   ├── profile.js       #   Profile management (save, load, update, history)
+│   ├── add-creator.js   #   Register creators
+│   ├── scan.js          #   Catalog published content
+│   ├── batch-ingest.js  #   YouTube batch download
+│   ├── ingest-*.js      #   Source-specific ingestion (youtube, twitter, podcast, substack)
+│   ├── index.js         #   LEANN index build
+│   ├── status.js        #   Content dashboard
+│   └── init.js          #   Create new instance
+├── skills/              # Interview engine
+│   └── btd-intake/
+│       ├── SKILL.md     #   Non-sycophantic intake interview (5 phases)
+│       └── RE-ENTRY.md  #   Returning user check-in protocol
+├── template/            # Clean starting point for new instances
 ├── btd/                 # Our instance (the BTD group's corpus)
-│   ├── raw/             #   37 docs: 15 Karpathy, 10 3B1B, 10 Nate Jones, 2 group transcripts
-│   └── registry/        #   4 creators, 1,137 items cataloged
-├── scripts/             # All tooling; instance-aware via --instance
-├── skills/              # btd-intake: the non-sycophantic interview engine
-├── docs/                # Blueprint visualization, architecture decisions
-├── question-bank/       # Interview state machine (the IP)
-└── .leann/              # LEANN index data (7,894 chunks across 37 docs)
+│   ├── raw/             #   48 docs: YouTube, Twitter, Podcasts, Substack, transcripts
+│   ├── registry/        #   5 creators, 1,643+ items cataloged
+│   └── users/           #   Constraint profiles + experiment cards
+├── question-bank/       # Interview state machine (needs rewrite for non-technical users)
+├── docs/                # Blueprint, roadmap, architecture
+└── .leann/              # LEANN index (8,164+ chunks)
 ```
 
-## The Interview Layer
+## Current State (April 2026)
 
-This is the part that makes it personal. The `skills/btd-intake/SKILL.md` is an interview engine that pushes back, probes, and calibrates. It doesn't take your word for it when you say you're "intermediate at AI." It asks you a question an intermediate would answer easily. If you can't, it adjusts silently.
+**Content:**
+- 5 creators: Karpathy (YT+Twitter), 3Blue1Brown (YT), Nate Jones (YT), Mollick (Substack), Lex Fridman (YT+Podcast)
+- 1,643+ items cataloged across all platforms
+- 48 docs ingested, 8,164+ chunks in LEANN index
+- All 5 source type pipelines working end to end
 
-The interview produces a constraint profile. The constraint profile routes corpus queries. Different profiles get fundamentally different content back. We tested this; "what is a neural network" pulls 3Blue1Brown visual explanations, "how to build an LLM from scratch" pulls Karpathy deep dives, "how to think about constraints" pulls our group session transcripts. Same index, completely different results.
+**Product:**
+- Intake interview skill (SKILL.md) ready for Max to run
+- Re-entry protocol (RE-ENTRY.md) ready
+- Session orchestrator wires skills + profiles + corpus together
+- Profile management with change tracking
+- Experiment card template with structured outcome YAML for machine consumption
 
-My theory is that this is where most "personalized AI" products fail. They skip the interview, or they do a shallow one, and everyone gets the same output. Without the right questions, the best corpus in the world produces generic answers.
-
-## Current State
-
-- **4 creators**: Karpathy (17 YT), 3Blue1Brown (233 YT), Nate Jones (887 YT), Mollick (substack, pending)
-- **1,137 items cataloged**, 37 ingested, 7,894 chunks indexed in LEANN
-- **Retrieval quality confirmed**: different constraint profiles pull different content
-- **Pipeline working end to end**: register → scan → ingest → index → search
-
-What's next is Max running 3 real people through the intake interview, writing sample outputs by hand, and us building the synthesis layer that turns constraint profile + corpus retrieval into structured, actionable output. The tech is ready; now we test whether the questions are right.
+**What's next:** Max runs 3 real people through the intake interview, writes sample outputs by hand, and we build the synthesis pipeline that turns constraint profile + corpus into structured, actionable output. The tech is ready; now we test whether the questions are right.

@@ -7,10 +7,14 @@
  *   node scripts/ingest-podcast.js <creator-slug> --file <mp3-path> --title "Episode Title"
  *   node scripts/ingest-podcast.js <creator-slug> --list  (list episodes from feed without downloading)
  *
- * Requires:
- *   - podcast-dl (npm dep, installed)
- *   - whisper endpoint at WHISPER_URL (default: http://100.122.112.83:8100/v1/audio/transcriptions)
- *     or local whisper-cli with a model
+ * Whisper backend (auto-detected in this order):
+ *   1. WHISPER_URL env var → any OpenAI-compatible /v1/audio/transcriptions endpoint
+ *   2. Local whisper-cli (brew install whisper-cpp) → auto-downloads ggml-base.en model if needed
+ *   3. Ollama (if it ever adds audio support)
+ *
+ * Override:
+ *   WHISPER_URL="http://localhost:8080/v1/audio/transcriptions" node scripts/ingest-podcast.js ...
+ *   WHISPER_MODEL_PATH="/path/to/ggml-large-v3.bin" node scripts/ingest-podcast.js ...
  */
 
 const fs = require('fs');
@@ -31,9 +35,116 @@ const REGISTRY = path.join(INST, 'registry', 'creators.json');
 const INGEST_LOG = path.join(INST, 'registry', 'ingest-log.jsonl');
 const TEMP_DIR = path.join(ROOT, '.tmp', 'podcast-dl');
 
-const WHISPER_URL = process.env.WHISPER_URL || 'http://100.122.112.83:8100/v1/audio/transcriptions';
-const WHISPER_MODEL = process.env.WHISPER_MODEL || 'whisper-1';
-const MAX_CHUNK_MB = parseInt(process.env.WHISPER_MAX_MB || '24'); // split files larger than this
+const MAX_CHUNK_MB = parseInt(process.env.WHISPER_MAX_MB || '24');
+
+// --- Whisper backend detection ---
+const MODELS_DIR = path.join(ROOT, '.models');
+const DEFAULT_MODEL_NAME = 'ggml-base.en.bin';
+const MODEL_URL = `https://huggingface.co/ggerganov/whisper.cpp/resolve/main/${DEFAULT_MODEL_NAME}`;
+
+function detectWhisperBackend() {
+  // 1. Explicit URL override
+  if (process.env.WHISPER_URL) {
+    return {
+      type: 'api',
+      url: process.env.WHISPER_URL,
+      model: process.env.WHISPER_MODEL || 'whisper-1'
+    };
+  }
+
+  // 2. lightning-whisper-mlx (fastest on Apple Silicon, no server needed)
+  try {
+    execSync("python3 -c 'from lightning_whisper_mlx import LightningWhisperMLX' 2>/dev/null", { encoding: 'utf8', stdio: 'pipe' });
+    const modelSize = process.env.WHISPER_MLX_MODEL || 'base';
+    return { type: 'mlx', model: modelSize };
+  } catch (e) { if (process.env.DEBUG) console.error('  MLX detect failed:', e.message?.split('\n')[0]); }
+
+  // 3. Local whisper-cli (whisper.cpp)
+  try {
+    const whisperPath = execSync('which whisper-cli 2>/dev/null', { encoding: 'utf8' }).trim();
+    if (whisperPath) {
+      const modelPath = findOrDownloadModel();
+      if (modelPath) {
+        return { type: 'local', binary: whisperPath, model: modelPath };
+      }
+    }
+  } catch {}
+
+  // 4. Check common API endpoints
+  for (const url of [
+    'http://127.0.0.1:8080/v1/audio/transcriptions',  // whisper.cpp server
+    'http://127.0.0.1:8000/v1/audio/transcriptions',  // generic
+  ]) {
+    try {
+      execSync(`curl -sf --connect-timeout 2 "${url.replace('/audio/transcriptions', '/models')}" >/dev/null 2>&1`);
+      return { type: 'api', url, model: process.env.WHISPER_MODEL || 'whisper-1' };
+    } catch {}
+  }
+
+  return null;
+}
+
+function findOrDownloadModel() {
+  // Check env override
+  if (process.env.WHISPER_MODEL_PATH && fs.existsSync(process.env.WHISPER_MODEL_PATH)) {
+    return process.env.WHISPER_MODEL_PATH;
+  }
+
+  // Check common locations
+  const candidates = [
+    path.join(MODELS_DIR, DEFAULT_MODEL_NAME),
+    path.join(MODELS_DIR, 'ggml-small.en.bin'),
+    path.join(MODELS_DIR, 'ggml-medium.bin'),
+    path.join(MODELS_DIR, 'ggml-large-v3.bin'),
+    // Homebrew whisper-cpp models
+    ...(() => {
+      try {
+        const dir = execSync('brew --prefix whisper-cpp 2>/dev/null', { encoding: 'utf8' }).trim();
+        return fs.readdirSync(path.join(dir, 'share', 'whisper-cpp'))
+          .filter(f => f.endsWith('.bin') && !f.includes('tiny'))
+          .map(f => path.join(dir, 'share', 'whisper-cpp', f));
+      } catch { return []; }
+    })(),
+    // Home directory
+    path.join(process.env.HOME || '', '.cache', 'whisper', DEFAULT_MODEL_NAME),
+  ];
+
+  for (const c of candidates) {
+    if (fs.existsSync(c)) return c;
+  }
+
+  // Auto-download base.en (142MB)
+  console.log(`\n   📥 Downloading whisper model: ${DEFAULT_MODEL_NAME} (142MB)...`);
+  console.log(`      From: ${MODEL_URL}`);
+  fs.mkdirSync(MODELS_DIR, { recursive: true });
+  const dest = path.join(MODELS_DIR, DEFAULT_MODEL_NAME);
+  try {
+    execSync(`curl -L -o "${dest}" "${MODEL_URL}"`, { timeout: 300000, stdio: 'inherit' });
+    console.log(`      ✅ Saved to ${dest}`);
+    return dest;
+  } catch (e) {
+    console.error(`      ❌ Download failed: ${e.message}`);
+    console.error(`      Manual download: curl -L -o ${dest} "${MODEL_URL}"`);
+    return null;
+  }
+}
+
+const WHISPER = detectWhisperBackend();
+if (!WHISPER && !hasFlag('list')) {
+  console.error(`❌ No whisper backend found. Options:`);
+  console.error(`   1. Set WHISPER_URL to an OpenAI-compatible transcription endpoint`);
+  console.error(`   2. Install whisper-cli: brew install whisper-cpp`);
+  console.error(`      (a ggml-base.en model will be auto-downloaded on first use)`);
+  console.error(`   3. Run a whisper server: whisper-server -m model.bin --port 8080`);
+  process.exit(1);
+} else if (WHISPER && !hasFlag('list')) {
+  const desc = WHISPER.type === 'mlx'
+    ? `lightning-whisper-mlx (${WHISPER.model})`
+    : WHISPER.type === 'api'
+    ? `API → ${WHISPER.url}`
+    : `local whisper-cli → ${path.basename(WHISPER.model)}`;
+  console.log(`   🎤 Whisper: ${desc}`);
+}
 
 const LIMIT = parseInt(getFlag('limit') || '5');
 const FEED_URL = getFlag('feed');
@@ -128,9 +239,85 @@ function splitAudio(filePath, chunkMB) {
   return chunkPaths;
 }
 
+function transcribeChunkMLX(audioPath) {
+  // lightning-whisper-mlx: runs natively on Apple Silicon, fastest option
+  const modelSize = WHISPER.model || 'base';
+  const scriptPath = path.join(TEMP_DIR, '_whisper_mlx.py');
+  fs.mkdirSync(TEMP_DIR, { recursive: true });
+  fs.writeFileSync(scriptPath, `import json
+from lightning_whisper_mlx import LightningWhisperMLX
+w = LightningWhisperMLX(model='${modelSize}', batch_size=12, quant=None)
+r = w.transcribe('${audioPath.replace(/'/g, "\\'")}')
+segs = []
+for s in (r.get('segments') or []):
+    if isinstance(s, (list, tuple)) and len(s) >= 3:
+        segs.append({"start": s[0]/1000, "end": s[1]/1000, "text": s[2].strip()})
+    elif isinstance(s, dict):
+        segs.append({"start": s.get("start",0), "end": s.get("end",0), "text": s.get("text","").strip()})
+if not segs and r.get('text'):
+    segs.append({"start": 0, "end": 0, "text": r['text'].strip()})
+print(json.dumps(segs))
+`);
+  const result = execSync(`python3 "${scriptPath}"`, {
+    encoding: 'utf8', maxBuffer: 50 * 1024 * 1024, timeout: 600000
+  });
+  return JSON.parse(result);
+}
+
+function transcribeChunkLocal(audioPath) {
+  // whisper-cli (whisper.cpp): local binary with ggml model
+  const outBase = audioPath.replace(/\.[^.]+$/, '-out');
+  execSync(
+    `"${WHISPER.binary}" -m "${WHISPER.model}" -f "${audioPath}" -oj --no-prints -of "${outBase}" 2>/dev/null`,
+    { timeout: 600000 }
+  );
+  const jsonPath = outBase + '.json';
+  const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  try { fs.unlinkSync(jsonPath); } catch {}
+  
+  return (data.transcription || []).map(s => ({
+    start: parseTimestamp(s.timestamps?.from),
+    end: parseTimestamp(s.timestamps?.to),
+    text: (s.text || '').trim()
+  })).filter(s => s.text);
+}
+
+function parseTimestamp(ts) {
+  // "00:00:00,000" → seconds
+  if (!ts) return 0;
+  const match = ts.match(/(\d+):(\d+):(\d+)/);
+  if (!match) return 0;
+  return parseInt(match[1]) * 3600 + parseInt(match[2]) * 60 + parseInt(match[3]);
+}
+
+function transcribeChunkAPI(audioPath) {
+  // OpenAI-compatible API endpoint
+  const result = execSync(
+    `curl -s "${WHISPER.url}" -F "file=@${audioPath}" -F "model=${WHISPER.model}" -F "response_format=verbose_json"`,
+    { encoding: 'utf8', maxBuffer: 50 * 1024 * 1024, timeout: 600000 }
+  );
+  const parsed = JSON.parse(result);
+  
+  if (parsed.segments) {
+    return parsed.segments.map(s => ({ start: s.start, end: s.end, text: s.text.trim() }));
+  } else if (parsed.text) {
+    return [{ start: 0, end: 0, text: parsed.text.trim() }];
+  }
+  throw new Error('Unexpected API response format');
+}
+
+function transcribeChunk(audioPath) {
+  if (WHISPER.type === 'mlx') return transcribeChunkMLX(audioPath);
+  if (WHISPER.type === 'local') return transcribeChunkLocal(audioPath);
+  if (WHISPER.type === 'api') return transcribeChunkAPI(audioPath);
+  throw new Error('No whisper backend configured');
+}
+
 function transcribeFile(audioPath) {
   const sizeMB = getFileSizeMB(audioPath);
-  const chunks = splitAudio(audioPath, MAX_CHUNK_MB);
+  // MLX handles large files natively; only chunk for API/local backends
+  const needsChunking = WHISPER.type === 'api';
+  const chunks = needsChunking ? splitAudio(audioPath, MAX_CHUNK_MB) : [audioPath];
   
   const transcripts = [];
   for (let i = 0; i < chunks.length; i++) {
@@ -141,43 +328,11 @@ function transcribeFile(audioPath) {
     }
     
     try {
-      const result = execSync(
-        `curl -s "${WHISPER_URL}" -F "file=@${chunks[i]}" -F "model=${WHISPER_MODEL}" -F "response_format=verbose_json"`,
-        { encoding: 'utf8', maxBuffer: 50 * 1024 * 1024, timeout: 600000 }
-      );
-      
-      const parsed = JSON.parse(result);
-      
-      if (parsed.segments) {
-        // Verbose JSON with timestamps
-        transcripts.push(...parsed.segments.map(s => ({
-          start: s.start,
-          end: s.end,
-          text: s.text.trim()
-        })));
-      } else if (parsed.text) {
-        transcripts.push({ start: 0, end: 0, text: parsed.text.trim() });
-      } else {
-        throw new Error('Unexpected response format');
-      }
-      
-      console.log(' ✅');
+      const segments = transcribeChunk(chunks[i]);
+      transcripts.push(...segments);
+      console.log(` ✅ (${segments.length} segments)`);
     } catch (err) {
-      console.log(` ❌ ${err.message}`);
-      // Try plain text fallback
-      try {
-        const result = execSync(
-          `curl -s "${WHISPER_URL}" -F "file=@${chunks[i]}" -F "model=${WHISPER_MODEL}"`,
-          { encoding: 'utf8', maxBuffer: 50 * 1024 * 1024, timeout: 600000 }
-        );
-        const parsed = JSON.parse(result);
-        if (parsed.text) {
-          transcripts.push({ start: 0, end: 0, text: parsed.text.trim() });
-          console.log('   ✅ (plain text fallback)');
-        }
-      } catch (e2) {
-        console.log(`   ❌ Transcription failed completely: ${e2.message}`);
-      }
+      console.log(` ❌ ${err.message.split('\n')[0]}`);
     }
     
     // Clean up chunk files

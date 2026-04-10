@@ -13,7 +13,8 @@
     "ingest:substack": "node scripts/ingest-substack.js",
     "index": "node scripts/index.js",
     "status": "node scripts/status.js",
-    "profile": "node scripts/profile.js"
+    "profile": "node scripts/profile.js",
+    "session": "node scripts/session.js"
   },
   "repository": {
     "type": "git",
