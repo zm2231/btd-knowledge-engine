@@ -1,0 +1,4969 @@
+{
+  "creator": "lex-fridman",
+  "platform": "podcast",
+  "scanned_at": "2026-04-10T19:07:50.503Z",
+  "total": 496,
+  "ingested": 0,
+  "items": [
+    {
+      "id": 496,
+      "title": "#495 – Vikings, Ragnar, Berserkers, Valhalla & the Warriors of the Viking Age",
+      "date": "Thu, 09 Apr 2026 17:43:17 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 496,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 495,
+      "title": "#494 – Jensen Huang: NVIDIA – The $4 Trillion Company & the AI Revolution",
+      "date": "Mon, 23 Mar 2026 16:28:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 495,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 494,
+      "title": "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming",
+      "date": "Wed, 11 Mar 2026 20:37:33 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 494,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 493,
+      "title": "#492 – Rick Beato: Greatest Guitarists of All Time, History & Future of Music",
+      "date": "Sun, 01 Mar 2026 04:33:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 493,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 492,
+      "title": "#491 – OpenClaw: The Viral AI Agent that Broke the Internet – Peter Steinberger",
+      "date": "Thu, 12 Feb 2026 03:10:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 492,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 491,
+      "title": "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI",
+      "date": "Sun, 01 Feb 2026 02:46:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 491,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 490,
+      "title": "#489 – Paul Rosolie: Uncontacted Tribes in the Amazon Jungle",
+      "date": "Tue, 13 Jan 2026 20:15:15 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 490,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 489,
+      "title": "#488 – Infinity, Paradoxes that Broke Mathematics, Gödel Incompleteness & the Multiverse – Joel David Hamkins",
+      "date": "Wed, 31 Dec 2025 21:24:33 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 489,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 488,
+      "title": "#487 – Irving Finkel: Deciphering Secrets of Ancient Civilizations & Flood Myths",
+      "date": "Fri, 12 Dec 2025 20:04:16 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 488,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 487,
+      "title": "#486 – Michael Levin: Hidden Reality of Alien Intelligence & Biological Life",
+      "date": "Sun, 30 Nov 2025 19:40:53 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 487,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 486,
+      "title": "#485 – David Kirtley: Nuclear Fusion, Plasma Physics, and the Future of Energy",
+      "date": "Mon, 17 Nov 2025 18:55:13 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 486,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 485,
+      "title": "#484 – Dan Houser: GTA, Red Dead Redemption, Rockstar, Absurd & Future of Gaming",
+      "date": "Fri, 31 Oct 2025 20:53:37 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 485,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 484,
+      "title": "#483 – Julia Shaw: Criminal Psychology of Murder, Serial Killers, Memory & Sex",
+      "date": "Tue, 14 Oct 2025 17:32:37 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 484,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 483,
+      "title": "#482 – Pavel Durov: Telegram, Freedom, Censorship, Money, Power & Human Nature",
+      "date": "Wed, 01 Oct 2025 01:40:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 483,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 482,
+      "title": "#481 – Norman Ohler: Hitler, Nazis, Drugs, WW2, Blitzkrieg, LSD, MKUltra & CIA",
+      "date": "Fri, 19 Sep 2025 18:34:47 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 482,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 481,
+      "title": "#480 – Dave Hone: T-Rex, Dinosaurs, Extinction, Evolution, and Jurassic Park",
+      "date": "Thu, 04 Sep 2025 20:57:38 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 481,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 480,
+      "title": "#479 – Dave Plummer: Programming, Autism, and Old-School Microsoft Stories",
+      "date": "Fri, 29 Aug 2025 23:59:06 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 480,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 479,
+      "title": "#478 – Scott Horton: The Case Against War and the Military Industrial Complex",
+      "date": "Sun, 24 Aug 2025 01:25:12 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 479,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 478,
+      "title": "#477 – Keyu Jin: China’s Economy, Tariffs, Trade, Trump, Communism & Capitalism",
+      "date": "Wed, 13 Aug 2025 21:29:29 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 478,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 477,
+      "title": "#476 – Jack Weatherford: Genghis Khan and the Mongol Empire",
+      "date": "Fri, 01 Aug 2025 01:36:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 477,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 476,
+      "title": "#475 – Demis Hassabis: Future of AI, Simulating Reality, Physics and Video Games",
+      "date": "Wed, 23 Jul 2025 19:34:16 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 476,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 475,
+      "title": "#474 – DHH: Future of Programming, AI, Ruby on Rails, Productivity & Parenting",
+      "date": "Sat, 12 Jul 2025 17:16:31 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 475,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 474,
+      "title": "#473 – Iran War Debate: Nuclear Weapons, Trump, Peace, Power & the Middle East",
+      "date": "Thu, 26 Jun 2025 23:28:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 474,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 473,
+      "title": "#472 – Terence Tao: Hardest Problems in Mathematics, Physics & the Future of AI",
+      "date": "Sun, 15 Jun 2025 00:25:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 473,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 472,
+      "title": "#471 – Sundar Pichai: CEO of Google and Alphabet",
+      "date": "Thu, 05 Jun 2025 17:53:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 472,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 471,
+      "title": "#470 – James Holland: World War II, Hitler, Churchill, Stalin & Biggest Battles",
+      "date": "Sat, 24 May 2025 23:11:49 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 471,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 470,
+      "title": "#469 – Oliver Anthony: Country Music, Blue-Collar America, Fame, Money, and Pain",
+      "date": "Tue, 20 May 2025 15:20:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 470,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 469,
+      "title": "#468 – Janna Levin: Black Holes, Wormholes, Aliens, Paradoxes & Extra Dimensions",
+      "date": "Mon, 05 May 2025 23:03:38 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 469,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 468,
+      "title": "#467 – Tim Sweeney: Fortnite, Unreal Engine, and the Future of Gaming",
+      "date": "Wed, 30 Apr 2025 21:53:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 468,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 467,
+      "title": "#466 – Jeffrey Wasserstrom: China, Xi Jinping, Trade War, Taiwan, Hong Kong, Mao",
+      "date": "Thu, 24 Apr 2025 23:14:06 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 467,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 466,
+      "title": "#465 – Robert Rodriguez: Sin City, Desperado, El Mariachi, Alita, and Filmmaking",
+      "date": "Thu, 17 Apr 2025 17:51:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 466,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 465,
+      "title": "#464 – Dave Smith: Israel, Ukraine, Epstein, Mossad, Conspiracies & Antisemitism",
+      "date": "Wed, 09 Apr 2025 02:02:56 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 465,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 464,
+      "title": "#463 – Douglas Murray: Putin, Zelenskyy, Trump, Israel, Netanyahu, Hamas & Gaza",
+      "date": "Sun, 30 Mar 2025 21:07:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 464,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 463,
+      "title": "#462 – Ezra Klein and Derek Thompson: Politics, Trump, AOC, Elon & DOGE",
+      "date": "Wed, 26 Mar 2025 08:59:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 463,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 462,
+      "title": "#461 – ThePrimeagen: Programming, AI, ADHD, Productivity, Addiction, and God",
+      "date": "Sat, 22 Mar 2025 19:58:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 462,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 461,
+      "title": "#460 – Narendra Modi: Prime Minister of India – Power, Democracy, War & Peace",
+      "date": "Sun, 16 Mar 2025 13:21:05 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 461,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 460,
+      "title": "#459 – DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+      "date": "Mon, 03 Feb 2025 03:37:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 460,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 459,
+      "title": "#458 – Marc Andreessen: Trump, Power, Tech, AI, Immigration & Future of America",
+      "date": "Sun, 26 Jan 2025 20:50:35 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 459,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 458,
+      "title": "#457 – Jennifer Burns: Milton Friedman, Ayn Rand, Economics, Capitalism, Freedom",
+      "date": "Sun, 19 Jan 2025 19:56:15 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 458,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 457,
+      "title": "#456 – Volodymyr Zelenskyy: Ukraine, War, Peace, Putin, Trump, NATO, and Freedom",
+      "date": "Mon, 06 Jan 2025 00:12:14 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 457,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 456,
+      "title": "#455 – Adam Frank: Alien Civilizations and the Search for Extraterrestrial Life",
+      "date": "Sun, 22 Dec 2024 22:36:20 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 456,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 455,
+      "title": "#454 – Saagar Enjeti: Trump, MAGA, DOGE, Obama, FDR, JFK, History & Politics",
+      "date": "Sun, 08 Dec 2024 16:39:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 455,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 454,
+      "title": "#453 – Javier Milei: President of Argentina – Freedom, Economics, and Corruption",
+      "date": "Wed, 20 Nov 2024 16:07:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 454,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 453,
+      "title": "#452 – Dario Amodei: Anthropic CEO on Claude, AGI & the Future of AI & Humanity",
+      "date": "Mon, 11 Nov 2024 19:53:30 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 453,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 452,
+      "title": "#451 – Rick Spence: CIA, KGB, Illuminati, Secret Societies, Cults & Conspiracies",
+      "date": "Wed, 30 Oct 2024 21:30:55 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 452,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 451,
+      "title": "#450 – Bernie Sanders Interview",
+      "date": "Wed, 23 Oct 2024 20:30:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 451,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 450,
+      "title": "#449 – Graham Hancock: Lost Civilization of the Ice Age & Ancient Human History",
+      "date": "Wed, 16 Oct 2024 17:39:58 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 450,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 449,
+      "title": "#448 – Jordan Peterson: Nietzsche, Hitler, God, Psychopathy, Suffering & Meaning",
+      "date": "Fri, 11 Oct 2024 18:25:36 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 449,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 448,
+      "title": "#447 – Cursor Team: Future of Programming with AI",
+      "date": "Sun, 06 Oct 2024 18:47:46 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 448,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 447,
+      "title": "#446 – Ed Barnhart: Maya, Aztec, Inca, and Lost Civilizations of South America",
+      "date": "Mon, 30 Sep 2024 17:59:36 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 447,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 446,
+      "title": "#445 – Vivek Ramaswamy: Trump, Conservatism, Nationalism, Immigration, and War",
+      "date": "Wed, 25 Sep 2024 21:17:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 446,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 445,
+      "title": "#444 – Vejas Liulevicius: Communism, Marxism, Nazism, Stalin, Mao, and Hitler",
+      "date": "Fri, 20 Sep 2024 22:02:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 445,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 444,
+      "title": "#443 – Gregory Aldrete: The Roman Empire – Rise and Fall of Ancient Rome",
+      "date": "Thu, 12 Sep 2024 22:57:47 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 444,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 443,
+      "title": "#442 – Donald Trump Interview",
+      "date": "Tue, 03 Sep 2024 16:24:11 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 443,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 442,
+      "title": "#441 – Cenk Uygur: Trump vs Harris, Progressive Politics, Communism & Capitalism",
+      "date": "Fri, 30 Aug 2024 23:49:16 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 442,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 441,
+      "title": "#440 – Pieter Levels: Programming, Viral AI Startups, and Digital Nomad Life",
+      "date": "Tue, 20 Aug 2024 20:22:09 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 441,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 440,
+      "title": "#439 – Craig Jones: Jiu Jitsu, $2 Million Prize, CJI, ADCC, Ukraine & Trolling",
+      "date": "Wed, 14 Aug 2024 19:58:00 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 440,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 439,
+      "title": "#438 – Elon Musk: Neuralink and the Future of Humanity",
+      "date": "Fri, 02 Aug 2024 19:19:20 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 439,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 438,
+      "title": "#437 – Jordan Jonas: Survival, Hunting, Siberia, God, and Winning Alone Season 6",
+      "date": "Sun, 21 Jul 2024 23:43:00 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 438,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 437,
+      "title": "#436 – Ivanka Trump: Politics, Family, Real Estate, Fashion, Music, and Life",
+      "date": "Tue, 02 Jul 2024 23:04:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 437,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 436,
+      "title": "#435 – Andrew Huberman: Focus, Controversy, Politics, and Relationships",
+      "date": "Fri, 28 Jun 2024 00:07:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 436,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 435,
+      "title": "#434 – Aravind Srinivas: Perplexity CEO on Future of AI, Search & the Internet",
+      "date": "Wed, 19 Jun 2024 21:27:17 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 435,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 434,
+      "title": "#433 – Sara Walker: Physics of Life, Time, Complexity, and Aliens",
+      "date": "Thu, 13 Jun 2024 21:50:25 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 434,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 433,
+      "title": "#432 – Kevin Spacey: Power, Controversy, Betrayal, Truth & Love in Film and Life",
+      "date": "Wed, 05 Jun 2024 23:50:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 433,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 432,
+      "title": "#431 – Roman Yampolskiy: Dangers of Superintelligent AI",
+      "date": "Sun, 02 Jun 2024 21:18:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 432,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 431,
+      "title": "#430 – Charan Ranganath: Human Memory, Imagination, Deja Vu, and False Memories",
+      "date": "Sat, 25 May 2024 20:52:50 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 431,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 430,
+      "title": "#429 – Paul Rosolie: Jungle, Apex Predators, Aliens, Uncontacted Tribes, and God",
+      "date": "Wed, 15 May 2024 23:30:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 430,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 429,
+      "title": "#428 – Sean Carroll: General Relativity, Quantum Mechanics, Black Holes & Aliens",
+      "date": "Mon, 22 Apr 2024 19:25:24 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 429,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 428,
+      "title": "#427 – Neil Adams: Judo, Olympics, Winning, Losing, and the Champion Mindset",
+      "date": "Sat, 20 Apr 2024 21:59:31 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 428,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 427,
+      "title": "#426 – Edward Gibson: Human Language, Psycholinguistics, Syntax, Grammar & LLMs",
+      "date": "Wed, 17 Apr 2024 20:05:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 427,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 426,
+      "title": "#425 – Andrew Callaghan: Channel 5, Gonzo, QAnon, O-Block, Politics & Alex Jones",
+      "date": "Sat, 13 Apr 2024 17:48:56 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 426,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 425,
+      "title": "#424 – Bassem Youssef: Israel-Palestine, Gaza, Hamas, Middle East, Satire & Fame",
+      "date": "Fri, 05 Apr 2024 20:39:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 425,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 424,
+      "title": "#423 – Tulsi Gabbard: War, Politics, and the Military Industrial Complex",
+      "date": "Tue, 02 Apr 2024 18:23:31 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 424,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 423,
+      "title": "#422 – Mark Cuban: Shark Tank, DEI & Wokeism Debate, Elon Musk, Politics & Drugs",
+      "date": "Fri, 29 Mar 2024 20:59:49 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 423,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 422,
+      "title": "#421 – Dana White: UFC, Fighting, Khabib, Conor, Tyson, Ali, Rogan, Elon & Zuck",
+      "date": "Mon, 25 Mar 2024 15:34:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 422,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 421,
+      "title": "#420 – Annie Jacobsen: Nuclear War, CIA, KGB, Aliens, Area 51, Roswell & Secrecy",
+      "date": "Fri, 22 Mar 2024 20:55:05 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 421,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 420,
+      "title": "#419 – Sam Altman: OpenAI, GPT-5, Sora, Board Saga, Elon Musk, Ilya, Power & AGI",
+      "date": "Mon, 18 Mar 2024 15:04:35 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 420,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 419,
+      "title": "#418 – Israel-Palestine Debate: Finkelstein, Destiny, M. Rabbani & Benny Morris",
+      "date": "Thu, 14 Mar 2024 14:59:21 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 419,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 418,
+      "title": "#417 – Kimbal Musk: The Art of Cooking, Tesla, SpaceX, Zip2, and Family",
+      "date": "Sun, 10 Mar 2024 21:14:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 418,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 417,
+      "title": "#416 – Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI",
+      "date": "Thu, 07 Mar 2024 21:58:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 417,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 416,
+      "title": "#415 – Serhii Plokhy: History of Ukraine, Russia, Soviet Union, KGB, Nazis & War",
+      "date": "Mon, 04 Mar 2024 20:02:09 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 416,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 415,
+      "title": "#414 – Tucker Carlson: Putin, Navalny, Trump, CIA, NSA, War, Politics & Freedom",
+      "date": "Tue, 27 Feb 2024 16:36:05 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 415,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 414,
+      "title": "#413 – Bill Ackman: Investing, Financial Battles, Harvard, DEI, X & Free Speech",
+      "date": "Tue, 20 Feb 2024 19:19:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 414,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 413,
+      "title": "#412 – Marc Raibert: Boston Dynamics and the Future of Robotics",
+      "date": "Fri, 16 Feb 2024 18:49:37 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 413,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 412,
+      "title": "#411 – Omar Suleiman: Palestine, Gaza, Oct 7, Israel, Resistance, Faith & Islam",
+      "date": "Fri, 02 Feb 2024 00:04:50 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 412,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 411,
+      "title": "#410 – Ben Shapiro vs Destiny Debate: Politics, Jan 6, Israel, Ukraine & Wokeism",
+      "date": "Tue, 23 Jan 2024 17:06:47 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 411,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 410,
+      "title": "#409 – Matthew Cox: FBI Most Wanted Con Man – $55 Million in Bank Fraud",
+      "date": "Wed, 17 Jan 2024 16:51:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 410,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 409,
+      "title": "#408 – Tal Wilkenfeld: Music, Guitar, Bass, Jeff Beck, Prince, and Leonard Cohen",
+      "date": "Tue, 09 Jan 2024 22:35:21 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 409,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 408,
+      "title": "#407 – Guillaume Verdon: Beff Jezos, E/acc Movement, Physics, Computation & AGI",
+      "date": "Fri, 29 Dec 2023 21:03:57 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 408,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 407,
+      "title": "#406 – Teddy Atlas: Mike Tyson, Cus D’Amato, Boxing, Loyalty, Fear & Greatness",
+      "date": "Sun, 24 Dec 2023 21:27:55 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 407,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 406,
+      "title": "#405 – Jeff Bezos: Amazon and Blue Origin",
+      "date": "Thu, 14 Dec 2023 18:57:48 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 406,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 405,
+      "title": "#404 – Lee Cronin: Controversial Nature Paper on Evolution of Life and Universe",
+      "date": "Sat, 09 Dec 2023 21:21:58 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 405,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 404,
+      "title": "#403 – Lisa Randall: Dark Matter, Theoretical Physics, and Extinction Events",
+      "date": "Sun, 03 Dec 2023 17:37:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 404,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 403,
+      "title": "#402 – Michael Malice: Thanksgiving Pirate Special",
+      "date": "Sat, 25 Nov 2023 21:11:31 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 403,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 402,
+      "title": "#401 – John Mearsheimer: Israel-Palestine, Russia-Ukraine, China, NATO, and WW3",
+      "date": "Sat, 18 Nov 2023 14:05:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 402,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 401,
+      "title": "#400 – Elon Musk: War, AI, Aliens, Politics, Physics, Video Games, and Humanity",
+      "date": "Thu, 09 Nov 2023 19:03:46 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 401,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 400,
+      "title": "#399 – Jared Kushner: Israel, Palestine, Hamas, Gaza, Iran, and the Middle East",
+      "date": "Wed, 11 Oct 2023 20:21:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 400,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 399,
+      "title": "#398 – Mark Zuckerberg: First Interview in the Metaverse",
+      "date": "Thu, 28 Sep 2023 21:15:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 399,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 398,
+      "title": "#397 – Greg Lukianoff: Cancel Culture, Deplatforming, Censorship & Free Speech",
+      "date": "Mon, 25 Sep 2023 01:12:01 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 398,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 397,
+      "title": "#396 – James Sexton: Divorce Lawyer on Marriage, Relationships, Sex, Lies & Love",
+      "date": "Mon, 18 Sep 2023 01:07:29 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 397,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 396,
+      "title": "#395 – Walter Isaacson: Elon Musk, Steve Jobs, Einstein, Da Vinci & Ben Franklin",
+      "date": "Sun, 10 Sep 2023 20:21:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 396,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 395,
+      "title": "#394 – Neri Oxman: Biology, Art, and Science of Design & Engineering with Nature",
+      "date": "Fri, 01 Sep 2023 19:10:20 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 395,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 394,
+      "title": "#393 – Andrew Huberman: Relationships, Drama, Betrayal, Sex, and Love",
+      "date": "Thu, 17 Aug 2023 20:37:40 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 394,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 393,
+      "title": "#392 – Joscha Bach: Life, Intelligence, Consciousness, AI & the Future of Humans",
+      "date": "Tue, 01 Aug 2023 18:49:08 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 393,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 392,
+      "title": "#391 – Mohammed El-Kurd: Palestine",
+      "date": "Mon, 24 Jul 2023 15:32:40 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 392,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 391,
+      "title": "#390 – Yuval Noah Harari: Human Nature, Intelligence, Power, and Conspiracies",
+      "date": "Mon, 17 Jul 2023 15:44:20 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 391,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 390,
+      "title": "#389 – Benjamin Netanyahu: Israel, Palestine, Power, Corruption, Hate, and Peace",
+      "date": "Wed, 12 Jul 2023 18:07:31 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 390,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 389,
+      "title": "#388 – Robert F. Kennedy Jr: CIA, Power, Corruption, War, Freedom, and Meaning",
+      "date": "Thu, 06 Jul 2023 22:07:19 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 389,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 388,
+      "title": "#387 – George Hotz: Tiny Corp, Twitter, AI Safety, Self-Driving, GPT, AGI & God",
+      "date": "Fri, 30 Jun 2023 01:16:21 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 388,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 387,
+      "title": "#386 – Marc Andreessen: Future of the Internet, Technology, and AI",
+      "date": "Thu, 22 Jun 2023 02:04:50 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 387,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 386,
+      "title": "#385 – Jimmy Wales: Wikipedia",
+      "date": "Sun, 18 Jun 2023 22:42:02 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 386,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 385,
+      "title": "#384 – Matthew McConaughey: Freedom, Truth, Family, Hardship, and Love",
+      "date": "Tue, 13 Jun 2023 18:26:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 385,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 384,
+      "title": "#383 – Mark Zuckerberg: Future of AI at Meta, Facebook, Instagram, and WhatsApp",
+      "date": "Thu, 08 Jun 2023 22:49:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 384,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 383,
+      "title": "#382 – Bert Kreischer: Comedy, Drinking, Rogan, Segura, Churchill & Kim Jong Un",
+      "date": "Mon, 05 Jun 2023 17:10:35 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 383,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 382,
+      "title": "#381 – Chris Lattner: Future of Programming and AI",
+      "date": "Fri, 02 Jun 2023 21:20:17 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 382,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 381,
+      "title": "#380 – Neil Gershenfeld: Self-Replicating Robots and the Future of Fabrication",
+      "date": "Sun, 28 May 2023 15:29:58 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 381,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 380,
+      "title": "#379 – Randall Kennedy: The N-Word – History of Race, Law, Politics, and Power",
+      "date": "Wed, 24 May 2023 15:27:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 380,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 379,
+      "title": "#378 – Anna Frebel: Origin and Evolution of the Universe, Galaxies, and Stars",
+      "date": "Thu, 18 May 2023 21:18:08 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 379,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 378,
+      "title": "#377 – Harvey Silverglate: Freedom of Speech",
+      "date": "Tue, 16 May 2023 01:18:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 378,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 377,
+      "title": "#376 – Stephen Wolfram: ChatGPT and the Nature of Truth, Reality & Computation",
+      "date": "Tue, 09 May 2023 17:12:11 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 377,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 376,
+      "title": "#375 – David Pakman: Politics of Trump, Biden, Bernie, AOC, Socialism & Wokeism",
+      "date": "Sat, 06 May 2023 17:39:54 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 376,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 375,
+      "title": "#374 – Robert Playter: Boston Dynamics CEO on Humanoid and Legged Robotics",
+      "date": "Fri, 28 Apr 2023 19:13:09 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 375,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 374,
+      "title": "#373 – Manolis Kellis: Evolution of Human Civilization and Superintelligent AI",
+      "date": "Fri, 21 Apr 2023 22:21:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 374,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 373,
+      "title": "#372 – Simone Giertz: Queen of Sh*tty Robots, Innovative Engineering, and Design",
+      "date": "Sun, 16 Apr 2023 19:51:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 373,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 372,
+      "title": "#371 – Max Tegmark: The Case for Halting AI Development",
+      "date": "Thu, 13 Apr 2023 16:26:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 372,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 371,
+      "title": "#370 – Edward Frenkel: Reality is a Paradox – Mathematics, Physics, Truth & Love",
+      "date": "Mon, 10 Apr 2023 02:14:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 371,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 370,
+      "title": "#369 – Paul Rosolie: Amazon Jungle, Uncontacted Tribes, Anacondas, and Ayahuasca",
+      "date": "Tue, 04 Apr 2023 18:50:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 370,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 369,
+      "title": "#368 – Eliezer Yudkowsky: Dangers of AI and the End of Human Civilization",
+      "date": "Thu, 30 Mar 2023 15:14:29 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 369,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 368,
+      "title": "#367 – Sam Altman: OpenAI CEO on GPT-4, ChatGPT, and the Future of AI",
+      "date": "Sat, 25 Mar 2023 18:04:11 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 368,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 367,
+      "title": "#366 – Shannon Curry: Johnny Depp & Amber Heard Trial, Marriage, Dating & Love",
+      "date": "Tue, 21 Mar 2023 23:02:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 367,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 366,
+      "title": "#365 – Sam Harris: Trump, Pandemic, Twitter, Elon, Bret, IDW, Kanye, AI & UFOs",
+      "date": "Tue, 14 Mar 2023 17:19:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 366,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 365,
+      "title": "#364 – Chris Voss: FBI Hostage Negotiator",
+      "date": "Fri, 10 Mar 2023 17:16:27 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 365,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 364,
+      "title": "#363 – B-Team Jiu Jitsu: Craig Jones, Nicky Rod, and Nicky Ryan",
+      "date": "Mon, 06 Mar 2023 18:33:58 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 364,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 363,
+      "title": "#362 – Ginni Rometty: IBM CEO on Leadership, Power, and Adversity",
+      "date": "Thu, 02 Mar 2023 19:08:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 363,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 362,
+      "title": "#361 – Aaron Smith-Levin: Scientology",
+      "date": "Sat, 25 Feb 2023 20:26:53 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 362,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 361,
+      "title": "#360 – Tim Urban: Tribalism, Marxism, Liberalism, Social Justice, and Politics",
+      "date": "Mon, 20 Feb 2023 20:18:52 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 361,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 360,
+      "title": "#359 – Andrew Strominger: Black Holes, Quantum Gravity, and Theoretical Physics",
+      "date": "Wed, 15 Feb 2023 17:17:16 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 360,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 359,
+      "title": "#358 – Aella: Sex Work, OnlyFans, Porn, Escorting, Dating, and Human Sexuality",
+      "date": "Fri, 10 Feb 2023 18:57:08 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 359,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 358,
+      "title": "#357 – Paul Conti: Narcissism, Sociopathy, Envy, and the Nature of Good and Evil",
+      "date": "Tue, 07 Feb 2023 17:05:12 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 358,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 357,
+      "title": "#356 – Tim Dodd: SpaceX, Starship, Rocket Engines, and Future of Space Travel",
+      "date": "Thu, 02 Feb 2023 17:36:01 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 357,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 356,
+      "title": "#355 – David Kipping: Alien Civilizations and Habitable Worlds",
+      "date": "Sat, 28 Jan 2023 20:03:06 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 356,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 355,
+      "title": "#354 – Jeremi Suri: American Civil War",
+      "date": "Wed, 25 Jan 2023 17:22:29 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 355,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 354,
+      "title": "#353 – Dennis Whyte: Nuclear Fusion and the Future of Energy",
+      "date": "Sat, 21 Jan 2023 18:37:56 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 354,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 353,
+      "title": "#352 – Omar Suleiman: Islam",
+      "date": "Tue, 17 Jan 2023 17:35:28 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 353,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 352,
+      "title": "#351 – MrBeast: Future of YouTube, Twitter, TikTok, and Instagram",
+      "date": "Wed, 11 Jan 2023 17:36:11 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 352,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 351,
+      "title": "#350 – Betül Kaçar: Origin of Life, Ancient DNA, Panspermia, and Aliens",
+      "date": "Thu, 29 Dec 2022 17:35:50 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 351,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 350,
+      "title": "#349 – Bhaskar Sunkara: The Case for Socialism",
+      "date": "Thu, 22 Dec 2022 19:41:28 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 350,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 349,
+      "title": "#348 – Nathalie Cabrol: Search for Alien Life",
+      "date": "Mon, 19 Dec 2022 18:57:17 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 349,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 348,
+      "title": "#347 – Michael Malice: Christmas Special",
+      "date": "Thu, 15 Dec 2022 20:28:53 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 348,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 347,
+      "title": "#346 – Ed Calderon: Mexican Drug Cartels",
+      "date": "Mon, 12 Dec 2022 17:10:47 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 347,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 346,
+      "title": "#345 – Coffeezilla: SBF, FTX, Fraud, Scams, Fake Gurus, Money, Fame, and Power",
+      "date": "Fri, 09 Dec 2022 02:27:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 346,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 345,
+      "title": "#344 – Noam Brown: AI vs Humans in Poker and Games of Strategic Negotiation",
+      "date": "Tue, 06 Dec 2022 17:23:36 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 345,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 344,
+      "title": "#343 – Roger Gracie: Greatest Jiu Jitsu Competitor of All Time",
+      "date": "Sat, 03 Dec 2022 17:10:50 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 344,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 343,
+      "title": "#342 – Todd Howard: Skyrim, Elder Scrolls 6, Fallout, and Starfield",
+      "date": "Tue, 29 Nov 2022 17:04:46 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 343,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 342,
+      "title": "#341 – Guido van Rossum: Python and the Future of Programming",
+      "date": "Sat, 26 Nov 2022 16:25:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 342,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 341,
+      "title": "#340 – Chris Tarbell: FBI Agent Who Took Down Silk Road",
+      "date": "Tue, 22 Nov 2022 17:24:13 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 341,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 340,
+      "title": "#339 – Climate Change Debate: Bjørn Lomborg and Andrew Revkin",
+      "date": "Fri, 18 Nov 2022 16:57:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 340,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 339,
+      "title": "#338 – Chamath Palihapitiya: Money, Success, Startups, Energy, Poker & Happiness",
+      "date": "Tue, 15 Nov 2022 16:58:05 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 339,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 338,
+      "title": "#337 – Destiny: Politics, Free Speech, Controversy, Sex, War, and Relationships",
+      "date": "Fri, 11 Nov 2022 17:48:28 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 338,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 337,
+      "title": "#336 – Ben Shapiro: Politics, Kanye, Trump, Biden, Hitler, Extremism, and War",
+      "date": "Mon, 07 Nov 2022 15:43:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 337,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 336,
+      "title": "#335 – Fiona Hill: Vladimir Putin and Donald Trump",
+      "date": "Fri, 04 Nov 2022 16:07:36 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 336,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 335,
+      "title": "#334 – Abbas Amanat: Iran Protests, Mahsa Amini, History, CIA & Nuclear Weapons",
+      "date": "Wed, 02 Nov 2022 17:29:54 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 335,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 334,
+      "title": "#333 – Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI",
+      "date": "Sat, 29 Oct 2022 16:36:12 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 334,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 333,
+      "title": "#332 – Kanye ‘Ye’ West Interview",
+      "date": "Mon, 24 Oct 2022 21:09:11 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 333,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 332,
+      "title": "#331 – Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA",
+      "date": "Thu, 20 Oct 2022 16:24:03 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 332,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 331,
+      "title": "#330 – Hikaru Nakamura: Chess, Magnus, Kasparov, and the Psychology of Greatness",
+      "date": "Mon, 17 Oct 2022 16:42:50 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 331,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 330,
+      "title": "#329 – Kate Darling: Social Robots, Ethics, Privacy and the Future of MIT",
+      "date": "Sat, 15 Oct 2022 19:33:53 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 330,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 329,
+      "title": "#328 – John Danaher: Submission Grappling, ADCC, Animal Combat, and Knives",
+      "date": "Mon, 10 Oct 2022 17:53:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 329,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 328,
+      "title": "#327 – GothamChess: Hans Niemann, Magnus Carlsen, Cheating Scandal & Chess Bots",
+      "date": "Fri, 07 Oct 2022 16:34:07 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 328,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 327,
+      "title": "#326 – Annaka Harris: Free Will, Consciousness, and the Nature of Reality",
+      "date": "Wed, 05 Oct 2022 17:24:25 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 327,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 326,
+      "title": "#325 – Michael Levin: Biology, Life, Aliens, Evolution, Embryogenesis & Xenobots",
+      "date": "Sat, 01 Oct 2022 16:56:45 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 326,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 325,
+      "title": "#324 – Daniel Negreanu: Poker",
+      "date": "Tue, 27 Sep 2022 18:37:49 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 325,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 324,
+      "title": "#323 – Will Sasso: Comedy, MADtv, AI, Friendship, Madness, and Pro Wrestling",
+      "date": "Sat, 24 Sep 2022 17:19:49 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 324,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 323,
+      "title": "#322 – Rana el Kaliouby: Emotion AI, Social Robots, and Self-Driving Cars",
+      "date": "Wed, 21 Sep 2022 16:35:09 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 323,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 322,
+      "title": "#321 – Ray Kurzweil: Singularity, Superintelligence, and Immortality",
+      "date": "Sat, 17 Sep 2022 16:54:53 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 322,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 321,
+      "title": "#320 – Christopher Capozzola: World War I, Ideology, Propaganda, and Politics",
+      "date": "Wed, 14 Sep 2022 18:12:58 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 321,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 320,
+      "title": "#319 – Botez Sisters: Chess, Streaming, and Fame",
+      "date": "Fri, 09 Sep 2022 14:04:45 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 320,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 319,
+      "title": "#318 – Nick Lane: Origin of Life, Evolution, Aliens, Biology, and Consciousness",
+      "date": "Wed, 07 Sep 2022 15:29:01 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 319,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 318,
+      "title": "#317 – John Vervaeke: Meaning Crisis, Atheism, Religion & the Search for Wisdom",
+      "date": "Sun, 04 Sep 2022 19:05:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 318,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 317,
+      "title": "#316 – Noam Chomsky: Putin, Ukraine, China, and Nuclear War",
+      "date": "Wed, 31 Aug 2022 20:41:11 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 317,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 316,
+      "title": "#315 – Magnus Carlsen: Greatest Chess Player of All Time",
+      "date": "Sat, 27 Aug 2022 17:50:28 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 316,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 315,
+      "title": "#314 – Liv Boeree: Poker, Game Theory, AI, Simulation, Aliens & Existential Risk",
+      "date": "Wed, 24 Aug 2022 16:29:52 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 315,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 314,
+      "title": "#313 – Jordan Peterson: Life, Death, Power, Fame, and Meaning",
+      "date": "Fri, 19 Aug 2022 15:59:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 314,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 313,
+      "title": "#312 – Duncan Trussell: Comedy, Sentient Robots, Suffering, Love & Burning Man",
+      "date": "Tue, 16 Aug 2022 15:26:19 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 313,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 312,
+      "title": "#311 – Magatte Wade: Africa, Capitalism, Communism, and the Future of Humanity",
+      "date": "Sat, 13 Aug 2022 15:26:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 312,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 311,
+      "title": "#310 – Andrew Bustamante: CIA Spy",
+      "date": "Mon, 08 Aug 2022 17:16:04 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 311,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 310,
+      "title": "#309 – John Carmack: Doom, Quake, VR, AGI, Programming, Video Games, and Rockets",
+      "date": "Thu, 04 Aug 2022 17:04:07 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 310,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 309,
+      "title": "#308 – Ryan Graves: UFOs, Fighter Jets, and Aliens",
+      "date": "Mon, 01 Aug 2022 16:07:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 309,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 308,
+      "title": "#307 – Brian Armstrong: Coinbase, Cryptocurrency, and Government Regulation",
+      "date": "Fri, 29 Jul 2022 16:26:01 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 308,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 307,
+      "title": "#306 – Oriol Vinyals: Deep Learning and Artificial General Intelligence",
+      "date": "Tue, 26 Jul 2022 16:17:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 307,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 306,
+      "title": "#305 – Martin Rees: Black Holes, Alien Life, Dark Matter, and the Big Bang",
+      "date": "Sat, 23 Jul 2022 15:53:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 306,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 305,
+      "title": "#304 – Bishop Robert Barron: Christianity and the Catholic Church",
+      "date": "Wed, 20 Jul 2022 15:54:01 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 305,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 304,
+      "title": "#303 – Steve Keen: Marxism, Capitalism, and Economics",
+      "date": "Sun, 17 Jul 2022 13:57:03 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 304,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 303,
+      "title": "#302 – Richard Haier: IQ Tests, Human Intelligence, and Group Differences",
+      "date": "Thu, 14 Jul 2022 16:04:12 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 303,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 302,
+      "title": "#301 – Jack Barsky: KGB Spy",
+      "date": "Sat, 09 Jul 2022 15:59:57 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 302,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 301,
+      "title": "#300 – Joe Rogan: Comedy, Controversy, Aliens, UFOs, Putin, CIA, and Freedom",
+      "date": "Mon, 04 Jul 2022 13:14:02 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 301,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 300,
+      "title": "#299 – Demis Hassabis: DeepMind",
+      "date": "Fri, 01 Jul 2022 10:12:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 300,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 299,
+      "title": "#298 – Susan Cain: The Power of Introverts and Loneliness",
+      "date": "Tue, 28 Jun 2022 17:13:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 299,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 298,
+      "title": "#297 – Jonathan Reisman: The Human Body – From Sex & Sperm to Hands & Heart",
+      "date": "Sat, 25 Jun 2022 18:11:25 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 298,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 297,
+      "title": "#296 – Douglas Murray: Racism, Marxism, and the War on the West",
+      "date": "Tue, 21 Jun 2022 12:38:18 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 297,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 296,
+      "title": "#295 – Richard Wolff: Marxism and Communism",
+      "date": "Fri, 17 Jun 2022 16:19:37 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 296,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 295,
+      "title": "#294 – Tony Fadell: iPhone, iPod, and Nest",
+      "date": "Wed, 15 Jun 2022 18:53:03 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 295,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 294,
+      "title": "#293 – Donald Hoffman: Reality is an Illusion – How Evolution Hid the Truth",
+      "date": "Sun, 12 Jun 2022 18:50:15 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 294,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 293,
+      "title": "#292 – Robin Hanson: Alien Civilizations, UFOs, and the Future of Humanity",
+      "date": "Thu, 09 Jun 2022 12:38:30 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 293,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 292,
+      "title": "#291 – Jonathan Haidt: The Case Against Social Media",
+      "date": "Sat, 04 Jun 2022 17:18:02 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 292,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 291,
+      "title": "#290 – Dan Reynolds: Imagine Dragons",
+      "date": "Mon, 30 May 2022 17:13:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 291,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 290,
+      "title": "#289 – Stephen Kotkin: Putin, Zelenskyy, and War in Ukraine",
+      "date": "Wed, 25 May 2022 14:27:52 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 290,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 289,
+      "title": "#288 – Sarma Melngailis: Bad Vegan",
+      "date": "Mon, 23 May 2022 17:33:00 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 289,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 288,
+      "title": "#287 – Bobby Lee: Comedy, Skyrim, Sex Robots, Love, Fame, and Power",
+      "date": "Fri, 20 May 2022 17:10:40 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 288,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 287,
+      "title": "#286 – Oliver Stone: Vladimir Putin and War in Ukraine",
+      "date": "Tue, 17 May 2022 17:42:24 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 287,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 286,
+      "title": "#285 – Glenn Loury: Race, Racism, Identity Politics, and Cancel Culture",
+      "date": "Sat, 14 May 2022 18:44:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 286,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 285,
+      "title": "#284 – Saifedean Ammous: Bitcoin, Anarchy, and Austrian Economics",
+      "date": "Wed, 11 May 2022 17:01:27 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 285,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 284,
+      "title": "#283 – Chris Mason: Space Travel, Colonization, and Long-Term Survival in Space",
+      "date": "Sun, 08 May 2022 20:52:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 284,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 283,
+      "title": "#282 – David Buss: Sex, Dating, Relationships, and Sex Differences",
+      "date": "Wed, 04 May 2022 15:17:27 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 283,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 282,
+      "title": "#281 – Grimes: Music, AI, and the Future of Humanity",
+      "date": "Fri, 29 Apr 2022 18:19:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 282,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 281,
+      "title": "#280 – Cristiano Amon: Qualcomm CEO",
+      "date": "Wed, 27 Apr 2022 18:01:38 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 281,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 280,
+      "title": "#279 – Alien Debate: Sara Walker and Lee Cronin",
+      "date": "Sun, 24 Apr 2022 17:45:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 280,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 279,
+      "title": "#278 – Skye Fitzgerald: Hunger, War, and Human Suffering",
+      "date": "Wed, 20 Apr 2022 22:23:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 279,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 278,
+      "title": "#277 – Andrew Huberman: Focus, Stress, Relationships, and Friendship",
+      "date": "Sun, 17 Apr 2022 17:53:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 278,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 277,
+      "title": "#276 – Michael Saylor: Bitcoin, Inflation, and the Future of Money",
+      "date": "Thu, 14 Apr 2022 19:03:57 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 277,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 276,
+      "title": "#275 – Rick Rubin: Legendary Music Producer",
+      "date": "Sun, 10 Apr 2022 16:43:38 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 276,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 275,
+      "title": "#274 – Karl Deisseroth: Depression, Schizophrenia, and Psychiatry",
+      "date": "Thu, 07 Apr 2022 16:50:15 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 275,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 274,
+      "title": "#273 – Chris Blattman: War and Violence",
+      "date": "Sun, 03 Apr 2022 16:54:27 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 274,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 273,
+      "title": "#272 – Brett Johnson: US Most Wanted Cybercriminal",
+      "date": "Sun, 27 Mar 2022 16:31:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 273,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 272,
+      "title": "#271 – Ariel Ekblaw: Space Colonization and Self-Assembling Space Megastructures",
+      "date": "Wed, 23 Mar 2022 19:14:12 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 272,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 271,
+      "title": "#270 – David Wolpe: Judaism",
+      "date": "Wed, 16 Mar 2022 21:11:24 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 271,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 270,
+      "title": "#269 – Lee Cronin: Origin of Life, Aliens, Complexity, and Consciousness",
+      "date": "Fri, 11 Mar 2022 18:35:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 270,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 269,
+      "title": "#268 – Robert Proctor: Nazi Science and Ideology",
+      "date": "Sat, 05 Mar 2022 16:05:48 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 269,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 268,
+      "title": "#267 – Mark Zuckerberg: Meta, Facebook, Instagram, and the Metaverse",
+      "date": "Sat, 26 Feb 2022 17:26:05 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 268,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 267,
+      "title": "#266 – Nicole Perlroth: Cybersecurity and the Weapons of Cyberwar",
+      "date": "Sun, 20 Feb 2022 22:31:53 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 267,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 266,
+      "title": "#265 – Devon Larratt: Arm Wrestling",
+      "date": "Wed, 16 Feb 2022 21:49:00 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 266,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 265,
+      "title": "#264 – Tim Urban: Elon Musk, Neuralink, AI, Aliens, and the Future of Humanity",
+      "date": "Sun, 13 Feb 2022 20:35:31 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 265,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 264,
+      "title": "#263 – John Abramson: Big Pharma",
+      "date": "Fri, 11 Feb 2022 17:17:55 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 264,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 263,
+      "title": "#262 – Garry Nolan: UFOs and Aliens",
+      "date": "Sun, 06 Feb 2022 22:20:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 263,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 262,
+      "title": "#261 – Philip Goff: Consciousness, Panpsychism, and the Philosophy of Mind",
+      "date": "Thu, 03 Feb 2022 17:36:56 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 262,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 261,
+      "title": "#260 – Georges St-Pierre, John Danaher & Gordon Ryan: The Greatest of All Time",
+      "date": "Sun, 30 Jan 2022 20:47:31 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 261,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 260,
+      "title": "#259 – Thomas Tull: From Batman Dark Knight Trilogy to AI and the Rolling Stones",
+      "date": "Wed, 26 Jan 2022 20:43:15 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 260,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 259,
+      "title": "#258 – Yann LeCun: Dark Matter of Intelligence and Self-Supervised Learning",
+      "date": "Sat, 22 Jan 2022 20:08:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 259,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 258,
+      "title": "#257 – Brian Keating: Cosmology, Astrophysics, Aliens & Losing the Nobel Prize",
+      "date": "Tue, 18 Jan 2022 20:28:05 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 258,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 257,
+      "title": "#256 – Nationalism Debate: Yaron Brook and Yoram Hazony",
+      "date": "Sat, 15 Jan 2022 19:50:01 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 257,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 256,
+      "title": "#255 – Mark Normand: Comedy!",
+      "date": "Sat, 08 Jan 2022 21:53:16 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 256,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 255,
+      "title": "#254 – Jay Bhattacharya: The Case Against Lockdowns",
+      "date": "Tue, 04 Jan 2022 23:52:11 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 255,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 254,
+      "title": "#253 – Michael Malice: New Year’s Special",
+      "date": "Fri, 31 Dec 2021 22:40:33 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 254,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 253,
+      "title": "#252 – Elon Musk: SpaceX, Mars, Tesla Autopilot, Self-Driving, Robotics, and AI",
+      "date": "Tue, 28 Dec 2021 19:02:28 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 253,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 252,
+      "title": "#251 – Ray Dalio: Money, Power, and the Collapse of Empires",
+      "date": "Sat, 25 Dec 2021 20:04:14 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 252,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 251,
+      "title": "#250 – Peter Wang: Python and the Source Code of Humans, Computers, and Reality",
+      "date": "Thu, 23 Dec 2021 23:09:53 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 251,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 250,
+      "title": "#249 – Albert Bourla: Pfizer CEO",
+      "date": "Sat, 18 Dec 2021 15:04:38 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 250,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 249,
+      "title": "#248 – Norman Naimark: Genocide, Stalin, Hitler, Mao, and Absolute Power",
+      "date": "Mon, 13 Dec 2021 05:13:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 249,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 248,
+      "title": "#247 – Jamie Metzl: Lab Leak Theory",
+      "date": "Wed, 08 Dec 2021 18:28:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 248,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 247,
+      "title": "#246 – Peter Woit: Theories of Everything and Why String Theory is Not Even Wrong",
+      "date": "Fri, 03 Dec 2021 20:27:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 247,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 246,
+      "title": "#245 – Tom Brands: Iowa Wrestling",
+      "date": "Tue, 30 Nov 2021 18:23:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 246,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 245,
+      "title": "#244 – Robert Crews: Afghanistan, Taliban, Bin Laden, and War in the Middle East",
+      "date": "Sun, 28 Nov 2021 21:11:14 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 245,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 244,
+      "title": "#243 – Kevin Systrom: Instagram",
+      "date": "Tue, 23 Nov 2021 20:55:28 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 244,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 243,
+      "title": "#242 – Ben Askren: Wrestling and MMA",
+      "date": "Sat, 20 Nov 2021 18:15:18 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 243,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 242,
+      "title": "#241 – Boris Sofman: Waymo, Cozmo, Self-Driving Cars, and the Future of Robotics",
+      "date": "Tue, 16 Nov 2021 23:17:58 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 242,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 241,
+      "title": "#240 – Neal Stephenson: Sci-Fi, Space, Aliens, AI, VR & the Future of Humanity",
+      "date": "Thu, 11 Nov 2021 21:24:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 241,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 240,
+      "title": "#239 – Niall Ferguson: History of Money, Power, War, and Truth",
+      "date": "Mon, 08 Nov 2021 18:39:08 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 240,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 239,
+      "title": "#238 – Francis Collins: National Institutes of Health (NIH)",
+      "date": "Fri, 05 Nov 2021 20:30:24 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 239,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 238,
+      "title": "#237 – Steve Viscelli: Trucking and the Decline of the American Dream",
+      "date": "Wed, 03 Nov 2021 23:36:02 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 238,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 237,
+      "title": "#236 – Jimmy Pedro: Judo and the Forging of Champions",
+      "date": "Sun, 31 Oct 2021 23:26:56 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 237,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 236,
+      "title": "#235 – Michael Mina: Rapid COVID Testing",
+      "date": "Fri, 29 Oct 2021 21:48:18 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 236,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 235,
+      "title": "#234 – Stephen Wolfram: Complexity and the Fabric of Reality",
+      "date": "Wed, 27 Oct 2021 00:16:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 235,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 234,
+      "title": "#233 – Carl Hart: Heroin, Cocaine, MDMA, Alcohol & the Role of Drugs in Society",
+      "date": "Sat, 23 Oct 2021 17:11:38 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 234,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 233,
+      "title": "#232 – Brian Greene: Quantum Gravity, Big Bang, Aliens, Life, Death, and Meaning",
+      "date": "Wed, 20 Oct 2021 18:05:14 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 233,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 232,
+      "title": "#231 – Alex Gladstein: Bitcoin, Authoritarianism, and Human Rights",
+      "date": "Sat, 16 Oct 2021 21:23:02 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 232,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 231,
+      "title": "#230 – Kelsi Sheren: War, Artillery, PTSD, and Love",
+      "date": "Thu, 14 Oct 2021 23:44:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 231,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 230,
+      "title": "#229 – Richard Wrangham: Role of Violence, Sex, and Fire in Human Evolution",
+      "date": "Sun, 10 Oct 2021 19:08:05 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 230,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 229,
+      "title": "#228 – RZA: Wu-Tang Clan, Kung Fu, Chess, God, Life, and Death",
+      "date": "Tue, 05 Oct 2021 22:06:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 229,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 228,
+      "title": "#227 – Sean Kelly: Existentialism, Nihilism, and the Search for Meaning",
+      "date": "Thu, 30 Sep 2021 23:51:37 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 228,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 227,
+      "title": "#226 – Jo Boaler: How to Learn Math",
+      "date": "Mon, 27 Sep 2021 21:36:02 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 227,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 226,
+      "title": "#225 – Jeffrey Shainline: Neuromorphic Computing and Optoelectronic Intelligence",
+      "date": "Sun, 26 Sep 2021 23:16:52 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 226,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 225,
+      "title": "#224 – Travis Oliphant: NumPy, SciPy, Anaconda, Python & Scientific Programming",
+      "date": "Thu, 23 Sep 2021 01:41:13 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 225,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 224,
+      "title": "#223 – Travis Stevens: Judo, Olympics, and Mental Toughness",
+      "date": "Tue, 21 Sep 2021 01:59:35 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 224,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 223,
+      "title": "#222 – Jay McClelland: Neural Networks and the Emergence of Cognition",
+      "date": "Mon, 20 Sep 2021 05:26:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 223,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 222,
+      "title": "#221 – Douglas Lenat: Cyc and the Quest to Solve Common Sense Reasoning in AI",
+      "date": "Wed, 15 Sep 2021 16:35:47 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 222,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 221,
+      "title": "#220 – Niels Jorgensen: New York Firefighters and the Heroes of 9/11",
+      "date": "Sat, 11 Sep 2021 21:12:40 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 221,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 220,
+      "title": "#219 – Donald Knuth: Programming, Algorithms, Hard Problems & the Game of Life",
+      "date": "Thu, 09 Sep 2021 17:04:19 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 220,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 219,
+      "title": "#218 – Jaron Lanier: Virtual Reality, Social Media & the Future of Humans and AI",
+      "date": "Mon, 06 Sep 2021 20:30:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 219,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 218,
+      "title": "#217 – Rodney Brooks: Robotics",
+      "date": "Fri, 03 Sep 2021 21:32:27 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 218,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 217,
+      "title": "#216 – Vincent Racaniello: Viruses and Vaccines",
+      "date": "Wed, 01 Sep 2021 17:40:53 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 217,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 216,
+      "title": "#215 – Wojciech Zaremba: OpenAI Codex, GPT-3, Robotics, and the Future of AI",
+      "date": "Sun, 29 Aug 2021 17:41:06 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 216,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 215,
+      "title": "#214 – Jed Buchwald: Isaac Newton and the Philosophy of Science",
+      "date": "Fri, 27 Aug 2021 21:11:29 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 215,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 214,
+      "title": "#213 – Barry Barish: Gravitational Waves and the Most Precise Device Ever Built",
+      "date": "Mon, 23 Aug 2021 19:18:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 214,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 213,
+      "title": "#212 – Joscha Bach: Nature of Reality, Dreams, and Consciousness",
+      "date": "Sat, 21 Aug 2021 23:50:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 213,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 212,
+      "title": "#211 – Brian Muraresku: The Secret History of Psychedelics",
+      "date": "Sun, 15 Aug 2021 01:55:25 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 212,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 211,
+      "title": "#210 – Matt Walker: Sleep",
+      "date": "Wed, 11 Aug 2021 13:55:29 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 211,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 210,
+      "title": "#209 – Luís and João Batalha: Fermat’s Library and the Art of Studying Papers",
+      "date": "Mon, 09 Aug 2021 03:15:55 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 210,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 209,
+      "title": "#208 – Jeff Hawkins: The Thousand Brains Theory of Intelligence",
+      "date": "Sun, 08 Aug 2021 04:30:20 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 209,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 208,
+      "title": "#207 – Chris Duffin: The Mad Scientist of Strength",
+      "date": "Tue, 03 Aug 2021 18:14:17 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 208,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 207,
+      "title": "#206 – Ishan Misra: Self-Supervised Deep Learning in Computer Vision",
+      "date": "Sat, 31 Jul 2021 16:03:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 207,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 206,
+      "title": "#205 – Zach Bitter: Ultramarathon Running",
+      "date": "Thu, 29 Jul 2021 01:51:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 206,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 205,
+      "title": "#204 – Cumrun Vafa: String Theory",
+      "date": "Mon, 26 Jul 2021 01:07:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 205,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 204,
+      "title": "#203 – Anya Fernald: Regenerative Farming and the Art of Cooking Meat",
+      "date": "Fri, 23 Jul 2021 23:09:58 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 204,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 203,
+      "title": "#202 – Rick Doblin: Psychedelics",
+      "date": "Wed, 21 Jul 2021 02:24:45 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 203,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 202,
+      "title": "#201 – Konstantin Batygin: Planet 9 and the Edge of Our Solar System",
+      "date": "Mon, 19 Jul 2021 05:23:11 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 202,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 201,
+      "title": "#200 – Michael Malice: Totalitarianism and Anarchy",
+      "date": "Thu, 15 Jul 2021 15:38:27 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 201,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 200,
+      "title": "#199 – Roger Reaves: Smuggling Drugs for Pablo Escobar and the Medellin Cartel",
+      "date": "Sun, 11 Jul 2021 19:51:49 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 200,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 199,
+      "title": "#198 – Sara Walker: The Origin of Life on Earth and Alien Worlds",
+      "date": "Fri, 09 Jul 2021 22:14:56 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 199,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 198,
+      "title": "#197 – Jocko Willink: War, Leadership, and Discipline",
+      "date": "Mon, 05 Jul 2021 02:01:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 198,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 197,
+      "title": "#196 – Yeonmi Park: North Korea",
+      "date": "Thu, 01 Jul 2021 03:23:58 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 197,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 196,
+      "title": "#195 – Clara Sousa-Silva: Searching for Signs of Life on Venus and Other Planets",
+      "date": "Mon, 28 Jun 2021 01:24:27 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 196,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 195,
+      "title": "#194 – Bret Weinstein: Truth, Science, and Censorship in the Time of a Pandemic",
+      "date": "Fri, 25 Jun 2021 23:34:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 195,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 194,
+      "title": "#193 – Rob Reid: The Existential Threat of Engineered Viruses and Lab Leaks",
+      "date": "Mon, 21 Jun 2021 00:31:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 194,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 193,
+      "title": "#192 – Charles Hoskinson: Cardano",
+      "date": "Wed, 16 Jun 2021 15:38:35 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 193,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 192,
+      "title": "#191 – Daniel Schmachtenberger: Steering Civilization Away from Self-Destruction",
+      "date": "Mon, 14 Jun 2021 07:03:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 192,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 191,
+      "title": "#190 – Jordan Ellenberg: Mathematics of High-Dimensional Shapes and Geometries",
+      "date": "Sun, 13 Jun 2021 03:12:52 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 191,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 190,
+      "title": "#189 – David Sinclair: Extending the Human Lifespan Beyond 100 Years",
+      "date": "Mon, 07 Jun 2021 01:18:48 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 190,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 189,
+      "title": "#188 – Vitalik Buterin: Ethereum 2.0",
+      "date": "Thu, 03 Jun 2021 21:07:04 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 189,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 188,
+      "title": "#187 – Frank Wilczek: Physics of Quarks, Dark Matter, Complexity, Life & Aliens",
+      "date": "Sat, 29 May 2021 22:26:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 188,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 187,
+      "title": "#186 – Bryan Johnson: Kernel Brain-Computer Interfaces",
+      "date": "Mon, 24 May 2021 09:55:51 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 187,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 186,
+      "title": "#185 – Sam Harris: Consciousness, Free Will, Psychedelics, AI, UFOs, and Meaning",
+      "date": "Thu, 20 May 2021 18:55:24 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 186,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 185,
+      "title": "#184 – Katherine de Kleer: Planets, Moons, and Asteroids in Our Solar System",
+      "date": "Mon, 17 May 2021 09:40:46 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 185,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 184,
+      "title": "#183 – Po-Shen Loh: Mathematics, Math Olympiad, Combinatorics & Contact Tracing",
+      "date": "Fri, 14 May 2021 22:33:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 184,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 183,
+      "title": "#182 – John Danaher: The Path to Mastery in Jiu Jitsu, Grappling, Judo, and MMA",
+      "date": "Sun, 09 May 2021 18:51:09 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 183,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 182,
+      "title": "#181 – Sergey Nazarov: Chainlink, Smart Contracts, and Oracle Networks",
+      "date": "Sat, 01 May 2021 07:35:02 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 182,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 181,
+      "title": "#180 – Jeremi Suri: History of American Power",
+      "date": "Fri, 30 Apr 2021 01:38:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 181,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 180,
+      "title": "#179 – Georges St-Pierre: The Science of Fighting",
+      "date": "Mon, 26 Apr 2021 03:33:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 180,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 179,
+      "title": "#178 – Michael Malice and Yaron Brook: Ayn Rand, Human Nature, and Anarchy",
+      "date": "Sat, 24 Apr 2021 17:34:01 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 179,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 178,
+      "title": "#177 – Risto Miikkulainen: Neuroevolution and Evolutionary Computation",
+      "date": "Mon, 19 Apr 2021 05:08:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 178,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 177,
+      "title": "#176 – Robert Breedlove: Philosophy of Bitcoin from First Principles",
+      "date": "Sat, 17 Apr 2021 22:42:36 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 177,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 176,
+      "title": "#175 – Yannis Pappas: History and Comedy",
+      "date": "Mon, 12 Apr 2021 20:38:54 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 176,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 175,
+      "title": "#174 – Tyler Cowen: Economic Growth and the Fight Against Conformity and Mediocrity",
+      "date": "Sat, 10 Apr 2021 20:10:48 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 175,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 174,
+      "title": "#173 – Nic Carter: Bitcoin Core Values, Layered Scaling, and Blocksize Debates",
+      "date": "Thu, 01 Apr 2021 02:12:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 174,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 173,
+      "title": "#172 – Ryan Schiller: Librex and the Free Exchange of Ideas on College Campuses",
+      "date": "Tue, 30 Mar 2021 06:47:13 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 173,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 172,
+      "title": "#171 – Anthony Pompliano: Bitcoin",
+      "date": "Thu, 25 Mar 2021 17:26:57 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 172,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 171,
+      "title": "#170 – Ronald Sullivan: The Ideal of Justice in the Face of Controversy and Evil",
+      "date": "Mon, 22 Mar 2021 04:24:16 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 171,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 170,
+      "title": "#169 – Ryan Hall: Solving Martial Arts from First Principles",
+      "date": "Sat, 20 Mar 2021 21:14:02 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 170,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 169,
+      "title": "#168 – Silvio Micali: Cryptocurrency, Blockchain, Algorand, Bitcoin, and Ethereum",
+      "date": "Mon, 15 Mar 2021 04:55:40 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 169,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 168,
+      "title": "#167 – Saagar Enjeti: Politics, History, and Power",
+      "date": "Sun, 14 Mar 2021 00:48:05 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 168,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 167,
+      "title": "#166 – Cal Newport: Deep Work, Focus, Productivity, Email, and Social Media",
+      "date": "Fri, 05 Mar 2021 00:27:52 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 167,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 166,
+      "title": "#165 – Josh Barnett: Philosophy of Violence, Power, and the Martial Arts",
+      "date": "Mon, 01 Mar 2021 13:36:20 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 166,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 165,
+      "title": "#164 – Andrew Huberman: Sleep, Dreams, Creativity & the Limits of the Human Mind",
+      "date": "Sun, 28 Feb 2021 16:59:51 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 165,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 164,
+      "title": "#163 – Eric Weinstein: Difficult Conversations, Freedom of Speech, and Physics",
+      "date": "Tue, 23 Feb 2021 05:36:12 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 164,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 163,
+      "title": "#162 – Jim Keller: The Future of Computing, AI, Life, and Consciousness",
+      "date": "Thu, 18 Feb 2021 17:39:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 163,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 162,
+      "title": "#161 – Jason Calacanis: Startups, Angel Investing, Capitalism, and Friendship",
+      "date": "Mon, 15 Feb 2021 14:07:29 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 162,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 161,
+      "title": "#160 – Brendan Eich: JavaScript, Firefox, Mozilla, and Brave",
+      "date": "Fri, 12 Feb 2021 14:06:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 161,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 160,
+      "title": "#159 – Richard Craib: WallStreetBets, Numerai, and the Future of Stock Trading",
+      "date": "Sun, 07 Feb 2021 23:20:51 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 160,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 159,
+      "title": "#158 – Zev Weinstein: The Next Generation of Big Ideas and Brave Minds",
+      "date": "Fri, 05 Feb 2021 19:59:53 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 159,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 158,
+      "title": "#157 – Natalya Bailey: Rocket Engines and Electric Spacecraft Propulsion",
+      "date": "Mon, 01 Feb 2021 14:15:06 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 158,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 157,
+      "title": "#156 – Tim Dillon: Comedy, Power, Conspiracy Theories, and Freedom",
+      "date": "Fri, 29 Jan 2021 22:22:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 157,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 156,
+      "title": "Lex Fridman: Ask Me Anything – AMA January 2021",
+      "date": "Wed, 27 Jan 2021 18:11:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 156,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 155,
+      "title": "#155 – Max Tegmark: AI and Physics",
+      "date": "Mon, 18 Jan 2021 06:16:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 155,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 154,
+      "title": "#154 – Avi Loeb: Aliens, Black Holes, and the Mystery of the Oumuamua",
+      "date": "Thu, 14 Jan 2021 04:04:03 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 154,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 153,
+      "title": "#153 – Dmitry Korkin: Evolution of Proteins, Viruses, Life, and AI",
+      "date": "Mon, 11 Jan 2021 10:49:20 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 153,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 152,
+      "title": "#152 – Dan Gable: Olympic Wrestling, Mental Toughness & the Making of Champions",
+      "date": "Sat, 09 Jan 2021 23:07:40 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 152,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 151,
+      "title": "#151 – Dan Kokotov: Speech Recognition with AI and Humans",
+      "date": "Mon, 04 Jan 2021 09:25:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 151,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 150,
+      "title": "#150 – Michael Malice: The White Pill, Freedom, Hope, and Happiness Amidst Chaos",
+      "date": "Thu, 31 Dec 2020 23:08:49 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 150,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 149,
+      "title": "#149 – Diana Walsh Pasulka: Aliens, Technology, Religion, and the Nature of Belief",
+      "date": "Mon, 28 Dec 2020 04:33:48 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 149,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 148,
+      "title": "#148 – Charles Isbell and Michael Littman: Machine Learning and Education",
+      "date": "Sat, 26 Dec 2020 17:05:48 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 148,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 147,
+      "title": "#147 – Dmitri Dolgov: Waymo and the Future of Self-Driving Cars",
+      "date": "Sun, 20 Dec 2020 23:26:15 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 147,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 146,
+      "title": "#146 – Michael Mina: Rapid Testing, Viruses, and the Engineering Mindset",
+      "date": "Sat, 19 Dec 2020 02:18:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 146,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 145,
+      "title": "#145 – Matthew Johnson: Psychedelics",
+      "date": "Mon, 14 Dec 2020 07:25:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 145,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 144,
+      "title": "#144 – Michael Littman: Reinforcement Learning and the Future of AI",
+      "date": "Sun, 13 Dec 2020 04:29:13 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 144,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 143,
+      "title": "#143 – John Clarke: The Art of Fighting and the Pursuit of Excellence",
+      "date": "Sun, 06 Dec 2020 18:54:35 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 143,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 142,
+      "title": "#142 – Manolis Kellis: Meaning of Life, the Universe, and Everything",
+      "date": "Mon, 30 Nov 2020 19:17:57 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 142,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 141,
+      "title": "#141 – Erik Brynjolfsson: Economics of AI, Social Networks, and Technology",
+      "date": "Wed, 25 Nov 2020 17:57:38 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 141,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 140,
+      "title": "#140 – Lisa Feldman Barrett: Love, Evolution, and the Human Brain",
+      "date": "Fri, 20 Nov 2020 17:51:17 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 140,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 139,
+      "title": "#139 – Andrew Huberman: Neuroscience of Optimal Performance",
+      "date": "Mon, 16 Nov 2020 16:02:15 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 139,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 138,
+      "title": "#138 – Yaron Brook: Ayn Rand and the Philosophy of Objectivism",
+      "date": "Fri, 13 Nov 2020 14:36:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 138,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 137,
+      "title": "#137 – Alex Filippenko: Supernovae, Dark Energy, Aliens & the Expanding Universe",
+      "date": "Sun, 08 Nov 2020 00:02:56 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 137,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 136,
+      "title": "#136 – Dan Carlin: Hardcore History",
+      "date": "Tue, 03 Nov 2020 03:06:21 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 136,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 135,
+      "title": "#135 – Charles Isbell: Computing, Interactive AI, and Race in America",
+      "date": "Mon, 02 Nov 2020 00:51:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 135,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 134,
+      "title": "#134 – Eric Weinstein: On the Nature of Good and Evil, Genius and Madness",
+      "date": "Fri, 30 Oct 2020 03:56:27 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 134,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 133,
+      "title": "#133 – Manolis Kellis: Biology of Disease",
+      "date": "Sun, 25 Oct 2020 23:12:31 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 133,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 132,
+      "title": "#132 – George Hotz: Hacking the Simulation & Learning to Drive with Neural Nets",
+      "date": "Thu, 22 Oct 2020 01:08:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 132,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 131,
+      "title": "#131 – Chris Lattner: The Future of Computing and Programming Languages",
+      "date": "Mon, 19 Oct 2020 01:56:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 131,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 130,
+      "title": "#130 – Scott Aaronson: Computational Complexity and Consciousness",
+      "date": "Mon, 12 Oct 2020 06:19:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 130,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 129,
+      "title": "#129 – Lisa Feldman Barrett: Counterintuitive Ideas About How the Brain Works",
+      "date": "Sun, 04 Oct 2020 17:03:58 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 129,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 128,
+      "title": "#128 – Michael Malice: Anarchy, Democracy, Libertarianism, Love, and Trolling",
+      "date": "Fri, 02 Oct 2020 15:15:51 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 128,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 127,
+      "title": "#127 – Joe Rogan: Conversations, Ideas, Love, Freedom & The Joe Rogan Experience",
+      "date": "Sat, 26 Sep 2020 17:00:48 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 127,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 126,
+      "title": "#126 – James Gosling: Java, JVM, Emacs, and the Early Days of Computing",
+      "date": "Thu, 24 Sep 2020 14:31:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 126,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 125,
+      "title": "#125 – Ryan Hall: Martial Arts and the Philosophy of Violence, Power, and Grace",
+      "date": "Sun, 20 Sep 2020 21:50:08 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 125,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 124,
+      "title": "#124 – Stephen Wolfram: Fundamental Theory of Physics, Life, and the Universe",
+      "date": "Tue, 15 Sep 2020 23:36:19 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 124,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 123,
+      "title": "#123 – Manolis Kellis: Origin of Life, Humans, Ideas, Suffering, and Happiness",
+      "date": "Sat, 12 Sep 2020 18:29:51 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 123,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 122,
+      "title": "#122 – David Fravor: UFOs, Aliens, Fighter Jets, and Aerospace Engineering",
+      "date": "Tue, 08 Sep 2020 16:14:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 122,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 121,
+      "title": "Lex Solo #3 – In Memory of My Grandmother",
+      "date": "Mon, 07 Sep 2020 20:59:01 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 121,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 120,
+      "title": "#121 – Eugenia Kuyda: Friendship with an AI Companion",
+      "date": "Sat, 05 Sep 2020 17:31:13 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 120,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 119,
+      "title": "Lex Solo #2 – The Future of Neuralink",
+      "date": "Tue, 01 Sep 2020 19:45:29 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 119,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 118,
+      "title": "#120 – François Chollet: Measures of Intelligence",
+      "date": "Mon, 31 Aug 2020 00:10:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 118,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 117,
+      "title": "#119 – David Eagleman: Neuroplasticity and the Livewired Brain",
+      "date": "Wed, 26 Aug 2020 14:02:09 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 117,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 116,
+      "title": "New Name: Lex Fridman Podcast",
+      "date": "Mon, 24 Aug 2020 23:40:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 116,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 115,
+      "title": "#118 – Grant Sanderson: Math, Manim, Neural Networks & Teaching with 3Blue1Brown",
+      "date": "Sun, 23 Aug 2020 22:43:27 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 115,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 114,
+      "title": "#117 – Sheldon Solomon: Death and Meaning",
+      "date": "Thu, 20 Aug 2020 23:13:46 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 114,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 113,
+      "title": "#116 – Sara Seager: Search for Planets and Life Outside Our Solar System",
+      "date": "Sun, 16 Aug 2020 20:12:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 113,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 112,
+      "title": "#115 – Dileep George: Brain-Inspired AI",
+      "date": "Fri, 14 Aug 2020 22:51:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 112,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 111,
+      "title": "#114 – Russ Tedrake: Underactuated Robotics, Control, Dynamics and Touch",
+      "date": "Sun, 09 Aug 2020 16:30:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 111,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 110,
+      "title": "#113 – Manolis Kellis: Human Genome and Evolutionary Dynamics",
+      "date": "Fri, 31 Jul 2020 13:20:37 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 110,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 109,
+      "title": "#112 – Ian Hutchinson: Nuclear Fusion, Plasma Physics, and Religion",
+      "date": "Wed, 29 Jul 2020 17:01:15 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 109,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 108,
+      "title": "#111 – Richard Karp: Algorithms and Computational Complexity",
+      "date": "Sun, 26 Jul 2020 15:49:07 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 108,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 107,
+      "title": "#110 – Jitendra Malik: Computer Vision",
+      "date": "Tue, 21 Jul 2020 23:16:54 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 107,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 106,
+      "title": "#109 – Brian Kernighan: UNIX, C, AWK, AMPL, and Go Programming",
+      "date": "Sat, 18 Jul 2020 21:28:25 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 106,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 105,
+      "title": "#108 – Sergey Levine: Robotics and Machine Learning",
+      "date": "Tue, 14 Jul 2020 15:59:56 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 105,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 104,
+      "title": "#107 – Peter Singer: Suffering in Humans, Animals, and AI",
+      "date": "Wed, 08 Jul 2020 14:40:18 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 104,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 103,
+      "title": "#106 – Matt Botvinick: Neuroscience, Psychology, and AI at DeepMind",
+      "date": "Fri, 03 Jul 2020 15:08:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 103,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 102,
+      "title": "#105 – Robert Langer: Edison of Medicine",
+      "date": "Tue, 30 Jun 2020 22:04:00 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 102,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 101,
+      "title": "#104 – David Patterson: Computer Architecture and Data Storage",
+      "date": "Sat, 27 Jun 2020 19:20:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 101,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 100,
+      "title": "#103 – Ben Goertzel: Artificial General Intelligence",
+      "date": "Mon, 22 Jun 2020 17:21:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 100,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 99,
+      "title": "#102 – Steven Pressfield: The War of Art",
+      "date": "Sat, 20 Jun 2020 17:48:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 99,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 98,
+      "title": "#101 – Joscha Bach: Artificial Consciousness and the Nature of Reality",
+      "date": "Sat, 13 Jun 2020 16:59:20 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 98,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 97,
+      "title": "#99 – Karl Friston: Neuroscience and the Free Energy Principle",
+      "date": "Thu, 28 May 2020 12:42:21 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 97,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 96,
+      "title": "#97 – Sertac Karaman: Robots That Fly and Robots That Drive",
+      "date": "Wed, 20 May 2020 01:28:48 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 96,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 95,
+      "title": "#96 – Stephen Schwarzman: Going Big in Business, Investing, and AI",
+      "date": "Fri, 15 May 2020 21:34:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 95,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 94,
+      "title": "#95 – Dawn Song: Adversarial Machine Learning and Computer Security",
+      "date": "Tue, 12 May 2020 23:20:29 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 94,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 93,
+      "title": "#94 – Ilya Sutskever: Deep Learning",
+      "date": "Fri, 08 May 2020 20:25:12 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 93,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 92,
+      "title": "#93 – Daphne Koller: Biomedicine and Machine Learning",
+      "date": "Tue, 05 May 2020 20:08:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 92,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 91,
+      "title": "#92 – Harry Cliff: Particle Physics and the Large Hadron Collider",
+      "date": "Wed, 29 Apr 2020 22:52:14 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 91,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 90,
+      "title": "#91 – Jack Dorsey: Square, Cryptocurrency, and Artificial Intelligence",
+      "date": "Fri, 24 Apr 2020 20:45:47 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 90,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 89,
+      "title": "#90 – Dmitry Korkin: Computational Biology of Coronavirus",
+      "date": "Wed, 22 Apr 2020 20:57:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 89,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 88,
+      "title": "#89 – Stephen Wolfram: Cellular Automata, Computation, and Physics",
+      "date": "Sat, 18 Apr 2020 18:23:57 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 88,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 87,
+      "title": "#88 – Eric Weinstein: Geometric Unity and the Call for New Ideas, Leaders & Institutions",
+      "date": "Mon, 13 Apr 2020 20:50:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 87,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 86,
+      "title": "#87 – Richard Dawkins: Evolution, Intelligence, Simulation, and Memes",
+      "date": "Thu, 09 Apr 2020 22:35:30 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 86,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 85,
+      "title": "#86 – David Silver: AlphaGo, AlphaZero, and Deep Reinforcement Learning",
+      "date": "Fri, 03 Apr 2020 21:05:03 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 85,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 84,
+      "title": "#85 – Roger Penrose: Physics of Consciousness and the Infinite Universe",
+      "date": "Tue, 31 Mar 2020 14:33:28 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 84,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 83,
+      "title": "#83 – Nick Bostrom: Simulation and Superintelligence",
+      "date": "Thu, 26 Mar 2020 00:19:25 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 83,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 82,
+      "title": "#82 – Simon Sinek: Leadership, Hard Work, Optimism and the Infinite Game",
+      "date": "Sat, 21 Mar 2020 18:25:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 82,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 81,
+      "title": "#81 – Anca Dragan: Human-Robot Interaction and Reward Engineering",
+      "date": "Thu, 19 Mar 2020 17:33:29 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 81,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 80,
+      "title": "#80 – Vitalik Buterin: Ethereum, Cryptocurrency, and the Future of Money",
+      "date": "Mon, 16 Mar 2020 17:48:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 80,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 79,
+      "title": "#79 – Lee Smolin: Quantum Gravity and Einstein’s Unfinished Revolution",
+      "date": "Sat, 07 Mar 2020 20:53:01 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 79,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 78,
+      "title": "#78 – Ann Druyan: Cosmos, Carl Sagan, Voyager, and the Beauty of Science",
+      "date": "Thu, 05 Mar 2020 14:37:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 78,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 77,
+      "title": "#77 – Alex Garland: Ex Machina, Devs, Annihilation, and the Poetry of Science",
+      "date": "Tue, 03 Mar 2020 16:07:30 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 77,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 76,
+      "title": "#76 – John Hopfield: Physics View of the Mind and Neurobiology",
+      "date": "Sat, 29 Feb 2020 16:09:54 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 76,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 75,
+      "title": "#75 – Marcus Hutter: Universal Artificial Intelligence, AIXI, and AGI",
+      "date": "Wed, 26 Feb 2020 17:45:10 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 75,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 74,
+      "title": "#74 – Michael I. Jordan: Machine Learning, Recommender Systems, and the Future of AI",
+      "date": "Mon, 24 Feb 2020 13:46:17 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 74,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 73,
+      "title": "#73 – Andrew Ng: Deep Learning, Education, and Real-World AI",
+      "date": "Thu, 20 Feb 2020 17:11:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 73,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 72,
+      "title": "#72 – Scott Aaronson: Quantum Computing",
+      "date": "Mon, 17 Feb 2020 21:21:56 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 72,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 71,
+      "title": "Vladimir Vapnik: Predicates, Invariants, and the Essence of Intelligence",
+      "date": "Fri, 14 Feb 2020 17:22:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 71,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 70,
+      "title": "Jim Keller: Moore’s Law, Microprocessors, Abstractions, and First Principles",
+      "date": "Wed, 05 Feb 2020 20:08:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 70,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 69,
+      "title": "David Chalmers: The Hard Problem of Consciousness",
+      "date": "Wed, 29 Jan 2020 21:38:14 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 69,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 68,
+      "title": "Cristos Goodrow: YouTube Algorithm",
+      "date": "Sat, 25 Jan 2020 19:33:36 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 68,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 67,
+      "title": "Paul Krugman: Economics of Innovation, Automation, Safety Nets & Universal Basic Income",
+      "date": "Tue, 21 Jan 2020 17:32:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 67,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 66,
+      "title": "Ayanna Howard: Human-Robot Interaction and Ethics of Safety-Critical Systems",
+      "date": "Fri, 17 Jan 2020 15:44:19 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 66,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 65,
+      "title": "Daniel Kahneman: Thinking Fast and Slow, Deep Learning, and AI",
+      "date": "Tue, 14 Jan 2020 18:04:15 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 65,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 64,
+      "title": "Grant Sanderson: 3Blue1Brown and the Beauty of Mathematics",
+      "date": "Tue, 07 Jan 2020 17:11:45 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 64,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 63,
+      "title": "Stephen Kotkin: Stalin, Putin, and the Nature of Power",
+      "date": "Fri, 03 Jan 2020 17:35:49 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 63,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 62,
+      "title": "Donald Knuth: Algorithms, TeX, Life, and The Art of Computer Programming",
+      "date": "Mon, 30 Dec 2019 17:57:13 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 62,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 61,
+      "title": "Melanie Mitchell: Concepts, Analogies, Common Sense & Future of AI",
+      "date": "Sat, 28 Dec 2019 18:42:41 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 61,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 60,
+      "title": "Jim Gates: Supersymmetry, String Theory and Proving Einstein Right",
+      "date": "Wed, 25 Dec 2019 16:09:18 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 60,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 59,
+      "title": "Sebastian Thrun: Flying Cars, Autonomous Vehicles, and Education",
+      "date": "Sat, 21 Dec 2019 17:48:06 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 59,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 58,
+      "title": "Michael Stevens: Vsauce",
+      "date": "Tue, 17 Dec 2019 14:11:51 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 58,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 57,
+      "title": "Rohit Prasad: Amazon Alexa and Conversational AI",
+      "date": "Sat, 14 Dec 2019 15:02:53 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 57,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 56,
+      "title": "Judea Pearl: Causal Reasoning, Counterfactuals, Bayesian Networks, and the Path to AGI",
+      "date": "Wed, 11 Dec 2019 16:33:31 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 56,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 55,
+      "title": "Whitney Cummings: Comedy, Robotics, Neurology, and Love",
+      "date": "Thu, 05 Dec 2019 12:41:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 55,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 54,
+      "title": "Ray Dalio: Principles, the Economic Machine, Artificial Intelligence & the Arc of Life",
+      "date": "Mon, 02 Dec 2019 17:09:54 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 54,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 53,
+      "title": "Noam Chomsky: Language, Cognition, and Deep Learning",
+      "date": "Fri, 29 Nov 2019 15:11:16 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 53,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 52,
+      "title": "Gilbert Strang: Linear Algebra, Deep Learning, Teaching, and MIT OpenCourseWare",
+      "date": "Mon, 25 Nov 2019 14:04:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 52,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 51,
+      "title": "Dava Newman: Space Exploration, Space Suits, and Life on Mars",
+      "date": "Fri, 22 Nov 2019 18:14:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 51,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 50,
+      "title": "Michael Kearns: Algorithmic Fairness, Bias, Privacy, and Ethics in Machine Learning",
+      "date": "Tue, 19 Nov 2019 17:52:43 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 50,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 49,
+      "title": "Elon Musk: Neuralink, AI, Autopilot, and the Pale Blue Dot",
+      "date": "Tue, 12 Nov 2019 17:31:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 49,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 48,
+      "title": "Bjarne Stroustrup: C++",
+      "date": "Thu, 07 Nov 2019 17:47:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 48,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 47,
+      "title": "Sean Carroll: Quantum Mechanics and the Many-Worlds Interpretation",
+      "date": "Fri, 01 Nov 2019 16:50:59 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 47,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 46,
+      "title": "Garry Kasparov: Chess, Deep Blue, AI, and Putin",
+      "date": "Sun, 27 Oct 2019 17:49:24 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 46,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 45,
+      "title": "Michio Kaku: Future of Humans, Aliens, Space Travel & Physics",
+      "date": "Tue, 22 Oct 2019 14:26:14 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 45,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 44,
+      "title": "David Ferrucci: IBM Watson, Jeopardy & Deep Conversations with AI",
+      "date": "Fri, 11 Oct 2019 16:46:13 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 44,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 43,
+      "title": "Gary Marcus: Toward a Hybrid of Deep Learning and Symbolic AI",
+      "date": "Thu, 03 Oct 2019 11:26:20 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 43,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 42,
+      "title": "Peter Norvig: Artificial Intelligence: A Modern Approach",
+      "date": "Mon, 30 Sep 2019 17:44:35 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 42,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 41,
+      "title": "Leonard Susskind: Quantum Mechanics, String Theory, and Black Holes",
+      "date": "Thu, 26 Sep 2019 16:28:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 41,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 40,
+      "title": "Regina Barzilay: Deep Learning for Cancer Diagnosis and Treatment",
+      "date": "Mon, 23 Sep 2019 16:49:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 40,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 39,
+      "title": "Colin Angle: iRobot",
+      "date": "Thu, 19 Sep 2019 13:56:00 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 39,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 38,
+      "title": "François Chollet: Keras, Deep Learning, and the Progress of AI",
+      "date": "Sat, 14 Sep 2019 15:44:33 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 38,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 37,
+      "title": "Vijay Kumar: Flying Robots",
+      "date": "Sun, 08 Sep 2019 16:35:51 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 37,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 36,
+      "title": "Yann LeCun: Deep Learning, Convolutional Neural Networks, and Self-Supervised Learning",
+      "date": "Sat, 31 Aug 2019 15:43:51 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 36,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 35,
+      "title": "Jeremy Howard: fast.ai Deep Learning Courses and Research",
+      "date": "Tue, 27 Aug 2019 15:24:36 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 35,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 34,
+      "title": "Pamela McCorduck: Machines Who Think and the Early Days of AI",
+      "date": "Fri, 23 Aug 2019 14:27:03 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 34,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 33,
+      "title": "Keoki Jackson: Lockheed Martin",
+      "date": "Mon, 19 Aug 2019 14:20:03 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 33,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 32,
+      "title": "Paola Arlotta: Brain Development from Stem Cell to Organoid",
+      "date": "Mon, 12 Aug 2019 15:09:23 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 32,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 31,
+      "title": "George Hotz: Comma.ai, OpenPilot, and Autonomous Vehicles",
+      "date": "Mon, 05 Aug 2019 14:18:20 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 31,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 30,
+      "title": "Kevin Scott: Microsoft CTO",
+      "date": "Thu, 01 Aug 2019 18:58:07 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 30,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 29,
+      "title": "Gustav Soderstrom: Spotify",
+      "date": "Mon, 29 Jul 2019 14:06:39 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 29,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 28,
+      "title": "Chris Urmson: Self-Driving Cars at Aurora, Google, CMU, and DARPA",
+      "date": "Mon, 22 Jul 2019 14:17:34 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 28,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 27,
+      "title": "Kai-Fu Lee: AI Superpowers – China and Silicon Valley",
+      "date": "Mon, 15 Jul 2019 14:53:32 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 27,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 26,
+      "title": "Sean Carroll: The Nature of the Universe, Life, and Intelligence",
+      "date": "Wed, 10 Jul 2019 15:39:19 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 26,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 25,
+      "title": "Jeff Hawkins: Thousand Brains Theory of Intelligence",
+      "date": "Mon, 01 Jul 2019 15:25:44 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 25,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 24,
+      "title": "Rosalind Picard: Affective Computing, Emotion, Privacy, and Health",
+      "date": "Mon, 17 Jun 2019 15:56:22 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 24,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 23,
+      "title": "Gavin Miller: Adobe Research",
+      "date": "Mon, 10 Jun 2019 19:12:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 23,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 22,
+      "title": "Rajat Monga: TensorFlow",
+      "date": "Mon, 03 Jun 2019 16:10:16 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 22,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 21,
+      "title": "Chris Lattner: Compilers, LLVM, Swift, TPU, and ML Accelerators",
+      "date": "Mon, 13 May 2019 15:47:58 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 21,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 20,
+      "title": "Oriol Vinyals: DeepMind AlphaStar, StarCraft, Language, and Sequences",
+      "date": "Mon, 29 Apr 2019 15:31:56 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 20,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 19,
+      "title": "Ian Goodfellow: Generative Adversarial Networks (GANs)",
+      "date": "Thu, 18 Apr 2019 16:33:48 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 19,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 18,
+      "title": "Elon Musk: Tesla Autopilot",
+      "date": "Fri, 12 Apr 2019 15:15:06 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 18,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 17,
+      "title": "Greg Brockman: OpenAI and AGI",
+      "date": "Wed, 03 Apr 2019 15:39:36 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 17,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 16,
+      "title": "Eric Weinstein: Revolutionary Ideas in Science, Math, and Society",
+      "date": "Wed, 20 Mar 2019 16:12:26 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 16,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 15,
+      "title": "Leslie Kaelbling: Reinforcement Learning, Planning, and Robotics",
+      "date": "Tue, 12 Mar 2019 16:06:45 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 15,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 14,
+      "title": "Kyle Vogt: Cruise Automation",
+      "date": "Thu, 07 Feb 2019 15:30:42 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 14,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 13,
+      "title": "Tomaso Poggio: Brains, Minds, and Machines",
+      "date": "Sat, 19 Jan 2019 15:03:04 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 13,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 12,
+      "title": "Tuomas Sandholm: Poker and Game Theory",
+      "date": "Fri, 28 Dec 2018 21:40:12 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 12,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 11,
+      "title": "Juergen Schmidhuber: Godel Machines, Meta-Learning, and LSTMs",
+      "date": "Sun, 23 Dec 2018 17:03:45 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 11,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 10,
+      "title": "Pieter Abbeel: Deep Reinforcement Learning",
+      "date": "Sun, 16 Dec 2018 19:48:50 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 10,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 9,
+      "title": "Stuart Russell: Long-Term Future of AI",
+      "date": "Sun, 09 Dec 2018 16:45:15 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 9,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 8,
+      "title": "Eric Schmidt: Google",
+      "date": "Tue, 04 Dec 2018 16:13:24 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 8,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 7,
+      "title": "Jeff Atwood: Stack Overflow and Coding Horror",
+      "date": "Thu, 29 Nov 2018 15:41:18 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 7,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 6,
+      "title": "Guido van Rossum: Python",
+      "date": "Thu, 22 Nov 2018 17:00:28 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 6,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 5,
+      "title": "Vladimir Vapnik: Statistical Learning",
+      "date": "Fri, 16 Nov 2018 15:30:48 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 5,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 4,
+      "title": "Yoshua Bengio: Deep Learning",
+      "date": "Sat, 20 Oct 2018 17:02:02 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 4,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 3,
+      "title": "Steven Pinker: AI in the Age of Reason",
+      "date": "Wed, 17 Oct 2018 11:55:50 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 3,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 2,
+      "title": "Christof Koch: Consciousness",
+      "date": "Sun, 02 Sep 2018 01:57:49 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 2,
+      "season": null,
+      "ingested": false
+    },
+    {
+      "id": 1,
+      "title": "Max Tegmark: Life 3.0",
+      "date": "Sun, 26 Aug 2018 22:37:16 +0000",
+      "duration": null,
+      "url": null,
+      "episode_number": 1,
+      "season": null,
+      "ingested": false
+    }
+  ]
+}

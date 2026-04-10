@@ -177,28 +177,35 @@ function scanTwitter(creator) {
 // ---- Podcast scan ----
 function scanPodcast(creator) {
   const pod = creator.platforms.podcast;
-  if (!pod?.rss_url) return null;
+  const feedUrl = pod?.feed_url || pod?.rss_url;
+  if (!feedUrl) return null;
 
-  console.log(`   🎙️  Podcast: ${pod.rss_url}`);
+  console.log(`   🎙️  Podcast: ${feedUrl}`);
   try {
-    const cmd = `npx podcast-dl --url "${pod.rss_url}" --list json 2>/dev/null`;
-    const output = execSync(cmd, { maxBuffer: 50 * 1024 * 1024, encoding: 'utf-8', timeout: 120000 });
-    
-    let episodes;
-    try {
-      episodes = JSON.parse(output);
-    } catch {
-      // podcast-dl --list json might output line-by-line
-      episodes = output.trim().split('\n').filter(Boolean).map(l => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
+    // Paginate to avoid JSON truncation on large feeds
+    let episodes = [];
+    const PAGE = 100;
+    for (let offset = 0; offset < 1000; offset += PAGE) {
+      const cmd = `npx podcast-dl --url "${feedUrl}" --list json --limit ${PAGE} --offset ${offset} 2>/dev/null`;
+      try {
+        const output = execSync(cmd, { maxBuffer: 200 * 1024 * 1024, encoding: 'utf-8', timeout: 120000 });
+        const page = JSON.parse(output);
+        if (!Array.isArray(page) || page.length === 0) break;
+        episodes.push(...page);
+        if (page.length < PAGE) break; // last page
+      } catch {
+        break;
+      }
     }
 
     const items = (Array.isArray(episodes) ? episodes : []).map(ep => ({
-      id: ep.guid || ep.title,
+      id: ep.guid || ep.episodeNum || ep.title,
       title: ep.title,
       date: ep.pubDate || ep.release_date || null,
       duration: ep.duration || ep.itunes?.duration || null,
-      url: ep.enclosure?.url || ep.link || null,
-      has_transcript: !!(ep.podcast_transcript || ep.transcript),
+      url: ep.enclosure?.url || ep.link || ep.url || null,
+      episode_number: ep.episodeNum || ep.episode || null,
+      season: ep.seasonNum || null,
     }));
 
     return { platform: 'podcast', items, scanned_at: new Date().toISOString() };

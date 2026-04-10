@@ -85,6 +85,30 @@
       "status": "active",
       "catalog_count": 887,
       "last_scanned": "2026-04-10T18:35:21.298Z"
+    },
+    {
+      "slug": "lex-fridman",
+      "name": "Lex Fridman",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@lexfridman"
+        },
+        "podcast": {
+          "feed_url": "https://lexfridman.com/feed/podcast/"
+        }
+      },
+      "topics": [
+        "ai",
+        "science",
+        "philosophy",
+        "technology"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 496,
+      "last_scanned": "2026-04-10T19:07:50.505Z"
     }
   ]
 }

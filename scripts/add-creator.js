@@ -34,6 +34,7 @@ const name = args.filter(a => !a.startsWith('--')).filter(a => {
 
 const youtube = getArg('--youtube');
 const twitter = getArg('--twitter');
+const podcast = getArg('--podcast');
 const topics = (getArg('--topics') || '').split(',').filter(Boolean);
 const instance = getArg('--instance') || 'btd';
 const doScan = args.includes('--scan');
@@ -92,6 +93,7 @@ const creator = {
 
 if (youtube) creator.platforms.youtube = { channel_url: youtube };
 if (twitter) creator.platforms.twitter = { handle: twitter };
+if (podcast) creator.platforms.podcast = { feed_url: podcast };
 
 // Save
 registry.creators.push(creator);
