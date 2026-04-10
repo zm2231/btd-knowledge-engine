@@ -164,6 +164,7 @@ Every script takes `--instance <name>` (default: `btd`).
 | `ingest-twitter.js` | Ingest tweets from catalog | `--limit N`, `--dry-run` |
 | `ingest-podcast.js` | Download + transcribe podcast episodes | `--feed <url>`, `--limit N`, `--list`, `--file <mp3>` |
 | `ingest-substack.js` | Download Substack articles | `--scan`, `--limit N` |
+| `ingest-repo.js` | Index a codebase (local path or GitHub URL) | `--scan` (preview), `--file-types` |
 | `index.js` | Build/update LEANN semantic index | `--force` |
 | `status.js` | Content dashboard | |
 
@@ -190,9 +191,9 @@ Every script takes `--instance <name>` (default: `btd`).
 | **Twitter/X** | `bird user-tweets --json` | Thread grouping into markdown | Rate limited; use small counts |
 | **Podcasts** | `podcast-dl --list json` | Download mp3 + whisper transcription | 90MB episode transcribed in ~2.5min |
 | **Substack** | `sbstck-dl` or RSS fallback | Markdown articles | Full HTML available in RSS feeds |
+| **Repos/Code** | `ingest-repo.js --scan` | `ingest-repo.js` (clones + LEANN index) | GitHub URL or local path. Code + docs in same index as talks. |
 | **Articles** | Manual | Drop `.md` in `raw/articles/` | Obsidian Web Clipper works well |
 | **Transcripts** | Manual | Drop `.md` in `raw/transcripts/` | Meeting notes, group sessions |
-| **Repos** | `leann build` directly | Point LEANN at a codebase | Index any repo for semantic code search |
 
 ## The Interview Layer
 
@@ -233,10 +234,11 @@ btd-knowledge-engine/
 ## Current State (April 2026)
 
 **Content:**
-- 5 creators: Karpathy (YT+Twitter), 3Blue1Brown (YT), Nate Jones (YT), Mollick (Substack), Lex Fridman (YT+Podcast)
+- 6 creators: Karpathy (YT+Twitter), 3Blue1Brown (YT), Nate Jones (YT), Mollick (Substack), Lex Fridman (YT+Podcast), minbpe (repo)
 - 1,643+ items cataloged across all platforms
-- 48 docs ingested, 8,164+ chunks in LEANN index
-- All 5 source type pipelines working end to end
+- 50+ docs ingested, 8,000+ chunks in LEANN index
+- All 6 source type pipelines working: YouTube, Twitter, Podcast, Substack, Repos, Manual
+- Cross-source search confirmed: Karpathy's talks about tokenization + his actual minbpe code in same query
 
 **Product:**
 - Intake interview skill (SKILL.md) ready for Max to run

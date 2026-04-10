@@ -115,6 +115,48 @@ Auto-ingest is intentionally NOT cron'd. Catalog everything, but pulling content
 - [ ] Fix questions → routing → templates (in that order if mismatch)
 - [ ] Profile update flow (experiment outcome → profile revision)
 
+## Consolidation (in progress — SageMoon on fix/consolidation branch)
+
+Repo audit identified structural debt from rapid feature addition. Fixes:
+- [x] Profile parsing: regex → js-yaml (shipped)
+- [ ] Unified ingest log schema across all 6 source scripts (SageMoon)
+- [ ] status.js: no more `undefined` in output (SageMoon)
+- [ ] add-creator.js: add `--substack`, delegate `--scan` to scan.js (SageMoon)
+- [ ] batch-ingest.js: YouTube-only, not cross-platform (SageMoon)
+- [ ] init.js: add `raw/twitter/` (SageMoon)
+- [ ] Doc drift: dead catalog.js refs, templates/ vs template/, stale roadmap claims (SageMoon)
+- [ ] Clean test entries from prod ingest log (SageMoon)
+- [ ] ingest-repo.js: unified schema (SageMoon)
+
+## Product Architecture — CLI + Web UI + Claude Skills
+
+### The problem
+session.js currently assembles context and prints it. The user has to copy-paste into Claude manually. That's operator tooling, not a product.
+
+### The target
+Everything runnable three ways:
+1. **CLI** — `node scripts/session.js intake sarah` runs the interview directly in terminal via Claude API
+2. **Claude Code skill** — load SKILL.md, Claude runs the interview with access to scripts/profile.js/corpus
+3. **Web UI** — browser interface that connects to Claude, shows attribution, manages profiles
+
+### Translation layer
+Claude must explain at the user's level. A pre-beginner gets "a neural network is like a chain of filters that learns to recognize patterns." A builder gets "you want a 3-layer MLP with ReLU activations, here's Karpathy's implementation." Same corpus, different translation based on `calibrated_level` from the constraint profile.
+
+This is the core product behavior: retrieval is personalized by the profile, AND delivery is translated by the profile.
+
+### Implementation plan
+1. **Phase 1: Claude Code native** — skills already work, session.js already assembles context. Wire them so Claude Code can call scripts directly (read profiles, run searches, save experiments). This is the fastest path to a usable product for the BTD group.
+2. **Phase 2: CLI with API** — session.js calls Claude API directly for non-Claude-Code users. Interactive terminal flow.
+3. **Phase 3: Web UI** — lightweight frontend that shows profiles, experiments, search results with attribution. Connects to the same scripts/skills backend.
+
+### What Claude Code needs to run this natively
+- Read `skills/btd-intake/SKILL.md` as active skill
+- Call `node scripts/profile.js save/load` to persist profiles
+- Call `leann search btd-btd "<query>"` for corpus retrieval
+- Read/write experiment cards in `users/{id}/experiments/`
+- Access `skills/btd-intake/RE-ENTRY.md` for returning users
+- All of this already works in Claude Code today — just needs the skill to reference the scripts explicitly
+
 ## From Build Lab Session (April 10, 2026)
 
 Key ideas surfaced during the group build lab that should shape next steps:
@@ -131,8 +173,8 @@ Concrete implementation:
 ### Voice Agent (Max's test project, not this repo)
 Max ran the intake skill against a voice agent build as his test project. The voice agent itself (cognitive fingerprint extraction via live problem-solving) is a separate product idea, not a feature of this repo. Noted here because the intake skill successfully reframed his build during the session.
 
-### Repo/Codebase Ingestion (in progress)
-VividEagle building `ingest-repo.js`. The value: search across Karpathy's TALKS about tokenization AND his `minbpe` implementation code in the same query. Same index, different source types.
+### Repo/Codebase Ingestion ✅
+`ingest-repo.js` shipped. Takes a local path or GitHub URL, clones to `.tmp/repos/`, indexes into the shared LEANN index alongside all other content. Tested with Karpathy's `minbpe` — can now search across his YouTube talks about tokenization AND his actual tokenizer implementation code in the same query. 6 source types total: YouTube, Twitter, Podcast, Substack, Repos, Manual.
 
 ### Community Getting Started Guide (high priority)
 Group wants this usable by non-technical members using Claude Code. Need:

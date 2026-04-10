@@ -149,6 +149,20 @@ node scripts/scan.js slug --substack
 node scripts/ingest-substack.js slug --limit 5
 ```
 
+### Code Repos
+```bash
+# Preview what would be indexed
+node scripts/ingest-repo.js https://github.com/karpathy/minbpe --scan
+
+# Index the repo (clones it, adds to LEANN)
+node scripts/ingest-repo.js https://github.com/karpathy/minbpe
+
+# Or a local repo
+node scripts/ingest-repo.js /path/to/your/project
+```
+
+Now you can search across someone's talks AND their actual code in the same query.
+
 ### Manual (articles, transcripts, meeting notes)
 Drop any `.md` file into `btd/raw/articles/` or `btd/raw/transcripts/` with basic frontmatter:
 
