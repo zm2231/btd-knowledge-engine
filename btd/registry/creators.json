@@ -24,8 +24,8 @@
       "notes": "Deep builder judgment. Extract decision patterns, not just content.",
       "added": "2026-04-10",
       "status": "active",
-      "catalog_count": 10,
-      "last_scanned": "2026-04-10T18:55:00.972Z"
+      "catalog_count": 18,
+      "last_scanned": "2026-04-10T20:45:05.938Z"
     },
     {
       "slug": "ethan-mollick",
@@ -46,7 +46,7 @@
       "added": "2026-04-10",
       "status": "active",
       "catalog_count": 20,
-      "last_scanned": "2026-04-10T19:10:40.150Z"
+      "last_scanned": "2026-04-10T20:45:06.424Z"
     },
     {
       "slug": "3blue1brown",
@@ -66,7 +66,7 @@
       "added": "2026-04-10",
       "status": "active",
       "catalog_count": 233,
-      "last_scanned": "2026-04-10T18:28:09.204Z"
+      "last_scanned": "2026-04-10T20:45:08.725Z"
     },
     {
       "slug": "nate-jones",
@@ -86,7 +86,7 @@
       "added": "2026-04-10",
       "status": "active",
       "catalog_count": 887,
-      "last_scanned": "2026-04-10T18:35:21.298Z"
+      "last_scanned": "2026-04-10T20:45:16.374Z"
     },
     {
       "slug": "lex-fridman",
@@ -109,8 +109,8 @@
       "notes": "",
       "added": "2026-04-10",
       "status": "active",
-      "catalog_count": 496,
-      "last_scanned": "2026-04-10T19:07:50.505Z"
+      "catalog_count": 1358,
+      "last_scanned": "2026-04-10T20:45:30.065Z"
     },
     {
       "slug": "minbpe",
@@ -142,7 +142,7 @@
       "added": "2026-04-10",
       "status": "active",
       "catalog_count": 11,
-      "last_scanned": "2026-04-10T19:44:44.875Z"
+      "last_scanned": "2026-04-10T20:45:30.090Z"
     },
     {
       "slug": "simon-sinek",
@@ -162,7 +162,7 @@
       "added": "2026-04-10",
       "status": "active",
       "catalog_count": 1170,
-      "last_scanned": "2026-04-10T20:32:06.111Z"
+      "last_scanned": "2026-04-10T20:45:40.108Z"
     },
     {
       "slug": "ali-abdaal",
@@ -182,7 +182,7 @@
       "added": "2026-04-10",
       "status": "active",
       "catalog_count": 1366,
-      "last_scanned": "2026-04-10T20:33:01.132Z"
+      "last_scanned": "2026-04-10T20:45:50.740Z"
     },
     {
       "slug": "lenny-rachitsky",
@@ -202,7 +202,7 @@
       "added": "2026-04-10",
       "status": "active",
       "catalog_count": 20,
-      "last_scanned": "2026-04-10T20:33:13.422Z"
+      "last_scanned": "2026-04-10T20:45:51.413Z"
     },
     {
       "slug": "nanogpt",
@@ -227,7 +227,9 @@
         "code",
         "repository"
       ],
-      "added": "2026-04-10"
+      "added": "2026-04-10",
+      "catalog_count": 19,
+      "last_scanned": "2026-04-10T20:45:51.430Z"
     },
     {
       "slug": "llm-c",
@@ -252,7 +254,9 @@
         "code",
         "repository"
       ],
-      "added": "2026-04-10"
+      "added": "2026-04-10",
+      "catalog_count": 23,
+      "last_scanned": "2026-04-10T20:45:51.449Z"
     }
   ]
 }

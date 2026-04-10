@@ -97,6 +97,28 @@ node scripts/index.js --instance btd
 node scripts/status.js --instance btd
 ```
 
+## Wiki — The Compiled Knowledge Layer
+
+The wiki (`btd/wiki/`) sits between raw sources and user queries. Instead of re-deriving knowledge from chunks every time, you compile it once and keep it current. This is the Karpathy LLM Wiki pattern.
+
+**Structure:**
+- `wiki/concepts/` — one page per concept (e.g. "tokenization", "backpropagation", "infinite game")
+- `wiki/topics/` — broader categories (e.g. "how LLMs work", "leadership frameworks")
+- `wiki/creators/` — what each creator contributes across all their content
+- `wiki/sources/` — summary page per raw source
+- `wiki/index.md` — auto-maintained catalog of all pages
+- `wiki/log.md` — chronological record of compilations
+
+**When to compile:** After ingesting new content, run `node scripts/compile-wiki.js ingest --recent 5` or just tell Claude "compile the wiki from recent sources." For each source, you:
+1. Read the raw file
+2. Write/update source summary, concept pages, topic pages, creator page
+3. Cross-reference: link related pages with `[[wiki-links]]`
+4. Update index.md and log.md
+
+**When to lint:** Periodically run `node scripts/compile-wiki.js lint` to find orphan pages, broken links, uncompiled sources, and contradictions.
+
+**The wiki is YOUR domain.** You maintain it. The user reads it. They rarely edit it directly. Your explorations and answers get filed back into the wiki to compound over time.
+
 ## How to Do Key Operations
 
 ### Corpus Search

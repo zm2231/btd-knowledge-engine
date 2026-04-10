@@ -1,7 +1,7 @@
 {
-  "creator": "andrej-karpathy",
   "platform": "youtube",
-  "scanned_at": "2026-04-10T18:28:00.093Z",
+  "scanned_at": "2026-04-10T20:45:00.782Z",
+  "creator": "andrej-karpathy",
   "total": 17,
   "ingested": 14,
   "items": [
@@ -12,7 +12,7 @@
       "duration": 7872,
       "duration_string": "2:11:12",
       "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
-      "view_count": 2353468,
+      "view_count": 2353655,
       "ingested": true
     },
     {
@@ -22,7 +22,7 @@
       "duration": 12684,
       "duration_string": "3:31:24",
       "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
-      "view_count": 6037758,
+      "view_count": 6038493,
       "ingested": true
     },
     {
@@ -32,7 +32,7 @@
       "duration": 14486,
       "duration_string": "4:01:26",
       "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
-      "view_count": 1046955,
+      "view_count": 1047026,
       "ingested": true
     },
     {
@@ -42,7 +42,7 @@
       "duration": 8015,
       "duration_string": "2:13:35",
       "url": "https://www.youtube.com/watch?v=zduSFxRajkE",
-      "view_count": 1067788,
+      "view_count": 1067920,
       "ingested": true
     },
     {
@@ -52,7 +52,7 @@
       "duration": 3588,
       "duration_string": "59:48",
       "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
-      "view_count": 3549306,
+      "view_count": 3549558,
       "ingested": false
     },
     {
@@ -62,7 +62,7 @@
       "duration": 6980,
       "duration_string": "1:56:20",
       "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY",
-      "view_count": 7066652,
+      "view_count": 7067087,
       "ingested": true
     },
     {
@@ -72,7 +72,7 @@
       "duration": 3382,
       "duration_string": "56:22",
       "url": "https://www.youtube.com/watch?v=t3YJ5hKiMQ0",
-      "view_count": 268624,
+      "view_count": 268640,
       "ingested": true
     },
     {
@@ -102,7 +102,7 @@
       "duration": 4540,
       "duration_string": "1:15:40",
       "url": "https://www.youtube.com/watch?v=TCH_1BHY58I",
-      "view_count": 524003,
+      "view_count": 524054,
       "ingested": true
     },
     {
@@ -112,7 +112,7 @@
       "duration": 7065,
       "duration_string": "1:57:45",
       "url": "https://www.youtube.com/watch?v=PaCmpygFfXo",
-      "view_count": 1122874,
+      "view_count": 1122958,
       "ingested": true
     },
     {
@@ -122,7 +122,7 @@
       "duration": 242,
       "duration_string": "4:02",
       "url": "https://www.youtube.com/watch?v=kVpDARqZdrQ",
-      "view_count": 49186,
+      "view_count": 49190,
       "ingested": true
     },
     {
@@ -132,7 +132,7 @@
       "duration": 1166,
       "duration_string": "19:26",
       "url": "https://www.youtube.com/watch?v=2oKjtvYslMY",
-      "view_count": 34880,
+      "view_count": 34885,
       "ingested": true
     },
     {
@@ -142,7 +142,7 @@
       "duration": 106,
       "duration_string": "1:46",
       "url": "https://www.youtube.com/watch?v=sM9bozW295Q",
-      "view_count": 93986,
+      "view_count": 93990,
       "ingested": true
     },
     {
@@ -152,7 +152,7 @@
       "duration": 8752,
       "duration_string": "2:25:52",
       "url": "https://www.youtube.com/watch?v=VMj-3S1tku0",
-      "view_count": 3377120,
+      "view_count": 3377454,
       "ingested": true
     },
     {
@@ -162,7 +162,7 @@
       "duration": 303,
       "duration_string": "5:03",
       "url": "https://www.youtube.com/watch?v=vEnetcj_728",
-      "view_count": 79875,
+      "view_count": 79884,
       "ingested": false
     },
     {
@@ -172,7 +172,7 @@
       "duration": 155,
       "duration_string": "2:35",
       "url": "https://www.youtube.com/watch?v=Jv1ayv-04H4",
-      "view_count": 61316,
+      "view_count": 61321,
       "ingested": false
     }
   ]

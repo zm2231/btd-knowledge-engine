@@ -1,7 +1,7 @@
 {
-  "creator": "nate-jones",
   "platform": "youtube",
-  "scanned_at": "2026-04-10T18:35:21.293Z",
+  "scanned_at": "2026-04-10T20:45:16.369Z",
+  "creator": "nate-jones",
   "total": 887,
   "ingested": 10,
   "items": [
@@ -12,7 +12,7 @@
       "duration": 1571,
       "duration_string": "26:11",
       "url": "https://www.youtube.com/watch?v=ib2m9HVX7as",
-      "view_count": 17842,
+      "view_count": 28287,
       "ingested": false
     },
     {
@@ -22,7 +22,7 @@
       "duration": 1370,
       "duration_string": "22:50",
       "url": "https://www.youtube.com/watch?v=9N7qXkmntlU",
-      "view_count": 35823,
+      "view_count": 36370,
       "ingested": false
     },
     {
@@ -32,7 +32,7 @@
       "duration": 1474,
       "duration_string": "24:34",
       "url": "https://www.youtube.com/watch?v=ro5jpbi5uYc",
-      "view_count": 67774,
+      "view_count": 68156,
       "ingested": false
     },
     {
@@ -42,7 +42,7 @@
       "duration": 1770,
       "duration_string": "29:30",
       "url": "https://www.youtube.com/watch?v=BiqG3it0gY0",
-      "view_count": 72149,
+      "view_count": 72615,
       "ingested": false
     },
     {
@@ -52,7 +52,7 @@
       "duration": 1373,
       "duration_string": "22:53",
       "url": "https://www.youtube.com/watch?v=7HP1jFJ9W1c",
-      "view_count": 52156,
+      "view_count": 52306,
       "ingested": false
     },
     {
@@ -62,7 +62,7 @@
       "duration": 1274,
       "duration_string": "21:14",
       "url": "https://www.youtube.com/watch?v=kVPVmz0qJvY",
-      "view_count": 49881,
+      "view_count": 49951,
       "ingested": false
     },
     {
@@ -72,7 +72,7 @@
       "duration": 1350,
       "duration_string": "22:30",
       "url": "https://www.youtube.com/watch?v=D-Ww1wLIp60",
-      "view_count": 47460,
+      "view_count": 47524,
       "ingested": false
     },
     {
@@ -82,7 +82,7 @@
       "duration": 1613,
       "duration_string": "26:53",
       "url": "https://www.youtube.com/watch?v=FtCdYhspm7w",
-      "view_count": 108600,
+      "view_count": 108641,
       "ingested": false
     },
     {
@@ -92,7 +92,7 @@
       "duration": 1595,
       "duration_string": "26:35",
       "url": "https://www.youtube.com/watch?v=5ztI_dbj6ek",
-      "view_count": 93797,
+      "view_count": 93909,
       "ingested": false
     },
     {
@@ -102,7 +102,7 @@
       "duration": 1881,
       "duration_string": "31:21",
       "url": "https://www.youtube.com/watch?v=hV5_XSEBZNg",
-      "view_count": 124342,
+      "view_count": 124531,
       "ingested": false
     },
     {
@@ -112,7 +112,7 @@
       "duration": 1332,
       "duration_string": "22:12",
       "url": "https://www.youtube.com/watch?v=BhXNtvZvziY",
-      "view_count": 75020,
+      "view_count": 75028,
       "ingested": false
     },
     {
@@ -122,7 +122,7 @@
       "duration": 1580,
       "duration_string": "26:20",
       "url": "https://www.youtube.com/watch?v=0cVuMHaYEHE",
-      "view_count": 132309,
+      "view_count": 132365,
       "ingested": false
     },
     {
@@ -132,7 +132,7 @@
       "duration": 1341,
       "duration_string": "22:21",
       "url": "https://www.youtube.com/watch?v=sTkqCREdMXo",
-      "view_count": 87015,
+      "view_count": 87124,
       "ingested": false
     },
     {
@@ -152,7 +152,7 @@
       "duration": 1775,
       "duration_string": "29:35",
       "url": "https://www.youtube.com/watch?v=CDClFY-R0dI",
-      "view_count": 102622,
+      "view_count": 102671,
       "ingested": false
     },
     {
@@ -162,7 +162,7 @@
       "duration": 1539,
       "duration_string": "25:39",
       "url": "https://www.youtube.com/watch?v=4cuT-LKcmWs",
-      "view_count": 148330,
+      "view_count": 148385,
       "ingested": false
     },
     {
@@ -172,7 +172,7 @@
       "duration": 1775,
       "duration_string": "29:35",
       "url": "https://www.youtube.com/watch?v=YpPcDHc3e9U",
-      "view_count": 43265,
+      "view_count": 43277,
       "ingested": false
     },
     {
@@ -182,7 +182,7 @@
       "duration": 1587,
       "duration_string": "26:27",
       "url": "https://www.youtube.com/watch?v=7AO4w4Y_L24",
-      "view_count": 259827,
+      "view_count": 259853,
       "ingested": true
     },
     {
@@ -202,7 +202,7 @@
       "duration": 1667,
       "duration_string": "27:47",
       "url": "https://www.youtube.com/watch?v=BE4RclIGDmY",
-      "view_count": 26093,
+      "view_count": 26095,
       "ingested": false
     },
     {
@@ -212,7 +212,7 @@
       "duration": 1767,
       "duration_string": "29:27",
       "url": "https://www.youtube.com/watch?v=awV2kJzh8zk",
-      "view_count": 48752,
+      "view_count": 48770,
       "ingested": false
     },
     {
@@ -222,7 +222,7 @@
       "duration": 2010,
       "duration_string": "33:30",
       "url": "https://www.youtube.com/watch?v=vqnAOV8NMZ4",
-      "view_count": 104870,
+      "view_count": 104903,
       "ingested": false
     },
     {
@@ -242,7 +242,7 @@
       "duration": 1413,
       "duration_string": "23:33",
       "url": "https://www.youtube.com/watch?v=4HeS_C02yAE",
-      "view_count": 36284,
+      "view_count": 36288,
       "ingested": false
     },
     {
@@ -252,7 +252,7 @@
       "duration": 1334,
       "duration_string": "22:14",
       "url": "https://www.youtube.com/watch?v=QT7W_uHjqWE",
-      "view_count": 88750,
+      "view_count": 88758,
       "ingested": false
     },
     {
@@ -262,7 +262,7 @@
       "duration": 1290,
       "duration_string": "21:30",
       "url": "https://www.youtube.com/watch?v=8lwnJZy4cO0",
-      "view_count": 107658,
+      "view_count": 107670,
       "ingested": false
     },
     {
@@ -292,7 +292,7 @@
       "duration": 1615,
       "duration_string": "26:55",
       "url": "https://www.youtube.com/watch?v=japT66frdhM",
-      "view_count": 84567,
+      "view_count": 84569,
       "ingested": false
     },
     {
@@ -302,7 +302,7 @@
       "duration": 1352,
       "duration_string": "22:32",
       "url": "https://www.youtube.com/watch?v=lbfoNxoHl2o",
-      "view_count": 51082,
+      "view_count": 51085,
       "ingested": false
     },
     {
@@ -322,7 +322,7 @@
       "duration": 1255,
       "duration_string": "20:55",
       "url": "https://www.youtube.com/watch?v=-FhtPUkXKO4",
-      "view_count": 40592,
+      "view_count": 40593,
       "ingested": false
     },
     {
@@ -342,7 +342,7 @@
       "duration": 1545,
       "duration_string": "25:45",
       "url": "https://www.youtube.com/watch?v=hnwM01CpzmA",
-      "view_count": 59459,
+      "view_count": 59460,
       "ingested": false
     },
     {
@@ -362,7 +362,7 @@
       "duration": 1795,
       "duration_string": "29:55",
       "url": "https://www.youtube.com/watch?v=09sFAO7pklo",
-      "view_count": 98247,
+      "view_count": 98259,
       "ingested": false
     },
     {
@@ -382,7 +382,7 @@
       "duration": 1256,
       "duration_string": "20:56",
       "url": "https://www.youtube.com/watch?v=O7SSQfiPDXA",
-      "view_count": 177576,
+      "view_count": 177602,
       "ingested": false
     },
     {
@@ -392,7 +392,7 @@
       "duration": 1580,
       "duration_string": "26:20",
       "url": "https://www.youtube.com/watch?v=pTtueIqrg0Q",
-      "view_count": 41449,
+      "view_count": 41450,
       "ingested": false
     },
     {
@@ -402,7 +402,7 @@
       "duration": 1816,
       "duration_string": "30:16",
       "url": "https://www.youtube.com/watch?v=2JiMmye2ezg",
-      "view_count": 185288,
+      "view_count": 185327,
       "ingested": false
     },
     {
@@ -412,7 +412,7 @@
       "duration": 1724,
       "duration_string": "28:44",
       "url": "https://www.youtube.com/watch?v=RnjgLlQTMf0",
-      "view_count": 69357,
+      "view_count": 69370,
       "ingested": false
     },
     {
@@ -422,7 +422,7 @@
       "duration": 1781,
       "duration_string": "29:41",
       "url": "https://www.youtube.com/watch?v=2ghhiPLg-jg",
-      "view_count": 55304,
+      "view_count": 55310,
       "ingested": false
     },
     {
@@ -432,7 +432,7 @@
       "duration": 2472,
       "duration_string": "41:12",
       "url": "https://www.youtube.com/watch?v=BpibZSMGtdY",
-      "view_count": 119422,
+      "view_count": 119440,
       "ingested": false
     },
     {
@@ -442,7 +442,7 @@
       "duration": 1952,
       "duration_string": "32:32",
       "url": "https://www.youtube.com/watch?v=q6pbQ5li5Cg",
-      "view_count": 60847,
+      "view_count": 60851,
       "ingested": false
     },
     {
@@ -462,7 +462,7 @@
       "duration": 1781,
       "duration_string": "29:41",
       "url": "https://www.youtube.com/watch?v=QWzLPn164w0",
-      "view_count": 143387,
+      "view_count": 143399,
       "ingested": false
     },
     {
@@ -472,7 +472,7 @@
       "duration": 2197,
       "duration_string": "36:37",
       "url": "https://www.youtube.com/watch?v=8jKAT8GNDE0",
-      "view_count": 246929,
+      "view_count": 246940,
       "ingested": true
     },
     {
@@ -482,7 +482,7 @@
       "duration": 2160,
       "duration_string": "36:00",
       "url": "https://www.youtube.com/watch?v=OMb5oTlC_q0",
-      "view_count": 83031,
+      "view_count": 83033,
       "ingested": false
     },
     {
@@ -492,7 +492,7 @@
       "duration": 1754,
       "duration_string": "29:14",
       "url": "https://www.youtube.com/watch?v=O-0poNv2jD4",
-      "view_count": 165491,
+      "view_count": 165493,
       "ingested": false
     },
     {
@@ -512,7 +512,7 @@
       "duration": 1803,
       "duration_string": "30:03",
       "url": "https://www.youtube.com/watch?v=6r0UeMQE66I",
-      "view_count": 127773,
+      "view_count": 127775,
       "ingested": false
     },
     {
@@ -522,7 +522,7 @@
       "duration": 2535,
       "duration_string": "42:15",
       "url": "https://www.youtube.com/watch?v=bDcgHzCBgmQ",
-      "view_count": 242543,
+      "view_count": 242633,
       "ingested": true
     },
     {
@@ -552,7 +552,7 @@
       "duration": 2066,
       "duration_string": "34:26",
       "url": "https://www.youtube.com/watch?v=RtMLnCMv3do",
-      "view_count": 136580,
+      "view_count": 136583,
       "ingested": false
     },
     {
@@ -562,7 +562,7 @@
       "duration": 1373,
       "duration_string": "22:53",
       "url": "https://www.youtube.com/watch?v=NCgdpbEvNVA",
-      "view_count": 106109,
+      "view_count": 106111,
       "ingested": false
     },
     {
@@ -582,7 +582,7 @@
       "duration": 1513,
       "duration_string": "25:13",
       "url": "https://www.youtube.com/watch?v=q-sClVMYY4w",
-      "view_count": 251639,
+      "view_count": 251642,
       "ingested": true
     },
     {
@@ -592,7 +592,7 @@
       "duration": 1839,
       "duration_string": "30:39",
       "url": "https://www.youtube.com/watch?v=JKk77rzOL34",
-      "view_count": 361602,
+      "view_count": 361618,
       "ingested": true
     },
     {
@@ -602,7 +602,7 @@
       "duration": 1404,
       "duration_string": "23:24",
       "url": "https://www.youtube.com/watch?v=DGWtSzqCpog",
-      "view_count": 319438,
+      "view_count": 319444,
       "ingested": true
     },
     {
@@ -612,7 +612,7 @@
       "duration": 842,
       "duration_string": "14:02",
       "url": "https://www.youtube.com/watch?v=q6p-_W6_VoM",
-      "view_count": 139654,
+      "view_count": 139655,
       "ingested": false
     },
     {
@@ -622,7 +622,7 @@
       "duration": 1575,
       "duration_string": "26:15",
       "url": "https://www.youtube.com/watch?v=pSgy2P2q790",
-      "view_count": 76564,
+      "view_count": 76565,
       "ingested": false
     },
     {
@@ -632,7 +632,7 @@
       "duration": 1150,
       "duration_string": "19:10",
       "url": "https://www.youtube.com/watch?v=sLz4mAyykeE",
-      "view_count": 119094,
+      "view_count": 119109,
       "ingested": false
     },
     {
@@ -652,7 +652,7 @@
       "duration": 1146,
       "duration_string": "19:06",
       "url": "https://www.youtube.com/watch?v=KX0GurmgAoo",
-      "view_count": 85214,
+      "view_count": 85218,
       "ingested": false
     },
     {
@@ -662,7 +662,7 @@
       "duration": 1436,
       "duration_string": "23:56",
       "url": "https://www.youtube.com/watch?v=dZxyeYBxPBA",
-      "view_count": 186223,
+      "view_count": 186224,
       "ingested": false
     },
     {
@@ -672,7 +672,7 @@
       "duration": 549,
       "duration_string": "9:09",
       "url": "https://www.youtube.com/watch?v=WEEKBlQfGt8",
-      "view_count": 57506,
+      "view_count": 57507,
       "ingested": false
     },
     {
@@ -682,7 +682,7 @@
       "duration": 1322,
       "duration_string": "22:02",
       "url": "https://www.youtube.com/watch?v=p9acrso71KU",
-      "view_count": 294292,
+      "view_count": 294302,
       "ingested": true
     },
     {
@@ -712,7 +712,7 @@
       "duration": 1117,
       "duration_string": "18:37",
       "url": "https://www.youtube.com/watch?v=7sk3qmIQZnI",
-      "view_count": 324378,
+      "view_count": 324382,
       "ingested": true
     },
     {
@@ -732,7 +732,7 @@
       "duration": 1475,
       "duration_string": "24:35",
       "url": "https://www.youtube.com/watch?v=NoRePxSrhpw",
-      "view_count": 51053,
+      "view_count": 51054,
       "ingested": false
     },
     {
@@ -742,7 +742,7 @@
       "duration": 1268,
       "duration_string": "21:08",
       "url": "https://www.youtube.com/watch?v=f-v0fJgBqhk",
-      "view_count": 200029,
+      "view_count": 200035,
       "ingested": true
     },
     {
@@ -752,7 +752,7 @@
       "duration": 1434,
       "duration_string": "23:54",
       "url": "https://www.youtube.com/watch?v=2EXyj_fHU48",
-      "view_count": 28401,
+      "view_count": 28402,
       "ingested": false
     },
     {
@@ -762,7 +762,7 @@
       "duration": 1292,
       "duration_string": "21:32",
       "url": "https://www.youtube.com/watch?v=EZ4EjJ0iDDQ",
-      "view_count": 172075,
+      "view_count": 172086,
       "ingested": false
     },
     {
@@ -782,7 +782,7 @@
       "duration": 1216,
       "duration_string": "20:16",
       "url": "https://www.youtube.com/watch?v=5Di6o6zuMLc",
-      "view_count": 52633,
+      "view_count": 52635,
       "ingested": false
     },
     {
@@ -792,7 +792,7 @@
       "duration": 1327,
       "duration_string": "22:07",
       "url": "https://www.youtube.com/watch?v=HZ9iL_lFYgQ",
-      "view_count": 65401,
+      "view_count": 65404,
       "ingested": false
     },
     {
@@ -812,7 +812,7 @@
       "duration": 1521,
       "duration_string": "25:21",
       "url": "https://www.youtube.com/watch?v=ra7nYJe86GI",
-      "view_count": 44926,
+      "view_count": 44928,
       "ingested": false
     },
     {
@@ -822,7 +822,7 @@
       "duration": 1566,
       "duration_string": "26:06",
       "url": "https://www.youtube.com/watch?v=_gPODg6br5w",
-      "view_count": 69698,
+      "view_count": 69711,
       "ingested": false
     },
     {
@@ -832,7 +832,7 @@
       "duration": 1759,
       "duration_string": "29:19",
       "url": "https://www.youtube.com/watch?v=Nt7vzMiE0mY",
-      "view_count": 25299,
+      "view_count": 25300,
       "ingested": false
     },
     {
@@ -852,7 +852,7 @@
       "duration": 1557,
       "duration_string": "25:57",
       "url": "https://www.youtube.com/watch?v=0teZqotpqT8",
-      "view_count": 163630,
+      "view_count": 163644,
       "ingested": false
     },
     {
@@ -862,7 +862,7 @@
       "duration": 1823,
       "duration_string": "30:23",
       "url": "https://www.youtube.com/watch?v=hpDC29JdgjI",
-      "view_count": 93323,
+      "view_count": 93324,
       "ingested": false
     },
     {
@@ -872,7 +872,7 @@
       "duration": 1939,
       "duration_string": "32:19",
       "url": "https://www.youtube.com/watch?v=h7dbkDcb3hA",
-      "view_count": 191409,
+      "view_count": 191412,
       "ingested": false
     },
     {
@@ -892,7 +892,7 @@
       "duration": 1390,
       "duration_string": "23:10",
       "url": "https://www.youtube.com/watch?v=M9TJizOxNFk",
-      "view_count": 34123,
+      "view_count": 34124,
       "ingested": false
     },
     {
@@ -902,7 +902,7 @@
       "duration": 1378,
       "duration_string": "22:58",
       "url": "https://www.youtube.com/watch?v=5Et9WoDCsYs",
-      "view_count": 49660,
+      "view_count": 49683,
       "ingested": false
     },
     {
@@ -922,7 +922,7 @@
       "duration": 1806,
       "duration_string": "30:06",
       "url": "https://www.youtube.com/watch?v=0TpON5T-Sw4",
-      "view_count": 192750,
+      "view_count": 192779,
       "ingested": true
     },
     {
@@ -932,7 +932,7 @@
       "duration": 1117,
       "duration_string": "18:37",
       "url": "https://www.youtube.com/watch?v=5Kp-Gj5qXL0",
-      "view_count": 68232,
+      "view_count": 68233,
       "ingested": false
     },
     {
@@ -952,7 +952,7 @@
       "duration": 681,
       "duration_string": "11:21",
       "url": "https://www.youtube.com/watch?v=qw7HDITpTR4",
-      "view_count": 18391,
+      "view_count": 18392,
       "ingested": false
     },
     {
@@ -972,7 +972,7 @@
       "duration": 1509,
       "duration_string": "25:09",
       "url": "https://www.youtube.com/watch?v=fyHnGHxGuhI",
-      "view_count": 62265,
+      "view_count": 62266,
       "ingested": false
     },
     {
@@ -992,7 +992,7 @@
       "duration": 1125,
       "duration_string": "18:45",
       "url": "https://www.youtube.com/watch?v=T74uZgfu6mU",
-      "view_count": 18266,
+      "view_count": 18267,
       "ingested": false
     },
     {
@@ -1002,7 +1002,7 @@
       "duration": 1009,
       "duration_string": "16:49",
       "url": "https://www.youtube.com/watch?v=pOb0pjXpn6Q",
-      "view_count": 64259,
+      "view_count": 64261,
       "ingested": false
     },
     {
@@ -1112,7 +1112,7 @@
       "duration": 1600,
       "duration_string": "26:40",
       "url": "https://www.youtube.com/watch?v=2gt2Ugy1b6Q",
-      "view_count": 25225,
+      "view_count": 25226,
       "ingested": false
     },
     {
@@ -1142,7 +1142,7 @@
       "duration": 4157,
       "duration_string": "1:09:17",
       "url": "https://www.youtube.com/watch?v=tuLWIK1AVEM",
-      "view_count": 9181,
+      "view_count": 9182,
       "ingested": false
     },
     {
@@ -1162,7 +1162,7 @@
       "duration": 1205,
       "duration_string": "20:05",
       "url": "https://www.youtube.com/watch?v=mnWMTzkjWmk",
-      "view_count": 28353,
+      "view_count": 28354,
       "ingested": false
     },
     {
@@ -1212,7 +1212,7 @@
       "duration": 1242,
       "duration_string": "20:42",
       "url": "https://www.youtube.com/watch?v=Td_q0sHm6HU",
-      "view_count": 27952,
+      "view_count": 27954,
       "ingested": false
     },
     {
@@ -1242,7 +1242,7 @@
       "duration": 816,
       "duration_string": "13:36",
       "url": "https://www.youtube.com/watch?v=xNcEgqzlPqs",
-      "view_count": 91128,
+      "view_count": 91129,
       "ingested": false
     },
     {
@@ -1452,7 +1452,7 @@
       "duration": 501,
       "duration_string": "8:21",
       "url": "https://www.youtube.com/watch?v=LNpp73qHbJA",
-      "view_count": 13863,
+      "view_count": 13864,
       "ingested": false
     },
     {
@@ -1502,7 +1502,7 @@
       "duration": 741,
       "duration_string": "12:21",
       "url": "https://www.youtube.com/watch?v=XfcZujr426o",
-      "view_count": 18473,
+      "view_count": 18474,
       "ingested": false
     },
     {
@@ -1582,7 +1582,7 @@
       "duration": 801,
       "duration_string": "13:21",
       "url": "https://www.youtube.com/watch?v=GTEz5WWbfiw",
-      "view_count": 25686,
+      "view_count": 25687,
       "ingested": false
     },
     {
@@ -1662,7 +1662,7 @@
       "duration": 551,
       "duration_string": "9:11",
       "url": "https://www.youtube.com/watch?v=NP-qmffUNHQ",
-      "view_count": 155098,
+      "view_count": 155097,
       "ingested": false
     },
     {
@@ -1692,7 +1692,7 @@
       "duration": 622,
       "duration_string": "10:22",
       "url": "https://www.youtube.com/watch?v=XBG5tqrz3Rc",
-      "view_count": 22996,
+      "view_count": 22997,
       "ingested": false
     },
     {
@@ -1732,7 +1732,7 @@
       "duration": 1299,
       "duration_string": "21:39",
       "url": "https://www.youtube.com/watch?v=WKFFFumnzYI",
-      "view_count": 20156,
+      "view_count": 20160,
       "ingested": false
     },
     {
@@ -1812,7 +1812,7 @@
       "duration": 1628,
       "duration_string": "27:08",
       "url": "https://www.youtube.com/watch?v=JdJE6_OU3YA",
-      "view_count": 19067,
+      "view_count": 19068,
       "ingested": false
     },
     {
@@ -1822,7 +1822,7 @@
       "duration": 565,
       "duration_string": "9:25",
       "url": "https://www.youtube.com/watch?v=L32th5fXPw8",
-      "view_count": 15116,
+      "view_count": 15117,
       "ingested": false
     },
     {
@@ -1842,7 +1842,7 @@
       "duration": 1028,
       "duration_string": "17:08",
       "url": "https://www.youtube.com/watch?v=Z88hYmdxp00",
-      "view_count": 8969,
+      "view_count": 8970,
       "ingested": false
     },
     {
@@ -2022,7 +2022,7 @@
       "duration": 975,
       "duration_string": "16:15",
       "url": "https://www.youtube.com/watch?v=6Q76EnHVRms",
-      "view_count": 15019,
+      "view_count": 15022,
       "ingested": false
     },
     {
@@ -2082,7 +2082,7 @@
       "duration": 1070,
       "duration_string": "17:50",
       "url": "https://www.youtube.com/watch?v=8psoB8EFdc8",
-      "view_count": 96614,
+      "view_count": 96617,
       "ingested": false
     },
     {
@@ -2392,7 +2392,7 @@
       "duration": 850,
       "duration_string": "14:10",
       "url": "https://www.youtube.com/watch?v=aVXtoWm1DEM",
-      "view_count": 19289,
+      "view_count": 19290,
       "ingested": false
     },
     {
@@ -2412,7 +2412,7 @@
       "duration": 1319,
       "duration_string": "21:59",
       "url": "https://www.youtube.com/watch?v=Gqnf5f1ITyo",
-      "view_count": 25083,
+      "view_count": 25084,
       "ingested": false
     },
     {
@@ -2682,7 +2682,7 @@
       "duration": 2489,
       "duration_string": "41:29",
       "url": "https://www.youtube.com/watch?v=BYKUwsQOA8U",
-      "view_count": 12281,
+      "view_count": 12282,
       "ingested": false
     },
     {
@@ -2732,7 +2732,7 @@
       "duration": 1403,
       "duration_string": "23:23",
       "url": "https://www.youtube.com/watch?v=z8-0INxN_Hg",
-      "view_count": 63321,
+      "view_count": 63332,
       "ingested": false
     },
     {
@@ -2932,7 +2932,7 @@
       "duration": 2472,
       "duration_string": "41:12",
       "url": "https://www.youtube.com/watch?v=_g1LFxC31EY",
-      "view_count": 10826,
+      "view_count": 10827,
       "ingested": false
     },
     {
@@ -3892,7 +3892,7 @@
       "duration": 186,
       "duration_string": "3:06",
       "url": "https://www.youtube.com/watch?v=BhjtZP4T0oA",
-      "view_count": 5910,
+      "view_count": 5911,
       "ingested": false
     },
     {
@@ -3982,7 +3982,7 @@
       "duration": 518,
       "duration_string": "8:38",
       "url": "https://www.youtube.com/watch?v=iuZyIJ-VzRM",
-      "view_count": 1674,
+      "view_count": 1675,
       "ingested": false
     },
     {
@@ -4072,7 +4072,7 @@
       "duration": 450,
       "duration_string": "7:30",
       "url": "https://www.youtube.com/watch?v=JpC_N4aBOBI",
-      "view_count": 2898,
+      "view_count": 2899,
       "ingested": false
     },
     {
@@ -4182,7 +4182,7 @@
       "duration": 416,
       "duration_string": "6:56",
       "url": "https://www.youtube.com/watch?v=XhtPZiu5tSc",
-      "view_count": 796,
+      "view_count": 797,
       "ingested": false
     },
     {
@@ -4192,7 +4192,7 @@
       "duration": 102,
       "duration_string": "1:42",
       "url": "https://www.youtube.com/watch?v=jSiay4a1AZk",
-      "view_count": 7833,
+      "view_count": 7834,
       "ingested": false
     },
     {
@@ -4542,7 +4542,7 @@
       "duration": 301,
       "duration_string": "5:01",
       "url": "https://www.youtube.com/watch?v=WCg7a0yO_dI",
-      "view_count": 578,
+      "view_count": 580,
       "ingested": false
     },
     {
@@ -4662,7 +4662,7 @@
       "duration": 483,
       "duration_string": "8:03",
       "url": "https://www.youtube.com/watch?v=YspD2E3D4yE",
-      "view_count": 476,
+      "view_count": 477,
       "ingested": false
     },
     {
@@ -4692,7 +4692,7 @@
       "duration": 408,
       "duration_string": "6:48",
       "url": "https://www.youtube.com/watch?v=zLSSXIbRlW0",
-      "view_count": 221,
+      "view_count": 222,
       "ingested": false
     },
     {
@@ -4712,7 +4712,7 @@
       "duration": 235,
       "duration_string": "3:55",
       "url": "https://www.youtube.com/watch?v=hHUBAzG8OZk",
-      "view_count": 386,
+      "view_count": 387,
       "ingested": false
     },
     {
@@ -5152,7 +5152,7 @@
       "duration": 5749,
       "duration_string": "1:35:49",
       "url": "https://www.youtube.com/watch?v=k-eZabjdOD4",
-      "view_count": 2411,
+      "view_count": 2412,
       "ingested": false
     },
     {
@@ -5172,7 +5172,7 @@
       "duration": null,
       "duration_string": null,
       "url": "https://www.youtube.com/watch?v=_H6lbAgBjUo",
-      "view_count": 1600,
+      "view_count": 1700,
       "ingested": false
     },
     {
@@ -5182,7 +5182,7 @@
       "duration": null,
       "duration_string": null,
       "url": "https://www.youtube.com/watch?v=I7X2XoYR3jQ",
-      "view_count": 6100,
+      "view_count": 6300,
       "ingested": false
     },
     {
@@ -5192,7 +5192,7 @@
       "duration": null,
       "duration_string": null,
       "url": "https://www.youtube.com/watch?v=nJnx4Da9Xt4",
-      "view_count": 4900,
+      "view_count": 5000,
       "ingested": false
     },
     {
