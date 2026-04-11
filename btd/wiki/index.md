@@ -1,6 +1,6 @@
 # Wiki Index
 
-*Auto-generated. 55 pages.*
+*Auto-generated. 311 pages.*
 
 ## topics
 
@@ -48,6 +48,7 @@
 
 - [3blue1brown](creators/3blue1brown.md)
 - [alex finn](creators/alex-finn.md)
+- [beware the defaults](creators/beware-the-defaults.md)
 - [ali abdaal](creators/ali-abdaal.md)
 - [andrej karpathy](creators/andrej-karpathy.md)
 - [andrew huberman](creators/andrew-huberman.md)
