@@ -193,6 +193,16 @@
   },
   "active": "07142c10cf71dacd",
   "lastOpenFiles": [
+    "btd/users/test-nontechnical/profile-history.jsonl",
+    "btd/users/test-nontechnical/profile.md",
+    "btd/users/test-nontechnical/journal",
+    "btd/users/test-nontechnical/experiments",
+    "btd/users/test-nontechnical",
+    "btd/users/test-technical/profile.md",
+    "btd/users/test-technical/profile-history.jsonl",
+    "btd/users/test-technical/journal",
+    "btd/users/test-technical/experiments",
+    "btd/users/test-technical",
     "node_modules/podcast-dl/lib/rss-parser/README.md",
     "btd/wiki/concepts/accountability-pattern.md",
     "btd/wiki/creators/beware-the-defaults.md",
@@ -216,18 +226,8 @@
     "btd/wiki/sources/sabrina-ramonov/undated-the-most-brutal-truth-in-psychology-according-to-chatgpt-all-of-these-hit-hard-a.md",
     "btd/wiki/sources/sabrina-ramonov/undated-the-8-ai-skills-that-will-separate-winners-from-losers-in-2026.md",
     "btd/wiki/sources/sabrina-ramonov/undated-openclaw-ai-agent-explained-for-beginners-including-security-issues-so-you-can-s.md",
-    "btd/wiki/sources/sabrina-ramonov/undated-i-asked-claude-to-make-me-as-much-money-as-possible.md",
-    "btd/wiki/sources/sabrina-ramonov/undated-how-to-start-a-1-person-ai-business-0-to-1m.md",
-    "btd/wiki/sources/sabrina-ramonov/undated-how-to-get-access-to-google-veo-3.md",
     "btd/wiki/sources/simon-sinek/undated-the-truth-about-being-the-stupidest-in-the-room-simon-sinek.md.tmp.70333.1775866129751",
     "btd/wiki/sources/nate-jones",
-    "btd/wiki/sources/beware-the-defaults",
-    "btd/wiki/sources/sabrina-ramonov",
-    "btd/wiki/sources/kyle-balmer",
-    "btd/wiki/sources/alex-finn",
-    "btd/wiki/sources/mark-kashef",
-    "btd/wiki/sources/simon-sinek",
-    "btd/wiki/sources/cal-newport",
-    "btd/wiki/sources/andrew-huberman"
+    "btd/wiki/sources/beware-the-defaults"
   ]
 }

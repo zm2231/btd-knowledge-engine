@@ -5,7 +5,8 @@
     "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--micrograd",
     "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--minbpe",
     "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--nanogpt",
-    "/Volumes/4/GitHub/btd-knowledge-engine/btd/raw"
+    "/Volumes/4/GitHub/btd-knowledge-engine/btd/raw",
+    "/Volumes/4/GitHub/btd-knowledge-engine/btd/wiki"
   ],
   "include_extensions": [
     ".md",
