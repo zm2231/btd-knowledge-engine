@@ -177,7 +177,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407.5
+    "width": 407.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,6 +193,7 @@
   },
   "active": "07142c10cf71dacd",
   "lastOpenFiles": [
+    "node_modules/podcast-dl/lib/rss-parser/README.md",
     "btd/wiki/concepts/accountability-pattern.md",
     "btd/wiki/creators/beware-the-defaults.md",
     "btd/wiki/sources/nate-jones/undated-you-don-t-need-saas-the-0-10-system-that-replaced-my-ai-workflow-45-min-no-code-.md",
@@ -217,7 +219,6 @@
     "btd/wiki/sources/sabrina-ramonov/undated-i-asked-claude-to-make-me-as-much-money-as-possible.md",
     "btd/wiki/sources/sabrina-ramonov/undated-how-to-start-a-1-person-ai-business-0-to-1m.md",
     "btd/wiki/sources/sabrina-ramonov/undated-how-to-get-access-to-google-veo-3.md",
-    "btd/wiki/sources/sabrina-ramonov/undated-completely-free-ai-tool-custom-gpt-to-help-you-humanize-ai-writing-applying-best.md",
     "btd/wiki/sources/simon-sinek/undated-the-truth-about-being-the-stupidest-in-the-room-simon-sinek.md.tmp.70333.1775866129751",
     "btd/wiki/sources/nate-jones",
     "btd/wiki/sources/beware-the-defaults",
