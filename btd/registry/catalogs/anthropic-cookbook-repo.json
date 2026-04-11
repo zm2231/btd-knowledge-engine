@@ -1,0 +1,1640 @@
+{
+  "creator": "anthropic-cookbook",
+  "name": "anthropics/anthropic-cookbook",
+  "platform": "repo",
+  "scanned_at": "2026-04-10T22:36:20.675Z",
+  "repo_path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/anthropics--anthropic-cookbook",
+  "repo_url": "https://github.com/anthropics/anthropic-cookbook",
+  "file_types": [
+    ".py",
+    ".js",
+    ".ts",
+    ".md",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".go",
+    ".rs",
+    ".rb"
+  ],
+  "total": 201,
+  "ingested": 201,
+  "total_size_bytes": 19306445,
+  "by_extension": {
+    ".md": 62,
+    ".py": 91,
+    ".json": 22,
+    ".yml": 14,
+    ".yaml": 12
+  },
+  "items": [
+    {
+      "id": ".claude/agents/code-reviewer.md",
+      "path": ".claude/agents/code-reviewer.md",
+      "ext": ".md",
+      "size_bytes": 10014,
+      "modified_at": "2026-04-10T22:36:20.106Z",
+      "ingested": true
+    },
+    {
+      "id": ".claude/commands/add-registry.md",
+      "path": ".claude/commands/add-registry.md",
+      "ext": ".md",
+      "size_bytes": 2450,
+      "modified_at": "2026-04-10T22:36:20.106Z",
+      "ingested": true
+    },
+    {
+      "id": ".claude/commands/link-review.md",
+      "path": ".claude/commands/link-review.md",
+      "ext": ".md",
+      "size_bytes": 1477,
+      "modified_at": "2026-04-10T22:36:20.106Z",
+      "ingested": true
+    },
+    {
+      "id": ".claude/commands/model-check.md",
+      "path": ".claude/commands/model-check.md",
+      "ext": ".md",
+      "size_bytes": 906,
+      "modified_at": "2026-04-10T22:36:20.106Z",
+      "ingested": true
+    },
+    {
+      "id": ".claude/commands/notebook-review.md",
+      "path": ".claude/commands/notebook-review.md",
+      "ext": ".md",
+      "size_bytes": 673,
+      "modified_at": "2026-04-10T22:36:20.106Z",
+      "ingested": true
+    },
+    {
+      "id": ".claude/commands/review-issue.md",
+      "path": ".claude/commands/review-issue.md",
+      "ext": ".md",
+      "size_bytes": 6831,
+      "modified_at": "2026-04-10T22:36:20.106Z",
+      "ingested": true
+    },
+    {
+      "id": ".claude/commands/review-pr-ci.md",
+      "path": ".claude/commands/review-pr-ci.md",
+      "ext": ".md",
+      "size_bytes": 2850,
+      "modified_at": "2026-04-10T22:36:20.106Z",
+      "ingested": true
+    },
+    {
+      "id": ".claude/commands/review-pr.md",
+      "path": ".claude/commands/review-pr.md",
+      "ext": ".md",
+      "size_bytes": 2936,
+      "modified_at": "2026-04-10T22:36:20.107Z",
+      "ingested": true
+    },
+    {
+      "id": ".claude/skills/cookbook-audit/SKILL.md",
+      "path": ".claude/skills/cookbook-audit/SKILL.md",
+      "ext": ".md",
+      "size_bytes": 12334,
+      "modified_at": "2026-04-10T22:36:20.107Z",
+      "ingested": true
+    },
+    {
+      "id": ".claude/skills/cookbook-audit/style_guide.md",
+      "path": ".claude/skills/cookbook-audit/style_guide.md",
+      "ext": ".md",
+      "size_bytes": 5523,
+      "modified_at": "2026-04-10T22:36:20.107Z",
+      "ingested": true
+    },
+    {
+      "id": ".claude/skills/cookbook-audit/validate_notebook.py",
+      "path": ".claude/skills/cookbook-audit/validate_notebook.py",
+      "ext": ".py",
+      "size_bytes": 18217,
+      "modified_at": "2026-04-10T22:36:20.107Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/authors_schema.json",
+      "path": ".github/authors_schema.json",
+      "ext": ".json",
+      "size_bytes": 854,
+      "modified_at": "2026-04-10T22:36:20.108Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/ISSUE_GUIDELINES.md",
+      "path": ".github/ISSUE_GUIDELINES.md",
+      "ext": ".md",
+      "size_bytes": 3752,
+      "modified_at": "2026-04-10T22:36:20.108Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "ext": ".yml",
+      "size_bytes": 2358,
+      "modified_at": "2026-04-10T22:36:20.108Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/ISSUE_TEMPLATE/config.yml",
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "ext": ".yml",
+      "size_bytes": 489,
+      "modified_at": "2026-04-10T22:36:20.108Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/ISSUE_TEMPLATE/cookbook_proposal.yml",
+      "path": ".github/ISSUE_TEMPLATE/cookbook_proposal.yml",
+      "ext": ".yml",
+      "size_bytes": 2658,
+      "modified_at": "2026-04-10T22:36:20.108Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/ISSUE_TEMPLATE/question.yml",
+      "path": ".github/ISSUE_TEMPLATE/question.yml",
+      "ext": ".yml",
+      "size_bytes": 1783,
+      "modified_at": "2026-04-10T22:36:20.108Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/pull_request_template.md",
+      "path": ".github/pull_request_template.md",
+      "ext": ".md",
+      "size_bytes": 1482,
+      "modified_at": "2026-04-10T22:36:20.108Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/registry_schema.json",
+      "path": ".github/registry_schema.json",
+      "ext": ".json",
+      "size_bytes": 2592,
+      "modified_at": "2026-04-10T22:36:20.108Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/scripts/verify_registry.py",
+      "path": ".github/scripts/verify_registry.py",
+      "ext": ".py",
+      "size_bytes": 9719,
+      "modified_at": "2026-04-10T22:36:20.109Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/claude-link-review.yml",
+      "path": ".github/workflows/claude-link-review.yml",
+      "ext": ".yml",
+      "size_bytes": 2850,
+      "modified_at": "2026-04-10T22:36:20.109Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/claude-model-check.yml",
+      "path": ".github/workflows/claude-model-check.yml",
+      "ext": ".yml",
+      "size_bytes": 2820,
+      "modified_at": "2026-04-10T22:36:20.109Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/claude-pr-review.yml",
+      "path": ".github/workflows/claude-pr-review.yml",
+      "ext": ".yml",
+      "size_bytes": 1758,
+      "modified_at": "2026-04-10T22:36:20.109Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/links.yml",
+      "path": ".github/workflows/links.yml",
+      "ext": ".yml",
+      "size_bytes": 5207,
+      "modified_at": "2026-04-10T22:36:20.109Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/lint-format.yml",
+      "path": ".github/workflows/lint-format.yml",
+      "ext": ".yml",
+      "size_bytes": 5712,
+      "modified_at": "2026-04-10T22:36:20.109Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/notebook-diff-comment.yml",
+      "path": ".github/workflows/notebook-diff-comment.yml",
+      "ext": ".yml",
+      "size_bytes": 3249,
+      "modified_at": "2026-04-10T22:36:20.109Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/notebook-quality.yml",
+      "path": ".github/workflows/notebook-quality.yml",
+      "ext": ".yml",
+      "size_bytes": 4511,
+      "modified_at": "2026-04-10T22:36:20.109Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/notebook-tests.yml",
+      "path": ".github/workflows/notebook-tests.yml",
+      "ext": ".yml",
+      "size_bytes": 8520,
+      "modified_at": "2026-04-10T22:36:20.109Z",
+      "ingested": true
+    },
+    {
+      "id": ".github/workflows/verify-authors.yml",
+      "path": ".github/workflows/verify-authors.yml",
+      "ext": ".yml",
+      "size_bytes": 639,
+      "modified_at": "2026-04-10T22:36:20.109Z",
+      "ingested": true
+    },
+    {
+      "id": ".pre-commit-config.yaml",
+      "path": ".pre-commit-config.yaml",
+      "ext": ".yaml",
+      "size_bytes": 721,
+      "modified_at": "2026-04-10T22:36:20.110Z",
+      "ingested": true
+    },
+    {
+      "id": "anthropic_cookbook/__init__.py",
+      "path": "anthropic_cookbook/__init__.py",
+      "ext": ".py",
+      "size_bytes": 0,
+      "modified_at": "2026-04-10T22:36:20.110Z",
+      "ingested": true
+    },
+    {
+      "id": "authors.yaml",
+      "path": "authors.yaml",
+      "ext": ".yaml",
+      "size_bytes": 3877,
+      "modified_at": "2026-04-10T22:36:20.110Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/classification/evaluation/promptfooconfig.yaml",
+      "path": "capabilities/classification/evaluation/promptfooconfig.yaml",
+      "ext": ".yaml",
+      "size_bytes": 1457,
+      "modified_at": "2026-04-10T22:36:20.116Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/classification/evaluation/prompts.py",
+      "path": "capabilities/classification/evaluation/prompts.py",
+      "ext": ".py",
+      "size_bytes": 5557,
+      "modified_at": "2026-04-10T22:36:20.116Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/classification/evaluation/README.md",
+      "path": "capabilities/classification/evaluation/README.md",
+      "ext": ".md",
+      "size_bytes": 3582,
+      "modified_at": "2026-04-10T22:36:20.115Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/classification/evaluation/transform.py",
+      "path": "capabilities/classification/evaluation/transform.py",
+      "ext": ".py",
+      "size_bytes": 217,
+      "modified_at": "2026-04-10T22:36:20.116Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/classification/evaluation/vectordb.py",
+      "path": "capabilities/classification/evaluation/vectordb.py",
+      "ext": ".py",
+      "size_bytes": 2776,
+      "modified_at": "2026-04-10T22:36:20.116Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/classification/README.md",
+      "path": "capabilities/classification/README.md",
+      "ext": ".md",
+      "size_bytes": 370,
+      "modified_at": "2026-04-10T22:36:20.110Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/contextual-embeddings/contextual-rag-lambda-function/inference_adapter.py",
+      "path": "capabilities/contextual-embeddings/contextual-rag-lambda-function/inference_adapter.py",
+      "ext": ".py",
+      "size_bytes": 1469,
+      "modified_at": "2026-04-10T22:36:20.118Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/contextual-embeddings/contextual-rag-lambda-function/lambda_function.py",
+      "path": "capabilities/contextual-embeddings/contextual-rag-lambda-function/lambda_function.py",
+      "ext": ".py",
+      "size_bytes": 3548,
+      "modified_at": "2026-04-10T22:36:20.118Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/contextual-embeddings/contextual-rag-lambda-function/s3_adapter.py",
+      "path": "capabilities/contextual-embeddings/contextual-rag-lambda-function/s3_adapter.py",
+      "ext": ".py",
+      "size_bytes": 2335,
+      "modified_at": "2026-04-10T22:36:20.118Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/contextual-embeddings/data/codebase_chunks.json",
+      "path": "capabilities/contextual-embeddings/data/codebase_chunks.json",
+      "ext": ".json",
+      "size_bytes": 1126046,
+      "modified_at": "2026-04-10T22:36:20.119Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/contextual-embeddings/README.md",
+      "path": "capabilities/contextual-embeddings/README.md",
+      "ext": ".md",
+      "size_bytes": 393,
+      "modified_at": "2026-04-10T22:36:20.118Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/knowledge_graph/data/alias_map.json",
+      "path": "capabilities/knowledge_graph/data/alias_map.json",
+      "ext": ".json",
+      "size_bytes": 814,
+      "modified_at": "2026-04-10T22:36:20.124Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/knowledge_graph/data/sample_triples.json",
+      "path": "capabilities/knowledge_graph/data/sample_triples.json",
+      "ext": ".json",
+      "size_bytes": 2479,
+      "modified_at": "2026-04-10T22:36:20.124Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/knowledge_graph/evaluation/eval_extraction.py",
+      "path": "capabilities/knowledge_graph/evaluation/eval_extraction.py",
+      "ext": ".py",
+      "size_bytes": 4687,
+      "modified_at": "2026-04-10T22:36:20.124Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/knowledge_graph/evaluation/README.md",
+      "path": "capabilities/knowledge_graph/evaluation/README.md",
+      "ext": ".md",
+      "size_bytes": 1935,
+      "modified_at": "2026-04-10T22:36:20.124Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/knowledge_graph/README.md",
+      "path": "capabilities/knowledge_graph/README.md",
+      "ext": ".md",
+      "size_bytes": 459,
+      "modified_at": "2026-04-10T22:36:20.124Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/README.md",
+      "path": "capabilities/README.md",
+      "ext": ".md",
+      "size_bytes": 3313,
+      "modified_at": "2026-04-10T22:36:20.110Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/data/anthropic_docs.json",
+      "path": "capabilities/retrieval_augmented_generation/data/anthropic_docs.json",
+      "ext": ".json",
+      "size_bytes": 940026,
+      "modified_at": "2026-04-10T22:36:20.130Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/data/anthropic_summary_indexed_docs.json",
+      "path": "capabilities/retrieval_augmented_generation/data/anthropic_summary_indexed_docs.json",
+      "ext": ".json",
+      "size_bytes": 1016381,
+      "modified_at": "2026-04-10T22:36:20.131Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/data/end_to_end_results.json",
+      "path": "capabilities/retrieval_augmented_generation/data/end_to_end_results.json",
+      "ext": ".json",
+      "size_bytes": 12225158,
+      "modified_at": "2026-04-10T22:36:20.138Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/data/retrieval_results.json",
+      "path": "capabilities/retrieval_augmented_generation/data/retrieval_results.json",
+      "ext": ".json",
+      "size_bytes": 2756815,
+      "modified_at": "2026-04-10T22:36:20.148Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/docs_evaluation_dataset.json",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/docs_evaluation_dataset.json",
+      "ext": ".json",
+      "size_bytes": 63353,
+      "modified_at": "2026-04-10T22:36:20.149Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/eval_end_to_end.py",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/eval_end_to_end.py",
+      "ext": ".py",
+      "size_bytes": 3301,
+      "modified_at": "2026-04-10T22:36:20.149Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/eval_retrieval.py",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/eval_retrieval.py",
+      "ext": ".py",
+      "size_bytes": 3441,
+      "modified_at": "2026-04-10T22:36:20.149Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/json_results/evaluation_results_level_three.json",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/json_results/evaluation_results_level_three.json",
+      "ext": ".json",
+      "size_bytes": 232,
+      "modified_at": "2026-04-10T22:36:20.149Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/json_results/evaluation_results_level_two.json",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/json_results/evaluation_results_level_two.json",
+      "ext": ".json",
+      "size_bytes": 218,
+      "modified_at": "2026-04-10T22:36:20.149Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/json_results/evaluation_results_one.json",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/json_results/evaluation_results_one.json",
+      "ext": ".json",
+      "size_bytes": 212,
+      "modified_at": "2026-04-10T22:36:20.149Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/promptfooconfig_end_to_end.yaml",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/promptfooconfig_end_to_end.yaml",
+      "ext": ".yaml",
+      "size_bytes": 584,
+      "modified_at": "2026-04-10T22:36:20.151Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/promptfooconfig_retrieval.yaml",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/promptfooconfig_retrieval.yaml",
+      "ext": ".yaml",
+      "size_bytes": 375,
+      "modified_at": "2026-04-10T22:36:20.151Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/prompts.py",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/prompts.py",
+      "ext": ".py",
+      "size_bytes": 6992,
+      "modified_at": "2026-04-10T22:36:20.151Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/provider_retrieval.py",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/provider_retrieval.py",
+      "ext": ".py",
+      "size_bytes": 5019,
+      "modified_at": "2026-04-10T22:36:20.151Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/README.md",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/README.md",
+      "ext": ".md",
+      "size_bytes": 4513,
+      "modified_at": "2026-04-10T22:36:20.148Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/evaluation/vectordb.py",
+      "path": "capabilities/retrieval_augmented_generation/evaluation/vectordb.py",
+      "ext": ".py",
+      "size_bytes": 6145,
+      "modified_at": "2026-04-10T22:36:20.151Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/retrieval_augmented_generation/README.md",
+      "path": "capabilities/retrieval_augmented_generation/README.md",
+      "ext": ".md",
+      "size_bytes": 375,
+      "modified_at": "2026-04-10T22:36:20.125Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/summarization/data/multiple_subleases.py",
+      "path": "capabilities/summarization/data/multiple_subleases.py",
+      "ext": ".py",
+      "size_bytes": 90266,
+      "modified_at": "2026-04-10T22:36:20.163Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/summarization/evaluation/custom_evals/bleu_eval.py",
+      "path": "capabilities/summarization/evaluation/custom_evals/bleu_eval.py",
+      "ext": ".py",
+      "size_bytes": 2180,
+      "modified_at": "2026-04-10T22:36:20.170Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/summarization/evaluation/custom_evals/llm_eval.py",
+      "path": "capabilities/summarization/evaluation/custom_evals/llm_eval.py",
+      "ext": ".py",
+      "size_bytes": 2924,
+      "modified_at": "2026-04-10T22:36:20.170Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/summarization/evaluation/custom_evals/rouge_eval.py",
+      "path": "capabilities/summarization/evaluation/custom_evals/rouge_eval.py",
+      "ext": ".py",
+      "size_bytes": 1208,
+      "modified_at": "2026-04-10T22:36:20.170Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/summarization/evaluation/promptfooconfig.yaml",
+      "path": "capabilities/summarization/evaluation/promptfooconfig.yaml",
+      "ext": ".yaml",
+      "size_bytes": 691,
+      "modified_at": "2026-04-10T22:36:20.170Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/summarization/evaluation/prompts.py",
+      "path": "capabilities/summarization/evaluation/prompts.py",
+      "ext": ".py",
+      "size_bytes": 1995,
+      "modified_at": "2026-04-10T22:36:20.170Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/summarization/evaluation/README.md",
+      "path": "capabilities/summarization/evaluation/README.md",
+      "ext": ".md",
+      "size_bytes": 3388,
+      "modified_at": "2026-04-10T22:36:20.169Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/summarization/evaluation/tests.yaml",
+      "path": "capabilities/summarization/evaluation/tests.yaml",
+      "ext": ".yaml",
+      "size_bytes": 4786,
+      "modified_at": "2026-04-10T22:36:20.170Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/summarization/README.md",
+      "path": "capabilities/summarization/README.md",
+      "ext": ".md",
+      "size_bytes": 353,
+      "modified_at": "2026-04-10T22:36:20.153Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/promptfooconfig.yaml",
+      "path": "capabilities/text_to_sql/evaluation/promptfooconfig.yaml",
+      "ext": ".yaml",
+      "size_bytes": 3587,
+      "modified_at": "2026-04-10T22:36:20.173Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/prompts.py",
+      "path": "capabilities/text_to_sql/evaluation/prompts.py",
+      "ext": ".py",
+      "size_bytes": 7376,
+      "modified_at": "2026-04-10T22:36:20.173Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/README.md",
+      "path": "capabilities/text_to_sql/evaluation/README.md",
+      "ext": ".md",
+      "size_bytes": 2423,
+      "modified_at": "2026-04-10T22:36:20.173Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/tests/test_above_average_salary.py",
+      "path": "capabilities/text_to_sql/evaluation/tests/test_above_average_salary.py",
+      "ext": ".py",
+      "size_bytes": 691,
+      "modified_at": "2026-04-10T22:36:20.173Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/tests/test_average_salary.py",
+      "path": "capabilities/text_to_sql/evaluation/tests/test_average_salary.py",
+      "ext": ".py",
+      "size_bytes": 687,
+      "modified_at": "2026-04-10T22:36:20.173Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/tests/test_budget_allocation.py",
+      "path": "capabilities/text_to_sql/evaluation/tests/test_budget_allocation.py",
+      "ext": ".py",
+      "size_bytes": 1092,
+      "modified_at": "2026-04-10T22:36:20.173Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/tests/test_employee_count.py",
+      "path": "capabilities/text_to_sql/evaluation/tests/test_employee_count.py",
+      "ext": ".py",
+      "size_bytes": 711,
+      "modified_at": "2026-04-10T22:36:20.173Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/tests/test_employee_details.py",
+      "path": "capabilities/text_to_sql/evaluation/tests/test_employee_details.py",
+      "ext": ".py",
+      "size_bytes": 1014,
+      "modified_at": "2026-04-10T22:36:20.173Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/tests/test_hierarchical_query.py",
+      "path": "capabilities/text_to_sql/evaluation/tests/test_hierarchical_query.py",
+      "ext": ".py",
+      "size_bytes": 998,
+      "modified_at": "2026-04-10T22:36:20.173Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/tests/test_simple_query.py",
+      "path": "capabilities/text_to_sql/evaluation/tests/test_simple_query.py",
+      "ext": ".py",
+      "size_bytes": 437,
+      "modified_at": "2026-04-10T22:36:20.173Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/tests/utils.py",
+      "path": "capabilities/text_to_sql/evaluation/tests/utils.py",
+      "ext": ".py",
+      "size_bytes": 365,
+      "modified_at": "2026-04-10T22:36:20.174Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/evaluation/vectordb.py",
+      "path": "capabilities/text_to_sql/evaluation/vectordb.py",
+      "ext": ".py",
+      "size_bytes": 2099,
+      "modified_at": "2026-04-10T22:36:20.174Z",
+      "ingested": true
+    },
+    {
+      "id": "capabilities/text_to_sql/README.md",
+      "path": "capabilities/text_to_sql/README.md",
+      "ext": ".md",
+      "size_bytes": 357,
+      "modified_at": "2026-04-10T22:36:20.171Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/agents/financial-analyst.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/agents/financial-analyst.md",
+      "ext": ".md",
+      "size_bytes": 3242,
+      "modified_at": "2026-04-10T22:36:20.184Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/agents/recruiter.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/agents/recruiter.md",
+      "ext": ".md",
+      "size_bytes": 3455,
+      "modified_at": "2026-04-10T22:36:20.184Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/budget-impact.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/budget-impact.md",
+      "ext": ".md",
+      "size_bytes": 516,
+      "modified_at": "2026-04-10T22:36:20.184Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/slash-command-test.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/slash-command-test.md",
+      "ext": ".md",
+      "size_bytes": 137,
+      "modified_at": "2026-04-10T22:36:20.184Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/strategic-brief.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/strategic-brief.md",
+      "ext": ".md",
+      "size_bytes": 962,
+      "modified_at": "2026-04-10T22:36:20.185Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/talent-scan.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/talent-scan.md",
+      "ext": ".md",
+      "size_bytes": 588,
+      "modified_at": "2026-04-10T22:36:20.185Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/hooks/report-tracker.py",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/hooks/report-tracker.py",
+      "ext": ".py",
+      "size_bytes": 2763,
+      "modified_at": "2026-04-10T22:36:20.185Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/hooks/script-usage-logger.py",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/hooks/script-usage-logger.py",
+      "ext": ".py",
+      "size_bytes": 2999,
+      "modified_at": "2026-04-10T22:36:20.185Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/output-styles/executive.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/output-styles/executive.md",
+      "ext": ".md",
+      "size_bytes": 1451,
+      "modified_at": "2026-04-10T22:36:20.185Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/output-styles/technical.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/output-styles/technical.md",
+      "ext": ".md",
+      "size_bytes": 2770,
+      "modified_at": "2026-04-10T22:36:20.185Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/.claude/settings.local.json",
+      "path": "claude_agent_sdk/chief_of_staff_agent/.claude/settings.local.json",
+      "ext": ".json",
+      "size_bytes": 800,
+      "modified_at": "2026-04-10T22:36:20.185Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/agent.py",
+      "path": "claude_agent_sdk/chief_of_staff_agent/agent.py",
+      "ext": ".py",
+      "size_bytes": 4709,
+      "modified_at": "2026-04-10T22:36:20.185Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/audit/report_history.json",
+      "path": "claude_agent_sdk/chief_of_staff_agent/audit/report_history.json",
+      "ext": ".json",
+      "size_bytes": 1250,
+      "modified_at": "2026-04-10T22:36:20.185Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/audit/script_usage_log.json",
+      "path": "claude_agent_sdk/chief_of_staff_agent/audit/script_usage_log.json",
+      "ext": ".json",
+      "size_bytes": 1919,
+      "modified_at": "2026-04-10T22:36:20.186Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/CLAUDE.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/CLAUDE.md",
+      "ext": ".md",
+      "size_bytes": 3066,
+      "modified_at": "2026-04-10T22:36:20.185Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/financial_data/revenue_forecast.json",
+      "path": "claude_agent_sdk/chief_of_staff_agent/financial_data/revenue_forecast.json",
+      "ext": ".json",
+      "size_bytes": 1208,
+      "modified_at": "2026-04-10T22:36:20.186Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/flow_diagram.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/flow_diagram.md",
+      "ext": ".md",
+      "size_bytes": 1506,
+      "modified_at": "2026-04-10T22:36:20.186Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/output_reports/hiring_decision.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/output_reports/hiring_decision.md",
+      "ext": ".md",
+      "size_bytes": 12353,
+      "modified_at": "2026-04-10T22:36:20.186Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/output_reports/Q2_2024_Financial_Forecast.md",
+      "path": "claude_agent_sdk/chief_of_staff_agent/output_reports/Q2_2024_Financial_Forecast.md",
+      "ext": ".md",
+      "size_bytes": 3095,
+      "modified_at": "2026-04-10T22:36:20.186Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/scripts/decision_matrix.py",
+      "path": "claude_agent_sdk/chief_of_staff_agent/scripts/decision_matrix.py",
+      "ext": ".py",
+      "size_bytes": 8849,
+      "modified_at": "2026-04-10T22:36:20.186Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/scripts/financial_forecast.py",
+      "path": "claude_agent_sdk/chief_of_staff_agent/scripts/financial_forecast.py",
+      "ext": ".py",
+      "size_bytes": 4743,
+      "modified_at": "2026-04-10T22:36:20.186Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/scripts/hiring_impact.py",
+      "path": "claude_agent_sdk/chief_of_staff_agent/scripts/hiring_impact.py",
+      "ext": ".py",
+      "size_bytes": 3536,
+      "modified_at": "2026-04-10T22:36:20.187Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/scripts/simple_calculation.py",
+      "path": "claude_agent_sdk/chief_of_staff_agent/scripts/simple_calculation.py",
+      "ext": ".py",
+      "size_bytes": 1088,
+      "modified_at": "2026-04-10T22:36:20.187Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/chief_of_staff_agent/scripts/talent_scorer.py",
+      "path": "claude_agent_sdk/chief_of_staff_agent/scripts/talent_scorer.py",
+      "ext": ".py",
+      "size_bytes": 5989,
+      "modified_at": "2026-04-10T22:36:20.187Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/observability_agent/agent.py",
+      "path": "claude_agent_sdk/observability_agent/agent.py",
+      "ext": ".py",
+      "size_bytes": 4877,
+      "modified_at": "2026-04-10T22:36:20.187Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/observability_agent/architecture_diagram.md",
+      "path": "claude_agent_sdk/observability_agent/architecture_diagram.md",
+      "ext": ".md",
+      "size_bytes": 821,
+      "modified_at": "2026-04-10T22:36:20.187Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/observability_agent/docker/docker-compose.yml",
+      "path": "claude_agent_sdk/observability_agent/docker/docker-compose.yml",
+      "ext": ".yml",
+      "size_bytes": 492,
+      "modified_at": "2026-04-10T22:36:20.187Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/README.md",
+      "path": "claude_agent_sdk/README.md",
+      "ext": ".md",
+      "size_bytes": 8802,
+      "modified_at": "2026-04-10T22:36:20.184Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/research_agent/agent.py",
+      "path": "claude_agent_sdk/research_agent/agent.py",
+      "ext": ".py",
+      "size_bytes": 4577,
+      "modified_at": "2026-04-10T22:36:20.188Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/research_agent/architecture_diagram.md",
+      "path": "claude_agent_sdk/research_agent/architecture_diagram.md",
+      "ext": ".md",
+      "size_bytes": 615,
+      "modified_at": "2026-04-10T22:36:20.188Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/site_reliability_agent/examples/sre_bot_slack.py",
+      "path": "claude_agent_sdk/site_reliability_agent/examples/sre_bot_slack.py",
+      "ext": ".py",
+      "size_bytes": 25695,
+      "modified_at": "2026-04-10T22:36:20.191Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/site_reliability_agent/infra_setup.py",
+      "path": "claude_agent_sdk/site_reliability_agent/infra_setup.py",
+      "ext": ".py",
+      "size_bytes": 34256,
+      "modified_at": "2026-04-10T22:36:20.191Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/site_reliability_agent/sre_mcp_server.py",
+      "path": "claude_agent_sdk/site_reliability_agent/sre_mcp_server.py",
+      "ext": ".py",
+      "size_bytes": 97443,
+      "modified_at": "2026-04-10T22:36:20.191Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/utils/agent_visualizer.py",
+      "path": "claude_agent_sdk/utils/agent_visualizer.py",
+      "ext": ".py",
+      "size_bytes": 19400,
+      "modified_at": "2026-04-10T22:36:20.191Z",
+      "ingested": true
+    },
+    {
+      "id": "claude_agent_sdk/utils/html_renderer.py",
+      "path": "claude_agent_sdk/utils/html_renderer.py",
+      "ext": ".py",
+      "size_bytes": 19720,
+      "modified_at": "2026-04-10T22:36:20.192Z",
+      "ingested": true
+    },
+    {
+      "id": "CLAUDE.md",
+      "path": "CLAUDE.md",
+      "ext": ".md",
+      "size_bytes": 3460,
+      "modified_at": "2026-04-10T22:36:20.110Z",
+      "ingested": true
+    },
+    {
+      "id": "CONTRIBUTING.md",
+      "path": "CONTRIBUTING.md",
+      "ext": ".md",
+      "size_bytes": 6106,
+      "modified_at": "2026-04-10T22:36:20.110Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/gate/policy.yaml",
+      "path": "managed_agents/example_data/gate/policy.yaml",
+      "ext": ".yaml",
+      "size_bytes": 123,
+      "modified_at": "2026-04-10T22:36:20.581Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/gate/README.md",
+      "path": "managed_agents/example_data/gate/README.md",
+      "ext": ".md",
+      "size_bytes": 729,
+      "modified_at": "2026-04-10T22:36:20.581Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/iterate/calc.py",
+      "path": "managed_agents/example_data/iterate/calc.py",
+      "ext": ".py",
+      "size_bytes": 225,
+      "modified_at": "2026-04-10T22:36:20.582Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/iterate/README.md",
+      "path": "managed_agents/example_data/iterate/README.md",
+      "ext": ".md",
+      "size_bytes": 367,
+      "modified_at": "2026-04-10T22:36:20.581Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/iterate/test_calc.py",
+      "path": "managed_agents/example_data/iterate/test_calc.py",
+      "ext": ".py",
+      "size_bytes": 253,
+      "modified_at": "2026-04-10T22:36:20.582Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/orchestrate/issue_42.json",
+      "path": "managed_agents/example_data/orchestrate/issue_42.json",
+      "ext": ".json",
+      "size_bytes": 896,
+      "modified_at": "2026-04-10T22:36:20.582Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/orchestrate/README.md",
+      "path": "managed_agents/example_data/orchestrate/README.md",
+      "ext": ".md",
+      "size_bytes": 821,
+      "modified_at": "2026-04-10T22:36:20.582Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/orchestrate/src/__init__.py",
+      "path": "managed_agents/example_data/orchestrate/src/__init__.py",
+      "ext": ".py",
+      "size_bytes": 0,
+      "modified_at": "2026-04-10T22:36:20.582Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/orchestrate/src/blog.py",
+      "path": "managed_agents/example_data/orchestrate/src/blog.py",
+      "ext": ".py",
+      "size_bytes": 343,
+      "modified_at": "2026-04-10T22:36:20.582Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/orchestrate/src/url_utils.py",
+      "path": "managed_agents/example_data/orchestrate/src/url_utils.py",
+      "ext": ".py",
+      "size_bytes": 273,
+      "modified_at": "2026-04-10T22:36:20.582Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/orchestrate/tests/__init__.py",
+      "path": "managed_agents/example_data/orchestrate/tests/__init__.py",
+      "ext": ".py",
+      "size_bytes": 0,
+      "modified_at": "2026-04-10T22:36:20.582Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/orchestrate/tests/test_urls.py",
+      "path": "managed_agents/example_data/orchestrate/tests/test_urls.py",
+      "ext": ".py",
+      "size_bytes": 817,
+      "modified_at": "2026-04-10T22:36:20.582Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/OVERVIEW.md",
+      "path": "managed_agents/example_data/OVERVIEW.md",
+      "ext": ".md",
+      "size_bytes": 2891,
+      "modified_at": "2026-04-10T22:36:20.579Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/slack_data_bot/slack_app_manifest.yaml",
+      "path": "managed_agents/example_data/slack_data_bot/slack_app_manifest.yaml",
+      "ext": ".yaml",
+      "size_bytes": 491,
+      "modified_at": "2026-04-10T22:36:20.583Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/sre/alert.json",
+      "path": "managed_agents/example_data/sre/alert.json",
+      "ext": ".json",
+      "size_bytes": 572,
+      "modified_at": "2026-04-10T22:36:20.584Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/sre/infra/k8s/checkout-deploy.yaml",
+      "path": "managed_agents/example_data/sre/infra/k8s/checkout-deploy.yaml",
+      "ext": ".yaml",
+      "size_bytes": 703,
+      "modified_at": "2026-04-10T22:36:20.585Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/example_data/sre/runbooks/oom.md",
+      "path": "managed_agents/example_data/sre/runbooks/oom.md",
+      "ext": ".md",
+      "size_bytes": 736,
+      "modified_at": "2026-04-10T22:36:20.585Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/README.md",
+      "path": "managed_agents/README.md",
+      "ext": ".md",
+      "size_bytes": 4346,
+      "modified_at": "2026-04-10T22:36:20.579Z",
+      "ingested": true
+    },
+    {
+      "id": "managed_agents/utilities.py",
+      "path": "managed_agents/utilities.py",
+      "ext": ".py",
+      "size_bytes": 4986,
+      "modified_at": "2026-04-10T22:36:20.586Z",
+      "ingested": true
+    },
+    {
+      "id": "patterns/agents/prompts/citations_agent.md",
+      "path": "patterns/agents/prompts/citations_agent.md",
+      "ext": ".md",
+      "size_bytes": 2870,
+      "modified_at": "2026-04-10T22:36:20.632Z",
+      "ingested": true
+    },
+    {
+      "id": "patterns/agents/prompts/research_lead_agent.md",
+      "path": "patterns/agents/prompts/research_lead_agent.md",
+      "ext": ".md",
+      "size_bytes": 23102,
+      "modified_at": "2026-04-10T22:36:20.632Z",
+      "ingested": true
+    },
+    {
+      "id": "patterns/agents/prompts/research_subagent.md",
+      "path": "patterns/agents/prompts/research_subagent.md",
+      "ext": ".md",
+      "size_bytes": 9109,
+      "modified_at": "2026-04-10T22:36:20.632Z",
+      "ingested": true
+    },
+    {
+      "id": "patterns/agents/README.md",
+      "path": "patterns/agents/README.md",
+      "ext": ".md",
+      "size_bytes": 688,
+      "modified_at": "2026-04-10T22:36:20.632Z",
+      "ingested": true
+    },
+    {
+      "id": "patterns/agents/util.py",
+      "path": "patterns/agents/util.py",
+      "ext": ".py",
+      "size_bytes": 1442,
+      "modified_at": "2026-04-10T22:36:20.632Z",
+      "ingested": true
+    },
+    {
+      "id": "README.md",
+      "path": "README.md",
+      "ext": ".md",
+      "size_bytes": 5822,
+      "modified_at": "2026-04-10T22:36:20.110Z",
+      "ingested": true
+    },
+    {
+      "id": "registry.yaml",
+      "path": "registry.yaml",
+      "ext": ".yaml",
+      "size_bytes": 23604,
+      "modified_at": "2026-04-10T22:36:20.632Z",
+      "ingested": true
+    },
+    {
+      "id": "scripts/detect-secrets/plugins.py",
+      "path": "scripts/detect-secrets/plugins.py",
+      "ext": ".py",
+      "size_bytes": 792,
+      "modified_at": "2026-04-10T22:36:20.633Z",
+      "ingested": true
+    },
+    {
+      "id": "scripts/test_notebooks.py",
+      "path": "scripts/test_notebooks.py",
+      "ext": ".py",
+      "size_bytes": 7090,
+      "modified_at": "2026-04-10T22:36:20.633Z",
+      "ingested": true
+    },
+    {
+      "id": "scripts/validate_all_notebooks.py",
+      "path": "scripts/validate_all_notebooks.py",
+      "ext": ".py",
+      "size_bytes": 33393,
+      "modified_at": "2026-04-10T22:36:20.633Z",
+      "ingested": true
+    },
+    {
+      "id": "scripts/validate_authors_sorted.py",
+      "path": "scripts/validate_authors_sorted.py",
+      "ext": ".py",
+      "size_bytes": 3022,
+      "modified_at": "2026-04-10T22:36:20.633Z",
+      "ingested": true
+    },
+    {
+      "id": "scripts/validate_notebooks.py",
+      "path": "scripts/validate_notebooks.py",
+      "ext": ".py",
+      "size_bytes": 1779,
+      "modified_at": "2026-04-10T22:36:20.633Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/.claude/settings.json",
+      "path": "skills/.claude/settings.json",
+      "ext": ".json",
+      "size_bytes": 878,
+      "modified_at": "2026-04-10T22:36:20.633Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/CLAUDE.md",
+      "path": "skills/CLAUDE.md",
+      "ext": ".md",
+      "size_bytes": 8202,
+      "modified_at": "2026-04-10T22:36:20.634Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/custom_skills/analyzing-financial-statements/calculate_ratios.py",
+      "path": "skills/custom_skills/analyzing-financial-statements/calculate_ratios.py",
+      "ext": ".py",
+      "size_bytes": 12872,
+      "modified_at": "2026-04-10T22:36:20.638Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/custom_skills/analyzing-financial-statements/interpret_ratios.py",
+      "path": "skills/custom_skills/analyzing-financial-statements/interpret_ratios.py",
+      "ext": ".py",
+      "size_bytes": 16469,
+      "modified_at": "2026-04-10T22:36:20.638Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/custom_skills/analyzing-financial-statements/SKILL.md",
+      "path": "skills/custom_skills/analyzing-financial-statements/SKILL.md",
+      "ext": ".md",
+      "size_bytes": 2479,
+      "modified_at": "2026-04-10T22:36:20.638Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/custom_skills/applying-brand-guidelines/apply_brand.py",
+      "path": "skills/custom_skills/applying-brand-guidelines/apply_brand.py",
+      "ext": ".py",
+      "size_bytes": 15286,
+      "modified_at": "2026-04-10T22:36:20.639Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/custom_skills/applying-brand-guidelines/REFERENCE.md",
+      "path": "skills/custom_skills/applying-brand-guidelines/REFERENCE.md",
+      "ext": ".md",
+      "size_bytes": 3569,
+      "modified_at": "2026-04-10T22:36:20.639Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/custom_skills/applying-brand-guidelines/SKILL.md",
+      "path": "skills/custom_skills/applying-brand-guidelines/SKILL.md",
+      "ext": ".md",
+      "size_bytes": 4855,
+      "modified_at": "2026-04-10T22:36:20.639Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/custom_skills/applying-brand-guidelines/validate_brand.py",
+      "path": "skills/custom_skills/applying-brand-guidelines/validate_brand.py",
+      "ext": ".py",
+      "size_bytes": 10575,
+      "modified_at": "2026-04-10T22:36:20.639Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/custom_skills/creating-financial-models/dcf_model.py",
+      "path": "skills/custom_skills/creating-financial-models/dcf_model.py",
+      "ext": ".py",
+      "size_bytes": 17213,
+      "modified_at": "2026-04-10T22:36:20.639Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/custom_skills/creating-financial-models/sensitivity_analysis.py",
+      "path": "skills/custom_skills/creating-financial-models/sensitivity_analysis.py",
+      "ext": ".py",
+      "size_bytes": 11543,
+      "modified_at": "2026-04-10T22:36:20.640Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/custom_skills/creating-financial-models/SKILL.md",
+      "path": "skills/custom_skills/creating-financial-models/SKILL.md",
+      "ext": ".md",
+      "size_bytes": 5107,
+      "modified_at": "2026-04-10T22:36:20.639Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/file_utils.py",
+      "path": "skills/file_utils.py",
+      "ext": ".py",
+      "size_bytes": 9767,
+      "modified_at": "2026-04-10T22:36:20.640Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/README.md",
+      "path": "skills/README.md",
+      "ext": ".md",
+      "size_bytes": 11698,
+      "modified_at": "2026-04-10T22:36:20.634Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/sample_data/portfolio_holdings.json",
+      "path": "skills/sample_data/portfolio_holdings.json",
+      "ext": ".json",
+      "size_bytes": 4601,
+      "modified_at": "2026-04-10T22:36:20.640Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/sample_data/quarterly_metrics.json",
+      "path": "skills/sample_data/quarterly_metrics.json",
+      "ext": ".json",
+      "size_bytes": 1964,
+      "modified_at": "2026-04-10T22:36:20.641Z",
+      "ingested": true
+    },
+    {
+      "id": "skills/skill_utils.py",
+      "path": "skills/skill_utils.py",
+      "ext": ".py",
+      "size_bytes": 12406,
+      "modified_at": "2026-04-10T22:36:20.641Z",
+      "ingested": true
+    },
+    {
+      "id": "tests/__init__.py",
+      "path": "tests/__init__.py",
+      "ext": ".py",
+      "size_bytes": 51,
+      "modified_at": "2026-04-10T22:36:20.641Z",
+      "ingested": true
+    },
+    {
+      "id": "tests/conftest.py",
+      "path": "tests/conftest.py",
+      "ext": ".py",
+      "size_bytes": 4949,
+      "modified_at": "2026-04-10T22:36:20.641Z",
+      "ingested": true
+    },
+    {
+      "id": "tests/notebook_tests/__init__.py",
+      "path": "tests/notebook_tests/__init__.py",
+      "ext": ".py",
+      "size_bytes": 39,
+      "modified_at": "2026-04-10T22:36:20.641Z",
+      "ingested": true
+    },
+    {
+      "id": "tests/notebook_tests/conftest.py",
+      "path": "tests/notebook_tests/conftest.py",
+      "ext": ".py",
+      "size_bytes": 4018,
+      "modified_at": "2026-04-10T22:36:20.641Z",
+      "ingested": true
+    },
+    {
+      "id": "tests/notebook_tests/test_notebooks.py",
+      "path": "tests/notebook_tests/test_notebooks.py",
+      "ext": ".py",
+      "size_bytes": 11259,
+      "modified_at": "2026-04-10T22:36:20.641Z",
+      "ingested": true
+    },
+    {
+      "id": "tests/notebook_tests/utils.py",
+      "path": "tests/notebook_tests/utils.py",
+      "ext": ".py",
+      "size_bytes": 11795,
+      "modified_at": "2026-04-10T22:36:20.641Z",
+      "ingested": true
+    },
+    {
+      "id": "third_party/Deepgram/README.md",
+      "path": "third_party/Deepgram/README.md",
+      "ext": ".md",
+      "size_bytes": 1453,
+      "modified_at": "2026-04-10T22:36:20.641Z",
+      "ingested": true
+    },
+    {
+      "id": "third_party/ElevenLabs/README.md",
+      "path": "third_party/ElevenLabs/README.md",
+      "ext": ".md",
+      "size_bytes": 8658,
+      "modified_at": "2026-04-10T22:36:20.642Z",
+      "ingested": true
+    },
+    {
+      "id": "third_party/ElevenLabs/stream_voice_assistant_websocket.py",
+      "path": "third_party/ElevenLabs/stream_voice_assistant_websocket.py",
+      "ext": ".py",
+      "size_bytes": 12729,
+      "modified_at": "2026-04-10T22:36:20.642Z",
+      "ingested": true
+    },
+    {
+      "id": "third_party/LlamaIndex/README.md",
+      "path": "third_party/LlamaIndex/README.md",
+      "ext": ".md",
+      "size_bytes": 1149,
+      "modified_at": "2026-04-10T22:36:20.644Z",
+      "ingested": true
+    },
+    {
+      "id": "third_party/VoyageAI/how_to_create_embeddings.md",
+      "path": "third_party/VoyageAI/how_to_create_embeddings.md",
+      "ext": ".md",
+      "size_bytes": 12995,
+      "modified_at": "2026-04-10T22:36:20.645Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/__init__.py",
+      "path": "tool_use/__init__.py",
+      "ext": ".py",
+      "size_bytes": 0,
+      "modified_at": "2026-04-10T22:36:20.645Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/context_engineering/research_corpus.py",
+      "path": "tool_use/context_engineering/research_corpus.py",
+      "ext": ".py",
+      "size_bytes": 76689,
+      "modified_at": "2026-04-10T22:36:20.647Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/memory_demo/__init__.py",
+      "path": "tool_use/memory_demo/__init__.py",
+      "ext": ".py",
+      "size_bytes": 304,
+      "modified_at": "2026-04-10T22:36:20.648Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/memory_demo/code_review_demo.py",
+      "path": "tool_use/memory_demo/code_review_demo.py",
+      "ext": ".py",
+      "size_bytes": 11293,
+      "modified_at": "2026-04-10T22:36:20.648Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/memory_demo/demo_helpers.py",
+      "path": "tool_use/memory_demo/demo_helpers.py",
+      "ext": ".py",
+      "size_bytes": 7877,
+      "modified_at": "2026-04-10T22:36:20.648Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/memory_demo/sample_code/api_client_v1.py",
+      "path": "tool_use/memory_demo/sample_code/api_client_v1.py",
+      "ext": ".py",
+      "size_bytes": 3142,
+      "modified_at": "2026-04-10T22:36:20.648Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/memory_demo/sample_code/cache_manager.py",
+      "path": "tool_use/memory_demo/sample_code/cache_manager.py",
+      "ext": ".py",
+      "size_bytes": 3738,
+      "modified_at": "2026-04-10T22:36:20.648Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/memory_demo/sample_code/data_processor_v1.py",
+      "path": "tool_use/memory_demo/sample_code/data_processor_v1.py",
+      "ext": ".py",
+      "size_bytes": 4900,
+      "modified_at": "2026-04-10T22:36:20.648Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/memory_demo/sample_code/sql_query_builder.py",
+      "path": "tool_use/memory_demo/sample_code/sql_query_builder.py",
+      "ext": ".py",
+      "size_bytes": 3405,
+      "modified_at": "2026-04-10T22:36:20.648Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/memory_demo/sample_code/web_scraper_v1.py",
+      "path": "tool_use/memory_demo/sample_code/web_scraper_v1.py",
+      "ext": ".py",
+      "size_bytes": 2939,
+      "modified_at": "2026-04-10T22:36:20.649Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/memory_tool.py",
+      "path": "tool_use/memory_tool.py",
+      "ext": ".py",
+      "size_bytes": 13144,
+      "modified_at": "2026-04-10T22:36:20.649Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/tests/test_memory_tool.py",
+      "path": "tool_use/tests/test_memory_tool.py",
+      "ext": ".py",
+      "size_bytes": 14609,
+      "modified_at": "2026-04-10T22:36:20.650Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/utils/__init__.py",
+      "path": "tool_use/utils/__init__.py",
+      "ext": ".py",
+      "size_bytes": 374,
+      "modified_at": "2026-04-10T22:36:20.651Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/utils/customer_service_api.py",
+      "path": "tool_use/utils/customer_service_api.py",
+      "ext": ".py",
+      "size_bytes": 16631,
+      "modified_at": "2026-04-10T22:36:20.651Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/utils/customer_service_tools.py",
+      "path": "tool_use/utils/customer_service_tools.py",
+      "ext": ".py",
+      "size_bytes": 9383,
+      "modified_at": "2026-04-10T22:36:20.651Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/utils/team_expense_api.py",
+      "path": "tool_use/utils/team_expense_api.py",
+      "ext": ".py",
+      "size_bytes": 20918,
+      "modified_at": "2026-04-10T22:36:20.651Z",
+      "ingested": true
+    },
+    {
+      "id": "tool_use/utils/visualize.py",
+      "path": "tool_use/utils/visualize.py",
+      "ext": ".py",
+      "size_bytes": 13010,
+      "modified_at": "2026-04-10T22:36:20.651Z",
+      "ingested": true
+    }
+  ]
+}

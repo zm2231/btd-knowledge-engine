@@ -3,7 +3,7 @@
   "scanned_at": "2026-04-10T20:45:16.369Z",
   "creator": "nate-jones",
   "total": 887,
-  "ingested": 10,
+  "ingested": 25,
   "items": [
     {
       "id": "ib2m9HVX7as",
@@ -103,7 +103,7 @@
       "duration_string": "31:21",
       "url": "https://www.youtube.com/watch?v=hV5_XSEBZNg",
       "view_count": 124531,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "BhXNtvZvziY",
@@ -123,7 +123,7 @@
       "duration_string": "26:20",
       "url": "https://www.youtube.com/watch?v=0cVuMHaYEHE",
       "view_count": 132365,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "sTkqCREdMXo",
@@ -163,7 +163,7 @@
       "duration_string": "25:39",
       "url": "https://www.youtube.com/watch?v=4cuT-LKcmWs",
       "view_count": 148385,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "YpPcDHc3e9U",
@@ -383,7 +383,7 @@
       "duration_string": "20:56",
       "url": "https://www.youtube.com/watch?v=O7SSQfiPDXA",
       "view_count": 177602,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "pTtueIqrg0Q",
@@ -403,7 +403,7 @@
       "duration_string": "30:16",
       "url": "https://www.youtube.com/watch?v=2JiMmye2ezg",
       "view_count": 185327,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "RnjgLlQTMf0",
@@ -463,7 +463,7 @@
       "duration_string": "29:41",
       "url": "https://www.youtube.com/watch?v=QWzLPn164w0",
       "view_count": 143399,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "8jKAT8GNDE0",
@@ -493,7 +493,7 @@
       "duration_string": "29:14",
       "url": "https://www.youtube.com/watch?v=O-0poNv2jD4",
       "view_count": 165493,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "-bQcWs1Z9a0",
@@ -513,7 +513,7 @@
       "duration_string": "30:03",
       "url": "https://www.youtube.com/watch?v=6r0UeMQE66I",
       "view_count": 127775,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "bDcgHzCBgmQ",
@@ -553,7 +553,7 @@
       "duration_string": "34:26",
       "url": "https://www.youtube.com/watch?v=RtMLnCMv3do",
       "view_count": 136583,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "NCgdpbEvNVA",
@@ -613,7 +613,7 @@
       "duration_string": "14:02",
       "url": "https://www.youtube.com/watch?v=q6p-_W6_VoM",
       "view_count": 139655,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "pSgy2P2q790",
@@ -663,7 +663,7 @@
       "duration_string": "23:56",
       "url": "https://www.youtube.com/watch?v=dZxyeYBxPBA",
       "view_count": 186224,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "WEEKBlQfGt8",
@@ -763,7 +763,7 @@
       "duration_string": "21:32",
       "url": "https://www.youtube.com/watch?v=EZ4EjJ0iDDQ",
       "view_count": 172086,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "2sY7Pcm2j2g",
@@ -853,7 +853,7 @@
       "duration_string": "25:57",
       "url": "https://www.youtube.com/watch?v=0teZqotpqT8",
       "view_count": 163644,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "hpDC29JdgjI",
@@ -873,7 +873,7 @@
       "duration_string": "32:19",
       "url": "https://www.youtube.com/watch?v=h7dbkDcb3hA",
       "view_count": 191412,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "dzp0OQbElpU",
@@ -1663,7 +1663,7 @@
       "duration_string": "9:11",
       "url": "https://www.youtube.com/watch?v=NP-qmffUNHQ",
       "view_count": 155097,
-      "ingested": false
+      "ingested": true
     },
     {
       "id": "XOEMnCOTvnI",

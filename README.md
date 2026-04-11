@@ -38,7 +38,7 @@ btd status                # what's in the corpus
 
 ## What's In The Corpus
 
-Run `btd status` for live numbers. The corpus currently spans 16 creators across 6 platforms, curated to serve different types of learners:
+Run `btd status` for live numbers. The corpus spans 20+ creators across 6 platforms. Every creator earns their spot by serving a specific type of learner; nothing is in here for volume.
 
 | Need | Creator | What you get |
 |---|---|---|
@@ -48,12 +48,14 @@ Run `btd status` for live numbers. The corpus currently spans 16 creators across
 | Understand AI/ML | Andrej Karpathy, 3Blue1Brown | From neural nets to attention, with working code |
 | AI for non-technical people | Ethan Mollick | How to actually use these tools at work |
 | Build and ship things | Paul Graham | Essays on startups, ideas, ambition, maker schedule |
+| AI tools and workflows | Simon Willison, Sabrina Ramonov | Practical AI tool usage, MCP servers, Claude Code |
 | Leadership and teams | Simon Sinek | Infinite game, empathy, accountability |
 | Product and growth | Nate Jones, Lenny Rachitsky | AI business analysis, product strategy |
-| Long-form AI interviews | Lex Fridman | Sam Altman, Karpathy, Hassabis, LeCun, Demis |
-| Mental models | Shane Parrish | Decision-making, thinking frameworks (cataloged) |
+| Long-form AI interviews | Lex Fridman | Sam Altman, Karpathy, Hassabis, LeCun |
+| Mental models | Shane Parrish | Decision-making, thinking frameworks |
+| Building with AI | Alex Finn, Kyle Balmer, Mark Kashef | Context engineering, no-code AI, building in public |
 
-Every creator maps to a constraint profile field. "I can't focus" routes to Newport and Huberman. "I want to understand how LLMs work" routes to Karpathy's video plus his actual code. "I'm a manager trying to use AI" routes to Mollick. The corpus isn't random; it's designed to serve the profiles the intake interview produces.
+"I can't focus" routes to Newport and Huberman. "I want to understand how LLMs work" routes to Karpathy's video plus his actual code. "I'm a manager trying to use AI" routes to Mollick. "I want to build something with AI this weekend" routes to the builder creators. The corpus isn't random; it's designed to serve the profiles the intake interview produces.
 
 ## The Three Layers
 
@@ -138,6 +140,7 @@ Open Claude Code in this repo and these skills auto-activate as `/slash-commands
 | `/wiki-compiler` | Compile raw sources into wiki pages | After ingestion, proactively |
 | `/btd-ingest` | Content operations agent | Adding creators, ingesting, indexing |
 | `/content-curator` | Decide what to ingest | Corpus planning, gap analysis |
+| `/source-setup` | Help users build their own corpus | New instance, "add my sources" |
 
 Claude reads CLAUDE.md on session start, checks if you have a profile, and routes to the right skill automatically. You don't need to invoke them manually.
 
@@ -188,9 +191,9 @@ btd-knowledge-engine/
 │   └── content-curator/ #   What to ingest decisions
 ├── template/            # Clean starting point for new instances
 ├── btd/                 # Our instance (the BTD group's corpus)
-│   ├── raw/             #   117 files: YouTube, Twitter, articles, transcripts
-│   ├── wiki/            #   Compiled knowledge pages
-│   ├── registry/        #   16 creators, catalogs, ingest log
+│   ├── raw/             #   257+ files: YouTube, Twitter, articles, transcripts
+│   ├── wiki/            #   278 compiled knowledge pages
+│   ├── registry/        #   20+ creators, catalogs, ingest log
 │   └── users/           #   Constraint profiles + experiment cards
 ├── docs/                # Blueprint, roadmap, getting started
 └── CLAUDE.md            # Runtime instructions (Claude reads this first)
@@ -198,6 +201,8 @@ btd-knowledge-engine/
 
 ## Current State (April 2026)
 
-Run `btd status` for live numbers. The system is functional end-to-end: register a creator, scan their catalog, ingest selectively, compile wiki pages, rebuild the index, run an intake interview, generate experiments, check in, iterate.
+Run `btd status` for live numbers. The system is functional end-to-end: 257 raw files and 59 repo files indexed into 16,719 searchable chunks, 278 wiki pages compiled with cross-references, 6 skills auto-routing based on context.
 
-What's next: Max runs 3 real people through the intake interview, writes sample outputs by hand, and we build the synthesis pipeline that turns constraint profile plus corpus into structured, actionable output. The tech is ready; now we test whether the questions are right.
+The full loop works: register a creator, scan their catalog, ingest selectively, compile wiki pages, rebuild the index, run an intake interview, generate experiments, check in, iterate. Search retrieval is confirmed across every topic area; leadership queries hit Sinek, focus queries hit Newport and Huberman, technical queries hit Karpathy's videos and his actual code simultaneously.
+
+What's next: run real people through the intake interview, validate the constraint profiles produce meaningfully different outputs, and build the synthesis pipeline that turns profiles into structured, actionable learning tracks.

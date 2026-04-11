@@ -1,0 +1,279 @@
+{
+  "platform": "substack",
+  "scanned_at": "2026-04-10T22:43:41.861Z",
+  "creator": "simon-willison",
+  "total": 30,
+  "ingested": 30,
+  "items": [
+    {
+      "id": "https://simonwillison.net/2026/Apr/10/kakapo/#atom-everything",
+      "title": "Kākāpō parrots",
+      "date": "2026-04-10T19:07:02+00:00",
+      "url": "https://simonwillison.net/2026/Apr/10/kakapo/#atom-everything",
+      "excerpt": "<p>Lenny <a href=\"https://twitter.com/lennysan/status/2042615413494939943\">posted</a> another snippet from <a href=\"https://simonwillison.net/2026/Apr/2/lennys-podcast/\">our 1 hour 40 minute podcast recording</a> and it's about kākāpō parrots!</p>\n<p><video\n src=\"https://static.simonwillison.net/static/2026/kakapo-lenny.mp4\"\n poster=\"https://static.simonwillison.net/static/2026/kakapo-lenny.jpg\"\n ",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/10/voice-mode-is-weaker/#atom-everything",
+      "title": "ChatGPT voice mode is a weaker model",
+      "date": "2026-04-10T15:56:02+00:00",
+      "url": "https://simonwillison.net/2026/Apr/10/voice-mode-is-weaker/#atom-everything",
+      "excerpt": "<p>I think it's non-obvious to many people that the OpenAI voice mode runs on a much older, much weaker model - it feels like the AI that you can talk to should be the smartest AI but it really isn't.</p>\n<p>If you ask ChatGPT voice mode for its knowledge cutoff date it tells you April 2024 - it's a GPT-4o era model.</p>\n<p>This thought inspired by <a href=\"https://twitter.com/karpathy/status/2042",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/9/github-repo-size/#atom-everything",
+      "title": "GitHub Repo Size",
+      "date": "2026-04-09T21:31:50+00:00",
+      "url": "https://simonwillison.net/2026/Apr/9/github-repo-size/#atom-everything",
+      "excerpt": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/github-repo-size\">GitHub Repo Size</a></p>\n <p>GitHub doesn't tell you the repo size in the UI, but it's available in the CORS-friendly <a href=\"https://api.github.com/repos/simonw/datasette\">API</a>. Paste a repo into this tool to see the size, <a href=\"https://tools.simonwillison.net/github-repo-size?repo=simonw%2Fdatasette\">for ",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/9/asgi-gzip/#atom-everything",
+      "title": "asgi-gzip 0.3",
+      "date": "2026-04-09T03:54:40+00:00",
+      "url": "https://simonwillison.net/2026/Apr/9/asgi-gzip/#atom-everything",
+      "excerpt": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/asgi-gzip/releases/tag/0.3\">asgi-gzip 0.3</a></p>\n <p>I ran into trouble deploying a new feature using <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events\">SSE</a> to a production Datasette instance, and it turned out that instance was using <a href=\"https://github.com/simonw/datasette-gzip\">datasette-gzip</a>",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/8/muse-spark/#atom-everything",
+      "title": "Meta's new model is Muse Spark, and meta.ai chat has some interesting tools",
+      "date": "2026-04-08T23:07:44+00:00",
+      "url": "https://simonwillison.net/2026/Apr/8/muse-spark/#atom-everything",
+      "excerpt": "<p>Meta <a href=\"https://ai.meta.com/blog/introducing-muse-spark-msl/\">announced Muse Spark</a> today, their first model release since Llama 4 <a href=\"https://simonwillison.net/2025/Apr/5/llama-4-notes/\">almost exactly a year ago</a>. It's hosted, not open weights, and the API is currently \"a private API preview to select users\", but you can try it out today on <a href=\"https://meta.ai/\">meta.ai<",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/8/giles-turnbull/#atom-everything",
+      "title": "Quoting Giles Turnbull",
+      "date": "2026-04-08T15:18:49+00:00",
+      "url": "https://simonwillison.net/2026/Apr/8/giles-turnbull/#atom-everything",
+      "excerpt": "<blockquote cite=\"https://gilest.org/notes/2026/human-ai/\"><p>I have a feeling that <strong>everyone likes using AI tools to try doing someone else’s profession</strong>. They’re much less keen when someone else uses it for their profession.</p></blockquote>\n<p class=\"cite\">— <a href=\"https://gilest.org/notes/2026/human-ai/\">Giles Turnbull</a>, AI and the human voice</p>\n\n <p>Tags: <a href=\"https:",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/7/glm-51/#atom-everything",
+      "title": "GLM-5.1: Towards Long-Horizon Tasks",
+      "date": "2026-04-07T21:25:14+00:00",
+      "url": "https://simonwillison.net/2026/Apr/7/glm-51/#atom-everything",
+      "excerpt": "<p><strong><a href=\"https://z.ai/blog/glm-5.1\">GLM-5.1: Towards Long-Horizon Tasks</a></strong></p>\nChinese AI lab Z.ai's latest model is a giant 754B parameter 1.51TB (on <a href=\"https://huggingface.co/zai-org/GLM-5.1\">Hugging Face</a>) MIT-licensed monster - the same size as their previous GLM-5 release, and sharing the <a href=\"https://huggingface.co/papers/2602.15763\">same paper</a>.</p>\n<p>I",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything",
+      "title": "Anthropic's Project Glasswing - restricting Claude Mythos to security researchers - sounds necessary to me",
+      "date": "2026-04-07T20:52:54+00:00",
+      "url": "https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything",
+      "excerpt": "<p>Anthropic <em>didn't</em> release their latest model, Claude Mythos (<a href=\"https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf\">system card PDF</a>), today. They have instead made it available to a very restricted set of preview partners under their newly announced <a href=\"https://www.anthropic.com/glasswing\">Project Glasswing</a>.</p>\n<p>The model is a general purpos",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/7/sqlite-wal-docker-containers/#atom-everything",
+      "title": "SQLite WAL Mode Across Docker Containers Sharing a Volume",
+      "date": "2026-04-07T15:41:00+00:00",
+      "url": "https://simonwillison.net/2026/Apr/7/sqlite-wal-docker-containers/#atom-everything",
+      "excerpt": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/sqlite-wal-docker-containers#readme\">SQLite WAL Mode Across Docker Containers Sharing a Volume</a></p>\n <p>Inspired by <a href=\"https://news.ycombinator.com/item?id=47637353\">this conversation</a> on Hacker News about whether two SQLite processes in separate Docker containers that share the same volume might run in",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/6/google-ai-edge-gallery/#atom-everything",
+      "title": "Google AI Edge Gallery",
+      "date": "2026-04-06T05:18:26+00:00",
+      "url": "https://simonwillison.net/2026/Apr/6/google-ai-edge-gallery/#atom-everything",
+      "excerpt": "<p><strong><a href=\"https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337\">Google AI Edge Gallery</a></strong></p>\nTerrible name, really great app: this is Google's official app for running their Gemma 4 models (the E2B and E4B sizes, plus some members of the Gemma 3 family) directly on your iPhone.</p>\n<p>It works <em>really</em> well. The E2B model is a 2.54GB download and is both fa",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/6/datasette-ports-2/#atom-everything",
+      "title": "datasette-ports 0.2",
+      "date": "2026-04-06T03:25:43+00:00",
+      "url": "https://simonwillison.net/2026/Apr/6/datasette-ports-2/#atom-everything",
+      "excerpt": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-ports/releases/tag/0.2\">datasette-ports 0.2</a></p>\n <blockquote>\n<ul>\n<li>No longer requires Datasette - running <code>uvx datasette-ports</code> now works as well.</li>\n<li>Installing it as a Datasette plugin continues to provide the <code>datasette ports</code> command.</li>\n</ul>\n</blockquote>\n \n <p>Tags: <a href=\"htt",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/6/scan-for-secrets/#atom-everything",
+      "title": "scan-for-secrets 0.3",
+      "date": "2026-04-06T02:59:28+00:00",
+      "url": "https://simonwillison.net/2026/Apr/6/scan-for-secrets/#atom-everything",
+      "excerpt": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/scan-for-secrets/releases/tag/0.3\">scan-for-secrets 0.3</a></p>\n <blockquote>\n<ul>\n<li>New <code>-r/--redact</code> option which shows the list of matches, asks for confirmation and then replaces every match with <code>REDACTED</code>, taking escaping rules into account.</li>\n<li>New Python function <code>redact_file(file_path: str | ",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/6/cleanup-claude-code-paste/#atom-everything",
+      "title": "Cleanup Claude Code Paste",
+      "date": "2026-04-06T02:55:23+00:00",
+      "url": "https://simonwillison.net/2026/Apr/6/cleanup-claude-code-paste/#atom-everything",
+      "excerpt": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/cleanup-claude-code-paste\">Cleanup Claude Code Paste</a></p>\n <p>Super-niche tool this. I sometimes copy prompts out of the Claude Code terminal app and they come out with a bunch of weird additional whitespace. This tool cleans that up.</p>\n<p><img alt=\"Screenshot of a web tool titled \"Cleanup Claude Code Paste\" with the subtitle ",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/6/datasette-ports/#atom-everything",
+      "title": "datasette-ports 0.1",
+      "date": "2026-04-06T00:23:55+00:00",
+      "url": "https://simonwillison.net/2026/Apr/6/datasette-ports/#atom-everything",
+      "excerpt": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-ports/releases/tag/0.1\">datasette-ports 0.1</a></p>\n <p>Another <a href=\"https://gisthost.github.io/?f92d8a6bdadee1c77972b5e51954144e\">example</a> of README-driven development, this time solving a problem that might be unique to me.</p>\n<p>I often find myself running a bunch of different <a href=\"https://datasette.io\">Dat",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/5/building-with-ai/#atom-everything",
+      "title": "Eight years of wanting, three months of building with AI",
+      "date": "2026-04-05T23:54:18+00:00",
+      "url": "https://simonwillison.net/2026/Apr/5/building-with-ai/#atom-everything",
+      "excerpt": "<p><strong><a href=\"https://lalitm.com/post/building-syntaqlite-ai/\">Eight years of wanting, three months of building with AI</a></strong></p>\nLalit Maganti provides one of my favorite pieces of long-form writing on agentic engineering I've seen in ages.</p>\n<p>They spent eight years thinking about and then three months building <a href=\"https://github.com/lalitMaganti/syntaqlite\">syntaqlite</a>, ",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/5/chengpeng-mou/#atom-everything",
+      "title": "Quoting Chengpeng Mou",
+      "date": "2026-04-05T21:47:06+00:00",
+      "url": "https://simonwillison.net/2026/Apr/5/chengpeng-mou/#atom-everything",
+      "excerpt": "<blockquote cite=\"https://twitter.com/cpmou2022/status/2040606209800290404\"><p>From anonymized U.S. ChatGPT data, we are seeing:</p>\n<ul>\n<li>~2M weekly messages on health insurance</li>\n<li>~600K weekly messages [classified as healthcare] from people living in “hospital deserts” (30 min drive to nearest hospital)</li>\n<li>7 out of 10 msgs happen outside clinic hours</li>\n</ul></blockquote>\n<p cla",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/5/syntaqlite/#atom-everything",
+      "title": "Syntaqlite Playground",
+      "date": "2026-04-05T19:32:59+00:00",
+      "url": "https://simonwillison.net/2026/Apr/5/syntaqlite/#atom-everything",
+      "excerpt": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/syntaqlite\">Syntaqlite Playground</a></p>\n <p>Lalit Maganti's <a href=\"https://github.com/LalitMaganti/syntaqlite\">syntaqlite</a> is currently being discussed <a href=\"https://news.ycombinator.com/item?id=47648828\">on Hacker News</a> thanks to <a href=\"https://lalitm.com/post/building-syntaqlite-ai/\">Eight years of wanting, three m",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/5/scan-for-secrets/#atom-everything",
+      "title": "scan-for-secrets 0.2",
+      "date": "2026-04-05T04:07:13+00:00",
+      "url": "https://simonwillison.net/2026/Apr/5/scan-for-secrets/#atom-everything",
+      "excerpt": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/scan-for-secrets/releases/tag/0.2\">scan-for-secrets 0.2</a></p>\n <ul>\n<li>CLI tool now streams results as they are found rather than waiting until the end, which is better for large directories.</li>\n<li><code>-d/--directory</code> option can now be used multiple times to scan multiple directories.</li>\n<li>New <code>-f/--file</code> ",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/5/scan-for-secrets-2/#atom-everything",
+      "title": "scan-for-secrets 0.1.1",
+      "date": "2026-04-05T03:39:33+00:00",
+      "url": "https://simonwillison.net/2026/Apr/5/scan-for-secrets-2/#atom-everything",
+      "excerpt": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/scan-for-secrets/releases/tag/0.1.1\">scan-for-secrets 0.1.1</a></p>\n <blockquote>\n<ul>\n<li>Added documentation of the escaping schemes that are also scanned.</li>\n<li>Removed unnecessary <code>repr</code> escaping scheme, which was already covered by <code>json</code>.</li>\n</ul>\n</blockquote>",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything",
+      "title": "scan-for-secrets 0.1",
+      "date": "2026-04-05T03:27:13+00:00",
+      "url": "https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything",
+      "excerpt": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/scan-for-secrets/releases/tag/0.1\">scan-for-secrets 0.1</a></p>\n <p>I like publishing transcripts of local Claude Code sessions using my <a href=\"https://github.com/simonw/claude-code-transcripts\">claude-code-transcripts</a> tool but I'm often paranoid that one of my API keys or similar secrets might inadvertently be revealed in the d",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything",
+      "title": "research-llm-apis 2026-04-04",
+      "date": "2026-04-05T00:32:11+00:00",
+      "url": "https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything",
+      "excerpt": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/research-llm-apis/releases/tag/2026-04-04\">research-llm-apis 2026-04-04</a></p>\n <p>I'm working on a <a href=\"https://github.com/simonw/llm/issues/1314\">major change</a> to my LLM Python library and CLI tool. LLM provides an abstraction layer over hundreds of different LLMs from dozens of different vendors thanks to its plugin system,",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/4/kyle-daigle/#atom-everything",
+      "title": "Quoting Kyle Daigle",
+      "date": "2026-04-04T02:20:17+00:00",
+      "url": "https://simonwillison.net/2026/Apr/4/kyle-daigle/#atom-everything",
+      "excerpt": "<blockquote cite=\"https://twitter.com/kdaigle/status/2040164759836778878\"><p>[GitHub] platform activity is surging. There were 1 billion commits in 2025. Now, it's 275 million per week, on pace for 14 billion this year if growth remains linear (spoiler: it won't.)</p>\n<p>GitHub Actions has grown from 500M minutes/week in 2023 to 1B minutes/week in 2025, and now 2.1B minutes so far this week.</p></",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/#atom-everything",
+      "title": "Vulnerability Research Is Cooked",
+      "date": "2026-04-03T23:59:08+00:00",
+      "url": "https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/#atom-everything",
+      "excerpt": "<p><strong><a href=\"https://sockpuppet.org/blog/2026/03/30/vulnerability-research-is-cooked/\">Vulnerability Research Is Cooked</a></strong></p>\nThomas Ptacek's take on the sudden and enormous impact the latest frontier models are having on the field of vulnerability research.</p>\n<blockquote>\n<p>Within the next few months, coding agents will drastically alter both the practice and the economics of",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/3/cognitive-cost/#atom-everything",
+      "title": "The cognitive impact of coding agents",
+      "date": "2026-04-03T23:57:04+00:00",
+      "url": "https://simonwillison.net/2026/Apr/3/cognitive-cost/#atom-everything",
+      "excerpt": "<p>A fun thing about <a href=\"https://simonwillison.net/2026/Apr/2/lennys-podcast/\">recording a podcast</a> with a professional like Lenny Rachitsky is that his team know how to slice the resulting video up into TikTok-sized short form vertical videos. Here's <a href=\"https://x.com/lennysan/status/2039845666680176703\">one he shared on Twitter today</a> which ended up attracting over 1.1m views!</p",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/3/willy-tarreau/#atom-everything",
+      "title": "Quoting Willy Tarreau",
+      "date": "2026-04-03T21:48:22+00:00",
+      "url": "https://simonwillison.net/2026/Apr/3/willy-tarreau/#atom-everything",
+      "excerpt": "<blockquote cite=\"https://lwn.net/Articles/1065620/\"><p>On the kernel security list we've seen a huge bump of reports. We were between 2 and 3 per week maybe two years ago, then reached probably 10 a week over the last year with the only difference being only AI slop, and now since the beginning of the year we're around 5-10 per day depending on the days (fridays and tuesdays seem the worst). Now ",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/3/daniel-stenberg/#atom-everything",
+      "title": "Quoting Daniel Stenberg",
+      "date": "2026-04-03T21:46:07+00:00",
+      "url": "https://simonwillison.net/2026/Apr/3/daniel-stenberg/#atom-everything",
+      "excerpt": "<blockquote cite=\"https://mastodon.social/@bagder/116336957584445742\"><p>The challenge with AI in open source security has transitioned from an AI slop tsunami into more of a ... plain security report tsunami. Less slop but lots of reports. Many of them really good.</p>\n<p>I'm spending hours per day on this now. It's intense.</p></blockquote>\n<p class=\"cite\">— <a href=\"https://mastodon.social/@bag",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/3/greg-kroah-hartman/#atom-everything",
+      "title": "Quoting Greg Kroah-Hartman",
+      "date": "2026-04-03T21:44:41+00:00",
+      "url": "https://simonwillison.net/2026/Apr/3/greg-kroah-hartman/#atom-everything",
+      "excerpt": "<blockquote cite=\"https://www.theregister.com/2026/03/26/greg_kroahhartman_ai_kernel/\"><p>Months ago, we were getting what we called 'AI slop,' AI-generated security reports that were obviously wrong or low quality. It was kind of funny. It didn't really worry us.</p>\n<p>Something happened a month ago, and the world switched. Now we have real reports. All open source projects have real reports tha",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/3/test-csp-iframe-escape/#atom-everything",
+      "title": "Can JavaScript Escape a CSP Meta Tag Inside an Iframe?",
+      "date": "2026-04-03T16:05:00+00:00",
+      "url": "https://simonwillison.net/2026/Apr/3/test-csp-iframe-escape/#atom-everything",
+      "excerpt": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/test-csp-iframe-escape#readme\">Can JavaScript Escape a CSP Meta Tag Inside an Iframe?</a></p>\n <p>In trying to build my own version of Claude Artifacts I got curious about options for applying CSP headers to content in sandboxed iframes without using a separate domain to host the files. Turns out you can inject <co",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/3/supply-chain-social-engineering/#atom-everything",
+      "title": "The Axios supply chain attack used individually targeted social engineering",
+      "date": "2026-04-03T13:54:53+00:00",
+      "url": "https://simonwillison.net/2026/Apr/3/supply-chain-social-engineering/#atom-everything",
+      "excerpt": "<p>The Axios team have published a <a href=\"https://github.com/axios/axios/issues/10636\">full postmortem</a> on the supply chain attack which resulted in a malware dependency going out <a href=\"https://simonwillison.net/2026/Mar/31/supply-chain-attack-on-axios/\">in a release the other day</a>, and it involved a sophisticated social engineering campaign targeting one of their maintainers directly. ",
+      "author": null,
+      "ingested": true
+    },
+    {
+      "id": "https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything",
+      "title": "Highlights from my conversation about agentic engineering on Lenny's Podcast",
+      "date": "2026-04-02T20:40:47+00:00",
+      "url": "https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything",
+      "excerpt": "<p>I was a guest on Lenny Rachitsky's podcast, in a new episode titled <a href=\"https://www.lennysnewsletter.com/p/an-ai-state-of-the-union\">An AI state of the union: We've passed the inflection point, dark factories are coming, and automation timelines</a>. It's available on <a href=\"https://youtu.be/wc8FBhQtdsA\">YouTube</a>, <a href=\"https://open.spotify.com/episode/0DVjwLT6wgtscdB78Qf1BQ\">Spoti",
+      "author": null,
+      "ingested": true
+    }
+  ]
+}

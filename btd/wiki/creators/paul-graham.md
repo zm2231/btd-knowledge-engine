@@ -32,3 +32,9 @@ Two types of people have two types of days. Makers need long uninterrupted block
 
 ## Sources in Corpus
 - 8 essays: How to Do Great Work, Do Things that Don't Scale, Maker's Schedule, How to Get Startup Ideas, Bus Ticket Theory of Genius, Keep Your Identity Small, What You'll Wish You'd Known, Cities and Ambition
+
+## Related Concepts
+- [[startup-ideas]] — his canonical framework for finding real problems
+- [[great-work]] — how to work on what genuinely matters
+- [[deep-work]] — maker's schedule is PG's organizational version of this
+- [[borrowed-judgment]] — PG's essays are a primary source of builder judgment in the corpus

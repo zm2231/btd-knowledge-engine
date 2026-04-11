@@ -199,23 +199,31 @@ function fetchText(url, redirectCount = 0) {
   });
 }
 
-function getFeedUrl(baseUrl) {
+function getFeedUrl(baseUrl, feedUrlOverride) {
+  if (feedUrlOverride) return feedUrlOverride;
   const normalized = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
   return new URL('feed', normalized).toString();
 }
 
 function parseRssFeed(xml) {
   const items = [];
-  const itemMatches = xml.match(/<item[\s\S]*?<\/item>/gi) || [];
+  // Support both RSS <item> and Atom <entry> formats
+  const isAtom = xml.includes('xmlns="http://www.w3.org/2005/Atom"') || xml.includes('<feed ') || xml.includes('<entry>');
+  const itemMatches = isAtom
+    ? (xml.match(/<entry[\s\S]*?<\/entry>/gi) || [])
+    : (xml.match(/<item[\s\S]*?<\/item>/gi) || []);
 
   for (const block of itemMatches) {
     const title = decodeHtmlEntities(getTag(block, 'title'));
-    const url = decodeHtmlEntities(getTag(block, 'link'));
-    const guid = decodeHtmlEntities(getTag(block, 'guid')) || url;
-    const pubDate = decodeHtmlEntities(getTag(block, 'pubDate'));
-    const descriptionHtml = getTag(block, 'description');
-    const contentHtml = getTag(block, 'content:encoded') || descriptionHtml;
-    const creator = decodeHtmlEntities(getTag(block, 'dc:creator'));
+    // Atom uses <link href="..."/> or <link>url</link>; RSS uses <link>url</link>
+    const linkHref = block.match(/<link[^>]+href="([^"]+)"/i)?.[1];
+    const linkText = decodeHtmlEntities(getTag(block, 'link'));
+    const url = linkHref || linkText;
+    const guid = decodeHtmlEntities(getTag(block, 'guid') || getTag(block, 'id')) || url;
+    const pubDate = getTag(block, 'pubDate') || getTag(block, 'published') || getTag(block, 'updated');
+    const descriptionHtml = getTag(block, 'description') || getTag(block, 'summary');
+    const contentHtml = getTag(block, 'content:encoded') || getTag(block, 'content') || descriptionHtml;
+    const creator = decodeHtmlEntities(getTag(block, 'dc:creator') || getTag(block, 'author'));
 
     if (!url) continue;
 
@@ -240,7 +248,7 @@ async function scanSubstackCatalog(creator, options = {}) {
   const substack = creator.platforms?.substack;
   if (!substack?.url) return null;
 
-  const feedUrl = getFeedUrl(substack.url);
+  const feedUrl = getFeedUrl(substack.url, substack.feed_url);
   const xml = await fetchText(feedUrl);
   let items = parseRssFeed(xml).map(item => ({
     id: item.id,
@@ -265,7 +273,7 @@ async function scanSubstackCatalog(creator, options = {}) {
 async function loadFeedItemsForCreator(creator) {
   const substack = creator.platforms?.substack;
   if (!substack?.url) throw new Error(`Creator ${creator.slug} does not have a Substack URL`);
-  const xml = await fetchText(getFeedUrl(substack.url));
+  const xml = await fetchText(getFeedUrl(substack.url, substack.feed_url));
   return parseRssFeed(xml);
 }
 

@@ -1,0 +1,81 @@
+{
+  "platform": "substack",
+  "scanned_at": "2026-04-10T22:24:46.226Z",
+  "creator": "beware-the-defaults",
+  "total": 8,
+  "ingested": 8,
+  "items": [
+    {
+      "id": "https://bewarethedefault.substack.com/p/the-ai-skill-nobodys-practicing",
+      "title": "The AI Skill Nobody's Practicing",
+      "date": "Thu, 02 Apr 2026 22:39:03 GMT",
+      "url": "https://bewarethedefault.substack.com/p/the-ai-skill-nobodys-practicing",
+      "excerpt": "Zapier just added \"accountability\" as a fourth AI hiring requirement. Here's why the gap between reviewing AI output and actually checking it is the skill most professionals are missing.",
+      "author": "Max Bernstein",
+      "ingested": true
+    },
+    {
+      "id": "https://bewarethedefault.substack.com/p/nobody-read-the-fine-print",
+      "title": "Nobody Read the Fine Print",
+      "date": "Thu, 19 Mar 2026 12:40:43 GMT",
+      "url": "https://bewarethedefault.substack.com/p/nobody-read-the-fine-print",
+      "excerpt": "In the 1950s, the washing machine promised women more free time. By the 1970s, they were doing more laundry than before. AI is running the same play. Faster.",
+      "author": "Max Bernstein",
+      "ingested": true
+    },
+    {
+      "id": "https://bewarethedefault.substack.com/p/come-build-tomorrow-cancel-if-you",
+      "title": "Come build tomorrow. Cancel if you hate it.",
+      "date": "Fri, 06 Mar 2026 02:17:27 GMT",
+      "url": "https://bewarethedefault.substack.com/p/come-build-tomorrow-cancel-if-you",
+      "excerpt": "When I first ran the pilot of the class, the idea was to sell it for at least $497.",
+      "author": "Max Bernstein",
+      "ingested": true
+    },
+    {
+      "id": "https://bewarethedefault.substack.com/p/there-has-never-been-more-opportunity",
+      "title": "There Has Never Been More Opportunity Than Right Now",
+      "date": "Thu, 19 Feb 2026 13:30:59 GMT",
+      "url": "https://bewarethedefault.substack.com/p/there-has-never-been-more-opportunity",
+      "excerpt": "Last week, an article about AI got 80 million views.",
+      "author": "Max Bernstein",
+      "ingested": true
+    },
+    {
+      "id": "https://bewarethedefault.substack.com/p/building-with-the-garage-door-open",
+      "title": "Building With the Garage Door Open",
+      "date": "Mon, 26 Jan 2026 19:00:56 GMT",
+      "url": "https://bewarethedefault.substack.com/p/building-with-the-garage-door-open",
+      "excerpt": "No scripts. Real problems. Practitioners figuring it out in real time.",
+      "author": "Max Bernstein",
+      "ingested": true
+    },
+    {
+      "id": "https://bewarethedefault.substack.com/p/lights-camera-friction",
+      "title": "Lights. Camera. Friction.",
+      "date": "Sat, 17 Jan 2026 17:07:08 GMT",
+      "url": "https://bewarethedefault.substack.com/p/lights-camera-friction",
+      "excerpt": "We tested Claude CoWork live. No scripts. Here's what actually happened.",
+      "author": "Max Bernstein",
+      "ingested": true
+    },
+    {
+      "id": "https://bewarethedefault.substack.com/p/the-death-of-how-to-content",
+      "title": "The Death of How-To Content",
+      "date": "Sun, 11 Jan 2026 13:02:36 GMT",
+      "url": "https://bewarethedefault.substack.com/p/the-death-of-how-to-content",
+      "excerpt": "AI is doing to how-to content what the internet did to encyclopedias.",
+      "author": "Max Bernstein",
+      "ingested": true
+    },
+    {
+      "id": "https://bewarethedefault.substack.com/p/the-silent-killer-of-the-ai-era",
+      "title": "The Silent Killer of the AI Era",
+      "date": "Thu, 01 Jan 2026 21:30:23 GMT",
+      "url": "https://bewarethedefault.substack.com/p/the-silent-killer-of-the-ai-era",
+      "excerpt": "A Harvard MBA picked the wrong case study and lost his company. Not because he lacked experience - because he had too much. Here's how expertise becomes a trap.",
+      "author": "Max Bernstein",
+      "ingested": true
+    }
+  ]
+}

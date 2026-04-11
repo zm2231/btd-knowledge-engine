@@ -43,3 +43,5 @@ Cross-source: the YouTube videos walk through the implementation live. The repos
 ## Related Concepts
 - [[tokenization]] — minbpe is the tokenizer built from scratch
 - [[how-llms-work]] — nanoGPT is an LLM built from scratch
+- [[backpropagation]] — micrograd is backprop built from scratch
+- [[attention-mechanism]] — the key mechanism inside every transformer

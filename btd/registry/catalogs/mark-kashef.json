@@ -1,0 +1,1999 @@
+{
+  "platform": "youtube",
+  "scanned_at": "2026-04-10T22:38:50.262Z",
+  "creator": "mark-kashef",
+  "total": 199,
+  "ingested": 15,
+  "items": [
+    {
+      "id": "KsYCtXeAGBg",
+      "title": "Nobody Noticed Claude Code Skills Can Do This Now",
+      "date": null,
+      "duration": 629,
+      "duration_string": "10:29",
+      "url": "https://www.youtube.com/watch?v=KsYCtXeAGBg",
+      "view_count": 7132,
+      "ingested": false
+    },
+    {
+      "id": "xssGpNx3its",
+      "title": "You're Ignoring the Two Best Features in Claude Code",
+      "date": null,
+      "duration": 582,
+      "duration_string": "9:42",
+      "url": "https://www.youtube.com/watch?v=xssGpNx3its",
+      "view_count": 19788,
+      "ingested": false
+    },
+    {
+      "id": "JcY1LekT954",
+      "title": "Every Claude Code Secret Its Creator Just Revealed",
+      "date": null,
+      "duration": 1480,
+      "duration_string": "24:40",
+      "url": "https://www.youtube.com/watch?v=JcY1LekT954",
+      "view_count": 11145,
+      "ingested": false
+    },
+    {
+      "id": "oYIXe6aqh_U",
+      "title": "You've Been Using Claude Code at 10%. Here's the Rest.",
+      "date": null,
+      "duration": 1470,
+      "duration_string": "24:30",
+      "url": "https://www.youtube.com/watch?v=oYIXe6aqh_U",
+      "view_count": 15459,
+      "ingested": false
+    },
+    {
+      "id": "hTWxGSsGDZU",
+      "title": "You've Never Made a Claude Code Skill Like This",
+      "date": null,
+      "duration": 869,
+      "duration_string": "14:29",
+      "url": "https://www.youtube.com/watch?v=hTWxGSsGDZU",
+      "view_count": 11374,
+      "ingested": false
+    },
+    {
+      "id": "vizgFWixquE",
+      "title": "Anthropic's NEW Claude Architect Guide In 39 Minutes",
+      "date": null,
+      "duration": 2342,
+      "duration_string": "39:02",
+      "url": "https://www.youtube.com/watch?v=vizgFWixquE",
+      "view_count": 38269,
+      "ingested": false
+    },
+    {
+      "id": "RUyqEAXt2YQ",
+      "title": "Did Claude Code Just Make OpenClaw Obsolete?",
+      "date": null,
+      "duration": 562,
+      "duration_string": "9:22",
+      "url": "https://www.youtube.com/watch?v=RUyqEAXt2YQ",
+      "view_count": 9581,
+      "ingested": false
+    },
+    {
+      "id": "iALzJyvgCoM",
+      "title": "3 Claude Code Features You'll Wish You Knew Sooner",
+      "date": null,
+      "duration": 555,
+      "duration_string": "9:15",
+      "url": "https://www.youtube.com/watch?v=iALzJyvgCoM",
+      "view_count": 11723,
+      "ingested": false
+    },
+    {
+      "id": "2kbINqpluM0",
+      "title": "Claude Code Turned Obsidian Into My Dream Second Brain",
+      "date": null,
+      "duration": 841,
+      "duration_string": "14:01",
+      "url": "https://www.youtube.com/watch?v=2kbINqpluM0",
+      "view_count": 75676,
+      "ingested": true
+    },
+    {
+      "id": "ODA1eBo3P4w",
+      "title": "Don't Use Claude's 1M Context Until You See This",
+      "date": null,
+      "duration": 743,
+      "duration_string": "12:23",
+      "url": "https://www.youtube.com/watch?v=ODA1eBo3P4w",
+      "view_count": 9218,
+      "ingested": false
+    },
+    {
+      "id": "04zBiBqzKQA",
+      "title": "This Is the Most Underrated Feature of Claude Code",
+      "date": null,
+      "duration": 668,
+      "duration_string": "11:08",
+      "url": "https://www.youtube.com/watch?v=04zBiBqzKQA",
+      "view_count": 15278,
+      "ingested": false
+    },
+    {
+      "id": "dMXuKdIGzVo",
+      "title": "Anthropic Just Dropped Skills for Office Apps",
+      "date": null,
+      "duration": 526,
+      "duration_string": "8:46",
+      "url": "https://www.youtube.com/watch?v=dMXuKdIGzVo",
+      "view_count": 28325,
+      "ingested": false
+    },
+    {
+      "id": "1Z1aECGwJh0",
+      "title": "Google's New CLI Just Made Claude Code Unstoppable",
+      "date": null,
+      "duration": 826,
+      "duration_string": "13:46",
+      "url": "https://www.youtube.com/watch?v=1Z1aECGwJh0",
+      "view_count": 39140,
+      "ingested": true
+    },
+    {
+      "id": "EeX7ovArylU",
+      "title": "You've Never Used Claude Code Skills Like This",
+      "date": null,
+      "duration": 743,
+      "duration_string": "12:23",
+      "url": "https://www.youtube.com/watch?v=EeX7ovArylU",
+      "view_count": 16215,
+      "ingested": false
+    },
+    {
+      "id": "3qUg57KGSVY",
+      "title": "Plan Like a Pro in Claude Code",
+      "date": null,
+      "duration": 993,
+      "duration_string": "16:33",
+      "url": "https://www.youtube.com/watch?v=3qUg57KGSVY",
+      "view_count": 12214,
+      "ingested": false
+    },
+    {
+      "id": "HPo5M-6QJDo",
+      "title": "I Tried Claude Code Remote Control So You Don't Have To",
+      "date": null,
+      "duration": 679,
+      "duration_string": "11:19",
+      "url": "https://www.youtube.com/watch?v=HPo5M-6QJDo",
+      "view_count": 10375,
+      "ingested": false
+    },
+    {
+      "id": "9Svv-n11Ysk",
+      "title": "I Replaced OpenClaw With Claude Code in One Day",
+      "date": null,
+      "duration": 907,
+      "duration_string": "15:07",
+      "url": "https://www.youtube.com/watch?v=9Svv-n11Ysk",
+      "view_count": 75022,
+      "ingested": true
+    },
+    {
+      "id": "dlb_XgFVrHQ",
+      "title": "7 Things You Can Build with Claude Code Agent Teams",
+      "date": null,
+      "duration": 1512,
+      "duration_string": "25:12",
+      "url": "https://www.youtube.com/watch?v=dlb_XgFVrHQ",
+      "view_count": 24732,
+      "ingested": false
+    },
+    {
+      "id": "s-BHmRewyNI",
+      "title": "You Have the OpenClaw Mind Virus",
+      "date": null,
+      "duration": 727,
+      "duration_string": "12:07",
+      "url": "https://www.youtube.com/watch?v=s-BHmRewyNI",
+      "view_count": 8806,
+      "ingested": false
+    },
+    {
+      "id": "TzJecWCbex0",
+      "title": "Anthropic's Full Claude Skills Guide In 22 Minutes",
+      "date": null,
+      "duration": 1340,
+      "duration_string": "22:20",
+      "url": "https://www.youtube.com/watch?v=TzJecWCbex0",
+      "view_count": 55876,
+      "ingested": true
+    },
+    {
+      "id": "mGfQV4s1MgE",
+      "title": "How to Make Stunning Graphics with Claude Code Agent Teams",
+      "date": null,
+      "duration": 869,
+      "duration_string": "14:29",
+      "url": "https://www.youtube.com/watch?v=mGfQV4s1MgE",
+      "view_count": 8620,
+      "ingested": false
+    },
+    {
+      "id": "1jlKUxqRQAw",
+      "title": "Claude Code Agent Teams Explained (Complete Guide)",
+      "date": null,
+      "duration": 1397,
+      "duration_string": "23:17",
+      "url": "https://www.youtube.com/watch?v=1jlKUxqRQAw",
+      "view_count": 17312,
+      "ingested": false
+    },
+    {
+      "id": "eT_6uaHNlk8",
+      "title": "Anthropic Just Gave Claude 11 New Superpowers",
+      "date": null,
+      "duration": 887,
+      "duration_string": "14:47",
+      "url": "https://www.youtube.com/watch?v=eT_6uaHNlk8",
+      "view_count": 72754,
+      "ingested": true
+    },
+    {
+      "id": "uX40ur-lJtI",
+      "title": "Moltbook: What It Is, How It Works, and Why You Should Care",
+      "date": null,
+      "duration": 866,
+      "duration_string": "14:26",
+      "url": "https://www.youtube.com/watch?v=uX40ur-lJtI",
+      "view_count": 38991,
+      "ingested": true
+    },
+    {
+      "id": "KmWdzN2jaoo",
+      "title": "How Claude Code Actually Works (What the Top 1% Know)",
+      "date": null,
+      "duration": 3777,
+      "duration_string": "1:02:57",
+      "url": "https://www.youtube.com/watch?v=KmWdzN2jaoo",
+      "view_count": 15588,
+      "ingested": false
+    },
+    {
+      "id": "06oLpdFLkVA",
+      "title": "OpenClaw Just Made JARVIS Real for Everyone",
+      "date": null,
+      "duration": 1166,
+      "duration_string": "19:26",
+      "url": "https://www.youtube.com/watch?v=06oLpdFLkVA",
+      "view_count": 21584,
+      "ingested": false
+    },
+    {
+      "id": "LpM1dlB12-A",
+      "title": "How I Built an AI Council with Claude Code Subagents",
+      "date": null,
+      "duration": 1281,
+      "duration_string": "21:21",
+      "url": "https://www.youtube.com/watch?v=LpM1dlB12-A",
+      "view_count": 15265,
+      "ingested": false
+    },
+    {
+      "id": "5Q-LSw0ATIg",
+      "title": "How to Turn Claude CoWork Into a Full AI Team",
+      "date": null,
+      "duration": 682,
+      "duration_string": "11:22",
+      "url": "https://www.youtube.com/watch?v=5Q-LSw0ATIg",
+      "view_count": 22361,
+      "ingested": false
+    },
+    {
+      "id": "kOTXWKCJklY",
+      "title": "How to Use Claude Code on God Mode",
+      "date": null,
+      "duration": 1054,
+      "duration_string": "17:34",
+      "url": "https://www.youtube.com/watch?v=kOTXWKCJklY",
+      "view_count": 10897,
+      "ingested": false
+    },
+    {
+      "id": "3bGdg9hTvws",
+      "title": "Claude Code Just Built Me My Own NotebookLM (and made it way better)",
+      "date": null,
+      "duration": 2540,
+      "duration_string": "42:20",
+      "url": "https://www.youtube.com/watch?v=3bGdg9hTvws",
+      "view_count": 9960,
+      "ingested": false
+    },
+    {
+      "id": "NZmZlS-tl_0",
+      "title": "Anthropic Just Dropped Claude Code for Everyone (Claude Cowork)",
+      "date": null,
+      "duration": 595,
+      "duration_string": "9:55",
+      "url": "https://www.youtube.com/watch?v=NZmZlS-tl_0",
+      "view_count": 6290,
+      "ingested": false
+    },
+    {
+      "id": "jgNPX9K92Os",
+      "title": "How to Stay in the Top 1% of Claude Code Users",
+      "date": null,
+      "duration": 1040,
+      "duration_string": "17:20",
+      "url": "https://www.youtube.com/watch?v=jgNPX9K92Os",
+      "view_count": 5757,
+      "ingested": false
+    },
+    {
+      "id": "C1QHbNk2Pvg",
+      "title": "The AI Playbook for 2026: Focus, Scale, or Die",
+      "date": null,
+      "duration": 1053,
+      "duration_string": "17:33",
+      "url": "https://www.youtube.com/watch?v=C1QHbNk2Pvg",
+      "view_count": 8633,
+      "ingested": false
+    },
+    {
+      "id": "nAVYVRnz05w",
+      "title": "This ONE Tool Turns Claude Code Into a Scraping Powerhouse",
+      "date": null,
+      "duration": 597,
+      "duration_string": "9:57",
+      "url": "https://www.youtube.com/watch?v=nAVYVRnz05w",
+      "view_count": 18324,
+      "ingested": false
+    },
+    {
+      "id": "1gDZtt-iKFE",
+      "title": "How to Build SELF-IMPROVING Systems in Claude Code",
+      "date": null,
+      "duration": 1542,
+      "duration_string": "25:42",
+      "url": "https://www.youtube.com/watch?v=1gDZtt-iKFE",
+      "view_count": 8951,
+      "ingested": false
+    },
+    {
+      "id": "28MAIYDdp5I",
+      "title": "How to FINALLY Make Sense of AI SEO in 2026",
+      "date": null,
+      "duration": 572,
+      "duration_string": "9:32",
+      "url": "https://www.youtube.com/watch?v=28MAIYDdp5I",
+      "view_count": 1475,
+      "ingested": false
+    },
+    {
+      "id": "JQm4EnY8dkk",
+      "title": "I Quit ChatGPT - And Maybe You Should Too",
+      "date": null,
+      "duration": 1265,
+      "duration_string": "21:05",
+      "url": "https://www.youtube.com/watch?v=JQm4EnY8dkk",
+      "view_count": 8035,
+      "ingested": false
+    },
+    {
+      "id": "KCeTFxoQdkI",
+      "title": "n8n's NEW Chat Hub KILLED Custom GPTs",
+      "date": null,
+      "duration": 462,
+      "duration_string": "7:42",
+      "url": "https://www.youtube.com/watch?v=KCeTFxoQdkI",
+      "view_count": 7989,
+      "ingested": false
+    },
+    {
+      "id": "HZqWGE3XQb0",
+      "title": "Claude Code Can Truly Create ANYTHING (I'll Show You)",
+      "date": null,
+      "duration": 1001,
+      "duration_string": "16:41",
+      "url": "https://www.youtube.com/watch?v=HZqWGE3XQb0",
+      "view_count": 10970,
+      "ingested": false
+    },
+    {
+      "id": "F6JTJ9GeSOY",
+      "title": "Claude Code's Document Skills Are an UNFAIR ADVANTAGE",
+      "date": null,
+      "duration": 1181,
+      "duration_string": "19:41",
+      "url": "https://www.youtube.com/watch?v=F6JTJ9GeSOY",
+      "view_count": 39934,
+      "ingested": true
+    },
+    {
+      "id": "wiHpE2W8x1Q",
+      "title": "I Made an AI Version of Myself and It's Terrifying",
+      "date": null,
+      "duration": 683,
+      "duration_string": "11:23",
+      "url": "https://www.youtube.com/watch?v=wiHpE2W8x1Q",
+      "view_count": 4520,
+      "ingested": false
+    },
+    {
+      "id": "qVh1Ym1p1dE",
+      "title": "n8n's New MCP Feature Is A CHEAT CODE",
+      "date": null,
+      "duration": 686,
+      "duration_string": "11:26",
+      "url": "https://www.youtube.com/watch?v=qVh1Ym1p1dE",
+      "view_count": 9668,
+      "ingested": false
+    },
+    {
+      "id": "6qJsw0n0GGw",
+      "title": "Claude Code Masterclass: Become a ONE-Person Company",
+      "date": null,
+      "duration": 5072,
+      "duration_string": "1:24:32",
+      "url": "https://www.youtube.com/watch?v=6qJsw0n0GGw",
+      "view_count": 32410,
+      "ingested": false
+    },
+    {
+      "id": "Pagd9kNIg9o",
+      "title": "2026 Will Be The Golden Age of AI Consulting (Here's Why)",
+      "date": null,
+      "duration": 1200,
+      "duration_string": "20:00",
+      "url": "https://www.youtube.com/watch?v=Pagd9kNIg9o",
+      "view_count": 11291,
+      "ingested": false
+    },
+    {
+      "id": "_wN2v8o-imo",
+      "title": "Gemini's File Search API Makes RAG Easy (and CHEAP!)",
+      "date": null,
+      "duration": 808,
+      "duration_string": "13:28",
+      "url": "https://www.youtube.com/watch?v=_wN2v8o-imo",
+      "view_count": 17729,
+      "ingested": false
+    },
+    {
+      "id": "2bqVsRezYqY",
+      "title": "THIS Is the EASIEST Way to Learn n8n for 2026",
+      "date": null,
+      "duration": 2289,
+      "duration_string": "38:09",
+      "url": "https://www.youtube.com/watch?v=2bqVsRezYqY",
+      "view_count": 5670,
+      "ingested": false
+    },
+    {
+      "id": "zgcUIT4veYY",
+      "title": "How to Build AI Agents with CLAUDE SKILLS in n8n",
+      "date": null,
+      "duration": 948,
+      "duration_string": "15:48",
+      "url": "https://www.youtube.com/watch?v=zgcUIT4veYY",
+      "view_count": 12232,
+      "ingested": false
+    },
+    {
+      "id": "RtP9ioLXc1k",
+      "title": "ChatGPT's Atlas Browser + n8n Text-to-Workflow is ELITE",
+      "date": null,
+      "duration": 667,
+      "duration_string": "11:07",
+      "url": "https://www.youtube.com/watch?v=RtP9ioLXc1k",
+      "view_count": 11288,
+      "ingested": false
+    },
+    {
+      "id": "7_SL0FaY8MM",
+      "title": "How to INSTANTLY Generate Claude Skills at SCALE",
+      "date": null,
+      "duration": 1010,
+      "duration_string": "16:50",
+      "url": "https://www.youtube.com/watch?v=7_SL0FaY8MM",
+      "view_count": 21831,
+      "ingested": false
+    },
+    {
+      "id": "KhkIsNDYbcI",
+      "title": "Claude Code's New SKILLS Are a Cheat Code",
+      "date": null,
+      "duration": 765,
+      "duration_string": "12:45",
+      "url": "https://www.youtube.com/watch?v=KhkIsNDYbcI",
+      "view_count": 27332,
+      "ingested": false
+    },
+    {
+      "id": "oGzdBoKam0c",
+      "title": "The AI Tool EVERYONE'S Talking About... I Just BUILT It Myself",
+      "date": null,
+      "duration": 749,
+      "duration_string": "12:29",
+      "url": "https://www.youtube.com/watch?v=oGzdBoKam0c",
+      "view_count": 4623,
+      "ingested": false
+    },
+    {
+      "id": "iacK0bf531w",
+      "title": "This Is What Happens When You Combine Claude and Sora 2",
+      "date": null,
+      "duration": 770,
+      "duration_string": "12:50",
+      "url": "https://www.youtube.com/watch?v=iacK0bf531w",
+      "view_count": 5104,
+      "ingested": false
+    },
+    {
+      "id": "p47OKpDBO1o",
+      "title": "Everyone’s Hyping Agent Builder… But Here’s What They Missed",
+      "date": null,
+      "duration": 497,
+      "duration_string": "8:17",
+      "url": "https://www.youtube.com/watch?v=p47OKpDBO1o",
+      "view_count": 4345,
+      "ingested": false
+    },
+    {
+      "id": "vttdheXdGS8",
+      "title": "How I'd Learn AI for 2026 (after wasting 18 months doing it wrong)",
+      "date": null,
+      "duration": 1811,
+      "duration_string": "30:11",
+      "url": "https://www.youtube.com/watch?v=vttdheXdGS8",
+      "view_count": 10362,
+      "ingested": false
+    },
+    {
+      "id": "u4D6hEdM_XQ",
+      "title": "Breaking Down Claude 4.5's LEAKED System Prompt",
+      "date": null,
+      "duration": 616,
+      "duration_string": "10:16",
+      "url": "https://www.youtube.com/watch?v=u4D6hEdM_XQ",
+      "view_count": 6665,
+      "ingested": false
+    },
+    {
+      "id": "a6_d_SjCJew",
+      "title": "Claude Sonnet 4.5 Is Built for Agents (and It Shows)",
+      "date": null,
+      "duration": 694,
+      "duration_string": "11:34",
+      "url": "https://www.youtube.com/watch?v=a6_d_SjCJew",
+      "view_count": 9453,
+      "ingested": false
+    },
+    {
+      "id": "T0YdGV1285U",
+      "title": "Perplexity's NEW Search API MIGHT Replace Google",
+      "date": null,
+      "duration": 763,
+      "duration_string": "12:43",
+      "url": "https://www.youtube.com/watch?v=T0YdGV1285U",
+      "view_count": 8582,
+      "ingested": false
+    },
+    {
+      "id": "qzeRWzKte3I",
+      "title": "How I 10X My Productivity with ONE Claude Code Trick",
+      "date": null,
+      "duration": 849,
+      "duration_string": "14:09",
+      "url": "https://www.youtube.com/watch?v=qzeRWzKte3I",
+      "view_count": 7682,
+      "ingested": false
+    },
+    {
+      "id": "D7AZMGDjzXo",
+      "title": "OpenAI Just KILLED the Newsletter",
+      "date": null,
+      "duration": 502,
+      "duration_string": "8:22",
+      "url": "https://www.youtube.com/watch?v=D7AZMGDjzXo",
+      "view_count": 3235,
+      "ingested": false
+    },
+    {
+      "id": "5vI17CkkpOU",
+      "title": "This ONE Trick Generates Prompts for EVERY AI Model",
+      "date": null,
+      "duration": 641,
+      "duration_string": "10:41",
+      "url": "https://www.youtube.com/watch?v=5vI17CkkpOU",
+      "view_count": 7358,
+      "ingested": false
+    },
+    {
+      "id": "o0bn4Xeotmo",
+      "title": "This One Prompt INSTANTLY Builds 100s of GPTs",
+      "date": null,
+      "duration": 558,
+      "duration_string": "9:18",
+      "url": "https://www.youtube.com/watch?v=o0bn4Xeotmo",
+      "view_count": 9275,
+      "ingested": false
+    },
+    {
+      "id": "oZ3ZECb05Sc",
+      "title": "I Tested ChatGPT's NEW Thinking Modes So You Don't Have To",
+      "date": null,
+      "duration": 726,
+      "duration_string": "12:06",
+      "url": "https://www.youtube.com/watch?v=oZ3ZECb05Sc",
+      "view_count": 2864,
+      "ingested": false
+    },
+    {
+      "id": "emmlqnP1WL4",
+      "title": "n8n Just Killed Google Sheets (And It's WAY Faster)",
+      "date": null,
+      "duration": 584,
+      "duration_string": "9:44",
+      "url": "https://www.youtube.com/watch?v=emmlqnP1WL4",
+      "view_count": 19931,
+      "ingested": false
+    },
+    {
+      "id": "CF62dLM5Gb4",
+      "title": "Gemini Canvas Brings Vibe Coding to Everyone (FREE!)",
+      "date": null,
+      "duration": 501,
+      "duration_string": "8:21",
+      "url": "https://www.youtube.com/watch?v=CF62dLM5Gb4",
+      "view_count": 21191,
+      "ingested": false
+    },
+    {
+      "id": "7ufe4SpC3XE",
+      "title": "Nobody's Talking About THIS Claude Memory Trick",
+      "date": null,
+      "duration": 435,
+      "duration_string": "7:15",
+      "url": "https://www.youtube.com/watch?v=7ufe4SpC3XE",
+      "view_count": 4553,
+      "ingested": false
+    },
+    {
+      "id": "VBT3k7i4dwI",
+      "title": "How to Connect n8n to ChatGPT’s NEW Developer Mode",
+      "date": null,
+      "duration": 474,
+      "duration_string": "7:54",
+      "url": "https://www.youtube.com/watch?v=VBT3k7i4dwI",
+      "view_count": 8056,
+      "ingested": false
+    },
+    {
+      "id": "n71kZPSaxCg",
+      "title": "ChatGPT Can NOW Connect to 1000+ Apps (Developer Mode Explained)",
+      "date": null,
+      "duration": 467,
+      "duration_string": "7:47",
+      "url": "https://www.youtube.com/watch?v=n71kZPSaxCg",
+      "view_count": 10025,
+      "ingested": false
+    },
+    {
+      "id": "vtUBF-euNBE",
+      "title": "The EMOJI Prompting Cheat Code Nobody Uses",
+      "date": null,
+      "duration": 675,
+      "duration_string": "11:15",
+      "url": "https://www.youtube.com/watch?v=vtUBF-euNBE",
+      "view_count": 2051,
+      "ingested": false
+    },
+    {
+      "id": "e2zIr_2JMbE",
+      "title": "Master ALL 20 Agentic AI Design Patterns [Complete Course]",
+      "date": null,
+      "duration": 3821,
+      "duration_string": "1:03:41",
+      "url": "https://www.youtube.com/watch?v=e2zIr_2JMbE",
+      "view_count": 120857,
+      "ingested": true
+    },
+    {
+      "id": "mCXuXmnIvk0",
+      "title": "THIS Claude Code Trick INSTANTLY Builds MCP Servers",
+      "date": null,
+      "duration": 772,
+      "duration_string": "12:52",
+      "url": "https://www.youtube.com/watch?v=mCXuXmnIvk0",
+      "view_count": 4196,
+      "ingested": false
+    },
+    {
+      "id": "uHU-khKos80",
+      "title": "3 Ways to Use MCP Servers Right Now (EASY MODE)",
+      "date": null,
+      "duration": 747,
+      "duration_string": "12:27",
+      "url": "https://www.youtube.com/watch?v=uHU-khKos80",
+      "view_count": 4126,
+      "ingested": false
+    },
+    {
+      "id": "gUgwG0XPdkc",
+      "title": "Why You Probably Shouldn’t Fine-Tune Your AI Model",
+      "date": null,
+      "duration": 862,
+      "duration_string": "14:22",
+      "url": "https://www.youtube.com/watch?v=gUgwG0XPdkc",
+      "view_count": 1220,
+      "ingested": false
+    },
+    {
+      "id": "VuULRih34PU",
+      "title": "I Tested 4 AI Browsers So You Don't Have To",
+      "date": null,
+      "duration": 1217,
+      "duration_string": "20:17",
+      "url": "https://www.youtube.com/watch?v=VuULRih34PU",
+      "view_count": 6630,
+      "ingested": false
+    },
+    {
+      "id": "jt9ecYyCTi4",
+      "title": "Replit Agent 3 Is WAY Smarter Than You Think",
+      "date": null,
+      "duration": 606,
+      "duration_string": "10:06",
+      "url": "https://www.youtube.com/watch?v=jt9ecYyCTi4",
+      "view_count": 2813,
+      "ingested": false
+    },
+    {
+      "id": "h0rmHYIRXjM",
+      "title": "How to Master ANY New Al Model in 10 Minutes (ILLEGAL)",
+      "date": null,
+      "duration": 558,
+      "duration_string": "9:18",
+      "url": "https://www.youtube.com/watch?v=h0rmHYIRXjM",
+      "view_count": 3205,
+      "ingested": false
+    },
+    {
+      "id": "Nx45kXxQ0WQ",
+      "title": "THIS Prompting Technique Will Change How You Use Everything",
+      "date": null,
+      "duration": 1025,
+      "duration_string": "17:05",
+      "url": "https://www.youtube.com/watch?v=Nx45kXxQ0WQ",
+      "view_count": 21665,
+      "ingested": false
+    },
+    {
+      "id": "yOyyzwsny1k",
+      "title": "How to CHEAT Time and Get 10X More Done With AI",
+      "date": null,
+      "duration": 1287,
+      "duration_string": "21:27",
+      "url": "https://www.youtube.com/watch?v=yOyyzwsny1k",
+      "view_count": 3417,
+      "ingested": false
+    },
+    {
+      "id": "P48e49MBgIc",
+      "title": "You Have an AI Addiction. Here's How to Fix It.",
+      "date": null,
+      "duration": 1022,
+      "duration_string": "17:02",
+      "url": "https://www.youtube.com/watch?v=P48e49MBgIc",
+      "view_count": 2787,
+      "ingested": false
+    },
+    {
+      "id": "PbaJANDa5pU",
+      "title": "RAG Is Simpler Than You Think (90% Do It Wrong)",
+      "date": null,
+      "duration": 2096,
+      "duration_string": "34:56",
+      "url": "https://www.youtube.com/watch?v=PbaJANDa5pU",
+      "view_count": 3853,
+      "ingested": false
+    },
+    {
+      "id": "cV3JNm4GUZY",
+      "title": "AI Agents Are Overhyped (Here's Why)",
+      "date": null,
+      "duration": 872,
+      "duration_string": "14:32",
+      "url": "https://www.youtube.com/watch?v=cV3JNm4GUZY",
+      "view_count": 2780,
+      "ingested": false
+    },
+    {
+      "id": "ouOlJceXK-0",
+      "title": "The AI Trap Everyone Falls For (And How to Escape It)",
+      "date": null,
+      "duration": 1075,
+      "duration_string": "17:55",
+      "url": "https://www.youtube.com/watch?v=ouOlJceXK-0",
+      "view_count": 1951,
+      "ingested": false
+    },
+    {
+      "id": "Ho9pYMYi2xI",
+      "title": "How to Make Your Company AI-First (And Why Most Fail)",
+      "date": null,
+      "duration": 1235,
+      "duration_string": "20:35",
+      "url": "https://www.youtube.com/watch?v=Ho9pYMYi2xI",
+      "view_count": 2130,
+      "ingested": false
+    },
+    {
+      "id": "zNECfyqzXTw",
+      "title": "How to Get Over AI Guilt (And How to Break It)",
+      "date": null,
+      "duration": 1220,
+      "duration_string": "20:20",
+      "url": "https://www.youtube.com/watch?v=zNECfyqzXTw",
+      "view_count": 1680,
+      "ingested": false
+    },
+    {
+      "id": "o3QrgPOkrg8",
+      "title": "The AI Map Nobody Gives You (But Should)",
+      "date": null,
+      "duration": 2041,
+      "duration_string": "34:01",
+      "url": "https://www.youtube.com/watch?v=o3QrgPOkrg8",
+      "view_count": 9778,
+      "ingested": false
+    },
+    {
+      "id": "KLcIseQ7z-0",
+      "title": "I Built an AI Presentation App in Minutes with Base44",
+      "date": null,
+      "duration": 1687,
+      "duration_string": "28:07",
+      "url": "https://www.youtube.com/watch?v=KLcIseQ7z-0",
+      "view_count": 3394,
+      "ingested": false
+    },
+    {
+      "id": "3K9NDI3hKaw",
+      "title": "I Battle Tested n8n’s NEW NATIVE AI Builder for AI Agents",
+      "date": null,
+      "duration": 1735,
+      "duration_string": "28:55",
+      "url": "https://www.youtube.com/watch?v=3K9NDI3hKaw",
+      "view_count": 6778,
+      "ingested": false
+    },
+    {
+      "id": "erSlRlwpr-g",
+      "title": "How to Build AI Agents INSTANTLY with n8n’s NEW NATIVE AI Builder",
+      "date": null,
+      "duration": 1313,
+      "duration_string": "21:53",
+      "url": "https://www.youtube.com/watch?v=erSlRlwpr-g",
+      "view_count": 37441,
+      "ingested": false
+    },
+    {
+      "id": "A0SV-DExypQ",
+      "title": "The Complete Beginner’s Guide to Claude Code (Even If You’re Not Technical)",
+      "date": null,
+      "duration": 4863,
+      "duration_string": "1:21:03",
+      "url": "https://www.youtube.com/watch?v=A0SV-DExypQ",
+      "view_count": 48862,
+      "ingested": true
+    },
+    {
+      "id": "fM6q4rWsLPA",
+      "title": "This ONE Vibe Coding Trick Will Help You Build Faster",
+      "date": null,
+      "duration": 783,
+      "duration_string": "13:03",
+      "url": "https://www.youtube.com/watch?v=fM6q4rWsLPA",
+      "view_count": 4659,
+      "ingested": false
+    },
+    {
+      "id": "cRz5b5OYqjs",
+      "title": "How to Build YOUR OWN GPT-5 (get your models back!)",
+      "date": null,
+      "duration": 696,
+      "duration_string": "11:36",
+      "url": "https://www.youtube.com/watch?v=cRz5b5OYqjs",
+      "view_count": 2165,
+      "ingested": false
+    },
+    {
+      "id": "_SPl6EwDijo",
+      "title": "The Harsh Truth About GPT-5",
+      "date": null,
+      "duration": 560,
+      "duration_string": "9:20",
+      "url": "https://www.youtube.com/watch?v=_SPl6EwDijo",
+      "view_count": 7310,
+      "ingested": false
+    },
+    {
+      "id": "_gbs_6mJ7mI",
+      "title": "How to Use OpenAI’s GPT-OSS Models In Minutes (Groq + Ollama + Cloud Setup)",
+      "date": null,
+      "duration": 482,
+      "duration_string": "8:02",
+      "url": "https://www.youtube.com/watch?v=_gbs_6mJ7mI",
+      "view_count": 4606,
+      "ingested": false
+    },
+    {
+      "id": "oLlcBnefqCw",
+      "title": "How to Vibe Code Your Next App with ChatGPT Agent Mode",
+      "date": null,
+      "duration": 897,
+      "duration_string": "14:57",
+      "url": "https://www.youtube.com/watch?v=oLlcBnefqCw",
+      "view_count": 8479,
+      "ingested": false
+    },
+    {
+      "id": "XzOdJ2hUy1w",
+      "title": "This AI Agent can build Apps, Websites, AI ChatBots, AI Workflow in minutes",
+      "date": null,
+      "duration": 842,
+      "duration_string": "14:02",
+      "url": "https://www.youtube.com/watch?v=XzOdJ2hUy1w",
+      "view_count": 5708,
+      "ingested": false
+    },
+    {
+      "id": "0KX3iojxKA0",
+      "title": "I Battle-Tested ChatGPT Agent and the Results Were Unexpected",
+      "date": null,
+      "duration": 1771,
+      "duration_string": "29:31",
+      "url": "https://www.youtube.com/watch?v=0KX3iojxKA0",
+      "view_count": 13056,
+      "ingested": false
+    },
+    {
+      "id": "u0Ky4CKUDXQ",
+      "title": "I Vibe-Coded a Chrome Extension That Changes ChatGPT & Claude FOREVER",
+      "date": null,
+      "duration": 1608,
+      "duration_string": "26:48",
+      "url": "https://www.youtube.com/watch?v=u0Ky4CKUDXQ",
+      "view_count": 14115,
+      "ingested": false
+    },
+    {
+      "id": "RUr5_GqYzCg",
+      "title": "How to Pick the BEST AI Model for Your Prompts in MINUTES (n8n + OpenRouter)",
+      "date": null,
+      "duration": 765,
+      "duration_string": "12:45",
+      "url": "https://www.youtube.com/watch?v=RUr5_GqYzCg",
+      "view_count": 4349,
+      "ingested": false
+    },
+    {
+      "id": "yfpVU_uEpy4",
+      "title": "How to Use Claude & MCPs to INSTANTLY Build n8n AI Agents (MASTERCLASS)",
+      "date": null,
+      "duration": 2489,
+      "duration_string": "41:29",
+      "url": "https://www.youtube.com/watch?v=yfpVU_uEpy4",
+      "view_count": 58552,
+      "ingested": true
+    },
+    {
+      "id": "9HBa364RZBk",
+      "title": "I built an n8n workflow that does all my meeting prep while I sleep",
+      "date": null,
+      "duration": 709,
+      "duration_string": "11:49",
+      "url": "https://www.youtube.com/watch?v=9HBa364RZBk",
+      "view_count": 4180,
+      "ingested": false
+    },
+    {
+      "id": "OdJeXVrcpus",
+      "title": "How to Scrape (almost) ANYTHING in Seconds | Apify's New MCP Server",
+      "date": null,
+      "duration": 780,
+      "duration_string": "13:00",
+      "url": "https://www.youtube.com/watch?v=OdJeXVrcpus",
+      "view_count": 20148,
+      "ingested": false
+    },
+    {
+      "id": "t6n-qNP2SjQ",
+      "title": "How to Build n8n Agents INSTANTLY with ChatGPT Operator (Mind Blowing)",
+      "date": null,
+      "duration": 1191,
+      "duration_string": "19:51",
+      "url": "https://www.youtube.com/watch?v=t6n-qNP2SjQ",
+      "view_count": 11235,
+      "ingested": false
+    },
+    {
+      "id": "7NIN0KNcVdM",
+      "title": "This AI Agent INSTANTLY Pulls Real-Time Insights from X (Bolt + n8n Setup)",
+      "date": null,
+      "duration": 1038,
+      "duration_string": "17:18",
+      "url": "https://www.youtube.com/watch?v=7NIN0KNcVdM",
+      "view_count": 4613,
+      "ingested": false
+    },
+    {
+      "id": "mXajOLJj-EM",
+      "title": "Perplexity Labs Will Take Your Research Skills to the Next Level",
+      "date": null,
+      "duration": 1138,
+      "duration_string": "18:58",
+      "url": "https://www.youtube.com/watch?v=mXajOLJj-EM",
+      "view_count": 11083,
+      "ingested": false
+    },
+    {
+      "id": "u2NluvotA80",
+      "title": "How to INSTANTLY Build An AI Agent Army in n8n with Claude",
+      "date": null,
+      "duration": 1448,
+      "duration_string": "24:08",
+      "url": "https://www.youtube.com/watch?v=u2NluvotA80",
+      "view_count": 156441,
+      "ingested": true
+    },
+    {
+      "id": "RzsTwCiDmsg",
+      "title": "I Built a Chrome Extension That Unlocks EASY MODE for Vibe Coding",
+      "date": null,
+      "duration": 1113,
+      "duration_string": "18:33",
+      "url": "https://www.youtube.com/watch?v=RzsTwCiDmsg",
+      "view_count": 6209,
+      "ingested": false
+    },
+    {
+      "id": "-PRXtqc3XLY",
+      "title": "How to Use GenSpark to REPLACE Your Other AI Tools Overnight",
+      "date": null,
+      "duration": 924,
+      "duration_string": "15:24",
+      "url": "https://www.youtube.com/watch?v=-PRXtqc3XLY",
+      "view_count": 20187,
+      "ingested": false
+    },
+    {
+      "id": "OSHJFuoJJdA",
+      "title": "How to Master the Art of Vibe Coding",
+      "date": null,
+      "duration": 7036,
+      "duration_string": "1:57:16",
+      "url": "https://www.youtube.com/watch?v=OSHJFuoJJdA",
+      "view_count": 32631,
+      "ingested": false
+    },
+    {
+      "id": "5EuzpGw02SE",
+      "title": "This Gemini Hack Will TRANSFORM the Way You Vibe Code (Lovable, Bolt, Firebase Studio)",
+      "date": null,
+      "duration": 921,
+      "duration_string": "15:21",
+      "url": "https://www.youtube.com/watch?v=5EuzpGw02SE",
+      "view_count": 12034,
+      "ingested": false
+    },
+    {
+      "id": "QCPnHAHDbpA",
+      "title": "How to Get Answers From Any File IN SECONDS With This ChatGPT Feature (save hours)",
+      "date": null,
+      "duration": 487,
+      "duration_string": "8:07",
+      "url": "https://www.youtube.com/watch?v=QCPnHAHDbpA",
+      "view_count": 3719,
+      "ingested": false
+    },
+    {
+      "id": "YqEtFVAV7M8",
+      "title": "This n8n Agent Creates & Edits Images with OpenAI’s New Image API",
+      "date": null,
+      "duration": 534,
+      "duration_string": "8:54",
+      "url": "https://www.youtube.com/watch?v=YqEtFVAV7M8",
+      "view_count": 9043,
+      "ingested": false
+    },
+    {
+      "id": "f0I47ELXzJ4",
+      "title": "10 MUST-TRY Use Cases for OpenAI’s NEW o3 Model (save hours)",
+      "date": null,
+      "duration": 2167,
+      "duration_string": "36:07",
+      "url": "https://www.youtube.com/watch?v=f0I47ELXzJ4",
+      "view_count": 7081,
+      "ingested": false
+    },
+    {
+      "id": "Jbj349nT_Ko",
+      "title": "How to FINALLY Give Claude Way More Knowledge (High Accuracy!)",
+      "date": null,
+      "duration": 1825,
+      "duration_string": "30:25",
+      "url": "https://www.youtube.com/watch?v=Jbj349nT_Ko",
+      "view_count": 9873,
+      "ingested": false
+    },
+    {
+      "id": "h2Az_4T1JSg",
+      "title": "How to Generate Ready-to-Use n8n Agents INSTANTLY with Manus AI",
+      "date": null,
+      "duration": 1333,
+      "duration_string": "22:13",
+      "url": "https://www.youtube.com/watch?v=h2Az_4T1JSg",
+      "view_count": 56679,
+      "ingested": true
+    },
+    {
+      "id": "2ERaVgskOkE",
+      "title": "How I Used Google Gemini to Automate My $90K Data Science Job",
+      "date": null,
+      "duration": 1420,
+      "duration_string": "23:40",
+      "url": "https://www.youtube.com/watch?v=2ERaVgskOkE",
+      "view_count": 15991,
+      "ingested": false
+    },
+    {
+      "id": "c-NdrhFbUxY",
+      "title": "How to Build Your PERSONAL Prompt Engineer Agent with n8n (for any model!)",
+      "date": null,
+      "duration": 1135,
+      "duration_string": "18:55",
+      "url": "https://www.youtube.com/watch?v=c-NdrhFbUxY",
+      "view_count": 16445,
+      "ingested": false
+    },
+    {
+      "id": "YdMc6IEV4IE",
+      "title": "How to Use ChatGPT’s 4o Image Generation to Replace Your ENTIRE Creative Team",
+      "date": null,
+      "duration": 874,
+      "duration_string": "14:34",
+      "url": "https://www.youtube.com/watch?v=YdMc6IEV4IE",
+      "view_count": 30575,
+      "ingested": false
+    },
+    {
+      "id": "JM0y9JKopc0",
+      "title": "How to Use Claude to INSTANTLY Build & Replicate Any n8n Agents",
+      "date": null,
+      "duration": 1169,
+      "duration_string": "19:29",
+      "url": "https://www.youtube.com/watch?v=JM0y9JKopc0",
+      "view_count": 136586,
+      "ingested": true
+    },
+    {
+      "id": "dM_eBYRJCfM",
+      "title": "Still Confused About MCPs? This Video Will Make It CLEAR!",
+      "date": null,
+      "duration": 1180,
+      "duration_string": "19:40",
+      "url": "https://www.youtube.com/watch?v=dM_eBYRJCfM",
+      "view_count": 2759,
+      "ingested": false
+    },
+    {
+      "id": "dvksJK8TTQE",
+      "title": "How to Fine-Tune Models the EASY WAY Using ChatGPT & n8n (No Code)",
+      "date": null,
+      "duration": 1566,
+      "duration_string": "26:06",
+      "url": "https://www.youtube.com/watch?v=dvksJK8TTQE",
+      "view_count": 13341,
+      "ingested": false
+    },
+    {
+      "id": "mQ-2lcl3svc",
+      "title": "I Built An n8n Agent That Builds Other Agents (Game Changer)",
+      "date": null,
+      "duration": 1538,
+      "duration_string": "25:38",
+      "url": "https://www.youtube.com/watch?v=mQ-2lcl3svc",
+      "view_count": 35145,
+      "ingested": false
+    },
+    {
+      "id": "bK_4qJiQ5IM",
+      "title": "How to EASILY Convert Make Automations to n8n (No Code)",
+      "date": null,
+      "duration": 1219,
+      "duration_string": "20:19",
+      "url": "https://www.youtube.com/watch?v=bK_4qJiQ5IM",
+      "view_count": 4667,
+      "ingested": false
+    },
+    {
+      "id": "WHJyOP08-GE",
+      "title": "How to INSTANTLY Create n8n Agents Using ChatGPT (No Code)",
+      "date": null,
+      "duration": 1210,
+      "duration_string": "20:10",
+      "url": "https://www.youtube.com/watch?v=WHJyOP08-GE",
+      "view_count": 23934,
+      "ingested": false
+    },
+    {
+      "id": "gQbwjvUrnA8",
+      "title": "How to Use Lovable’s NEW Visual Edit to Improve Your Designs Instantly",
+      "date": null,
+      "duration": 910,
+      "duration_string": "15:10",
+      "url": "https://www.youtube.com/watch?v=gQbwjvUrnA8",
+      "view_count": 11745,
+      "ingested": false
+    },
+    {
+      "id": "SxdVJPJ78Qs",
+      "title": "This Is The EASIEST Way to Automate Any Task with DeepSeek",
+      "date": null,
+      "duration": 1348,
+      "duration_string": "22:28",
+      "url": "https://www.youtube.com/watch?v=SxdVJPJ78Qs",
+      "view_count": 5907,
+      "ingested": false
+    },
+    {
+      "id": "oBXoB0Zbm94",
+      "title": "The Definitive Guide to ChatGPT Deep Research (versus Gemini and Perplexity)",
+      "date": null,
+      "duration": 1297,
+      "duration_string": "21:37",
+      "url": "https://www.youtube.com/watch?v=oBXoB0Zbm94",
+      "view_count": 6547,
+      "ingested": false
+    },
+    {
+      "id": "kRXfddrtrmM",
+      "title": "How to Master DeepSeek R1 Prompt Engineering",
+      "date": null,
+      "duration": 864,
+      "duration_string": "14:24",
+      "url": "https://www.youtube.com/watch?v=kRXfddrtrmM",
+      "view_count": 24319,
+      "ingested": false
+    },
+    {
+      "id": "cInBvQ6JNtE",
+      "title": "How to Use ChatGPT Tasks on Expert Mode",
+      "date": null,
+      "duration": 789,
+      "duration_string": "13:09",
+      "url": "https://www.youtube.com/watch?v=cInBvQ6JNtE",
+      "view_count": 1640,
+      "ingested": false
+    },
+    {
+      "id": "Zv7N0SxfpRM",
+      "title": "These NEW Lovable AI Tricks Will Change the Way You Build!",
+      "date": null,
+      "duration": 2660,
+      "duration_string": "44:20",
+      "url": "https://www.youtube.com/watch?v=Zv7N0SxfpRM",
+      "view_count": 8616,
+      "ingested": false
+    },
+    {
+      "id": "3XR5l70EMMw",
+      "title": "Setting Your Business Up for AI Success in 2025: A Complete Guide",
+      "date": null,
+      "duration": 818,
+      "duration_string": "13:38",
+      "url": "https://www.youtube.com/watch?v=3XR5l70EMMw",
+      "view_count": 2032,
+      "ingested": false
+    },
+    {
+      "id": "jQ5Vy3nsjrE",
+      "title": "How to Master Prompt Engineering to Generate Anything",
+      "date": null,
+      "duration": 958,
+      "duration_string": "15:58",
+      "url": "https://www.youtube.com/watch?v=jQ5Vy3nsjrE",
+      "view_count": 8290,
+      "ingested": false
+    },
+    {
+      "id": "cwdPcbWwb2s",
+      "title": "How to Master Lovable.dev (Step-by-Step Tutorial)",
+      "date": null,
+      "duration": 2870,
+      "duration_string": "47:50",
+      "url": "https://www.youtube.com/watch?v=cwdPcbWwb2s",
+      "view_count": 58591,
+      "ingested": true
+    },
+    {
+      "id": "mgjZfDRm4-8",
+      "title": "The AI Roadmap Every Business Owner Needs to Win in 2025",
+      "date": null,
+      "duration": 2797,
+      "duration_string": "46:37",
+      "url": "https://www.youtube.com/watch?v=mgjZfDRm4-8",
+      "view_count": 4469,
+      "ingested": false
+    },
+    {
+      "id": "X7RJFtnFyHM",
+      "title": "How to Write Prompts Like A Pro for OpenAI's text-to-video model Sora",
+      "date": null,
+      "duration": 912,
+      "duration_string": "15:12",
+      "url": "https://www.youtube.com/watch?v=X7RJFtnFyHM",
+      "view_count": 5244,
+      "ingested": false
+    },
+    {
+      "id": "7BlM8TZH04A",
+      "title": "These TWO new Gemini 2.0 Features Will Change The Way You Work",
+      "date": null,
+      "duration": 909,
+      "duration_string": "15:09",
+      "url": "https://www.youtube.com/watch?v=7BlM8TZH04A",
+      "view_count": 12901,
+      "ingested": false
+    },
+    {
+      "id": "lLMAU731E2k",
+      "title": "Explaining AI agents in a way anyone can understand",
+      "date": null,
+      "duration": 1271,
+      "duration_string": "21:11",
+      "url": "https://www.youtube.com/watch?v=lLMAU731E2k",
+      "view_count": 3401,
+      "ingested": false
+    },
+    {
+      "id": "5SI9lqHh0ZU",
+      "title": "How I Built a Pay-to-Use Dating App with Bolt.new, ChatGPT, & Make.com (Stripe + Firestore)",
+      "date": null,
+      "duration": 2762,
+      "duration_string": "46:02",
+      "url": "https://www.youtube.com/watch?v=5SI9lqHh0ZU",
+      "view_count": 16788,
+      "ingested": false
+    },
+    {
+      "id": "byn21cPJby0",
+      "title": "How to Master ChatGPT’s Advanced Voice in Minutes",
+      "date": null,
+      "duration": 955,
+      "duration_string": "15:55",
+      "url": "https://www.youtube.com/watch?v=byn21cPJby0",
+      "view_count": 8345,
+      "ingested": false
+    },
+    {
+      "id": "aDN51Gmelcw",
+      "title": "How to Design the Perfect Custom GPT",
+      "date": null,
+      "duration": 2146,
+      "duration_string": "35:46",
+      "url": "https://www.youtube.com/watch?v=aDN51Gmelcw",
+      "view_count": 30851,
+      "ingested": false
+    },
+    {
+      "id": "x-F3XZYedtI",
+      "title": "How to Turn Your Idea into an App in Minutes with Bolt.new",
+      "date": null,
+      "duration": 3880,
+      "duration_string": "1:04:40",
+      "url": "https://www.youtube.com/watch?v=x-F3XZYedtI",
+      "view_count": 30222,
+      "ingested": false
+    },
+    {
+      "id": "U7Fpcwn7UZQ",
+      "title": "How to Battle Test Your Agents With OpenAI’s Evaluation Feature",
+      "date": null,
+      "duration": 3171,
+      "duration_string": "52:51",
+      "url": "https://www.youtube.com/watch?v=U7Fpcwn7UZQ",
+      "view_count": 2365,
+      "ingested": false
+    },
+    {
+      "id": "KGcIzKatVRc",
+      "title": "How Prompt Compression Can Make You a Better Prompt Engineer",
+      "date": null,
+      "duration": 791,
+      "duration_string": "13:11",
+      "url": "https://www.youtube.com/watch?v=KGcIzKatVRc",
+      "view_count": 5373,
+      "ingested": false
+    },
+    {
+      "id": "1YFPZKHIbVA",
+      "title": "How to Analyze Complex PDFs with AI | Claude Visual PDFs Analysis",
+      "date": null,
+      "duration": 1346,
+      "duration_string": "22:26",
+      "url": "https://www.youtube.com/watch?v=1YFPZKHIbVA",
+      "view_count": 11621,
+      "ingested": false
+    },
+    {
+      "id": "jF-Yvu7MuI8",
+      "title": "How to Build An AI Agent Team in ChatGPT",
+      "date": null,
+      "duration": 3633,
+      "duration_string": "1:00:33",
+      "url": "https://www.youtube.com/watch?v=jF-Yvu7MuI8",
+      "view_count": 25892,
+      "ingested": false
+    },
+    {
+      "id": "tUuwAEdku64",
+      "title": "How to SAFELY Access Claude Computer Use in Minutes",
+      "date": null,
+      "duration": 907,
+      "duration_string": "15:07",
+      "url": "https://www.youtube.com/watch?v=tUuwAEdku64",
+      "view_count": 1972,
+      "ingested": false
+    },
+    {
+      "id": "xt3j3ihA-cE",
+      "title": "Perplexity Spaces Are Here – Should You Keep Using Custom GPTs?",
+      "date": null,
+      "duration": 1396,
+      "duration_string": "23:16",
+      "url": "https://www.youtube.com/watch?v=xt3j3ihA-cE",
+      "view_count": 5201,
+      "ingested": false
+    },
+    {
+      "id": "W9VR2c7nn5E",
+      "title": "How to Build a Voice Agent Using Only Your Voice",
+      "date": null,
+      "duration": 768,
+      "duration_string": "12:48",
+      "url": "https://www.youtube.com/watch?v=W9VR2c7nn5E",
+      "view_count": 2679,
+      "ingested": false
+    },
+    {
+      "id": "wc0ewf2eyJ0",
+      "title": "How to Connect OpenAI’s Realtime API to a Knowledge Base",
+      "date": null,
+      "duration": 1179,
+      "duration_string": "19:39",
+      "url": "https://www.youtube.com/watch?v=wc0ewf2eyJ0",
+      "view_count": 4920,
+      "ingested": false
+    },
+    {
+      "id": "mXYKMEa12JU",
+      "title": "Which AI Voice Assistant is Right for Your Business?",
+      "date": null,
+      "duration": 3433,
+      "duration_string": "57:13",
+      "url": "https://www.youtube.com/watch?v=mXYKMEa12JU",
+      "view_count": 4057,
+      "ingested": false
+    },
+    {
+      "id": "xf6xT7RbTPo",
+      "title": "How ANYONE Can Use OpenAI’s New Realtime API (even if you can’t code)",
+      "date": null,
+      "duration": 1685,
+      "duration_string": "28:05",
+      "url": "https://www.youtube.com/watch?v=xf6xT7RbTPo",
+      "view_count": 5532,
+      "ingested": false
+    },
+    {
+      "id": "kq_eG7CgH8U",
+      "title": "ANYONE Can Write Prompts With This New OpenAI Feature",
+      "date": null,
+      "duration": 809,
+      "duration_string": "13:29",
+      "url": "https://www.youtube.com/watch?v=kq_eG7CgH8U",
+      "view_count": 7740,
+      "ingested": false
+    },
+    {
+      "id": "w1amPWUsl_Y",
+      "title": "How to Build Custom GPTs with 100% Accurate Answers",
+      "date": null,
+      "duration": 2009,
+      "duration_string": "33:29",
+      "url": "https://www.youtube.com/watch?v=w1amPWUsl_Y",
+      "view_count": 12676,
+      "ingested": false
+    },
+    {
+      "id": "2VxFY0EYvg8",
+      "title": "How to Test Any Prompt (no one talks about this)",
+      "date": null,
+      "duration": 2544,
+      "duration_string": "42:24",
+      "url": "https://www.youtube.com/watch?v=2VxFY0EYvg8",
+      "view_count": 5869,
+      "ingested": false
+    },
+    {
+      "id": "E-T8QLdLuBQ",
+      "title": "How to Prompt OpenAI's o1 Models Like A Pro",
+      "date": null,
+      "duration": 944,
+      "duration_string": "15:44",
+      "url": "https://www.youtube.com/watch?v=E-T8QLdLuBQ",
+      "view_count": 10601,
+      "ingested": false
+    },
+    {
+      "id": "afd9Qwuk_WE",
+      "title": "It Finally Thinks! OpenAI's New o1 Models Are Scary Good",
+      "date": null,
+      "duration": 1211,
+      "duration_string": "20:11",
+      "url": "https://www.youtube.com/watch?v=afd9Qwuk_WE",
+      "view_count": 1716,
+      "ingested": false
+    },
+    {
+      "id": "B4kHmeE27P0",
+      "title": "Forget Cursor, Replit Agent Can Help Anyone Build Anything In Minutes",
+      "date": null,
+      "duration": 1203,
+      "duration_string": "20:03",
+      "url": "https://www.youtube.com/watch?v=B4kHmeE27P0",
+      "view_count": 6920,
+      "ingested": false
+    },
+    {
+      "id": "h5pvyHScdDM",
+      "title": "The COO of Bland AI reveals the Future of Voice Tech | Sobhan Nejad",
+      "date": null,
+      "duration": 1412,
+      "duration_string": "23:32",
+      "url": "https://www.youtube.com/watch?v=h5pvyHScdDM",
+      "view_count": 3044,
+      "ingested": false
+    },
+    {
+      "id": "Xok3e8q7Ibc",
+      "title": "Why Getting AI to Say 'I Don't Know' Is a Game-Changer",
+      "date": null,
+      "duration": 779,
+      "duration_string": "12:59",
+      "url": "https://www.youtube.com/watch?v=Xok3e8q7Ibc",
+      "view_count": 1742,
+      "ingested": false
+    },
+    {
+      "id": "kj6JkLFtFbs",
+      "title": "How to Visualize Any Process Instantly Using AI",
+      "date": null,
+      "duration": 890,
+      "duration_string": "14:50",
+      "url": "https://www.youtube.com/watch?v=kj6JkLFtFbs",
+      "view_count": 15638,
+      "ingested": false
+    },
+    {
+      "id": "o6fAP_OZbmk",
+      "title": "95% of People Writing Prompts Miss These Two Easy Techniques",
+      "date": null,
+      "duration": 1009,
+      "duration_string": "16:49",
+      "url": "https://www.youtube.com/watch?v=o6fAP_OZbmk",
+      "view_count": 4079,
+      "ingested": false
+    },
+    {
+      "id": "_0uiiJfsBPI",
+      "title": "How and When to Use Anthropic's Prompt Caching Feature (with code examples)",
+      "date": null,
+      "duration": 1608,
+      "duration_string": "26:48",
+      "url": "https://www.youtube.com/watch?v=_0uiiJfsBPI",
+      "view_count": 3879,
+      "ingested": false
+    },
+    {
+      "id": "RT3ZoYRJwew",
+      "title": "How to Make Perfect AI Prompts Using Reverse Meta Prompting",
+      "date": null,
+      "duration": 1044,
+      "duration_string": "17:24",
+      "url": "https://www.youtube.com/watch?v=RT3ZoYRJwew",
+      "view_count": 7820,
+      "ingested": false
+    },
+    {
+      "id": "B4MR8m7V17A",
+      "title": "How to Master the Art of Chain Prompting",
+      "date": null,
+      "duration": 1115,
+      "duration_string": "18:35",
+      "url": "https://www.youtube.com/watch?v=B4MR8m7V17A",
+      "view_count": 12098,
+      "ingested": false
+    },
+    {
+      "id": "QAss5i9Wnfk",
+      "title": "This AI Trick Will Change How You Write Forever",
+      "date": null,
+      "duration": 1337,
+      "duration_string": "22:17",
+      "url": "https://www.youtube.com/watch?v=QAss5i9Wnfk",
+      "view_count": 6967,
+      "ingested": false
+    },
+    {
+      "id": "2KreTdYRjMs",
+      "title": "How to Fix ANY Prompt With Meta Prompting",
+      "date": null,
+      "duration": 976,
+      "duration_string": "16:16",
+      "url": "https://www.youtube.com/watch?v=2KreTdYRjMs",
+      "view_count": 6986,
+      "ingested": false
+    },
+    {
+      "id": "I9cJEkQPt5A",
+      "title": "How to Unlock ANY Framework's Potential with Meta Prompting",
+      "date": null,
+      "duration": 1401,
+      "duration_string": "23:21",
+      "url": "https://www.youtube.com/watch?v=I9cJEkQPt5A",
+      "view_count": 3433,
+      "ingested": false
+    },
+    {
+      "id": "APEoVYgq5Sw",
+      "title": "How to Unlock INFINITE AI Personas with Meta Prompting",
+      "date": null,
+      "duration": 681,
+      "duration_string": "11:21",
+      "url": "https://www.youtube.com/watch?v=APEoVYgq5Sw",
+      "view_count": 3107,
+      "ingested": false
+    },
+    {
+      "id": "ASqDMDe6kQ4",
+      "title": "Introducing Bland AI's Pathway Marketplace - Use any pathway off-the-shelf in minutes!",
+      "date": null,
+      "duration": 1063,
+      "duration_string": "17:43",
+      "url": "https://www.youtube.com/watch?v=ASqDMDe6kQ4",
+      "view_count": 1874,
+      "ingested": false
+    },
+    {
+      "id": "8cKnRTSwPII",
+      "title": "Fixing ChatGPT List Overload: Simple Prompt Hack for Better Responses!",
+      "date": null,
+      "duration": 137,
+      "duration_string": "2:17",
+      "url": "https://www.youtube.com/watch?v=8cKnRTSwPII",
+      "view_count": 2109,
+      "ingested": false
+    },
+    {
+      "id": "ONsQI5npBYo",
+      "title": "How to Read Your AI's Mind with Meta Prompting & Chain-of-Thought",
+      "date": null,
+      "duration": 677,
+      "duration_string": "11:17",
+      "url": "https://www.youtube.com/watch?v=ONsQI5npBYo",
+      "view_count": 3312,
+      "ingested": false
+    },
+    {
+      "id": "oAxmD0OxsCo",
+      "title": "How to Craft Perfect Agent Instructions with Meta Prompting",
+      "date": null,
+      "duration": 666,
+      "duration_string": "11:06",
+      "url": "https://www.youtube.com/watch?v=oAxmD0OxsCo",
+      "view_count": 6062,
+      "ingested": false
+    },
+    {
+      "id": "DPl46_9WCi0",
+      "title": "How to Clone ANY Custom GPT in the GPT Store",
+      "date": null,
+      "duration": 441,
+      "duration_string": "7:21",
+      "url": "https://www.youtube.com/watch?v=DPl46_9WCi0",
+      "view_count": 20378,
+      "ingested": false
+    },
+    {
+      "id": "rWucJkdp3Go",
+      "title": "AI Voice Agents Are Going to Change Forever with Bland AI’s Pathway Generation Feature",
+      "date": null,
+      "duration": 467,
+      "duration_string": "7:47",
+      "url": "https://www.youtube.com/watch?v=rWucJkdp3Go",
+      "view_count": 3990,
+      "ingested": false
+    },
+    {
+      "id": "cgBVHj9DXXY",
+      "title": "You’ll NEVER Need Prompt Engineering Again with Meta-Prompting",
+      "date": null,
+      "duration": 1052,
+      "duration_string": "17:32",
+      "url": "https://www.youtube.com/watch?v=cgBVHj9DXXY",
+      "view_count": 41538,
+      "ingested": true
+    },
+    {
+      "id": "WO4tOqrG1qs",
+      "title": "Did Pinecone Just KILL OpenAI’s Assistant API? | Pinecone’s New Assistant API",
+      "date": null,
+      "duration": 456,
+      "duration_string": "7:36",
+      "url": "https://www.youtube.com/watch?v=WO4tOqrG1qs",
+      "view_count": 5814,
+      "ingested": false
+    },
+    {
+      "id": "Ixmoa8dUwrc",
+      "title": "Tips & Tricks for Getting Started with Bland AI",
+      "date": null,
+      "duration": 550,
+      "duration_string": "9:10",
+      "url": "https://www.youtube.com/watch?v=Ixmoa8dUwrc",
+      "view_count": 3111,
+      "ingested": false
+    },
+    {
+      "id": "TSErlTz_kBU",
+      "title": "How to use Pathway Labels in Bland AI",
+      "date": null,
+      "duration": 1152,
+      "duration_string": "19:12",
+      "url": "https://www.youtube.com/watch?v=TSErlTz_kBU",
+      "view_count": 1669,
+      "ingested": false
+    },
+    {
+      "id": "u3le37QgCwU",
+      "title": "How to Use Global Prompts vs Global Nodes using Bland AI",
+      "date": null,
+      "duration": 1323,
+      "duration_string": "22:03",
+      "url": "https://www.youtube.com/watch?v=u3le37QgCwU",
+      "view_count": 1629,
+      "ingested": false
+    },
+    {
+      "id": "wlBHWCn6NwA",
+      "title": "How to Use Conditions in Bland AI",
+      "date": null,
+      "duration": 1929,
+      "duration_string": "32:09",
+      "url": "https://www.youtube.com/watch?v=wlBHWCn6NwA",
+      "view_count": 2744,
+      "ingested": false
+    },
+    {
+      "id": "86WZsA0_614",
+      "title": "300 hours of AI consulting in 23 minutes",
+      "date": null,
+      "duration": 1378,
+      "duration_string": "22:58",
+      "url": "https://www.youtube.com/watch?v=86WZsA0_614",
+      "view_count": 22847,
+      "ingested": false
+    },
+    {
+      "id": "aLTiWnZaSZY",
+      "title": "Emmanuel Maggiori: AI Hype vs. Reality, Misconceptions, and the Future of AI | EP.1",
+      "date": null,
+      "duration": 3958,
+      "duration_string": "1:05:58",
+      "url": "https://www.youtube.com/watch?v=aLTiWnZaSZY",
+      "view_count": 10078,
+      "ingested": false
+    },
+    {
+      "id": "IU2HcQLBGsk",
+      "title": "How to Use OpenAI's Assistants API v2 (step-by-step + easter egg)",
+      "date": null,
+      "duration": 1942,
+      "duration_string": "32:22",
+      "url": "https://www.youtube.com/watch?v=IU2HcQLBGsk",
+      "view_count": 11411,
+      "ingested": false
+    },
+    {
+      "id": "ud07NLo48tw",
+      "title": "Unlock Unlimited Memory In Custom GPTs (using Pinecone)",
+      "date": null,
+      "duration": 667,
+      "duration_string": "11:07",
+      "url": "https://www.youtube.com/watch?v=ud07NLo48tw",
+      "view_count": 4750,
+      "ingested": false
+    },
+    {
+      "id": "xrShWRFXEdM",
+      "title": "How To Add Claude in ChatGPT",
+      "date": null,
+      "duration": 408,
+      "duration_string": "6:48",
+      "url": "https://www.youtube.com/watch?v=xrShWRFXEdM",
+      "view_count": 2634,
+      "ingested": false
+    },
+    {
+      "id": "MZHi-DU44cU",
+      "title": "How to Write Longer Prompts in Custom GPTs",
+      "date": null,
+      "duration": 688,
+      "duration_string": "11:28",
+      "url": "https://www.youtube.com/watch?v=MZHi-DU44cU",
+      "view_count": 3689,
+      "ingested": false
+    },
+    {
+      "id": "hKCW-fhgBYE",
+      "title": "Create Your First Fiverr Gig in 10 Minutes! (using AI)",
+      "date": null,
+      "duration": 613,
+      "duration_string": "10:13",
+      "url": "https://www.youtube.com/watch?v=hKCW-fhgBYE",
+      "view_count": 8474,
+      "ingested": false
+    },
+    {
+      "id": "qbYv7FqxRYs",
+      "title": "How To Use Bland AI Conversational Pathways",
+      "date": null,
+      "duration": 3170,
+      "duration_string": "52:50",
+      "url": "https://www.youtube.com/watch?v=qbYv7FqxRYs",
+      "view_count": 38245,
+      "ingested": false
+    },
+    {
+      "id": "ypwo3uLKqo8",
+      "title": "The AGI Hype Debunked - 3 Reasons Why It's a Scam",
+      "date": null,
+      "duration": 454,
+      "duration_string": "7:34",
+      "url": "https://www.youtube.com/watch?v=ypwo3uLKqo8",
+      "view_count": 13301,
+      "ingested": false
+    },
+    {
+      "id": "y6PQ0J4Bhfk",
+      "title": "How I Became a Top-Rated AI Seller on Fiverr in 12 Months",
+      "date": null,
+      "duration": 698,
+      "duration_string": "11:38",
+      "url": "https://www.youtube.com/watch?v=y6PQ0J4Bhfk",
+      "view_count": 3261,
+      "ingested": false
+    },
+    {
+      "id": "LMzfDHJswX4",
+      "title": "Everything You Need to Know About AI Calling in 2024",
+      "date": null,
+      "duration": 1071,
+      "duration_string": "17:51",
+      "url": "https://www.youtube.com/watch?v=LMzfDHJswX4",
+      "view_count": 3513,
+      "ingested": false
+    },
+    {
+      "id": "6HUqwYb_MzU",
+      "title": "The Core n8n Nodes You Need To Know",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=6HUqwYb_MzU",
+      "view_count": 1900,
+      "ingested": false
+    },
+    {
+      "id": "HDwSSgdduzU",
+      "title": "You Might Have an AI Learning Addiction",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=HDwSSgdduzU",
+      "view_count": 2200,
+      "ingested": false
+    },
+    {
+      "id": "jRiiSXIVEZQ",
+      "title": "How To Reverse Engineer The Perfect Prompt",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=jRiiSXIVEZQ",
+      "view_count": 3100,
+      "ingested": false
+    },
+    {
+      "id": "3OZWk9wVpXs",
+      "title": "I Built an App From a Screen Recording With Google Gemini",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=3OZWk9wVpXs",
+      "view_count": 2100,
+      "ingested": false
+    },
+    {
+      "id": "vXMjUsyitCQ",
+      "title": "n8n's Built-In Databases",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=vXMjUsyitCQ",
+      "view_count": 2800,
+      "ingested": false
+    },
+    {
+      "id": "kCSevaM0CTU",
+      "title": "Create Your Own Skills With Claude Code",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=kCSevaM0CTU",
+      "view_count": 2800,
+      "ingested": false
+    },
+    {
+      "id": "7DwUhKIfwAE",
+      "title": "The Biggest Mistakes People Make Learning AI",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=7DwUhKIfwAE",
+      "view_count": 1500,
+      "ingested": false
+    },
+    {
+      "id": "r4UPive0wbE",
+      "title": "Create Unlimited Claude Skills With One System",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=r4UPive0wbE",
+      "view_count": 3100,
+      "ingested": false
+    },
+    {
+      "id": "k9Umd96uOMM",
+      "title": "I Tried Claude’s New Skills Feature",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=k9Umd96uOMM",
+      "view_count": 2400,
+      "ingested": false
+    },
+    {
+      "id": "8yyNk1gGXTY",
+      "title": "I Built This Workflow Inside ChatGPT Atlas",
+      "date": null,
+      "duration": null,
+      "duration_string": null,
+      "url": "https://www.youtube.com/watch?v=8yyNk1gGXTY",
+      "view_count": 1500,
+      "ingested": false
+    }
+  ]
+}

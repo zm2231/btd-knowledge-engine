@@ -1,40 +1,65 @@
 # Wiki Index
 
-*Auto-generated. 27 pages.*
+*Auto-generated. 55 pages.*
 
-## .
+## topics
 
-- [index](index.md)
-- [log](log.md)
+- [ai tooling for builders](topics/ai-tooling-for-builders.md)
+- [btd builder arc](topics/btd-builder-arc.md)
+- [how ai actually works](topics/how-ai-actually-works.md)
 
 ## concepts
 
 - [accountability pattern](concepts/accountability-pattern.md)
+- [ai agents](concepts/ai-agents.md)
+- [ai for non-technical](concepts/ai-for-non-technical.md)
 - [atomic habits](concepts/atomic-habits.md)
+- [attention mechanism](concepts/attention-mechanism.md)
+- [backpropagation](concepts/backpropagation.md)
 - [borrowed judgment](concepts/borrowed-judgment.md)
+- [build in public](concepts/build-in-public.md)
 - [building from scratch](concepts/building-from-scratch.md)
+- [claude code](concepts/claude-code.md)
+- [context engineering](concepts/context-engineering.md)
 - [deep work](concepts/deep-work.md)
+- [defaults](concepts/defaults.md)
+- [digital minimalism](concepts/digital-minimalism.md)
 - [dopamine and motivation](concepts/dopamine-and-motivation.md)
 - [empathy in leadership](concepts/empathy-in-leadership.md)
 - [evidence based learning](concepts/evidence-based-learning.md)
+- [focus protocols](concepts/focus-protocols.md)
+- [great work](concepts/great-work.md)
+- [habit loop](concepts/habit-loop.md)
 - [how llms work](concepts/how-llms-work.md)
 - [infinite game](concepts/infinite-game.md)
 - [llm knowledge bases](concepts/llm-knowledge-bases.md)
+- [llm limitations](concepts/llm-limitations.md)
+- [mcp servers](concepts/mcp-servers.md)
 - [productivity systems](concepts/productivity-systems.md)
+- [prompt design](concepts/prompt-design.md)
+- [second brain](concepts/second-brain.md)
+- [skills as workflows](concepts/skills-as-workflows.md)
+- [startup ideas](concepts/startup-ideas.md)
+- [taste](concepts/taste.md)
 - [tokenization](concepts/tokenization.md)
+- [vibe coding](concepts/vibe-coding.md)
 
 ## creators
 
 - [3blue1brown](creators/3blue1brown.md)
+- [alex finn](creators/alex-finn.md)
 - [ali abdaal](creators/ali-abdaal.md)
 - [andrej karpathy](creators/andrej-karpathy.md)
 - [andrew huberman](creators/andrew-huberman.md)
 - [cal newport](creators/cal-newport.md)
 - [ethan mollick](creators/ethan-mollick.md)
 - [james clear](creators/james-clear.md)
+- [kyle balmer](creators/kyle-balmer.md)
 - [lenny rachitsky](creators/lenny-rachitsky.md)
 - [lex fridman](creators/lex-fridman.md)
+- [mark kashef](creators/mark-kashef.md)
 - [nate jones](creators/nate-jones.md)
 - [paul graham](creators/paul-graham.md)
+- [sabrina ramonov](creators/sabrina-ramonov.md)
 - [simon sinek](creators/simon-sinek.md)
-
+- [simon willison](creators/simon-willison.md)

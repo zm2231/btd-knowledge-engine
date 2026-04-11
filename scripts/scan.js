@@ -163,7 +163,7 @@ function scanTwitter(creator) {
 
       return {
         id: t.id,
-        text: (t.full_text || t.fullText || t.text || '').substring(0, 280),
+        text: (t.full_text || t.fullText || t.text || ''),
         date: t.created_at || t.createdAt || null,
         url: `https://x.com/${tw.handle}/status/${t.id}`,
         retweet_count: retweetCount,

@@ -24,8 +24,8 @@
       "notes": "Deep builder judgment. Extract decision patterns, not just content.",
       "added": "2026-04-10",
       "status": "active",
-      "catalog_count": 18,
-      "last_scanned": "2026-04-10T20:45:05.938Z"
+      "catalog_count": 50,
+      "last_scanned": "2026-04-10T23:22:42.752Z"
     },
     {
       "slug": "ethan-mollick",
@@ -404,6 +404,168 @@
       "status": "active",
       "catalog_count": 6,
       "last_scanned": "2026-04-10T22:18:48.816Z"
+    },
+    {
+      "slug": "beware-the-defaults",
+      "name": "Beware The Defaults",
+      "platforms": {
+        "substack": {
+          "url": "https://bewarethedefault.substack.com/",
+          "type": "substack"
+        }
+      },
+      "topics": [
+        "vibe-coding",
+        "ai-workflows",
+        "building",
+        "community"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 8,
+      "last_scanned": "2026-04-10T22:24:46.227Z"
+    },
+    {
+      "slug": "simon-willison",
+      "name": "Simon Willison",
+      "platforms": {
+        "substack": {
+          "url": "https://simonwillison.net",
+          "type": "substack",
+          "feed_url": "https://simonwillison.net/atom/everything/"
+        }
+      },
+      "topics": [
+        "llm",
+        "claude",
+        "prompting",
+        "ai-tools",
+        "practical"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 30,
+      "last_scanned": "2026-04-10T22:43:41.863Z"
+    },
+    {
+      "slug": "anthropic-cookbook",
+      "name": "anthropics/anthropic-cookbook",
+      "platforms": {
+        "repo": {
+          "path": "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/anthropics--anthropic-cookbook",
+          "url": "https://github.com/anthropics/anthropic-cookbook",
+          "file_types": [
+            ".py",
+            ".js",
+            ".ts",
+            ".md",
+            ".json",
+            ".yaml",
+            ".yml",
+            ".go",
+            ".rs",
+            ".rb"
+          ]
+        }
+      },
+      "topics": [
+        "code",
+        "repository"
+      ],
+      "priority": "medium",
+      "notes": "Code repository indexed directly into the shared LEANN corpus.",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 201,
+      "last_scanned": "2026-04-10T22:36:20.674Z"
+    },
+    {
+      "slug": "mark-kashef",
+      "name": "Mark Kashef",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@Mark_Kashef"
+        }
+      },
+      "topics": [
+        "ai",
+        "building",
+        "claude",
+        "workflows"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 199,
+      "last_scanned": "2026-04-10T22:38:50.264Z"
+    },
+    {
+      "slug": "sabrina-ramonov",
+      "name": "Sabrina Ramonov",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@sabrina_ramonov"
+        }
+      },
+      "topics": [
+        "ai-automation",
+        "claude",
+        "prompting",
+        "workflows"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 1830,
+      "last_scanned": "2026-04-10T22:41:17.791Z"
+    },
+    {
+      "slug": "kyle-balmer",
+      "name": "Kyle Balmer",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@iamkylebalmer"
+        }
+      },
+      "topics": [
+        "claude",
+        "claude-code",
+        "ai-workflows",
+        "building"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 3262,
+      "last_scanned": "2026-04-10T22:42:29.063Z"
+    },
+    {
+      "slug": "alex-finn",
+      "name": "Alex Finn",
+      "platforms": {
+        "youtube": {
+          "channel_url": "https://www.youtube.com/@AlexFinnOfficial"
+        }
+      },
+      "topics": [
+        "ai",
+        "building",
+        "productivity",
+        "claude"
+      ],
+      "priority": "medium",
+      "notes": "",
+      "added": "2026-04-10",
+      "status": "active",
+      "catalog_count": 229,
+      "last_scanned": "2026-04-10T22:42:31.648Z"
     }
   ]
 }

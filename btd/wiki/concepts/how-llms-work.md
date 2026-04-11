@@ -36,3 +36,5 @@ The full pipeline from internet text to conversational AI. Karpathy's corpus cov
 ## Related Concepts
 - [[tokenization]] — step 1 of the pipeline
 - [[building-from-scratch]] — Karpathy's approach to teaching this
+- [[attention-mechanism]] — the transformer's core operation
+- [[backpropagation]] — how the model learns from training data
