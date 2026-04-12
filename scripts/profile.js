@@ -2,16 +2,21 @@
 /**
  * Save, load, update, and list user profiles.
  *
- * Usage:
- *   node scripts/profile.js save <user-id> --file <yaml-or-md-file>   # save profile from file
- *   node scripts/profile.js save <user-id> --stdin                     # save profile from stdin (pipe from Claude)
- *   node scripts/profile.js load <user-id>                             # print profile to stdout
- *   node scripts/profile.js list                                       # list all users
- *   node scripts/profile.js summary <user-id>                          # profile + latest experiment status
- *   node scripts/profile.js update <user-id> --field "key" --value "val" # update a single field
- *   node scripts/profile.js history <user-id>                          # show profile change log
+ * Template model (default — single user per clone):
+ *   node scripts/profile.js save --file <yaml-or-md-file>   # save to local/profile.md
+ *   node scripts/profile.js save --stdin                     # save from stdin
+ *   node scripts/profile.js load                             # print profile
+ *   node scripts/profile.js list                             # show profile status
+ *   node scripts/profile.js summary                          # profile + experiments
+ *   node scripts/profile.js update --field "key" --value "v" # update a field
+ *   node scripts/profile.js history                          # change log
  *
- * All commands accept --instance <name> (default: btd)
+ * Operator mode (legacy multi-user in btd/users/):
+ *   node scripts/profile.js save <user-id> --file <path> --instance btd
+ *   node scripts/profile.js load <user-id> --instance btd
+ *   node scripts/profile.js list --instance btd
+ *
+ * When no <user-id> is given and no --instance flag, uses local/ directory.
  */
 
 const fs = require('fs');
@@ -20,13 +25,21 @@ const yaml = require('js-yaml');
 
 const args = process.argv.slice(2);
 const action = args[0];
-const userId = args[1];
 const getFlag = (name) => { const i = args.indexOf(`--${name}`); return i >= 0 ? args[i + 1] : null; };
 const hasFlag = (name) => args.includes(`--${name}`);
 
-const INSTANCE = getFlag('instance') || 'btd';
 const ROOT = path.join(__dirname, '..');
+
+// Determine mode: local (template) vs operator (multi-user)
+const explicitInstance = getFlag('instance');
+const positionalArg = args[1] && !args[1].startsWith('--') ? args[1] : null;
+
+// If --instance is given or a user-id is provided, use legacy multi-user mode
+const useLocal = !explicitInstance && !positionalArg;
+const INSTANCE = explicitInstance || 'btd';
+const LOCAL_DIR = path.join(ROOT, 'local');
 const USERS_DIR = path.join(ROOT, INSTANCE, 'users');
+const userId = positionalArg;
 
 if (!action || ['--help', '-h'].includes(action)) {
   console.log(`Usage:
@@ -46,6 +59,7 @@ if (!action || ['--help', '-h'].includes(action)) {
 // --- Helpers ---
 
 function userDir(id) {
+  if (useLocal) return LOCAL_DIR;
   return path.join(USERS_DIR, id);
 }
 
@@ -63,7 +77,18 @@ function ensureUserDirs(id) {
 function loadProfile(id) {
   const p = profilePath(id);
   if (!fs.existsSync(p)) return null;
-  return fs.readFileSync(p, 'utf8');
+  const content = fs.readFileSync(p, 'utf8');
+  // Skip placeholder profiles from init-local
+  if (content.includes('Profile not yet created')) return null;
+  return content;
+}
+
+function resolveUserId() {
+  // In local mode, there's only one user — no ID needed
+  if (useLocal) return '_local';
+  if (userId) return userId;
+  console.error('Need a <user-id> when using --instance mode');
+  process.exit(1);
 }
 
 function parseProfileDocument(content) {
@@ -161,11 +186,11 @@ function appendHistory(id, entry) {
 // --- Actions ---
 
 if (action === 'save') {
-  if (!userId) { console.error('Usage: profile.js save <user-id> --file <path> | --stdin'); process.exit(1); }
-  
-  ensureUserDirs(userId);
-  const p = profilePath(userId);
-  const existed = fs.existsSync(p);
+  const uid = resolveUserId();
+
+  ensureUserDirs(uid);
+  const p = profilePath(uid);
+  const existed = fs.existsSync(p) && !fs.readFileSync(p, 'utf8').includes('Profile not yet created');
   
   if (hasFlag('stdin')) {
     // Read from stdin
@@ -174,7 +199,7 @@ if (action === 'save') {
     process.stdin.on('data', chunk => data += chunk);
     process.stdin.on('end', () => {
       fs.writeFileSync(p, data);
-      appendHistory(userId, { event: existed ? 'profile_updated' : 'profile_created', source: 'stdin' });
+      appendHistory(uid, { event: existed ? 'profile_updated' : 'profile_created', source: 'stdin' });
       console.log(`✅ ${existed ? 'Updated' : 'Saved'} profile: ${p}`);
     });
   } else {
@@ -182,75 +207,98 @@ if (action === 'save') {
     if (!file) { console.error('Need --file <path> or --stdin'); process.exit(1); }
     const content = fs.readFileSync(file, 'utf8');
     fs.writeFileSync(p, content);
-    appendHistory(userId, { event: existed ? 'profile_updated' : 'profile_created', source: file });
+    appendHistory(uid, { event: existed ? 'profile_updated' : 'profile_created', source: file });
     console.log(`✅ ${existed ? 'Updated' : 'Saved'} profile: ${p}`);
-    console.log(`   User directory: ${userDir(userId)}/`);
-    console.log(`   Experiments:    ${userDir(userId)}/experiments/`);
-    console.log(`   Journal:        ${userDir(userId)}/journal/`);
+    console.log(`   User directory: ${userDir(uid)}/`);
+    console.log(`   Experiments:    ${userDir(uid)}/experiments/`);
+    console.log(`   Journal:        ${userDir(uid)}/journal/`);
   }
   
 } else if (action === 'load') {
-  if (!userId) { console.error('Usage: profile.js load <user-id>'); process.exit(1); }
-  const profile = loadProfile(userId);
+  const uid = resolveUserId();
+  const profile = loadProfile(uid);
   if (!profile) {
-    console.error(`No profile found for '${userId}' in ${INSTANCE}/users/`);
+    const loc = useLocal ? 'local/' : `${INSTANCE}/users/`;
+    console.error(`No profile found in ${loc}. Run /btd-intake first.`);
     process.exit(1);
   }
   process.stdout.write(profile);
   
 } else if (action === 'list') {
-  if (!fs.existsSync(USERS_DIR)) {
-    console.log(`No users yet in ${INSTANCE}/users/`);
-    process.exit(0);
-  }
-  const users = fs.readdirSync(USERS_DIR).filter(f => {
-    return fs.statSync(path.join(USERS_DIR, f)).isDirectory() && f !== '.gitkeep';
-  });
-  
-  if (users.length === 0) {
-    console.log(`No users yet in ${INSTANCE}/users/`);
-    process.exit(0);
-  }
-  
-  console.log(`\n  ${INSTANCE} — ${users.length} user${users.length === 1 ? '' : 's'}\n`);
-  
-  for (const u of users) {
-    const hasProfile = fs.existsSync(profilePath(u));
-    const experiments = getExperiments(u);
+  if (useLocal) {
+    // Local mode: single user
+    if (!fs.existsSync(LOCAL_DIR)) {
+      console.log('No local workspace yet. Run: node scripts/init-local.js');
+      process.exit(0);
+    }
+    const profile = loadProfile('_local');
+    const experiments = getExperiments('_local');
     const latest = experiments[experiments.length - 1];
-    
-    let status = hasProfile ? '✅ profile' : '⚠️  no profile';
+
+    let status = profile ? '✅ profile' : '⚠️  no profile (run /btd-intake)';
     if (latest) {
       status += ` | experiment ${experiments.length}: ${latest.status || 'unknown'}`;
-    } else {
+    } else if (profile) {
       status += ' | no experiments';
     }
-    
-    console.log(`  ● ${u} — ${status}`);
+
+    console.log(`\n  local — ${status}\n`);
+  } else {
+    // Operator mode: multi-user
+    if (!fs.existsSync(USERS_DIR)) {
+      console.log(`No users yet in ${INSTANCE}/users/`);
+      process.exit(0);
+    }
+    const users = fs.readdirSync(USERS_DIR).filter(f => {
+      return fs.statSync(path.join(USERS_DIR, f)).isDirectory() && f !== '.gitkeep';
+    });
+
+    if (users.length === 0) {
+      console.log(`No users yet in ${INSTANCE}/users/`);
+      process.exit(0);
+    }
+
+    console.log(`\n  ${INSTANCE} — ${users.length} user${users.length === 1 ? '' : 's'}\n`);
+
+    for (const u of users) {
+      const hasProfile = fs.existsSync(profilePath(u));
+      const experiments = getExperiments(u);
+      const latest = experiments[experiments.length - 1];
+
+      let status = hasProfile ? '✅ profile' : '⚠️  no profile';
+      if (latest) {
+        status += ` | experiment ${experiments.length}: ${latest.status || 'unknown'}`;
+      } else {
+        status += ' | no experiments';
+      }
+
+      console.log(`  ● ${u} — ${status}`);
+    }
+    console.log('');
   }
-  console.log('');
   
 } else if (action === 'summary') {
-  if (!userId) { console.error('Usage: profile.js summary <user-id>'); process.exit(1); }
-  
-  const profile = loadProfile(userId);
+  const uid = resolveUserId();
+
+  const profile = loadProfile(uid);
   if (!profile) {
-    console.error(`No profile found for '${userId}'`);
+    console.error(`No profile found. Run /btd-intake first.`);
     process.exit(1);
   }
-  
-  const experiments = getExperiments(userId);
+
+  const experiments = getExperiments(uid);
   const journals = (() => {
-    const dir = path.join(userDir(userId), 'journal');
+    const dir = path.join(userDir(uid), 'journal');
     if (!fs.existsSync(dir)) return [];
     return fs.readdirSync(dir).filter(f => f.endsWith('.md')).sort();
   })();
-  
-  console.log(`\n═══ ${userId} ═══\n`);
-  console.log(`Profile: ${profilePath(userId)}`);
+
+  const label = useLocal ? 'local' : uid;
+  console.log(`\n═══ ${label} ═══\n`);
+  console.log(`Profile: ${profilePath(uid)}`);
   console.log(`Experiments: ${experiments.length}`);
   console.log(`Journal entries: ${journals.length}`);
-  
+
   if (experiments.length > 0) {
     const latest = experiments[experiments.length - 1];
     console.log(`\nLatest experiment: ${latest.file}`);
@@ -259,12 +307,12 @@ if (action === 'save') {
     if (latest.start_date) console.log(`  Started: ${latest.start_date}`);
     if (latest.end_date) console.log(`  Ends: ${latest.end_date}`);
   }
-  
+
   console.log(`\n--- Profile ---\n`);
   console.log(profile);
   
 } else if (action === 'update') {
-  if (!userId) { console.error('Usage: profile.js update <user-id> --field "key" [--value "val" | --append "item" | --append-entry "{...}"]'); process.exit(1); }
+  const uid = resolveUserId();
   const field = getFlag('field');
   const value = getFlag('value');
   const appendValue = getFlag('append');
@@ -276,9 +324,9 @@ if (action === 'save') {
     console.error('Provide exactly one of --value, --append, or --append-entry');
     process.exit(1);
   }
-  
-  const profile = loadProfile(userId);
-  if (!profile) { console.error(`No profile for '${userId}'`); process.exit(1); }
+
+  const profile = loadProfile(uid);
+  if (!profile) { console.error('No profile found. Run /btd-intake first.'); process.exit(1); }
 
   const document = parseProfileDocument(profile);
   const parts = field.split('.').filter(Boolean);
@@ -313,8 +361,8 @@ if (action === 'save') {
     setNestedValue(document.data, parts, parseValue(value));
   }
 
-  fs.writeFileSync(profilePath(userId), serializeProfileDocument(document));
-  appendHistory(userId, {
+  fs.writeFileSync(profilePath(uid), serializeProfileDocument(document));
+  appendHistory(uid, {
     event: 'field_updated',
     field,
     old_value: previousValue,
@@ -328,14 +376,15 @@ if (action === 'save') {
   console.log('   Note: comments may be stripped when rewriting YAML.');
   
 } else if (action === 'history') {
-  if (!userId) { console.error('Usage: profile.js history <user-id>'); process.exit(1); }
-  const histFile = path.join(userDir(userId), 'profile-history.jsonl');
+  const uid = resolveUserId();
+  const histFile = path.join(userDir(uid), 'profile-history.jsonl');
   if (!fs.existsSync(histFile)) {
-    console.log(`No history for '${userId}'`);
+    console.log('No history yet.');
     process.exit(0);
   }
   const lines = fs.readFileSync(histFile, 'utf8').trim().split('\n').filter(Boolean);
-  console.log(`\n  ${userId} — ${lines.length} events\n`);
+  const label = useLocal ? 'local' : uid;
+  console.log(`\n  ${label} — ${lines.length} events\n`);
   for (const line of lines) {
     try {
       const entry = JSON.parse(line);

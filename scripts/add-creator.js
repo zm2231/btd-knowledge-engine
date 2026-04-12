@@ -31,17 +31,20 @@ const podcast = getArg('--podcast');
 const substack = getArg('--substack');
 const topics = (getArg('--topics') || '').split(',').map((topic) => topic.trim()).filter(Boolean);
 const instance = getArg('--instance') || 'btd';
+const isLocal = args.includes('--local');
 const doScan = args.includes('--scan');
 
 if (!slug || !name) {
-  console.error('Usage: node scripts/add-creator.js <slug> "Name" [--youtube <url>] [--twitter <handle>] [--podcast <feed-url>] [--substack <url>] [--topics csv] [--instance name] [--scan]');
+  console.error('Usage: node scripts/add-creator.js <slug> "Name" [--youtube <url>] [--twitter <handle>] [--podcast <feed-url>] [--substack <url>] [--topics csv] [--instance name] [--local] [--scan]');
   process.exit(1);
 }
 
 const ROOT = path.join(__dirname, '..');
-const INSTANCE = path.join(ROOT, instance);
-const REGISTRY = path.join(INSTANCE, 'registry', 'creators.json');
-const CATALOG_DIR = path.join(INSTANCE, 'registry', 'catalogs');
+const { resolvePaths } = require('./scope.js');
+const paths = resolvePaths(ROOT, isLocal ? 'local' : 'shared', instance);
+const INSTANCE = paths.base;
+const REGISTRY = paths.creatorsJson;
+const CATALOG_DIR = paths.catalogDir;
 
 for (const dir of [
   path.dirname(REGISTRY),
@@ -99,7 +102,7 @@ if (topics.length) console.log(`   Topics: ${topics.join(', ')}`);
 
 if (doScan) {
   console.log('\n📡 Scanning published content...');
-  const scanArgs = [path.join(__dirname, 'scan.js'), slug, '--instance', instance];
+  const scanArgs = [path.join(__dirname, 'scan.js'), slug, '--instance', isLocal ? 'local' : instance];
   if (youtube) scanArgs.push('--youtube');
   if (twitter) scanArgs.push('--twitter');
   if (podcast) scanArgs.push('--podcast');
@@ -111,10 +114,11 @@ if (doScan) {
   });
 }
 
+const scopeFlag = isLocal ? '--local' : `--instance ${instance}`;
 console.log('\nNext steps:');
-console.log('  node scripts/status.js                                    # see creators, catalogs, and ingest state');
-console.log(`  node scripts/scan.js ${slug} --instance ${instance}                  # refresh catalog later`);
-if (youtube) console.log(`  node scripts/batch-ingest.js ${slug} --instance ${instance}           # ingest YouTube videos from catalog`);
-if (twitter) console.log(`  node scripts/ingest-twitter.js ${slug} --instance ${instance}         # ingest Twitter catalog`);
-if (substack) console.log(`  node scripts/ingest-substack.js ${slug} --instance ${instance}        # ingest Substack catalog`);
-if (podcast) console.log(`  node scripts/ingest-podcast.js ${slug} --instance ${instance}         # ingest podcast episodes`);
+console.log(`  node scripts/status.js                                    # see creators, catalogs, and ingest state`);
+console.log(`  node scripts/scan.js ${slug} --instance ${isLocal ? 'local' : instance}                  # refresh catalog later`);
+if (youtube) console.log(`  node scripts/batch-ingest.js ${slug} ${scopeFlag}           # ingest YouTube videos from catalog`);
+if (twitter) console.log(`  node scripts/ingest-twitter.js ${slug} ${scopeFlag}         # ingest Twitter catalog`);
+if (substack) console.log(`  node scripts/ingest-substack.js ${slug} ${scopeFlag}        # ingest Substack catalog`);
+if (podcast) console.log(`  node scripts/ingest-podcast.js ${slug} ${scopeFlag}         # ingest podcast episodes`);

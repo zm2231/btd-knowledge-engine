@@ -17,6 +17,7 @@ const path = require('path');
 const { appendEntry, buildEntry, readEntries, relativeFile } = require('./ingest-log.js');
 
 const ROOT = path.join(__dirname, '..');
+const { resolvePaths } = require('./scope.js');
 
 function getArgs() {
   return process.argv.slice(2);
@@ -329,14 +330,16 @@ function downloadArticleMarkdown(articleUrl) {
 
 async function ingestSubstackCreator(creatorSlug, options = {}) {
   const instance = options.instance || 'btd';
+  const isLocal = !!options.isLocal;
   const limit = options.limit || 0;
   const dryRun = !!options.dryRun;
 
-  const instanceDir = path.join(ROOT, instance);
-  const registryFile = path.join(instanceDir, 'registry', 'creators.json');
-  const catalogFile = path.join(instanceDir, 'registry', 'catalogs', `${creatorSlug}-substack.json`);
-  const rawDir = path.join(instanceDir, 'raw', 'articles', creatorSlug);
-  const ingestLog = path.join(instanceDir, 'registry', 'ingest-log.jsonl');
+  const paths = resolvePaths(ROOT, isLocal ? 'local' : 'shared', instance);
+  const instanceDir = paths.base;
+  const registryFile = paths.creatorsJson;
+  const catalogFile = path.join(paths.catalogDir, `${creatorSlug}-substack.json`);
+  const rawDir = path.join(paths.rawDir, 'articles', creatorSlug);
+  const ingestLog = paths.ingestLog;
 
   const registry = JSON.parse(fs.readFileSync(registryFile, 'utf-8'));
   const creator = registry.creators.find(entry => entry.slug === creatorSlug);
@@ -444,16 +447,18 @@ async function runCli() {
   const args = getArgs();
   const creatorSlug = getPositionalCreator(args);
   const instance = getArg(args, '--instance') || 'btd';
+  const isLocal = args.includes('--local');
   const limit = parseInt(getArg(args, '--limit') || '0', 10);
   const dryRun = args.includes('--dry-run');
   const scanMode = args.includes('--scan');
 
   if (!creatorSlug) {
-    console.error('Usage: node scripts/ingest-substack.js <creator-slug> [--scan] [--limit N] [--instance name] [--dry-run]');
+    console.error('Usage: node scripts/ingest-substack.js <creator-slug> [--scan] [--limit N] [--instance name] [--local] [--dry-run]');
     process.exit(1);
   }
 
-  const registryFile = path.join(ROOT, instance, 'registry', 'creators.json');
+  const cliPaths = resolvePaths(ROOT, isLocal ? 'local' : 'shared', instance);
+  const registryFile = cliPaths.creatorsJson;
   const registry = JSON.parse(fs.readFileSync(registryFile, 'utf-8'));
   const creator = registry.creators.find(entry => entry.slug === creatorSlug);
   if (!creator) {
@@ -468,7 +473,7 @@ async function runCli() {
       process.exit(1);
     }
 
-    const catalogDir = path.join(ROOT, instance, 'registry', 'catalogs');
+    const catalogDir = cliPaths.catalogDir;
     const catalogFile = path.join(catalogDir, `${creatorSlug}-substack.json`);
     fs.mkdirSync(catalogDir, { recursive: true });
 
@@ -499,7 +504,7 @@ async function runCli() {
     return;
   }
 
-  await ingestSubstackCreator(creatorSlug, { instance, limit, dryRun });
+  await ingestSubstackCreator(creatorSlug, { instance, isLocal, limit, dryRun });
 }
 
 module.exports = {

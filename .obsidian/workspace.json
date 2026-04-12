@@ -85,20 +85,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "graph",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "node_modules/podcast-dl/lib/rss-parser/README.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
             "id": "backlinks",
             "type": "leaf",
             "state": {
@@ -114,49 +100,6 @@
               },
               "icon": "links-coming-in",
               "title": "Backlinks"
-            }
-          },
-          {
-            "id": "6e287a433359f5e2",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "node_modules/podcast-dl/lib/rss-parser/README.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from README"
-            }
-          },
-          {
-            "id": "9332e506d04536c2",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "2ad497114c342029",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
             }
           },
           {
@@ -180,54 +123,6 @@
     "width": 407.5,
     "collapsed": true
   },
-  "left-ribbon": {
-    "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
-    }
-  },
   "active": "07142c10cf71dacd",
-  "lastOpenFiles": [
-    "btd/users/test-nontechnical/profile-history.jsonl",
-    "btd/users/test-nontechnical/profile.md",
-    "btd/users/test-nontechnical/journal",
-    "btd/users/test-nontechnical/experiments",
-    "btd/users/test-nontechnical",
-    "btd/users/test-technical/profile.md",
-    "btd/users/test-technical/profile-history.jsonl",
-    "btd/users/test-technical/journal",
-    "btd/users/test-technical/experiments",
-    "btd/users/test-technical",
-    "node_modules/podcast-dl/lib/rss-parser/README.md",
-    "btd/wiki/concepts/accountability-pattern.md",
-    "btd/wiki/creators/beware-the-defaults.md",
-    "btd/wiki/sources/nate-jones/undated-you-don-t-need-saas-the-0-10-system-that-replaced-my-ai-workflow-45-min-no-code-.md",
-    "btd/wiki/sources/nate-jones/undated-why-your-best-employees-quit-using-ai-after-3-weeks-and-the-6-skills-that-would-.md",
-    "btd/wiki/sources/nate-jones/undated-why-the-biggest-ai-career-opportunity-just-appeared-and-almost-nobody-sees-it.md",
-    "btd/wiki/sources/nate-jones/undated-why-2026-is-the-year-to-build-a-second-brain-and-why-you-need-one.md",
-    "btd/wiki/sources/nate-jones/undated-the-job-market-split-nobody-s-talking-about-it-s-already-started-here-s-what-to-.md",
-    "btd/wiki/sources/nate-jones/undated-the-dirty-secret-behind-amazon-s-30-000-cuts-nvidia.md",
-    "btd/wiki/sources/nate-jones/undated-the-ai-job-market-split-in-two-one-side-pays-400k-and-can-t-hire-fast-enough.md",
-    "btd/wiki/sources/nate-jones/undated-the-5-levels-of-ai-coding-why-most-of-you-won-t-make-it-past-level-2.md",
-    "btd/wiki/sources/nate-jones/undated-the-285b-sell-off-was-just-the-beginning-the-infrastructure-story-is-bigger.md",
-    "btd/wiki/sources/nate-jones/undated-the-285-billion-crash-wall-street-won-t-explain-honestly-here-s-what-everyone-mi.md",
-    "btd/wiki/sources/nate-jones/undated-the-125-billion-secret-amazon-told-wall-street-one-thing-and-employees-another-h.md",
-    "btd/wiki/sources/nate-jones/undated-task-queues-are-replacing-chat-interfaces-here-s-why-plus-a-claude-cowork-demo.md",
-    "btd/wiki/sources/nate-jones/undated-stop-competing-with-400-applicants-build-this-in-one-weekend-yes-there-s-a-no-co.md",
-    "btd/wiki/sources/nate-jones/undated-prompt-engineering-is-dead-context-engineering-is-dying-what-comes-next-changes-.md",
-    "btd/wiki/sources/nate-jones/undated-openclaw-160-000-developers-are-building-something-openai-google-can-t-stop-wher.md",
-    "btd/wiki/sources/nate-jones/undated-openai-is-slowing-hiring-anthropic-s-engineers-stopped-writing-code-here-s-why-y.md",
-    "btd/wiki/sources/sabrina-ramonov/undated-this-workflow-auto-posts-in-7-different-socials-free-template.md",
-    "btd/wiki/sources/sabrina-ramonov/undated-the-most-brutal-truth-in-psychology-according-to-chatgpt-all-of-these-hit-hard-a.md",
-    "btd/wiki/sources/sabrina-ramonov/undated-the-8-ai-skills-that-will-separate-winners-from-losers-in-2026.md",
-    "btd/wiki/sources/sabrina-ramonov/undated-openclaw-ai-agent-explained-for-beginners-including-security-issues-so-you-can-s.md",
-    "btd/wiki/sources/simon-sinek/undated-the-truth-about-being-the-stupidest-in-the-room-simon-sinek.md.tmp.70333.1775866129751",
-    "btd/wiki/sources/nate-jones",
-    "btd/wiki/sources/beware-the-defaults"
-  ]
+  "lastOpenFiles": []
 }

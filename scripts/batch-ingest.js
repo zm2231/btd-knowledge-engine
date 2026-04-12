@@ -22,6 +22,7 @@ function getArg(flag) {
 }
 
 const instance = getArg('--instance') || 'btd';
+const isLocal = args.includes('--local');
 const limit = parseInt(getArg('--limit') || '0', 10);
 const dryRun = args.includes('--dry-run');
 const topFirst = args.includes('--top');
@@ -29,16 +30,18 @@ const doAll = args.includes('--all');
 const targetSlug = args.find((arg) => !arg.startsWith('--') && !['--instance', '--limit'].includes(args[args.indexOf(arg) - 1]));
 
 if (!targetSlug && !doAll) {
-  console.error('Usage: node scripts/batch-ingest.js <creator-slug> [--limit N] [--top] [--dry-run] [--instance name]');
+  console.error('Usage: node scripts/batch-ingest.js <creator-slug> [--limit N] [--top] [--dry-run] [--instance name] [--local]');
   console.error('       node scripts/batch-ingest.js --all [--limit N]');
   process.exit(1);
 }
 
 const ROOT = path.join(__dirname, '..');
-const INST = path.join(ROOT, instance);
-const CATALOG_DIR = path.join(INST, 'registry', 'catalogs');
-const RAW_DIR = path.join(INST, 'raw', 'youtube');
-const INGEST_LOG = path.join(INST, 'registry', 'ingest-log.jsonl');
+const { resolvePaths } = require('./scope.js');
+const paths = resolvePaths(ROOT, isLocal ? 'local' : 'shared', instance);
+const INST = paths.base;
+const CATALOG_DIR = paths.catalogDir;
+const RAW_DIR = path.join(paths.rawDir, 'youtube');
+const INGEST_LOG = paths.ingestLog;
 
 function getExistingVideoIds() {
   return new Set(

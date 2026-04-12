@@ -18,27 +18,33 @@ You are the content operations agent for the BTD Knowledge Engine. You handle ev
 - After any ingestion, to compile wiki pages and rebuild the index
 - When invoked as a subagent from another Claude Code instance
 
+## Shared vs Personal Content
+
+- `--instance btd` = operate on the shared curated corpus (operator mode)
+- `--local` = operate on a user's personal corpus (personal sources, gitignored)
+
+Default for this skill is `--instance btd` (operator/shared). Use `--local` when a user is adding their own personal sources.
+
 ## The Full Pipeline
 
 ### 1. Register Creator
 ```bash
-btd add <slug> "Display Name" --youtube <channel-id> [--twitter <handle>] [--podcast <feed-url>] [--substack <publication>]
+node scripts/add-creator.js <slug> "Display Name" --youtube <channel-id> [--twitter <handle>] [--podcast <feed-url>] [--substack <publication>] --instance btd
 ```
 
 ### 2. Scan Catalog
 ```bash
-btd scan <slug>          # one creator
-btd scan --all           # all creators
+node scripts/add-creator.js <slug> "Display Name" --youtube <channel-id> --scan --instance btd   # scan happens at registration with --scan
 ```
 Scanning catalogs everything published. It does NOT download content. Scanning is safe to run on cron.
 
 ### 3. Selective Ingestion
 ```bash
-btd ingest <slug> --limit 10 --top    # YouTube: top 10 by views
-btd ingest:twitter <slug>              # Twitter: all tweets
-btd ingest:podcast <slug> --limit 5    # Podcast: 5 episodes
-btd ingest:substack <slug>             # Substack: all articles
-btd ingest:repo <github-url>           # Repo: clone + index
+node scripts/batch-ingest.js <slug> --limit 10 --top --instance btd       # YouTube: top 10 by views
+node scripts/ingest-twitter.js <slug> --instance btd                       # Twitter: all tweets
+node scripts/ingest-podcast.js <slug> --feed <url> --limit 5 --instance btd  # Podcast: 5 episodes
+node scripts/ingest-substack.js <slug> --limit 10 --instance btd          # Substack: all articles
+node scripts/ingest-repo.js <github-url> --instance btd                   # Repo: clone + index
 ```
 Ingestion is a human decision. Don't bulk-ingest without being asked.
 
@@ -47,13 +53,13 @@ After ingesting, use the `/wiki-compiler` skill to compile new sources into wiki
 
 ### 5. Rebuild Index
 ```bash
-btd index
+node scripts/index.js --instance btd
 ```
 Rebuilds the LEANN index across all raw content and repos.
 
 ### 6. Link to User Profile
 When content is ingested for a specific user's learning track:
-1. Check their constraint profile: `btd profile show <user>`
+1. Check their constraint profile: `node scripts/profile.js load`
 2. Note which wiki concepts map to their goals, level, and blind spots
 3. After wiki compilation, verify the "When to Surface" sections reference the right profile fields
 4. If the user has an active experiment, check if new content is relevant to it
@@ -76,9 +82,9 @@ When invoked from another Claude Code instance (e.g., pi-ult):
 
 ## Status Check
 ```bash
-btd status               # full dashboard
-btd wiki status           # wiki compilation state
-btd wiki lint             # find gaps, broken links, uncompiled sources
+node scripts/status.js --instance btd                   # full dashboard
+node scripts/compile-wiki.js status --instance btd      # wiki compilation state
+node scripts/compile-wiki.js lint --instance btd        # find gaps, broken links, uncompiled sources
 ```
 
 ## Rules

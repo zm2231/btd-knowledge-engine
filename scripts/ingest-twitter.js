@@ -20,20 +20,23 @@ function getArg(flag) {
 
 const ROOT = path.join(__dirname, '..');
 const instance = getArg('--instance') || 'btd';
+const isLocal = args.includes('--local');
 const creator = args.find((arg, index) => !arg.startsWith('--') && args[index - 1] !== '--instance' && args[index - 1] !== '--limit');
 const limit = parseInt(getArg('--limit') || '0', 10);
 const dryRun = args.includes('--dry-run');
 
 if (!creator) {
-  console.error('Usage: node scripts/ingest-twitter.js <creator-slug> [--limit N] [--instance name] [--dry-run]');
+  console.error('Usage: node scripts/ingest-twitter.js <creator-slug> [--limit N] [--instance name] [--local] [--dry-run]');
   console.error('  --instance defaults to "btd" (our instance). Use "my-instance" for yours.');
   process.exit(1);
 }
 
-const INSTANCE_DIR = path.join(ROOT, instance);
-const CATALOG_FILE = path.join(INSTANCE_DIR, 'registry', 'catalogs', `${creator}-twitter.json`);
-const RAW_DIR = path.join(INSTANCE_DIR, 'raw', 'twitter', creator);
-const INGEST_LOG = path.join(INSTANCE_DIR, 'registry', 'ingest-log.jsonl');
+const { resolvePaths } = require('./scope.js');
+const paths = resolvePaths(ROOT, isLocal ? 'local' : 'shared', instance);
+const INSTANCE_DIR = paths.base;
+const CATALOG_FILE = path.join(paths.catalogDir, `${creator}-twitter.json`);
+const RAW_DIR = path.join(paths.rawDir, 'twitter', creator);
+const INGEST_LOG = paths.ingestLog;
 
 function slugify(text) {
   return String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').substring(0, 80) || 'tweet';

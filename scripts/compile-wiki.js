@@ -29,11 +29,14 @@ const getFlag = (name) => { const i = args.indexOf(`--${name}`); return i >= 0 ?
 const hasFlag = (name) => args.includes(`--${name}`);
 
 const INSTANCE = getFlag('instance') || 'btd';
+const isLocal = hasFlag('local');
 const ROOT = path.join(__dirname, '..');
-const INST = path.join(ROOT, INSTANCE);
-const WIKI_DIR = path.join(INST, 'wiki');
-const RAW_DIR = path.join(INST, 'raw');
-const INGEST_LOG = path.join(INST, 'registry', 'ingest-log.jsonl');
+const { resolvePaths } = require('./scope.js');
+const paths = resolvePaths(ROOT, isLocal ? 'local' : 'shared', INSTANCE);
+const INST = paths.base;
+const WIKI_DIR = paths.wikiDir;
+const RAW_DIR = paths.rawDir;
+const INGEST_LOG = paths.ingestLog;
 
 // Ensure wiki dirs
 for (const sub of ['concepts', 'topics', 'creators', 'sources']) {

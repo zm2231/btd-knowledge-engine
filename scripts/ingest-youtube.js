@@ -22,9 +22,12 @@ function getArg(flag) {
 
 const ROOT = path.join(__dirname, '..');
 const instance = getArg('--instance') || 'btd';
-const INSTANCE_DIR = path.join(ROOT, instance);
-const RAW_DIR = path.join(INSTANCE_DIR, 'raw', 'youtube');
-const INGEST_LOG = path.join(INSTANCE_DIR, 'registry', 'ingest-log.jsonl');
+const isLocal = args.includes('--local');
+const { resolvePaths } = require('./scope.js');
+const paths = resolvePaths(ROOT, isLocal ? 'local' : 'shared', instance);
+const INSTANCE_DIR = paths.base;
+const RAW_DIR = path.join(paths.rawDir, 'youtube');
+const INGEST_LOG = paths.ingestLog;
 
 const url = args.find((arg) => !arg.startsWith('--'));
 const creator = getArg('--creator') || 'unknown';

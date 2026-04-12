@@ -37,8 +37,8 @@ Session 1 produces a constraint profile + first experiment. The user goes and do
 ### Minimum user state (v1)
 
 ```
-users/{user-id}/
-  profile.md          ← constraint profile from intake (updated over time)
+local/
+  profile.yaml        ← constraint profile from intake (updated over time)
   experiments/
     001-{slug}.md     ← experiment card + outcome
     002-{slug}.md

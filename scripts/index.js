@@ -22,16 +22,18 @@ const { normalizeEntry, readEntries, writeEntries } = require('./ingest-log.js')
 
 const args = process.argv.slice(2);
 const instance = (() => { const i = args.indexOf('--instance'); return i !== -1 ? args[i+1] : 'btd'; })();
+const isLocal = args.includes('--local');
 const force = args.includes('--force');
 
-
 const ROOT = path.join(__dirname, '..');
-const INST = path.join(ROOT, instance);
-const WIKI_DIR = path.join(INST, 'wiki');
-const RAW_DIR = path.join(INST, 'raw');
-const REGISTRY = path.join(INST, 'registry', 'creators.json');
-const INDEX_NAME = `btd-${instance}`;
-const INGEST_LOG = path.join(INST, 'registry', 'ingest-log.jsonl');
+const { resolvePaths } = require('./scope.js');
+const paths = resolvePaths(ROOT, isLocal ? 'local' : 'shared', instance);
+const INST = paths.base;
+const WIKI_DIR = paths.wikiDir;
+const RAW_DIR = paths.rawDir;
+const REGISTRY = paths.creatorsJson;
+const INDEX_NAME = paths.leannIndex;
+const INGEST_LOG = paths.ingestLog;
 
 // Default: index wiki/ + raw/ together.
 // Wiki pages are clean summaries with concept links — they act as high-quality

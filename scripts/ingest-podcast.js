@@ -29,11 +29,14 @@ const getFlag = (name) => { const i = args.indexOf(`--${name}`); return i >= 0 ?
 const hasFlag = (name) => args.includes(`--${name}`);
 
 const INSTANCE = getFlag('instance') || 'btd';
+const isLocal = hasFlag('local');
 const ROOT = path.join(__dirname, '..');
-const INST = path.join(ROOT, INSTANCE);
-const RAW_DIR = path.join(INST, 'raw', 'podcasts');
-const REGISTRY = path.join(INST, 'registry', 'creators.json');
-const INGEST_LOG = path.join(INST, 'registry', 'ingest-log.jsonl');
+const { resolvePaths } = require('./scope.js');
+const paths = resolvePaths(ROOT, isLocal ? 'local' : 'shared', INSTANCE);
+const INST = paths.base;
+const RAW_DIR = path.join(paths.rawDir, 'podcasts');
+const REGISTRY = paths.creatorsJson;
+const INGEST_LOG = paths.ingestLog;
 const TEMP_DIR = path.join(ROOT, '.tmp', 'podcast-dl');
 
 const MAX_CHUNK_MB = parseInt(process.env.WHISPER_MAX_MB || '24');

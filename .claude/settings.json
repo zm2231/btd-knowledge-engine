@@ -7,12 +7,13 @@
       "Bash(leann search*)",
       "Bash(git *)",
       "Read(btd/**)",
+      "Read(local/**)",
       "Read(skills/**)",
       "Read(template/**)",
       "Read(docs/**)",
       "Write(btd/wiki/**)",
-      "Write(btd/users/**)",
-      "Write(btd/raw/**)"
+      "Write(btd/raw/**)",
+      "Write(local/**)"
     ]
   }
 }

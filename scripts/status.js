@@ -94,4 +94,63 @@ if (pendingIndex.length) {
   pendingIndex.forEach((entry) => console.log(`     ${entry.file}`));
 }
 
-console.log('\n═══════════════════════════════════════════\n');
+console.log('\n═══════════════════════════════════════════');
+
+// --- Local corpus section ---
+const LOCAL_DIR = path.join(ROOT, 'local');
+const LOCAL_REGISTRY = path.join(LOCAL_DIR, 'registry', 'creators.json');
+const LOCAL_INGEST_LOG = path.join(LOCAL_DIR, 'registry', 'ingest-log.jsonl');
+const LOCAL_PROFILE = path.join(LOCAL_DIR, 'profile.md');
+
+if (fs.existsSync(LOCAL_DIR)) {
+  console.log('');
+  console.log('───────────────────────────────────────────');
+  console.log('  Local Corpus');
+  console.log('───────────────────────────────────────────\n');
+
+  // Local creators
+  const localReg = fs.existsSync(LOCAL_REGISTRY) ? JSON.parse(fs.readFileSync(LOCAL_REGISTRY, 'utf8')) : { creators: [] };
+  const localActive = localReg.creators.filter(c => c.status === 'active');
+  console.log(`  Creators: ${localActive.length}${localActive.length ? ' (' + localActive.map(c => c.slug).join(', ') + ')' : ''}`);
+
+  // Local ingest count
+  const localEntries = fs.existsSync(LOCAL_INGEST_LOG) ? readEntries(LOCAL_INGEST_LOG) : [];
+  console.log(`  Ingested: ${localEntries.length}`);
+
+  // Profile status
+  if (fs.existsSync(LOCAL_PROFILE)) {
+    const profileContent = fs.readFileSync(LOCAL_PROFILE, 'utf8');
+    if (profileContent.includes('Profile not yet created')) {
+      console.log(`  Profile: not yet created (run /btd-intake)`);
+    } else {
+      console.log(`  Profile: ✅ active`);
+    }
+  } else {
+    console.log(`  Profile: none (run node scripts/init-local.js)`);
+  }
+
+  // Experiment status
+  const expDir = path.join(LOCAL_DIR, 'experiments');
+  if (fs.existsSync(expDir)) {
+    const exps = fs.readdirSync(expDir).filter(f => f.endsWith('.md')).sort();
+    if (exps.length) {
+      const latest = exps[exps.length - 1];
+      const content = fs.readFileSync(path.join(expDir, latest), 'utf8');
+      const statusMatch = content.match(/status:\s*(\w+)/);
+      const endMatch = content.match(/end_date:\s*"?([^"\n]+)/);
+      let expStatus = statusMatch ? statusMatch[1] : 'unknown';
+      if (endMatch && expStatus === 'active') {
+        const due = new Date(endMatch[1]);
+        if (due < new Date()) expStatus += ' ⚠️ OVERDUE';
+        else expStatus += ` (due ${endMatch[1].replace(/"/g, '')})`;
+      }
+      console.log(`  Experiment ${exps.length}: ${expStatus}`);
+    } else {
+      console.log(`  Experiments: none`);
+    }
+  }
+
+  console.log('');
+}
+
+console.log('═══════════════════════════════════════════\n');

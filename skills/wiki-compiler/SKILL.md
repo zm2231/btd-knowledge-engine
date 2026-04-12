@@ -16,6 +16,13 @@ don't re-derive knowledge from scratch every time someone asks a question.
 
 You write the wiki. The user reads it. They rarely touch it directly.
 
+## Shared Wiki vs Personal Wiki
+
+- **Shared wiki** (`btd/wiki/`): compiled from the shared curated corpus. Use `--instance btd`.
+- **Personal wiki** (`local/wiki/`): compiled from the user's personal sources. Use `--local`.
+
+Most commands below show `--instance btd`. Replace with `--local` when working with the user's personal content.
+
 ## When to Compile
 
 - After any `batch-ingest`, `ingest-*`, or `ingest-repo` run

@@ -45,7 +45,7 @@
 
 ### Max (not blocked by tech)
 1. Run 3 real people through intake (use Claude Code in the repo, SKILL.md auto-triggers)
-2. Save 3 constraint profiles to `btd/users/`
+2. Save 3 constraint profiles to `local/`
 3. Write 3 sample outputs by hand (gold standard for synthesis)
 4. After first experiments: manual check-ins, capture what's needed for experiment #2
 

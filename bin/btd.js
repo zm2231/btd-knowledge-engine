@@ -19,14 +19,19 @@ function printMainHelp() {
   console.log(`BTD Knowledge Engine
 
 Usage:
-  btd <command> [args] [--instance <name>]
+  btd <command> [args] [--local | --instance <name>]
 
 Getting started:
-  btd start                              First-run setup — who are you?
+  btd start                              First-run setup
   btd me                                 Your profile + current experiment
-  btd status                             Corpus dashboard
+  btd status                             Corpus dashboard (shared + local)
 
-Content:
+Search:
+  btd search "<query>" [--top-k N]       Search shared + local corpus
+  btd search "<query>" --shared-only     Search shared corpus only
+  btd search "<query>" --local-only      Search local corpus only
+
+Content (shared corpus, operator):
   btd add <slug> "Name" [flags]          Register a creator
   btd scan [slug] [--all]                Catalog their content
   btd ingest <slug> [--limit N --top]    Pull down YouTube transcripts
@@ -36,49 +41,50 @@ Content:
   btd ingest:repo <path-or-url>          Index a code repo
   btd index [--force]                    Rebuild LEANN search index
 
+Content (personal, --local):
+  btd add <slug> "Name" [flags] --local  Add creator to personal corpus
+  btd ingest <slug> --local              Ingest to personal corpus
+  btd ingest:repo <path> --local         Index your own repo
+  btd index --local                      Build personal search index
+
 Wiki:
   btd wiki status                        What's compiled vs pending
   btd wiki lint                          Find gaps and broken links
   btd wiki index                         Rebuild wiki index
   btd wiki ingest [--recent N]           Compile recent sources
+  btd wiki ingest --local                Compile personal wiki
 
-Profiles:
-  btd profile list                       All registered users
-  btd profile show <user>                Full profile + experiments
-  btd profile save <user> [flags]        Save a profile YAML
-
-Sessions:
-  btd session intake <user>              Run intake interview
-  btd session checkin <user>             Returning user check-in
-  btd session status <user>              Where a user is at
-  btd search <user> "<query>"            Search corpus for a user
+Profile:
+  btd profile list                       Your profile status
+  btd profile show                       Full profile + experiments
+  btd profile save --file <path>         Save a profile YAML
 
 Admin:
-  btd init <instance>                    Create a new instance
+  btd init                               Create local/ workspace
   btd help                               This message
 
 Notes:
-  All commands accept --instance <name> (default: btd)
-  After npm link, btd works from anywhere
+  --local targets your personal corpus in local/ (gitignored)
+  --instance <name> targets a shared instance (default: btd)
+  No flag needed for search (queries both automatically)
 `);
 }
 
 function printCommandHelp(command) {
   const helpByCommand = {
-    init: 'btd init <instance> [--name "Display Name"]',
-    add: 'btd add <slug> "Name" [--youtube <url>] [--twitter <handle>] [--podcast <feed-url>] [--substack <url>] [--topics csv] [--instance <name>] [--scan]',
-    scan: 'btd scan [slug] [--all] [--youtube] [--twitter] [--podcast] [--substack] [--repo] [--count N] [--instance <name>]',
-    ingest: 'btd ingest <slug> [--limit N] [--top] [--dry-run] [--all] [--instance <name>]',
-    'ingest:twitter': 'btd ingest:twitter <slug> [--limit N] [--dry-run] [--instance <name>]',
-    'ingest:podcast': 'btd ingest:podcast <slug> [flags] [--instance <name>]',
-    'ingest:substack': 'btd ingest:substack <slug> [--scan] [--limit N] [--dry-run] [--instance <name>]',
-    'ingest:repo': 'btd ingest:repo <path-or-url> [--scan] [--file-types csv] [--instance <name>]',
-    index: 'btd index [--force] [--instance <name>]',
+    init: 'btd init                              Create local/ workspace',
+    add: 'btd add <slug> "Name" [--youtube <url>] [--twitter <handle>] [--podcast <feed-url>] [--substack <url>] [--topics csv] [--local | --instance <name>] [--scan]',
+    scan: 'btd scan [slug] [--all] [--youtube] [--twitter] [--podcast] [--substack] [--repo] [--local | --instance <name>]',
+    ingest: 'btd ingest <slug> [--limit N] [--top] [--dry-run] [--all] [--local | --instance <name>]',
+    'ingest:twitter': 'btd ingest:twitter <slug> [--limit N] [--dry-run] [--local | --instance <name>]',
+    'ingest:podcast': 'btd ingest:podcast <slug> [flags] [--local | --instance <name>]',
+    'ingest:substack': 'btd ingest:substack <slug> [--scan] [--limit N] [--dry-run] [--local | --instance <name>]',
+    'ingest:repo': 'btd ingest:repo <path-or-url> [--scan] [--file-types csv] [--local | --instance <name>]',
+    index: 'btd index [--force] [--wiki-only] [--raw-only] [--local | --instance <name>]',
     status: 'btd status [--instance <name>]',
-    wiki: 'btd wiki <status|lint|index|ingest> [args] [--instance <name>]',
-    profile: 'btd profile <list|show|save> [args] [--instance <name>]',
-    session: 'btd session <intake|checkin|status> <user> [--instance <name>]',
-    search: 'btd search <user> "<query>" [--instance <name>]',
+    wiki: 'btd wiki <status|lint|index|ingest> [args] [--local | --instance <name>]',
+    profile: 'btd profile <list|show|save> [--file <path>]',
+    search: 'btd search "<query>" [--top-k N] [--shared-only] [--local-only]',
   };
 
   if (helpByCommand[command]) {
@@ -125,7 +131,7 @@ function dispatch(argv) {
 
   if (command === 'init') {
     if (isHelpToken(rest[0])) return printCommandHelp('init');
-    return runScript('scripts/init.js', rest);
+    return runScript('scripts/init-local.js', rest);
   }
 
   if (command === 'add') {
@@ -188,15 +194,9 @@ function dispatch(argv) {
     return runScript('scripts/profile.js', [subcommand, ...profileArgs]);
   }
 
-  if (command === 'session') {
-    const [subcommand, ...sessionArgs] = rest;
-    if (!subcommand || isHelpToken(subcommand)) return printCommandHelp('session');
-    return runScript('scripts/session.js', [subcommand, ...sessionArgs]);
-  }
-
   if (command === 'search') {
     if (isHelpToken(rest[0])) return printCommandHelp('search');
-    return runScript('scripts/session.js', ['search', ...rest]);
+    return runScript('scripts/search.js', rest);
   }
 
   console.error(`Unknown command: ${command}`);

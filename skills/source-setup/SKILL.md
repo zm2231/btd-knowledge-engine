@@ -4,22 +4,22 @@ description: >
   Help a user build their personal knowledge corpus from scratch. Use this skill when someone
   says "I want to add my own sources," "set up my instance," "who should I follow," "I want
   to track [creator]," "add my favorite podcast," "I read this newsletter," "index my notes,"
-  or anything about populating a new or existing instance with content they care about. Also
-  triggers when someone just ran btd init and has an empty instance. Works for ANY instance,
-  not just btd.
+  or anything about populating their local corpus with content they care about. Also triggers
+  when someone has an empty local/ directory. This skill defaults to --local (personal corpus).
 ---
 
 # Source Setup
 
-You're helping someone build their personal knowledge corpus. This isn't about adding everything; it's about adding the right things for this specific person. If they have a constraint profile, use it. If they don't, figure out what they need through conversation.
+You're helping someone build their personal knowledge corpus. This adds to YOUR local corpus (`local/`), not the shared library (`btd/`). The shared library is operator-managed upstream content; personal sources live in `local/` and are gitignored.
+
+This isn't about adding everything; it's about adding the right things for this specific person. If they have a constraint profile, use it. If they don't, figure out what they need through conversation.
 
 ## First: Who Are They?
 
 Before suggesting any sources, understand the person:
 
 ```bash
-btd profile list --instance {instance}
-btd profile show {user} --instance {instance}
+node scripts/profile.js load   # load profile from local/
 ```
 
 If they have a profile, their `domain`, `goal_type`, `calibrated_level`, and `blind_spots` tell you exactly what content to prioritize. If they don't have a profile yet, ask:
@@ -38,15 +38,14 @@ Don't suggest creators. Ask who they already consume. The best corpus starts wit
 
 For each one:
 ```bash
-btd add {slug} "{Name}" --youtube {url} --instance {instance}
-btd scan {slug} --instance {instance}
+node scripts/add-creator.js {slug} "{Name}" --youtube {url} --local --scan
 ```
 
 ### Step 2: Audit what the scan found
 
 After scanning, review the catalog with them:
 ```bash
-btd status --instance {instance}
+node scripts/status.js --local
 ```
 
 Help them pick what to ingest. Not everything. The canonical pieces:
@@ -54,7 +53,7 @@ Help them pick what to ingest. Not everything. The canonical pieces:
 - "If you could only keep 10 pieces of their content, which ones?"
 
 ```bash
-btd ingest {slug} --top --limit 10 --instance {instance}
+node scripts/batch-ingest.js {slug} --top --limit 10 --local
 ```
 
 ### Step 3: Fill gaps based on profile
@@ -75,17 +74,17 @@ Suggest creators that fill the gaps. Be specific about why: "Your profile shows 
 ### Step 4: Build the index
 
 ```bash
-btd index --instance {instance}
+node scripts/index.js --local
 ```
 
 ### Step 5: Test with their actual questions
 
 Ask them to search for something they actually want to know:
 ```bash
-leann search btd-{instance} "their question" --top-k 5 --non-interactive
+node scripts/search.js "their question" --top-k 5
 ```
 
-If results are weak (< 0.5 scores) on topics they care about, that's a gap. Go back to step 3.
+This searches across both shared (`btd/`) and personal (`local/`) content. If results are weak (< 0.5 scores) on topics they care about, that's a gap. Go back to step 3.
 
 ## Source Types and How to Add Them
 
@@ -93,39 +92,39 @@ Walk them through whichever platforms they use:
 
 **YouTube creator:**
 ```bash
-btd add {slug} "{Name}" --youtube "https://www.youtube.com/@{channel}" --instance {instance} --scan
-btd ingest {slug} --top --limit 10 --instance {instance}
+node scripts/add-creator.js {slug} "{Name}" --youtube "https://www.youtube.com/@{channel}" --local --scan
+node scripts/batch-ingest.js {slug} --top --limit 10 --local
 ```
 
 **Newsletter/Substack:**
 ```bash
-btd add {slug} "{Name}" --substack "https://{publication}.substack.com/" --instance {instance} --scan
-btd ingest:substack {slug} --limit 10 --instance {instance}
+node scripts/add-creator.js {slug} "{Name}" --substack "https://{publication}.substack.com/" --local --scan
+node scripts/ingest-substack.js {slug} --limit 10 --local
 ```
 
 **Podcast:**
 ```bash
-btd add {slug} "{Name}" --podcast "{rss-feed-url}" --instance {instance} --scan
-btd ingest:podcast {slug} --limit 5 --instance {instance}
+node scripts/add-creator.js {slug} "{Name}" --podcast "{rss-feed-url}" --local --scan
+node scripts/ingest-podcast.js {slug} --feed "{rss-feed-url}" --limit 5 --local
 ```
 Note: podcast ingestion requires whisper transcription. Warn them it's slower.
 
 **Twitter/X:**
 ```bash
-btd add {slug} "{Name}" --twitter "{handle}" --instance {instance} --scan
-btd ingest:twitter {slug} --instance {instance}
+node scripts/add-creator.js {slug} "{Name}" --twitter "{handle}" --local --scan
+node scripts/ingest-twitter.js {slug} --local
 ```
 
 **Code repo:**
 ```bash
-btd ingest:repo https://github.com/{owner}/{repo} --instance {instance}
+node scripts/ingest-repo.js https://github.com/{owner}/{repo} --local
 ```
 
 **Manual content (articles, notes, meeting transcripts):**
 Drop `.md` files with YAML frontmatter into the right directory:
 ```
-{instance}/raw/articles/{creator}/
-{instance}/raw/transcripts/
+local/raw/articles/{creator}/
+local/raw/transcripts/
 ```
 
 Frontmatter template:
@@ -142,10 +141,10 @@ url: "https://..."
 
 When a creator publishes across platforms, register all of them at once:
 ```bash
-btd add karpathy "Andrej Karpathy" \
+node scripts/add-creator.js karpathy "Andrej Karpathy" \
   --youtube "https://www.youtube.com/@AndrejKarpathy" \
   --twitter karpathy \
-  --instance {instance} --scan
+  --local --scan
 ```
 
 Then ingest from each platform. The value is cross-source search: a query returns the video explanation AND the tweet AND the code.
@@ -154,16 +153,16 @@ Then ingest from each platform. The value is cross-source search: a query return
 
 Run status and do a search audit:
 ```bash
-btd status --instance {instance}
-btd wiki status --instance {instance}
+node scripts/status.js --local
+node scripts/compile-wiki.js status --local
 ```
 
-Then tell Claude to compile the wiki:
-```
-Compile wiki pages from the recent sources
+Then compile the wiki from the personal sources:
+```bash
+node scripts/compile-wiki.js ingest --recent 5 --local
 ```
 
-Or: open Obsidian pointed at the instance folder to browse everything visually.
+Or: open Obsidian pointed at the `local/` folder to browse everything visually.
 
 ## What NOT to Do
 

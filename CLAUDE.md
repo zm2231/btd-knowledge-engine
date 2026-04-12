@@ -1,13 +1,25 @@
 # BTD Knowledge Engine — Claude Code Instructions
 
-You are working inside the BTD Knowledge Engine repo. You have full access to all scripts, skills, and data. Run commands directly. Never tell the user to run commands or paste things somewhere else — you do it.
+You are working inside the BTD Knowledge Engine. You have full access to all scripts, skills, and data. Run commands directly. Never tell the user to run commands or paste things somewhere else — you do it.
+
+## Architecture
+
+This repo is a **template**. Users clone it and get:
+- `btd/` — shared curated corpus (wiki, raw sources, registry). Operator-maintained. Don't modify unless you're the operator adding content.
+- `local/` — your personal workspace (profile, experiments, personal sources). Gitignored. Never conflicts with upstream.
+- `scripts/` — tools for both shared and local content.
+- `skills/` — Claude Code skills for intake, re-entry, wiki, ingestion.
+
+**`btd/` = the library. `local/` = your desk.**
+
+Users pull updates to the shared corpus with `git pull`. Their personal content stays untouched.
 
 ## First Thing: Figure Out Who's Here
 
-Before anything else, check who's in front of you:
+Check if a profile exists:
 
 ```bash
-node scripts/profile.js list --instance btd
+node scripts/profile.js list
 ```
 
 ### They have a profile (common case)
@@ -15,9 +27,9 @@ node scripts/profile.js list --instance btd
 Load everything before your first real message:
 
 ```bash
-node scripts/profile.js load {user-id} --instance btd
-ls btd/users/{user-id}/experiments/
-cat btd/users/{user-id}/experiments/{latest}.md   # if experiments exist
+node scripts/profile.js load
+ls local/experiments/
+cat local/experiments/{latest}.md   # if experiments exist
 ```
 
 Then route:
@@ -28,21 +40,17 @@ Then route:
 
 ### They're new (no profile)
 
-Ask their name. Create their user directory:
+Initialize the local workspace and run the interview:
 
 ```bash
-mkdir -p btd/users/{user-id}/experiments
+node scripts/init-local.js
 ```
 
 Then run `/btd-intake` — the 5-phase interview that produces a constraint profile. Don't skip this. Don't do a lightweight version. The interview IS the product.
 
-### Multiple users exist, not sure who this is
-
-Ask: "What name are you going by? I have profiles for: {list}. Or are you new?"
-
 ### This is a subagent or operator (not a learner)
 
-If invoked from another Claude Code instance, or if the message is about content operations (add creators, ingest, index), use `/btd-ingest` instead of the interview skills.
+If invoked from another Claude Code instance, or if the message is about content operations (add creators, ingest, index), use `/btd-ingest` instead of the interview skills. Operator commands use `--instance btd` for shared content.
 
 ## What This Repo Does
 
@@ -52,70 +60,80 @@ Personalized learning from curated creators. Content from YouTube, Twitter, podc
 
 These skills auto-activate based on the user's message and profile state. Read the full skill file before following it — they contain anti-patterns, interview techniques, and output formats you must follow.
 
-1. **`/btd-intake`** (`skills/btd-intake/SKILL.md`) — Non-sycophantic intake interview. 5 phases: goal, calibration, blind spots, constraints, synthesis. Produces a constraint profile YAML. **Only for users with NO existing profile.**
-2. **`/btd-reentry`** (`skills/btd-intake/RE-ENTRY.md`) — Returning user protocol. Load profile + experiments, run check-in, update profile, generate next experiment. **Default for any user who has a profile** — this is the common case.
-3. **`/wiki-compiler`** (`skills/wiki-compiler/SKILL.md`) — Wiki maintenance. Compile raw sources into structured wiki pages (concepts, topics, creators). Run after ingesting new content or when wiki lint shows gaps. **Proactive — do this without being asked when new content arrives.**
-4. **`/btd-ingest`** (`skills/btd-ingest/SKILL.md`) — Content operations agent. Register creators, scan catalogs, ingest content, compile wiki, rebuild index, link to user profiles. Can be invoked as a subagent from another Claude Code instance.
-5. **`/content-curator`** (`skills/content-curator/SKILL.md`) — Decide what to ingest. Evaluates creators and content against user profiles, identifies corpus gaps, recommends what to add and what to skip. Use when someone asks "what should we add" or when intake interviews reveal topics the corpus can't serve.
+1. **`/btd-intake`** (`skills/btd-intake/SKILL.md`) — Non-sycophantic intake interview. 5+ phases: goal, calibration, blind spots, constraints, personal sources, synthesis. Produces a constraint profile. **Only for users with NO existing profile.**
+2. **`/btd-reentry`** (`skills/btd-intake/RE-ENTRY.md`) — Returning user protocol. Load profile + experiments, run check-in, update profile, generate next experiment. **Default for any user who has a profile.**
+3. **`/wiki-compiler`** (`skills/wiki-compiler/SKILL.md`) — Wiki maintenance. Compile raw sources into structured wiki pages. **Proactive — do this without being asked when new content arrives.**
+4. **`/btd-ingest`** (`skills/btd-ingest/SKILL.md`) — Content operations agent. Register creators, scan catalogs, ingest content, compile wiki, rebuild index.
+5. **`/content-curator`** (`skills/content-curator/SKILL.md`) — Decide what to ingest. Evaluates creators and content against user profiles, identifies corpus gaps.
 
-Skills are available as `/slash-commands` in Claude Code. They're symlinked from `.claude/skills/` to their source files in `skills/`.
-
-The routing is simple: check if a profile exists → yes means RE-ENTRY, no means INTAKE. When in doubt, check first:
-```bash
-node scripts/profile.js list --instance btd
-```
+The routing is simple: check if a profile exists → yes means RE-ENTRY, no means INTAKE.
 
 ## Common Flows
 
 ### Someone comes back (most common)
 
-1. Load their profile and latest experiment
+1. Load their profile and latest experiment from `local/`
 2. If experiment is active: "Your experiment was '{hypothesis}'. How did it go?"
 3. Follow RE-ENTRY.md check-in protocol
 4. Update profile based on what you learn
-5. Search corpus for next experiment content (queries informed by updated profile)
-6. Write next experiment card
+5. Search corpus for next experiment content (composite search: shared + local)
+6. Write next experiment card to `local/experiments/`
 7. Cite sources: "Watch **{title}** by {creator}" — never recommend without attribution
 
 ### Someone asks a question
 
-They might not be doing a formal check-in. They just want to know something.
-
 1. Load their profile (if it exists) for context
 2. Search the corpus:
    ```bash
-   leann search btd-btd "{their question}" --top-k 5 --non-interactive
+   node scripts/search.js "{their question}" --top-k 5
    ```
 3. Answer at their `calibrated_level`. Pre-beginner gets no jargon. Builder gets specifics.
 4. Cite where the answer came from.
 
 ### Someone is new
 
-1. Read `skills/btd-intake/SKILL.md` fully
-2. Run the 5-phase interview
-3. Write the constraint profile YAML to a temp file
-4. Save: `node scripts/profile.js save {user-id} --file /tmp/{user-id}-profile.yaml --instance btd`
-5. Search corpus for first experiment content
-6. Write experiment card to `btd/users/{user-id}/experiments/001-{slug}.md`
+1. `node scripts/init-local.js` — create their workspace
+2. Read `skills/btd-intake/SKILL.md` fully
+3. Run the 5-phase interview (including Phase 4.5 for personal sources)
+4. Write the constraint profile YAML to a temp file
+5. Save: `node scripts/profile.js save --file /tmp/profile.yaml`
+6. If personal sources identified: ingest with `--local` flag, then `node scripts/index.js --local`
+7. Search corpus for first experiment content
+8. Write experiment card to `local/experiments/001-{slug}.md`
 
-### Someone wants to add content
+### Someone wants to add personal content
 
 ```bash
-# Register a creator
-node scripts/add-creator.js {slug} "Name" --youtube {url} --twitter {handle} --podcast {feed} --substack {url} --topics "a,b" --scan --instance btd
+# Add a creator to personal corpus
+node scripts/add-creator.js {slug} "Name" --youtube {url} --local --scan
 
-# Ingest content
-node scripts/batch-ingest.js {slug} --limit 10 --top --instance btd    # YouTube
+# Ingest content locally
+node scripts/batch-ingest.js {slug} --limit 10 --top --local
+node scripts/ingest-substack.js {slug} --limit 5 --local
+node scripts/ingest-repo.js {path-or-github-url} --local
+
+# Build personal search index
+node scripts/index.js --local
+
+# Check status (shows both shared + local)
+node scripts/status.js
+```
+
+### Operator: add content to shared corpus
+
+```bash
+# Register a creator (shared)
+node scripts/add-creator.js {slug} "Name" --youtube {url} --topics "a,b" --scan --instance btd
+
+# Ingest content (shared)
+node scripts/batch-ingest.js {slug} --limit 10 --top --instance btd
 node scripts/ingest-twitter.js {slug} --instance btd
 node scripts/ingest-podcast.js {slug} --feed {url} --limit 3 --instance btd
 node scripts/ingest-substack.js {slug} --limit 5 --instance btd
 node scripts/ingest-repo.js {path-or-github-url} --instance btd
 
-# Rebuild index after ingesting
+# Rebuild shared index
 node scripts/index.js --instance btd
-
-# Check status
-node scripts/status.js --instance btd
 ```
 
 ## Wiki — The Compiled Knowledge Layer
@@ -130,23 +148,20 @@ The wiki (`btd/wiki/`) sits between raw sources and user queries. Instead of re-
 - `wiki/index.md` — auto-maintained catalog of all pages
 - `wiki/log.md` — chronological record of compilations
 
-**When to compile:** After ingesting new content, run `node scripts/compile-wiki.js ingest --recent 5` or just tell Claude "compile the wiki from recent sources." For each source, you:
-1. Read the raw file
-2. Write/update source summary, concept pages, topic pages, creator page
-3. Cross-reference: link related pages with `[[wiki-links]]`
-4. Update index.md and log.md
+**Shared wiki** (`btd/wiki/`) is operator-maintained and comes with the template.
+**Local wiki** (`local/wiki/`) can be compiled from personal sources: `node scripts/compile-wiki.js --local`
 
-**When to lint:** Periodically run `node scripts/compile-wiki.js lint` to find orphan pages, broken links, uncompiled sources, and contradictions.
+**When to compile:** After ingesting new content, run `node scripts/compile-wiki.js ingest --recent 5` or for local: `node scripts/compile-wiki.js ingest --recent 5 --local`.
 
-**The wiki is YOUR domain.** You maintain it. The user reads it. They rarely edit it directly. Your explorations and answers get filed back into the wiki to compound over time.
+**The shared wiki is curated.** Users read it, search it, learn from it. The operator maintains it.
 
 ## How to Do Key Operations
 
-### Corpus Search
+### Corpus Search (composite — shared + local)
 ```bash
-leann search btd-btd "your query" --top-k 5 --non-interactive
+node scripts/search.js "your query" --top-k 5
 ```
-Every result includes a `Source:` path. Parse creator name and content title from it. Always cite.
+Returns results from both the shared BTD corpus and the user's local content (if indexed), labeled `[shared]` or `[local]`. Every result includes a `Source:` path. Parse creator name and content title from it. Always cite.
 
 Build queries from the profile:
 - `key_gap` → most important search
@@ -155,8 +170,8 @@ Build queries from the profile:
 
 ### Save / Update Profiles
 ```bash
-node scripts/profile.js save {id} --file {path} --instance btd
-node scripts/profile.js update {id} --field "key" --value "val" --instance btd
+node scripts/profile.js save --file {path}
+node scripts/profile.js update --field "key" --value "val"
 ```
 
 When updating after a check-in, add to `profile_history`:
@@ -168,7 +183,7 @@ profile_history:
 ```
 
 ### Write Experiment Cards
-Save to `btd/users/{user-id}/experiments/{NNN}-{slug}.md`. Use template at `template/experiment-card.md`. Include the structured outcome YAML block at the bottom.
+Save to `local/experiments/{NNN}-{slug}.md`. Use template at `template/experiment-card.md`. Include the structured outcome YAML block at the bottom.
 
 ## Rules
 
@@ -182,7 +197,7 @@ Save to `btd/users/{user-id}/experiments/{NNN}-{slug}.md`. Use template at `temp
 
 ## Current Corpus
 
-Run `node scripts/status.js --instance btd` for live numbers. The index is `btd-btd`.
+Run `node scripts/status.js` for live numbers. The shared index is `btd-btd`. The local index (if built) is `btd-local`.
 
 Creators span technical and non-technical:
 - **Andrej Karpathy** — YouTube (deep ML tutorials) + Twitter (AI commentary) + repos (minbpe, nanoGPT, llm.c)

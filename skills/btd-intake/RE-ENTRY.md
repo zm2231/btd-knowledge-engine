@@ -5,7 +5,7 @@ description: >
   This is the DEFAULT skill for most interactions — most users are returning, not new.
   Use whenever a user with an existing profile asks anything: "I'm back", "check in",
   "how did my experiment go", "what's next", "I have a question", "help me with X",
-  or any message from someone whose profile.md exists in btd/users/. Always check
+  or any message from someone whose profile exists in local/. Always check
   profile.js list first. If they have a profile, use this skill, not btd-intake.
   Load their full state (profile + experiments + journal) before responding.
 ---
@@ -23,11 +23,11 @@ they left off.
 
 ## Before You Speak
 
-Load these files (all paths relative to the instance, e.g. `btd/`):
+Load these files from `local/`:
 
-1. **Profile**: `users/{user-id}/profile.md` — their constraint profile from intake
-2. **Experiments**: `users/{user-id}/experiments/*.md` — all experiment cards, sorted by number
-3. **Journal**: `users/{user-id}/journal/*.md` — any check-in notes (may not exist yet)
+1. **Profile**: `local/profile.md` — their constraint profile from intake
+2. **Experiments**: `local/experiments/*.md` — all experiment cards, sorted by number
+3. **Journal**: `local/journal/*.md` — any check-in notes (may not exist yet)
 
 Read the most recent experiment card. Check its `status` and `outcome` fields in the frontmatter.
 
@@ -152,11 +152,11 @@ profile_history:
 ```
 
 ### 2. New experiment card
-Written to `users/{user-id}/experiments/{NNN}-{slug}.md`
+Written to `local/experiments/{NNN}-{slug}.md`
 
 ### 3. Journal entry (optional)
 If the check-in surfaced something worth recording that doesn't fit the experiment card:
-`users/{user-id}/journal/{date}.md`
+`local/journal/{date}.md`
 
 ---
 
@@ -197,16 +197,16 @@ Use them directly. Don't tell the user to run commands.
 
 ```bash
 # Load their profile
-node scripts/profile.js load {user-id} --instance btd
+node scripts/profile.js load
 
 # Load their experiment history
-ls btd/users/{user-id}/experiments/
+ls local/experiments/
 
 # Read the latest experiment card
-cat btd/users/{user-id}/experiments/{latest}.md
+cat local/experiments/{latest}.md
 
 # Read journal entries if any
-ls btd/users/{user-id}/journal/
+ls local/journal/
 ```
 
 Load ALL of this before your first message to the user. You should know their goal,
@@ -215,7 +215,8 @@ level, blind spots, constraints, and what their last experiment was before you s
 ### Search the corpus based on what happened
 
 ```bash
-leann search btd-btd "{query}" --top-k 5 --non-interactive
+# Composite search — shared BTD corpus + local content
+node scripts/search.js "{query}" --top-k 5
 ```
 
 Build queries from the check-in results:
@@ -223,14 +224,27 @@ Build queries from the check-in results:
 - If failed: search for common mistakes or alternative approaches
 - If abandoned: search for smaller-scope content matching their real constraints
 
+### Personal sources check
+
+After the profile update and before generating the next experiment, check for personal
+sources. If the profile has `personal_sources` with `status: pending`, offer to ingest:
+
+```bash
+node scripts/add-creator.js {slug} "{name}" --{platform} {url} --local --scan
+node scripts/index.js --local
+```
+
+If the user mentions new sources during check-in ("I found this great channel" or
+"I started working on a new repo"), add them to the profile and offer to ingest.
+
 ### Update the profile after check-in
 
 ```bash
 # Overwrite with updated profile
-node scripts/profile.js save {user-id} --file /tmp/{user-id}-profile-updated.yaml --instance btd
+node scripts/profile.js save --file /tmp/profile-updated.yaml
 
 # Or update a single field
-node scripts/profile.js update {user-id} --field "goal_type" --value "build" --instance btd
+node scripts/profile.js update --field "goal_type" --value "build"
 ```
 
 Always add to the `profile_history` section when updating:
@@ -243,7 +257,7 @@ profile_history:
 
 ### Write the next experiment card
 
-Save to: `btd/users/{user-id}/experiments/{NNN}-{slug}.md`
+Save to: `local/experiments/{NNN}-{slug}.md`
 
 Number sequentially. Reference the previous experiment's outcome in the frontmatter:
 ```yaml

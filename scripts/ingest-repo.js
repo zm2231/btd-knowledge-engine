@@ -56,6 +56,7 @@ function getPositionalArgs(argv) {
 
 const source = getPositionalArgs(args)[0];
 const instance = getArg('--instance') || 'btd';
+const isLocal = args.includes('--local');
 const scanOnly = args.includes('--scan');
 const fileTypesArg = getArg('--file-types') || DEFAULT_FILE_TYPES;
 
@@ -69,12 +70,14 @@ function getSharedProjectRoot(currentRoot) {
 }
 
 const SHARED_PROJECT_ROOT = getSharedProjectRoot(ROOT);
-const INSTANCE_DIR = path.join(ROOT, instance);
+const { resolvePaths } = require('./scope.js');
+const paths = resolvePaths(ROOT, isLocal ? 'local' : 'shared', instance);
+const INSTANCE_DIR = paths.base;
 const SHARED_INSTANCE_DIR = path.join(SHARED_PROJECT_ROOT, instance);
-const REGISTRY = path.join(INSTANCE_DIR, 'registry', 'creators.json');
-const CATALOG_DIR = path.join(INSTANCE_DIR, 'registry', 'catalogs');
-const INGEST_LOG = path.join(INSTANCE_DIR, 'registry', 'ingest-log.jsonl');
-const INDEX_NAME = `btd-${instance}`;
+const REGISTRY = paths.creatorsJson;
+const CATALOG_DIR = paths.catalogDir;
+const INGEST_LOG = paths.ingestLog;
+const INDEX_NAME = paths.leannIndex;
 const TMP_REPO_DIR = path.join(SHARED_PROJECT_ROOT, '.tmp', 'repos');
 
 function isGitHubUrl(value) {

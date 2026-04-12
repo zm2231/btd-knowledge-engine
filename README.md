@@ -8,52 +8,60 @@ Register the creators you actually follow. The system catalogs everything they'v
 
 Then it runs you through an interview that figures out who you are, where you're at, and what you're not thinking about. Same corpus, different people, completely different output. The interview produces a constraint profile that routes everything; which content surfaces, how it's explained, what experiments get generated.
 
+## How It Works
+
+Two layers of content. The shared corpus comes with the repo; 24 creators, 288 sources, 311 wiki pages covering AI, building, productivity, leadership, and mental models. That's the library. Your personal content (repos you're building, creators you follow, notes you've written) goes in `local/`, which is gitignored and never conflicts with updates.
+
+You `git pull` to get new shared content. Your stuff stays untouched.
+
+```
+btd/                    # The library (shared, curated, pullable)
+  raw/                  # 288 ingested sources across 6 platforms
+  wiki/                 # 311 compiled knowledge pages (Karpathy wiki pattern)
+  registry/             # 24 creators, catalogs, ingest log
+
+local/                  # Your desk (personal, gitignored)
+  profile.md            # Your constraint profile from the intake interview
+  experiments/          # Your experiment cards
+  raw/                  # Your personal sources
+  registry/             # Your personal creators
+  wiki/                 # Your personal wiki (compiled from your sources)
+```
+
 ## Get Started
 
 ```bash
 git clone https://github.com/zm2231/btd-knowledge-engine.git
 cd btd-knowledge-engine
-npm install && npm link
+npm install
 ```
 
-Then:
+Then open Claude Code in this repo and say "I'm new."
 
-```bash
-btd start
-```
+Claude reads CLAUDE.md, sees you have no profile, creates your local workspace, and runs a 15-minute intake interview. The interview pushes back, probes, and calibrates. It doesn't take your word for it when you say you're "intermediate at AI." It asks a question an intermediate would answer easily. If you can't, it adjusts silently.
 
-That's it. It detects your username, creates your profile directory, and tells you what to do next. Two paths from here:
+The interview produces a constraint profile. The constraint profile routes everything after that. Different profiles get fundamentally different output from the same corpus.
 
-**Path A (recommended):** Open Claude Code in this repo and say "I'm new." Claude reads CLAUDE.md, sees you have no profile, and runs a 15-minute intake interview. The interview pushes back, probes, and calibrates. It produces a constraint profile that personalizes everything after that.
+If you mention creators you follow or repos you're building, it offers to index those into your personal corpus too. Same search, both sources, results labeled so you know what came from where.
 
-**Path B:** Run `btd session intake <your-name>` from the CLI.
+## What's In The Shared Corpus
 
-Either way, you end up with a profile. After that:
-
-```bash
-btd me                    # your profile, current experiment, what to do next
-btd search "your query"   # search the corpus
-btd status                # what's in the corpus
-```
-
-## What's In The Corpus
-
-Run `btd status` for live numbers. The corpus spans 20+ creators across 6 platforms. Every creator earns their spot by serving a specific type of learner; nothing is in here for volume.
+Run `node scripts/status.js` for live numbers. Every creator earns their spot by serving a specific type of learner; nothing is in here for volume.
 
 | Need | Creator | What you get |
 |---|---|---|
 | How to actually learn | Cal Newport, Ali Abdaal | Deep work, spaced repetition, focus systems |
-| Neuroscience of focus | Andrew Huberman | Dopamine, habits, studying protocols, ADHD |
+| Neuroscience of focus | Andrew Huberman | Dopamine, habits, studying protocols |
 | Build habits that stick | James Clear | Atomic habits, identity-based change, 1% rule |
 | Understand AI/ML | Andrej Karpathy, 3Blue1Brown | From neural nets to attention, with working code |
 | AI for non-technical people | Ethan Mollick | How to actually use these tools at work |
-| Build and ship things | Paul Graham | Essays on startups, ideas, ambition, maker schedule |
 | AI tools and workflows | Simon Willison, Sabrina Ramonov | Practical AI tool usage, MCP servers, Claude Code |
 | Leadership and teams | Simon Sinek | Infinite game, empathy, accountability |
 | Product and growth | Nate Jones, Lenny Rachitsky | AI business analysis, product strategy |
 | Long-form AI interviews | Lex Fridman | Sam Altman, Karpathy, Hassabis, LeCun |
 | Mental models | Shane Parrish | Decision-making, thinking frameworks |
-| Building with AI | Alex Finn, Kyle Balmer, Mark Kashef | Context engineering, no-code AI, building in public |
+| Building with AI | Alex Finn, Kyle Balmer, Mark Kashef | Context engineering, building in public |
+| The BTD thesis | Beware The Defaults | Defaults, borrowed judgment, the builder arc |
 
 "I can't focus" routes to Newport and Huberman. "I want to understand how LLMs work" routes to Karpathy's video plus his actual code. "I'm a manager trying to use AI" routes to Mollick. "I want to build something with AI this weekend" routes to the builder creators. The corpus isn't random; it's designed to serve the profiles the intake interview produces.
 
@@ -61,7 +69,7 @@ Run `btd status` for live numbers. The corpus spans 20+ creators across 6 platfo
 
 ### 1. Raw Content (what's ingested)
 
-YouTube transcripts, tweets, Substack articles, Paul Graham essays, podcast transcriptions, code repos. All markdown with frontmatter. All searchable via LEANN semantic search.
+YouTube transcripts, tweets, Substack articles, podcast transcriptions, code repos. All markdown with frontmatter. All searchable via LEANN semantic search. 288 sources across 24 creators, spanning technical depth (Karpathy building GPT from scratch) to practical application (Mollick on using AI at work without knowing how it works).
 
 ### 2. The Wiki (what's compiled)
 
@@ -71,104 +79,74 @@ The wiki is different. After content gets ingested, Claude compiles it into stru
 
 This follows the [Karpathy LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): raw data from sources gets compiled by the LLM into a persistent wiki, then operated on for Q&A. Your explorations get filed back into it. The wiki compounds over time.
 
+311 pages right now. 33 concepts, 3 topic overviews, 18 creator profiles, 19 source directories. The shared wiki is curated; the operator maintains it. You can also compile your own personal wiki from your local sources.
+
 ### 3. The Interview (what's personalized)
-
-The intake interview pushes back, probes, and calibrates. It doesn't take your word for it when you say you're "intermediate at AI." It asks you a question an intermediate would answer easily. If you can't, it adjusts silently.
-
-The interview produces a constraint profile. The constraint profile routes everything. Different profiles get fundamentally different output from the same corpus.
 
 My theory is that this is where most "personalized AI" products fail. They skip the interview, or they do a shallow one, and everyone gets the same output. Without the right questions, the best corpus in the world produces generic answers.
 
-## The CLI
+The intake interview is five phases: goal clarification, calibration (what you actually know vs what you claim), blind spot scanning (what you're not thinking about), constraints (your real situation, not your aspirational one), and personal sources (what you follow that we should index). If you mention repos or creators during the interview, the system offers to add them to your personal index on the spot.
 
-Everything goes through `btd`. Install globally with `npm link`.
+The interview produces a constraint profile. The constraint profile routes everything. A pre-beginner PM gets Ethan Mollick articles explained without jargon. An advanced builder gets Karpathy repos with specific file paths. Same corpus, completely different experience.
 
-### You (the user)
+## Personal Content
 
-```bash
-btd start                              # first-run setup
-btd me                                 # your profile + current experiment
-btd session intake <user>              # run the intake interview
-btd session checkin <user>             # returning user check-in
-btd search <user> "query"              # search corpus for you
-```
-
-### Content (adding sources)
+Your personal sources live in `local/` and never touch the shared corpus. Add creators you follow, index repos you're building, ingest newsletters you read. Search queries both indices and merges results.
 
 ```bash
-btd add <slug> "Name" --youtube <url>  # register a creator
-btd scan <slug>                        # catalog their content (no download)
-btd scan --all                         # catalog all creators
-btd ingest <slug> --limit 10 --top     # pull YouTube transcripts
-btd ingest:twitter <slug>              # pull tweets
-btd ingest:podcast <slug>              # download + transcribe episodes
-btd ingest:substack <slug>             # pull articles
-btd ingest:repo <github-url>           # index a code repo
-btd index                              # rebuild the search index
-btd status                             # what's in the corpus
+# Add a creator to your personal corpus
+node scripts/add-creator.js my-newsletter "Some Newsletter" --substack https://... --local --scan
+
+# Index a repo you're working on
+node scripts/ingest-repo.js /path/to/my/project --local
+
+# Build your personal search index
+node scripts/index.js --local
+
+# Search both shared + personal
+node scripts/search.js "your query" --top-k 5
 ```
 
-### Wiki (compiled knowledge)
-
-```bash
-btd wiki status                        # what's compiled vs pending
-btd wiki lint                          # find gaps and broken links
-btd wiki index                         # rebuild wiki index
-```
-
-### Profiles
-
-```bash
-btd profile list                       # all registered users
-btd profile show <user>                # full profile summary
-```
-
-All commands accept `--instance <name>` (default: `btd`).
-
-## Browse in Obsidian
-
-The repo is pre-configured as an Obsidian vault. Open it in Obsidian and you get graph view of the wiki, backlinks between concepts, and a browsable file explorer across raw sources, wiki pages, and user profiles. The wiki's `[[wiki-links]]` render as clickable cross-references. No search needed; follow the connections.
+When you `git pull` to get new shared content, your personal content stays exactly where it is. No merge conflicts, no data leakage, no cleanup.
 
 ## Claude Code Skills
 
-Open Claude Code in this repo and these skills auto-activate as `/slash-commands`:
+Open Claude Code in this repo and these skills auto-activate:
 
 | Skill | What it does | When it triggers |
 |---|---|---|
-| `/btd-intake` | Non-sycophantic intake interview (5 phases) | New user, no profile |
-| `/btd-reentry` | Returning user check-in protocol | User has profile + experiments |
+| `/btd-intake` | Non-sycophantic intake interview (5+ phases) | New user, no profile |
+| `/btd-reentry` | Returning user check-in, experiment generation | User has profile + experiments |
 | `/wiki-compiler` | Compile raw sources into wiki pages | After ingestion, proactively |
 | `/btd-ingest` | Content operations agent | Adding creators, ingesting, indexing |
 | `/content-curator` | Decide what to ingest | Corpus planning, gap analysis |
-| `/source-setup` | Help users build their own corpus | New instance, "add my sources" |
+| `/source-setup` | Help users build their personal corpus | "Add my sources," "index my repo" |
 
-Claude reads CLAUDE.md on session start, checks if you have a profile, and routes to the right skill automatically. You don't need to invoke them manually.
+Claude reads CLAUDE.md on session start, checks if you have a profile, and routes to the right skill automatically. Returning users get the re-entry protocol; it loads your profile and latest experiment before saying anything. New users get the full intake.
 
-## Adding Content
+## Adding Content to the Shared Corpus
 
-The system supports 7 source types. Every script is instance-aware (`--instance`).
+The system supports 7 source types. Operator commands use `--instance btd` for shared content; users use `--local` for personal content.
 
 | Source | How to add | Notes |
 |---|---|---|
-| YouTube | `btd add <slug> "Name" --youtube <url>` then `btd ingest <slug>` | Transcripts via captions, no audio download |
-| Twitter/X | `btd add <slug> "Name" --twitter <handle>` then `btd ingest:twitter <slug>` | Requires `bird` CLI |
-| Podcasts | `btd add <slug> "Name" --podcast <feed-url>` then `btd ingest:podcast <slug>` | Downloads audio + whisper transcription |
-| Substack | `btd add <slug> "Name" --substack <url>` then `btd ingest:substack <slug>` | Full articles via `sbstck-dl` or RSS |
-| Code repos | `btd ingest:repo <github-url>` | Clones + indexes directly into LEANN |
-| Articles | Drop `.md` files in `raw/articles/<creator>/` | Add YAML frontmatter |
-| Transcripts | Drop `.md` files in `raw/transcripts/` | Meeting notes, group sessions |
+| YouTube | `node scripts/add-creator.js <slug> "Name" --youtube <url> --instance btd` | Transcripts via captions |
+| Twitter/X | `node scripts/add-creator.js <slug> "Name" --twitter <handle> --instance btd` | Requires `bird` CLI |
+| Podcasts | `node scripts/add-creator.js <slug> "Name" --podcast <feed-url> --instance btd` | Downloads + whisper transcription |
+| Substack | `node scripts/add-creator.js <slug> "Name" --substack <url> --instance btd` | Full articles via RSS |
+| Code repos | `node scripts/ingest-repo.js <github-url> --instance btd` | Clones + indexes into LEANN |
+| Articles | Drop `.md` files in `btd/raw/articles/<creator>/` | Add YAML frontmatter |
+| Transcripts | Drop `.md` files in `btd/raw/transcripts/` | Meeting notes, group sessions |
 
-Scanning catalogs everything published. Ingestion is a human decision. The `/content-curator` skill helps you decide what's worth ingesting.
+Scanning catalogs everything published. Ingestion is a human decision. The `/content-curator` skill helps you decide what's worth pulling in.
 
 ## Requirements
 
-**Hard requirement:** Node.js 20+ and npm.
-
-Everything else is optional based on what you want to do:
+Node.js 20+ and npm. Everything else is optional based on what you want to do:
 
 | Goal | What you need |
 |---|---|
-| Search existing corpus | `leann` (`pip install leann`) |
+| Search the corpus | `leann` (`pip install leann`) |
 | Add YouTube creators | `yt-dlp` (`brew install yt-dlp`) |
 | Add Twitter creators | `bird` (`brew install steipete/tap/bird`) |
 | Add podcasts | `podcast-dl` (included) + whisper backend |
@@ -177,32 +155,41 @@ Everything else is optional based on what you want to do:
 
 For podcast transcription, the script auto-detects the best backend: `lightning-whisper-mlx` (fastest on Apple Silicon) > `whisper-cli` (whisper.cpp) > any OpenAI-compatible API via `WHISPER_URL`.
 
+## Browse in Obsidian
+
+The repo is pre-configured as an Obsidian vault. Open it in Obsidian and you get graph view of the wiki, backlinks between concepts, and a browsable file explorer across raw sources and wiki pages. The wiki's `[[wiki-links]]` render as clickable cross-references.
+
 ## Repo Structure
 
 ```
 btd-knowledge-engine/
-├── bin/btd.js           # CLI wrapper — all commands go through here
-├── .claude/skills/      # Symlinks to skills (slash commands in Claude Code)
-├── scripts/             # All tooling (instance-aware)
-├── skills/              # Claude Code skills
-│   ├── btd-intake/      #   Intake interview + re-entry protocol
-│   ├── btd-ingest/      #   Content operations agent
-│   ├── wiki-compiler/   #   Wiki compilation
-│   └── content-curator/ #   What to ingest decisions
-├── template/            # Clean starting point for new instances
-├── btd/                 # Our instance (the BTD group's corpus)
-│   ├── raw/             #   257+ files: YouTube, Twitter, articles, transcripts
-│   ├── wiki/            #   278 compiled knowledge pages
-│   ├── registry/        #   20+ creators, catalogs, ingest log
-│   └── users/           #   Constraint profiles + experiment cards
-├── docs/                # Blueprint, roadmap, getting started
+├── btd/                 # Shared corpus (upstream, curated)
+│   ├── raw/             #   288 files: YouTube, Twitter, articles, transcripts
+│   ├── wiki/            #   311 compiled knowledge pages
+│   └── registry/        #   24 creators, catalogs, ingest log
+├── local/               # Your workspace (gitignored, personal)
+│   ├── profile.md       #   Constraint profile from intake
+│   ├── experiments/     #   Experiment cards
+│   ├── raw/             #   Personal sources
+│   ├── registry/        #   Personal creators
+│   └── wiki/            #   Personal wiki
+├── scripts/             # All tooling (--local for personal, --instance for shared)
+├── skills/              # Claude Code skills (auto-activate)
+├── template/            # Templates for profiles and experiments
+├── docs/                # Architecture docs
 └── CLAUDE.md            # Runtime instructions (Claude reads this first)
 ```
 
 ## Current State (April 2026)
 
-Run `btd status` for live numbers. The system is functional end-to-end: 257 raw files and 59 repo files indexed into 16,719 searchable chunks, 278 wiki pages compiled with cross-references, 6 skills auto-routing based on context.
+24 creators across 6 platforms. 288 indexed sources. 311 wiki pages with cross-references. 6 skills auto-routing based on user context. Composite search across shared and personal indices.
 
-The full loop works: register a creator, scan their catalog, ingest selectively, compile wiki pages, rebuild the index, run an intake interview, generate experiments, check in, iterate. Search retrieval is confirmed across every topic area; leadership queries hit Sinek, focus queries hit Newport and Huberman, technical queries hit Karpathy's videos and his actual code simultaneously.
+The full loop works: clone the repo, run the intake, get a constraint profile, receive personalized experiment cards with cited sources, add your own content on top, check in and iterate. Search retrieval is confirmed across every topic area; leadership queries hit Sinek, focus queries hit Newport and Huberman, technical queries hit Karpathy's videos and his actual code simultaneously.
 
-What's next: run real people through the intake interview, validate the constraint profiles produce meaningfully different outputs, and build the synthesis pipeline that turns profiles into structured, actionable learning tracks.
+The system is a template. You clone it, you get the library, you build your desk on top of it. Updates to the shared corpus come through `git pull`. Your personal content never conflicts.
+
+## The BTD Community
+
+This is the knowledge engine for [Beware The Defaults](https://bewarethedefault.substack.com). The community thesis: most people are running on autopilot, and the builders who notice their defaults are the ones who ship. The corpus, the interview, the experiment cards; all of it exists to help you notice what you're not thinking about and do something about it with the right borrowed judgment.
+
+If you're here from the community, open Claude Code and say hi. If you're here from somewhere else, the intake interview will figure out who you are.

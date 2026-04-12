@@ -100,13 +100,13 @@ Each stage's output is the next stage's input. Remove any piece and it collapses
 1. **Intake Interview Protocol**
    - Structured conversation flow (stored as template)
    - Adaptive questioning based on responses
-   - Output: `users/{user-id}/profile.md` + `users/{user-id}/gap-assessment.md`
+   - Output: `local/profile.yaml` + `local/gap-assessment.md`
 
 2. **Learning Track Generation**
    - Match gaps to corpus content
    - Sequence content for progressive learning
    - Generate experiment cards: what to watch, what to try, what to measure
-   - Store as `users/{user-id}/tracks/{track-name}/`
+   - Store as `local/tracks/{track-name}/`
 
 3. **Daily Surface Protocol**
    - Generate daily digest from active tracks

@@ -70,7 +70,7 @@ Never bulk-ingest a creator's entire catalog. Most creators have a core body of 
 Run queries for each major topic the system should serve. If scores are below 0.5, that topic needs more content.
 
 ```bash
-leann search btd-btd "your query" --top-k 3 --non-interactive
+node scripts/search.js "your query" --top-k 3
 ```
 
 Score thresholds:
@@ -82,16 +82,18 @@ Score thresholds:
 Review all user profiles. Extract `domain`, `key_gap`, `blind_spots`, and `goal_type`. Any theme that appears in multiple profiles but isn't well-represented in the corpus is a priority gap.
 
 ```bash
-btd profile list
-btd profile show <user>  # for each user
+node scripts/profile.js list --instance btd   # list shared profiles (operator)
+node scripts/profile.js load                   # load current user's profile from local/
 ```
 
 ### Method 3: Wiki coverage check
 The wiki compiler tracks which concepts have pages. Any concept that gets referenced but has no page, or any page with source_count of 1, might need more source material.
 
 ```bash
-btd wiki lint
+node scripts/compile-wiki.js lint --instance btd
 ```
+
+Note: Use `--local` instead of `--instance btd` to check the user's personal wiki. Personal sources (`local/raw/`) can also have corpus gaps worth filling.
 
 ## Creator Discovery
 

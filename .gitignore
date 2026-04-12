@@ -13,3 +13,8 @@ mlx_models/
 *.mp4.*
 *.ytdl
 *.part
+
+# User's personal content (never committed, never conflicts with upstream)
+local/
+.env
+*.key

@@ -44,10 +44,10 @@ The repo ships with the BTD group's instance already indexed and searchable:
 
 ```bash
 # Search across everything
-leann search btd-btd "how to think about building a new project"
+node scripts/search.js "how to think about building a new project"
 
 # See what's in the corpus
-node scripts/status.js
+node scripts/status.js --local
 ```
 
 That's it. You're searching across Karpathy, 3Blue1Brown, Nate Jones, Mollick, and Lex Fridman.
@@ -72,7 +72,7 @@ node scripts/batch-ingest.js karpathy --limit 10 --top --instance my-kb
 node scripts/index.js --instance my-kb
 
 # Search
-leann search btd-my-kb "how transformers work"
+node scripts/search.js "how transformers work" --instance my-kb
 ```
 
 ## Run the Intake Interview
@@ -90,7 +90,7 @@ Claude reads `CLAUDE.md` on session start, checks if you have a profile, and aut
 If you want to check your status manually:
 
 ```bash
-node scripts/session.js status your-name
+node scripts/profile.js status --local
 ```
 
 ## Coming Back
@@ -99,7 +99,7 @@ After doing your experiment for a week, open Claude Code in the repo again. Clau
 
 > "I'm back" or "How did my experiment go" or even just ask a question
 
-Claude picks up where you left off: runs the check-in, updates your profile, generates the next experiment. Your history is preserved across sessions in `btd/users/your-name/`.
+Claude picks up where you left off: runs the check-in, updates your profile, generates the next experiment. Your history is preserved across sessions in `local/`.
 
 ## Browse in Obsidian
 
@@ -119,8 +119,8 @@ To set up: open Obsidian → "Open folder as vault" → select the repo root (or
 Claude Code has access to all the repo's scripts and runs them directly:
 
 - **Profile management**: `node scripts/profile.js save/load/update`
-- **Corpus search**: `leann search btd-btd "query"` — returns results with source attribution
-- **Experiment cards**: written to `btd/users/{name}/experiments/`
+- **Corpus search**: `node scripts/search.js "query"` — returns results with source attribution
+- **Experiment cards**: written to `local/experiments/`
 - **Skills**: `skills/btd-intake/SKILL.md` (new users) and `skills/btd-intake/RE-ENTRY.md` (returning users)
 
 You don't need to run these yourself. Claude does it.

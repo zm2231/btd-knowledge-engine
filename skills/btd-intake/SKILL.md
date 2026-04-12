@@ -182,6 +182,63 @@ aspirational ones.
 
 ---
 
+### Phase 4.5: Your Sources (conditional — 1-2 exchanges)
+
+**Trigger:** Only run this phase if the user mentioned specific creators they follow,
+repos they're building, newsletters they read, or projects they're working on during
+Phases 1-4. If they didn't mention any personal content, skip to Phase 5.
+
+**Purpose:** The shared BTD corpus covers broad topics from curated creators. But this
+user may follow niche creators, have their own repos, or consume content the shared
+corpus doesn't include. Their personal content should be searchable alongside the
+shared corpus — that's what makes experiment recommendations specific to them.
+
+**Open with:**
+> "You mentioned [X]. The shared corpus doesn't include that. Want me to add it to
+> your local index? It stays in your clone — not shared with anyone else."
+
+**Probe for:**
+- **Repos they're building:** "You said you're working on [project]. Want me to index
+  that repo so I can reference your own code when generating experiments?"
+  → `node scripts/ingest-repo.js {path-or-url} --local`
+- **Creators they follow:** "Who do you learn from that we might not have? YouTube
+  channels, newsletters, podcasts?"
+  → `node scripts/add-creator.js {slug} "{Name}" --youtube {url} --local --scan`
+- **Their own writing/notes:** "Do you have notes, docs, or articles you've written
+  that would be useful context?"
+
+**Don't overdo it.** 2-3 sources max in the first session. They can always add more later.
+
+**Capture in the profile:**
+```yaml
+personal_sources:
+  - type: repo
+    name: "my-saas-app"
+    url: "https://github.com/..."
+    status: pending | indexed
+  - type: creator
+    slug: "some-newsletter"
+    name: "Some Newsletter"
+    platform: substack
+    url: "https://..."
+    status: pending | indexed
+```
+
+**After the interview, if personal sources were identified:**
+```bash
+node scripts/init-local.js     # create local/ workspace if it doesn't exist
+# For each personal source:
+node scripts/add-creator.js {slug} "{Name}" --{platform} {url} --local --scan
+node scripts/ingest-repo.js {path-or-url} --local
+# Then build the local index:
+node scripts/index.js --local
+```
+
+**Exit when:** You've captured 0-3 personal sources, or the user said they don't have
+any right now. Move on — don't let this phase become a catalog exercise.
+
+---
+
 ### Phase 5: Synthesis and Pushback (1-2 exchanges)
 
 **Purpose:** Play back what you've heard. Give them a mirror that's more honest than
@@ -322,25 +379,31 @@ When a user comes back mid-project:
 When running this skill in Claude Code, you have access to the repo's scripts.
 Use them. Don't ask the user to run commands manually.
 
+### First: initialize local workspace (if needed)
+
+```bash
+node scripts/init-local.js   # creates local/ workspace — safe to run multiple times
+```
+
 ### After the interview: save the constraint profile
 
 ```bash
-# Write the YAML profile to the user's directory
-# Creates users/{user-id}/ with experiments/ and journal/ subdirs
-node scripts/profile.js save {user-id} --file /tmp/{user-id}-profile.yaml --instance btd
+# Write the YAML profile to local/profile.md
+node scripts/profile.js save --file /tmp/profile.yaml
 ```
 
 Write the constraint profile YAML to a temp file, then call profile.js to save it.
-This creates the full user directory structure.
+No user-id needed — single user per clone, profile goes to `local/profile.md`.
 
 ### Search the corpus for experiment content
 
 ```bash
-# Semantic search — returns ranked results with source attribution
-leann search btd-btd "{query}" --top-k 5 --non-interactive
+# Composite search — shared BTD corpus + local content (if any)
+node scripts/search.js "{query}" --top-k 5
 ```
 
-Use the constraint profile to build targeted queries:
+This searches both `btd-btd` (shared) and `btd-local` (personal, if indexed) and
+merges results. Use the constraint profile to build targeted queries:
 - `calibrated_level` + `domain` → content at the right depth
 - `blind_spots` → content that addresses specific gaps
 - `key_gap` → the most important thing they're missing
@@ -350,7 +413,7 @@ Always cite sources in the experiment card: "Watch {title} by {creator}" not jus
 
 ### Write the first experiment card
 
-Save to: `btd/users/{user-id}/experiments/001-{slug}.md`
+Save to: `local/experiments/001-{slug}.md`
 
 Use the template at `template/experiment-card.md`. The experiment must:
 1. Have a testable hypothesis tied to the key gap
@@ -358,11 +421,20 @@ Use the template at `template/experiment-card.md`. The experiment must:
 3. Fit within `constraints.time_per_week`
 4. Include the structured outcome YAML block at the bottom
 
-### Check user status
+### Ingest personal sources (from Phase 4.5)
+
+If the user identified personal sources during Phase 4.5:
+```bash
+node scripts/add-creator.js {slug} "{Name}" --{platform} {url} --local --scan
+node scripts/ingest-repo.js {path-or-url} --local
+node scripts/index.js --local   # build personal LEANN index
+```
+
+### Check status
 
 ```bash
-node scripts/profile.js list --instance btd          # all users
-node scripts/profile.js summary {user-id} --instance btd  # one user
+node scripts/profile.js list      # show profile + experiment status
+node scripts/status.js             # show shared + local corpus status
 ```
 
 ### Translation rule
