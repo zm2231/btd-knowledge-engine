@@ -1,0 +1,24 @@
+{
+  "roots": [
+    "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/anthropics--anthropic-cookbook",
+    "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--llm-c",
+    "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--micrograd",
+    "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--minbpe",
+    "/Volumes/4/GitHub/btd-knowledge-engine/.tmp/repos/karpathy--nanogpt",
+    "/Volumes/4/GitHub/btd-knowledge-engine/btd/raw",
+    "/Volumes/4/GitHub/btd-knowledge-engine/btd/wiki"
+  ],
+  "include_extensions": [
+    ".md",
+    ".py",
+    ".js",
+    ".ts",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".go",
+    ".rs",
+    ".rb"
+  ],
+  "ignore_patterns": null
+}

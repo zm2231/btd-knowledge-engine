@@ -13,6 +13,3 @@ mlx_models/
 *.mp4.*
 *.ytdl
 *.part
-
-# LEANN index (rebuilt with: node scripts/index.js --force)
-.leann/
